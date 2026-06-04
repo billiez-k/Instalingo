@@ -1,0 +1,640 @@
+{
+  "meta": {
+    "exam": "TOPIK I",
+    "exam_level": "TOPIK I",
+    "language": "korean",
+    "total_questions": 25,
+    "source": "AI-generated mock test using NEEDS_VERIFICATION TOPIK I vocabulary and STANDARD_REFERENCE grammar patterns",
+    "source_status": "AI_GENERATED",
+    "sections": [
+      {
+        "section_id": "vocab_mc",
+        "title": "어휘 — 객관식 (Vocabulary — Multiple Choice)",
+        "count": 10,
+        "type": "multiple_choice"
+      },
+      {
+        "section_id": "grammar_fib",
+        "title": "문법 — 빈칸 채우기 (Grammar — Fill in the Blank)",
+        "count": 5,
+        "type": "fill_in_blank"
+      },
+      {
+        "section_id": "reading",
+        "title": "읽기 (Reading Comprehension)",
+        "count": 5,
+        "type": "multiple_choice"
+      },
+      {
+        "section_id": "listening",
+        "title": "듣기 (Listening — text-based)",
+        "count": 5,
+        "type": "multiple_choice",
+        "note": "Text-based listening simulation. Audio files pending recording."
+      }
+    ],
+    "schema_normalized": true
+  },
+  "questions": [
+    {
+      "id": "ko_topik1_mock_q001",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n저는 아침마다 공원에서 __________.",
+      "question_en": "Choose the correct word: 'I ___ in the park every morning.'",
+      "explanation": {
+        "en": "운동합니다 means 'to exercise'. Exercising in a park every morning is a natural activity. 요리합니다 = cook, 청소합니다 = clean, 세수합니다 = wash face. Only 운동합니다 fits naturally with 공원에서 (in the park).",
+        "ko": "'운동합니다'는 'exercise'라는 뜻입니다. 공원에서 아침마다 운동하는 것은 자연스러운 표현입니다.",
+        "zh": "“운동합니다”意为“锻炼”。每天早上在公园锻炼是一种自然而然的活动。요리합니다 = 做饭，청소합니다 = 打扫，세수합니다 = 洗脸。只有“운동합니다”与“공원에서”（在公园里）搭配起来才自然。",
+        "zh_TW": "「운동합니다」的意思是「運動」。每天早上在公園運動是一項自然而然的活動。「요리합니다」＝煮飯、「청소합니다」＝打掃、「세수합니다」＝洗臉。只有「운동합니다」與「공원에서」（在公園）搭配起來才自然。",
+        "ja": "「운동합니다」は「運動する」という意味です。毎朝公園で運動するのは自然な行動です。「요리합니다」＝料理をする、「청소합니다」＝掃除をする、「세수합니다」＝顔を洗う。「운동합니다」だけが「공원에서（公園で）」という文脈に自然に馴染みます。",
+        "es": "«운동합니다» significa «hacer ejercicio». Hacer ejercicio en el parque cada mañana es una actividad natural. «요리합니다» = cocinar, «청소합니다» = limpiar, «세수합니다» = lavarse la cara. Solo «운동합니다» encaja de forma natural con «공원에서» (en el parque).",
+        "fr": "« 운동합니다 » signifie « faire de l'exercice ». Faire de l'exercice dans un parc tous les matins est une activité naturelle. « 요리합니다 » = cuisiner, « 청소합니다 » = faire le ménage, « 세수합니다 » = se laver le visage. Seul « 운동합니다 » s'accorde naturellement avec « 공원에서 » (dans le parc).",
+        "de": "„운동합니다“ bedeutet „Sport treiben“. Jeden Morgen im Park Sport zu treiben, ist eine ganz natürliche Aktivität. „요리합니다“ = kochen, „청소합니다“ = putzen, „세수합니다“ = sich das Gesicht waschen. Nur „운동합니다“ passt ganz natürlich zu „공원에서“ (im Park)."
+      },
+      "correct_answer": "운동합니다",
+      "distractors": [
+        "요리합니다",
+        "청소합니다",
+        "세수합니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q002",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n오늘은 날씨가 __________. 산책하기 좋아요.",
+      "question_en": "Choose the correct word: 'Today the weather is ___. It's good for a walk.'",
+      "explanation": {
+        "en": "좋습니다 means 'good'. 날씨가 좋습니다 = the weather is good — matching with 산책하기 좋아요 (good for a walk). 나쁩니다 = bad, 덥습니다 = hot, 춥습니다 = cold — none of these would make it good for a walk.",
+        "ko": "'좋습니다'는 'good'이라는 뜻입니다. 날씨가 좋아서 산책하기 좋다는 문맥이 자연스럽습니다.",
+        "zh": "“좋습니다”意为“好”。“날씨가 좋습니다”=“天气很好”——与“산책하기 좋아요”（适合散步）相呼应。“나쁩니다”=“不好”，“덥습니다”=“热”，“춥습니다”=“冷”——这些情况都不适合散步。",
+        "zh_TW": "「좋습니다」的意思是「好」。天氣很好 = 天氣很好 — 對應於「適合散步」（good for a walk）。「不好」= 不好、「熱」= 熱、「冷」= 冷 — 這些情況都不適合散步。",
+        "ja": "「좋습니다」は「良い」という意味です。「날씨가 좋습니다」＝「天気が良い」――これは「산책하기 좋아요」（散歩に最適）と一致します。「나쁩니다」＝「悪い」、「덥습니다」＝「暑い」、「춥습니다」＝「寒い」――これらはいずれも散歩に適しているとは言えません。",
+        "es": "«좋습니다» significa «bueno». «날씨가 좋습니다» = hace buen tiempo — lo que encaja con «산책하기 좋아요» (es un buen día para dar un paseo). «나쁩니다» = malo, «덥습니다» = hace calor, «춥습니다» = hace frío — ninguna de estas situaciones sería buena para dar un paseo.",
+        "fr": "« 좋습니다 » signifie « bien ». « 날씨가 좋습니다 » = « il fait beau » — ce qui correspond à « 산책하기 좋아요 » (idéal pour se promener). « 나쁩니다 » = mauvais, « 덥습니다 » = chaud, « 춥습니다 » = froid — aucune de ces conditions ne rendrait la promenade agréable.",
+        "de": "„좋습니다“ bedeutet „gut“. „날씨가 좋습니다“ = das Wetter ist gut – passend zu „산책하기 좋아요“ (gut für einen Spaziergang). „나쁩니다“ = schlecht, „덥습니다“ = heiß, „춥습니다“ = kalt – bei keinem dieser Fälle wäre es gut für einen Spaziergang."
+      },
+      "correct_answer": "좋습니다",
+      "distractors": [
+        "나쁩니다",
+        "덥습니다",
+        "춥습니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q003",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n저는 어제 친구를 __________.",
+      "question_en": "Choose the correct word: 'I ___ a friend yesterday.'",
+      "explanation": {
+        "en": "만났습니다 means 'met'. 친구를 만나다 = to meet a friend. 만들었습니다 = made, 먹었습니다 = ate, 보냈습니다 = sent. Only 만났습니다 is appropriate with 친구를 (friend as object).",
+        "ko": "'만났습니다'는 'met'이라는 뜻입니다. '친구를 만나다'는 자연스러운 표현입니다.",
+        "zh": "“만났습니다”意为“见过”。“친구를 만나다”=“见到朋友”。“만들었습니다”=“做过”，“먹었습니다”=“吃过”，“보냈습니다”=“寄过”。只有“만났습니다”与“친구”（朋友作为宾语）搭配使用才合适。",
+        "zh_TW": "「만났습니다」的意思是「見到」。「친구를 만나다」＝見到朋友。「만들었습니다」＝製作了，「먹었습니다」＝吃了，「보냈습니다」＝寄出了。只有「만났습니다」搭配「친구」作為賓語時才合適。",
+        "ja": "「만났습니다」は「会いました」という意味です。「친구를 만나다」＝「友人に会う」。「만들었습니다」＝「作りました」、「먹었습니다」＝「食べました」、「보냈습니다」＝「送りました」。「만났습니다」は「친구」を目的語とする場合のみ適切です。",
+        "es": "«만났습니다» significa «se encontró». «친구를 만나다» = encontrarse con un amigo. «만들었습니다» = hizo, «먹었습니다» = comió, «보냈습니다» = envió. Solo «만났습니다» es adecuado con «친구» (amigo como objeto).",
+        "fr": "« 만났습니다 » signifie « a rencontré ». « 친구를 만나다 » = « rencontrer un ami ». « 만들었습니다 » = « a fabriqué », « 먹었습니다 » = « a mangé », « 보냈습니다 » = « a envoyé ». Seule la forme « 만났습니다 » est correcte avec « 친구를 » (ami en complément d'objet).",
+        "de": "„만났습니다“ bedeutet „getroffen“. „친구를 만나다“ = einen Freund treffen. „만들었습니다“ = gemacht, „먹었습니다“ = gegessen, „보냈습니다“ = geschickt. Nur „만났습니다“ passt zu „친구“ (Freund als Objekt)."
+      },
+      "correct_answer": "만났습니다",
+      "distractors": [
+        "만들었습니다",
+        "먹었습니다",
+        "보냈습니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q004",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n가방이 너무 __________. 좀 도와주세요.",
+      "question_en": "Choose the correct word: 'The bag is too ___. Please help me.'",
+      "explanation": {
+        "en": "무겁습니다 means 'heavy'. When a bag is too heavy, asking for help makes sense. 가볍습니다 = light (wouldn't require help), 작습니다 = small, 쌉니다 = cheap. Only 무겁습니다 fits the request for help.",
+        "ko": "'무겁습니다'는 'heavy'라는 뜻입니다. 가방이 무거워서 도움을 요청하는 상황이 자연스럽습니다.",
+        "zh": "“무겁습니다”的意思是“重”。当包太重时，寻求帮助是合理的。“가볍습니다”=轻（不需要帮助），“작습니다”=小，“쌉니다”=便宜。只有“무겁습니다”符合寻求帮助的情况。",
+        "zh_TW": "「무겁습니다」的意思是「重」。當包包太重時，請求協助是合理的。「가볍습니다」＝輕（不需要幫忙）、「작습니다」＝小、「쌉니다」＝便宜。只有「무겁습니다」符合請求協助的情況。",
+        "ja": "「무겁습니다」は「重い」という意味です。バッグが重すぎる場合は、助けを求めるのが理にかなっています。「가볍습니다」＝軽い（助けは必要ない）、「작습니다」＝小さい、「쌉니다」＝安い。助けを求める文脈に当てはまるのは「무겁습니다」だけです。",
+        "es": "«무겁습니다» significa «pesado». Cuando una bolsa pesa demasiado, tiene sentido pedir ayuda. «가볍습니다» = ligero (no requeriría ayuda), «작습니다» = pequeño, «쌉니다» = barato. Solo «무겁습니다» encaja con la petición de ayuda.",
+        "fr": "« 무겁습니다 » signifie « lourd ». Lorsqu'un sac est trop lourd, il est logique de demander de l'aide. « 가볍습니다 » = léger (ne nécessiterait pas d'aide), « 작습니다 » = petit, « 쌉니다 » = bon marché. Seul « 무겁습니다 » correspond à la demande d'aide.",
+        "de": "„무겁습니다“ bedeutet „schwer“. Wenn eine Tasche zu schwer ist, ist es sinnvoll, um Hilfe zu bitten. „가볍습니다“ = leicht (dafür wäre keine Hilfe nötig), „작습니다“ = klein, „쌉니다“ = billig. Nur „무겁습니다“ passt zu der Bitte um Hilfe."
+      },
+      "correct_answer": "무겁습니다",
+      "distractors": [
+        "가볍습니다",
+        "작습니다",
+        "쌉니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q005",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n저는 매일 학교에 __________.",
+      "question_en": "Choose the correct word: 'I ___ to school every day.'",
+      "explanation": {
+        "en": "갑니다 means 'go'. 학교에 가다 = to go to school. 잡니다 = sleep, 삽니다 = buy, 받습니다 = receive. Only 갑니다 works with 학교에 (to school).",
+        "ko": "'갑니다'는 'go'라는 뜻입니다. '학교에 가다'는 기본적인 표현입니다.",
+        "zh": "“갑니다”意为“去”。“학교에 가다”=去上学。“잡니다”=睡觉，“삽니다”=买，“받습니다”=收到。只有“갑니다”能与“학교에”（去学校）搭配使用。",
+        "zh_TW": "「갑니다」的意思是「去」。「학교에 가다」＝去上學。「잡니다」＝睡覺，「삽니다」＝買，「받습니다」＝收到。只有「갑니다」能與「학교에」（去上學）搭配使用。",
+        "ja": "「갑니다」は「行く」という意味です。「학교에 가다」＝「学校に行く」。「잡니다」＝「寝る」、「삽니다」＝「買う」、「받습니다」＝「受け取る」。「갑니다」は「학교에（学校に）」と組み合わせて使う場合のみです。",
+        "es": "«갑니다» significa «ir». «학교에 가다» = ir al colegio. «잡니다» = dormir, «삽니다» = comprar, «받습니다» = recibir. Solo «갑니다» se usa con «학교에» (al colegio).",
+        "fr": "« 갑니다 » signifie « aller ». « 학교에 가다 » = aller à l'école. « 잡니다 » = dormir, « 삽니다 » = acheter, « 받습니다 » = recevoir. Seul « 갑니다 » s'utilise avec « 학교에 » (à l'école).",
+        "de": "„갑니다“ bedeutet „gehen“. „학교에 가다“ = zur Schule gehen. „잡니다“ = schlafen, „삽니다“ = kaufen, „받습니다“ = erhalten. Nur „갑니다“ passt zu „학교에“ (zur Schule)."
+      },
+      "correct_answer": "갑니다",
+      "distractors": [
+        "잡니다",
+        "삽니다",
+        "받습니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q006",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n이 음식은 너무 __________. 물을 주세요.",
+      "question_en": "Choose the correct word: 'This food is too ___. Please give me water.'",
+      "explanation": {
+        "en": "맵습니다 means 'spicy'. Asking for water because food is spicy is a natural reaction. 달콤합니다 = sweet, 시원합니다 = cool/refreshing, 따뜻합니다 = warm. Only spicy food makes someone ask for water urgently.",
+        "ko": "'맵습니다'는 'spicy'라는 뜻입니다. 매운 음식을 먹고 물을 찾는 상황은 자연스럽습니다.",
+        "zh": "“맵습니다”的意思是“辣”。因为食物太辣而要水喝，是一种自然反应。“달콤합니다”=甜，“시원합니다”=凉爽/清爽，“따뜻합니다”=温暖。只有吃辣的食物才会让人急着要水喝。",
+        "zh_TW": "「맵습니다」的意思是「辣」。因為食物太辣而要水喝，是人之常情。달콤합니다 = 甜，시원합니다 = 涼爽／清爽，따뜻합니다 = 溫熱。只有吃辣的食物才會讓人急著要水喝。",
+        "ja": "「맵습니다」は「辛い」という意味です。料理が辛いから水を頼むのは、ごく自然な反応です。「달콤합니다」＝甘い、「시원합니다」＝涼しい／爽やか、「따뜻합니다」＝温かい。辛い料理だけが、人を焦って水を頼ませるのです。",
+        "es": "«맵습니다» significa «picante». Pedir agua porque la comida pica es una reacción natural. «달콤합니다» = dulce, «시원합니다» = fresco/refrescante, «따뜻합니다» = caliente. Solo la comida picante hace que alguien pida agua con urgencia.",
+        "fr": "« 맵습니다 » signifie « épicé ». Demander de l'eau parce que la nourriture est épicée est une réaction naturelle. « 달콤합니다 » = sucré, « 시원합니다 » = frais/rafraîchissant, « 따뜻합니다 » = chaud. Seule la nourriture épicée pousse quelqu'un à demander de l'eau de toute urgence.",
+        "de": "„맵습니다“ bedeutet „scharf“. Nach Wasser zu fragen, weil das Essen scharf ist, ist eine ganz natürliche Reaktion. „달콤합니다“ = süß, „시원합니다“ = kühl/erfrischend, „따뜻합니다“ = warm. Nur bei scharfem Essen fragt man dringend nach Wasser."
+      },
+      "correct_answer": "맵습니다",
+      "distractors": [
+        "달콤합니다",
+        "시원합니다",
+        "따뜻합니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q007",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n저는 음악을 __________ 좋아합니다.",
+      "question_en": "Choose the correct word: 'I like ___ music.'",
+      "explanation": {
+        "en": "듣다 means 'to listen'. 음악을 듣다 = to listen to music — the standard collocation. 보다 = watch, 먹다 = eat, 입다 = wear. Only 듣다 pairs with 음악 (music).",
+        "ko": "'듣다'는 'listen'이라는 뜻입니다. '음악을 듣다'는 자연스러운 표현입니다.",
+        "zh": "“듣다”意为“听”。“음악을 듣다”即“听音乐”——这是标准搭配。“보다”意为“看”，“먹다”意为“吃”，“입다”意为“穿”。只有“듣다”与“음악”（音乐）搭配使用。",
+        "zh_TW": "「듣다」的意思是「聽」。「음악을 듣다」＝「聽音樂」——這是標準的搭配。「보다」＝「看」，「먹다」＝「吃」，「입다」＝「穿」。只有「듣다」會與「음악」（音樂）搭配。",
+        "ja": "「듣다」は「聞く」という意味です。「음악을 듣다」＝「音楽を聴く」— これが標準的な組み合わせです。「보다」＝「見る」、「먹다」＝「食べる」、「입다」＝「着る」。音楽（음악）と組み合わされるのは「듣다」だけです。",
+        "es": "«듣다» significa «escuchar». «음악을 듣다» = «escuchar música»: la combinación habitual. «보다» = «ver», «먹다» = «comer», «입다» = «vestir». Solo «듣다» se combina con «음악» (música).",
+        "fr": "« 듣다 » signifie « écouter ». « 음악을 듣다 » = « écouter de la musique » — c'est la tournure standard. « 보다 » = regarder, « 먹다 » = manger, « 입다 » = porter. Seul « 듣다 » s'associe à « 음악 » (musique).",
+        "de": "„듣다“ bedeutet „hören“. „음악을 듣다“ = „Musik hören“ – die übliche Wortkombination. „보다“ = „sehen“, „먹다“ = „essen“, „입다“ = „tragen“. Nur „듣다“ wird mit „음악“ (Musik) kombiniert."
+      },
+      "correct_answer": "듣는 것을",
+      "distractors": [
+        "보는 것을",
+        "먹는 것을",
+        "입는 것을"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q008",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n저는 한국어를 __________.",
+      "question_en": "Choose the correct word: 'I ___ Korean.'",
+      "explanation": {
+        "en": "공부합니다 means 'study'. 한국어를 공부하다 = to study Korean — the most natural collocation. 여행합니다 = travel, 운동합니다 = exercise, 전화합니다 = call on the phone. Only 공부합니다 pairs naturally with 한국어 (Korean language).",
+        "ko": "'공부합니다'는 'study'라는 뜻입니다. '한국어를 공부하다'는 자연스러운 표현입니다.",
+        "zh": "“공부합니다”意为“学习”。“한국어를 공부하다”=学习韩语——这是最自然的搭配。“여행합니다”=旅行，“운동합니다”=锻炼，“전화합니다”=打电话。只有“공부합니다”与“한국어”（韩语）搭配起来才自然。",
+        "zh_TW": "「공부합니다」的意思是「學習」。「한국어를 공부하다」＝「學習韓語」——這是最自然的搭配。 「여행합니다」＝「旅行」，「운동합니다」＝「運動」，「전화합니다」＝「打電話」。只有「공부합니다」能自然地與「한국어」（韓語）搭配。",
+        "ja": "「공부합니다」は「勉強する」という意味です。「한국어를 공부하다」＝「韓国語を勉強する」——これが最も自然な組み合わせです。「여행합니다」＝「旅行する」、「운동합니다」＝「運動する」、「전화합니다」＝「電話をかける」。韓国語（Korean language）と自然に組み合わさるのは、「공부합니다」だけです。",
+        "es": "«공부합니다» significa «estudiar». «한국어를 공부하다» = estudiar coreano: la combinación más natural. «여행합니다» = viajar, «운동합니다» = hacer ejercicio, «전화합니다» = llamar por teléfono. Solo «공부합니다» se combina de forma natural con «한국어» (idioma coreano).",
+        "fr": "« 공부합니다 » signifie « étudier ». « 한국어를 공부하다 » = étudier le coréen — c'est la combinaison la plus naturelle. « 여행합니다 » = voyager, « 운동합니다 » = faire de l'exercice, « 전화합니다 » = téléphoner. Seul « 공부합니다 » s'associe naturellement avec « 한국어 » (la langue coréenne).",
+        "de": "„공부합니다“ bedeutet „lernen“. „한국어를 공부하다“ = Koreanisch lernen – die natürlichste Wortkombination. „여행합니다“ = reisen, „운동합니다“ = Sport treiben, „전화합니다“ = telefonieren. Nur „공부합니다“ passt ganz natürlich zu „한국어“ (koreanische Sprache)."
+      },
+      "correct_answer": "공부합니다",
+      "distractors": [
+        "여행합니다",
+        "운동합니다",
+        "전화합니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q009",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n우리 집에는 고양이가 __________.",
+      "question_en": "Choose the correct word: 'There ___ a cat in our house.'",
+      "explanation": {
+        "en": "있습니다 means 'there is/are'. Noun + 이/가 있습니다 = there is a noun. While 없습니다 (there isn't) is grammatically possible, 있습니다 is the neutral choice and tests the basic existence pattern. 합니다 = do, 됩니다 = become.",
+        "ko": "'있습니다'는 존재를 나타내는 동사입니다. '고양이가 있습니다'는 가장 기본적인 존재 표현입니다.",
+        "zh": "“있습니다”意为“有”。名词 + 이/가 있습니다 = 有一个名词。虽然 “없습니다”（没有）在语法上是成立的，但 “있습니다”是中性表达，用于测试基本的“存在”句式。“합니다” = 做，“됩니다” = 变成。",
+        "zh_TW": "「있습니다」意為「有」。名詞 + 이/가 있습니다 = 有一（個）名詞。雖然「없습니다」（沒有）在語法上也是成立的，但「있습니다」是中性選擇，用來測試基本的「存在」句型。「합니다」意為「做」，「됩니다」意為「變成」。",
+        "ja": "「있습니다」は「～がある」という意味です。名詞 + 이/가 있습니다 = 「～がある」。「없습니다」（～がない）も文法的には可能ですが、「있습니다」が中立的な表現であり、基本的な存在のパターンを確認するためのものです。「합니다」＝「～する」、「됩니다」＝「～になる」。",
+        "es": "«있습니다» significa «hay». Sustantivo + 이/가 있습니다 = hay un sustantivo. Aunque «없습니다» (no hay) es gramaticalmente posible, «있습니다» es la opción más neutra y pone a prueba el patrón básico de existencia. «합니다» = hacer, «됩니다» = convertirse.",
+        "fr": "« 있습니다 » signifie « il y a ». Nom + 이/가 있습니다 = il y a un nom. Bien que « 없습니다 » (il n'y a pas) soit grammaticalement possible, « 있습니다 » est le choix neutre et permet de tester la structure de base de l'existence. « 합니다 » = faire, « 됩니다 » = devenir.",
+        "de": "„있습니다“ bedeutet „es gibt“. Substantiv + 이/가 있습니다 = es gibt ein Substantiv. Während „없습니다“ (es gibt nicht) grammatikalisch möglich ist, ist „있습니다“ die neutrale Variante und dient zur Überprüfung des grundlegenden Existenzmusters. „합니다“ = tun, „됩니다“ = werden."
+      },
+      "correct_answer": "있습니다",
+      "distractors": [
+        "없습니다",
+        "합니다",
+        "됩니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q010",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "빈칸에 알맞은 것을 고르십시오.\n\n주말에 친구들과 __________ 영화를 봤습니다.",
+      "question_en": "Choose the correct word: 'On the weekend, I watched a movie ___ my friends.'",
+      "explanation": {
+        "en": "함께 means 'together'. 친구들과 함께 = together with friends — matches the plural 친구들. 혼자 = alone (contradicts 친구들과), 아까 = a while ago, 항상 = always. Only 함께 works with 친구들과.",
+        "ko": "'함께'는 'together'라는 뜻입니다. '친구들과 함께'는 자연스러운 표현입니다.",
+        "zh": "“함께”意为“一起”。“친구들과 함께”=“和朋友们一起”——与复数形式的“친구들”相匹配。“혼자”=“独自”（与“친구들과”矛盾），“아까”=“刚才”，“항상”=“总是”。只有“함께”能与“친구들과”搭配使用。",
+        "zh_TW": "「함께」意為「一起」。朋友들과 함께 = 和朋友們一起 — 與複數形式的「친구들」相符。혼자 = 獨自（與「친구들과」相矛盾），아까 = 剛才，항상 = 總是。只有「함께」能與「친구들과」搭配使用。",
+        "ja": "「함께」は「一緒に」という意味です。「친구들과 함께」＝「友達と一緒に」— 複数形の「친구들」と一致します。「혼자」＝「一人で」（「친구들과」と矛盾します）、「아까」＝「さっき」、「항상」＝「いつも」。「함께」は「친구들과」と組み合わせてのみ使われます。",
+        "es": "«함께» significa «juntos». «친구들과 함께» = «juntos con amigos» — concuerda con el plural «친구들». «혼자» = «solo» (contrasta con «친구들과»), «아까» = «hace un rato», «항상» = «siempre». Solo «함께» concuerda con «친구들과».",
+        "fr": "« 함께 » signifie « ensemble ». « 친구들과 함께 » = « avec des amis » — correspond au pluriel « 친구들 ». « 혼자 » = « seul » (contradit « 친구들과 »), « 아까 » = « tout à l'heure », « 항상 » = « toujours ». Seul « 함께 » s'utilise avec « 친구들과 ».",
+        "de": "„함께“ bedeutet „zusammen“. „친구들과 함께“ = „zusammen mit Freunden“ – passt zum Plural „친구들“. „혼자“ = „allein“ (widerspricht „친구들과“), „아까“ = „vorhin“, „항상“ = „immer“. Nur „함께“ passt zu „친구들과“."
+      },
+      "correct_answer": "함께",
+      "distractors": [
+        "혼자",
+        "아까",
+        "항상"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q011",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "빈칸에 알맞은 말을 쓰십시오.\n\n내일 학교에 __________. (가다 — future intention)",
+      "question_en": "Fill in the blank: 'I will ___ to school tomorrow.' (가다 — future intention using 겠)",
+      "correct_answer": "갈 거예요",
+      "distractors": [
+        "가요",
+        "갔어요",
+        "가고 싶어요"
+      ],
+      "explanation": {
+        "en": "겠 is used to express future intention or will. 가다 → 가 + 겠 + 습니다 = 가겠습니다 (I will go). 갔습니다 = went (past), 갑니다 = go (present), 가고 있습니다 = is going (progressive). For 내일 (tomorrow), future form is required.",
+        "ko": "'겠'은 미래나 의지를 나타냅니다. '가다'에 '겠'을 붙여 '가겠습니다'가 됩니다. '내일'은 미래이므로 미래형이 필요합니다.",
+        "zh": "“겠”用于表达未来的意图或意愿。가다 → 가 + 겠 + 습니다 = 가겠습니다（我要去）。갔습니다 = 去了（过去），갑니다 = 去（现在），가고 있습니다 = 正在去（进行时）。对于“내일”（明天），需要使用将来时。",
+        "zh_TW": "「겠」用於表達未來的意圖或意志。例如：가다 → 가 + 겠 + 습니다 = 가겠습니다（我會去）。갔습니다 = 去了（過去式），갑니다 = 去（現在式），가고 있습니다 = 正在去（進行式）。對於「내일」（明天），必須使用未來式。",
+        "ja": "「겠」は、将来の意図や意志を表す際に使われます。가다 → 가 + 겠 + 습니다 = 가겠습니다（行きます）。갔습니다 = 行きました（過去）、갑니다 = 行きます（現在）、가고 있습니다 = 行っています（進行形）。「내일」（明日）については、未来形が必要です。",
+        "es": "«-겠» se utiliza para expresar una intención o voluntad futura. «가다» → «가» + «-겠» + «-습니다» = «가겠습니다» (iré). «갔습니다» = fui (pasado), «갑니다» = voy (presente), «가고 있습니다» = estoy yendo (progresivo). Para «내일» (mañana), se requiere la forma futura.",
+        "fr": "« 겠 » est utilisé pour exprimer une intention ou une volonté future. 가다 → 가 + 겠 + 습니다 = 가겠습니다 (j'irai). 갔습니다 = suis allé (passé), 갑니다 = vais (présent), 가고 있습니다 = suis en train d'aller (progressif). Pour 내일 (demain), la forme future est requise.",
+        "de": "„-겠“ wird verwendet, um eine zukünftige Absicht oder einen Willen auszudrücken. 가다 → 가 + 겠 + 습니다 = 가겠습니다 (Ich werde gehen). 갔습니다 = ging (Vergangenheit), 갑니다 = gehe (Gegenwart), 가고 있습니다 = gehe gerade (Fortlaufende Zeit). Für 내일 (morgen) ist die Zukunftsform erforderlich."
+      }
+    },
+    {
+      "id": "ko_topik1_mock_q012",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "빈칸에 알맞은 말을 쓰십시오.\n\n한국에 __________ 적이 있습니까? (가다 — past experience)",
+      "question_en": "Fill in the blank: 'Have you ever ___ to Korea?' (가다 — past experience with ㄴ 적이 있다)",
+      "correct_answer": "가 본",
+      "distractors": [
+        "가는",
+        "가서",
+        "가면"
+      ],
+      "explanation": {
+        "en": "The grammar pattern V + (으)ㄴ 적이 있다 expresses past experience ('have ever done'). 가다 → 가 + ㄴ → 간, but with 보다 (try): 가 보다 → 가 본 적이 있다 = have been (to). This is the standard way to ask about travel experience. 간 적이 있다 (without 보다) is also possible but 가 본 적이 있다 is more natural.",
+        "ko": "'ㄴ 적이 있다'는 과거의 경험을 나타냅니다. '가 보다'의 활용형 '가 본 적이 있다'가 '가본 적이 있다'로, 여행 경험을 물을 때 가장 자연스러운 표현입니다.",
+        "zh": "语法结构 V + (으)ㄴ 적이 있다 表示过去经历（“曾经做过”）。以“가다”（去）为例：가 + ㄴ → 간，但若使用“보다”（尝试）：가 보다 → 가 본 적이 있다 = have been (to)。这是询问旅行经历的标准表达方式。虽然也可以说 “간 적이 있다”（不带“보다”），但 “가 본 적이 있다” 更自然。",
+        "zh_TW": "語法結構 V + (으)ㄴ 적이 있다 表示過去的經驗（「曾經做過」）。以「가다」（去）為例：가 + ㄴ → 간，但若搭配「보다」（試過）：가 보다 → 가 본 적이 있다 = have been (to)。這是詢問旅行經驗的標準說法。雖然也可以說「간 적이 있다」（不帶「보다」），但「가 본 적이 있다」聽起來更自然。",
+        "ja": "文型「V + (으)ㄴ 적이 있다」は、過去の経験（「～したことがある」）を表します。「가다」の場合、「가 + ㄴ」で「간」となりますが、「보다（～してみる）」の場合は、「가 보다」となり、「가 본 적이 있다」＝「～したことがある」となります。これは旅行の経験について尋ねる際の標準的な表現です。「간 적이 있다」（「보다」なし）も可能です。「가 본 적이 있다」の方がより自然です。",
+        "es": "La estructura gramatical V + (으)ㄴ 적이 있다 expresa una experiencia pasada («haber hecho alguna vez»). 가다 → 가 + ㄴ → 간, pero con 보다 (probar): 가 보다 → 가 본 적이 있다 = haber estado (en). Esta es la forma habitual de preguntar por experiencias de viaje. También es posible decir 간 적이 있다 (sin 보다), pero 가 본 적이 있다 resulta más natural.",
+        "fr": "La structure grammaticale V + (으)ㄴ 적이 있다 exprime une expérience passée (« avoir déjà fait »). 가다 → 가 + ㄴ → 간, mais avec 보다 (essayer) : 가 보다 → 가 본 적이 있다 = avoir été (à). C'est la façon standard de s'enquérir d'une expérience de voyage. 간 적이 있다 (sans 보다) est également possible, mais 가 본 적이 있다 est plus naturel.",
+        "de": "Das Grammatikmuster V + (으)ㄴ 적이 있다 drückt eine Erfahrung in der Vergangenheit aus („jemals getan haben“). 가다 → 가 + ㄴ → 간, aber bei 보다 (sehen): 가 보다 → 가 본 적이 있다 = (dort) gewesen sein. Dies ist die übliche Art, nach Reiseerfahrungen zu fragen. 간 적이 있다 (ohne 보다) ist ebenfalls möglich, aber 가 본 적이 있다 klingt natürlicher."
+      }
+    },
+    {
+      "id": "ko_topik1_mock_q013",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "빈칸에 알맞은 말을 쓰십시오.\n\n비빔밥을 __________ 합니다. (먹다 — desire)",
+      "question_en": "Fill in the blank: 'I want to ___ bibimbap.' (먹다 — desire using 고 싶다)",
+      "correct_answer": "먹고 싶",
+      "distractors": [
+        "먹어요",
+        "먹었어요",
+        "먹을 거예요"
+      ],
+      "explanation": {
+        "en": "고 싶다 expresses desire ('want to do'). 먹다 → 먹 + 고 싶습니다 = 먹고 싶습니다 (want to eat). 먹습니다 = eat (statement), 먹었습니다 = ate (past), 먹겠습니다 = will eat (future intention). Only 고 싶다 expresses the desire correctly.",
+        "ko": "'고 싶다'는 희망이나 바람을 나타냅니다. '먹다'에 '고 싶다'를 붙여 '먹고 싶습니다'가 됩니다.",
+        "zh": "“고 싶다”表达的是愿望（“想做”）。吃 → 먹 + 고 싶습니다 = 먹고 싶습니다（想吃）。먹습니다 = 吃（陈述句），먹었습니다 = 吃了（过去式），먹겠습니다 = 会吃（未来意向）。只有“고 싶다”能正确表达这种愿望。",
+        "zh_TW": "「고 싶다」表達的是「想要做」的意願。吃 → 먹 + 고 싶습니다 = 먹고 싶습니다（想吃）。먹습니다 = 吃（陳述句），먹었습니다 = 吃了（過去式），먹겠습니다 = 將吃（未來意向）。只有「고 싶다」能正確表達這種意願。",
+        "ja": "「고 싶다」は願望（「～したい」）を表します。「먹다」→「먹」＋「고 싶습니다」＝「먹고 싶습니다」（食べたい）。「먹습니다」＝「食べる」（現在形）、「먹었습니다」＝「食べました」（過去形）、「먹겠습니다」＝「食べます」（未来・意志）。「고 싶다」だけが正しく願望を表します。",
+        "es": "«고 싶다» expresa un deseo («querer hacer»). «먹다» → «먹» + «고 싶습니다» = «먹고 싶습니다» (quiero comer). «먹습니다» = comer (presente), «먹었습니다» = comí (pasado), «먹겠습니다» = comeré (intención futura). Solo «고 싶다» expresa correctamente el deseo.",
+        "fr": "« 고 싶다 » exprime un désir (« vouloir faire »). Manger → 먹 + 고 싶습니다 = 먹고 싶습니다 (vouloir manger). 먹습니다 = manger (présent), 먹었습니다 = a mangé (passé), 먹겠습니다 = mangera (intention future). Seul « 고 싶다 » exprime correctement le désir.",
+        "de": "„고 싶다“ drückt einen Wunsch aus („tun wollen“). „먹다“ → „먹“ + „고 싶습니다“ = „먹고 싶습니다“ (essen wollen). „먹습니다“ = essen (Aussage), „먹었습니다“ = aß (Vergangenheit), „먹겠습니다“ = werde essen (zukünftige Absicht). Nur „고 싶다“ drückt den Wunsch korrekt aus."
+      }
+    },
+    {
+      "id": "ko_topik1_mock_q014",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "빈칸에 알맞은 말을 쓰십시오.\n\n내일은 __________ 더 춥겠습니다. (오늘 — comparison)",
+      "question_en": "Fill in the blank: 'Tomorrow will be colder ___ today.' (오늘 — comparison using 보다)",
+      "correct_answer": "오늘보다",
+      "distractors": [
+        "어제보다",
+        "내일",
+        "오늘은"
+      ],
+      "explanation": {
+        "en": "보다 is the comparison particle meaning 'than'. 오늘 + 보다 = 오늘보다 = than today. 오늘은 = as for today (topic), 오늘이 = today (subject), 오늘도 = today also. Only 보다 creates the comparison 'colder than today'.",
+        "ko": "'보다'는 비교를 나타내는 조사입니다. '오늘보다'는 'than today'라는 뜻으로, 더 춥다는 비교 표현과 자연스럽게 연결됩니다.",
+        "zh": "“보다”是表示“比……更……”的比较助词。오늘 + 보다 = 오늘보다 = 比今天。오늘은 = 至于今天（话题），오늘이 = 今天（主语），오늘도 = 今天也。只有“보다”能构成“比今天更冷”这样的比较句。",
+        "zh_TW": "「보다」是表示「比」的比較助詞。今天 + 보다 = 오늘보다 = 比今天。오늘은 = 至於今天（話題），오늘이 = 今天（主語），오늘도 = 今天也。只有「보다」能構成「比今天更冷」這樣的比較句。",
+        "ja": "「보다」は「～より」という意味の比較助詞です。「오늘」＋「보다」＝「오늘보다」＝「今日より」。「오늘은」＝「今日については」（話題）、「오늘이」＝「今日」（主語）、「오늘도」＝「今日も」。比較表現「오늘보다」は、「보다」だけで「今日より寒い」という意味になります。",
+        "es": "«보다» es la partícula de comparación que significa «que». Hoy + 보다 = hoy que = que hoy. Hoy es = en cuanto a hoy (tema), hoy es = hoy (sujeto), hoy también = hoy también. Solo «보다» crea la comparación «más frío que hoy».",
+        "fr": "« 보다 » est la particule de comparaison qui signifie « que ». « 오늘 » + « 보다 » = « 오늘보다 » = « que aujourd'hui ». « 오늘은 » = « quant à aujourd'hui » (sujet), « 오늘이 » = « aujourd'hui » (sujet), « 오늘도 » = « aujourd'hui aussi ». Seul « 보다 » permet de former la comparaison « plus froid qu'aujourd'hui ».",
+        "de": "„보다“ ist die Vergleichspartikel, die „als“ bedeutet. „오늘“ + „보다“ = „오늘보다“ = „als heute“. „오늘은“ = „was heute betrifft“ (Thema), „오늘이“ = „heute“ (Subjekt), „오늘도“ = „auch heute“. Nur „보다“ bildet den Vergleich „kälter als heute“."
+      }
+    },
+    {
+      "id": "ko_topik1_mock_q015",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "빈칸에 알맞은 말을 쓰십시오.\n\n시간이 __________ 빨리 갔어요. (없다 — reason using 아/어서)",
+      "question_en": "Fill in the blank: 'Time passed quickly ___ there was none.' (없다 — reason using 아/어서)",
+      "correct_answer": "없어서",
+      "distractors": [
+        "없고",
+        "없으면",
+        "없지만"
+      ],
+      "explanation": {
+        "en": "아/어서 expresses reason or cause. 없다 → 없 + 어서 = 없어서 = because there is none. 없고 = none, and (~고 is listing), 없지만 = none, but (~지만 is contrast), 없으니까 = because none (~니까 is also reason but more subjective/colloquial). In formal written tests, 어서 is preferred for neutral cause-effect.",
+        "ko": "'아/어서'는 이유나 원인을 나타냅니다. '없다'에 '어서'를 붙여 '없어서'가 됩니다. 객관적인 인과관계를 나타낼 때 사용합니다.",
+        "zh": "“아/어서”用于表达理由或原因。“없다”→“없”+“어서”=“없어서”=“因为没有”。“없고”表示“没有”（“~고”表示列举），“없지만”表示“虽然没有”（“~지만”表示对比），“없으니까”表示“因为没有”（“~니까”也表示理由，但更主观、口语化）。在正式的书面考试中，建议使用“어서”来表达中性的因果关系。",
+        "zh_TW": "「아/어서」用來表達理由或原因。「없다」→「없」＋「어서」＝「없어서」＝「因為沒有」。其中，「없고」表示「沒有」（「~고」用於列舉）、「없지만」表示「雖然沒有」（「~지만」用於對比），而「없으니까」則表示「因為沒有」（「~니까」雖也表示理由，但語感更為主觀且口語化）。在正式的書面考試中，若要表達中性的因果關係，通常建議使用「어서」。",
+        "ja": "「아/어서」は理由や原因を表します。「없다」→「없」＋「어서」＝「없어서」＝「ないから」。「없고」＝「ない」（「~고」は列挙を表す）、「하지만」＝「ないが」（「~지만」は対比を表す）、「없으니까」＝「ないから」（「~니까」も理由を表すが、より主観的・口語的）。正式な筆記試験では、中立的な因果関係を表現する場合、「어서」の使用が推奨されます。",
+        "es": "«아/어서» expresa una razón o causa. «없다» → «없» + «어서» = «없어서» = «porque no hay». «없고» = «ninguno» (y «~고» indica enumeración), «없지만» = «ninguno, pero» (y «~지만» indica contraste), «없으니까» = «porque no hay» (y «~니까» también indica razón, pero es más subjetivo/coloquial). En exámenes escritos formales, se prefiere «어서» para expresar una relación causa-efecto neutra.",
+        "fr": "« 아/어서 » exprime une raison ou une cause. « 없다 » → « 없 » + « 어서 » = « 없어서 » = « parce qu’il n’y en a pas ». « 없고 » = « aucun » (avec « ~고 » pour énumérer), « 없지만 » = « aucun, mais » (avec « ~지만 » pour marquer un contraste), « 없으니까 » = « parce qu’il n’y en a pas » (avec « ~니까 » qui exprime également une raison, mais de manière plus subjective et familière). Dans les examens écrits formels, on préfère utiliser « 어서 » pour exprimer un rapport de cause à effet de manière neutre.",
+        "de": "„아/어서“ drückt einen Grund oder eine Ursache aus. „없다“ → „없“ + „어서“ = „없어서“ = „weil es keine gibt“. „없고“ = „keine“, und „~고“ drückt eine Aufzählung aus; „없지만“ = „keine, aber“ – „~지만“ drückt einen Kontrast aus; „없으니까“ = „weil keine“ – „~니까“ drückt ebenfalls einen Grund aus, ist jedoch subjektiver und umgangssprachlicher. In formellen schriftlichen Prüfungen wird „어서“ bevorzugt, um eine neutrale Ursache-Wirkungs-Beziehung auszudrücken."
+      }
+    },
+    {
+      "id": "ko_topik1_mock_q016",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "저는 주말마다 도서관에 갑니다. 도서관은 집에서 가깝습니다. 걸어서 10분쯤 걸립니다. 저는 거기에서 책을 읽거나 공부를 합니다. 조용해서 아주 좋습니다.",
+      "passage_en": "I go to the library every weekend. The library is close to my house. It takes about 10 minutes on foot. I read books or study there. It's very nice because it's quiet.",
+      "question": "도서관에 어떻게 갑니까?",
+      "question_en": "How does the person go to the library?",
+      "explanation": {
+        "en": "The passage says 걸어서 10분쯤 걸립니다 (it takes about 10 minutes on foot), indicating the person walks. Bus, subway, and bicycle are not mentioned.",
+        "ko": "본문에 '걸어서 10분쯤 걸립니다'라고 쓰여 있어서 걸어서 간다는 것을 알 수 있습니다.",
+        "zh": "该段落提到“步行约需10分钟”，表明此人是在步行。文中未提及公交车、地铁和自行车。",
+        "zh_TW": "這段文字提到「步行約需10分鐘」，表示該人是以步行方式前往。文中並未提及公車、地鐵或自行車。",
+        "ja": "この文章には「歩いて10分ほどかかります」とあり、その人が徒歩で移動することを示しています。バス、地下鉄、自転車については言及されていません。",
+        "es": "El texto dice «걸어서 10분쯤 걸립니다» (se tarda unos 10 minutos a pie), lo que indica que la persona va andando. No se mencionan el autobús, el metro ni la bicicleta.",
+        "fr": "Le texte indique « 걸어서 10분쯤 걸립니다 » (cela prend environ 10 minutes à pied), ce qui signifie que la personne se déplace à pied. Le bus, le métro et le vélo ne sont pas mentionnés.",
+        "de": "In dem Text heißt es: „걸어서 10분쯤 걸립니다“ (zu Fuß dauert es etwa 10 Minuten), was darauf hindeutet, dass die Person zu Fuß geht. Bus, U-Bahn und Fahrrad werden nicht erwähnt."
+      },
+      "correct_answer": "걸어서 갑니다",
+      "distractors": [
+        "버스로 갑니다",
+        "지하철로 갑니다",
+        "자전거로 갑니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q017",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "어제는 제 생일이었습니다. 친구들이 선물을 주었습니다. 저녁에는 가족들과 같이 맛있는 음식을 먹었습니다. 아주 행복한 하루였습니다.",
+      "passage_en": "Yesterday was my birthday. Friends gave me presents. In the evening, I ate delicious food with my family. It was a very happy day.",
+      "question": "어제는 무슨 날이었습니까?",
+      "question_en": "What day was yesterday?",
+      "explanation": {
+        "en": "The passage begins with 어제는 제 생일이었습니다 (Yesterday was my birthday). 설날 = Lunar New Year, 크리스마스 = Christmas, 추석 = Chuseok — none are mentioned.",
+        "ko": "첫 문장에 '어제는 제 생일이었습니다'라고 명확히 나와 있습니다.",
+        "zh": "这段文字开头写道：“昨天是我的生日”。春节、圣诞节、中秋节——这些节日都没有被提及。",
+        "zh_TW": "這段文字以「昨天是我的生日」開頭。春節＝農曆新年、聖誕節＝Christmas、中秋節＝Chuseok——文中均未提及。",
+        "ja": "この文章は「昨日は私の誕生日でした」という言葉で始まります。旧正月＝Lunar New Year、クリスマス＝Christmas、秋夕＝Chuseok――これらについては一切触れられていません。",
+        "es": "El texto comienza con «Ayer fue mi cumpleaños». El Año Nuevo Lunar, la Navidad y el Chuseok no se mencionan.",
+        "fr": "Le passage commence par « Hier, c'était mon anniversaire ». Le Nouvel An lunaire, Noël et Chuseok ne sont pas mentionnés.",
+        "de": "Der Text beginnt mit „Gestern war mein Geburtstag“. Neujahr = Lunar New Year, Weihnachten = Christmas, Chuseok = Chuseok – keines davon wird erwähnt."
+      },
+      "correct_answer": "생일",
+      "distractors": [
+        "설날",
+        "크리스마스",
+        "추석"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q018",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "저는 아침 7시에 일어납니다. 세수를 하고 아침을 먹습니다. 8시에 집에서 나갑니다. 회사에 9시까지 도착합니다. 퇴근은 보통 6시에 합니다.",
+      "passage_en": "I wake up at 7 AM. I wash my face and eat breakfast. I leave home at 8. I arrive at the office by 9. I usually leave work at 6.",
+      "question": "회사에 몇 시까지 도착합니까?",
+      "question_en": "By what time does the person arrive at the office?",
+      "explanation": {
+        "en": "The passage says 회사에 9시까지 도착합니다 (arrive at the office by 9). 7시 = wake up, 8시 = leave home, 6시 = leave work.",
+        "ko": "본문에 '회사에 9시까지 도착합니다'라고 쓰여 있습니다.",
+        "zh": "该段落提到“9点前到达公司”。7点 = 起床，8点 = 出门，6点 = 下班。",
+        "zh_TW": "這段文字提到「9點前抵達公司」。7點 = 起床，8點 = 出門，6點 = 下班。",
+        "ja": "この文章には「9時までに会社に着きます」と書かれています。7時＝起床、8時＝家を出る、6時＝仕事を終える。",
+        "es": "El texto dice: «Llego a la oficina a las 9». 7:00 = me levanto, 8:00 = salgo de casa, 18:00 = salgo del trabajo.",
+        "fr": "Le passage indique : « J'arrive au bureau à 9 heures ». 7 heures = réveil, 8 heures = départ de chez moi, 18 heures = fin de travail.",
+        "de": "In dem Text heißt es: „Ich bin um 9 Uhr im Büro“ (arrive at the office by 9). 7 Uhr = aufstehen, 8 Uhr = das Haus verlassen, 18 Uhr = Feierabend."
+      },
+      "correct_answer": "9시",
+      "distractors": [
+        "7시",
+        "8시",
+        "6시"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q019",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "요즘 날씨가 아주 춥습니다. 그래서 두꺼운 옷을 입고 다닙니다. 밖에 나갈 때는 목도리와 장갑도 꼭 챙깁니다. 감기에 걸리지 않도록 조심하고 있습니다.",
+      "passage_en": "These days the weather is very cold. So I wear thick clothes. When I go outside, I make sure to bring a scarf and gloves. I'm being careful not to catch a cold.",
+      "question": "왜 두꺼운 옷을 입습니까?",
+      "question_en": "Why does the person wear thick clothes?",
+      "explanation": {
+        "en": "The passage begins with 요즘 날씨가 아주 춥습니다 (These days the weather is very cold) and uses 그래서 (so/therefore) to connect to wearing thick clothes. This is a clear cause-effect relationship.",
+        "ko": "'날씨가 아주 춥습니다. 그래서 두꺼운 옷을 입고 다닙니다'라고 인과관계가 명확하게 나타나 있습니다.",
+        "zh": "这段话以“最近天气非常冷”开头，并用“所以”来引出“穿厚衣服”这一内容。这是一种明显的因果关系。",
+        "zh_TW": "這段文字以「最近天氣非常冷」開頭，並使用「所以」來銜接「穿厚衣服」這個動作。這是一個明確的因果關係。",
+        "ja": "この文章は「最近、とても寒いです」という文で始まり、「だから」を使って厚着をするという内容へとつながっています。これは明確な因果関係です。",
+        "es": "El fragmento comienza con «요즘 날씨가 아주 춥습니다» (Estos días hace mucho frío) y utiliza «그래서» (por eso/por lo tanto) para establecer la conexión con el hecho de llevar ropa de abrigo. Se trata de una clara relación de causa y efecto.",
+        "fr": "Le passage commence par « Ces jours-ci, il fait très froid » et utilise « donc » pour faire le lien avec le fait de porter des vêtements chauds. Il s'agit là d'une relation de cause à effet évidente.",
+        "de": "Der Text beginnt mit „요즈음 날씨가 아주 춥습니다“ (In diesen Tagen ist es sehr kalt) und verwendet „그래서“ (also/deshalb), um den Zusammenhang mit dem Tragen warmer Kleidung herzustellen. Dies ist ein klarer Zusammenhang zwischen Ursache und Wirkung."
+      },
+      "correct_answer": "날씨가 춥기 때문에",
+      "distractors": [
+        "날씨가 덥기 때문에",
+        "옷이 예쁘기 때문에",
+        "친구를 만나기 때문에"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q020",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "지난 주말에 친구와 같이 영화관에 갔습니다. 그런데 표가 다 팔려서 영화를 볼 수 없었습니다. 그래서 대신에 근처 공원에서 산책을 했습니다. 공원에 꽃이 많이 피어서 정말 아름다웠습니다.",
+      "passage_en": "Last weekend I went to the movie theater with a friend. But the tickets were all sold out so we couldn't watch the movie. So instead we took a walk in a nearby park. Many flowers were blooming in the park, so it was really beautiful.",
+      "question": "왜 영화를 볼 수 없었습니까?",
+      "question_en": "Why couldn't they watch the movie?",
+      "explanation": {
+        "en": "The passage states 표가 다 팔려서 영화를 볼 수 없었습니다 (tickets were all sold out so we couldn't watch the movie). This is a direct cause-effect statement.",
+        "ko": "본문에 '표가 다 팔려서 영화를 볼 수 없었습니다'라고 명확히 이유가 나와 있습니다.",
+        "zh": "该段落写道：“票已经卖光了，所以我们没能看成电影。”这是一句直接的因果陈述。",
+        "zh_TW": "該段落指出：「票已售罄，因此我們無法觀看電影。」這是一個直接的因果陳述。",
+        "ja": "この文章には「チケットが完売していたため、映画を見ることができませんでした」とあります。これは直接的な因果関係の記述です。",
+        "es": "El texto dice: «Las entradas estaban agotadas, así que no pudimos ver la película». Se trata de una afirmación directa de causa y efecto.",
+        "fr": "Le passage indique : « Les billets étaient tous vendus, nous n'avons donc pas pu voir le film ». Il s'agit d'une affirmation de type cause-effet.",
+        "de": "In dem Text heißt es: „Die Karten waren ausverkauft, sodass wir den Film nicht sehen konnten.“ Dies ist eine direkte Ursache-Wirkungs-Aussage."
+      },
+      "correct_answer": "표가 다 팔려서",
+      "distractors": [
+        "시간이 없어서",
+        "친구가 안 와서",
+        "영화가 재미없어서"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q021",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: 여보세요, 거기 수진 씨 집이에요? B: 네, 맞는데요. 누구세요? A: 저 수진 씨 친구 민수예요. B: 아, 민수 씨! 수진이는 지금 목욕하고 있어요. A: 그럼, 이따가 다시 전화할게요.",
+      "script_en": "A: Hello, is this Sujin's house? B: Yes, it is. Who is this? A: This is Minsu, Sujin's friend. B: Ah, Minsu! Sujin is taking a bath right now. A: Then I'll call back later.",
+      "question": "수진 씨는 지금 무엇을 하고 있습니까?",
+      "question_en": "What is Sujin doing now?",
+      "explanation": {
+        "en": "B says 수진이는 지금 목욕하고 있어요 (Sujin is taking a bath now). The other activities are not mentioned.",
+        "ko": "B가 '수진이는 지금 목욕하고 있어요'라고 말했습니다. 목욕 중이기 때문에 전화를 받을 수 없는 상황입니다.",
+        "zh": "B说：秀珍现在正在洗澡。其他活动没有提及。",
+        "zh_TW": "B 說：秀珍現在正在洗澡。其他活動則未提及。",
+        "ja": "Bは「スジンは今お風呂に入っています」と言っています。その他の活動については触れられていません。",
+        "es": "B dice: «Sujin se está bañando ahora mismo». No se mencionan las demás actividades.",
+        "fr": "B dit : « Sujin est en train de prendre son bain. » Les autres activités ne sont pas mentionnées.",
+        "de": "B sagt: „Sujin nimmt gerade ein Bad.“ Die anderen Aktivitäten werden nicht erwähnt."
+      },
+      "correct_answer": "목욕하고 있습니다",
+      "distractors": [
+        "전화하고 있습니다",
+        "자고 있습니다",
+        "공부하고 있습니다"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q022",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: 이 사과 한 개에 얼마예요? B: 한 개에 천원이에요. A: 좀 비싸네요. 깎아 주실 수 있어요? B: 그럼 세 개에 이천원에 드릴게요. A: 좋아요. 세 개 주세요.",
+      "script_en": "A: How much is one of these apples? B: It's 1,000 won each. A: That's a bit expensive. Can you give me a discount? B: Then I'll give you three for 2,000 won. A: Good. Please give me three.",
+      "question": "사과를 몇 개 샀습니까?",
+      "question_en": "How many apples did the person buy?",
+      "explanation": {
+        "en": "A says 세 개 주세요 (Please give me three) at the end, after the discount is offered. The negotiation is about the price, but the final purchase is 3 apples.",
+        "ko": "A가 마지막에 '세 개 주세요'라고 말했습니다. 가격 흥정 후 세 개를 구매했습니다.",
+        "zh": "A在最后，也就是对方提出折扣后，说了一句“请给我三个”。虽然讨价还价的对象是价格，但最终购买的是3个苹果。",
+        "zh_TW": "A 在最後，也就是對方提出折扣後，說了「請給我三個」。雖然談判的重點是價格，但最終購買的數量是 3 顆蘋果。",
+        "ja": "Aは、値引きの提案を受けた後、最後に「3つください」と言います。交渉は価格について行われましたが、最終的に購入したのはリンゴ3個です。",
+        "es": "A dice «세 개 주세요» (Por favor, deme tres) al final, después de que se le haya ofrecido el descuento. La negociación gira en torno al precio, pero al final se compran tres manzanas.",
+        "fr": "À la fin, après que la réduction a été proposée, A dit « 세 개 주세요 » (Donnez-m'en trois, s'il vous plaît). La négociation porte sur le prix, mais l'achat final porte sur trois pommes.",
+        "de": "A sagt am Ende, nachdem der Rabatt angeboten wurde: „세 개 주세요“ (Bitte geben Sie mir drei). Bei der Verhandlung geht es um den Preis, aber letztendlich werden drei Äpfel gekauft."
+      },
+      "correct_answer": "세 개",
+      "distractors": [
+        "한 개",
+        "두 개",
+        "네 개"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q023",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: 이번 토요일에 같이 등산 갈래요? B: 미안해요. 토요일에는 약속이 있어요. A: 그럼 일요일은 어때요? B: 일요일은 괜찮아요. 몇 시에 만날까요? A: 아침 8시에 만나는 게 어때요? B: 좋아요.",
+      "script_en": "A: Do you want to go hiking together this Saturday? B: Sorry. I have an appointment on Saturday. A: Then how about Sunday? B: Sunday is fine. What time shall we meet? A: How about meeting at 8 AM? B: Sounds good.",
+      "question": "언제 등산을 가기로 했습니까?",
+      "question_en": "When did they decide to go hiking?",
+      "explanation": {
+        "en": "B declines Saturday due to a prior appointment, but agrees to Sunday (일요일은 괜찮아요 = Sunday is fine). They settle on 8 AM Sunday.",
+        "ko": "B가 토요일 약속을 이유로 거절했지만 일요일을 수락했습니다. '일요일은 괜찮아요'라고 대답했습니다.",
+        "zh": "B 因有事先安排而婉拒了周六的提议，但同意周日（일요일은 괜찮아요 = 周日没问题）。他们最终定在周日早上8点。",
+        "zh_TW": "B 因有事先約而婉拒週六，但同意週日（「週日沒問題」）。雙方最終定於週日早上 8 點。",
+        "ja": "Bは土曜日は予定があるため断ったが、日曜日は「日曜日は大丈夫です」と承諾した。二人は日曜日の午前8時に決まった。",
+        "es": "B rechaza el sábado porque tiene un compromiso previo, pero acepta el domingo («일요일은 괜찮아요» = «El domingo me viene bien»). Quedan en las 8 de la mañana del domingo.",
+        "fr": "B refuse le samedi car il a déjà un engagement, mais accepte le dimanche (일요일은 괜찮아요 = Le dimanche, ça me va). Ils se mettent d'accord sur dimanche à 8 heures du matin.",
+        "de": "B lehnt den Samstag wegen eines vorherigen Termins ab, stimmt aber dem Sonntag zu (일요일은 괜찮아요 = Sonntag passt). Sie einigen sich auf Sonntag um 8 Uhr morgens."
+      },
+      "correct_answer": "일요일",
+      "distractors": [
+        "토요일",
+        "금요일",
+        "월요일"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q024",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: 실례합니다. 이 근처에 약국이 있나요? B: 네, 이 길을 따라 쭉 가면 오른쪽에 있어요. A: 여기서 멀어요? B: 아니요, 5분쯤 걸으면 돼요. A: 감사합니다.",
+      "script_en": "A: Excuse me. Is there a pharmacy near here? B: Yes, if you go straight along this road, it's on the right. A: Is it far from here? B: No, it's about a 5-minute walk. A: Thank you.",
+      "question": "약국까지 얼마나 걸립니까?",
+      "question_en": "How long does it take to the pharmacy?",
+      "explanation": {
+        "en": "B says 5분쯤 걸으면 돼요 (it's about a 5-minute walk). The other times are not mentioned.",
+        "ko": "B가 '5분쯤 걸으면 돼요'라고 말했습니다.",
+        "zh": "B说“走5分钟左右就到了”。其他时间没有提及。",
+        "zh_TW": "B 說：「走個 5 分鐘左右就到了。」其他時間則未提及。",
+        "ja": "Bは「5分ほど歩けば着きます」と言っています。それ以外の時間は言及されていません。",
+        "es": "B dice que se tarda unos 5 minutos andando. No se mencionan los demás tiempos.",
+        "fr": "B dit : « C'est à environ 5 minutes à pied. » Les autres durées ne sont pas mentionnées.",
+        "de": "B sagt: „Das sind etwa 5 Minuten zu Fuß.“ Die anderen Zeiten werden nicht erwähnt."
+      },
+      "correct_answer": "5분",
+      "distractors": [
+        "1분",
+        "10분",
+        "15분"
+      ]
+    },
+    {
+      "id": "ko_topik1_mock_q025",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: 어제 뭐 했어요? B: 백화점에 갔어요. 가방을 하나 샀어요. A: 어떤 가방이에요? B: 까만색 가방이에요. 크기는 작지만 실용적이에요.",
+      "script_en": "A: What did you do yesterday? B: I went to the department store. I bought a bag. A: What kind of bag? B: It's a black bag. It's small but practical.",
+      "question": "어제 무엇을 샀습니까?",
+      "question_en": "What did the person buy yesterday?",
+      "explanation": {
+        "en": "B says 가방을 하나 샀어요 (I bought a bag). The follow-up describes it as a black, small but practical bag. 구두 = shoes, 모자 = hat, 시계 = watch — none are mentioned.",
+        "ko": "B가 '가방을 하나 샀어요'라고 말했고, 이어서 가방에 대한 설명을 했습니다.",
+        "zh": "B说：“我买了一个包。”后续描述中提到，这是一个黑色、小巧但实用的包。鞋子、帽子、手表——这些都没有提到。",
+        "zh_TW": "B 說：「我買了一個包包。」後續描述中提到，那是一個黑色、小巧但實用的包包。鞋子、帽子、手錶——這些都沒有被提及。",
+        "ja": "Bは「バッグを一つ買いました」と言っています。その後の説明によると、それは黒で、小さいけれど実用的なバッグだそうです。靴、帽子、時計については、いずれも言及されていません。",
+        "es": "B dice: «Me he comprado un bolso». A continuación, lo describe como un bolso negro, pequeño pero práctico. Zapatos, sombrero, reloj: no se menciona ninguno de ellos.",
+        "fr": "B dit : « J'ai acheté un sac ». La suite précise qu'il s'agit d'un petit sac noir, mais pratique. Chaussures, chapeau, montre : aucun de ces objets n'est mentionné.",
+        "de": "B sagt: „가방을 하나 샀어요“ (Ich habe eine Tasche gekauft). Im weiteren Verlauf wird sie als schwarze, kleine, aber praktische Tasche beschrieben. 구두 = Schuhe, 모자 = Hut, 시계 = Uhr – nichts davon wird erwähnt."
+      },
+      "correct_answer": "가방",
+      "distractors": [
+        "구두",
+        "모자",
+        "시계"
+      ]
+    }
+  ]
+}

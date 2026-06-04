@@ -1,0 +1,1166 @@
+{
+  "meta": {
+    "language": "ja",
+    "exam_level": "JLPT N5",
+    "total_points": 40,
+    "source": "Standard JLPT N5 grammar patterns (public knowledge, not copyrighted)",
+    "source_status": "STANDARD_REFERENCE",
+    "topics_covered": [
+      "adjectives",
+      "requests",
+      "degree",
+      "purpose",
+      "obligation",
+      "prohibition",
+      "verb_forms",
+      "basic_structure",
+      "change",
+      "comparison",
+      "permission",
+      "conjunctions",
+      "offers",
+      "expressions",
+      "simultaneous",
+      "naming",
+      "advice",
+      "listing",
+      "counters",
+      "intention",
+      "particles",
+      "ability",
+      "decision",
+      "conjecture",
+      "time",
+      "desire",
+      "giving"
+    ],
+    "translation_status": "deepl_translated_all_locales"
+  },
+  "grammar_points": [
+    {
+      "id": "ja_n5_g001",
+      "point": "です/だ — Copula",
+      "jlpt_level": "N5",
+      "teaching_order": 1,
+      "topic": "basic_structure",
+      "explanation": {
+        "en": "The copula links a subject to a noun or adjective. です is polite, だ is plain/casual. The negative is ではありません/じゃないです (polite) or ではない/じゃない (plain).",
+        "ja": "名詞や形容詞を主語に結びつける語です。丁寧形は「です」、普通形は「だ」です。",
+        "zh": "系动词用于连接主语与名词或形容词。“です”是敬语，“だ”是平语/口语。否定形式为“ではありません/じゃないです”（敬语）或“ではない/じゃない”（平语）。",
+        "zh_TW": "系動詞用來連接主語與名詞或形容詞。「です」是禮貌語，「だ」是平語／口語。否定形式為「ではありません／じゃないです」（禮貌語）或「ではない／じゃない」（平語）。",
+        "es": "La cópula une al sujeto con un sustantivo o un adjetivo. «です» es la forma cortés, mientras que «だ» es la forma sencilla o informal. La forma negativa es «ではありません/じゃないです» (cortés) o «ではない/じゃない» (sencilla).",
+        "fr": "La copule relie un sujet à un nom ou à un adjectif. « です » est la forme polie, tandis que « だ » est la forme simple/familiale. La forme négative est « ではありません/じゃないです » (polie) ou « ではない/じゃない » (simple).",
+        "de": "Das Bindewort verbindet ein Subjekt mit einem Substantiv oder Adjektiv. „です“ ist höflich, „だ“ ist umgangssprachlich. Die Verneinung lautet „ではありません/じゃないです“ (höflich) oder „ではない/じゃない“ (umgangssprachlich).",
+        "ko": "연결사는 주어를 명사나 형용사와 연결합니다. ‘です’는 정중한 표현이고, ‘だ’는 평범하거나 캐주얼한 표현입니다. 부정형은 ‘ではありません/じゃないです’(정중) 또는 ‘ではない/じゃない’(평범)입니다."
+      },
+      "structure": "Noun + です/だ",
+      "example_target": "私は学生です。",
+      "example_meaning_en": "I am a student.",
+      "example_breakdown": {
+        "私": "I",
+        "は": "topic marker",
+        "学生": "student",
+        "です": "copula (polite)"
+      },
+      "notes": "です can also follow i-adjectives in polite speech (美味しいです).",
+      "source": "Standard JLPT N5 grammar (public knowledge)",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g002",
+      "point": "ます form — Polite present/future",
+      "jlpt_level": "N5",
+      "teaching_order": 2,
+      "topic": "verb_forms",
+      "explanation": {
+        "en": "The ます form is the polite present/future tense of verbs. Formed by replacing the -u ending with -i + ます. For ru-verbs: drop る + ます. Negative: ません. Past: ました. Past negative: ませんでした.",
+        "ja": "動詞の丁寧な現在・未来形です。五段動詞は語尾をイ段に変えて「ます」、一段動詞は「る」を取って「ます」をつけます。",
+        "zh": "“ます”形式是动词的敬语现在/将来时态。其构成是将-u结尾替换为-i + ます。对于以“る”结尾的动词：去掉“る” + ます。否定形式：ません。过去时：ました。过去否定：しませんでした。",
+        "zh_TW": "「ます」形是動詞的禮貌式現在/未來時態。其構成方式是將-u結尾替換為-i + ます。對於以「る」結尾的動詞：去掉「る」加上「ます」。否定形：ません。過去式：ました。過去否定形：ませんでした。",
+        "es": "La forma «-masu» es el tiempo presente/futuro cortés de los verbos. Se forma sustituyendo la terminación «-u» por «-i + masu». Para los verbos en «ru»: se omite «ru» + «masu». Negación: «masen». Pasado: «mashita». Negación en pasado: «masen deshita».",
+        "fr": "La forme « -masu » correspond au présent et au futur de politesse des verbes. Elle se forme en remplaçant la terminaison « -u » par « -i » + « -masu ». Pour les verbes en « ru » : on supprime « ru » + « -masu ». Négatif : « -masen ». Passé : « -mashita ». Passé négatif : « -masen deshita ».",
+        "de": "Die „-masu“-Form ist die höfliche Gegenwarts- und Zukunftsform von Verben. Sie wird gebildet, indem die Endung „-u“ durch „-i + masu“ ersetzt wird. Bei Ru-Verben: „ru“ weglassen + „masu“. Verneinung: „masenai“. Vergangenheit: „mashita“. Verneinung in der Vergangenheit: „masenakatta“.",
+        "ko": "'마스'형은 동사의 정중형 현재·미래 시제입니다. -u 어미를 -i + ます로 바꾸어 만듭니다. '루'동사의 경우: る를 생략하고 ます를 붙입니다. 부정형: ません. 과거형: ました. 과거 부정형: ませんでした."
+      },
+      "structure": "Verb stem + ます/ません/ました/ませんでした",
+      "example_target": "毎日日本語を勉強します。",
+      "example_meaning_en": "I study Japanese every day.",
+      "example_breakdown": {
+        "毎日": "every day",
+        "日本語": "Japanese",
+        "を": "object marker",
+        "勉強します": "study (polite)"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g003",
+      "point": "て-form — Conjunctive/request form",
+      "jlpt_level": "N5",
+      "teaching_order": 3,
+      "topic": "verb_forms",
+      "explanation": {
+        "en": "The て-form connects verbs to other words. Formation rules: う→って, く→いて, ぐ→いで, す→して, つ→って, ぬ→んで, ぶ→んで, む→んで, る→って. Ru-verbs drop る + て. Used for requests (〜てください), linking actions, and progressive (〜ている).",
+        "ja": "動詞をつなげる形です。「〜てください」「〜ている」などの形で使います。",
+        "zh": "“て”形用于连接动词与其他词语。构成规则：う→って，く→いて，ぐ→いで，す→して，つ→って，ぬ→んで，ぶ→んで，む→んで，る→って。以“る”结尾的动词去掉“る”后加“て”。用于表达请求（〜てください）、连接动作以及进行时（〜ている）。",
+        "zh_TW": "「て」形用於將動詞與其他詞語連接起來。形成規則：う→って、く→いて、ぐ→いで、す→して、つ→って、ぬ→んで、ぶ→んで、む→んで、る→って。以「る」結尾的動詞則省略「る」並加上「て」。用於表達請求（〜てください）、連接動作，以及進行態（〜ている）。",
+        "es": "La forma «te» conecta los verbos con otras palabras. Reglas de formación: u → tte, ku → ite, gu → ide, su → shite, tsu → tte, nu → nde, bu → nde, mu → nde, ru → tte. Los verbos «ru» omiten «ru» + «te». Se utiliza para peticiones (〜てください), para encadenar acciones y para el tiempo progresivo (〜ている).",
+        "fr": "La forme « te » relie les verbes à d'autres mots. Règles de formation : u → tte, ku → ite, gu → ide, su → shite, tsu → tte, nu → nnde, bu → nnde, mu → nnde, ru → tte. Les verbes en « ru » perdent « ru » + « te ». Utilisée pour les demandes (〜てください), pour relier des actions et pour le progressif (〜ている).",
+        "de": "Die „te“-Form verbindet Verben mit anderen Wörtern. Bildungsregeln: u → tte, ku → ite, gu → ide, su → shite, tsu → tte, nu → nte, bu → nte, mu → nte, ru → tte. Bei Ru-Verben entfallen ru + te. Wird für Aufforderungen (〜てください), zur Verknüpfung von Handlungen und für die Verlaufsform (〜ている) verwendet.",
+        "ko": "'~te' 형태는 동사를 다른 단어와 연결하는 역할을 합니다. 형성 규칙: う→って, く→いて, ぐ→いで, す→して, つ→って, ぬ→んで, ぶ→んで, む→んで, る→って. 'ru'로 끝나는 동사는 'る'를 생략하고 'て'를 붙입니다. 요청(~てください), 행동의 연결, 진행형(~ている)을 나타내는 데 사용됩니다."
+      },
+      "structure": "Verb て-form + ください/いる/etc.",
+      "example_target": "ちょっと待ってください。",
+      "example_meaning_en": "Please wait a moment.",
+      "example_breakdown": {
+        "ちょっと": "a little",
+        "待って": "wait (て-form)",
+        "ください": "please"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g004",
+      "point": "た-form — Past tense (plain)",
+      "jlpt_level": "N5",
+      "teaching_order": 4,
+      "topic": "verb_forms",
+      "explanation": {
+        "en": "The た-form is the plain past tense. Formation mirrors て-form: replace て/で with た/だ. Used in casual past statements and patterns like 〜たことがある (have done).",
+        "ja": "普通形の過去形です。て形と同じ作り方で、「て」を「た」に変えます。",
+        "zh": "“た”形是普通过去时。其构成与“て”形相同：将“て/で”替换为“た/だ”。用于非正式的过去陈述句以及“〜たことがある”（曾经做过）等句式。",
+        "zh_TW": "「た」形是普通過去式。其構成方式與「て」形相同：將「て/で」替換為「た/だ」。用於非正式的過去陳述句，以及如「〜たことがある」（曾經做過）這類句型。",
+        "es": "La forma «ta» es el pasado simple. Su formación es similar a la de la forma «te»: se sustituye «te» o «de» por «ta» o «da». Se utiliza en frases informales en pasado y en construcciones como «〜ta koto ga aru» (haber hecho algo).",
+        "fr": "La forme « ta » correspond au passé simple. Sa formation est similaire à celle de la forme « te » : il suffit de remplacer « te » ou « de » par « ta » ou « da ». Elle s'utilise dans les phrases informelles au passé et dans des constructions telles que « ~ta koto ga aru » (avoir déjà fait).",
+        "de": "Die た-Form ist die einfache Vergangenheitsform. Die Bildung entspricht der て-Form: Man ersetzt て/で durch た/だ. Sie wird in umgangssprachlichen Aussagen über die Vergangenheit und in Konstruktionen wie 〜たことがある (jemals getan haben) verwendet.",
+        "ko": "‘た’형은 평범한 과거형입니다. 만드는 법은 ‘て’형과 같으며, ‘て’나 ‘で’를 ‘た’나 ‘だ’로 바꾸면 됩니다. 일상적인 과거 진술이나 ‘〜たことがある’(~한 적이 있다)와 같은 표현에 사용됩니다."
+      },
+      "structure": "Verb た-form",
+      "example_target": "もう食べた。",
+      "example_meaning_en": "I already ate.",
+      "example_breakdown": {
+        "もう": "already",
+        "食べた": "ate (plain past)"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g005",
+      "point": "ない-form — Negative (plain)",
+      "jlpt_level": "N5",
+      "teaching_order": 5,
+      "topic": "verb_forms",
+      "explanation": {
+        "en": "The ない-form is the plain negative. Formation: u-verbs change -u to -a + ない (う→わない). Ru-verbs drop る + ない. Used in patterns like 〜ないでください and 〜なければなりません.",
+        "ja": "普通形の否定形です。「〜ないでください」「〜なければなりません」などの形で使います。",
+        "zh": "“ない”形是普通否定形式。构成规则：u结尾动词将-u变为-a + ない（う→わない）。ru结尾动词去掉る + ない。用于“〜ないでください”和“〜なければなりません”等句型中。",
+        "zh_TW": "「ない」形是普通否定形式。構成方式：以「う」結尾的動詞將「-u」變為「-a」加上「ない」（う→わない）。以「る」結尾的動詞則省略「る」加上「ない」。常用於「〜ないでください」和「〜なければなりません」等句型中。",
+        "es": "La forma «nai» es la forma negativa simple. Formación: los verbos en «u» cambian la «u» por «a» + «nai» (u → uwanai). Los verbos en «ru» omiten «ru» + «nai». Se utiliza en construcciones como «~nai de kudasai» y «~nakereba narimasen».",
+        "fr": "La forme « -nai » correspond à la négation simple. Formation : les verbes en « u » changent « -u » en « -a » + « -nai » (u → uwanai). Les verbes en « ru » perdent « ru » + « -nai ». Elle s'utilise dans des constructions telles que « ~nai de kudasai » et « ~nakereba narimasen ».",
+        "de": "Die „nai“-Form ist die einfache Verneinung. Bildung: Bei Verben auf „u“ wird „-u“ zu „-a“ + „nai“ (u → uwanai). Bei Verben auf „ru“ entfällt „ru“ + „nai“. Wird in Konstruktionen wie „~te kudasai“ und „~nakeba narimasen“ verwendet.",
+        "ko": "'ない' 형태는 단순한 부정형입니다. 형성: 'う'로 끝나는 동사는 -u를 -a + ない로 바꿉니다(う→わない). 'る'로 끝나는 동사는 'る'를 생략하고 ない를 붙입니다. 〜ないでください나 〜なければなりません와 같은 문형에서 사용됩니다."
+      },
+      "structure": "Verb ない-form",
+      "example_target": "まだ食べない。",
+      "example_meaning_en": "I haven't eaten yet.",
+      "example_breakdown": {
+        "まだ": "yet/still",
+        "食べない": "don't eat (plain negative)"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g006",
+      "point": "〜たい — Want to do",
+      "jlpt_level": "N5",
+      "teaching_order": 6,
+      "topic": "expressions",
+      "explanation": {
+        "en": "Attach 〜たい to the verb stem (ます form without ます) to express desire. Conjugates like an i-adjective. Object can use either を or が.",
+        "ja": "動詞のます形（ますを除いた形）に「たい」をつけて「〜したい」という希望を表します。",
+        "zh": "在动词词干（去掉“ます”的“ます”形）后加上“〜たい”，用于表达愿望。其变位方式与i型形容词相同。宾语既可用“を”，也可用“が”。",
+        "zh_TW": "在動詞詞幹（去掉「ます」的「ます」形）後加上「〜たい」，用以表達願望。其變位方式與i型形容詞相同。賓語可使用「を」或「が」。",
+        "es": "Añade 〜たい a la raíz del verbo (forma -mas sin el -mas) para expresar deseo. Se conjuga como un adjetivo en -i. El objeto puede ir precedido de を o de が.",
+        "fr": "Ajoutez 〜たい au radical du verbe (forme -masu sans -masu) pour exprimer un désir. Se conjugue comme un adjectif en -i. Le complément d'objet peut être marqué par を ou が.",
+        "de": "Füge „〜たい“ an den Verbstamm (Masu-Form ohne „ます“) an, um einen Wunsch auszudrücken. Die Konjugation erfolgt wie bei einem i-Adjektiv. Als Objekt kann entweder „を“ oder „が“ verwendet werden.",
+        "ko": "동사 어간(‘ます’를 뺀 ‘ます’형) 뒤에 ‘〜たい’를 붙여 소망을 표현합니다. i형 형용사와 같은 어형 변화를 보입니다. 목적어에는 ‘を’나 ‘が’를 모두 사용할 수 있습니다."
+      },
+      "structure": "Verb stem + たい",
+      "example_target": "日本に行きたいです。",
+      "example_meaning_en": "I want to go to Japan.",
+      "example_breakdown": {
+        "日本": "Japan",
+        "に": "direction",
+        "行きたい": "want to go",
+        "です": "copula"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g007",
+      "point": "〜ている — Ongoing/continuous state",
+      "jlpt_level": "N5",
+      "teaching_order": 7,
+      "topic": "verb_forms",
+      "explanation": {
+        "en": "Verb て-form + いる indicates: (1) ongoing action (is doing), (2) resulting state (for momentary verbs), (3) habitual action. Casual form: 〜てる.",
+        "ja": "動作の進行中、または結果の状態を表します。「今〜している」=「今〜の途中だ」の意味です。",
+        "zh": "动词的“て”形 + “いる”表示：(1) 正在进行的动作（正在做），(2) 结果状态（适用于瞬间动词），(3) 习惯性动作。口语形式：〜てる。",
+        "zh_TW": "動詞的「て」形 + 「いる」表示：(1) 進行中的動作（正在做），(2) 結果狀態（限瞬間動詞），(3) 習慣性動作。口語形式：〜てる。",
+        "es": "La forma «te» del verbo + «iru» indica: (1) una acción en curso (está haciendo), (2) un estado resultante (para verbos momentáneos), (3) una acción habitual. Forma coloquial: 〜teru.",
+        "fr": "La forme en -te du verbe + いる indique : (1) une action en cours (est en train de faire), (2) l'état qui en résulte (pour les verbes instantanés), (3) une action habituelle. Forme familière : 〜てる.",
+        "de": "Die Verbform mit „て“ + „いる“ drückt Folgendes aus: (1) eine andauernde Handlung (ist dabei, zu tun), (2) einen daraus resultierenden Zustand (bei momentanen Verben), (3) eine gewohnheitsmäßige Handlung. Umgangssprachliche Form: 〜てる.",
+        "ko": "동사의 て형 + いる는 다음을 나타냅니다: (1) 진행 중인 행동 (하고 있다), (2) 결과 상태 (순간적인 동사의 경우), (3) 습관적인 행동. 구어체: 〜てる."
+      },
+      "structure": "Verb て-form + いる",
+      "example_target": "今、テレビを見ています。",
+      "example_meaning_en": "I am watching TV now.",
+      "example_breakdown": {
+        "今": "now",
+        "テレビ": "TV",
+        "を": "object",
+        "見ています": "am watching"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g008",
+      "point": "〜たことがある — Have done (experience)",
+      "jlpt_level": "N5",
+      "teaching_order": 8,
+      "topic": "expressions",
+      "explanation": {
+        "en": "Verb た-form + ことがある expresses having experienced something. Negative: 〜たことがない (have never done).",
+        "ja": "過去の経験を表します。「〜した経験がある」という意味です。",
+        "zh": "动词“た”形 + “ことがある”表示曾有过某种经历。否定形式：〜たことがない（从未做过）。",
+        "zh_TW": "動詞的「た」形 + 「ことがある」表示曾經有過某種經歷。否定形式：〜たことがない（從未做過）。",
+        "es": "La forma «ta» del verbo + «koto ga aru» expresa que se ha experimentado algo. Negación: «~ta koto ga nai» (nunca he hecho).",
+        "fr": "La forme « -ta » du verbe + « ことがある » exprime le fait d'avoir déjà vécu une expérience. Forme négative : « 〜たことがない » (n'avoir jamais fait).",
+        "de": "Die Verbform „ta“ + „koto ga aru“ drückt aus, dass man etwas erlebt hat. Verneinung: „~ta koto ga nai“ (noch nie getan).",
+        "ko": "동사 타형 + ‘~가 있다’는 어떤 일을 경험한 적이 있음을 나타냅니다. 부정형: ~타는 적이 없다 (한 적이 없다)."
+      },
+      "structure": "Verb た-form + ことがある",
+      "example_target": "富士山に登ったことがあります。",
+      "example_meaning_en": "I have climbed Mt. Fuji.",
+      "example_breakdown": {
+        "富士山": "Mt. Fuji",
+        "に": "location",
+        "登った": "climbed",
+        "ことがあります": "have experience of"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g009",
+      "point": "〜ましょう/〜ましょうか — Let's/Shall I?",
+      "jlpt_level": "N5",
+      "teaching_order": 9,
+      "topic": "expressions",
+      "explanation": {
+        "en": "Verb stem + ましょう = 'Let's do'. + ましょうか = 'Shall I do?' (offering). Polite volitional form.",
+        "ja": "「〜しましょう」は勧誘、「〜しましょうか」は申し出を表します。",
+        "zh": "动词词干 + ましょう = “让我们……吧”。+ ましょうか = “我来做吧？”（提议）。礼貌的意愿体。",
+        "zh_TW": "動詞詞幹 + ましょう = 「我們來做吧」。+ ましょうか = 「我來做吧？」（提議）。禮貌的意願語態。",
+        "es": "Raíz del verbo + ましょう = «Hagamos». + ましょうか = «¿Lo hago?» (propuesta). Forma volitiva cortés.",
+        "fr": "Racine du verbe + ましょう = « Faisons ». + ましょうか = « Dois-je faire ? » (proposition). Forme volitive polie.",
+        "de": "Verbstamm + ましょう = „Lasst uns …“. + ましょうか = „Soll ich …?“ (Angebot). Höfliche Willensform.",
+        "ko": "동사 어간 + ましょう = '~합시다'. + ましょうか = '~할까요?' (제안). 정중 의지형."
+      },
+      "structure": "Verb stem + ましょう(か)",
+      "example_target": "一緒に食べましょう。",
+      "example_meaning_en": "Let's eat together.",
+      "example_breakdown": {
+        "一緒に": "together",
+        "食べましょう": "let's eat"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g010",
+      "point": "〜てください — Please do (request)",
+      "jlpt_level": "N5",
+      "teaching_order": 10,
+      "topic": "requests",
+      "explanation": {
+        "en": "Verb て-form + ください makes a polite request. Negative: ない-form + でください (please don't).",
+        "ja": "丁寧な依頼を表します。「〜しないでください」は禁止の依頼です。",
+        "zh": "动词的“て”形 + “ください” 表示礼貌的请求。否定形式：动词的“ない”形 + “でください”（请不要）。",
+        "zh_TW": "動詞的「て」形 + 「ください」表示禮貌的請求。否定形式：動詞的「ない」形 + 「でください」（請不要）。",
+        "es": "La forma «te» del verbo + «kudasai» expresa una petición cortés. Negación: forma «nai» + «de kudasai» (por favor, no).",
+        "fr": "La forme « te » du verbe + « kudasai » exprime une demande polie. Formule négative : forme « nai » + « de kudasai » (s'il vous plaît, ne faites pas cela).",
+        "de": "Die Verb-Te-Form + „kudasai“ drückt eine höfliche Bitte aus. Verneinung: -nai-Form + „de kudasai“ (bitte nicht).",
+        "ko": "동사 '~테'형 + '~てください'는 정중한 요청을 나타냅니다. 부정형: '~나이'형 + '~でください' (~하지 말아 주세요)."
+      },
+      "structure": "Verb て-form + ください",
+      "example_target": "ここに名前を書いてください。",
+      "example_meaning_en": "Please write your name here.",
+      "example_breakdown": {
+        "ここに": "here",
+        "名前": "name",
+        "を": "object",
+        "書いてください": "please write"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g011",
+      "point": "〜ないでください — Please don't",
+      "jlpt_level": "N5",
+      "teaching_order": 11,
+      "topic": "requests",
+      "explanation": {
+        "en": "Verb ない-form + でください politely asks someone not to do something.",
+        "ja": "「〜しないでほしい」という丁寧な禁止依頼です。",
+        "zh": "动词的“ない”形 + “でください” 是一种礼貌地请求对方不要做某事的表达方式。",
+        "zh_TW": "動詞的「ない」形 + 「でください」是用來禮貌地請對方不要做某事的。",
+        "es": "La forma «-nai» del verbo + «de kudasai» se utiliza para pedir cortésmente a alguien que no haga algo.",
+        "fr": "La forme « -nai » du verbe + « de kudasai » sert à demander poliment à quelqu'un de ne pas faire quelque chose.",
+        "de": "Die Verbform ohne „-nai“ + „de kudasai“ ist eine höfliche Bitte, etwas nicht zu tun.",
+        "ko": "동사 ‘~ない’ 형태 + ‘でください’는 상대방에게 어떤 행동을 하지 말아 달라고 정중하게 부탁하는 표현입니다."
+      },
+      "structure": "Verb ない-form + でください",
+      "example_target": "ここで写真を撮らないでください。",
+      "example_meaning_en": "Please don't take photos here.",
+      "example_breakdown": {
+        "ここで": "here",
+        "写真": "photo",
+        "を": "object",
+        "撮らないでください": "please don't take"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g012",
+      "point": "〜てもいいですか — May I?",
+      "jlpt_level": "N5",
+      "teaching_order": 12,
+      "topic": "permission",
+      "explanation": {
+        "en": "Verb て-form + もいいですか asks for permission. Answer: はい、〜てもいいです (yes, you may) or いいえ、〜てはいけません (no, you may not).",
+        "ja": "許可を求める表現です。",
+        "zh": "动词的“て”形 + “もいいですか”用于请求许可。回答：はい、〜てもいいです（可以）或 いいえ、〜てはいけません（不可以）。",
+        "zh_TW": "動詞的「て」形 + 「もいいですか」是用來徵求許可的。回答：是，〜也可以（yes, you may）或 不行，〜不可以（no, you may not）。",
+        "es": "La forma «te» del verbo + «moidesu ka» sirve para pedir permiso. Respuesta: «Hai, ~te moidesu» (sí, puedes) o «Iie, ~te haikemasen» (no, no puedes).",
+        "fr": "La forme « te » du verbe + « mo-desu ka » sert à demander la permission. Réponse : « Hai, ~te mo ii desu » (oui, vous pouvez) ou « Iie, ~te ha ikkenai desu » (non, vous ne pouvez pas).",
+        "de": "Die Verbform mit „te“ + „mo ii desu ka“ dient dazu, um Erlaubnis zu bitten. Antwort: „Hai, ~te mo ii desu“ (Ja, das darfst du) oder „Iie, ~te wa ikenai desu“ (Nein, das darfst du nicht).",
+        "ko": "동사 '~테'형 + '~도 괜찮습니까'는 허락을 구하는 표현입니다. 대답: 네, ~해도 됩니다 (yes, you may) 또는 아니요, ~하면 안 됩니다 (no, you may not)."
+      },
+      "structure": "Verb て-form + もいいですか",
+      "example_target": "窓を開けてもいいですか。",
+      "example_meaning_en": "May I open the window?",
+      "example_breakdown": {
+        "窓": "window",
+        "を": "object",
+        "開けて": "open (て-form)",
+        "もいいですか": "is it okay if"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g013",
+      "point": "〜てはいけません — Must not",
+      "jlpt_level": "N5",
+      "teaching_order": 13,
+      "topic": "prohibition",
+      "explanation": {
+        "en": "Verb て-form + はいけません expresses prohibition. Casual: 〜てはいけない/〜ちゃだめ.",
+        "ja": "禁止を表します。「〜してはダメだ」という意味です。",
+        "zh": "动词的“て”形 + “はいけません”表示禁止。口语：〜てはいけない/〜ちゃだめ。",
+        "zh_TW": "動詞的「て」形 + 「はいけません」表示禁止。口語：〜てはいけない／〜ちゃだめ。",
+        "es": "La forma «te» del verbo + «haikemasen» expresa prohibición. Informal: ~te ikemasen/~cha dame.",
+        "fr": "La forme « te » du verbe + « はいけません » exprime une interdiction. Formule familière : 〜てはいけない / 〜ちゃだめ.",
+        "de": "Die Verbform mit „te“ + „haikenai“ drückt ein Verbot aus. Umgangssprachlich: ~te ikarenai/~cha dame.",
+        "ko": "동사 '~테' 형태 + '~해서는 안 됩니다'는 금지를 나타냅니다. 구어체: ~해서는 안 돼/~하면 안 돼."
+      },
+      "structure": "Verb て-form + はいけません",
+      "example_target": "ここでタバコを吸ってはいけません。",
+      "example_meaning_en": "You must not smoke here.",
+      "example_breakdown": {
+        "ここで": "here",
+        "タバコ": "cigarette",
+        "を": "object",
+        "吸ってはいけません": "must not smoke"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g014",
+      "point": "〜なければなりません — Must do",
+      "jlpt_level": "N5",
+      "teaching_order": 14,
+      "topic": "obligation",
+      "explanation": {
+        "en": "Verb ない-form (without い) + ければなりません means 'must/have to'. Short form: 〜なきゃ (casual).",
+        "ja": "義務・必要を表します。「〜しなければいけない」と同じ意味です。",
+        "zh": "动词的“ない”形（不带“い”）+ “ければなりません”表示“必须/不得不”。简写形式：〜なきゃ（口语）。",
+        "zh_TW": "動詞的「ない」形（不帶「い」）＋「ければなりません」表示「必須／不得不」。簡略形式：〜なきゃ（口語）。",
+        "es": "La forma «nai» del verbo (sin «i») + «ke ba narimasen» significa «debe/tiene que». Forma abreviada: 〜nakya (informal).",
+        "fr": "La forme « naï » d'un verbe (sans « i ») + « kereba narimasen » signifie « doit / il faut ». Forme abrégée : « ~nakya » (familière).",
+        "de": "Verb in der -nai-Form (ohne „i“) + „keya narimasen“ bedeutet „müssen/sollten“. Kurzform: 〜nakya (umgangssprachlich).",
+        "ko": "동사 -nai형 (い가 없는 형태) + ければなりません는 '~해야 한다'를 의미합니다. 줄임말: ~なきゃ (구어체)."
+      },
+      "structure": "Verb ない-form stem + ければなりません",
+      "example_target": "明日早く起きなければなりません。",
+      "example_meaning_en": "I must wake up early tomorrow.",
+      "example_breakdown": {
+        "明日": "tomorrow",
+        "早く": "early",
+        "起きなければなりません": "must wake up"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g015",
+      "point": "〜が — But (conjunction)",
+      "jlpt_level": "N5",
+      "teaching_order": 15,
+      "topic": "conjunctions",
+      "explanation": {
+        "en": "〜が connects two clauses meaning 'but/however'. More formal than けど. Also used as a softener (prefacing a request).",
+        "ja": "逆接の接続詞です。「しかし」「けれども」と同じ意味で、やや丁寧です。",
+        "zh": "〜が 用于连接两个分句，意为“但是/不过”。比 けど 更正式。也可用作缓和语气词（用于请求句的前面）。",
+        "zh_TW": "〜が 用來連接兩個子句，意為「但是／然而」。比「けど」更為正式。也可用作緩衝詞（用於請求句的前面）。",
+        "es": "«〜が» une dos cláusulas y significa «pero/sin embargo». Es más formal que «けど». También se utiliza para suavizar el tono (al introducir una petición).",
+        "fr": "〜が relie deux propositions et signifie « mais / cependant ». Plus formel que けど. Également utilisé pour adoucir le ton (en introduction à une demande).",
+        "de": "„〜が“ verbindet zwei Satzteile und bedeutet „aber/jedoch“. Es ist formeller als „けど“. Wird auch als Abmilderung verwendet (vor einer Bitte).",
+        "ko": "〜가는 두 문장을 연결하며 ‘하지만/그러나’라는 의미를 띱니다. ‘けど’보다 더 격식 있는 표현입니다. 또한 말을 부드럽게 하는 역할(요청을 할 때 앞부분에 붙임)로도 사용됩니다."
+      },
+      "structure": "Clause A + が + Clause B",
+      "example_target": "日本語は難しいですが、面白いです。",
+      "example_meaning_en": "Japanese is difficult, but it's interesting.",
+      "example_breakdown": {
+        "日本語": "Japanese",
+        "は": "topic",
+        "難しい": "difficult",
+        "ですが": "but (polite)",
+        "面白い": "interesting"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g016",
+      "point": "〜から — Because (reason)",
+      "jlpt_level": "N5",
+      "teaching_order": 16,
+      "topic": "conjunctions",
+      "explanation": {
+        "en": "〜から gives a reason or cause. The reason clause comes BEFORE から. More subjective than ので.",
+        "ja": "理由・原因を表します。「ので」より主観的です。",
+        "zh": "〜から 表示理由或原因。理由从句位于 から 之前。比 ので 更具主观色彩。",
+        "zh_TW": "〜から 表示理由或原因。理由子句位於 から 之前。比 ので 更具主觀性。",
+        "es": "«〜から» indica una razón o causa. La cláusula de razón va ANTES de «から». Es más subjetivo que «ので».",
+        "fr": "〜から indique une raison ou une cause. La clause de raison se place AVANT から. Plus subjectif que ので.",
+        "de": "„〜から“ gibt einen Grund oder eine Ursache an. Der Grundsatz steht VOR „から“. Subjektiver als „ので“.",
+        "ko": "〜から는 이유나 원인을 나타냅니다. 이유 절은 から 앞에 옵니다. ので보다 더 주관적인 표현입니다."
+      },
+      "structure": "Reason + から + Result",
+      "example_target": "寒いから、コートを着ます。",
+      "example_meaning_en": "Because it's cold, I'll wear a coat.",
+      "example_breakdown": {
+        "寒い": "cold",
+        "から": "because",
+        "コート": "coat",
+        "を": "object",
+        "着ます": "wear"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g017",
+      "point": "Comparison: 〜は〜より",
+      "jlpt_level": "N5",
+      "teaching_order": 17,
+      "topic": "comparison",
+      "explanation": {
+        "en": "A は B より [adjective] = A is more [adjective] than B. For questions: A と B とどちらが〜 (which is more~ between A and B?).",
+        "ja": "二つのものを比べる表現です。",
+        "zh": "A 比 B 更 [形容词] = A 比 B 更 [形容词]。用于疑问句时：A 和 B 哪个更〜（A 和 B 哪个更〜？）。",
+        "zh_TW": "A 比 B 更 [形容詞] = A 比 B 更 [形容詞]。若為疑問句：A 和 B 哪一個更〜？（A 和 B 之間哪一個更〜？）",
+        "es": "A es más [adjetivo] que B. Para formular preguntas: ¿Cuál de los dos, A o B, es más ~?",
+        "fr": "A est plus [adjectif] que B. Pour les questions : « A ou B, lequel est le plus ~ ? »",
+        "de": "A ist [Adjektiv]er als B = A ist [Adjektiv]er als B. Für Fragen: A oder B, welches ist ~ (welches ist ~er von A und B?).",
+        "ko": "A는 B보다 [형용사] = A는 B보다 [형용사]하다. 의문문: A와 B 중 어느 쪽이 ~인가?"
+      },
+      "structure": "A は B より + Adjective",
+      "example_target": "東京は大阪より大きいです。",
+      "example_meaning_en": "Tokyo is bigger than Osaka.",
+      "example_breakdown": {
+        "東京": "Tokyo",
+        "は": "topic",
+        "大阪": "Osaka",
+        "より": "than",
+        "大きい": "big"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g018",
+      "point": "〜と思います — I think that",
+      "jlpt_level": "N5",
+      "teaching_order": 18,
+      "topic": "expressions",
+      "explanation": {
+        "en": "Plain form clause + と思います expresses the speaker's thought/opinion. 〜と思っています for third person's thoughts.",
+        "ja": "話者の考え・意見を表します。",
+        "zh": "普通句式 + “と思います” 表达说话人的想法/意见。〜と思っています 用于表达第三人的想法。",
+        "zh_TW": "「平語氣句 + と思います」用來表達說話者的想法／意見。「〜と思っています」則用來表達第三人的想法。",
+        "es": "La cláusula en forma simple + «pienso que» expresa el pensamiento u opinión del hablante. «Pienso que...» se utiliza para expresar los pensamientos de una tercera persona.",
+        "fr": "La forme simple + « と思います » exprime la pensée ou l'opinion de celui qui parle. « 〜と思っています » est utilisé pour exprimer les pensées d'une personne à la troisième personne.",
+        "de": "Die einfache Form der Klausel + „と思います“ drückt die Gedanken/Meinung des Sprechers aus. „〜と思っています“ wird für die Gedanken einer dritten Person verwendet.",
+        "ko": "일반형 + ‘~라고 생각합니다’는 화자의 생각이나 의견을 나타냅니다. ‘~라고 생각합니다’는 제3자의 생각을 나타냅니다."
+      },
+      "structure": "Plain form + と思います",
+      "example_target": "明日は雨が降ると思います。",
+      "example_meaning_en": "I think it will rain tomorrow.",
+      "example_breakdown": {
+        "明日": "tomorrow",
+        "は": "topic",
+        "雨": "rain",
+        "が": "subject",
+        "降る": "fall",
+        "と思います": "I think"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g019",
+      "point": "〜ことができます — Can do (ability)",
+      "jlpt_level": "N5",
+      "teaching_order": 19,
+      "topic": "ability",
+      "explanation": {
+        "en": "Verb dictionary form + ことができます expresses ability or possibility. More formal than potential form (〜られる).",
+        "ja": "能力・可能性を表す丁寧な表現です。",
+        "zh": "动词词典形 + ことができます 表示能力或可能性。比可能形（〜られる）更正式。",
+        "zh_TW": "動詞的字典形 + 「ことができます」用來表達能力或可能性。比可能形（〜られる）更為正式。",
+        "es": "La forma verbal de base + «... ことができます» expresa capacidad o posibilidad. Es más formal que la forma potencial (〜られる).",
+        "fr": "La forme verbale de base + ことができます exprime la capacité ou la possibilité. Elle est plus formelle que la forme potentielle (〜られる).",
+        "de": "Die Verbform im Grundform + ことができます drückt Fähigkeit oder Möglichkeit aus. Formeller als die Potenzform (〜られる).",
+        "ko": "동사의 기본형 + ‘~ることができます’는 능력이나 가능성을 나타냅니다. ‘~られる’ 형태보다 더 격식 있는 표현입니다."
+      },
+      "structure": "Dictionary form + ことができます",
+      "example_target": "私は日本語を話すことができます。",
+      "example_meaning_en": "I can speak Japanese.",
+      "example_breakdown": {
+        "私": "I",
+        "日本語": "Japanese",
+        "を": "object",
+        "話す": "speak",
+        "ことができます": "can"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g020",
+      "point": "〜前に/〜後で — Before/After",
+      "jlpt_level": "N5",
+      "teaching_order": 20,
+      "topic": "time",
+      "explanation": {
+        "en": "Verb dictionary form + 前に = before doing. Verb た-form + 後で = after doing. Noun + の + 前/後.",
+        "ja": "時間的前後関係を表します。",
+        "zh": "动词词典形 + 前に = 做之前。动词“た”形 + 後で = 做之后。名词 + の + 前/後。",
+        "zh_TW": "動詞詞典形 + 前に = 做之前。動詞 た形 + 後で = 做之後。名詞 + の + 前/後。",
+        "es": "Forma verbal de base + 前に = antes de hacer. Forma «ta» del verbo + 後で = después de hacer. Sustantivo + の + 前/後.",
+        "fr": "Forme de base du verbe + 前に = avant d'avoir fait. Forme « た » du verbe + 後で = après avoir fait. Nom + の + 前/後.",
+        "de": "Verb in der Grundform + 前に = vor dem Tun. Verb in der た-Form + 後で = nach dem Tun. Substantiv + の + 前/後.",
+        "ko": "동사의 기본형 + 前に = ~하기 전. 동사의 타형 + 後で = ~한 후. 명사 + の + 前/後."
+      },
+      "structure": "Dict. form + 前に / た-form + 後で",
+      "example_target": "寝る前に歯を磨きます。",
+      "example_meaning_en": "I brush my teeth before sleeping.",
+      "example_breakdown": {
+        "寝る": "sleep",
+        "前に": "before",
+        "歯": "teeth",
+        "を": "object",
+        "磨きます": "brush"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g021",
+      "point": "〜たり〜たりする — Do things like",
+      "jlpt_level": "N5",
+      "teaching_order": 21,
+      "topic": "listing",
+      "explanation": {
+        "en": "Verb た-form + り + verb た-form + りする lists examples of actions. Implies other actions also occurred.",
+        "ja": "動作の例を列挙する表現です。他にもあることを暗示します。",
+        "zh": "动词“た”形 + “り” + 动词“た”形 + “する”的句式列举了一系列动作。暗示还发生了其他动作。",
+        "zh_TW": "動詞 た形 + り + 動詞 た形 + りする 列舉了各種動作的例子。暗示還有其他動作也發生了。",
+        "es": "La forma «-ta» del verbo + «-ri» + la forma «-ta» del verbo + «-ru» enumera ejemplos de acciones. Da a entender que también se produjeron otras acciones.",
+        "fr": "La forme « -ta » du verbe + « ri » + la forme « -ta » du verbe + « suru » énumère des exemples d'actions. Cela sous-entend que d'autres actions se sont également produites.",
+        "de": "Verb in der -ta-Form + ri + Verb in der -ta-Form + suru listet Beispiele für Handlungen auf. Deutet darauf hin, dass auch andere Handlungen stattfanden.",
+        "ko": "동사 타형 + 리 + 동사 타형 + 리하는 형식은 일련의 행동들을 나열합니다. 이 표현은 그 외에도 다른 행동들이 일어났음을 암시합니다."
+      },
+      "structure": "V1 たり + V2 たりする",
+      "example_target": "週末は映画を見たり、買い物をしたりします。",
+      "example_meaning_en": "On weekends I do things like watch movies and go shopping.",
+      "example_breakdown": {
+        "週末": "weekend",
+        "映画": "movie",
+        "見たり": "watch (etc.)",
+        "買い物": "shopping",
+        "したりします": "do things like"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g022",
+      "point": "〜くなる/〜になる — Become",
+      "jlpt_level": "N5",
+      "teaching_order": 22,
+      "topic": "change",
+      "explanation": {
+        "en": "I-adjective: drop い + くなる (become adj). Na-adjective/Noun + になる (become). Expresses change of state.",
+        "ja": "状態の変化を表します。い形容詞は「く」、な形容詞・名詞は「に」を使います。",
+        "zh": "I型形容词：去掉“い”后接“くなる”（表示“变得……的”）。Na型形容词/名词 + “になる”（表示“变成……的”）。用于表达状态的变化。",
+        "zh_TW": "「い」形形容詞：去掉「い」加上「くなる」（表示「變成」）。「な」形形容詞／名詞加上「になる」（表示「變成」）。用來表達狀態的變化。",
+        "es": "Adjetivo «i»: se elimina el «i» + «naru» (convertirse en adj.). Adjetivo «na»/sustantivo + «naru» (convertirse en). Expresa un cambio de estado.",
+        "fr": "Adjectif en -i : supprimer « い » + « くなる » (devenir [adjectif]). Adjectif en -na / nom + « になる » (devenir). Exprime un changement d'état.",
+        "de": "I-Adjektiv: い weglassen + くなる (zu … werden). Na-Adjektiv/Substantiv + になる (zu … werden). Drückt eine Zustandsänderung aus.",
+        "ko": "I-형용사: ‘い’를 뺀 뒤 ‘なる’를 붙임(~하게 됨). Na-형용사/명사 + ‘になる’(~하게 됨). 상태의 변화를 나타냅니다."
+      },
+      "structure": "Adj(く) / Noun + になる",
+      "example_target": "大きくなりました。",
+      "example_meaning_en": "It became big. / You've grown.",
+      "example_breakdown": {
+        "大きく": "big (adverbial)",
+        "なりました": "became"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g023",
+      "point": "Particles: は・が・を・に・で・へ",
+      "jlpt_level": "N5",
+      "teaching_order": 23,
+      "topic": "particles",
+      "explanation": {
+        "en": "Core particles: は (topic/contrast), が (subject/identifier), を (direct object), に (direction/time/purpose), で (location of action/means), へ (direction toward).",
+        "ja": "日本語の基本助詞です。それぞれ異なる文法関係を示します。",
+        "zh": "核心助词：は（主题/对比），が（主语/限定词），を（直接宾语），に（方向/时间/目的），で（动作地点/手段），へ（前往的方向）。",
+        "zh_TW": "核心助詞：は（主題／對比）、が（主語／指代詞）、を（直接賓語）、に（方向／時間／目的）、で（動作地點／手段）、へ（朝向）。",
+        "es": "Partículas básicas: は (tema/contraste), が (sujeto/identificador), を (objeto directo), に (dirección/tiempo/propósito), で (lugar de la acción/medio), へ (dirección hacia).",
+        "fr": "Particules de base : は (thème/contraste), が (sujet/identificateur), を (complément d'objet direct), に (direction/temps/but), で (lieu de l'action/moyen), へ (direction vers).",
+        "de": "Kernpartikel: は (Thema/Kontrast), が (Subjekt/Bezeichner), を (Objekt), に (Richtung/Zeit/Zweck), で (Handlungsort/Mittel), へ (Richtung).",
+        "ko": "핵심 어미: は (주제/대비), が (주어/지시어), を (목적어), に (방향/시간/목적), で (행동의 장소/수단), へ (향하는 방향)."
+      },
+      "structure": "Noun + particle",
+      "example_target": "私は学校で日本語を勉強します。",
+      "example_meaning_en": "I study Japanese at school.",
+      "example_breakdown": {
+        "私": "I",
+        "は": "topic",
+        "学校": "school",
+        "で": "at (action location)",
+        "日本語": "Japanese",
+        "を": "object",
+        "勉強します": "study"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g024",
+      "point": "Questions: か・ね・よ",
+      "jlpt_level": "N5",
+      "teaching_order": 24,
+      "topic": "particles",
+      "explanation": {
+        "en": "か = question marker (polite). ね = tag question/seeking agreement (isn't it?). よ = emphasis/informing (you know). Often combined: よね (right?).",
+        "ja": "文末に付けて疑問・確認・強調などを表す終助詞です。",
+        "zh": "か = 疑问助词（礼貌语）。ね = 确认语气词（是吧？）。よ = 强调语气词/告知语气词（你知道吧）。常组合使用：よね（对吧？）。",
+        "zh_TW": "か = 疑問詞（禮貌語）。ね = 確認語/徵求同意（不是嗎？）。よ = 強調/告知（你知道吧）。常組合使用：よね（對吧？）。",
+        "es": "か = partícula interrogativa (formal). ね = partícula de confirmación/búsqueda de acuerdo (¿verdad?). よ = partícula de énfasis/información (ya sabes). A menudo se combinan: よね (¿verdad?).",
+        "fr": "か = marqueur interrogatif (formule de politesse). ね = question de confirmation/appel à l'assentiment (n'est-ce pas ?). よ = emphase/information (tu sais bien). Souvent combinés : よね (n'est-ce pas ?).",
+        "de": "か = Fragepartikel (höflich). ね = Bestätigungsfrage/Bitten um Zustimmung (nicht wahr?). よ = Betonung/Hinweis (weißt du). Oft kombiniert: よね (nicht wahr?).",
+        "ko": "か = 질문 어미 (정중체). ね = 확인 질문/동의 구하기 (그렇지 않나요?). よ = 강조/알림 (알다시피). 자주 결합되는 형태: よね (그렇죠?)."
+      },
+      "structure": "Sentence + か/ね/よ",
+      "example_target": "いい天気ですね。",
+      "example_meaning_en": "Nice weather, isn't it?",
+      "example_breakdown": {
+        "いい": "good",
+        "天気": "weather",
+        "です": "copula",
+        "ね": "isn't it?"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g025",
+      "point": "〜ましょうか — Shall I? (offering)",
+      "jlpt_level": "N5",
+      "teaching_order": 25,
+      "topic": "offers",
+      "explanation": {
+        "en": "Verb stem + ましょうか offers to do something for someone. More polite than plain ましょう.",
+        "ja": "相手のために何かをすることを申し出る表現です。",
+        "zh": "动词词干 + ましょうか 表示愿意为某人做某事。比普通的 ましょう 更礼貌。",
+        "zh_TW": "動詞詞幹 + ましょうか 表示願意為某人做某事。比單純的 ましょう 更為禮貌。",
+        "es": "La forma básica del verbo + «...ましょうか» propone hacer algo por alguien. Es más cortés que el simple «...ましょう».",
+        "fr": "La forme de base du verbe + « ましょうか » propose de faire quelque chose pour quelqu'un. C'est plus poli que le simple « ましょう ».",
+        "de": "Die Form „Verbstamm + ましょうか“ drückt an, jemandem etwas anzubieten. Sie ist höflicher als die einfache Form „ましょう“.",
+        "ko": "동사 어간 + ましょう카는 누군가를 위해 무언가를 해 주겠다고 제안하는 표현입니다. 단순한 ましょう보다 더 정중한 표현입니다."
+      },
+      "structure": "Verb stem + ましょうか",
+      "example_target": "手伝いましょうか。",
+      "example_meaning_en": "Shall I help you?",
+      "example_breakdown": {
+        "手伝い": "help (stem)",
+        "ましょうか": "shall I"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g026",
+      "point": "Counters: 〜つ・〜人・〜枚・〜本",
+      "jlpt_level": "N5",
+      "teaching_order": 26,
+      "topic": "counters",
+      "explanation": {
+        "en": "Japanese uses counter words: 〜つ (general items, native numbers 1-10), 〜人 (にん, people), 〜枚 (まい, flat objects), 〜本 (ほん, long cylindrical), 〜冊 (さつ, books), 〜匹 (ひき, small animals), 〜台 (だい, machines).",
+        "ja": "物を数える時に使う接尾辞（助数詞）です。数える物によって使う助数詞が変わります。",
+        "zh": "日语使用量词：〜つ（一般物品，1-10的自然数），〜人（にん，人），〜枚（まい，扁平物体），〜本（ほん，细长圆柱形物体），〜册（さつ，书），〜匹（ひき，小型动物），〜台（だい，机器）。",
+        "zh_TW": "日語使用計數詞：〜つ（一般物品、1至10的自然數）、〜人（にん，人）、〜枚（まい，扁平物）、〜本（ほん，長條狀物）、〜冊（さつ，書）、〜匹（ひき，小型動物）、〜台（だい，機器）。",
+        "es": "En japonés se utilizan los siguientes marcadores de cantidad: 〜つ (objetos generales, números del 1 al 10), 〜人 (nin, personas), 〜枚 (mai, objetos planos), 〜本 (hon, objetos cilíndricos alargados), 〜冊 (satsu, libros), 〜匹 (hiki, animales pequeños) y 〜台 (dai, máquinas).",
+        "fr": "En japonais, on utilise des suffixes de quantité : 〜つ (pour les objets généraux et les nombres de 1 à 10), 〜人 (にん, pour les personnes), 〜枚 (まい, pour les objets plats), 〜本 (ほん, pour les objets longs et cylindriques), 〜冊 (さつ, pour les livres), 〜匹 (ひき, pour les petits animaux), 〜台 (だい, pour les machines).",
+        "de": "Im Japanischen werden Zählwörter verwendet: 〜つ (allgemeine Gegenstände, natürliche Zahlen 1–10), 〜人 (nin, Personen), 〜枚 (mai, flache Gegenstände), 〜本 (hon, lange, zylindrische Gegenstände), 〜冊 (satsu, Bücher), 〜匹 (hiki, kleine Tiere), 〜台 (dai, Maschinen).",
+        "ko": "일본어에는 수량 표현어가 사용됩니다: 〜つ (일반적인 물건, 1~10까지의 자연수), 〜人 (にん, 사람), 〜枚 (まい, 납작한 물건), 〜本 (ほん, 길쭉한 원통형 물건), 〜冊 (さつ, 책), 〜匹 (ひき, 작은 동물), 〜台 (だい, 기계)."
+      },
+      "structure": "Number + Counter",
+      "example_target": "りんごを三つください。",
+      "example_meaning_en": "Please give me three apples.",
+      "example_breakdown": {
+        "りんご": "apples",
+        "を": "object",
+        "三つ": "three (general)",
+        "ください": "please"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g027",
+      "point": "Time expressions: に particle",
+      "jlpt_level": "N5",
+      "teaching_order": 27,
+      "topic": "time",
+      "explanation": {
+        "en": "Use に after specific time expressions: clock times, days, dates. Do NOT use に with relative times: 今日, 明日, 毎日, 今, 先週, etc. Also used with 〜時 (o'clock) and 〜曜日 (day of week).",
+        "ja": "特定の時間を表す語に「に」をつけます。「今日」「毎日」など相対的な時間にはつけません。",
+        "zh": "在具体的时间表达（如整点、日期、星期等）后使用“に”。切勿在相对时间（如“今日”、“明日”、“每天”、“现在”、“上周”等）后使用“に”。也可与“〜时”和“〜星期”搭配使用。",
+        "zh_TW": "在特定時間表述後使用「に」，例如：整點時間、星期、日期。請勿在相對時間表述後使用「に」，例如：今日、明日、每天、現在、上週等。亦可用於「〜時」及「〜曜日」。",
+        "es": "Utiliza «に» después de expresiones de tiempo concretas: horas, días y fechas. NO utilices «に» con expresiones de tiempo relativas: hoy, mañana, todos los días, ahora, la semana pasada, etc. También se utiliza con «〜時» (en punto) y «〜曜日» (día de la semana).",
+        "fr": "Utilisez « に » après des expressions temporelles précises : heures, jours, dates. N'utilisez PAS « に » avec des expressions temporelles relatives : 今日, 明日, 毎日, 今, 先週, etc. On l'utilise également avec « 〜時 » (heures) et « 〜曜日 » (jours de la semaine).",
+        "de": "Verwende „に“ nach konkreten Zeitangaben: Uhrzeiten, Tage, Daten. Verwende „に“ NICHT bei relativen Zeitangaben: 今日, 明日, 毎日, 今, 先週 usw. Wird auch mit 〜時 (Uhrzeit) und 〜曜日 (Wochentag) verwendet.",
+        "ko": "특정 시간 표현(시각, 요일, 날짜 등) 뒤에는 ‘に’를 사용합니다. 상대적 시간 표현(오늘, 내일, 매일, 지금, 지난주 등) 뒤에는 ‘に’를 사용하지 마십시오. 또한 ‘〜時’와 ‘〜曜日’와 함께 사용할 때도 ‘に’를 씁니다."
+      },
+      "structure": "Time + に (+ Action)",
+      "example_target": "毎朝7時に起きます。",
+      "example_meaning_en": "I wake up at 7 every morning.",
+      "example_breakdown": {
+        "毎朝": "every morning",
+        "7時": "7 o'clock",
+        "に": "at",
+        "起きます": "wake up"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g028",
+      "point": "〜ている for habits",
+      "jlpt_level": "N5",
+      "teaching_order": 28,
+      "topic": "verb_forms",
+      "explanation": {
+        "en": "〜ている can express habitual actions, especially with frequency words like 毎日, よく, 時々. This is different from the progressive meaning.",
+        "ja": "「毎日」「よく」などの頻度を表す語と一緒に使うと、習慣を表します。",
+        "zh": "〜ている可以表示习惯性动作，尤其是搭配“每天”、“经常”、“有时”等表示频率的词时。这与进行时含义不同。",
+        "zh_TW": "〜ている 可以用來表達習慣性動作，特別是搭配「每天」、「經常」、「偶爾」等表示頻率的詞語時。這與進行時的意思不同。",
+        "es": "La forma 〜ている puede expresar acciones habituales, sobre todo cuando se acompaña de palabras que indican frecuencia, como 毎日, よく o 時々. Esto difiere del significado del tiempo progresivo.",
+        "fr": "La forme 〜ている peut exprimer des actions habituelles, notamment lorsqu'elle est accompagnée de mots indiquant la fréquence, tels que 毎日, よく ou 時々. Cela diffère de la signification du participe continu.",
+        "de": "〜ている kann gewohnheitsmäßige Handlungen ausdrücken, insbesondere in Verbindung mit Wörtern, die die Häufigkeit angeben, wie 毎日, よく oder 時々. Dies unterscheidet sich von der Bedeutung des Fortlaufens.",
+        "ko": "〜ている 형태는 습관적인 행동을 나타낼 수 있으며, 특히 毎日, よく, 時々과 같은 빈도 표현과 함께 사용될 때 더욱 그렇습니다. 이는 진행형 의미와는 다릅니다."
+      },
+      "structure": "Verb て-form + いる (+ frequency word)",
+      "example_target": "毎日ジョギングをしています。",
+      "example_meaning_en": "I jog every day. (habit)",
+      "example_breakdown": {
+        "毎日": "every day",
+        "ジョギング": "jogging",
+        "を": "object",
+        "しています": "do (habitual)"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g029",
+      "point": "〜がほしい — Want (noun)",
+      "jlpt_level": "N5",
+      "teaching_order": 29,
+      "topic": "desire",
+      "explanation": {
+        "en": "Noun + がほしい expresses wanting something. For actions use 〜たい. ほしい conjugates as i-adjective. Cannot be used directly for third person desire (use 〜がほしがっている).",
+        "ja": "物を欲しがる時に使います。動作をしたい時は「〜たい」を使います。",
+        "zh": "名词 + がほしい 表示想要某物。表示动作时使用 〜たい。ほしい 按i-形容词变化。不能直接用于表达第三人称的愿望（应使用 〜がほしがっている）。",
+        "zh_TW": "名詞 + がほしい 表示想要某物。若表示動作，則使用 〜たい。ほしい 的活用形式與 i 類形容詞相同。不能直接用於第三人稱的慾望（應使用 〜がほしがっている）。",
+        "es": "El sustantivo + がほしい expresa el deseo de algo. Para acciones, se utiliza 〜たい. ほしい se conjuga como un adjetivo en -i. No se puede usar directamente para expresar el deseo en tercera persona (se utiliza 〜がほしがっている).",
+        "fr": "La construction « nom + がほしい » exprime le fait de vouloir quelque chose. Pour les actions, on utilise « 〜たい ». « ほしい » se conjugue comme un adjectif en -i. On ne peut pas l'utiliser directement pour exprimer le désir à la troisième personne (il faut utiliser « 〜がほしがっている »).",
+        "de": "Das Substantiv + がほしい drückt den Wunsch nach etwas aus. Für Handlungen verwende 〜たい. ほしい wird wie ein i-Adjektiv konjugiert. Kann nicht direkt für den Wunsch in der dritten Person verwendet werden (verwende 〜がほしがっている).",
+        "ko": "명사 + ‘가ほしい’는 무언가를 원한다는 뜻을 나타냅니다. 행동을 표현할 때는 ‘〜たい’를 사용합니다. ‘ほしい’는 i형 형용사처럼 활용됩니다. 3인칭의 욕구를 직접 표현할 때는 사용할 수 없으며(‘〜がほしがっている’를 사용해야 함),"
+      },
+      "structure": "Noun + がほしい",
+      "example_target": "新しいカメラがほしいです。",
+      "example_meaning_en": "I want a new camera.",
+      "example_breakdown": {
+        "新しい": "new",
+        "カメラ": "camera",
+        "が": "subject",
+        "ほしい": "want",
+        "です": "copula"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g030",
+      "point": "〜に行く — Go to do",
+      "jlpt_level": "N5",
+      "teaching_order": 30,
+      "topic": "purpose",
+      "explanation": {
+        "en": "Verb stem (ます form without ます) or Noun + に行く/来る expresses going/coming to do something. Purpose of movement.",
+        "ja": "移動の目的を表します。「〜しに行く」と同じ意味です。",
+        "zh": "动词词干（去掉“ます”的“ます”形）或名词 + に行く/来る，表示去某地做某事或从某地来做某事。表示移动的目的。",
+        "zh_TW": "動詞詞幹（去掉「ます」的「ます」形）或名詞 + に行く／来る，表示前往某處做某事。此為移動的目的。",
+        "es": "La raíz del verbo (forma «mas» sin «mas») o un sustantivo + «iku/kuru» expresa el hecho de ir o venir a hacer algo. El propósito del desplazamiento.",
+        "fr": "Le radical du verbe (forme en «-masu » sans «-masu ») ou un nom + « iku/kuru » exprime le fait d'aller ou de venir pour faire quelque chose. But du déplacement.",
+        "de": "Verbstamm (in der -masu-Form ohne „masu“) oder Substantiv + に行く/来る drückt aus, dass man irgendwohin geht oder kommt, um etwas zu tun. Zweck der Bewegung.",
+        "ko": "동사 어간(‘ます’ 형태에서 ‘ます’를 뺀 형태) 또는 명사 + ‘に行く/来る’는 무언가를 하러 가거나 오는 것을 나타냅니다. 이동의 목적을 나타냅니다."
+      },
+      "structure": "Verb stem / Noun + に行く",
+      "example_target": "図書館へ勉強しに行きます。",
+      "example_meaning_en": "I go to the library to study.",
+      "example_breakdown": {
+        "図書館": "library",
+        "へ": "toward",
+        "勉強し": "study (stem)",
+        "に": "purpose",
+        "行きます": "go"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g031",
+      "point": "〜ほうがいい — Should/Had better",
+      "jlpt_level": "N5",
+      "teaching_order": 31,
+      "topic": "advice",
+      "explanation": {
+        "en": "Verb た-form/ない-form + ほうがいい gives advice ('should/shouldn't'). た-form for positive, ない-form for negative advice.",
+        "ja": "助言・忠告を表します。「〜した方が良い」「〜しない方が良い」の形で使います。",
+        "zh": "动词的“た”形/“ない”形 + “ほうがいい”表示建议（“应该/不应该”）。“た”形用于肯定建议，“ない”形用于否定建议。",
+        "zh_TW": "動詞的「た」形／「ない」形 + 「ほうがいい」用來提出建議（表示「應該／不應該」）。「た」形用於肯定建議，「ない」形用於否定建議。",
+        "es": "La forma «ta» del verbo + la forma «nai» + «... better» expresa un consejo («deberías/no deberías»). Se utiliza la forma «ta» para consejos afirmativos y la forma «nai» para consejos negativos.",
+        "fr": "La forme « た » ou « ない » d'un verbe suivie de « ほうがいい » exprime un conseil (« il vaut mieux / il ne vaut mieux pas »). On utilise la forme « た » pour les conseils positifs et la forme « ない » pour les conseils négatifs.",
+        "de": "Verb in der た-Form/ない-Form + ほうがいい drückt einen Ratschlag aus („sollte/sollte nicht“). Die た-Form wird für positive Ratschläge verwendet, die ない-Form für negative.",
+        "ko": "동사의 ‘타형’ 또는 ‘나형’에 ‘~가 좋다’를 붙이면 조언(‘~하는 편이 좋다/~하지 않는 편이 좋다’)을 표현합니다. 긍정적인 조언에는 ‘타형’을, 부정적인 조언에는 ‘나형’을 사용합니다."
+      },
+      "structure": "Vた/Vない + ほうがいい",
+      "example_target": "早く寝たほうがいいですよ。",
+      "example_meaning_en": "You should go to bed early.",
+      "example_breakdown": {
+        "早く": "early",
+        "寝た": "slept",
+        "ほうがいい": "should",
+        "ですよ": "(emphasis)"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g032",
+      "point": "〜でしょう — Probably (conjecture)",
+      "jlpt_level": "N5",
+      "teaching_order": 32,
+      "topic": "conjecture",
+      "explanation": {
+        "en": "〜でしょう expresses probability or seeking confirmation. Rising intonation = asking for agreement. Casual form: 〜だろう.",
+        "ja": "推量・確認を表します。上昇調で言うと確認の意味になります。",
+        "zh": "〜でしょう 表示可能性或寻求确认。语调上扬 = 征求同意。口语形式：〜だろう。",
+        "zh_TW": "〜でしょう 表示可能性或徵求確認。語調上揚 = 徵求同意。口語形式：〜だろう。",
+        "es": "«〜でしょう» expresa probabilidad o busca confirmación. La entonación ascendente indica que se busca la confirmación. Forma informal: «〜だろう».",
+        "fr": "〜でしょう exprime une probabilité ou une demande de confirmation. Intonation ascendante = demande d'approbation. Forme familière : 〜だろう.",
+        "de": "„〜でしょう“ drückt eine Wahrscheinlichkeit aus oder dient dazu, eine Bestätigung einzuholen. Steigende Intonation = um Zustimmung bitten. Umgangssprachliche Form: „〜だろう“.",
+        "ko": "〜でしょう는 가능성을 나타내거나 확인을 구하는 표현입니다. 억양이 올라가는 것은 동의를 구하는 의미입니다. 비공식적인 형태: 〜だろう."
+      },
+      "structure": "Plain form + でしょう",
+      "example_target": "明日は晴れるでしょう。",
+      "example_meaning_en": "It will probably be sunny tomorrow.",
+      "example_breakdown": {
+        "明日": "tomorrow",
+        "晴れる": "be sunny",
+        "でしょう": "probably"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g033",
+      "point": "〜すぎる — Too much",
+      "jlpt_level": "N5",
+      "teaching_order": 33,
+      "topic": "degree",
+      "explanation": {
+        "en": "Verb stem / i-adj (drop い) + すぎる = too much. Na-adj + すぎる = too (adjective). Expresses excess.",
+        "ja": "程度が過剰であることを表します。「過ぎる」という動詞から来ています。",
+        "zh": "动词词干 / i-形容词（去掉“い”）+ すぎる = 太……了。Na-形容词 + すぎる = 太……了（形容词）。表示过分。",
+        "zh_TW": "動詞詞幹 / i-形容詞（去掉「い」）＋ すぎる = 太……了。Na-形容詞 ＋ すぎる = 太……（形容詞）。用以表達過度。",
+        "es": "Raíz verbal / adjetivo en -i (sin la terminación «i») + すぎる = demasiado. Adjetivo en -na + すぎる = demasiado (adjetivo). Expresa exceso.",
+        "fr": "Radical du verbe / adjectif en -i (sans le « i ») + すぎる = « trop ». Adjectif en -na + すぎる = « trop (adjectif) ». Exprime l'excès.",
+        "de": "Verbstamm / i-Adjektiv (ohne „i“) + すぎる = zu … Na-Adjektiv + すぎる = zu … (Adjektiv). Drückt Übermaß aus.",
+        "ko": "동사 어간 / i-형 형용사(‘い’를 뺀 형태) + すぎる = ~하기 너무. Na-형 형용사 + すぎる = ~하기 너무(형용사). 과함을 나타냅니다."
+      },
+      "structure": "Stem + すぎる",
+      "example_target": "食べすぎました。",
+      "example_meaning_en": "I ate too much.",
+      "example_breakdown": {
+        "食べ": "eat (stem)",
+        "すぎました": "too much (polite past)"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g034",
+      "point": "〜ながら — While doing",
+      "jlpt_level": "N5",
+      "teaching_order": 34,
+      "topic": "simultaneous",
+      "explanation": {
+        "en": "Verb stem + ながら expresses doing two actions simultaneously. The main action comes second.",
+        "ja": "二つの動作を同時にすることを表します。主な動作は後に来ます。",
+        "zh": "动词词干 + ながら 表示同时进行两个动作。主要动作放在后面。",
+        "zh_TW": "動詞詞幹 + ながら 表示同時進行兩項動作。主要動作放在後面。",
+        "es": "La forma básica del verbo + «nagara» expresa la realización simultánea de dos acciones. La acción principal va en segundo lugar.",
+        "fr": "La forme de base du verbe + « ながら » exprime la réalisation simultanée de deux actions. L'action principale vient en second lieu.",
+        "de": "Der Verbstamm + ながら drückt aus, dass zwei Handlungen gleichzeitig ausgeführt werden. Die Haupthandlung steht an zweiter Stelle.",
+        "ko": "동사 어간 + ながら는 두 가지 행동을 동시에 하는 것을 나타냅니다. 주된 행동은 뒤에 옵니다."
+      },
+      "structure": "Verb stem + ながら + Main action",
+      "example_target": "音楽を聞きながら勉強します。",
+      "example_meaning_en": "I study while listening to music.",
+      "example_breakdown": {
+        "音楽": "music",
+        "を": "object",
+        "聞き": "listen (stem)",
+        "ながら": "while",
+        "勉強します": "study"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g035",
+      "point": "〜と言います — Called/Named",
+      "jlpt_level": "N5",
+      "teaching_order": 35,
+      "topic": "naming",
+      "explanation": {
+        "en": "Noun + と言います introduces names ('is called'). For self-introduction: 〜と申します (more formal).",
+        "ja": "名前や呼び方を紹介する時に使います。",
+        "zh": "“Noun + と言います”表示“名字是……”。用于自我介绍时：〜と申します（更正式）。",
+        "zh_TW": "「名詞 + 曰」用來表示名稱（意為「名為」）。用於自我介紹時：〜と申します（較為正式）。",
+        "es": "«Nombre + と言います» sirve para presentar nombres («se llama»). Para presentarse: 〜と申します (más formal).",
+        "fr": "« Noun + と言います » signifie « s'appelle ». Pour se présenter : « 〜と申します » (plus formel).",
+        "de": "„Noun + と言います“ bedeutet „heißt“ (bezieht sich auf Namen). Zur Selbstvorstellung: 〜と申します (formeller).",
+        "ko": "명사 + 라고 합니다는 이름을 소개할 때 사용됩니다('~라고 합니다'). 자기소개 시: ~라고 합니다 (더 정중한 표현)."
+      },
+      "structure": "Name + と言います",
+      "example_target": "これは日本語で何と言いますか。",
+      "example_meaning_en": "What is this called in Japanese?",
+      "example_breakdown": {
+        "これ": "this",
+        "は": "topic",
+        "日本語": "Japanese",
+        "で": "in",
+        "何": "what",
+        "と": "quoting",
+        "言いますか": "is called?"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g036",
+      "point": "〜のが上手/下手 — Good/Bad at",
+      "jlpt_level": "N5",
+      "teaching_order": 36,
+      "topic": "ability",
+      "explanation": {
+        "en": "Verb dictionary form + のが上手/下手です = good/bad at doing. Noun + が上手/下手です.",
+        "ja": "技能の優劣を表します。「のが」は名詞化の「の」+「が」です。",
+        "zh": "动词词典形式 + “……很擅长/不擅长” = 擅长/不擅长做……；名词 + “……很擅长/不擅长”。",
+        "zh_TW": "動詞的字典形式 + 「……のが上手/下手です」= 擅長/不擅長做……；名詞 + 「……が上手/下手です」。",
+        "es": "Forma verbal + «es bueno/malo en...» = ser bueno/malo en hacer algo. Sustantivo + «es bueno/malo en...».",
+        "fr": "Forme verbale + « est doué/maladroit pour » = être doué/maladroit pour faire quelque chose. Nom + « est doué/maladroit pour ».",
+        "de": "Verb in der Grundform + „ga“ + „jōzu/tetanai desu“ = gut/schlecht darin. Substantiv + „ga“ + „jōzu/tetanai desu“.",
+        "ko": "동사 원형 + ~하는 것이 잘/못합니다 = ~하는 데 능숙하다/서툴다. 명사 + ~하는 것이 잘/못합니다."
+      },
+      "structure": "Dict. form + のが上手/下手",
+      "example_target": "私は料理を作るのが下手です。",
+      "example_meaning_en": "I am bad at cooking.",
+      "example_breakdown": {
+        "料理": "cooking",
+        "を": "object",
+        "作る": "make",
+        "のが": "nominalizer + subject",
+        "下手": "unskillful"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g037",
+      "point": "〜にする — Decide on/Choose",
+      "jlpt_level": "N5",
+      "teaching_order": 37,
+      "topic": "decision",
+      "explanation": {
+        "en": "Noun + にする = decide on, choose. Used when ordering food, making selections. 〜ことにする = decide to do (verb).",
+        "ja": "選択・決定を表します。レストランでの注文などによく使います。",
+        "zh": "名词 + にする = 决定、选择。用于点餐、做选择时。〜ことにする = 决定做（动词）。",
+        "zh_TW": "名詞 + にする = 決定、選擇。用於點餐、做選擇時。〜ことにする = 決定做（動詞）。",
+        "es": "Sustantivo + にする = decidir, elegir. Se utiliza al pedir comida o al hacer una selección. 〜ことにする = decidir hacer (verbo).",
+        "fr": "Nom + にする = choisir, se décider. Utilisé pour commander à manger ou faire des choix. 〜ことにする = décider de faire (verbe).",
+        "de": "Substantiv + にする = sich entscheiden, wählen. Wird verwendet, wenn man Essen bestellt oder eine Auswahl trifft. 〜ことにする = beschließen, etwas zu tun (Verb).",
+        "ko": "명사 + にする = ~로 정하다, ~를 선택하다. 음식을 주문하거나 무언가를 고를 때 사용한다. 〜ことにする = ~하기로 하다 (동사)."
+      },
+      "structure": "Noun + にする",
+      "example_target": "私はコーヒーにします。",
+      "example_meaning_en": "I'll have coffee. (deciding/ordering)",
+      "example_breakdown": {
+        "私": "I",
+        "コーヒー": "coffee",
+        "にします": "will have/choose"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g038",
+      "point": "Adjective conjugation overview",
+      "jlpt_level": "N5",
+      "teaching_order": 38,
+      "topic": "adjectives",
+      "explanation": {
+        "en": "I-adjectives: present 〜い, negative 〜くない, past 〜かった, past neg 〜くなかった. Na-adjectives: present 〜だ/です, negative 〜ではない/じゃない, past 〜だった/でした, past neg 〜ではなかった.",
+        "ja": "い形容詞とナ形容詞の活用形のまとめです。",
+        "zh": "I-形容词：现在时 〜い，否定形 〜くない，过去时 〜かった，过去否定形 〜くなかった。Na-形容词：现在时 〜だ/です，否定形 〜ではない/じゃない，过去时 〜だった/でした，过去否定形 〜ではなかった。",
+        "zh_TW": "I-形容詞：現在式 〜い，否定式 〜くない，過去式 〜かった，過去否定式 〜くなかった。Na-形容詞：現在式 〜だ/です，否定式 〜ではない/じゃない，過去式 〜だった/でした，過去否定式 〜ではなかった。",
+        "es": "Adjetivos en -i: presente 〜い, negativo 〜くない, pasado 〜かった, pasado negativo 〜くなかった. Adjetivos en -na: presente 〜だ/です, negativo 〜ではない/じゃない, pasado 〜だった/でした, pasado negativo 〜ではなかった.",
+        "fr": "Adjectifs en -i : présent 〜い, négatif 〜くない, passé 〜かった, passé négatif 〜くなかった. Adjectifs en -na : présent 〜だ/です, négatif 〜ではない/じゃない, passé 〜だった/でした, passé négatif 〜ではなかった.",
+        "de": "I-Adjektive: Präsens 〜い, Negativform 〜くない, Vergangenheit 〜かった, Negativform der Vergangenheit 〜くなかった. Na-Adjektive: Präsens 〜だ/です, Negativform 〜ではない/じゃない, Vergangenheit 〜だった/でした, Negativform der Vergangenheit 〜ではなかった.",
+        "ko": "I-형용사: 현재형 〜い, 부정형 〜くない, 과거형 〜かった, 과거 부정형 〜くなかった. Na-형용사: 현재형 〜だ/です, 부정형 〜ではない/じゃない, 과거형 〜だった/でした, 과거 부정형 〜ではなかった."
+      },
+      "structure": "Adj + conjugation",
+      "example_target": "昨日は寒くなかったです。",
+      "example_meaning_en": "It was not cold yesterday.",
+      "example_breakdown": {
+        "昨日": "yesterday",
+        "は": "topic",
+        "寒くなかった": "was not cold",
+        "です": "copula"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g039",
+      "point": "〜つもり — Intend to",
+      "jlpt_level": "N5",
+      "teaching_order": 39,
+      "topic": "intention",
+      "explanation": {
+        "en": "Verb dictionary/ない-form + つもりです expresses intention. Positive: 〜つもりです (intend to). Negative: 〜ないつもりです (intend not to).",
+        "ja": "話者の意図・計画を表します。",
+        "zh": "动词词典/“ない”形 + “つもりです” 表示意图。肯定句：〜つもりです（打算……）。否定句：〜ないつもりです（不打算……）。",
+        "zh_TW": "動詞詞典／「ない」形 + 「つもりです」用以表達意圖。肯定句：〜つもりです（打算～）。否定句：〜ないつもりです（不打算～）。",
+        "es": "Diccionario de verbos: la forma «-nai» + «〜つもりです» expresa intención. Afirmativo: 〜つもりです (tengo la intención de). Negativo: 〜ないつもりです (no tengo la intención de).",
+        "fr": "Dictionnaire des verbes : la forme « -nai » + « ~tsumori desu » exprime une intention. Affirmatif : ~tsumori desu (j'ai l'intention de). Négatif : ~nai tsumori desu (je n'ai pas l'intention de).",
+        "de": "Verb-Wörterbuch: Die „-nai“-Form + „〜つもりです“ drückt eine Absicht aus. Positiv: 〜つもりです (beabsichtige). Negativ: 〜ないつもりです (beabsichtige nicht).",
+        "ko": "동사 사전/~ない형 + ~つもりです는 의도를 나타냅니다. 긍정: ~つもりです (~할 생각입니다). 부정: ~ないつもりです (~하지 않을 생각입니다)."
+      },
+      "structure": "Dict. form + つもりです",
+      "example_target": "来年日本に行くつもりです。",
+      "example_meaning_en": "I intend to go to Japan next year.",
+      "example_breakdown": {
+        "来年": "next year",
+        "日本": "Japan",
+        "に": "direction",
+        "行く": "go",
+        "つもりです": "intend to"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_g040",
+      "point": "Giving/Receiving: あげる・くれる・もらう",
+      "jlpt_level": "N5",
+      "teaching_order": 40,
+      "topic": "giving",
+      "explanation": {
+        "en": "あげる = give (speaker→other). くれる = give (other→speaker). もらう = receive. Direction depends on in-group/out-group status. あげる NOT used when receiver is speaker.",
+        "ja": "物の授受を表す三つの動詞です。話者と相手の関係によって使い分けます。",
+        "zh": "あげる = 给（说话者→他人）。くれる = 给（他人→说话者）。もらう = 收到。方向取决于内群体/外群体的身份。当接收者是说话者时，不使用あげる。",
+        "zh_TW": "あげる = 給予（說話者→他人）。くれる = 給予（他人→說話者）。もらう = 接受。方向取決於內群體／外群體的身份。當接收者即是說話者時，不使用「あげる」。",
+        "es": "あげる = dar (hablante → otro). くれる = dar (otro → hablante). もらう = recibir. La dirección depende de si se trata de alguien del grupo propio o ajeno. あげる NO se utiliza cuando el receptor es el propio hablante.",
+        "fr": "あげる = donner (locuteur → autre personne). くれる = donner (autre personne → locuteur). もらう = recevoir. Le sens dépend du fait que le destinataire fasse partie ou non du groupe. On n'utilise PAS あげる lorsque le destinataire est le locuteur.",
+        "de": "あげる = geben (Sprecher → anderer). くれる = geben (anderer → Sprecher). もらう = erhalten. Die Richtung hängt vom Status als „In-Group“ oder „Out-Group“ ab. あげる wird NICHT verwendet, wenn der Empfänger der Sprecher ist.",
+        "ko": "あげる = 주다 (화자→타인). くれる = 주다 (타인→화자). もらう = 받다. 방향은 내집단/외집단 지위에 따라 달라진다. 받는 사람이 화자인 경우에는 ‘あげる’를 사용하지 않는다."
+      },
+      "structure": "Giver は Receiver に Object を + verb",
+      "example_target": "友達がプレゼントをくれました。",
+      "example_meaning_en": "My friend gave me a present.",
+      "example_breakdown": {
+        "友達": "friend",
+        "が": "subject",
+        "プレゼント": "present",
+        "を": "object",
+        "くれました": "gave (to me)"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    }
+  ]
+}

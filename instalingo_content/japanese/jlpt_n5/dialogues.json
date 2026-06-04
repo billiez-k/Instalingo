@@ -1,0 +1,351 @@
+{
+  "meta": {
+    "language": "ja",
+    "exam_level": "JLPT N5",
+    "total_dialogues": 5,
+    "source": "Standard conversational Japanese patterns",
+    "source_status": "STANDARD_REFERENCE",
+    "translation_status": "deepl_translated_all_locales"
+  },
+  "dialogues": [
+    {
+      "id": "ja_n5_d001",
+      "title": "初めての挨拶 (First Greeting)",
+      "topic": "greetings",
+      "difficulty": "beginner",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "こんにちは。",
+          "translation_en": "Hello.",
+          "translation_zh": "你好。",
+          "translation_zh_TW": "你好。",
+          "translation_es": "Hola.",
+          "translation_fr": "Bonjour.",
+          "translation_de": "Hallo."
+        },
+        {
+          "speaker": "B",
+          "text": "こんにちは。お元気ですか。",
+          "translation_en": "Hello. How are you?",
+          "translation_zh": "你好。你好吗？",
+          "translation_zh_TW": "你好。你好嗎？",
+          "translation_es": "Hola. ¿Cómo estás?",
+          "translation_fr": "Bonjour. Comment vas-tu ?",
+          "translation_de": "Hallo. Wie geht es dir?"
+        },
+        {
+          "speaker": "A",
+          "text": "はい、元気です。あなたは？",
+          "translation_en": "Yes, I'm fine. And you?",
+          "translation_zh": "是的，我很好。你呢？",
+          "translation_zh_TW": "是的，我很好。你呢？",
+          "translation_es": "Sí, estoy bien. ¿Y tú?",
+          "translation_fr": "Oui, je vais bien. Et toi ?",
+          "translation_de": "Ja, mir geht es gut. Und dir?"
+        },
+        {
+          "speaker": "B",
+          "text": "私も元気です。",
+          "translation_en": "I'm fine too.",
+          "translation_zh": "我也很好的。",
+          "translation_zh_TW": "我也很安好。",
+          "translation_es": "Yo también estoy bien.",
+          "translation_fr": "Moi aussi, je vais bien.",
+          "translation_de": "Mir geht es auch gut."
+        }
+      ],
+      "vocabulary_focus": [
+        "こんにちは",
+        "元気",
+        "私"
+      ],
+      "grammar_focus": [
+        "です/だ",
+        "か (question)"
+      ],
+      "source": "Standard conversational Japanese",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_d002",
+      "title": "レストランで (At a Restaurant)",
+      "topic": "food",
+      "difficulty": "beginner",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "いらっしゃいませ。何名様ですか。",
+          "translation_en": "Welcome. How many people?",
+          "translation_zh": "欢迎光临。请问几位？",
+          "translation_zh_TW": "歡迎光臨。請問幾位？",
+          "translation_es": "Bienvenidos. ¿Cuántos son?",
+          "translation_fr": "Bienvenue. Combien de personnes ?",
+          "translation_de": "Herzlich willkommen. Wie viele Personen?"
+        },
+        {
+          "speaker": "B",
+          "text": "二人です。",
+          "translation_en": "Two people.",
+          "translation_zh": "两个人。",
+          "translation_zh_TW": "兩個人。",
+          "translation_es": "Dos personas.",
+          "translation_fr": "Deux personnes.",
+          "translation_de": "Zwei Personen."
+        },
+        {
+          "speaker": "A",
+          "text": "こちらへどうぞ。",
+          "translation_en": "This way, please.",
+          "translation_zh": "请往这边走。",
+          "translation_zh_TW": "請往這邊走。",
+          "translation_es": "Por aquí, por favor.",
+          "translation_fr": "Par ici, s'il vous plaît.",
+          "translation_de": "Bitte hier entlang."
+        },
+        {
+          "speaker": "B",
+          "text": "メニューを見せてください。",
+          "translation_en": "Please show me the menu.",
+          "translation_zh": "请给我看一下菜单。",
+          "translation_zh_TW": "請給我看菜單。",
+          "translation_es": "Por favor, muéstreme la carta.",
+          "translation_fr": "Pouvez-vous me montrer le menu ?",
+          "translation_de": "Bitte zeigen Sie mir die Speisekarte."
+        },
+        {
+          "speaker": "A",
+          "text": "はい、どうぞ。お飲み物は？",
+          "translation_en": "Here you are. Something to drink?",
+          "translation_zh": "给你。要喝点什么吗？",
+          "translation_zh_TW": "給您。要喝點什麼嗎？",
+          "translation_es": "Aquí tienes. ¿Quieres algo de beber?",
+          "translation_fr": "Voilà. Tu veux boire quelque chose ?",
+          "translation_de": "Bitte sehr. Möchtest du etwas trinken?"
+        },
+        {
+          "speaker": "B",
+          "text": "水をお願いします。",
+          "translation_en": "Water, please.",
+          "translation_zh": "请给我一杯水。",
+          "translation_zh_TW": "請給我一杯水。",
+          "translation_es": "Agua, por favor.",
+          "translation_fr": "De l'eau, s'il vous plaît.",
+          "translation_de": "Wasser, bitte."
+        }
+      ],
+      "vocabulary_focus": [
+        "二人",
+        "メニュー",
+        "水",
+        "お願いします"
+      ],
+      "grammar_focus": [
+        "〜てください",
+        "を ください"
+      ],
+      "source": "Standard conversational Japanese",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_d003",
+      "title": "買い物 (Shopping)",
+      "topic": "shopping",
+      "difficulty": "beginner",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "これはいくらですか。",
+          "translation_en": "How much is this?",
+          "translation_zh": "这个多少钱？",
+          "translation_zh_TW": "這個要多少錢？",
+          "translation_es": "¿Cuánto cuesta esto?",
+          "translation_fr": "Combien ça coûte ?",
+          "translation_de": "Wie viel kostet das?"
+        },
+        {
+          "speaker": "B",
+          "text": "500円です。",
+          "translation_en": "It's 500 yen.",
+          "translation_zh": "500日元。",
+          "translation_zh_TW": "要 500 日圓。",
+          "translation_es": "Cuesta 500 yenes.",
+          "translation_fr": "Ça coûte 500 yens.",
+          "translation_de": "Das kostet 500 Yen."
+        },
+        {
+          "speaker": "A",
+          "text": "高いですね。もう少し安いのはありますか。",
+          "translation_en": "That's expensive. Do you have anything cheaper?",
+          "translation_zh": "这太贵了。有没有便宜一点的？",
+          "translation_zh_TW": "這太貴了。有沒有比較便宜的？",
+          "translation_es": "Eso es caro. ¿Tienes algo más barato?",
+          "translation_fr": "C'est cher. Avez-vous quelque chose de moins cher ?",
+          "translation_de": "Das ist teuer. Haben Sie etwas Günstigeres?"
+        },
+        {
+          "speaker": "B",
+          "text": "こちらは300円です。",
+          "translation_en": "This one is 300 yen.",
+          "translation_zh": "这个是300日元。",
+          "translation_zh_TW": "這個要 300 日圓。",
+          "translation_es": "Este cuesta 300 yenes.",
+          "translation_fr": "Celui-ci coûte 300 yens.",
+          "translation_de": "Das hier kostet 300 Yen."
+        },
+        {
+          "speaker": "A",
+          "text": "じゃあ、これをください。",
+          "translation_en": "Then I'll take this one.",
+          "translation_zh": "那我就选这个吧。",
+          "translation_zh_TW": "那我就選這個吧。",
+          "translation_es": "Entonces me quedo con este.",
+          "translation_fr": "Alors je vais prendre celui-là.",
+          "translation_de": "Dann nehme ich dieses hier."
+        }
+      ],
+      "vocabulary_focus": [
+        "いくら",
+        "円",
+        "高い",
+        "安い"
+      ],
+      "grammar_focus": [
+        "〜はありますか",
+        "〜をください"
+      ],
+      "source": "Standard conversational Japanese",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_d004",
+      "title": "道を聞く (Asking Directions)",
+      "topic": "directions",
+      "difficulty": "beginner",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "すみません。駅はどこですか。",
+          "translation_en": "Excuse me. Where is the station?",
+          "translation_zh": "请问，车站在哪里？",
+          "translation_zh_TW": "請問，車站在哪裡？",
+          "translation_es": "Disculpe. ¿Dónde está la estación?",
+          "translation_fr": "Excusez-moi. Où se trouve la gare ?",
+          "translation_de": "Entschuldigung. Wo ist der Bahnhof?"
+        },
+        {
+          "speaker": "B",
+          "text": "あそこです。まっすぐ行って、右に曲がってください。",
+          "translation_en": "It's over there. Go straight and turn right.",
+          "translation_zh": "就在那边。直走然后右转。",
+          "translation_zh_TW": "就在那邊。直走然後右轉。",
+          "translation_es": "Está por allí. Sigue recto y gira a la derecha.",
+          "translation_fr": "C'est par là. Continue tout droit, puis tourne à droite.",
+          "translation_de": "Es ist dort drüben. Geh geradeaus und bieg dann rechts ab."
+        },
+        {
+          "speaker": "A",
+          "text": "ありがとうございます。",
+          "translation_en": "Thank you very much.",
+          "translation_zh": "非常感谢。",
+          "translation_zh_TW": "非常感謝。",
+          "translation_es": "Muchas gracias.",
+          "translation_fr": "Merci beaucoup.",
+          "translation_de": "Vielen Dank."
+        },
+        {
+          "speaker": "B",
+          "text": "いいえ。",
+          "translation_en": "You're welcome.",
+          "translation_zh": "不客气。",
+          "translation_zh_TW": "不客氣。",
+          "translation_es": "De nada.",
+          "translation_fr": "De rien.",
+          "translation_de": "Gern geschehen."
+        }
+      ],
+      "vocabulary_focus": [
+        "駅",
+        "どこ",
+        "まっすぐ",
+        "右"
+      ],
+      "grammar_focus": [
+        "〜てください",
+        "どこですか"
+      ],
+      "source": "Standard conversational Japanese",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_n5_d005",
+      "title": "電話 (Phone Call)",
+      "topic": "phone",
+      "difficulty": "beginner",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "もしもし、田中さんですか。",
+          "translation_en": "Hello, is this Mr. Tanaka?",
+          "translation_zh": "你好，请问是田中先生吗？",
+          "translation_zh_TW": "您好，請問是田中先生嗎？",
+          "translation_es": "Hola, ¿habla el Sr. Tanaka?",
+          "translation_fr": "Bonjour, est-ce que c'est M. Tanaka ?",
+          "translation_de": "Hallo, sprechen Sie mit Herrn Tanaka?"
+        },
+        {
+          "speaker": "B",
+          "text": "はい、田中です。",
+          "translation_en": "Yes, this is Tanaka.",
+          "translation_zh": "是的，我是田中。",
+          "translation_zh_TW": "是的，我是田中。",
+          "translation_es": "Sí, soy Tanaka.",
+          "translation_fr": "Oui, c'est Tanaka.",
+          "translation_de": "Ja, hier ist Tanaka."
+        },
+        {
+          "speaker": "A",
+          "text": "明日、映画を見ませんか。",
+          "translation_en": "Would you like to see a movie tomorrow?",
+          "translation_zh": "明天想去看电影吗？",
+          "translation_zh_TW": "明天想去看電影嗎？",
+          "translation_es": "¿Te apetece ir al cine mañana?",
+          "translation_fr": "Ça te dirait d'aller au cinéma demain ?",
+          "translation_de": "Möchtest du morgen ins Kino gehen?"
+        },
+        {
+          "speaker": "B",
+          "text": "いいですね。何時に会いましょうか。",
+          "translation_en": "Sounds good. What time shall we meet?",
+          "translation_zh": "听起来不错。我们几点见面？",
+          "translation_zh_TW": "聽起來不錯。我們幾點見面？",
+          "translation_es": "Me parece bien. ¿A qué hora quedamos?",
+          "translation_fr": "Ça me va. À quelle heure on se retrouve ?",
+          "translation_de": "Klingt gut. Wann sollen wir uns treffen?"
+        },
+        {
+          "speaker": "A",
+          "text": "3時に駅の前で会いましょう。",
+          "translation_en": "Let's meet in front of the station at 3.",
+          "translation_zh": "我们3点在车站前见面吧。",
+          "translation_zh_TW": "我們下午三點在車站前見面吧。",
+          "translation_es": "Quedemos delante de la estación a las 3.",
+          "translation_fr": "Retrouvons-nous devant la gare à 15 h.",
+          "translation_de": "Treffen wir uns um 3 Uhr vor dem Bahnhof."
+        }
+      ],
+      "vocabulary_focus": [
+        "もしもし",
+        "明日",
+        "映画",
+        "会う"
+      ],
+      "grammar_focus": [
+        "〜ませんか",
+        "〜ましょう"
+      ],
+      "source": "Standard conversational Japanese",
+      "source_status": "STANDARD_REFERENCE"
+    }
+  ]
+}

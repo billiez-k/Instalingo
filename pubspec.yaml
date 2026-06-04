@@ -1,0 +1,81 @@
+name: instalingo
+version: 1.0.0+1
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  # Navigation
+  go_router: ^13.0.1
+  # Icons (Professional — NO emojis)
+  phosphor_flutter: ^2.0.1
+  flutter_svg: ^2.0.9
+  # Animations
+  animations: ^2.0.10
+  lottie: ^3.0.0
+  shimmer: ^3.0.0
+  confetti: ^0.7.0
+  liquid_progress_indicator_v2: ^0.5.0
+  # Charts
+  fl_chart: ^0.66.0
+  # Images
+  cached_network_image: ^3.3.1
+  # Audio
+  flutter_tts: ^4.2.2
+  # Utils
+  intl: ^0.20.2
+  shared_preferences: ^2.2.2
+  flutter_localizations:
+    sdk: flutter
+  # Responsive
+  flutter_screenutil: ^5.9.0
+  # Status bar
+  flutter_statusbarcolor_ns: ^0.6.0
+  # Pull to refresh
+  pull_to_refresh_flutter3: ^2.0.2
+  # Share
+  share_plus: ^7.2.1
+  # URL launcher
+  url_launcher: ^6.2.2
+  # Network status
+  connectivity_plus: ^5.0.2
+
+dependency_overrides:
+  phosphor_flutter:
+    path: vendor/phosphor_flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.7
+  riverpod_generator: ^2.3.9
+  custom_lint: ^0.5.7
+  riverpod_lint: ^2.3.7
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lottie/
+    - assets/flags/
+
+  # To use Inter font, download from https://rsms.me/inter/ and place in assets/fonts/
+  # Then uncomment below:
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Inter-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Inter-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/Inter-ExtraBold.ttf
+  #         weight: 800

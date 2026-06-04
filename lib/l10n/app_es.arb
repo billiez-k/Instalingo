@@ -1,0 +1,738 @@
+{
+  "@@locale": "es",
+  "@correctCountOfTotal": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@correctWithExplanation": {
+    "placeholders": {
+      "explanation": {
+        "type": "String"
+      }
+    }
+  },
+  "@dayStreakCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@exercisesProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@notQuiteWithExplanation": {
+    "placeholders": {
+      "explanation": {
+        "type": "String"
+      }
+    }
+  },
+  "@profile_learningStatus": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      },
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@profile_lessonsCompleted": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_minPerDay": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_minutesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_stepXofY": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_streakLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_version": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "@questionXofY": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@savePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "@speakersCount": {
+    "placeholders": {
+      "speakers": {
+        "type": "String"
+      }
+    }
+  },
+  "@streakKeepStreak": {
+    "placeholders": {
+      "currentStreak": {
+        "type": "int"
+      }
+    }
+  },
+  "@streakShieldsRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeAgoHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeAgoMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeSpentHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "achievementsTitle": "Logros",
+  "active": "Activo",
+  "advancedProgressTracking": "Seguimiento de progreso avanzado",
+  "aiAssistantName": "Maya",
+  "aiAssistantRole": "Trabajadora de cafetería",
+  "aiBadge": "IA",
+  "aiChat": "Chat con IA",
+  "aiConversationGreeting": "¡Hola! Soy Maya. Trabajo en una cafetería en Tokio. ¿Qué te gustaría practicar hoy?",
+  "aiConversationPractice": "Práctica de conversación con IA",
+  "aiConversationTitle": "Conversación con IA",
+  "aiPractice": "Práctica con IA",
+  "aiYou": "Tú",
+  "annual": "Anual",
+  "appTagline": "Aprende. Relájate. Repite.",
+  "appTitle": "InstaLingo",
+  "back": "Atrás",
+  "cancel": "Cancelar",
+  "chapter": "Capítulo",
+  "chatWithAI": "Chatear con un personaje de IA",
+  "check": "Comprobar",
+  "chill": "Relajarse",
+  "chillCorner": "Rincón de relax",
+  "chill_addComment": "Añadir un comentario...",
+  "chill_aiGeneratedImage": "Imagen generada por IA",
+  "chill_comments": "Comentarios",
+  "chill_noPosts": "Aún no hay publicaciones",
+  "chill_noPostsMessage": "Completa lecciones para desbloquear publicaciones de vocabulario de la comunidad.",
+  "chill_postNotFound": "Publicación no encontrada",
+  "chill_postNotFoundMessage": "Esta publicación puede haber sido eliminada o ya no está disponible.",
+  "chill_share": "Compartir",
+  "clear": "Limpiar",
+  "clearAll": "Limpiar todo",
+  "commitment": "Compromiso",
+  "continueLearning": "Continuar aprendiendo",
+  "continueText": "Continuar",
+  "correct": "Correcto",
+  "correctCountOfTotal": "{correct} / {total} correctos",
+  "correctWithExplanation": "¡Correcto! {explanation}",
+  "courseComplete": "¡Curso completado!",
+  "courseCompleteTitle": "¡Lo lograste!",
+  "coursePath": "Ruta del curso",
+  "createProfile": "Crea tu perfil",
+  "createProfileDesc": "Esto nos ayuda a personalizar tu experiencia.",
+  "dailyGoal": "Meta diaria",
+  "dailyGoalCardTitle": "Meta diaria",
+  "dailyGoalReached": "¡Meta alcanzada! ¡Gran trabajo!",
+  "darkMode": "Modo oscuro",
+  "dayStreak": "Racha de días",
+  "dayStreakCount": "{count} días",
+  "defaultDisplayName": "Estudiante",
+  "done": "Listo",
+  "editProfile": "Editar perfil",
+  "emptyStateMessage": "Vuelve más tarde para más contenido.",
+  "emptyStateTitle": "Aún no hay nada aquí",
+  "errorGenericMessage": "No pudimos cargar este contenido. Por favor, inténtalo de nuevo.",
+  "errorGenericTitle": "Algo salió mal",
+  "exArrangeWords": "Ordena las palabras para formar una oración correcta",
+  "exComprehension": "Lee el texto y responde",
+  "exDialogueComplete": "Completa el diálogo",
+  "exFillInBlank": "Rellena el espacio en blanco",
+  "exFlashCard": "Toca para voltear la tarjeta",
+  "exGrammarTip": "Consejo de gramática",
+  "exImageIdentify": "Toca la imagen correcta",
+  "exMatchWords": "Relaciona las palabras con sus significados",
+  "exPhraseBuilder": "Construye la frase",
+  "exSpeaking": "Di esta palabra en voz alta",
+  "exTranslate": "Traduce esta oración",
+  "exTrueFalse": "¿Es correcta esta afirmación?",
+  "exTypeWhatYouHear": "Escribe lo que escuchas",
+  "exVocabMultipleChoice": "¿Qué significa \"{word}\"?",
+  "exWhichWordMeans": "¿Qué significa \"{word}\"?",
+  "exWriting": "Escribe tu respuesta",
+  "exampleLabel": "Ejemplo",
+  "exercisesProgress": "{completed} de {total} ejercicios",
+  "falseLabel": "Falso",
+  "featureAICharacters": "Personajes de IA",
+  "featureAICharactersDesc": "Practica con personajes de IA que responden como personas reales en el Chill Corner.",
+  "featureMotivation": "Mantente Motivado",
+  "featureMotivationDesc": "Gana XP, mantén rachas y desbloquea logros a medida que progresas.",
+  "featureStructuredCourses": "Cursos Estructurados",
+  "featureStructuredCoursesDesc": "Aprende con lecciones diseñadas profesionalmente que se construyen una sobre otra.",
+  "findFriends": "Buscar amigos",
+  "finishLesson": "Terminar lección",
+  "flashcardEasy": "Fácil",
+  "flashcardGood": "Bien",
+  "flashcardHard": "Difícil",
+  "followingTitle": "Siguiendo",
+  "forceUpdateBody": "Hemos hecho InstaLingo más rápido, estable y con nuevas funciones. Actualiza a la última versión para continuar.",
+  "forceUpdateBugFixes": "Corrección de errores y estabilidad",
+  "forceUpdateMessage": "Hay una nueva versión de InstaLingo disponible. Actualiza para seguir aprendiendo.",
+  "forceUpdateNewContent": "Nuevas lecciones y ejercicios",
+  "forceUpdatePerformance": "Mejoras de rendimiento",
+  "forceUpdateTitle": "Actualización requerida",
+  "fri": "V",
+  "friendsTitle": "Amigos",
+  "gems": "Gemas",
+  "getStarted": "Empezar",
+  "getUnlimitedLearning": "Obtener aprendizaje ilimitado",
+  "goodbye": "Adiós",
+  "gotIt": "¡Entendido!",
+  "grammarExampleFallback": "¡La práctica hace al maestro!",
+  "grammarRuleFallback": "Presta atención a la gramática en este ejercicio.",
+  "grammarTip": "Consejo de gramática",
+  "greetingAfternoon": "Buenas tardes",
+  "greetingEvening": "Buenas noches",
+  "greetingMorning": "Buenos días",
+  "hello": "¡Hola!",
+  "helpSupport": "Ayuda y soporte",
+  "holdToSpeak": "Mantén para hablar",
+  "howAreYou": "¿Cómo estás?",
+  "iAlreadyHaveAccount": "Ya tengo una cuenta",
+  "incorrect": "Incorrecto",
+  "knowIt": "Lo sé",
+  "language": "Idioma",
+  "leaderboardTitle": "Clasificación",
+  "learn": "Aprender",
+  "learnRuleToImprove": "Aprende esta regla para mejorar",
+  "learningLanguage": "Idioma a aprender",
+  "lessonComplete": "¡Lección completada!",
+  "lessonCompleteGood": "¡Buen esfuerzo! ¡Repasa y vuelve a intentarlo!",
+  "lessonCompleteGreat": "¡Buen trabajo! ¡Sigue practicando!",
+  "lessonCompletePerfect": "¡Perfecto! ¡Estás que ardes!",
+  "lessons": "Lecciones",
+  "levelAbbreviation": "NV",
+  "levelAdvanced": "Avanzado",
+  "levelBeginner": "Principiante",
+  "levelElementary": "Elemental",
+  "levelIntermediate": "Intermedio",
+  "levelProficiency": "Dominio",
+  "levelUpperIntermediate": "Intermedio Alto",
+  "loading": "Cargando...",
+  "loadingLesson": "Cargando lección...",
+  "logout": "Cerrar sesión",
+  "matchPairsInstruction": "Toca una palabra a la izquierda, luego su correspondencia a la derecha",
+  "maybeLater": "Quizás después",
+  "mon": "L",
+  "monthly": "Mensual",
+  "motivation": "Motivación",
+  "myNameIs": "Me llamo",
+  "nativeLanguage": "Idioma nativo",
+  "next": "Siguiente",
+  "nextQuestion": "Siguiente pregunta",
+  "niceToMeetYou": "Mucho gusto",
+  "noAds": "Sin anuncios",
+  "noConnectionMessage": "Por favor, comprueba tu conexión a internet e inténtalo de nuevo.",
+  "noConnectionTitle": "Sin conexión",
+  "notNow": "Ahora no",
+  "notQuiteWithExplanation": "No exactamente. {explanation}",
+  "notifications": "Notificaciones",
+  "onboardingTitle": "Aprende idiomas con cursos estructurados y personajes de IA",
+  "onboarding_commitmentCasual": "Informal",
+  "onboarding_commitmentIntense": "Intenso",
+  "onboarding_commitmentRegular": "Habitual",
+  "onboarding_commitmentSerious": "Serio",
+  "onboarding_commitmentSubtitle": "Siempre puedes cambiar esto más tarde en la configuración.",
+  "onboarding_commitmentTitle": "¿Cuánto tiempo\npuedes dedicar?",
+  "onboarding_displayNameLabel": "Nombre de visualización",
+  "onboarding_emailOptionalLabel": "Correo (opcional)",
+  "onboarding_enterEmailHint": "Ingresa tu correo",
+  "onboarding_enterNameHint": "Ingresa tu nombre",
+  "onboarding_learningLangSubtitle": "Elige el idioma que quieres dominar.",
+  "onboarding_motivationBrainTraining": "Entrenamiento cerebral",
+  "onboarding_motivationCareer": "Carrera",
+  "onboarding_motivationCulture": "Cultura",
+  "onboarding_motivationFamily": "Familia",
+  "onboarding_motivationFun": "Solo por diversión",
+  "onboarding_motivationMoviesShows": "Películas y series",
+  "onboarding_motivationStudyAbroad": "Estudiar en el extranjero",
+  "onboarding_motivationSubtitle": "Selecciona todas las que apliquen.",
+  "onboarding_motivationTitle": "¿Por qué estás aprendiendo?",
+  "onboarding_motivationTravel": "Viajes",
+  "onboarding_nativeLangSubtitle": "Usaremos esto para personalizar tu experiencia de aprendizaje.",
+  "onboarding_proficiencyAdvanced": "Avanzado",
+  "onboarding_proficiencyAdvancedDesc": "Hablo con fluidez",
+  "onboarding_proficiencyBeginner": "Principiante",
+  "onboarding_proficiencyBeginnerDesc": "Sé algunas palabras",
+  "onboarding_proficiencyElementary": "Elemental",
+  "onboarding_proficiencyElementaryDesc": "Puedo formar oraciones simples",
+  "onboarding_proficiencyIntermediate": "Intermedio",
+  "onboarding_proficiencyIntermediateDesc": "Puedo mantener una conversación",
+  "onboarding_proficiencyProficient": "Competente",
+  "onboarding_proficiencyProficientDesc": "Hablo como un nativo",
+  "onboarding_proficiencySubtitle": "Te iniciaremos en la dificultad adecuada.",
+  "onboarding_proficiencyTitle": "¿Cuál es tu\nnivel actual?",
+  "onboarding_proficiencyUpperIntermediate": "Intermedio-Alto",
+  "onboarding_proficiencyUpperIntermediateDesc": "Puedo discutir varios temas",
+  "onboarding_skipForNow": "Saltar por ahora",
+  "paywallSubtitle": "Desbloquea el aprendizaje ilimitado",
+  "paywallTitle": "InstaLingo Super",
+  "perMonth": "/mes",
+  "perYear": "/año",
+  "pickNewCourse": "Elegir nuevo curso",
+  "playing": "Reproduciendo...",
+  "practiceWords": "Practicar las palabras que acabas de aprender",
+  "privacy": "Privacidad",
+  "proficiency": "Nivel",
+  "profile": "Perfil",
+  "profile_academicEnglish": "Inglés académico",
+  "profile_account": "Cuenta",
+  "profile_achievementsUnlocked": "Logros desbloqueados",
+  "profile_adFreeExperience": "Experiencia sin anuncios",
+  "profile_adFreeExperienceDesc": "Concéntrate en aprender sin interrupciones.",
+  "profile_advanced": "Avanzado",
+  "profile_advancedSpeakingDesc": "Obtén análisis detallado de pronunciación y fluidez con forma de onda",
+  "profile_advancedSpeakingFeedback": "Retroalimentación avanzada de habla",
+  "profile_aiConversationPractice": "Práctica de conversación IA",
+  "profile_aiConversationPracticeAnswer": "Practica conversaciones reales con personajes de IA en diferentes escenarios",
+  "profile_allChillCornerContent": "Todo el contenido de Chill Corner",
+  "profile_appearance": "Apariencia",
+  "profile_beginner": "Principiante",
+  "profile_bestValue": "Mejor valor",
+  "profile_browseTopics": "Explora los temas a continuación o contáctanos directamente",
+  "profile_businessEnglish": "Inglés de negocios",
+  "profile_cancelAnytime": "Cancela cuando quieras. Sin compromiso.",
+  "profile_checkForUpdates": "Buscar actualizaciones",
+  "profile_chooseYourPlan": "Elige tu plan",
+  "profile_completeBeginner": "Principiante total",
+  "profile_contactSupport": "Contactar soporte",
+  "profile_contactUs": "Contáctanos",
+  "profile_continueWithFree": "Continuar con gratis",
+  "profile_createPlan": "Crear plan",
+  "profile_culturalInsights": "Perspectivas culturales",
+  "profile_culturalInsightsDesc": "Aprende el contexto cultural y el uso de cada palabra",
+  "profile_currentPlan": "Plan actual",
+  "profile_dailyConversation": "Conversación diaria",
+  "profile_dailyGoalMet": "¡Objetivo diario alcanzado!",
+  "profile_darkMode": "Modo oscuro",
+  "profile_daytime": "De día (9 AM-5 PM)",
+  "profile_displayName": "Nombre para mostrar",
+  "profile_downloadForOffline": "Descargar para usar sin conexión",
+  "profile_downloadForOfflineDesc": "Aprende en cualquier momento y lugar, sin internet",
+  "profile_duration": "Duración",
+  "profile_durationDesc": "¿Cuánto tiempo por sesión?",
+  "profile_earningXPGems": "Ganar XP y gemas",
+  "profile_earningXPGemsAnswer": "Completa lecciones, mantén rachas y repasa vocabulario para ganar XP y gemas.",
+  "profile_elementary": "Elemental",
+  "profile_email": "Correo electrónico",
+  "profile_emailUs": "Envíanos un correo",
+  "profile_enableNotifications": "Activar notificaciones",
+  "profile_enableNotificationsAnswer": "Activa los recordatorios en Configuración para recibir avisos diarios y mantener tu racha.",
+  "profile_enterYourEmail": "Ingresa tu correo",
+  "profile_enterYourName": "Ingresa tu nombre",
+  "profile_evening": "Tarde (5 PM-9 PM)",
+  "profile_everyDay": "Todos los días",
+  "profile_everythingInMonthly": "Todo en el plan mensual",
+  "profile_examPreparation": "Preparación de exámenes",
+  "profile_exclusiveStudyPlans": "Planes de estudio exclusivos",
+  "profile_falseBeginner": "Falso principiante",
+  "profile_faq": "Preguntas frecuentes",
+  "profile_faqAnswer1": "InstaLingo es una aplicación inmersiva para aprender idiomas a través de escenarios del mundo real.",
+  "profile_faqAnswer2": "Puedes actualizar al plan Super en cualquier momento.",
+  "profile_faqAnswer3": "Puedes restablecer tu progreso en Configuración > Restablecer progreso.",
+  "profile_faqAnswer4": "Puedes contactar a nuestro equipo de soporte en Configuración > Contactar soporte.",
+  "profile_faqQuestion1": "¿Qué es InstaLingo?",
+  "profile_faqQuestion2": "¿Puedo actualizar más tarde?",
+  "profile_faqQuestion3": "¿Cómo restablezco mi progreso?",
+  "profile_faqQuestion4": "¿Cómo contacto al soporte?",
+  "profile_feedback": "Comentarios",
+  "profile_fifteenMinutes": "15 minutos",
+  "profile_findFriends": "Encontrar amigos",
+  "profile_firstSteps": "Primeros pasos",
+  "profile_fiveDaysAWeek": "5 días a la semana",
+  "profile_fiveMinutes": "5 minutos",
+  "profile_follow": "Seguir",
+  "profile_followOthersMessage": "Sigue a otros estudiantes para verlos aquí.",
+  "profile_followingTitle": "Siguiendo",
+  "profile_freePlan": "Gratis",
+  "profile_gettingStarted": "Primeros pasos",
+  "profile_goPremium": "Actualizar a Premium",
+  "profile_goal": "Objetivo",
+  "profile_goalDesc": "¿Qué quieres lograr?",
+  "profile_goalDescription": "¿Cuál es tu principal objetivo de aprendizaje?",
+  "profile_goalFluency": "Fluidez",
+  "profile_goalTravel": "Viajes",
+  "profile_goalWork": "Trabajo",
+  "profile_gotIt": "Entendido",
+  "profile_howDoIStart": "¿Cómo empiezo a aprender?",
+  "profile_howDoIStartAnswer": "Elige tu idioma nativo y luego selecciona un idioma para aprender.",
+  "profile_inProgress": "En progreso",
+  "profile_inTheMorning": "Por la mañana",
+  "profile_instalingoSuperFAQ": "InstaLingo Super",
+  "profile_instalingoSuperFAQAnswer": "Actualiza a Super para lecciones ilimitadas, práctica con IA y estadísticas avanzadas.",
+  "profile_intensity": "Intensidad",
+  "profile_intensityDesc": "¿Con qué frecuencia por semana?",
+  "profile_intermediate": "Intermedio",
+  "profile_keepPracticing": "¡Sigue practicando!",
+  "profile_lateNight": "Noche (después de las 9 PM)",
+  "profile_leaderboardTitle": "Clasificación",
+  "profile_learnBasicPhrases": "Aprender frases básicas",
+  "profile_learning": "Aprendizaje",
+  "profile_learningFeatures": "Funciones de aprendizaje",
+  "profile_learningStatus": "Aprendiendo: {language} · {level}",
+  "profile_lessonRemindersStreakAlerts": "Recordatorios de lecciones y alertas de racha",
+  "profile_lessonsCompleted": "{completed} de {total} lecciones completadas",
+  "profile_level": "Nivel",
+  "profile_levelDesc": "¿Desde dónde comienzas?",
+  "profile_levelSuffix": "nivel",
+  "profile_levelUp": "¡Subiste de nivel!",
+  "profile_minPerDay": "{min} min/día",
+  "profile_minutesCount": "{count} minutos/día",
+  "profile_monthly": "Mensual",
+  "profile_morning": "Mañana (6-9 AM)",
+  "profile_morningBird": "Madrugador (5 AM-9 AM)",
+  "profile_mostPopular": "Más popular",
+  "profile_motivationCulture": "Cultura",
+  "profile_motivationFamily": "Familia",
+  "profile_motivationFun": "Diversión",
+  "profile_motivationTravel": "Viajes",
+  "profile_motivationWork": "Trabajo",
+  "profile_myPlan": "Mi plan",
+  "profile_nextAchievement": "Próximo logro",
+  "profile_night": "Noche (9 PM-12 AM)",
+  "profile_noAchievementsMessage": "Completa lecciones y mantén rachas para desbloquear logros",
+  "profile_noAchievementsYet": "Aún no hay logros",
+  "profile_noFollowingYet": "Aún no sigues a nadie",
+  "profile_noFollowingYetMessage": "¡Sigue a otros estudiantes para mantenerte al día!",
+  "profile_noFriendsYet": "Aún no tienes amigos",
+  "profile_noFriendsYetMessage": "¡Conéctate con otros estudiantes y practiquen juntos!",
+  "profile_noLeaderboardData": "Aún no hay datos de clasificación",
+  "profile_noLeaderboardDataMessage": "¡Comienza a aprender para aparecer en la clasificación!",
+  "profile_notSet": "No configurado",
+  "profile_notifications": "Notificaciones",
+  "profile_offlineMode": "Modo sin conexión",
+  "profile_offlineModeDesc": "Descarga todas las lecciones y contenido",
+  "profile_offlineTitle": "Sin conexión",
+  "profile_onboardingComplete": "Integración completada",
+  "profile_onboardingTitle": "Integración",
+  "profile_perMonth": "/mes",
+  "profile_perMonthDesc": "por mes",
+  "profile_perYearDesc": "por año",
+  "profile_personalizedStudyPlans": "Planes de estudio personalizados",
+  "profile_personalizedStudyPlansDesc": "Planes generados por IA adaptados a tus objetivos y horario",
+  "profile_plan": "Plan",
+  "profile_premium": "Premium",
+  "profile_priorityAIResponses": "Respuestas de IA prioritarias",
+  "profile_proBadge": "PRO",
+  "profile_proFeatures": "Funciones Pro",
+  "profile_proFeaturesDesc": "Desbloquea todo el contenido y funciones premium",
+  "profile_proPlan": "Plan Pro",
+  "profile_proPlanDesc": "Acelera tu aprendizaje con funciones premium",
+  "profile_proficiencyLevel": "Nivel de competencia",
+  "profile_proficient": "Competente",
+  "profile_profile": "Perfil",
+  "profile_progress": "Progreso",
+  "profile_progressReset": "Se restablecerá el progreso",
+  "profile_progressResetMessage": "Esto eliminará todo tu progreso. Esta acción no se puede deshacer.",
+  "profile_questionXofY": "Pregunta {x}/{y}",
+  "profile_reminder": "Recordatorio",
+  "profile_reminderTime": "Hora de recordatorio",
+  "profile_removeAds": "Eliminar anuncios",
+  "profile_removeAdsDesc": "Disfruta de una experiencia sin interrupciones",
+  "profile_resetProgress": "Restablecer progreso",
+  "profile_resetProgressFAQ": "Restablecer progreso",
+  "profile_resetProgressFAQAnswer": "Ve a Configuración > Restablecer progreso para empezar de nuevo. Esta acción no se puede deshacer.",
+  "profile_saveFiftyVsMonthly": "Ahorra 50% vs mensual",
+  "profile_savePercent": "Ahorra {percent}%",
+  "profile_schedule": "Horario",
+  "profile_scheduleDesc": "¿Cuándo puedes estudiar?",
+  "profile_section": "Sección",
+  "profile_seeAll": "Ver todo",
+  "profile_sendFeedback": "Enviar comentarios",
+  "profile_settingDailyGoals": "Establecer metas diarias",
+  "profile_settingDailyGoalsAnswer": "Ve a Perfil > Configuración > Meta diaria para ajustar tu tiempo de aprendizaje.",
+  "profile_skillLevel": "Nivel de habilidad",
+  "profile_someBasics": "Algunos conocimientos básicos",
+  "profile_soundEffects": "Efectos de sonido",
+  "profile_speakingPractice": "Práctica de conversación",
+  "profile_startFreeTrial": "Comenzar prueba gratuita",
+  "profile_stepXofY": "Paso {current}/{total}",
+  "profile_streakLabel": "{count} días de racha",
+  "profile_studyPlanCreated": "¡Plan de estudio creado con éxito!",
+  "profile_studyPlanDescription": "Personaliza tu plan de estudio.",
+  "profile_studyPlanTitle": "Plan de estudio",
+  "profile_studyReminder": "Recordatorio de estudio",
+  "profile_subscribeNow": "Suscribirse ahora",
+  "profile_subtitle": "Perfil",
+  "profile_superBadge": "SUPER",
+  "profile_superDescription": "Desbloquea todas las funciones Super",
+  "profile_superSubtitle": "La experiencia definitiva de aprendizaje de idiomas con funciones de IA",
+  "profile_superTitle": "InstaLingo Super",
+  "profile_support": "Soporte",
+  "profile_tenMinutes": "10 minutos",
+  "profile_threeDaysAWeek": "3 días a la semana",
+  "profile_travelBasics": "Conceptos básicos de viaje",
+  "profile_travelPhrases": "Frases de viaje",
+  "profile_troubleshooting": "Solución de problemas",
+  "profile_tryFreeForDays": "Prueba gratis por {days} días, luego {price}",
+  "profile_twentyPlusMinutes": "20+ minutos",
+  "profile_unlimitedAIConversations": "Conversaciones IA ilimitadas",
+  "profile_unlimitedAIDesc": "Practica con personajes de IA sin límites en Chill Corner",
+  "profile_unlimitedAccess": "Acceso ilimitado",
+  "profile_unlimitedAccessDesc": "Accede a todos los cursos de idiomas y lecciones",
+  "profile_unlimitedAiConversations": "Conversaciones IA ilimitadas",
+  "profile_unlimitedAiConversationsDesc": "Practica conversaciones con tutores de IA en cualquier momento",
+  "profile_unlimitedLessons": "Lecciones ilimitadas",
+  "profile_unlimitedLessonsDesc": "Accede a todas las lecciones sin restricciones",
+  "profile_unlimitedVocabularyBuilder": "Constructor de vocabulario ilimitado",
+  "profile_unlimitedVocabularyBuilderDesc": "Amplía tu vocabulario con tarjetas adaptativas",
+  "profile_unlockFullExperience": "Desbloquear experiencia completa",
+  "profile_unlocked": "Desbloqueado",
+  "profile_upgradeToSuper": "Actualizar a Super",
+  "profile_upperIntermediate": "Intermedio alto",
+  "profile_version": "InstaLingo v{version}",
+  "profile_visitHelpCenter": "Visitar centro de ayuda",
+  "profile_weekdays": "Días laborables",
+  "profile_weekends": "Fines de semana",
+  "profile_weekendsOnly": "Solo fines de semana",
+  "profile_whatIsChillCorner": "¿Qué es Chill Corner?",
+  "profile_whatIsChillCornerAnswer": "Chill Corner muestra el vocabulario que has aprendido en contenido generado por IA en contextos reales.",
+  "profile_whenToStudy": "¿Cuándo estudiarás?",
+  "profile_workCommunication": "Comunicación laboral",
+  "profile_workVocabulary": "Vocabulario de negocios",
+  "profile_writingPractice": "Práctica de escritura",
+  "profile_xpAndGems": "XP y gemas",
+  "profile_xpAndGemsDesc": "Gana XP y gemas completando lecciones",
+  "profile_xpEarnedToday": "XP ganado hoy",
+  "profile_youEarned": "¡Has ganado!",
+  "profile_yourStreak": "Tu racha",
+  "progressToNextLevel": "Progreso al siguiente nivel",
+  "questionXofY": "Pregunta {current} de {total}",
+  "rateApp": "Calificar aplicación",
+  "readyToLearn": "¿Listo para aprender hoy?",
+  "recording": "Grabando...",
+  "reminderTime": "9:00 a. m.",
+  "removeAds": "Eliminar anuncios",
+  "review": "Repasar",
+  "reviewVocabulary": "Repasar vocabulario",
+  "sampleAnswer": "Respuesta de ejemplo:",
+  "sat": "S",
+  "save": "Guardar",
+  "saveAndContinue": "Guardar y continuar",
+  "savePercent": "Ahorra {percent}%",
+  "scenarioCafeTokyo": "Escenario: Ordenar en una cafetería en Tokio",
+  "searchPosts": "Buscar publicaciones",
+  "section": "Sección",
+  "sectionX": "Sección {x}",
+  "sections": "Secciones",
+  "seeAllAchievements": "Ver todos los logros",
+  "seeResults": "Ver resultados",
+  "seeWordsInContext": "Ver tus palabras aprendidas en contexto",
+  "settingsTitle": "Configuración",
+  "shareApp": "Compartir aplicación",
+  "skip": "Saltar",
+  "speakNow": "Habla ahora",
+  "speakersCount": "{speakers} hablantes",
+  "start": "Empezar",
+  "startFreeTrial": "Iniciar prueba gratis",
+  "startLearning": "Comenzar a aprender",
+  "startNextLesson": "Empezar la siguiente lección del curso",
+  "startSpeaking": "Comenzar a hablar",
+  "statsTitle": "Estadísticas",
+  "stillLearning": "Todavía aprendiendo",
+  "streakCalendar": "Calendario de racha",
+  "streakKeepStreak": "¡Completa una lección para mantener tu racha de {currentStreak} días!",
+  "streakRepair": "Reparar Racha",
+  "streakRepaired": "Reparado",
+  "streakShielded": "Protegido",
+  "streakShieldsRemaining": "{count} escudos de racha restantes",
+  "streakTitle": "Racha",
+  "studyNow": "Estudiar ahora",
+  "studyPlan": "Plan de estudio",
+  "submit": "Enviar",
+  "subscribeNow": "Suscribirse ahora",
+  "subscription": "Suscripción",
+  "sun": "D",
+  "superMarket": "Súper Mercado",
+  "swipeToContinue": "Desliza para continuar",
+  "takePlacementTest": "Hacer prueba de nivel",
+  "tapAndHoldMicrophone": "Mantén presionado el micrófono para hablar",
+  "tapToFlip": "Toca para voltear",
+  "tapToFlipBack": "Toca para voltear",
+  "tapToListen": "Toca para escuchar",
+  "tapToPlay": "Toca para reproducir",
+  "tapToReveal": "Toca para revelar",
+  "tapToSpeak": "Toca para hablar",
+  "tapWordsToBuildAnswer": "Toca las palabras para construir tu respuesta",
+  "tapWordsToBuildSentence": "Toca las palabras para construir la oración",
+  "technicalIssues": "Problemas técnicos",
+  "thu": "J",
+  "timeAgoHours": "Hace {hours} horas",
+  "timeAgoMinutes": "Hace {minutes} minutos",
+  "timeSpent": "Tiempo dedicado",
+  "timeSpentHoursMinutes": "{hours} horas {minutes} minutos",
+  "today": "Hoy",
+  "totalLessons": "Total de lecciones",
+  "totalXP": "XP total",
+  "trueLabel": "Verdadero",
+  "tryAgain": "Intentar de nuevo",
+  "tue": "M",
+  "typeMessage": "Escribe un mensaje...",
+  "typeWhatYouHear": "Escribe lo que escuchas...",
+  "typeYourAnswerHere": "Escribe tu respuesta aquí...",
+  "unlimited": "Ilimitado",
+  "unlimitedLessons": "Lecciones ilimitadas",
+  "unlockAllFeatures": "Desbloquear todas las funciones",
+  "unlockNow": "Desbloquear ahora",
+  "unlockSuper": "Desbloquear Super",
+  "updateNow": "Actualizar ahora",
+  "upgradeToPro": "Actualizar a Pro",
+  "upgradeToSuper": "Actualizar a Super",
+  "viewAll": "Ver todo",
+  "viewDetails": "Ver detalles",
+  "viewLeaderboard": "Ver clasificación",
+  "visitChillCorner": "Visitar Chill Corner",
+  "vocabulary": "Vocabulario",
+  "vocabularyReview": "Repaso de vocabulario",
+  "wed": "M",
+  "weekly": "Semanal",
+  "weeklyGoal": "Objetivo semanal",
+  "welcome": "Bienvenido",
+  "welcomeBack": "Bienvenido de nuevo",
+  "welcomeSubtitle": "La forma más efectiva de aprender un nuevo idioma.",
+  "welcomeTitle": "Bienvenido a InstaLingo",
+  "whatNext": "¿Qué te gustaría hacer ahora?",
+  "wordOfTheDay": "Palabra del día",
+  "wordsLearned": "Palabras aprendidas",
+  "wordsPracticed": "Palabras practicadas",
+  "xpEarned": "XP ganado",
+  "xpShort": "XP",
+  "xpThisWeek": "XP esta semana",
+  "xpToGoal": "{xp} XP",
+  "yearly": "Anual",
+  "yes": "Sí",
+  "youAreOffline": "Estás sin conexión",
+  "youLabel": "Tú",
+  "yourAnswer": "Tu respuesta",
+  "yourLevel": "Tu nivel",
+  "yourProgress": "Tu progreso",
+  "onboarding_learningGoalTitle": "¿Cuál es tu objetivo?",
+  "onboarding_learningGoalSubtitle": "Esto nos ayuda a personalizar tu experiencia de aprendizaje.",
+  "onboarding_examPrep": "Prepararse para un examen",
+  "onboarding_examPrepDesc": "Lecciones estructuradas, exámenes de prueba, práctica cronometrada. Sigue tu puntuación estimada.",
+  "onboarding_justForFun": "Solo por diversión",
+  "onboarding_justForFunDesc": "Aprende a tu ritmo. Sin exámenes, sin presión. Simplemente adquiere el idioma de forma natural.",
+  "onboarding_examTypeTitle": "¿Qué examen?",
+  "onboarding_examTypeSubtitle": "Elige el examen de {lang} para el que te estás preparando.",
+  "@onboarding_examTypeSubtitle": {
+    "placeholders": {
+      "lang": {
+        "type": "String"
+      }
+    }
+  },
+  "onboarding_japanese": "japonés",
+  "onboarding_korean": "coreano",
+  "onboarding_examLevelBeginner": "Principiante",
+  "onboarding_examLevelElementary": "Elemental",
+  "onboarding_examLevelBeginnerElementary": "Principiante–Elemental",
+  "onboarding_examWordsCount": "{count} palabras",
+  "@onboarding_examWordsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "onboarding_examSectionsJLPT": "Vocabulario, Gramática, Lectura, Comprensión oral",
+  "onboarding_examSectionsTOPIK": "Comprensión oral, Lectura",
+  "keepPracticing": "¡Sigue practicando!",
+  "kanjiReference": "Referencia Kanji",
+  "kanaReference": "Tablas Kana",
+  "hiraganaChart": "Hiragana",
+  "katakanaChart": "Katakana",
+  "examCompleteTitle": "¡Examen de prueba completado!",
+  "yourScore": "Tu puntuación",
+  "predictedLevel": "Nivel estimado",
+  "profile_tts": "Pronunciación (TTS)",
+  "profile_ttsDesc": "Toca palabras para escuchar la pronunciación",
+  "studyReminderBody": "¡Hora de practicar!",
+  "jlptN5Label": "JLPT N5",
+  "jlptN4Label": "JLPT N4",
+  "onboarding_examLevelIntermediate": "Intermedio",
+  "onboarding_examLevelUpperIntermediate": "Intermedio alto",
+  "onboarding_examLevelAdvanced": "Avanzado"
+}

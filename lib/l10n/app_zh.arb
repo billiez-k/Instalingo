@@ -1,0 +1,738 @@
+{
+  "@@locale": "zh",
+  "@correctCountOfTotal": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@correctWithExplanation": {
+    "placeholders": {
+      "explanation": {
+        "type": "String"
+      }
+    }
+  },
+  "@dayStreakCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@exercisesProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@notQuiteWithExplanation": {
+    "placeholders": {
+      "explanation": {
+        "type": "String"
+      }
+    }
+  },
+  "@profile_learningStatus": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      },
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@profile_lessonsCompleted": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_minPerDay": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_minutesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_stepXofY": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_streakLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_version": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "@questionXofY": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@savePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "@speakersCount": {
+    "placeholders": {
+      "speakers": {
+        "type": "String"
+      }
+    }
+  },
+  "@streakKeepStreak": {
+    "placeholders": {
+      "currentStreak": {
+        "type": "int"
+      }
+    }
+  },
+  "@streakShieldsRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeAgoHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeAgoMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeSpentHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "achievementsTitle": "成就",
+  "active": "活跃",
+  "advancedProgressTracking": "高级进度追踪",
+  "aiAssistantName": "Maya",
+  "aiAssistantRole": "咖啡馆员工",
+  "aiBadge": "AI",
+  "aiChat": "AI 聊天",
+  "aiConversationGreeting": "你好！我是 Maya。我在东京的一家咖啡馆工作。今天你想练习什么？",
+  "aiConversationPractice": "AI 对话练习",
+  "aiConversationTitle": "AI 对话",
+  "aiPractice": "AI 练习",
+  "aiYou": "你",
+  "annual": "年度",
+  "appTagline": "学习。放松。重复。",
+  "appTitle": "InstaLingo",
+  "back": "返回",
+  "cancel": "取消",
+  "chapter": "章节",
+  "chatWithAI": "与 AI 角色聊天",
+  "check": "检查",
+  "chill": "放松",
+  "chillCorner": "放松角",
+  "chill_addComment": "添加评论...",
+  "chill_aiGeneratedImage": "AI生成的图片",
+  "chill_comments": "评论",
+  "chill_noPosts": "暂无帖子",
+  "chill_noPostsMessage": "完成课程以解锁社区词汇帖子。",
+  "chill_postNotFound": "帖子未找到",
+  "chill_postNotFoundMessage": "该帖子可能已被删除或不再可用。",
+  "chill_share": "分享",
+  "clear": "清除",
+  "clearAll": "全部清除",
+  "commitment": "学习承诺",
+  "continueLearning": "继续学习",
+  "continueText": "继续",
+  "correct": "正确",
+  "correctCountOfTotal": "{correct} / {total} 正确",
+  "correctWithExplanation": "正确！{explanation}",
+  "courseComplete": "课程完成！",
+  "courseCompleteTitle": "你做到了！",
+  "coursePath": "课程路径",
+  "createProfile": "创建你的个人资料",
+  "createProfileDesc": "这有助于我们个性化你的学习体验。",
+  "dailyGoal": "每日目标",
+  "dailyGoalCardTitle": "每日目标",
+  "dailyGoalReached": "目标达成！太棒了！",
+  "darkMode": "深色模式",
+  "dayStreak": "连续天数",
+  "dayStreakCount": "{count} 天",
+  "defaultDisplayName": "学习者",
+  "done": "完成",
+  "editProfile": "编辑个人资料",
+  "emptyStateMessage": "稍后回来查看更多内容。",
+  "emptyStateTitle": "还没有内容",
+  "errorGenericMessage": "我们无法加载此内容。请重试。",
+  "errorGenericTitle": "出错了",
+  "exArrangeWords": "排列单词组成正确的句子",
+  "exComprehension": "阅读文章并回答问题",
+  "exDialogueComplete": "完成对话",
+  "exFillInBlank": "填空",
+  "exFlashCard": "点击翻牌",
+  "exGrammarTip": "语法提示",
+  "exImageIdentify": "点击正确的图片",
+  "exMatchWords": "将单词与含义匹配",
+  "exPhraseBuilder": "构建短语",
+  "exSpeaking": "大声朗读这个单词",
+  "exTranslate": "翻译这句话",
+  "exTrueFalse": "这个说法正确吗？",
+  "exTypeWhatYouHear": "输入你听到的内容",
+  "exVocabMultipleChoice": "哪个词是\"{word}\"的意思？",
+  "exWhichWordMeans": "哪个是\"{word}\"的意思？",
+  "exWriting": "写下你的答案",
+  "exampleLabel": "示例",
+  "exercisesProgress": "{completed} / {total} 个练习",
+  "falseLabel": "错误",
+  "featureAICharacters": "AI 角色",
+  "featureAICharactersDesc": "在 Chill Corner 中与像真人一样回应的 AI 角色练习。",
+  "featureMotivation": "保持动力",
+  "featureMotivationDesc": "赚取 XP，保持连胜，解锁成就。",
+  "featureStructuredCourses": "结构化课程",
+  "featureStructuredCoursesDesc": "通过专业设计的课程学习，循序渐进。",
+  "findFriends": "寻找好友",
+  "finishLesson": "完成课程",
+  "flashcardEasy": "简单",
+  "flashcardGood": "良好",
+  "flashcardHard": "困难",
+  "followingTitle": "关注中",
+  "forceUpdateBody": "我们让 InstaLingo 更快、更稳定，并添加了新功能。请更新到最新版本以继续使用。",
+  "forceUpdateBugFixes": "错误修复与稳定性",
+  "forceUpdateMessage": "InstaLingo 有新版本可用。请更新以继续学习。",
+  "forceUpdateNewContent": "新课程与练习",
+  "forceUpdatePerformance": "性能提升",
+  "forceUpdateTitle": "需要更新",
+  "fri": "五",
+  "friendsTitle": "好友",
+  "gems": "宝石",
+  "getStarted": "开始使用",
+  "getUnlimitedLearning": "获得无限学习",
+  "goodbye": "再见",
+  "gotIt": "明白了！",
+  "grammarExampleFallback": "熟能生巧！",
+  "grammarRuleFallback": "请注意本题中的语法。",
+  "grammarTip": "语法提示",
+  "greetingAfternoon": "下午好",
+  "greetingEvening": "晚上好",
+  "greetingMorning": "早上好",
+  "hello": "你好！",
+  "helpSupport": "帮助与支持",
+  "holdToSpeak": "按住说话",
+  "howAreYou": "你好吗？",
+  "iAlreadyHaveAccount": "我已有账户",
+  "incorrect": "错误",
+  "knowIt": "掌握了",
+  "language": "语言",
+  "leaderboardTitle": "排行榜",
+  "learn": "学习",
+  "learnRuleToImprove": "学习此规则以提升",
+  "learningLanguage": "学习语言",
+  "lessonComplete": "课程完成！",
+  "lessonCompleteGood": "不错的努力！复习后再试一次！",
+  "lessonCompleteGreat": "做得很好！继续练习！",
+  "lessonCompletePerfect": "完美！你太厉害了！",
+  "lessons": "课程",
+  "levelAbbreviation": "级",
+  "levelAdvanced": "高级",
+  "levelBeginner": "初级",
+  "levelElementary": "入门",
+  "levelIntermediate": "中级",
+  "levelProficiency": "精通",
+  "levelUpperIntermediate": "中高级",
+  "loading": "加载中...",
+  "loadingLesson": "加载课程中...",
+  "logout": "退出登录",
+  "matchPairsInstruction": "点击左边的单词，然后点击右边对应的匹配项",
+  "maybeLater": "稍后再说",
+  "mon": "一",
+  "monthly": "月度",
+  "motivation": "学习动机",
+  "myNameIs": "我的名字是",
+  "nativeLanguage": "母语",
+  "next": "下一步",
+  "nextQuestion": "下一题",
+  "niceToMeetYou": "很高兴认识你",
+  "noAds": "无广告",
+  "noConnectionMessage": "请检查您的网络连接并重试。",
+  "noConnectionTitle": "无网络连接",
+  "notNow": "暂不",
+  "notQuiteWithExplanation": "不太对。{explanation}",
+  "notifications": "通知",
+  "onboardingTitle": "通过结构化课程和AI角色学习语言",
+  "onboarding_commitmentCasual": "轻松",
+  "onboarding_commitmentIntense": "高强度",
+  "onboarding_commitmentRegular": "常规",
+  "onboarding_commitmentSerious": "认真",
+  "onboarding_commitmentSubtitle": "你可以随时在设置中更改此选项。",
+  "onboarding_commitmentTitle": "你能投入多少时间？",
+  "onboarding_displayNameLabel": "显示名称",
+  "onboarding_emailOptionalLabel": "邮箱（可选）",
+  "onboarding_enterEmailHint": "输入你的邮箱",
+  "onboarding_enterNameHint": "输入你的名字",
+  "onboarding_learningLangSubtitle": "选择你想掌握的语言。",
+  "onboarding_motivationBrainTraining": "大脑训练",
+  "onboarding_motivationCareer": "职业发展",
+  "onboarding_motivationCulture": "文化",
+  "onboarding_motivationFamily": "家庭",
+  "onboarding_motivationFun": "纯粹为了乐趣",
+  "onboarding_motivationMoviesShows": "电影与节目",
+  "onboarding_motivationStudyAbroad": "出国留学",
+  "onboarding_motivationSubtitle": "选择所有适用的选项。",
+  "onboarding_motivationTitle": "你为什么学习？",
+  "onboarding_motivationTravel": "旅行",
+  "onboarding_nativeLangSubtitle": "我们将用此信息来个性化你的学习体验。",
+  "onboarding_proficiencyAdvanced": "高级",
+  "onboarding_proficiencyAdvancedDesc": "我能流利地说",
+  "onboarding_proficiencyBeginner": "初级",
+  "onboarding_proficiencyBeginnerDesc": "我认识几个单词",
+  "onboarding_proficiencyElementary": "基础",
+  "onboarding_proficiencyElementaryDesc": "我能造简单句子",
+  "onboarding_proficiencyIntermediate": "中级",
+  "onboarding_proficiencyIntermediateDesc": "我能进行对话",
+  "onboarding_proficiencyProficient": "精通",
+  "onboarding_proficiencyProficientDesc": "我说得像母语者",
+  "onboarding_proficiencySubtitle": "我们将从适合你的难度开始。",
+  "onboarding_proficiencyTitle": "你目前的水平是多少？",
+  "onboarding_proficiencyUpperIntermediate": "中高级",
+  "onboarding_proficiencyUpperIntermediateDesc": "我能讨论各种话题",
+  "onboarding_skipForNow": "暂时跳过",
+  "paywallSubtitle": "解锁无限学习",
+  "paywallTitle": "InstaLingo 超级版",
+  "perMonth": "/月",
+  "perYear": "/年",
+  "pickNewCourse": "选择新课程",
+  "playing": "播放中...",
+  "practiceWords": "练习刚学过的单词",
+  "privacy": "隐私",
+  "proficiency": "熟练度",
+  "profile": "个人资料",
+  "profile_academicEnglish": "学术英语",
+  "profile_account": "账户",
+  "profile_achievementsUnlocked": "已解锁成就",
+  "profile_adFreeExperience": "无广告体验",
+  "profile_adFreeExperienceDesc": "零干扰，专注学习。",
+  "profile_advanced": "高级",
+  "profile_advancedSpeakingDesc": "获取详细的发音和流利度分析，并附波形可视化。",
+  "profile_advancedSpeakingFeedback": "高级口语反馈",
+  "profile_aiConversationPractice": "AI 对话练习",
+  "profile_aiConversationPracticeAnswer": "与 AI 角色在咖啡馆、机场、办公室等不同场景中练习真实对话。",
+  "profile_allChillCornerContent": "所有 Chill Corner 内容",
+  "profile_appearance": "外观",
+  "profile_beginner": "初学者",
+  "profile_bestValue": "最划算",
+  "profile_browseTopics": "浏览下方话题或直接联系我们",
+  "profile_businessEnglish": "商务英语",
+  "profile_cancelAnytime": "随时取消。无约束。",
+  "profile_checkForUpdates": "检查更新",
+  "profile_completeBeginner": "完全零基础",
+  "profile_contactSupport": "联系客服",
+  "profile_createPlan": "创建计划",
+  "profile_dailyConversation": "日常对话",
+  "profile_daytime": "白天（9-17点）",
+  "profile_displayName": "显示名称",
+  "profile_duration": "时长",
+  "profile_durationDesc": "每次学习多久？",
+  "profile_earningXPGems": "赚取 XP 和宝石",
+  "profile_earningXPGemsAnswer": "完成课程、保持连续学习、复习词汇来赚取奖励并解锁成就。",
+  "profile_elementary": "初级",
+  "profile_email": "邮箱",
+  "profile_enableNotifications": "开启通知",
+  "profile_enableNotificationsAnswer": "在设置中开启提醒，获取每日提示并保持连续学习。",
+  "profile_enterYourEmail": "输入你的邮箱",
+  "profile_enterYourName": "输入你的名字",
+  "profile_evening": "傍晚（17-21点）",
+  "profile_everyDay": "每天",
+  "profile_everythingInMonthly": "月度版全部功能",
+  "profile_examPreparation": "考试准备",
+  "profile_exclusiveStudyPlans": "专属学习计划",
+  "profile_fifteenMinutes": "15分钟",
+  "profile_fiveDaysAWeek": "每周5天",
+  "profile_fiveMinutes": "5分钟",
+  "profile_follow": "关注",
+  "profile_followOthersMessage": "关注其他学习者，在这里看到他们。",
+  "profile_gettingStarted": "入门指南",
+  "profile_goal": "目标",
+  "profile_goalDesc": "你想达到什么目标？",
+  "profile_gotIt": "明白了",
+  "profile_howDoIStart": "如何开始学习？",
+  "profile_howDoIStartAnswer": "选择你的母语，然后选择要学习的语言。完成入门引导，从第一课开始。",
+  "profile_inProgress": "进行中",
+  "profile_instalingoSuperFAQ": "InstaLingo 超级版",
+  "profile_instalingoSuperFAQAnswer": "升级到超级版，享受无限课程、AI 练习、高级追踪和无广告体验。",
+  "profile_intensity": "强度",
+  "profile_intensityDesc": "每周学习频率？",
+  "profile_intermediate": "中级",
+  "profile_learning": "学习",
+  "profile_learningFeatures": "学习功能",
+  "profile_learningStatus": "正在学习 {language} · {level}",
+  "profile_lessonRemindersStreakAlerts": "课程提醒，连续学习提醒",
+  "profile_lessonsCompleted": "已完成 {completed} / {total} 节课",
+  "profile_level": "水平",
+  "profile_levelDesc": "你从哪里开始？",
+  "profile_levelSuffix": "等级",
+  "profile_minPerDay": "每天 {min} 分钟",
+  "profile_minutesCount": "{count} 分钟",
+  "profile_morning": "早上（6-9点）",
+  "profile_night": "夜间（21-24点）",
+  "profile_noAchievementsMessage": "完成课程并保持连续学习来解锁成就。",
+  "profile_noAchievementsYet": "还没有成就",
+  "profile_notSet": "未设置",
+  "profile_offlineMode": "离线模式",
+  "profile_offlineModeDesc": "下载课程，随时随地无网学习。",
+  "profile_perMonthDesc": "每月",
+  "profile_perYearDesc": "每年",
+  "profile_personalizedStudyPlans": "个性化学习计划",
+  "profile_personalizedStudyPlansDesc": "AI 生成的学习计划，根据你的目标和时间量身定制。",
+  "profile_priorityAIResponses": "优先 AI 响应",
+  "profile_proBadge": "PRO",
+  "profile_proficiencyLevel": "熟练度等级",
+  "profile_proficient": "精通",
+  "profile_resetProgress": "重置进度",
+  "profile_resetProgressFAQ": "重置进度",
+  "profile_resetProgressFAQAnswer": "前往设置 > 重置进度重新开始。此操作无法撤销。",
+  "profile_saveFiftyVsMonthly": "比月度节省 50%",
+  "profile_schedule": "时间安排",
+  "profile_scheduleDesc": "你什么时候可以学习？",
+  "profile_settingDailyGoals": "设置每日目标",
+  "profile_settingDailyGoalsAnswer": "前往个人资料 > 设置 > 每日目标来调整学习目标。我们建议每天15-30分钟。",
+  "profile_someBasics": "有一些基础",
+  "profile_soundEffects": "音效",
+  "profile_stepXofY": "第 {current} 步，共 {total} 步",
+  "profile_streakLabel": "连续 {count} 天",
+  "profile_studyPlanCreated": "学习计划创建成功！",
+  "profile_superBadge": "超级版",
+  "profile_superSubtitle": "由 AI 驱动的终极语言学习体验。",
+  "profile_superTitle": "超级版",
+  "profile_tenMinutes": "10分钟",
+  "profile_threeDaysAWeek": "每周3天",
+  "profile_travelBasics": "旅行基础",
+  "profile_twentyPlusMinutes": "20分钟以上",
+  "profile_unlimitedAIConversations": "无限 AI 对话",
+  "profile_unlimitedAIDesc": "在 Chill Corner 中无限次与 AI 角色练习。",
+  "profile_unlockFullExperience": "解锁完整的语言学习体验。",
+  "profile_unlocked": "已解锁",
+  "profile_upgradeToSuper": "升级到超级版",
+  "profile_upperIntermediate": "中高级",
+  "profile_version": "InstaLingo v{version}",
+  "profile_visitHelpCenter": "访问帮助中心",
+  "profile_weekendsOnly": "仅周末",
+  "profile_whatIsChillCorner": "什么是 Chill Corner？",
+  "profile_whatIsChillCornerAnswer": "Chill Corner 展示你在真实语境中学过的词汇，由 AI 角色分享。",
+  "questionXofY": "问题 {current} / {total}",
+  "readyToLearn": "今天准备好学习了吗？",
+  "reminderTime": "上午9:00",
+  "review": "复习",
+  "reviewVocabulary": "复习词汇",
+  "sampleAnswer": "参考答案：",
+  "sat": "六",
+  "save": "保存",
+  "savePercent": "节省 {percent}%",
+  "scenarioCafeTokyo": "场景：在东京的咖啡馆点餐",
+  "section": "部分",
+  "sections": "章节",
+  "seeResults": "查看结果",
+  "seeWordsInContext": "在语境中查看学过的单词",
+  "settingsTitle": "设置",
+  "skip": "跳过",
+  "speakersCount": "{speakers} 位使用者",
+  "start": "开始",
+  "startFreeTrial": "开始免费试用",
+  "startLearning": "开始学习",
+  "startNextLesson": "开始课程中的下一课",
+  "statsTitle": "统计数据",
+  "stillLearning": "还在学习",
+  "streakCalendar": "连续日历",
+  "streakKeepStreak": "完成一节课以保持 {currentStreak} 天连胜！",
+  "streakRepair": "修复连胜",
+  "streakRepaired": "已修复",
+  "streakShielded": "已保护",
+  "streakShieldsRemaining": "剩余 {count} 个连胜保护",
+  "studyPlan": "学习计划",
+  "submit": "提交",
+  "subscription": "订阅",
+  "sun": "日",
+  "takePlacementTest": "参加水平测试",
+  "tapAndHoldMicrophone": "点击并按住麦克风说话",
+  "tapToFlip": "点击翻转",
+  "tapToFlipBack": "点击翻回",
+  "tapToPlay": "点击播放",
+  "tapToReveal": "点击显示",
+  "tapWordsToBuildAnswer": "点击单词来构建答案",
+  "tapWordsToBuildSentence": "点击单词来构建句子",
+  "thu": "四",
+  "timeAgoHours": "{hours}小时",
+  "timeAgoMinutes": "{minutes}分钟",
+  "timeSpent": "学习时长",
+  "timeSpentHoursMinutes": "{hours}小时{minutes}分钟",
+  "today": "今天",
+  "totalXP": "总 XP",
+  "trueLabel": "正确",
+  "tryAgain": "重试",
+  "tue": "二",
+  "typeMessage": "输入消息...",
+  "typeWhatYouHear": "输入你听到的内容...",
+  "typeYourAnswerHere": "在此输入你的答案...",
+  "unlimitedLessons": "无限课程",
+  "unlockSuper": "解锁超级版",
+  "updateNow": "立即更新",
+  "visitChillCorner": "访问放松角",
+  "vocabularyReview": "词汇复习",
+  "wed": "三",
+  "welcomeSubtitle": "学习新语言最有效的方式。",
+  "welcomeTitle": "欢迎使用 InstaLingo",
+  "whatNext": "接下来想做什么？",
+  "wordsLearned": "已学单词",
+  "wordsPracticed": "你练习的单词",
+  "xpShort": "XP",
+  "xpThisWeek": "本周 XP",
+  "xpToGoal": "还需 {xp} XP 达成目标",
+  "youLabel": "你",
+  "yourLevel": "你的等级",
+  "profile_chooseYourPlan": "选择您的套餐",
+  "profile_contactUs": "联系我们",
+  "profile_continueWithFree": "继续免费使用",
+  "profile_culturalInsights": "文化洞察",
+  "profile_culturalInsightsDesc": "文化洞察 描述",
+  "profile_currentPlan": "当前计划",
+  "profile_dailyGoalMet": "每日目标达成",
+  "profile_darkMode": "深色模式",
+  "profile_downloadForOffline": "下载以供离线使用",
+  "profile_downloadForOfflineDesc": "下载以供离线使用",
+  "profile_emailUs": "给我们发邮件",
+  "profile_falseBeginner": "伪初学者",
+  "profile_faq": "常见问题",
+  "profile_faqAnswer1": "常见问题解答1",
+  "profile_faqAnswer2": "常见问题解答2",
+  "profile_faqAnswer3": "常见问题解答3",
+  "profile_faqAnswer4": "常见问题解答4",
+  "profile_faqQuestion1": "常见问题 问题 1",
+  "profile_faqQuestion2": "常见问题解答 第2问",
+  "profile_faqQuestion3": "常见问题解答 第3问",
+  "profile_faqQuestion4": "常见问题第4问",
+  "profile_feedback": "反馈",
+  "profile_findFriends": "查找好友",
+  "profile_firstSteps": "第一步",
+  "profile_followingTitle": "标题如下",
+  "profile_freePlan": "免费套餐",
+  "profile_goPremium": "升级至高级版",
+  "profile_goalDescription": "目标描述",
+  "profile_goalFluency": "目标流利度",
+  "profile_goalTravel": "旅行目标",
+  "profile_goalWork": "目标工作",
+  "profile_inTheMorning": "清晨",
+  "profile_keepPracticing": "坚持练习",
+  "profile_lateNight": "深夜",
+  "profile_leaderboardTitle": "排行榜标题",
+  "profile_learnBasicPhrases": "学习常用短语",
+  "profile_levelUp": "升级",
+  "profile_monthly": "每月",
+  "profile_morningBird": "晨鸟",
+  "profile_mostPopular": "最受欢迎",
+  "profile_motivationCulture": "文化动力",
+  "profile_motivationFamily": "动力家族",
+  "profile_motivationFun": "动力与乐趣",
+  "profile_motivationTravel": "激励之旅",
+  "profile_motivationWork": "动机研究",
+  "profile_myPlan": "我的计划",
+  "profile_nextAchievement": "下一个成就",
+  "profile_noFollowingYet": "尚无关注者",
+  "profile_noFollowingYetMessage": "“尚未关注”提示Simplified Chinese (Mainland)",
+  "profile_noFriendsYet": "还没有好友",
+  "profile_noFriendsYetMessage": "“尚未添加好友”提示",
+  "profile_noLeaderboardData": "没有排行榜数据",
+  "profile_noLeaderboardDataMessage": "无排行榜数据提示",
+  "profile_notifications": "通知",
+  "profile_offlineTitle": "离线标题",
+  "profile_onboardingComplete": "入职完成",
+  "profile_onboardingTitle": "入职指南标题",
+  "profile_perMonth": "每月",
+  "profile_plan": "好",
+  "profile_premium": "高级版",
+  "profile_proFeatures": "专业版功能",
+  "profile_proFeaturesDesc": "专业版功能描述",
+  "profile_proPlan": "专业方案",
+  "profile_proPlanDesc": "普瑞纳 描述",
+  "profile_profile": "个人简介",
+  "profile_progress": "进展",
+  "profile_progressReset": "进度重置",
+  "profile_progressResetMessage": "进度重置提示",
+  "profile_questionXofY": "第{x}题，共{y}题",
+  "profile_reminder": "提醒",
+  "profile_reminderTime": "提醒时间",
+  "profile_removeAds": "移除广告",
+  "profile_removeAdsDesc": "移除广告 描述",
+  "profile_savePercent": "节省 {percent}%",
+  "profile_section": "章节",
+  "profile_seeAll": "全部",
+  "profile_sendFeedback": "发送反馈",
+  "profile_skillLevel": "技能等级",
+  "profile_speakingPractice": "口语练习",
+  "profile_startFreeTrial": "开始免费试用",
+  "profile_studyPlanDescription": "学习计划说明",
+  "profile_studyPlanTitle": "学习计划标题",
+  "profile_studyReminder": "学习提醒",
+  "profile_subscribeNow": "立即订阅",
+  "profile_subtitle": "字幕",
+  "profile_superDescription": "精彩描述",
+  "profile_support": "支持",
+  "profile_travelPhrases": "旅行常用语",
+  "profile_troubleshooting": "故障排除",
+  "profile_tryFreeForDays": "免费试用 {days} 天，之后 {price}",
+  "profile_unlimitedAccess": "无限访问",
+  "profile_unlimitedAccessDesc": "无限访问说明",
+  "profile_unlimitedAiConversations": "无限AI对话",
+  "profile_unlimitedAiConversationsDesc": "无限AI对话 描述",
+  "profile_unlimitedLessons": "无限课程",
+  "profile_unlimitedLessonsDesc": "无限课程 描述",
+  "profile_unlimitedVocabularyBuilder": "无限词汇构建器",
+  "profile_unlimitedVocabularyBuilderDesc": "《无限词汇构建器》简介",
+  "profile_weekdays": "工作日",
+  "profile_weekends": "周末",
+  "profile_whenToStudy": "何时学习",
+  "profile_workCommunication": "工作沟通",
+  "profile_workVocabulary": "工作词汇",
+  "profile_writingPractice": "写作练习",
+  "profile_xpAndGems": "经验值和宝石",
+  "profile_xpAndGemsDesc": "经验值与宝石说明",
+  "profile_xpEarnedToday": "今日获得的经验值",
+  "profile_youEarned": "你值得拥有",
+  "profile_yourStreak": "您的连胜记录",
+  "progressToNextLevel": "迈向新高度",
+  "rateApp": "为应用评分",
+  "recording": "录音",
+  "removeAds": "移除广告",
+  "saveAndContinue": "保存并继续",
+  "searchPosts": "搜索帖子",
+  "sectionX": "第{x}节",
+  "seeAllAchievements": "查看所有成就",
+  "shareApp": "分享应用",
+  "speakNow": "立即发言",
+  "startSpeaking": "开始说话",
+  "streakTitle": "连胜头衔",
+  "studyNow": "立即学习",
+  "subscribeNow": "立即订阅",
+  "superMarket": "超市",
+  "swipeToContinue": "滑动继续",
+  "tapToListen": "点击收听",
+  "tapToSpeak": "点击说话",
+  "technicalIssues": "技术问题",
+  "totalLessons": "课程总数",
+  "unlimited": "无限",
+  "unlockAllFeatures": "解锁所有功能",
+  "unlockNow": "立即解锁",
+  "upgradeToPro": "升级至专业版",
+  "upgradeToSuper": "升级至超级版",
+  "viewAll": "查看全部",
+  "viewDetails": "查看详情",
+  "viewLeaderboard": "查看排行榜",
+  "vocabulary": "词汇",
+  "weekly": "每周",
+  "weeklyGoal": "每周目标",
+  "welcome": "欢迎",
+  "welcomeBack": "欢迎回来",
+  "wordOfTheDay": "每日一词",
+  "xpEarned": "获得的经验值",
+  "yearly": "每年",
+  "yes": "是的",
+  "youAreOffline": "您已断开连接",
+  "yourAnswer": "您的回答",
+  "yourProgress": "您的进度",
+  "onboarding_learningGoalTitle": "你的目标是什么？",
+  "onboarding_learningGoalSubtitle": "这有助于我们为您量身定制学习体验。",
+  "onboarding_examPrep": "准备考试",
+  "onboarding_examPrepDesc": "结构化课程、模拟考试、计时练习。追踪预测分数。",
+  "onboarding_justForFun": "随便学学",
+  "onboarding_justForFunDesc": "按自己的节奏学习。没有考试，没有压力。自然地掌握语言。",
+  "onboarding_examTypeTitle": "哪个考试？",
+  "onboarding_examTypeSubtitle": "选择你要参加的{lang}考试。",
+  "@onboarding_examTypeSubtitle": {
+    "placeholders": {
+      "lang": {
+        "type": "String"
+      }
+    }
+  },
+  "onboarding_japanese": "日语",
+  "onboarding_korean": "韩语",
+  "onboarding_examLevelBeginner": "初级",
+  "onboarding_examLevelElementary": "基础",
+  "onboarding_examLevelBeginnerElementary": "初级–基础",
+  "onboarding_examWordsCount": "{count} 个单词",
+  "@onboarding_examWordsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "onboarding_examSectionsJLPT": "词汇、语法、阅读、听力",
+  "onboarding_examSectionsTOPIK": "听力、阅读",
+  "keepPracticing": "继续练习！",
+  "kanjiReference": "汉字参考",
+  "kanaReference": "假名表",
+  "hiraganaChart": "平假名",
+  "katakanaChart": "片假名",
+  "examCompleteTitle": "模拟考试完成！",
+  "yourScore": "你的分数",
+  "predictedLevel": "预测等级",
+  "profile_tts": "发音 (TTS)",
+  "profile_ttsDesc": "点击单词听取发音",
+  "studyReminderBody": "练习时间到了！",
+  "jlptN5Label": "JLPT N5",
+  "jlptN4Label": "JLPT N4",
+  "onboarding_examLevelIntermediate": "中级",
+  "onboarding_examLevelUpperIntermediate": "中高级",
+  "onboarding_examLevelAdvanced": "高级"
+}

@@ -1,0 +1,473 @@
+{
+  "meta": {
+    "language": "ja",
+    "exam_level": "JLPT N4",
+    "total_dialogues": 5,
+    "source": "AI-generated dialogues using SOURCE_VERIFIED N4 vocabulary and STANDARD_REFERENCE grammar patterns",
+    "source_status": "AI_GENERATED",
+    "topics": [
+      "transportation",
+      "hotel",
+      "doctor",
+      "job_interview",
+      "phone_reservation"
+    ],
+    "translation_status": "deepl_translated_all_locales"
+  },
+  "dialogues": [
+    {
+      "id": "ja_n4_d001",
+      "title": "電車の乗り換え (Train Transfer)",
+      "topic": "transportation",
+      "difficulty": "elementary",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "すみません、東京駅まで行きたいんですが、この電車で行けますか。",
+          "translation_en": "Excuse me, I want to go to Tokyo Station — can I go on this train?",
+          "translation_zh": "请问，我想去东京站——这趟车能去吗？",
+          "translation_zh_TW": "請問，我想去東京站——這班車可以去嗎？",
+          "translation_es": "Disculpe, quiero ir a la estación de Tokio. ¿Puedo coger este tren?",
+          "translation_fr": "Excusez-moi, je voudrais aller à la gare de Tokyo. Est-ce que je peux prendre ce train ?",
+          "translation_de": "Entschuldigung, ich möchte zum Bahnhof Tokio – kann ich diesen Zug nehmen?"
+        },
+        {
+          "speaker": "B",
+          "text": "いいえ、この電車は途中で止まります。次の新宿駅で中央線に乗り換えてください。",
+          "translation_en": "No, this train stops partway. Please transfer to the Chuo Line at the next station, Shinjuku.",
+          "translation_zh": "不，这趟列车中途会停靠。请在下一站新宿站换乘中央线。",
+          "translation_zh_TW": "不，這班列車中途會停靠。請在下一站「新宿」轉乘中央線。",
+          "translation_es": "No, este tren hace una parada intermedia. Por favor, cambie a la línea Chuo en la próxima estación, Shinjuku.",
+          "translation_fr": "Non, ce train s'arrête en cours de route. Veuillez prendre la ligne Chuo à la prochaine station, Shinjuku.",
+          "translation_de": "Nein, dieser Zug hält unterwegs. Bitte steigen Sie am nächsten Bahnhof, Shinjuku, in die Chuo-Linie um."
+        },
+        {
+          "speaker": "A",
+          "text": "新宿駅で中央線ですね。東京駅までは何駅ぐらいですか。",
+          "translation_en": "Chuo Line at Shinjuku Station, right. About how many stops to Tokyo Station?",
+          "translation_zh": "中央线在新宿站，对吧。到东京站大概几站？",
+          "translation_zh_TW": "中央線在新宿站，沒錯。到東京站大約要幾站？",
+          "translation_es": "La línea Chuo en la estación de Shinjuku, a la derecha. ¿Cuántas paradas hay aproximadamente hasta la estación de Tokio?",
+          "translation_fr": "La ligne Chuo à la gare de Shinjuku, c'est ça. Combien y a-t-il d'arrêts environ jusqu'à la gare de Tokyo ?",
+          "translation_de": "Chuo-Linie am Bahnhof Shinjuku, richtig. Wie viele Haltestellen sind es ungefähr bis zum Bahnhof Tokio?"
+        },
+        {
+          "speaker": "B",
+          "text": "中央線に乗れば、4つ目の駅です。10分ぐらいで着くと思います。",
+          "translation_en": "If you take the Chuo Line, it's the 4th station. I think you'll arrive in about 10 minutes.",
+          "translation_zh": "如果乘坐中央线，那是第4站。我想大约10分钟就能到。",
+          "translation_zh_TW": "如果搭乘中央線，那是第4站。我想大約10分鐘就能到了。",
+          "translation_es": "Si coges la línea Chuo, es la cuarta estación. Creo que llegarás en unos 10 minutos.",
+          "translation_fr": "Si vous prenez la ligne Chuo, c'est la quatrième station. Je pense que vous y serez en une dizaine de minutes.",
+          "translation_de": "Wenn du die Chuo-Linie nimmst, ist es die vierte Haltestelle. Ich schätze, du bist in etwa 10 Minuten da."
+        },
+        {
+          "speaker": "A",
+          "text": "ありがとうございます。助かりました。",
+          "translation_en": "Thank you very much. You've been a great help.",
+          "translation_zh": "非常感谢。您帮了大忙。",
+          "translation_zh_TW": "非常感謝。您幫了大忙。",
+          "translation_es": "Muchas gracias. Me has sido de gran ayuda.",
+          "translation_fr": "Merci beaucoup. Vous m'avez été d'une grande aide.",
+          "translation_de": "Vielen Dank. Sie waren mir eine große Hilfe."
+        },
+        {
+          "speaker": "B",
+          "text": "どういたしまして。気をつけて行ってくださいね。",
+          "translation_en": "You're welcome. Please travel safely.",
+          "translation_zh": "不客气。祝您旅途平安。",
+          "translation_zh_TW": "不客氣。請一路平安。",
+          "translation_es": "De nada. Que tengas un buen viaje.",
+          "translation_fr": "De rien. Fais bon voyage.",
+          "translation_de": "Gern geschehen. Gute Reise."
+        }
+      ],
+      "vocabulary_focus": [
+        "乗り換え",
+        "途中",
+        "止まる",
+        "中央線",
+        "着く"
+      ],
+      "grammar_focus": [
+        "〜んですが (explanation)",
+        "〜ば (conditional)",
+        "〜と思います (opinion)"
+      ],
+      "source": "AI-generated Japanese dialogue",
+      "source_status": "AI_GENERATED"
+    },
+    {
+      "id": "ja_n4_d002",
+      "title": "ホテルのチェックイン (Hotel Check-in)",
+      "topic": "hotel",
+      "difficulty": "elementary",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "いらっしゃいませ。ご予約はされていますか。",
+          "translation_en": "Welcome. Do you have a reservation?",
+          "translation_zh": "欢迎光临。您有预约吗？",
+          "translation_zh_TW": "歡迎光臨。您有預約嗎？",
+          "translation_es": "Bienvenido. ¿Tiene reserva?",
+          "translation_fr": "Bienvenue. Avez-vous réservé ?",
+          "translation_de": "Herzlich willkommen. Haben Sie reserviert?"
+        },
+        {
+          "speaker": "B",
+          "text": "はい、田中太郎で予約しています。二泊です。",
+          "translation_en": "Yes, I have a reservation under Taro Tanaka. For two nights.",
+          "translation_zh": "是的，我以田中太郎的名义预订了房间。共两晚。",
+          "translation_zh_TW": "是的，我以田中太郎的名義預訂了房間。共兩晚。",
+          "translation_es": "Sí, tengo una reserva a nombre de Taro Tanaka. Para dos noches.",
+          "translation_fr": "Oui, j'ai une réservation au nom de Taro Tanaka. Pour deux nuits.",
+          "translation_de": "Ja, ich habe eine Reservierung unter dem Namen Taro Tanaka. Für zwei Nächte."
+        },
+        {
+          "speaker": "A",
+          "text": "かしこまりました。田中様、二泊でございますね。パスポートを拝見してもよろしいでしょうか。",
+          "translation_en": "Certainly. Mr. Tanaka, two nights. May I see your passport?",
+          "translation_zh": "好的。田中先生，住两晚。请问能看看您的护照吗？",
+          "translation_zh_TW": "當然。田中先生，兩晚。請問可以看一下您的護照嗎？",
+          "translation_es": "Por supuesto. Señor Tanaka, dos noches. ¿Puedo ver su pasaporte?",
+          "translation_fr": "Bien sûr. Monsieur Tanaka, pour deux nuits. Puis-je voir votre passeport ?",
+          "translation_de": "Gewiss. Herr Tanaka, zwei Nächte. Darf ich Ihren Reisepass sehen?"
+        },
+        {
+          "speaker": "B",
+          "text": "はい、これです。朝食はついていますか。",
+          "translation_en": "Yes, here it is. Is breakfast included?",
+          "translation_zh": "是的，就是这个。早餐包含在内吗？",
+          "translation_zh_TW": "是的，就是這個。早餐包含在內嗎？",
+          "translation_es": "Sí, aquí está. ¿El desayuno está incluido?",
+          "translation_fr": "Oui, le voici. Le petit-déjeuner est-il compris ?",
+          "translation_de": "Ja, hier ist es. Ist das Frühstück im Preis inbegriffen?"
+        },
+        {
+          "speaker": "A",
+          "text": "はい、朝食は7時から9時まで二階のレストランでご用意しております。お部屋は5階の502号室でございます。",
+          "translation_en": "Yes, breakfast is available from 7 to 9 at the restaurant on the second floor. Your room is 502 on the 5th floor.",
+          "translation_zh": "是的，餐厅位于二楼，早餐供应时间为7点至9点。您的房间是5楼的502号房。",
+          "translation_zh_TW": "是的，早餐於上午7點至9點在二樓餐廳供應。您的房間是五樓的502房。",
+          "translation_es": "Sí, el desayuno se sirve de 7 a 9 en el restaurante de la segunda planta. Su habitación es la 502, en la quinta planta.",
+          "translation_fr": "Oui, le petit-déjeuner est servi de 7 h à 9 h au restaurant situé au deuxième étage. Votre chambre est la 502, au 5e étage.",
+          "translation_de": "Ja, das Frühstück wird von 7 bis 9 Uhr im Restaurant im zweiten Stock serviert. Ihr Zimmer ist das Zimmer 502 im 5. Stock."
+        },
+        {
+          "speaker": "B",
+          "text": "ありがとうございます。それから、Wi-Fiのパスワードを教えていただけますか。",
+          "translation_en": "Thank you. Also, could you tell me the Wi-Fi password?",
+          "translation_zh": "谢谢。另外，你能告诉我Wi-Fi密码吗？",
+          "translation_zh_TW": "謝謝。另外，請問能告訴我 Wi-Fi 的密碼嗎？",
+          "translation_es": "Gracias. Por cierto, ¿podrías decirme la contraseña del wifi?",
+          "translation_fr": "Merci. Pourriez-vous également me donner le mot de passe du Wi-Fi ?",
+          "translation_de": "Danke. Könnten Sie mir bitte auch das WLAN-Passwort nennen?"
+        },
+        {
+          "speaker": "A",
+          "text": "パスワードはこちらに書いてございます。何かございましたら、いつでもフロントまでお電話ください。",
+          "translation_en": "The password is written here. If there's anything, please call the front desk anytime.",
+          "translation_zh": "密码写在这里。如有任何问题，请随时致电前台。",
+          "translation_zh_TW": "密碼寫在這裏。如有任何問題，請隨時致電櫃檯。",
+          "translation_es": "La contraseña está aquí. Si tiene alguna duda, llame a recepción cuando quiera.",
+          "translation_fr": "Le mot de passe est indiqué ici. En cas de problème, n'hésitez pas à appeler la réception à tout moment.",
+          "translation_de": "Das Passwort steht hier. Bei Fragen können Sie sich jederzeit an die Rezeption wenden."
+        }
+      ],
+      "vocabulary_focus": [
+        "予約",
+        "二泊",
+        "拝見",
+        "朝食",
+        "号室",
+        "フロント"
+      ],
+      "grammar_focus": [
+        "敬語 (keigo)",
+        "〜ていただけますか (polite request)",
+        "〜でございます (humble)"
+      ],
+      "source": "AI-generated Japanese dialogue",
+      "source_status": "AI_GENERATED"
+    },
+    {
+      "id": "ja_n4_d003",
+      "title": "病院で (At the Doctor's Office)",
+      "topic": "doctor",
+      "difficulty": "elementary",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "どうされましたか。",
+          "translation_en": "What seems to be the problem?",
+          "translation_zh": "问题出在哪里？",
+          "translation_zh_TW": "問題出在哪裡？",
+          "translation_es": "¿Cuál es el problema?",
+          "translation_fr": "Quel est le problème ?",
+          "translation_de": "Wo liegt das Problem?"
+        },
+        {
+          "speaker": "B",
+          "text": "昨日から頭が痛くて、少し熱もあるんです。",
+          "translation_en": "Since yesterday, I've had a headache and a slight fever too.",
+          "translation_zh": "从昨天开始，我就一直头痛，还有点发烧。",
+          "translation_zh_TW": "從昨天開始，我就一直頭痛，而且還有點發燒。",
+          "translation_es": "Desde ayer tengo dolor de cabeza y también un poco de fiebre.",
+          "translation_fr": "Depuis hier, j'ai mal à la tête et un peu de fièvre aussi.",
+          "translation_de": "Seit gestern habe ich Kopfschmerzen und auch leichtes Fieber."
+        },
+        {
+          "speaker": "A",
+          "text": "では、まず熱を測りましょう。…38度ありますね。ちょっと喉を見せてください。",
+          "translation_en": "Then let's take your temperature first. ...38 degrees. Please let me look at your throat.",
+          "translation_zh": "那我们先给你量一下体温吧。……38度。请让我看看你的喉咙。",
+          "translation_zh_TW": "那我們先量一下你的體溫吧。……38度。請讓我看看你的喉嚨。",
+          "translation_es": "Entonces, primero te voy a tomar la temperatura. ...38 grados. Déjame echarte un vistazo a la garganta, por favor.",
+          "translation_fr": "Alors, commençons par prendre votre température. ...38 degrés. Laissez-moi jeter un œil à votre gorge.",
+          "translation_de": "Dann messen wir erst einmal Ihre Temperatur. … 38 Grad. Bitte lassen Sie mich einen Blick in Ihren Rachen werfen."
+        },
+        {
+          "speaker": "B",
+          "text": "はい… 喉も痛いです。",
+          "translation_en": "Okay... My throat hurts too.",
+          "translation_zh": "好吧……我的喉咙也疼。",
+          "translation_zh_TW": "好吧……我的喉嚨也痛。",
+          "translation_es": "Vale... A mí también me duele la garganta.",
+          "translation_fr": "Bon... J'ai mal à la gorge moi aussi.",
+          "translation_de": "Okay... Mir tut auch der Hals weh."
+        },
+        {
+          "speaker": "A",
+          "text": "喉が少し赤くなっていますね。風邪だと思います。薬を3日分出しますので、ちゃんと飲んでください。",
+          "translation_en": "Your throat is a bit red. I think it's a cold. I'll prescribe medicine for 3 days, so please take it properly.",
+          "translation_zh": "你的喉咙有点红。我猜是感冒了。我给你开3天的药，请按时服用。",
+          "translation_zh_TW": "你的喉嚨有點紅。我想是感冒了。我會開三天的藥，請務必按時服用。",
+          "translation_es": "Tienes la garganta un poco enrojecida. Creo que es un resfriado. Te voy a recetar un medicamento para tres días, así que tómatelo como es debido.",
+          "translation_fr": "Vous avez la gorge un peu rouge. Je pense que c'est un rhume. Je vais vous prescrire un traitement pour trois jours, alors veillez à le prendre correctement.",
+          "translation_de": "Dein Hals ist etwas gerötet. Ich glaube, du hast eine Erkältung. Ich verschreibe dir Medikamente für drei Tage, bitte nimm sie ordnungsgemäß ein."
+        },
+        {
+          "speaker": "B",
+          "text": "わかりました。お風呂に入ってもいいですか。",
+          "translation_en": "Understood. Is it okay to take a bath?",
+          "translation_zh": "明白了。可以洗澡吗？",
+          "translation_zh_TW": "明白了。可以去洗澡嗎？",
+          "translation_es": "Entendido. ¿Puedo darme un baño?",
+          "translation_fr": "D'accord. Est-ce que je peux prendre un bain ?",
+          "translation_de": "Verstanden. Darf ich ein Bad nehmen?"
+        },
+        {
+          "speaker": "A",
+          "text": "今日は控えたほうがいいでしょう。ゆっくり休んでくださいね。",
+          "translation_en": "You should probably avoid it today. Please rest well.",
+          "translation_zh": "今天你最好还是别去了。请好好休息。",
+          "translation_zh_TW": "今天你最好還是別去。請好好休息。",
+          "translation_es": "Quizá sea mejor que hoy no lo hagas. Descansa bien, por favor.",
+          "translation_fr": "Tu ferais mieux d'éviter ça aujourd'hui. Repose-toi bien.",
+          "translation_de": "Das solltest du heute wohl lieber lassen. Ruh dich bitte gut aus."
+        }
+      ],
+      "vocabulary_focus": [
+        "頭が痛い",
+        "熱",
+        "測る",
+        "喉",
+        "風邪",
+        "薬",
+        "控える"
+      ],
+      "grammar_focus": [
+        "〜てください (request)",
+        "〜たほうがいい (advice)",
+        "〜でしょう (conjecture)"
+      ],
+      "source": "AI-generated Japanese dialogue",
+      "source_status": "AI_GENERATED"
+    },
+    {
+      "id": "ja_n4_d004",
+      "title": "アルバイトの面接 (Part-time Job Interview)",
+      "topic": "job_interview",
+      "difficulty": "elementary",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "こんにちは。本日は面接のためにお越しいただき、ありがとうございます。",
+          "translation_en": "Hello. Thank you for coming in for the interview today.",
+          "translation_zh": "您好。感谢您今天前来参加面试。",
+          "translation_zh_TW": "您好。感謝您今天前來參加面試。",
+          "translation_es": "Hola. Gracias por venir hoy a la entrevista.",
+          "translation_fr": "Bonjour. Merci d'être venu aujourd'hui pour l'entretien.",
+          "translation_de": "Hallo. Vielen Dank, dass Sie heute zum Vorstellungsgespräch gekommen sind."
+        },
+        {
+          "speaker": "B",
+          "text": "こんにちは。よろしくお願いいたします。本日はよろしくお願いします。",
+          "translation_en": "Hello. I am pleased to meet you. Thank you for having me today.",
+          "translation_zh": "大家好。很高兴见到大家。感谢今天邀请我来。",
+          "translation_zh_TW": "您好。很高興見到您。感謝您今天邀請我前來。",
+          "translation_es": "Hola. Me alegro de conocerles. Gracias por recibirme hoy.",
+          "translation_fr": "Bonjour. Je suis ravi de vous rencontrer. Merci de m'avoir invité aujourd'hui.",
+          "translation_de": "Hallo. Es freut mich, Sie kennenzulernen. Vielen Dank, dass ich heute hier sein darf."
+        },
+        {
+          "speaker": "A",
+          "text": "まず、自己紹介をお願いできますか。",
+          "translation_en": "First, could you introduce yourself?",
+          "translation_zh": "首先，你能先做个自我介绍吗？",
+          "translation_zh_TW": "首先，請問您能自我介紹一下嗎？",
+          "translation_es": "En primer lugar, ¿podrías presentarte?",
+          "translation_fr": "Pour commencer, pourriez-vous vous présenter ?",
+          "translation_de": "Könntest du dich zunächst einmal vorstellen?"
+        },
+        {
+          "speaker": "B",
+          "text": "はい。私は大学生で、経済学を勉強しています。接客のアルバイトは初めてですが、人と話すことが好きなので、頑張りたいと思います。",
+          "translation_en": "Yes. I am a university student studying economics. This is my first part-time job in customer service, but I like talking to people, so I want to do my best.",
+          "translation_zh": "是的。我是一名攻读经济学专业的大学生。这是我第一份客服兼职工作，但我喜欢与人交流，所以我会尽我所能做好这份工作。",
+          "translation_zh_TW": "是的。我是大學生，主修經濟學。這是我第一份客服類的兼職工作，但我喜歡與人交流，所以會盡我所能做好這份工作。",
+          "translation_es": "Sí. Soy estudiante universitario y estudio Economía. Este es mi primer trabajo a tiempo parcial en atención al cliente, pero me gusta hablar con la gente, así que quiero dar lo mejor de mí.",
+          "translation_fr": "Oui. Je suis étudiant en économie à l'université. C'est mon premier emploi à temps partiel dans le service client, mais j'aime discuter avec les gens, alors je vais faire de mon mieux.",
+          "translation_de": "Ja. Ich bin Student der Wirtschaftswissenschaften. Das ist mein erster Nebenjob im Kundenservice, aber ich unterhalte mich gerne mit Menschen, deshalb möchte ich mein Bestes geben."
+        },
+        {
+          "speaker": "A",
+          "text": "なるほど。週にどのぐらい入れますか。",
+          "translation_en": "I see. How many days per week can you work?",
+          "translation_zh": "我明白了。你每周能工作几天？",
+          "translation_zh_TW": "我明白了。你每週能工作幾天？",
+          "translation_es": "Ya veo. ¿Cuántos días a la semana puedes trabajar?",
+          "translation_fr": "Je vois. Combien de jours par semaine pouvez-vous travailler ?",
+          "translation_de": "Verstehe. An wie vielen Tagen pro Woche können Sie arbeiten?"
+        },
+        {
+          "speaker": "B",
+          "text": "授業があるので、週に3日、夕方から閉店まで入れます。土日も大丈夫です。",
+          "translation_en": "Since I have classes, I can work 3 days a week from evening until closing. Weekends are fine too.",
+          "translation_zh": "因为我要上课，所以每周可以工作3天，从晚上一直做到打烊。周末也可以。",
+          "translation_zh_TW": "因為我有課，所以我每週可以工作三天，從晚上開始直到打烊。週末也可以。",
+          "translation_es": "Como tengo clases, puedo trabajar tres días a la semana desde la tarde hasta el cierre. Los fines de semana también me vienen bien.",
+          "translation_fr": "Comme j'ai des cours, je peux travailler trois jours par semaine, du soir jusqu'à la fermeture. Le week-end me convient aussi.",
+          "translation_de": "Da ich Unterricht habe, kann ich an drei Tagen in der Woche vom Abend bis Ladenschluss arbeiten. Am Wochenende geht es auch."
+        },
+        {
+          "speaker": "A",
+          "text": "わかりました。では、来週中に結果をご連絡します。",
+          "translation_en": "Understood. Then we will contact you with the results within next week.",
+          "translation_zh": "明白了。那么我们将在下周内联系您，告知结果。",
+          "translation_zh_TW": "明白了。那麼我們將在下週內將結果告知您。",
+          "translation_es": "Entendido. Nos pondremos en contacto contigo para comunicarte los resultados a lo largo de la próxima semana.",
+          "translation_fr": "D'accord. Nous vous communiquerons les résultats dans le courant de la semaine prochaine.",
+          "translation_de": "Verstanden. Wir werden uns dann im Laufe der nächsten Woche mit den Ergebnissen bei Ihnen melden."
+        }
+      ],
+      "vocabulary_focus": [
+        "面接",
+        "自己紹介",
+        "接客",
+        "経済学",
+        "閉店",
+        "連絡"
+      ],
+      "grammar_focus": [
+        "〜ていただく (humble/respectful)",
+        "〜ことができる (ability)",
+        "〜たいと思う (intention)"
+      ],
+      "source": "AI-generated Japanese dialogue",
+      "source_status": "AI_GENERATED"
+    },
+    {
+      "id": "ja_n4_d005",
+      "title": "電話でレストランの予約 (Restaurant Reservation by Phone)",
+      "topic": "phone_reservation",
+      "difficulty": "elementary",
+      "lines": [
+        {
+          "speaker": "A",
+          "text": "もしもし、さくらレストランでございます。",
+          "translation_en": "Hello, this is Sakura Restaurant.",
+          "translation_zh": "您好，这里是樱花餐厅。",
+          "translation_zh_TW": "您好，這裡是櫻花餐廳。",
+          "translation_es": "Hola, le habla el restaurante Sakura.",
+          "translation_fr": "Bonjour, vous êtes au restaurant Sakura.",
+          "translation_de": "Hallo, hier ist das Restaurant Sakura."
+        },
+        {
+          "speaker": "B",
+          "text": "すみません、今週の土曜日の夜7時に、4人で予約したいんですが、空いていますか。",
+          "translation_en": "Excuse me, I'd like to make a reservation for 4 people this Saturday at 7 PM. Is it available?",
+          "translation_zh": "请问，我想预订本周六晚上7点的座位，共4人。还有空位吗？",
+          "translation_zh_TW": "請問，我想為四位客人預訂本週六晚上七點的位子。還有空位嗎？",
+          "translation_es": "Disculpe, me gustaría hacer una reserva para cuatro personas este sábado a las 19:00. ¿Hay sitio?",
+          "translation_fr": "Excusez-moi, j'aimerais réserver une table pour quatre personnes ce samedi à 19 h. Y a-t-il de la place ?",
+          "translation_de": "Entschuldigung, ich möchte für diesen Samstag um 19 Uhr einen Tisch für vier Personen reservieren. Ist das möglich?"
+        },
+        {
+          "speaker": "A",
+          "text": "少々お待ちください。…はい、そのお時間でしたら大丈夫です。お席は禁煙席と喫煙席、どちらになさいますか。",
+          "translation_en": "Please wait a moment. ...Yes, that time is available. For seating, would you prefer non-smoking or smoking?",
+          "translation_zh": "请稍等片刻。……是的，那个时间段有空位。关于座位，您是想坐非吸烟区还是吸烟区？",
+          "translation_zh_TW": "請稍等片刻。……是的，那個時段有空位。關於座位，您希望選擇非吸菸區還是吸菸區？",
+          "translation_es": "Por favor, espere un momento. ...Sí, esa hora está disponible. En cuanto a la mesa, ¿prefiere una zona de no fumadores o de fumadores?",
+          "translation_fr": "Veuillez patienter un instant. ... Oui, ce créneau est disponible. Pour votre table, préférez-vous une table non-fumeurs ou fumeurs ?",
+          "translation_de": "Bitte haben Sie einen Moment Geduld. ...Ja, dieser Termin ist frei. Möchten Sie einen Platz im Nichtraucher- oder im Raucherbereich?"
+        },
+        {
+          "speaker": "B",
+          "text": "禁煙席でお願いします。あのう、誕生日のサプライズをしたいんですが、ケーキを持ち込んでも大丈夫ですか。",
+          "translation_en": "Non-smoking, please. Also, I'd like to do a birthday surprise — is it okay to bring a cake?",
+          "translation_zh": "请勿吸烟。另外，我想给朋友一个生日惊喜——带个蛋糕可以吗？",
+          "translation_zh_TW": "請勿吸菸。另外，我想安排一個生日驚喜——帶個蛋糕來可以嗎？",
+          "translation_es": "Por favor, no fumar. Además, me gustaría organizar una sorpresa de cumpleaños: ¿se puede traer una tarta?",
+          "translation_fr": "Interdiction de fumer, s'il vous plaît. J'aimerais aussi organiser une fête d'anniversaire surprise : est-ce que je peux apporter un gâteau ?",
+          "translation_de": "Bitte nicht rauchen. Außerdem möchte ich eine Geburtstagsüberraschung organisieren – ist es in Ordnung, wenn ich einen Kuchen mitbringe?"
+        },
+        {
+          "speaker": "A",
+          "text": "はい、大丈夫ですよ。お名前とお電話番号をお伺いしてもよろしいですか。",
+          "translation_en": "Yes, that's fine. May I ask for your name and phone number?",
+          "translation_zh": "好的，没问题。请问您能告诉我您的姓名和电话号码吗？",
+          "translation_zh_TW": "好的，沒問題。請問您的姓名和電話號碼是？",
+          "translation_es": "Sí, está bien. ¿Podría decirme su nombre y su número de teléfono?",
+          "translation_fr": "Oui, c'est parfait. Puis-je vous demander votre nom et votre numéro de téléphone ?",
+          "translation_de": "Ja, das ist in Ordnung. Darf ich Sie nach Ihrem Namen und Ihrer Telefonnummer fragen?"
+        },
+        {
+          "speaker": "B",
+          "text": "山田花子です。電話番号は090-1234-5678です。",
+          "translation_en": "I'm Hanako Yamada. My phone number is 090-1234-5678.",
+          "translation_zh": "我叫山田花子。我的电话号码是090-1234-5678。",
+          "translation_zh_TW": "我是山田花子。我的電話號碼是 090-1234-5678。",
+          "translation_es": "Me llamo Hanako Yamada. Mi número de teléfono es el 090-1234-5678.",
+          "translation_fr": "Je m'appelle Hanako Yamada. Mon numéro de téléphone est le 090-1234-5678.",
+          "translation_de": "Ich bin Hanako Yamada. Meine Telefonnummer lautet 090-1234-5678."
+        },
+        {
+          "speaker": "A",
+          "text": "かしこまりました。山田様、土曜日の夜7時、4名様、禁煙席でご予約承りました。当日お待ちしております。",
+          "translation_en": "Certainly. Ms. Yamada, your reservation is confirmed for Saturday at 7 PM, 4 people, non-smoking. We look forward to serving you.",
+          "translation_zh": "好的。山田女士，您的预订已确认，时间为周六晚上7点，4人，禁烟。我们期待为您服务。",
+          "translation_zh_TW": "沒問題。山田女士，您的預訂已確認，時間為週六晚上7點，4人，非吸菸區。我們期待為您服務。",
+          "translation_es": "Por supuesto. Sra. Yamada, su reserva para el sábado a las 19:00 h, para cuatro personas, en la zona de no fumadores, está confirmada. Esperamos poder atenderla.",
+          "translation_fr": "Tout à fait. Madame Yamada, votre réservation est confirmée pour samedi à 19 h, pour 4 personnes, dans une salle non-fumeurs. Nous nous réjouissons de vous accueillir.",
+          "translation_de": "Selbstverständlich. Frau Yamada, Ihre Reservierung für Samstag um 19 Uhr für vier Personen im Nichtraucherbereich ist bestätigt. Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen."
+        }
+      ],
+      "vocabulary_focus": [
+        "予約",
+        "禁煙席",
+        "喫煙席",
+        "持ち込み",
+        "承る"
+      ],
+      "grammar_focus": [
+        "敬語 (keigo)",
+        "〜たいんですが (desire + explanation)",
+        "〜てもいいですか (permission)"
+      ],
+      "source": "AI-generated Japanese dialogue",
+      "source_status": "AI_GENERATED"
+    }
+  ]
+}

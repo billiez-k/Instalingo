@@ -1,0 +1,640 @@
+{
+  "meta": {
+    "exam": "JLPT N5",
+    "exam_level": "JLPT N5",
+    "language": "japanese",
+    "total_questions": 25,
+    "source": "AI-generated mock test using SOURCE_VERIFIED JLPT N5 vocabulary and STANDARD_REFERENCE grammar patterns",
+    "source_status": "AI_GENERATED",
+    "sections": [
+      {
+        "section_id": "vocab_mc",
+        "title": "語彙 — 多肢選択 (Vocabulary — Multiple Choice)",
+        "count": 10,
+        "type": "multiple_choice"
+      },
+      {
+        "section_id": "grammar_fib",
+        "title": "文法 — 穴埋め (Grammar — Fill in the Blank)",
+        "count": 5,
+        "type": "fill_in_blank"
+      },
+      {
+        "section_id": "reading",
+        "title": "読解 (Reading Comprehension)",
+        "count": 5,
+        "type": "multiple_choice"
+      },
+      {
+        "section_id": "listening",
+        "title": "聴解 (Listening — text-based)",
+        "count": 5,
+        "type": "multiple_choice",
+        "note": "Text-based listening simulation. Audio files pending recording."
+      }
+    ],
+    "schema_normalized": true
+  },
+  "questions": [
+    {
+      "id": "ja_n5_mock_q001",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「わたしは まいにち がっこうに ＿＿＿。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'I ___ to school every day.'?",
+      "explanation": {
+        "en": "行きます (いきます) means 'to go'. The sentence means 'I go to school every day.' 帰ります (かえります) = return home, 寝ます (ねます) = sleep, 見ます (みます) = see/watch. Only 行きます makes sense with 学校に (to school).",
+        "ja": "「行きます」は「go」の意味です。学校に行くという表現が自然です。",
+        "zh": "“行きます”意为“去”。该句的意思是“我每天去学校”。“帰ります”=回家，“寝ます”=睡觉，“見ます”=看。只有“行きます”与“学校に”（去学校）搭配才通顺。",
+        "zh_TW": "「行きます」意為「去」。這句話的意思是「我每天都去上學」。歸ります（回家）、寝ます（睡覺）、見ます（看）。只有「行きます」搭配「学校に」（去學校）才合乎語意。",
+        "ko": "'行きます(이쿠마스)'는 '가다'라는 뜻입니다. 이 문장은 '나는 매일 학교에 간다'라는 의미입니다. '帰ります(카에마스)' = 집에 돌아오다, '寝ます(네마스)' = 자다, '見ます(미마스)' = 보다/지다. '学校に(학교에)'와 어울리는 것은 '行きます'뿐입니다.",
+        "es": "«行きます» significa «ir». La frase significa «Voy al colegio todos los días». «帰ります» = volver a casa, «寝ます» = dormir, «見ます» = ver/mirar. Solo «行きます» tiene sentido con «学校に» (al colegio).",
+        "fr": "« 行きます » (ikimasu) signifie « aller ». La phrase signifie « Je vais à l'école tous les jours ». « 帰ります » (kaerimasu) = rentrer chez soi, « 寝ます » (nemasu) = dormir, « 見ます » (mimasu) = voir/regarder. Seul « 行きます » a du sens avec « 学校に » (à l'école).",
+        "de": "„行きます“ (ikimasu) bedeutet „gehen“. Der Satz bedeutet „Ich gehe jeden Tag zur Schule.“ „帰ります“ (kaerimasu) = nach Hause gehen, „寝ます“ (nemasu) = schlafen, „見ます“ (mimasu) = sehen/anschauen. Nur „行きます“ passt zu „学校に“ (zur Schule)."
+      },
+      "correct_answer": "いきます",
+      "distractors": [
+        "かえります",
+        "ねます",
+        "みます"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q002",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「きょうは てんきが ＿＿＿です。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'The weather is ___ today.'?",
+      "explanation": {
+        "en": "いい means 'good'. 天気がいい is the standard Japanese expression for 'the weather is good'. 大きい = big, 高い = expensive/tall, 新しい = new. None of these describe weather naturally.",
+        "ja": "「いい」は「good」の意味です。「天気がいい」は天候を表す自然な表現です。",
+        "zh": "“いい”的意思是“好”。“天気がいい”是日语中表示“天气好”的标准说法。大きい = 大，高い = 贵/高，新しい = 新。这些词语都不自然地用来描述天气。",
+        "zh_TW": "「いい」的意思是「好」。「天気がいい」是日語中表示「天氣很好」的標準說法。大きい = 大，高い = 貴／高，新しい = 新。這些詞彙都無法自然地用來描述天氣。",
+        "ko": "'いい'는 '좋다'라는 뜻입니다. '天気がいい'는 '날씨가 좋다'를 뜻하는 표준 일본어 표현입니다. 大きい = 크다, 高い = 비싸다/키가 크다, 新しい = 새롭다. 이 단어들은 날씨를 자연스럽게 묘사하는 표현이 아닙니다.",
+        "es": "«いい» significa «bueno». «天気がいい» es la expresión estándar en japonés para decir «hace buen tiempo». 大きい = grande, 高い = caro/alto, 新しい = nuevo. Ninguna de estas palabras describe el tiempo de forma natural.",
+        "fr": "« いい » signifie « bien ». « 天気がいい » est l'expression japonaise standard pour dire « il fait beau ». 大きい = grand, 高い = cher/grand, 新しい = neuf. Aucun de ces mots ne décrit naturellement le temps qu'il fait.",
+        "de": "„いい“ bedeutet „gut“. „天気がいい“ ist die übliche japanische Redewendung für „das Wetter ist gut“. „大きい“ = groß, „高い“ = teuer/hoch, „新しい“ = neu. Keines dieser Wörter beschreibt das Wetter auf natürliche Weise."
+      },
+      "correct_answer": "いい",
+      "distractors": [
+        "おおきい",
+        "たかい",
+        "あたらしい"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q003",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「きのう ともだちに ＿＿＿。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'I ___ a friend yesterday.'?",
+      "explanation": {
+        "en": "会いました (あいました) means 'met'. 友達に会う = to meet a friend. 見ました = saw, 書きました = wrote, 聞きました = heard/asked. Only 会いました fits with 友達に.",
+        "ja": "「会いました」は「met」の意味です。「友達に会う」は「友達と会う」という自然な表現です。",
+        "zh": "“会いました”意为“见面”。“友達に会う”即“见到朋友”。“見ました”意为“看到”，“書きました”意为“写了”，“聞きました”意为“听到/问了”。只有“会いました”与“友達に”搭配使用。",
+        "zh_TW": "「会いました」意為「見到」。見到朋友 = 見到朋友。見ました = 看見，書きました = 寫了，聞きました = 聽見／問了。只有「会いました」能與「友達に」搭配使用。",
+        "ko": "'会いました(아이미타)'는 '만났다'라는 뜻입니다. 친구를 만나다 = to meet a friend. 보았다 = saw, 썼다 = wrote, 들었다 = heard/asked. 오직 '会いました'만이 '友達に'와 어울립니다.",
+        "es": "«会いました» significa «me encontré con». «友達に会う» = «encontrarse con un amigo». «見ました» = «vi», «書きました» = «escribí», «聞きました» = «oí/pregunté». Solo «会いました» encaja con «友達に».",
+        "fr": "「会いました» signifie «rencontré». «友達に会う» = «rencontrer un ami». «見ました» = «vu», «書きました» = «écrit», «聞きました» = «entendu/demandé». Seul «会いました» va avec «友達に».",
+        "de": "„会いました“ (aimashita) bedeutet „getroffen“. 友達に会う = einen Freund treffen. 見ました = gesehen, 書きました = geschrieben, 聞きました = gehört/gefragt. Nur „会いました“ passt zu „友達に“."
+      },
+      "correct_answer": "あいました",
+      "distractors": [
+        "みました",
+        "かきました",
+        "ききました"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q004",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「この りんごは とても ＿＿＿です。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'This apple is very ___ .'?",
+      "explanation": {
+        "en": "甘い (あまい) means 'sweet'. Apples are sweet. 辛い (からい) = spicy, 塩辛い (しおからい) = salty, 苦い (にがい) = bitter. Only 甘い describes an apple naturally.",
+        "ja": "「甘い」は「sweet」の意味です。りんごの味を表すのに最も適切です。",
+        "zh": "“甘い (あまい)”意为“甜”。苹果是甜的。“辛い (からい)”= 辣，“塩辛い (しおからい)”= 咸，“苦い (にがい)”= 苦。只有“甘い”能自然地形容苹果。",
+        "zh_TW": "「甘い (あまい)」意為「甜」。蘋果是甜的。「辛い (からい)」＝辣、「塩辛い (しおからい)」＝鹹、「苦い (にがい)」＝苦。只有「甘い」能自然地形容蘋果。",
+        "ko": "'甘い(아마이)'는 '달다'라는 뜻입니다. 사과는 달습니다. '辛い(카라이)'는 매운 맛, '塩辛い(시오카라이)'는 짠 맛, '苦い(니가이)'는 쓴 맛을 뜻합니다. 사과를 자연스럽게 묘사할 때는 오직 '甘い'만 사용됩니다.",
+        "es": "「甘い (amai)» significa «dulce». Las manzanas son dulces. 「辛い (karai)» = picante, 「塩辛い (shiokarai)» = salado, 「苦い (nagai)» = amargo. Solo 「甘い」 describe de forma natural a una manzana.",
+        "fr": "「甘い (amai) » signifie « sucré ». Les pommes sont sucrées. « 辛い (karai) » = épicé, « 塩辛い (shiokarai) » = salé, « 苦い (nigai) » = amer. Seul « 甘い » décrit naturellement une pomme.",
+        "de": "„甘い“ (amai) bedeutet „süß“. Äpfel sind süß. „辛い“ (karai) = scharf, „塩辛い“ (shiokarai) = salzig, „苦い“ (nagai) = bitter. Nur „甘い“ beschreibt einen Apfel auf natürliche Weise."
+      },
+      "correct_answer": "あまい",
+      "distractors": [
+        "からい",
+        "しおからい",
+        "にがい"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q005",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「えきの ＿＿＿に コンビニが あります。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'There is a convenience store ___ the station.'?",
+      "explanation": {
+        "en": "前 (まえ) means 'in front of'. 駅の前に = in front of the station. 後ろ = behind, 左 = left, 右 = right. All are grammatically possible but 前 is the most common location reference for station-area shops.",
+        "ja": "「前」は「in front of」の意味です。駅の前にあるという表現が最も一般的です。",
+        "zh": "“前（まえ）”意为“在……前面”。“駅の前に”即“在车站前面”。“後ろ”意为“后面”，“左”意为“左边”，“右”意为“右边”。这些说法在语法上都是成立的，但“前”是车站周边店铺最常用的方位表述。",
+        "zh_TW": "「前 (まえ)」意為「在……前面」。車站的前面 = 車站前方。後面 = 後方，左邊 = 左側，右邊 = 右側。這些說法在語法上皆成立，但「前」是車站周邊店家最常用的方位詞。",
+        "ko": "'前(마에)'는 '앞'을 의미합니다. 駅の前に = 역 앞. 後ろ = 뒤, 左 = 왼쪽, 右 = 오른쪽. 모두 문법적으로 가능하지만, 역 주변 상점의 위치를 지칭할 때는 '前'가 가장 흔히 사용됩니다.",
+        "es": "前 (mae) significa «delante de». 駅の前に = delante de la estación. 後ろ = detrás, 左 = izquierda, 右 = derecha. Todas estas expresiones son gramaticalmente correctas, pero 前 es la referencia de ubicación más habitual para las tiendas de la zona de la estación.",
+        "fr": "前 (mae) signifie « devant ». 駅の前に = devant la gare. 後ろ = derrière, 左 = à gauche, 右 = à droite. Toutes ces expressions sont grammaticalement correctes, mais 前 est la référence spatiale la plus courante pour les commerces situés aux abords de la gare.",
+        "de": "前 (mae) bedeutet „vor“. 駅の前に = vor dem Bahnhof. 後ろ = hinter, 左 = links, 右 = rechts. Alle sind grammatikalisch möglich, aber 前 ist die gebräuchlichste Ortsangabe für Geschäfte im Bahnhofsbereich."
+      },
+      "correct_answer": "まえ",
+      "distractors": [
+        "うしろ",
+        "ひだり",
+        "みぎ"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q006",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「あには ＿＿＿ せが たかいです。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'My older brother is ___ tall.'?",
+      "explanation": {
+        "en": "とても means 'very'. 背がとても高い = very tall. あまり is used with negatives (あまり〜ない), ぜんぜん is used with negatives (ぜんぜん〜ない), よく = often/well, which doesn't fit describing height.",
+        "ja": "「とても」は「very」の意味です。程度を強調する副詞として適切です。",
+        "zh": "“とても”意为“非常”。“背がとても高い”即“非常高”。“あまり”用于否定句（あまり〜ない），“ぜんぜん”也用于否定句（ぜんぜん〜ない），“よく”意为“经常/很好”，不适用于描述身高。",
+        "zh_TW": "「とても」意為「非常」。背很高 = 非常高。「あまり」用於否定句（あまり〜ない）、「ぜんぜん」用於否定句（ぜんぜん〜ない），而「よく」意為「經常／很好」，不適用於描述身高。",
+        "ko": "'とても'는 '매우'라는 뜻입니다. 키가 매우 크다 = very tall. 'あまり'는 부정형(あまり~ない)과 함께 쓰이고, 'ぜんぜん'은 부정형(ぜんぜん~ない)과 함께 쓰이며, 'よく'는 '자주/잘'이라는 뜻으로 키를 묘사하는 데는 맞지 않습니다.",
+        "es": "«とても» significa «muy». «背がとても高い» = «muy alto». «あまり» se usa con negaciones (あまり〜ない), «ぜんぜん» se usa con negaciones (ぜんぜん〜ない), «よく» = «a menudo/bien», lo cual no encaja para describir la altura.",
+        "fr": "« とても » signifie « très ». « 背がとても高い » = « très grand ». « あまり » s'utilise avec des négations (あまり〜ない), « ぜんぜん » s'utilise avec des négations (ぜんぜん〜ない), « よく » = « souvent/bien », ce qui ne convient pas pour décrire la taille.",
+        "de": "„とても“ bedeutet „sehr“. „背がとても高い“ = „sehr groß“. „あまり“ wird in Verneinungen verwendet (あまり〜ない), „ぜんぜん“ wird in Verneinungen verwendet (ぜんぜん〜ない), „よく“ bedeutet „oft“ oder „gut“, was nicht zur Beschreibung der Körpergröße passt."
+      },
+      "correct_answer": "とても",
+      "distractors": [
+        "あまり",
+        "ぜんぜん",
+        "よく"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q007",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「つめたい ＿＿＿ を のみたいです。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'I want to drink cold ___ .'?",
+      "explanation": {
+        "en": "水 (みず) means 'water'. 冷たい水 = cold water, and you drink (飲む) water. ごはん = rice/meal, パン = bread, 肉 = meat — none of these are typically drunk (飲む).",
+        "ja": "「水」は「water」です。飲む対象として正しく、冷たい水は自然な表現です。",
+        "zh": "“水 (みず)”的意思是“水”。“冷たい水”=冷水，而“水”是用来喝的（飲む）。“ごはん”=米饭/饭，“パン”=面包，“肉”=肉——这些通常都不喝（飲む）。",
+        "zh_TW": "「水 (みず)」的意思是「水」。「冷たい水」＝冷水，而「水」是拿來喝的（飲む）。「ごはん」＝米飯／餐點、「パン」＝麵包、「肉」＝肉——這些通常都不會被「喝」（飲む）。",
+        "ko": "'水(미즈)'는 '물'을 뜻합니다. '冷たい水'는 '찬물'을 의미하며, 물은 '마신다(飲む)'고 합니다. 'ごはん'은 '밥', 'パン'은 '빵', '肉'은 '고기'를 뜻하는데, 이 단어들은 일반적으로 '마신다(飲む)'고 표현하지 않습니다.",
+        "es": "水 (mizu) significa «agua». 冷たい水 = agua fría, y el agua se bebe (nomu). ごはん = arroz/comida, パン = pan, 肉 = carne; ninguno de estos alimentos se suele beber (nomu).",
+        "fr": "水 (mizu) signifie « eau ». 冷たい水 = eau froide, et on boit (飲む) de l'eau. ごはん = riz/repas, パン = pain, 肉 = viande — aucun de ces aliments n'est généralement bu (飲む).",
+        "de": "水 (mizu) bedeutet „Wasser“. 冷たい水 = kaltes Wasser, und man trinkt (飲む) Wasser. ごはん = Reis/Mahlzeit, パン = Brot, 肉 = Fleisch – nichts davon wird normalerweise getrunken (飲む)."
+      },
+      "correct_answer": "みず",
+      "distractors": [
+        "ごはん",
+        "パン",
+        "にく"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q008",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「まいばん おふろに ＿＿＿。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'I ___ a bath every night.'?",
+      "explanation": {
+        "en": "入ります (はいります) means 'to enter'. お風呂に入る = to take a bath (lit. enter the bath). 出ます = exit, 起きます = wake up, 座ります = sit. Only 入ります collocates with お風呂.",
+        "ja": "「入ります」は「enter」の意味です。「お風呂に入る」は入浴するという自然な表現です。",
+        "zh": "“入ります”意为“进入”。“お風呂に入る”= 洗澡（字面意思是“进入浴缸”）。“出ます”= 出去，“起きます”= 起床，“座ります”= 坐下。只有“入ります”与“お風呂”搭配使用。",
+        "zh_TW": "「入ります」意為「進入」。入浴 = 洗澡（字面意思是進入浴缸）。出ます = 出去，起きます = 起床，座ります = 坐下。只有「入ります」會與「お風呂」搭配使用。",
+        "ko": "'入ります(하이리마스)'는 '들어가다'라는 뜻입니다. お風呂に入る = 목욕하다 (직역: 욕조에 들어가다). 出ます = 나가다, 起きます = 일어나다, 座ります = 앉다. 오직 '入ります'만이 'お風呂'와 함께 쓰입니다.",
+        "es": "「入ります (ha-ri-masu)» significa «entrar». «お風呂に入る» = darse un baño (lit. entrar en la bañera). «出ます» = salir, «起きます» = levantarse, «座ります» = sentarse. Solo «入ります» se utiliza con «お風呂».",
+        "fr": "« 入ります » (ha-ri-masu) signifie « entrer ». « お風呂に入る » = prendre un bain (littéralement : entrer dans le bain). « 出ます » = sortir, « 起きます » = se réveiller, « 座ります » = s'asseoir. Seul « 入ります » s'utilise avec « お風呂 ».",
+        "de": "„入ります“ (ha-iru) bedeutet „eingehen“. „お風呂に入る“ = ein Bad nehmen (wörtlich: in die Badewanne gehen). „出ます“ = hinausgehen, „起きます“ = aufwachen, „座ります“ = sich hinsetzen. Nur „入ります“ wird mit „お風呂“ verwendet."
+      },
+      "correct_answer": "はいります",
+      "distractors": [
+        "でます",
+        "おきます",
+        "すわります"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q009",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「つくえの うえに ほんが ＿＿＿。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'There ___ a book on the desk.'?",
+      "explanation": {
+        "en": "あります is used for inanimate objects (books). います is for living beings, します = do, なります = become. Since a book is inanimate, あります is correct.",
+        "ja": "「あります」は無生物の存在を表します。本は生き物ではないので「あります」が正しいです。",
+        "zh": "“あります”用于指代非生物（如书籍）。“います”用于指代生物，“します”表示“做”，“なります”表示“变成”。由于书是无生命的，因此“あります”是正确的。",
+        "zh_TW": "「あります」用於無生命的事物（如書籍）。「います」用於生物，「します」表示「做」，「なります」表示「變成」。由於書籍是無生命的，因此使用「あります」是正確的。",
+        "ko": "'あります'는 무생물(책)에 사용됩니다. 'います'는 생물에게 쓰이며, 'します'는 '~하다', 'なります'는 '~되다'를 의미합니다. 책은 무생물이므로 'あります'가 맞습니다.",
+        "es": "«あります» se utiliza para objetos inanimados (libros). «います» se utiliza para seres vivos; «します» significa «hacer» y «なります» significa «convertirse». Dado que un libro es inanimado, lo correcto es «あります».",
+        "fr": "« あります » s'utilise pour les objets inanimés (les livres). « います » s'utilise pour les êtres vivants, « します » signifie « faire » et « なります » signifie « devenir ». Comme un livre est un objet inanimé, « あります » est la forme correcte.",
+        "de": "„あります“ wird für unbelebte Gegenstände (Bücher) verwendet. „います“ gilt für Lebewesen, „します“ bedeutet „tun“ und „なります“ bedeutet „werden“. Da ein Buch unbelebt ist, ist „あります“ die richtige Form."
+      },
+      "correct_answer": "あります",
+      "distractors": [
+        "います",
+        "します",
+        "なります"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q010",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「わたしの へやは ＿＿＿です。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'My room is ___ .'?",
+      "explanation": {
+        "en": "広い (ひろい) means 'spacious/wide'. Used for rooms and spaces. 暑い = hot (weather), 速い = fast, 近い = near. Only 広い naturally describes a room.",
+        "ja": "「広い」は「spacious」の意味です。部屋の広さを表すのに最も適切な形容詞です。",
+        "zh": "“広い (hiroi)”意为“宽敞/宽阔”。用于描述房间和空间。 “暑い”= 热（天气），“速い”= 快，“近い”= 近。只有“広い”自然用于描述房间。",
+        "zh_TW": "「広い (hiroi)」意為「寬敞／寬闊」。常用來形容房間和空間。 「暑い」＝熱（天氣）、「速い」＝快、「近い」＝近。只有「広い」自然會用來形容房間。",
+        "ko": "'넓다(ひろい)'는 '넓은'이라는 뜻입니다. 방이나 공간을 가리킬 때 씁니다. '덥다(暑い)'는 날씨가 덥다는 뜻이고, '빠르다(速い)'는 속도가 빠르다는 뜻이며, '가깝다(近い)'는 거리가 가깝다는 뜻입니다. 방을 묘사할 때는 오직 '넓다'만이 자연스럽게 쓰입니다.",
+        "es": "«Hiroi» significa «espacioso/amplio». Se utiliza para habitaciones y espacios. «Atsui» = calor (clima), «hayai» = rápido, «chikai» = cerca. Solo «hiroi» describe de forma natural una habitación.",
+        "fr": "« 広い (hiroi) » signifie « spacieux/vaste ». Ce terme s'utilise pour les pièces et les espaces. « 暑い » = chaud (temps), « 速い » = rapide, « 近い » = proche. Seul « 広い » décrit naturellement une pièce.",
+        "de": "„Hiroi“ bedeutet „geräumig/weit“. Wird für Räume und Flächen verwendet. „Atsui“ = heiß (Wetter), „Hayai“ = schnell, „Chikai“ = nah. Nur „Hiroi“ beschreibt auf natürliche Weise einen Raum."
+      },
+      "correct_answer": "ひろい",
+      "distractors": [
+        "あつい",
+        "はやい",
+        "ちかい"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q011",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "あした とうきょうに ＿＿＿ つもりです。 (いきます / いく)",
+      "question_en": "Fill in the blank: 'I intend to ___ to Tokyo tomorrow.' (go)",
+      "correct_answer": "いく",
+      "distractors": [
+        "いきます",
+        "いった",
+        "いかない"
+      ],
+      "explanation": {
+        "en": "〜つもりです requires the dictionary (plain) form of the verb before it. いく is the dictionary form. いきます is the polite form and cannot be used before つもり. The pattern is: Verb (dictionary form) + つもりです = intend to do.",
+        "ja": "「〜つもりです」の前には動詞の辞書形（普通形）を使います。「いく」が辞書形で、「いきます」は丁寧形なので使えません。",
+        "zh": "〜つもりです 前面必须是动词的词典（原形）形式。いく 是词典形式。いきます 是敬语形式，不能用于 つもり 之前。该句型为：动词（词典形式）＋ つもりです ＝ 打算做。",
+        "zh_TW": "〜つもりです 前面必須接動詞的字典形（基本形）。いく 是字典形。いきます 是敬語形式，不能用在 つもり 之前。其句型為：動詞（字典形）＋ つもりです ＝ 打算做。",
+        "ko": "〜つもりです 앞에는 동사의 기본형(사전형)이 와야 합니다. いく는 기본형입니다. いきます는 정중형으로, つもり 앞에서는 사용할 수 없습니다. 문법 구조는 다음과 같습니다: 동사(기본형) + つもりです = ~할 생각입니다.",
+        "es": "«〜つもりです» requiere que el verbo que le precede esté en forma básica (de diccionario). «いく» es la forma básica. «いきます» es la forma cortés y no se puede usar antes de «つもり». La estructura es: Verbo (forma básica) + つもりです = tengo la intención de hacer.",
+        "fr": "〜つもりです s'utilise avec la forme de base (standard) du verbe qui le précède. いく est la forme de base. いきます est la forme polie et ne peut pas être utilisée avant つもり. La structure est la suivante : Verbe (forme de base) + つもりです = avoir l'intention de faire.",
+        "de": "Vor „〜つもりです“ muss die Grundform des Verbs stehen. „いく“ ist die Grundform. „いきます“ ist die höfliche Form und kann nicht vor „つもり“ verwendet werden. Das Muster lautet: Verb (Grundform) + つもりです = beabsichtigen, etwas zu tun."
+      }
+    },
+    {
+      "id": "ja_n5_mock_q012",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "ここで しゃしんを ＿＿＿ ないでください。 (とる / とります)",
+      "question_en": "Fill in the blank: 'Please don't ___ photos here.' (take)",
+      "correct_answer": "とら",
+      "distractors": [
+        "とります",
+        "とった",
+        "とる"
+      ],
+      "explanation": {
+        "en": "〜ないでください requires the ない-form (plain negative stem) before でください. The verb 撮る (とる) becomes とらない in plain negative, and the ない-form stem is とら. Pattern: Verb ない-form + でください = Please don't do.",
+        "ja": "「〜ないでください」の前には動詞のナイ形が必要です。「とる」のナイ形は「とらない」で、「とら」の部分を使います。",
+        "zh": "“〜ないでください”需要在“でください”之前使用“ない”形（普通否定词干）。动词“撮る”（toru）的普通否定形式为“とらない”，其“ない”形词干为“とら”。句式：动词“ない”形 + でください = 请不要……",
+        "zh_TW": "〜ないでください 需要在 でください 之前加上 ない-形（普通否定詞幹）。動詞 撮る (とる) 的普通否定形式為 とらない，其 ない-形詞幹為 とら。句型：動詞 ない-形 + でください = 請不要做。",
+        "ko": "~ないでください는 でください 앞에 ない-형(부정형 어간)이 와야 합니다. 동사 撮る(토루)는 부정형에서 とらない가 되며, ない-형 어간은 と라입니다. 패턴: 동사 ない-형 + でください = ~하지 마세요.",
+        "es": "La expresión «〜ないでください» requiere la forma «nai» (raíz negativa simple) antes de «でください». El verbo «撮る» (toru) se convierte en «とらない» en la forma negativa simple, y la raíz de la forma «nai» es «とら». Patrón: Verbo + forma «nai» + でください = Por favor, no hagas...",
+        "fr": "« ~ないでください » nécessite la forme « ない » (radical négatif simple) avant « でください ». Le verbe 撮る (toru) devient とらない à la forme négative simple, et le radical de la forme « ない » est とら. Modèle : forme « ない » du verbe + でください = « S'il vous plaît, ne faites pas ».",
+        "de": "„〜ないでください“ erfordert die „ない“-Form (Negativstamm) vor „でください“. Das Verb „撮る“ (toru) wird im Negativ zu „とらない“, und der Stamm der „ない“-Form lautet „とら“. Muster: Verb in der „ない“-Form + „でください“ = Bitte nicht tun."
+      }
+    },
+    {
+      "id": "ja_n5_mock_q013",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "きのう すしを ＿＿＿ ことがあります。 (たべる / たべます)",
+      "question_en": "Fill in the blank: 'I have ___ sushi before.' (eat)",
+      "correct_answer": "たべた",
+      "distractors": [
+        "たべる",
+        "たべます",
+        "たべない"
+      ],
+      "explanation": {
+        "en": "〜たことがある requires the た-form (plain past) before ことがある. 食べた is the plain past of 食べる. This grammar expresses experience: Verb た-form + ことがある = have done before.",
+        "ja": "「〜たことがある」の前には動詞のタ形（普通過去形）を使います。経験を表す文法です。",
+        "zh": "“〜たことがある”需要在“ことがある”之前使用“た”形（普通过去式）。“食べた”是“食べる”的普通过去式。这种语法表达的是经验：动词“た”形 + “ことがある” = 曾经做过。",
+        "zh_TW": "「〜たことがある」需要在「ことがある」之前加上「た」形（普通過去式）。「食べた」是「食べる」的普通過去式。這種語法表達「曾經做過」的意思：動詞「た」形 + 「ことがある」= 曾經做過。",
+        "ko": "~たことがある는 ことがある 앞에 た-형(단순 과거형)이 와야 합니다. 食べた는 食べる의 단순 과거형입니다. 이 문법은 경험을 나타냅니다: 동사 た-형 + ことがある = 이전에 ~한 적이 있다.",
+        "es": "La expresión «〜たことがある» requiere la forma «た» (pasado simple) antes de «ことがある». «食べた» es el pasado simple de «食べる». Esta construcción gramatical expresa experiencia: forma «た» del verbo + «ことがある» = haber hecho algo antes.",
+        "fr": "Pour former la phrase « 〜たことがある », il faut placer la forme « た » (passé simple) avant « ことがある ». « 食べた » est le passé simple de « 食べる ». Cette construction grammaticale exprime une expérience : forme « た » du verbe + « ことがある » = avoir déjà fait.",
+        "de": "„〜たことがある“ erfordert die た-Form (einfache Vergangenheit) vor „ことがある“. „食べた“ ist die einfache Vergangenheit von „食べる“. Diese Grammatik drückt Erfahrung aus: Verb in der た-Form + „ことがある“ = schon einmal getan haben."
+      }
+    },
+    {
+      "id": "ja_n5_mock_q014",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "この ケーキは おいし＿＿＿ です。 (い-adj: おいしい)",
+      "question_en": "Fill in the blank: 'This cake is ___ .' (delicious — polite negative past)",
+      "correct_answer": "くなかった",
+      "distractors": [
+        "くない",
+        "かった",
+        "い"
+      ],
+      "explanation": {
+        "en": "For i-adjectives in polite negative past: drop い, add くなかった + です. 美味しい → 美味しくなかったです = was not delicious. 美味しかった = was delicious (positive past), 美味しくない = not delicious (negative present), 美味しい = delicious (positive present).",
+        "ja": "い形容詞の丁寧否定過去形は「〜くなかったです」です。「美味しい」→「美味しくなかったです」となります。",
+        "zh": "对于“い”结尾形容词的敬语过去否定形式：去掉“い”，加上“くなかった”+“です”。美味的 → 美味しくなかったです = 以前并不美味。美味だった = 以前很美味（过去肯定），美味しくない = 不好吃（现在否定），美味しい = 美味（现在肯定）。",
+        "zh_TW": "關於「い」形容詞的禮貌過去否定形式：去掉「い」，加上「くなかった」＋「です」。美味的 → 美味しくなかったです = 以前不美味。美味だった = 以前美味（過去肯定），美味しくない = 不美味（現在否定），美味しい = 美味（現在肯定）。",
+        "ko": "정중 과거형에서 ‘い’로 끝나는 형용사의 경우: ‘い’를 빼고 ‘くなかった’ + ‘です’를 붙입니다. 美味しい → 美味しくなかったです = 맛있지 않았습니다. 美味しかった = 맛있었습니다 (과거 긍정), 美味しくない = 맛없습니다 (현재 부정), 美味しい = 맛있습니다 (현재 긍정).",
+        "es": "Para los adjetivos «i» en el pasado negativo cortés: omite «i» y añade «くなかった» + «です». Delicioso → No estaba delicioso = no estaba delicioso. Estaba delicioso = estaba delicioso (pasado afirmativo), No está delicioso = no está delicioso (presente negativo), Delicioso = delicioso (presente afirmativo).",
+        "fr": "Pour les adjectifs en « i » au passé négatif de politesse : supprimer « i », ajouter « くなかった » + « です ». 美味しい → 美味しくなかったです = n'était pas délicieux. 美味しかった = était délicieux (passé positif), 美味しくない = n'est pas délicieux (présent négatif), 美味しい = délicieux (présent positif).",
+        "de": "Bei i-Adjektiven in der höflichen Verneinung der Vergangenheit: Das „i“ weglassen, „kunakatta“ + „desu“ hinzufügen. Oishii → Oishikunakatta = war nicht lecker. Oishikatta = war lecker (bejahende Vergangenheit), Oishikunai = nicht lecker (verneinende Gegenwart), Oishii = lecker (bejahende Gegenwart)."
+      }
+    },
+    {
+      "id": "ja_n5_mock_q015",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "わたしは えいがを ＿＿＿ たいです。 (みる / みます)",
+      "question_en": "Fill in the blank: 'I want to ___ a movie.' (watch)",
+      "correct_answer": "み",
+      "distractors": [
+        "みる",
+        "みます",
+        "みた"
+      ],
+      "explanation": {
+        "en": "〜たい attaches to the verb stem (ます-form without ます). 見ます → 見. So 見たい = want to watch. 見る is the dictionary form, which doesn't work with 〜たい directly. Pattern: Verb stem + たい.",
+        "ja": "「〜たい」は動詞のます形から「ます」を取った語幹につけます。「見ます」→「見」→「見たい」となります。",
+        "zh": "〜たい接在动词词干（即去掉“ます”的“ます”形）之后。例如：見ます → 見。因此，見たい = 想看。見る是词典形，不能直接与〜たい搭配使用。句式：动词词干 + たい。",
+        "zh_TW": "〜たい 接在動詞詞幹上（即「ます」形去掉「ます」後）。見ます → 見。因此 見たい = 想看。見る 是字典形，無法直接與 〜たい 搭配使用。語法模式：動詞詞幹 + たい。",
+        "ko": "〜たい는 동사 어간(‘ます’를 뺀 ‘ます’형)에 붙습니다. 見ます → 見. 따라서 見たい는 ‘보고 싶다’는 뜻입니다. 見る는 사전형으로, 〜たい와 직접 결합할 수 없습니다. 구문: 동사 어간 + たい.",
+        "es": "〜たい se añade a la raíz del verbo (la forma «mas» sin «mas»). 見ます → 見. Por lo tanto, 見たい = querer ver. 見る es la forma del diccionario, que no se puede combinar directamente con 〜たい. Estructura: raíz del verbo + たい.",
+        "fr": "〜たい se rajoute au radical du verbe (forme en -ます sans le ます). 見ます → 見. Ainsi, 見たい = vouloir regarder. 見る est la forme du dictionnaire, qui ne s'utilise pas directement avec 〜たい. Structure : radical du verbe + たい.",
+        "de": "〜たい wird an den Verbstamm angehängt (Masu-Form ohne ます). 見ます → 見. Also 見たい = sehen wollen. 見る ist die Grundform, die nicht direkt mit 〜たい kombiniert werden kann. Muster: Verbstamm + たい."
+      }
+    },
+    {
+      "id": "ja_n5_mock_q016",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "わたしの かぞくは 4にんです。ちちと ははと あにと わたしです。ちちは かいしゃいんです。ははは びょういんで はたらいています。あには だいがくせいです。わたしは こうこうせいです。まいしゅう どようびに かぞくで しょくじに いきます。",
+      "passage_en": "My family has 4 people. My father, mother, older brother and me. My father is a company employee. My mother works at a hospital. My older brother is a university student. I am a high school student. Every Saturday we go out for a meal as a family.",
+      "question": "おかあさんは どこで はたらいていますか。",
+      "question_en": "Where does the mother work?",
+      "explanation": {
+        "en": "The passage says ははは びょういんで はたらいています (Mother works at a hospital). かいしゃ = company (father), だいがく = university (brother), こうこう = high school (the speaker).",
+        "ja": "文中に「ははは びょういんで はたらいています」と書かれています。",
+        "zh": "文中提到“哈哈哈，妈妈在医院工作”。“公司”指父亲，“大学”指哥哥，“高中”指说话者本人。",
+        "zh_TW": "這段文字提到「哈哈哈，媽媽在醫院工作」。公司＝公司（父親）、大學＝大學（哥哥）、高中＝高中（說話者）。",
+        "ko": "이 문장은 “하하하, 엄마는 병원에서 일하고 계세요”라고 말합니다. 회사 = 회사(아버지), 대학 = 대학(오빠), 고등학교 = 고등학교(화자).",
+        "es": "El texto dice: «Ja, ja, mi madre trabaja en un hospital». «Kaisha» = empresa (el padre), «daigaku» = universidad (el hermano), «kōkō» = instituto (el narrador).",
+        "fr": "Le passage dit : « Ha ha ha, ma mère travaille à l'hôpital. » Entreprise = entreprise (père), université = université (frère), lycée = lycée (celui qui parle).",
+        "de": "In dem Text heißt es: „Haha, sie arbeitet im Krankenhaus“ (Mutter arbeitet im Krankenhaus). „Kaisha“ = Firma (Vater), „Daigaku“ = Universität (Bruder), „Kōkō“ = Gymnasium (der Sprecher)."
+      },
+      "correct_answer": "びょういん",
+      "distractors": [
+        "かいしゃ",
+        "だいがく",
+        "こうこう"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q017",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "きのうは わたしの たんじょうびでした。ともだちが プレゼントを くれました。ケーキも たべました。とても たのしい いちにちでした。",
+      "passage_en": "Yesterday was my birthday. My friend gave me a present. I also ate cake. It was a very fun day.",
+      "question": "きのうは なんの ひでしたか。",
+      "question_en": "What day was yesterday?",
+      "explanation": {
+        "en": "The passage begins with きのうは わたしの たんじょうびでした (Yesterday was my birthday). The other options are not mentioned at all.",
+        "ja": "文章の最初に「きのうは わたしの たんじょうびでした」と明記されています。",
+        "zh": "这段文字开头写道：“きのうは わたしの たんじょうびでした”（昨天是我的生日）。其他选项则完全没有提及。",
+        "zh_TW": "這段文字以「きのうは わたしの たんじょうびでした」（昨天是我的生日）開頭。其他選項則完全未被提及。",
+        "ko": "이 문단은 “어제는 제 생일이었습니다”라는 문장으로 시작합니다. 다른 선택지들은 전혀 언급되지 않았습니다.",
+        "es": "El texto comienza con «きのうは わたしの たんじょうびでした» (Ayer fue mi cumpleaños). Las demás opciones no se mencionan en absoluto.",
+        "fr": "Le passage commence par « きのうは わたしの たんじょうびでした » (Hier, c'était mon anniversaire). Les autres options ne sont pas mentionnées du tout.",
+        "de": "Der Text beginnt mit „きのうは わたしの たんじょうびでした“ (Gestern war mein Geburtstag). Die anderen Optionen werden überhaupt nicht erwähnt."
+      },
+      "correct_answer": "たんじょうび",
+      "distractors": [
+        "クリスマス",
+        "にちようび",
+        "やすみのひ"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q018",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "まいにち 6じに おきます。あさごはんを たべて、7じに いえを でます。でんしゃで がっこうに いきます。がっこうは 8じに はじまります。",
+      "passage_en": "I wake up at 6 every day. I eat breakfast and leave home at 7. I go to school by train. School starts at 8.",
+      "question": "いえを なんじに でますか。",
+      "question_en": "What time does the person leave home?",
+      "explanation": {
+        "en": "The passage says 7じに いえを でます (I leave home at 7). 6時 is wake-up time, 8時 is when school starts.",
+        "ja": "文中に「7じに いえを でます」と明記されています。",
+        "zh": "这段文字写道：“7点出门”。6点是起床时间，8点是上学时间。",
+        "zh_TW": "這段文字提到「7點出門」。6點是起床時間，8點是上學時間。",
+        "ko": "이 문장에는 “7시에 집을 나간다”라고 되어 있습니다. 6시는 기상 시간이고, 8시는 학교가 시작되는 시간입니다.",
+        "es": "El texto dice: «A las 7 salgo de casa». A las 6 me levanto y a las 8 empieza el colegio.",
+        "fr": "Le texte dit : « Je pars de chez moi à 7 heures ». Je me réveille à 6 heures et les cours commencent à 8 heures.",
+        "de": "In dem Text heißt es: „Um 7 Uhr verlasse ich das Haus.“ Um 6 Uhr ist Weckzeit, um 8 Uhr beginnt die Schule."
+      },
+      "correct_answer": "7じ",
+      "distractors": [
+        "6じ",
+        "8じ",
+        "9じ"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q019",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "わたしの まちには おおきい こうえんが あります。こうえんには きが たくさん あります。はるには さくらが きれいです。こどもたちは そこで よく あそんでいます。",
+      "passage_en": "There is a big park in my town. There are many trees in the park. In spring, the cherry blossoms are beautiful. Children often play there.",
+      "question": "こうえんに なにが たくさん ありますか。",
+      "question_en": "What is there a lot of in the park?",
+      "explanation": {
+        "en": "The passage states こうえんには きが たくさん あります (There are many trees in the park). さくら (cherry blossoms) are mentioned but not as 'many', こども (children) play there but aren't described as many, はな (flowers) aren't mentioned.",
+        "ja": "文中に「こうえんには きが たくさん あります」と書かれています。",
+        "zh": "这段文字写道：“公园里有很多树”。文中提到了“樱花”，但并未描述其数量众多；孩子们在那里玩耍，但也没有描述为“很多”；而“花”则未被提及。",
+        "zh_TW": "這段文字提到「公園裡有很多樹」。雖然提到了「櫻花」，但並未形容其數量「很多」；雖然有「孩子」在公園裡玩耍，但並未描述其數量「很多」；而「花」則完全未被提及。",
+        "ko": "이 문장에는 “공원에는 나무가 많이 있습니다”라고 되어 있습니다. 벚꽃은 언급되었지만 ‘많이’ 있다고는 하지 않았고, 아이들이 그곳에서 놀지만 ‘많이’ 있다고 묘사되지는 않았으며, 꽃은 언급되지 않았습니다.",
+        "es": "El texto dice: «En el parque hay muchos árboles». Se mencionan los cerezos en flor, pero no se dice que haya «muchos»; los niños juegan allí, pero no se dice que haya muchos; y no se mencionan las flores.",
+        "fr": "Le passage indique : « Il y a beaucoup d'arbres dans le parc ». Les cerisiers en fleurs sont mentionnés, mais pas comme étant « nombreux » ; les enfants y jouent, mais ne sont pas décrits comme étant nombreux ; les fleurs ne sont pas mentionnées.",
+        "de": "In dem Text heißt es: „Im Park gibt es viele Bäume.“ Kirschblüten werden erwähnt, aber nicht als „viele“; Kinder spielen dort, werden aber nicht als „viele“ beschrieben; Blumen werden nicht erwähnt."
+      },
+      "correct_answer": "き",
+      "distractors": [
+        "さくら",
+        "こども",
+        "はな"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q020",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "きょうは あめが ふっています。かぜも つよいです。わたしは かさを もって いきませんでした。それで、かえるとき ともだちに かさを かりました。",
+      "passage_en": "It is raining today. The wind is also strong. I didn't bring an umbrella. So, when going home, I borrowed an umbrella from a friend.",
+      "question": "なぜ ともだちに かさを かりましたか。",
+      "question_en": "Why did the person borrow an umbrella from a friend?",
+      "explanation": {
+        "en": "The passage says わたしは かさを もって いきませんでした。それで...ともだちに かさを かりました (I didn't bring an umbrella. So... I borrowed one from a friend). The cause-effect is clearly stated with それで.",
+        "ja": "文中の「かさを もって いきませんでした。それで...かさを かりました」という因果関係が明確です。",
+        "zh": "这段话写道：“我没带伞。所以……我向朋友借了一把伞。”通过“所以”一词，因果关系得到了明确的说明。",
+        "zh_TW": "這段文字寫道：「我沒有帶傘。所以……我向朋友借了一把傘」。透過「所以」一詞，清楚地表達了因果關係。",
+        "ko": "이 문장은 “나는 우산을 가져가지 않았습니다. 그래서... 친구에게 우산을 빌렸습니다”라고 되어 있습니다. ‘그래서’라는 표현을 통해 인과 관계가 명확하게 드러납니다.",
+        "es": "El texto dice: «No me traje el paraguas. Así que... se lo pedí prestado a un amigo». La relación de causa y efecto queda claramente expresada con «así que».",
+        "fr": "Le passage dit : « Je n'avais pas pris de parapluie. Alors... j'en ai emprunté un à un ami ». Le lien de cause à effet est clairement indiqué par « alors ».",
+        "de": "In dem Text heißt es: „Ich hatte keinen Regenschirm dabei. Also … habe ich mir einen von einem Freund ausgeliehen.“ Der Zusammenhang zwischen Ursache und Wirkung wird durch „also“ deutlich zum Ausdruck gebracht."
+      },
+      "correct_answer": "かさを もって いかなかったから",
+      "distractors": [
+        "かさが こわれたから",
+        "ともだちが かさを ほしがったから",
+        "かぜが つよかったから"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q021",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: もしもし、すずきです。B: あ、すずきさん、こんにちは。いま どこですか。A: いま えきの まえです。B: わかりました。すぐ いきます。",
+      "script_en": "A: Hello, this is Suzuki. B: Ah, Mr. Suzuki, hello. Where are you now? A: I'm in front of the station now. B: Understood. I'll go right away.",
+      "question": "すずきさんは いま どこに いますか。",
+      "question_en": "Where is Suzuki now?",
+      "explanation": {
+        "en": "Suzuki says いま えきの まえです (I'm in front of the station now). The other locations are not mentioned.",
+        "ja": "すずきさんが「いま えきの まえです」と言っています。",
+        "zh": "铃木说：“我现在在车站前面。”其他地点没有提及。",
+        "zh_TW": "鈴木說：「現在我在車站前面。」其他地點則未提及。",
+        "ko": "스즈키는 “지금 역 앞에 있어요”라고 말합니다. 다른 장소에 대해서는 언급되지 않았습니다.",
+        "es": "Suzuki dice: «Ahora estoy delante de la estación». No se mencionan los demás lugares.",
+        "fr": "Suzuki dit : « いま えきの まえです » (Je suis devant la gare en ce moment). Les autres lieux ne sont pas mentionnés.",
+        "de": "Suzuki sagt: „いま えきの まえです“ (Ich bin gerade vor dem Bahnhof). Die anderen Orte werden nicht erwähnt."
+      },
+      "correct_answer": "えきのまえ",
+      "distractors": [
+        "いえ",
+        "かいしゃ",
+        "こうえん"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q022",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "女の人: すみません、この りんごは いくらですか。男の人: ひとつ 100えんです。女の人: じゃ、3つ ください。",
+      "script_en": "Woman: Excuse me, how much are these apples? Man: 100 yen each. Woman: Then, please give me 3.",
+      "question": "りんごを いくつ かいましたか。",
+      "question_en": "How many apples did she buy?",
+      "explanation": {
+        "en": "The woman says 3つ ください (Please give me 3). One apple costs 100 yen, but the question asks how many she bought, not the price.",
+        "ja": "女性が「3つ ください」と言っています。1つ100円は値段で、購入数は3つです。",
+        "zh": "这位女士说“3つ ください”（请给我3个）。一个苹果100日元，但题目问的是她买了多少个，而不是价格。",
+        "zh_TW": "那位女士說：「3つ ください」（請給我3個）。一個蘋果要100日圓，但題目問的是她買了幾個，而不是價格。",
+        "ko": "그 여자는 “3つ ください(3개 주세요)”라고 말합니다. 사과 한 개는 100엔이지만, 이 문제는 가격이 아니라 그녀가 몇 개를 샀는지를 묻는 것입니다.",
+        "es": "La mujer dice «3つ ください» (Por favor, deme tres). Una manzana cuesta 100 yenes, pero la pregunta se refiere a cuántas compró, no al precio.",
+        "fr": "La femme dit « 3つ ください » (Donnez-m'en trois, s'il vous plaît). Une pomme coûte 100 yens, mais la question porte sur le nombre qu'elle a acheté, pas sur le prix.",
+        "de": "Die Frau sagt: „3つ ください“ (Bitte geben Sie mir drei). Ein Apfel kostet 100 Yen, aber in der Frage geht es darum, wie viele sie gekauft hat, nicht um den Preis."
+      },
+      "correct_answer": "3つ",
+      "distractors": [
+        "1つ",
+        "2つ",
+        "4つ"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q023",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: あした いっしょに えいがを みませんか。B: すみません、あしたは ちょっと...。A: そうですか。じゃ、らいしゅうは どうですか。B: らいしゅうは だいじょうぶです。",
+      "script_en": "A: Would you like to watch a movie together tomorrow? B: Sorry, tomorrow is a bit... A: I see. Then how about next week? B: Next week is fine.",
+      "question": "いつ えいがを みますか。",
+      "question_en": "When will they watch the movie?",
+      "explanation": {
+        "en": "B refuses あした (tomorrow) but accepts らいしゅう (next week), saying らいしゅうは だいじょうぶです. So they will watch next week.",
+        "ja": "Bさんは「あしたは ちょっと...」と断り、「らいしゅうは だいじょうぶです」と了承しています。",
+        "zh": "B 拒绝了“明天”，但接受了“下周”，并说“下周没问题”。所以他们下周会看。",
+        "zh_TW": "B 拒絕了「明天」，但接受了「下週」，並說：「下週沒問題。」所以他們將在下週觀看。",
+        "ko": "B는 ‘내일’은 거절하지만 ‘다음 주’는 받아들여 “다음 주는 괜찮습니다”라고 말합니다. 그래서 그들은 다음 주에 볼 예정입니다.",
+        "es": "B rechaza «mañana», pero acepta «la semana que viene», diciendo: «La semana que viene no hay problema». Así que lo verán la semana que viene.",
+        "fr": "B refuse de venir demain, mais accepte de venir la semaine prochaine, en disant : « La semaine prochaine, ça me va. » Ils se verront donc la semaine prochaine.",
+        "de": "B lehnt „morgen“ ab, sagt aber „nächste Woche“ zu und erklärt: „Nächste Woche geht es.“ Also werden sie sich die Sendung nächste Woche ansehen."
+      },
+      "correct_answer": "らいしゅう",
+      "distractors": [
+        "きょう",
+        "あした",
+        "みません"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q024",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "先生: しゅくだいは きょうかしょの 10ページから 15ページまでです。学生: 先生、ノートも ていしゅつしますか。先生: はい、ノートも ください。",
+      "script_en": "Teacher: The homework is from page 10 to page 15 of the textbook. Student: Teacher, should I submit the notebook too? Teacher: Yes, please give me the notebook too.",
+      "question": "しゅくだいは なんページまでですか。",
+      "question_en": "Up to what page is the homework?",
+      "explanation": {
+        "en": "The teacher says 10ページから 15ページまで (from page 10 to page 15). So the homework extends up to page 15.",
+        "ja": "先生が「10ページから 15ページまで」と言っています。「まで」は終点を表します。",
+        "zh": "老师说“从第10页到第15页”。所以作业做到第15页为止。",
+        "zh_TW": "老師說「第10頁到第15頁」。所以作業範圍到第15頁為止。",
+        "ko": "선생님께서 “10페이지부터 15페이지까지”라고 말씀하셨습니다. 그러니 숙제는 15페이지까지입니다.",
+        "es": "El profesor dice «de la página 10 a la página 15». Así que los deberes llegan hasta la página 15.",
+        "fr": "Le professeur dit « de la page 10 à la page 15 ». Les devoirs vont donc jusqu'à la page 15.",
+        "de": "Der Lehrer sagt: „Von Seite 10 bis Seite 15“. Die Hausaufgaben reichen also bis Seite 15."
+      },
+      "correct_answer": "15ページまで",
+      "distractors": [
+        "10ページまで",
+        "5ページまで",
+        "20ページまで"
+      ]
+    },
+    {
+      "id": "ja_n5_mock_q025",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: きのう なにを しましたか。B: デパートに いきました。くつを かいました。A: どんな くつを かいましたか。B: しろい くつです。",
+      "script_en": "A: What did you do yesterday? B: I went to the department store. I bought shoes. A: What kind of shoes did you buy? B: White shoes.",
+      "question": "きのう なにを かいましたか。",
+      "question_en": "What did the person buy yesterday?",
+      "explanation": {
+        "en": "B says くつを かいました (I bought shoes). The follow-up clarifies they are white shoes. The other items are not mentioned.",
+        "ja": "Bさんが「くつを かいました」と言っています。白いくつを買ったことも補足されています。",
+        "zh": "B说“我买了鞋子”。后续内容说明那是白鞋。其他物品则未提及。",
+        "zh_TW": "B 說：「我買了鞋子」。後續說明指出那是白鞋。其他物品則未提及。",
+        "ko": "B는 “신발을 샀어요”라고 말합니다. 이어서 흰색 신발이라는 점이 밝혀집니다. 다른 물건들에 대해서는 언급되지 않았습니다.",
+        "es": "B dice: «くつを かいました» (Me compré unos zapatos). A continuación se aclara que son zapatos blancos. No se mencionan los demás artículos.",
+        "fr": "B dit : « くつを かいました » (J'ai acheté des chaussures). La suite précise qu'il s'agit de chaussures blanches. Les autres articles ne sont pas mentionnés.",
+        "de": "B sagt: „くつを かいました“ (Ich habe Schuhe gekauft). Im weiteren Verlauf wird klargestellt, dass es sich um weiße Schuhe handelt. Die anderen Gegenstände werden nicht erwähnt."
+      },
+      "correct_answer": "くつ",
+      "distractors": [
+        "かばん",
+        "ぼうし",
+        "ふく"
+      ]
+    }
+  ]
+}

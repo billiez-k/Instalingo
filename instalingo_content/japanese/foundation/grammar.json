@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "language": "ja",
+    "exam_level": "foundation",
+    "total_points": 5,
+    "source": "Standard Japanese grammar",
+    "source_status": "STANDARD_REFERENCE",
+    "translation_status": "deepl_translated_all_locales"
+  },
+  "grammar_points": [
+    {
+      "id": "ja_found_g001",
+      "point": "です/だ — Copula",
+      "exam_level": "foundation",
+      "teaching_order": 1,
+      "topic": "basic_structure",
+      "explanation": {
+        "en": "The copula links a subject to a noun/adjective. です is polite, だ is plain.",
+        "ja": "名詞や形容詞を主語に結びつける語です。",
+        "zh": "连系动词用于连接主语与名词/形容词。“です”是敬语形式，“だ”是平语形式。",
+        "zh_TW": "系動詞用來連接主語與名詞／形容詞。「です」是禮貌語體，「だ」是平語體。",
+        "es": "La cópula une un sujeto a un sustantivo o un adjetivo. «desu» es la forma cortés, mientras que «da» es la forma informal.",
+        "fr": "La copule relie un sujet à un nom ou à un adjectif. « です » est la forme polie, « だ » est la forme familière.",
+        "de": "Das Bindewort verbindet ein Subjekt mit einem Substantiv oder Adjektiv. „です“ ist höflich, „だ“ ist umgangssprachlich.",
+        "ko": "연결사는 주어를 명사나 형용사와 연결합니다. ‘です’는 정중한 표현이고, ‘だ’는 평이한 표현입니다."
+      },
+      "structure": "Noun + です/だ",
+      "example_target": "私は学生です。",
+      "example_meaning_en": "I am a student.",
+      "example_breakdown": {
+        "私": "I",
+        "は": "topic",
+        "学生": "student",
+        "です": "am"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_found_g002",
+      "point": "ます form",
+      "exam_level": "foundation",
+      "teaching_order": 2,
+      "topic": "verb_forms",
+      "explanation": {
+        "en": "Polite present/future form. Verb stem + ます. Negative: ません.",
+        "ja": "動詞の丁寧形です。",
+        "zh": "礼貌的现在/将来时。动词词干 + ます。否定形式：ません。",
+        "zh_TW": "禮貌的現在/未來式。動詞詞幹 + ます。否定形式：ません。",
+        "es": "Forma de presente/futuro de cortesía. Raíz del verbo + ます. Negación: ません.",
+        "fr": "Forme polie du présent/futur. Racine du verbe + ます. Négation : ません.",
+        "de": "Höfliche Gegenwarts-/Zukunftsform. Verbstamm + ます. Verneinung: ません.",
+        "ko": "정중체 현재/미래형. 동사 어간 + ます. 부정형: ません."
+      },
+      "structure": "V stem + ます",
+      "example_target": "日本語を勉強します。",
+      "example_meaning_en": "I study Japanese.",
+      "example_breakdown": {
+        "日本語": "Japanese",
+        "を": "object",
+        "勉強します": "study"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_found_g003",
+      "point": "Particles: は・が・を",
+      "exam_level": "foundation",
+      "teaching_order": 3,
+      "topic": "particles",
+      "explanation": {
+        "en": "は=topic, が=subject, を=direct object. Core sentence structure particles.",
+        "ja": "基本的な助詞です。",
+        "zh": "“は”=主题，“が”=主语，“を”=直接宾语。句子的核心助词。",
+        "zh_TW": "「は」= 話題、「が」= 主語、「を」= 直接賓語。句子的核心助詞。",
+        "es": "は = tema, が = sujeto, を = complemento directo. Partículas fundamentales de la estructura sintáctica.",
+        "fr": "は = thème, が = sujet, を = complément d'objet direct. Particules fondamentales de la structure de la phrase.",
+        "de": "は = Thema, が = Subjekt, を = direktes Objekt. Partikel der grundlegenden Satzstruktur.",
+        "ko": "は=주제, が=주어, を=목적어. 문장의 핵심을 이루는 조사들."
+      },
+      "structure": "N + は/が/を",
+      "example_target": "私は水を飲みます。",
+      "example_meaning_en": "I drink water.",
+      "example_breakdown": {
+        "私": "I",
+        "は": "topic",
+        "水": "water",
+        "を": "object",
+        "飲みます": "drink"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_found_g004",
+      "point": "て-form basics",
+      "exam_level": "foundation",
+      "teaching_order": 4,
+      "topic": "verb_forms",
+      "explanation": {
+        "en": "The て-form connects verbs. Used for requests (ください), ongoing (いる), and linking.",
+        "ja": "動詞の接続形です。",
+        "zh": "“て”形用于连接动词。用于表示请求（请）、进行状态（正在）以及连接。",
+        "zh_TW": "「て」形用於連接動詞，常用於表達請求（請）、持續狀態（正在）以及連接句式。",
+        "es": "La forma «te» sirve para encadenar verbos. Se utiliza para expresar peticiones (kudasai), acciones en curso (iru) y para la conjunción de oraciones.",
+        "fr": "La forme « te » sert à relier les verbes. Elle est utilisée pour exprimer une demande (kudasai), un état continu (iru) et pour relier des phrases.",
+        "de": "Die て-Form dient zur Verknüpfung von Verben. Sie wird für Aufforderungen (ください), für die Darstellung von Dauer (いる) und zur Verknüpfung verwendet.",
+        "ko": "‘て’형은 동사들을 연결하는 형태입니다. 부탁(ください), 진행형(いる), 그리고 연결 용도로 사용됩니다."
+      },
+      "structure": "V て-form + ください/いる",
+      "example_target": "待ってください。",
+      "example_meaning_en": "Please wait.",
+      "example_breakdown": {
+        "待って": "wait (て-form)",
+        "ください": "please"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ja_found_g005",
+      "point": "Questions: か・ね・よ",
+      "exam_level": "foundation",
+      "teaching_order": 5,
+      "topic": "particles",
+      "explanation": {
+        "en": "か=question, ね=seeking agreement, よ=emphasis. Sentence-ending particles.",
+        "ja": "文末につける終助詞です。",
+        "zh": "か=疑问，ね=征得同意，よ=强调。句末助词。",
+        "zh_TW": "か=疑問，ね=徵求同意，よ=強調。句末助詞。",
+        "es": "か = pregunta, ね = búsqueda de confirmación, よ = énfasis. Partículas finales.",
+        "fr": "か = question, ね = pour demander l'accord, よ = pour insister. Particules de fin de phrase.",
+        "de": "か = Frage, ね = um Zustimmung bitten, よ = Betonung. Partikel am Satzende.",
+        "ko": "「か」=질문, 「ね」=동의 구함, 「よ」=강조. 문장 끝말."
+      },
+      "structure": "Sentence + か/ね/よ",
+      "example_target": "いい天気ですね。",
+      "example_meaning_en": "Nice weather, isn't it?",
+      "example_breakdown": {
+        "いい": "good",
+        "天気": "weather",
+        "です": "is",
+        "ね": "isn't it"
+      },
+      "source": "Standard JLPT N5 grammar",
+      "source_status": "STANDARD_REFERENCE"
+    }
+  ]
+}

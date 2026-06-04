@@ -1,0 +1,738 @@
+{
+  "@@locale": "ko",
+  "@correctCountOfTotal": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@correctWithExplanation": {
+    "placeholders": {
+      "explanation": {
+        "type": "String"
+      }
+    }
+  },
+  "@dayStreakCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@exercisesProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@notQuiteWithExplanation": {
+    "placeholders": {
+      "explanation": {
+        "type": "String"
+      }
+    }
+  },
+  "@profile_learningStatus": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      },
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@profile_lessonsCompleted": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_minPerDay": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_minutesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_stepXofY": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_streakLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_version": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "@questionXofY": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@savePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "@speakersCount": {
+    "placeholders": {
+      "speakers": {
+        "type": "String"
+      }
+    }
+  },
+  "@streakKeepStreak": {
+    "placeholders": {
+      "currentStreak": {
+        "type": "int"
+      }
+    }
+  },
+  "@streakShieldsRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeAgoHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeAgoMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeSpentHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "achievementsTitle": "업적",
+  "active": "활성",
+  "advancedProgressTracking": "고급 진도 추적",
+  "aiAssistantName": "마야",
+  "aiAssistantRole": "카페 직원",
+  "aiBadge": "AI",
+  "aiChat": "AI 채팅",
+  "aiConversationGreeting": "안녕하세요! 마야예요. 도쿄의 카페에서 일하고 있어요. 오늘은 무엇을 연습하고 싶으세요?",
+  "aiConversationPractice": "AI 대화 연습",
+  "aiConversationTitle": "AI 대화",
+  "aiPractice": "AI 연습",
+  "aiYou": "당신",
+  "annual": "연간",
+  "appTagline": "배우다. 휴식. 반복.",
+  "appTitle": "InstaLingo",
+  "back": "뒤로",
+  "cancel": "취소",
+  "chapter": "챕터",
+  "chatWithAI": "AI 캐릭터와 채팅",
+  "check": "확인",
+  "chill": "휴식",
+  "chillCorner": "Chill 코너",
+  "chill_addComment": "댓글을 추가하세요...",
+  "chill_aiGeneratedImage": "AI 생성 이미지",
+  "chill_comments": "댓글",
+  "chill_noPosts": "아직 게시물이 없습니다",
+  "chill_noPostsMessage": "수업을 완료하여 커뮤니티 어휘 게시물을 잠금 해제하세요.",
+  "chill_postNotFound": "게시물을 찾을 수 없음",
+  "chill_postNotFoundMessage": "이 게시물은 삭제되었거나 더 이상 사용할 수 없습니다.",
+  "chill_share": "공유",
+  "clear": "지우기",
+  "clearAll": "모두 지우기",
+  "commitment": "학습 약속",
+  "continueLearning": "학습 계속하기",
+  "continueText": "계속",
+  "correct": "정답",
+  "correctCountOfTotal": "{correct} / {total} 정답",
+  "correctWithExplanation": "정답입니다! {explanation}",
+  "courseComplete": "코스 완료!",
+  "courseCompleteTitle": "해냈어요!",
+  "coursePath": "코스 경로",
+  "createProfile": "프로필 만들기",
+  "createProfileDesc": "이것은 당신의 학습 경험을 개인화하는 데 도움이 됩니다.",
+  "dailyGoal": "일일 목표",
+  "dailyGoalCardTitle": "일일 목표",
+  "dailyGoalReached": "목표 달성! 수고하셨습니다!",
+  "darkMode": "다크 모드",
+  "dayStreak": "연속 학습 일수",
+  "dayStreakCount": "{count}일",
+  "defaultDisplayName": "학습자",
+  "done": "완료",
+  "editProfile": "프로필 편집",
+  "emptyStateMessage": "나중에 다시 확인해 주세요.",
+  "emptyStateTitle": "아직 콘텐츠가 없습니다",
+  "errorGenericMessage": "이 콘텐츠를 로드할 수 없습니다. 다시 시도해 주세요.",
+  "errorGenericTitle": "문제가 발생했습니다",
+  "exArrangeWords": "단어를 배열하여 올바른 문장을 만드세요",
+  "exComprehension": "글을 읽고 답하세요",
+  "exDialogueComplete": "대화를 완성하세요",
+  "exFillInBlank": "빈칸을 채우세요",
+  "exFlashCard": "탭하여 카드 뒤집기",
+  "exGrammarTip": "문법 팁",
+  "exImageIdentify": "올바른 이미지를 탭하세요",
+  "exMatchWords": "단어와 의미를 연결하세요",
+  "exPhraseBuilder": "구문을 만드세요",
+  "exSpeaking": "이 단어를 소리내어 말하세요",
+  "exTranslate": "이 문장을 번역하세요",
+  "exTrueFalse": "이 문장이 맞나요?",
+  "exTypeWhatYouHear": "들은 내용을 입력하세요",
+  "exVocabMultipleChoice": "\"{word}\"의 의미는 무엇인가요?",
+  "exWhichWordMeans": "\"{word}\"의 의미는 무엇인가요?",
+  "exWriting": "답을 적으세요",
+  "exampleLabel": "예시",
+  "exercisesProgress": "{completed} / {total} 연습",
+  "falseLabel": "틀림",
+  "featureAICharacters": "AI 캐릭터",
+  "featureAICharactersDesc": "Chill Corner에서 실제 사람처럼 반응하는 AI 캐릭터와 연습하세요.",
+  "featureMotivation": "동기 부여 유지",
+  "featureMotivationDesc": "XP를 획득하고, 연속 학습을 유지하며, 업적을解锁하세요.",
+  "featureStructuredCourses": "체계적인 코스",
+  "featureStructuredCoursesDesc": "전문적으로 설계된 레슨을 통해 단계적으로 학습하세요.",
+  "findFriends": "친구 찾기",
+  "finishLesson": "레슨 완료",
+  "flashcardEasy": "쉬움",
+  "flashcardGood": "좋음",
+  "flashcardHard": "어려움",
+  "followingTitle": "팔로잉",
+  "forceUpdateBody": "InstaLingo를 더 빠르고 안정적으로 만들고 새로운 기능을 추가했습니다. 계속하려면 최신 버전으로 업데이트하세요.",
+  "forceUpdateBugFixes": "버그 수정 및 안정성",
+  "forceUpdateMessage": "InstaLingo의 새로운 버전을 사용할 수 있습니다. 학습을 계속하려면 업데이트하세요.",
+  "forceUpdateNewContent": "새로운 레슨과 연습",
+  "forceUpdatePerformance": "성능 개선",
+  "forceUpdateTitle": "업데이트 필요",
+  "fri": "금",
+  "friendsTitle": "친구",
+  "gems": "보석",
+  "getStarted": "시작하기",
+  "getUnlimitedLearning": "무제한 학습 받기",
+  "goodbye": "안녕히 가세요",
+  "gotIt": "알겠습니다!",
+  "grammarExampleFallback": "연습이 완벽을 만듭니다!",
+  "grammarRuleFallback": "이 연습의 문법을 주의해서 보세요.",
+  "grammarTip": "문법 팁",
+  "greetingAfternoon": "좋은 오후입니다",
+  "greetingEvening": "좋은 저녁입니다",
+  "greetingMorning": "좋은 아침입니다",
+  "hello": "안녕하세요!",
+  "helpSupport": "도움말 및 지원",
+  "holdToSpeak": "말하려면 길게 누르세요",
+  "howAreYou": "어떻게 지내세요?",
+  "iAlreadyHaveAccount": "이미 계정이 있습니다",
+  "incorrect": "오답",
+  "knowIt": "알고 있음",
+  "language": "언어",
+  "leaderboardTitle": "리더보드",
+  "learn": "학습",
+  "learnRuleToImprove": "실력 향상을 위해 이 규칙을 배우세요",
+  "learningLanguage": "학습 언어",
+  "lessonComplete": "레슨 완료!",
+  "lessonCompleteGood": "노력했어! 복습하고 다시 도전하자!",
+  "lessonCompleteGreat": "잘했어! 계속 연습하자!",
+  "lessonCompletePerfect": "완벽해! 불타고 있어!",
+  "lessons": "레슨",
+  "levelAbbreviation": "레벨",
+  "levelAdvanced": "고급",
+  "levelBeginner": "초급",
+  "levelElementary": "입문",
+  "levelIntermediate": "중급",
+  "levelProficiency": "능숙",
+  "levelUpperIntermediate": "중상급",
+  "loading": "로딩 중...",
+  "loadingLesson": "레슨 불러오는 중...",
+  "logout": "로그아웃",
+  "matchPairsInstruction": "왼쪽 단어를 누른 다음 오른쪽에서 일치하는 항목을 누르세요",
+  "maybeLater": "나중에",
+  "mon": "월",
+  "monthly": "월간",
+  "motivation": "학습 동기",
+  "myNameIs": "제 이름은",
+  "nativeLanguage": "모국어",
+  "next": "다음",
+  "nextQuestion": "다음 질문",
+  "niceToMeetYou": "만나서 반갑습니다",
+  "noAds": "광고 없음",
+  "noConnectionMessage": "인터넷 연결을 확인하고 다시 시도해 주세요.",
+  "noConnectionTitle": "연결 없음",
+  "notNow": "지금은 안 함",
+  "notQuiteWithExplanation": "아쉽네요. {explanation}",
+  "notifications": "알림",
+  "onboardingTitle": "체계적인 코스와 AI 캐릭터로 언어를 배워보세요",
+  "onboarding_commitmentCasual": "가볍게",
+  "onboarding_commitmentIntense": "집중",
+  "onboarding_commitmentRegular": "꾸준히",
+  "onboarding_commitmentSerious": "진지",
+  "onboarding_commitmentSubtitle": "언제든지 설정에서 변경할 수 있습니다.",
+  "onboarding_commitmentTitle": "얼마나 시간을 투자할 수 있나요?",
+  "onboarding_displayNameLabel": "표시 이름",
+  "onboarding_emailOptionalLabel": "이메일 (선택)",
+  "onboarding_enterEmailHint": "이메일을 입력하세요",
+  "onboarding_enterNameHint": "이름을 입력하세요",
+  "onboarding_learningLangSubtitle": "마스터하고 싶은 언어를 선택하세요.",
+  "onboarding_motivationBrainTraining": "뇌 트레이닝",
+  "onboarding_motivationCareer": "경력",
+  "onboarding_motivationCulture": "문화",
+  "onboarding_motivationFamily": "가족",
+  "onboarding_motivationFun": "그냥 재미로",
+  "onboarding_motivationMoviesShows": "영화와 TV",
+  "onboarding_motivationStudyAbroad": "유학",
+  "onboarding_motivationSubtitle": "해당하는 것을 모두 선택하세요.",
+  "onboarding_motivationTitle": "왜 배우나요?",
+  "onboarding_motivationTravel": "여행",
+  "onboarding_nativeLangSubtitle": "이 정보를 바탕으로 학습 경험을 개인화합니다.",
+  "onboarding_proficiencyAdvanced": "고급",
+  "onboarding_proficiencyAdvancedDesc": "유창하게 말할 수 있습니다",
+  "onboarding_proficiencyBeginner": "초급",
+  "onboarding_proficiencyBeginnerDesc": "단어를 조금 압니다",
+  "onboarding_proficiencyElementary": "입문",
+  "onboarding_proficiencyElementaryDesc": "간단한 문장을 만들 수 있습니다",
+  "onboarding_proficiencyIntermediate": "중급",
+  "onboarding_proficiencyIntermediateDesc": "대화를 할 수 있습니다",
+  "onboarding_proficiencyProficient": "능숙",
+  "onboarding_proficiencyProficientDesc": "원어민처럼 말할 수 있습니다",
+  "onboarding_proficiencySubtitle": "적절한 난이도에서 시작합니다.",
+  "onboarding_proficiencyTitle": "현재 수준은?",
+  "onboarding_proficiencyUpperIntermediate": "중상급",
+  "onboarding_proficiencyUpperIntermediateDesc": "다양한 주제를 이야기할 수 있습니다",
+  "onboarding_skipForNow": "지금은 건너뛰기",
+  "paywallSubtitle": "무제한 학습 잠금 해제",
+  "paywallTitle": "InstaLingo 슈퍼",
+  "perMonth": "/월",
+  "perYear": "/년",
+  "pickNewCourse": "새 코스 선택하기",
+  "playing": "재생 중...",
+  "practiceWords": "방금 배운 단어 연습하기",
+  "privacy": "개인정보",
+  "proficiency": "숙련도",
+  "profile": "프로필",
+  "profile_academicEnglish": "학술 영어",
+  "profile_account": "계정",
+  "profile_achievementsUnlocked": "달성한 업적",
+  "profile_adFreeExperience": "광고 없는 경험",
+  "profile_adFreeExperienceDesc": "방해 없이 학습에 집중하세요.",
+  "profile_advanced": "고급",
+  "profile_advancedSpeakingDesc": "파형 표시와 함께 상세한 발음 및 유창성 분석을 받아보세요",
+  "profile_advancedSpeakingFeedback": "고급 말하기 피드백",
+  "profile_aiConversationPractice": "AI 대화 연습",
+  "profile_aiConversationPracticeAnswer": "다양한 시나리오에서 AI 캐릭터와 실제 대화를 연습하세요",
+  "profile_allChillCornerContent": "모든 Chill 코너 콘텐츠",
+  "profile_appearance": "화면",
+  "profile_beginner": "초급",
+  "profile_bestValue": "최고 가치",
+  "profile_browseTopics": "아래 주제를 찾아보거나 직접 문의하세요",
+  "profile_businessEnglish": "비즈니스 영어",
+  "profile_cancelAnytime": "언제든지 취소 가능. 약정 없음.",
+  "profile_checkForUpdates": "업데이트 확인",
+  "profile_chooseYourPlan": "플랜 선택",
+  "profile_completeBeginner": "완전 초보",
+  "profile_contactSupport": "지원팀에 문의",
+  "profile_contactUs": "문의하기",
+  "profile_continueWithFree": "무료로 계속하기",
+  "profile_createPlan": "계획 만들기",
+  "profile_culturalInsights": "문화 인사이트",
+  "profile_culturalInsightsDesc": "각 단어의 문화적 배경과 사용법 배우기",
+  "profile_currentPlan": "현재 플랜",
+  "profile_dailyConversation": "일상 대화",
+  "profile_dailyGoalMet": "오늘의 목표 달성!",
+  "profile_darkMode": "다크 모드",
+  "profile_daytime": "낮 (오전 9시-오후 5시)",
+  "profile_displayName": "표시 이름",
+  "profile_downloadForOffline": "오프라인 다운로드",
+  "profile_downloadForOfflineDesc": "인터넷 없이 언제 어디서나 학습",
+  "profile_duration": "시간",
+  "profile_durationDesc": "세션당 얼마나 오래 할까요?",
+  "profile_earningXPGems": "XP와 젬 획득",
+  "profile_earningXPGemsAnswer": "레슨을 완료하고, 연속 기록을 유지하고, 어휘를 복습하여 XP와 젬을 획득하세요.",
+  "profile_elementary": "초급",
+  "profile_email": "이메일",
+  "profile_emailUs": "이메일로 문의",
+  "profile_enableNotifications": "알림 활성화",
+  "profile_enableNotificationsAnswer": "설정에서 알림을 켜서 매일 학습 독려와 연속 기록을 유지하세요.",
+  "profile_enterYourEmail": "이메일 입력",
+  "profile_enterYourName": "이름 입력",
+  "profile_evening": "저녁 (오후 5시-9시)",
+  "profile_everyDay": "매일",
+  "profile_everythingInMonthly": "월간 플랜의 모든 것",
+  "profile_examPreparation": "시험 준비",
+  "profile_exclusiveStudyPlans": "독점 학습 계획",
+  "profile_falseBeginner": "거짓 초보",
+  "profile_faq": "자주 묻는 질문",
+  "profile_faqAnswer1": "InstaLingo는 실제 상황에서 언어를 배울 수 있는 몰입형 앱입니다.",
+  "profile_faqAnswer2": "Super 플랜으로 언제든지 업그레이드할 수 있습니다.",
+  "profile_faqAnswer3": "설정 > 진행 상황 초기화에서 진행 상황을 초기화할 수 있습니다.",
+  "profile_faqAnswer4": "설정 > 문의하기에서 지원팀에 연락할 수 있습니다.",
+  "profile_faqQuestion1": "InstaLingo란 무엇인가요?",
+  "profile_faqQuestion2": "나중에 업그레이드할 수 있나요?",
+  "profile_faqQuestion3": "진행 상황을 어떻게 초기화하나요?",
+  "profile_faqQuestion4": "지원팀에 어떻게 연락하나요?",
+  "profile_feedback": "피드백",
+  "profile_fifteenMinutes": "15분",
+  "profile_findFriends": "친구 찾기",
+  "profile_firstSteps": "첫걸음",
+  "profile_fiveDaysAWeek": "주 5일",
+  "profile_fiveMinutes": "5분",
+  "profile_follow": "팔로우",
+  "profile_followOthersMessage": "다른 학습자를 팔로우하여 여기에서 확인하세요.",
+  "profile_followingTitle": "팔로잉",
+  "profile_freePlan": "무료",
+  "profile_gettingStarted": "시작하기",
+  "profile_goPremium": "프리미엄으로 업그레이드",
+  "profile_goal": "목표",
+  "profile_goalDesc": "무엇을 달성하고 싶나요?",
+  "profile_goalDescription": "주요 학습 목표는 무엇인가요?",
+  "profile_goalFluency": "유창성",
+  "profile_goalTravel": "여행",
+  "profile_goalWork": "업무",
+  "profile_gotIt": "확인",
+  "profile_howDoIStart": "학습을 어떻게 시작하나요?",
+  "profile_howDoIStartAnswer": "모국어를 선택한 다음 배울 언어를 선택하세요.",
+  "profile_inProgress": "진행 중",
+  "profile_inTheMorning": "아침에",
+  "profile_instalingoSuperFAQ": "InstaLingo Super",
+  "profile_instalingoSuperFAQAnswer": "Super로 업그레이드하면 무제한 레슨, AI 연습, 고급 통계를 이용할 수 있습니다.",
+  "profile_intensity": "강도",
+  "profile_intensityDesc": "주당 몇 회?",
+  "profile_intermediate": "중급",
+  "profile_keepPracticing": "계속 연습하세요!",
+  "profile_lateNight": "늦은 밤 (오후 9시 이후)",
+  "profile_leaderboardTitle": "리더보드",
+  "profile_learnBasicPhrases": "기본 표현 배우기",
+  "profile_learning": "학습",
+  "profile_learningFeatures": "학습 기능",
+  "profile_learningStatus": "학습 중: {language} · {level}",
+  "profile_lessonRemindersStreakAlerts": "레슨 알림 및 연속 학습 알림",
+  "profile_lessonsCompleted": "레슨 {completed}/{total} 완료",
+  "profile_level": "레벨",
+  "profile_levelDesc": "어디서부터 시작하나요?",
+  "profile_levelSuffix": "레벨",
+  "profile_levelUp": "레벨 업!",
+  "profile_minPerDay": "하루 {min}분",
+  "profile_minutesCount": "하루 {count}분",
+  "profile_monthly": "월간",
+  "profile_morning": "아침 (오전 6-9시)",
+  "profile_morningBird": "아침형 (오전 5시-9시)",
+  "profile_mostPopular": "인기",
+  "profile_motivationCulture": "문화",
+  "profile_motivationFamily": "가족",
+  "profile_motivationFun": "재미",
+  "profile_motivationTravel": "여행",
+  "profile_motivationWork": "업무",
+  "profile_myPlan": "내 플랜",
+  "profile_nextAchievement": "다음 업적",
+  "profile_night": "밤 (오후 9시-자정)",
+  "profile_noAchievementsMessage": "레슨을 완료하고 연속 기록을 유지하여 업적을 달성하세요",
+  "profile_noAchievementsYet": "아직 달성한 업적이 없습니다",
+  "profile_noFollowingYet": "아직 팔로우하지 않음",
+  "profile_noFollowingYetMessage": "학습자를 팔로우하여 최신 소식을 받아보세요!",
+  "profile_noFriendsYet": "아직 친구가 없습니다",
+  "profile_noFriendsYetMessage": "다른 학습자와 연결하여 함께 연습하세요!",
+  "profile_noLeaderboardData": "아직 리더보드 데이터가 없습니다",
+  "profile_noLeaderboardDataMessage": "학습을 시작하여 순위에 올라보세요!",
+  "profile_notSet": "설정 안 됨",
+  "profile_notifications": "알림",
+  "profile_offlineMode": "오프라인 모드",
+  "profile_offlineModeDesc": "모든 레슨과 콘텐츠 다운로드",
+  "profile_offlineTitle": "오프라인",
+  "profile_onboardingComplete": "온보딩 완료",
+  "profile_onboardingTitle": "온보딩",
+  "profile_perMonth": "/월",
+  "profile_perMonthDesc": "월간",
+  "profile_perYearDesc": "연간",
+  "profile_personalizedStudyPlans": "맞춤형 학습 계획",
+  "profile_personalizedStudyPlansDesc": "목표와 일정에 맞춘 AI 생성 학습 계획",
+  "profile_plan": "플랜",
+  "profile_premium": "프리미엄",
+  "profile_priorityAIResponses": "우선 AI 응답",
+  "profile_proBadge": "PRO",
+  "profile_proFeatures": "Pro 기능",
+  "profile_proFeaturesDesc": "모든 프리미엄 콘텐츠와 기능 잠금 해제",
+  "profile_proPlan": "Pro 플랜",
+  "profile_proPlanDesc": "프리미엄 기능으로 학습 가속화",
+  "profile_proficiencyLevel": "숙련도 레벨",
+  "profile_proficient": "능숙",
+  "profile_profile": "프로필",
+  "profile_progress": "진행 상황",
+  "profile_progressReset": "진행 상황이 초기화됩니다",
+  "profile_progressResetMessage": "이 작업은 모든 진행 상황을 삭제합니다. 되돌릴 수 없습니다.",
+  "profile_questionXofY": "질문 {x}/{y}",
+  "profile_reminder": "알림",
+  "profile_reminderTime": "알림 시간",
+  "profile_removeAds": "광고 제거",
+  "profile_removeAdsDesc": "방해 없는 학습 경험을 즐기세요",
+  "profile_resetProgress": "진행 상황 초기화",
+  "profile_resetProgressFAQ": "진행 상황 초기화",
+  "profile_resetProgressFAQAnswer": "설정 > 진행 상황 초기화에서 처음부터 다시 시작할 수 있습니다. 이 작업은 되돌릴 수 없습니다.",
+  "profile_saveFiftyVsMonthly": "월간 대비 50% 절약",
+  "profile_savePercent": "{percent}% 절약",
+  "profile_schedule": "일정",
+  "profile_scheduleDesc": "언제 공부할 수 있나요?",
+  "profile_section": "섹션",
+  "profile_seeAll": "모두 보기",
+  "profile_sendFeedback": "피드백 보내기",
+  "profile_settingDailyGoals": "일일 목표 설정",
+  "profile_settingDailyGoalsAnswer": "프로필 > 설정 > 일일 목표에서 학습 목표 시간을 조정할 수 있습니다.",
+  "profile_skillLevel": "실력 수준",
+  "profile_someBasics": "기본 지식 있음",
+  "profile_soundEffects": "효과음",
+  "profile_speakingPractice": "말하기 연습",
+  "profile_startFreeTrial": "무료 체험 시작",
+  "profile_stepXofY": "단계 {current}/{total}",
+  "profile_streakLabel": "{count}일 연속",
+  "profile_studyPlanCreated": "학습 계획이 생성되었습니다!",
+  "profile_studyPlanDescription": "학습 계획을 맞춤 설정하세요.",
+  "profile_studyPlanTitle": "학습 계획",
+  "profile_studyReminder": "학습 알림",
+  "profile_subscribeNow": "지금 구독",
+  "profile_subtitle": "프로필",
+  "profile_superBadge": "SUPER",
+  "profile_superDescription": "Super의 모든 기능 잠금 해제",
+  "profile_superSubtitle": "AI 기반 기능으로 제공되는 최고의 언어 학습 경험",
+  "profile_superTitle": "InstaLingo Super",
+  "profile_support": "지원",
+  "profile_tenMinutes": "10분",
+  "profile_threeDaysAWeek": "주 3일",
+  "profile_travelBasics": "여행 기초",
+  "profile_travelPhrases": "여행 표현",
+  "profile_troubleshooting": "문제 해결",
+  "profile_tryFreeForDays": "{days}일 무료 체험 후 {price}",
+  "profile_twentyPlusMinutes": "20분 이상",
+  "profile_unlimitedAIConversations": "무제한 AI 대화",
+  "profile_unlimitedAIDesc": "Chill 코너에서 AI 캐릭터와 무제한으로 연습",
+  "profile_unlimitedAccess": "무제한 접근",
+  "profile_unlimitedAccessDesc": "모든 언어 코스와 레슨에 접근",
+  "profile_unlimitedAiConversations": "무제한 AI 대화",
+  "profile_unlimitedAiConversationsDesc": "언제든지 AI 튜터와 대화 연습",
+  "profile_unlimitedLessons": "무제한 레슨",
+  "profile_unlimitedLessonsDesc": "제한 없이 모든 레슨에 접근",
+  "profile_unlimitedVocabularyBuilder": "무제한 어휘 빌더",
+  "profile_unlimitedVocabularyBuilderDesc": "적응형 플래시카드로 어휘력 향상",
+  "profile_unlockFullExperience": "전체 경험 잠금 해제",
+  "profile_unlocked": "잠금 해제됨",
+  "profile_upgradeToSuper": "Super로 업그레이드",
+  "profile_upperIntermediate": "중상급",
+  "profile_version": "InstaLingo v{version}",
+  "profile_visitHelpCenter": "고객센터 방문",
+  "profile_weekdays": "평일",
+  "profile_weekends": "주말",
+  "profile_weekendsOnly": "주말만",
+  "profile_whatIsChillCorner": "Chill 코너란?",
+  "profile_whatIsChillCornerAnswer": "Chill 코너는 학습한 어휘를 실제 상황의 AI 생성 콘텐츠로 보여줍니다.",
+  "profile_whenToStudy": "언제 공부할까요?",
+  "profile_workCommunication": "업무 소통",
+  "profile_workVocabulary": "비즈니스 어휘",
+  "profile_writingPractice": "쓰기 연습",
+  "profile_xpAndGems": "XP와 젬",
+  "profile_xpEarnedToday": "오늘 획득한 XP",
+  "profile_youEarned": "획득했습니다!",
+  "profile_yourStreak": "나의 연속 기록",
+  "progressToNextLevel": "다음 레벨까지 진행",
+  "questionXofY": "질문 {current} / {total}",
+  "rateApp": "앱 평가하기",
+  "readyToLearn": "오늘도 학습할 준비가 되셨나요?",
+  "recording": "녹음 중...",
+  "reminderTime": "알림 시간",
+  "removeAds": "광고 제거",
+  "review": "복습",
+  "reviewVocabulary": "어휘 복습",
+  "sampleAnswer": "답변 예시:",
+  "sat": "토",
+  "save": "저장",
+  "saveAndContinue": "저장 후 계속",
+  "savePercent": "{percent}% 할인",
+  "scenarioCafeTokyo": "시나리오: 도쿄 카페에서 주문하기",
+  "searchPosts": "게시물 검색",
+  "section": "섹션",
+  "sectionX": "섹션 {x}",
+  "sections": "섹션",
+  "seeAllAchievements": "모든 업적 보기",
+  "seeResults": "결과 보기",
+  "seeWordsInContext": "배운 단어를 문맥에서 보기",
+  "settingsTitle": "설정",
+  "shareApp": "앱 공유",
+  "skip": "건너뛰기",
+  "speakNow": "지금 말하기",
+  "speakersCount": "{speakers} 명의 사용자",
+  "start": "시작",
+  "startFreeTrial": "무료 체험 시작",
+  "startLearning": "학습 시작",
+  "startNextLesson": "코스의 다음 레슨 시작하기",
+  "startSpeaking": "말하기 시작",
+  "statsTitle": "통계",
+  "stillLearning": "아직 학습 중",
+  "streakCalendar": "연속 학습 달력",
+  "streakKeepStreak": "수업을 완료하고 {currentStreak}일 연속 기록 유지하세요!",
+  "streakRepair": "연속 학습 복구",
+  "streakRepaired": "복구됨",
+  "streakShielded": "보호됨",
+  "streakShieldsRemaining": "{count}개의 연속 학습 보호 남음",
+  "streakTitle": "연속 학습",
+  "studyNow": "지금 학습",
+  "studyPlan": "학습 계획",
+  "submit": "제출",
+  "subscribeNow": "지금 구독",
+  "subscription": "구독",
+  "sun": "일",
+  "superMarket": "슈퍼마켓",
+  "swipeToContinue": "스와이프하여 계속",
+  "takePlacementTest": "배치 테스트 보기",
+  "tapAndHoldMicrophone": "마이크를 길게 눌러 말하기",
+  "tapToFlip": "탭하여 뒤집기",
+  "tapToFlipBack": "탭하여 뒤집기",
+  "tapToListen": "탭하여 듣기",
+  "tapToPlay": "탭하여 재생",
+  "tapToReveal": "탭하여 보기",
+  "tapToSpeak": "탭하여 말하기",
+  "tapWordsToBuildAnswer": "단어를 탭하여 답변 만들기",
+  "tapWordsToBuildSentence": "단어를 탭하여 문장 만들기",
+  "technicalIssues": "기술 문제",
+  "thu": "목",
+  "timeAgoHours": "{hours}시간 전",
+  "timeAgoMinutes": "{minutes}분 전",
+  "timeSpent": "학습 시간",
+  "timeSpentHoursMinutes": "{hours}시간 {minutes}분",
+  "today": "오늘",
+  "totalLessons": "총 레슨",
+  "totalXP": "총 XP",
+  "trueLabel": "정답",
+  "tryAgain": "다시 시도",
+  "tue": "화",
+  "typeMessage": "메시지를 입력하세요...",
+  "typeWhatYouHear": "들은 내용을 입력하세요...",
+  "typeYourAnswerHere": "여기에 답변을 입력하세요...",
+  "unlimited": "무제한",
+  "unlimitedLessons": "무제한 레슨",
+  "unlockAllFeatures": "모든 기능 잠금 해제",
+  "unlockNow": "지금 잠금 해제",
+  "unlockSuper": "슈퍼 잠금 해제",
+  "updateNow": "지금 업데이트",
+  "upgradeToPro": "Pro로 업그레이드",
+  "upgradeToSuper": "Super로 업그레이드",
+  "viewAll": "모두 보기",
+  "viewDetails": "상세 보기",
+  "viewLeaderboard": "리더보드 보기",
+  "visitChillCorner": "Chill 코너 방문",
+  "vocabulary": "어휘",
+  "vocabularyReview": "어휘 복습",
+  "wed": "수",
+  "weekly": "주간",
+  "weeklyGoal": "주간 목표",
+  "welcome": "환영합니다",
+  "welcomeBack": "돌아오신 것을 환영합니다",
+  "welcomeSubtitle": "새로운 언어를 배우는 가장 효과적인 방법입니다.",
+  "welcomeTitle": "InstaLingo에 오신 것을 환영합니다",
+  "whatNext": "다음에 무엇을 하시겠어요?",
+  "wordOfTheDay": "오늘의 단어",
+  "wordsLearned": "학습한 단어",
+  "wordsPracticed": "연습한 단어",
+  "xpEarned": "획득 XP",
+  "xpShort": "XP",
+  "xpThisWeek": "이번 주 XP",
+  "xpToGoal": "{xp} XP",
+  "yearly": "연간",
+  "yes": "예",
+  "youAreOffline": "오프라인 상태입니다",
+  "youLabel": "나",
+  "yourAnswer": "내 답변",
+  "yourLevel": "당신의 레벨",
+  "yourProgress": "내 진행 상황",
+  "profile_xpAndGemsDesc": "XP 및 보석 설명",
+  "onboarding_learningGoalTitle": "목표가 무엇인가요?",
+  "onboarding_learningGoalSubtitle": "학습 경험을 맞춤화하는 데 도움이 됩니다.",
+  "onboarding_examPrep": "시험 준비",
+  "onboarding_examPrepDesc": "체계적인 레슨, 모의고사, 시간 제한 연습. 예상 점수를 추적하세요.",
+  "onboarding_justForFun": "그냥 재미로",
+  "onboarding_justForFunDesc": "자신의 속도로 배우세요. 시험도, 부담도 없이 자연스럽게 언어를 익히세요.",
+  "onboarding_examTypeTitle": "어떤 시험?",
+  "onboarding_examTypeSubtitle": "준비 중인 {lang} 시험을 선택하세요.",
+  "@onboarding_examTypeSubtitle": {
+    "placeholders": {
+      "lang": {
+        "type": "String"
+      }
+    }
+  },
+  "onboarding_japanese": "일본어",
+  "onboarding_korean": "한국어",
+  "onboarding_examLevelBeginner": "초급",
+  "onboarding_examLevelElementary": "기초",
+  "onboarding_examLevelBeginnerElementary": "초급–기초",
+  "onboarding_examWordsCount": "약 {count}단어",
+  "@onboarding_examWordsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "onboarding_examSectionsJLPT": "어휘, 문법, 읽기, 듣기",
+  "onboarding_examSectionsTOPIK": "듣기, 읽기",
+  "keepPracticing": "계속 연습하세요!",
+  "kanjiReference": "한자 참조",
+  "kanaReference": "가나 표",
+  "hiraganaChart": "히라가나",
+  "katakanaChart": "가타카나",
+  "examCompleteTitle": "모의고사 완료!",
+  "yourScore": "점수",
+  "predictedLevel": "예상 등급",
+  "profile_tts": "발음 (TTS)",
+  "profile_ttsDesc": "단어를 탭하여 발음 듣기",
+  "studyReminderBody": "연습할 시간입니다!",
+  "jlptN5Label": "JLPT N5",
+  "jlptN4Label": "JLPT N4",
+  "onboarding_examLevelIntermediate": "중급",
+  "onboarding_examLevelUpperIntermediate": "중고급",
+  "onboarding_examLevelAdvanced": "고급"
+}

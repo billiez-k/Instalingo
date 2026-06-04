@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "date": "2026-05-28",
+    "pipeline_version": "1.0",
+    "overall_status": "PARTIAL — Phase 1 complete, Phase 2 partial",
+    "environment": "OFFLINE"
+  },
+  "rule_results": {
+    "rule1_all_locales_present": {
+      "status": "PARTIAL_PASS",
+      "details": "All generated content has 8-locale structure. Non-English locale values use 'TRANSLATION NEEDED' placeholders for ko/ja/es/fr/de.",
+      "files_checked": 6,
+      "issues": "525 placeholder translations across vocabulary meaning fields (expected in offline mode)"
+    },
+    "rule2_no_english_leakage": {
+      "status": "PASS",
+      "details": "demo_data.dart: 0 ko/ja/zh 'Learn:' leaks. Achievement model uses LocalizedText. ARB super/superMarket fixed. Hardcoded strings→ARB.",
+      "issues": "None in code. Content JSON has English in 'en' locale only (correct)."
+    },
+    "rule3_teaching_order_sequential": {
+      "status": "PASS",
+      "details": "Foundation vocabulary teaching_order 1-30 sequential. HSK 1 vocabulary teaching_order 1-75 sequential.",
+      "issues": "None"
+    },
+    "rule4_no_word_before_taught": {
+      "status": "NOT_VERIFIED",
+      "details": "Sentence vocabulary_used arrays not yet populated. Requires vocabulary cross-reference.",
+      "issues": "vocabulary_used and grammar_points_used arrays are empty in all sentences. Developer must populate."
+    },
+    "rule5_distractors_plausible": {
+      "status": "PASS",
+      "details": "All 75 HSK 1 vocabulary words have 3 distractors from same word class. Distractor rationale provided.",
+      "issues": "None"
+    },
+    "rule6_exam_format_correct": {
+      "status": "NOT_VERIFIED",
+      "details": "No mock tests generated yet. Exam format verification pending source download.",
+      "issues": "All mock_test.json files are BLOCKED placeholders."
+    },
+    "rule7_no_duplicates": {
+      "status": "PASS",
+      "details": "No duplicate vocabulary words, sentences, or IDs found in generated content.",
+      "issues": "None"
+    },
+    "rule8_source_attribution": {
+      "status": "PASS",
+      "details": "Every item has source and source_status fields. All tagged SOURCE_INACCESSIBLE (offline mode).",
+      "issues": "Developer must update source_status to SOURCE_VERIFIED after downloading official lists."
+    },
+    "rule9_unique_ids": {
+      "status": "PASS",
+      "details": "All IDs follow naming convention. No duplicate IDs within language.",
+      "issues": "None"
+    }
+  },
+  "phase1_summary": {
+    "total_tasks": 9,
+    "completed": 9,
+    "lesson_titles_fixed": 112,
+    "learn_prefixes_fixed": 252,
+    "arb_keys_added": 2,
+    "arb_keys_fixed": 2,
+    "hardcoded_strings_fixed": 2,
+    "achievements_localized": 6,
+    "european_courses_deleted": 4,
+    "lines_removed": 17773
+  },
+  "phase2_summary": {
+    "total_levels": 9,
+    "complete": 1,
+    "partial": 1,
+    "blocked": 7,
+    "vocabulary_generated": 105,
+    "grammar_generated": 20,
+    "sentences_generated": 150
+  }
+}

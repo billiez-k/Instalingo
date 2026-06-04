@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "language": "ko",
+    "exam_level": "foundation",
+    "total_points": 5,
+    "source": "Standard Korean grammar",
+    "source_status": "STANDARD_REFERENCE",
+    "translation_status": "deepl_translated_all_locales"
+  },
+  "grammar_points": [
+    {
+      "id": "ko_found_g001",
+      "point": "입니다/입니까 — Copula (polite)",
+      "exam_level": "foundation",
+      "teaching_order": 1,
+      "topic": "basic_structure",
+      "explanation": {
+        "en": "입니다 = 'is/am/are' (declarative). 입니까 = 'is?' (interrogative). Noun + 입니다/입니까. Negative: 이/가 아닙니다 (is not).",
+        "ko": "명사에 붙여 '이다'의 정중한 표현입니다. 부정은 '이/가 아닙니다'를 사용합니다.",
+        "zh": "입니다 = '是/是/是'（陈述句）。입니까 = '是吗？'（疑问句）。名词 + 입니다/입니까。否定：이/가 아닙니다（不是）。",
+        "zh_TW": "입니다 = 「是/是/是」（陳述句）。입니까 = 「是嗎？」（疑問句）。名詞 + 입니다/입니까。否定：이/가 아닙니다（不是）。",
+        "es": "«입니다» = «is/am/are» (declarativo). «입니까» = «is?» (interrogativo). Sustantivo + «입니다/입니까». Negativo: «이/가 아닙니다» (is not).",
+        "fr": "«입니다 » = « is/am/are » (déclaratif). «입니까 » = « is? » (interrogatif). Nom + «입니다/입니까 ». Négatif : « 이/가 아닙니다 » (is not).",
+        "de": "„입니다“ = „ist/bin/sind“ (Aussagesatz). „입니까“ = „ist?“ (Fragesatz). Substantiv + „입니다/입니까“. Verneinung: „이/가 아닙니다“ (ist nicht).",
+        "ja": "입니다 = 「is/am/are」（平叙）。입니까 = 「is?」（疑問）。名詞 + 입니다/입니까。否定形：이/가 아닙니다（is not）。"
+      },
+      "structure": "Noun + 입니다/입니까",
+      "example_target": "저는 학생입니다.",
+      "example_meaning_en": "I am a student.",
+      "example_breakdown": {
+        "저": "I (humble)",
+        "는": "topic",
+        "학생": "student",
+        "입니다": "am"
+      },
+      "source": "Standard TOPIK I grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ko_found_g002",
+      "point": "은/는 — Topic particle",
+      "exam_level": "foundation",
+      "teaching_order": 2,
+      "topic": "particles",
+      "explanation": {
+        "en": "은 (after consonant) / 는 (after vowel) = topic marker. Introduces what the sentence is about. Can also mark contrast ('as for X...').",
+        "ko": "문장의 주제를 나타내는 조사입니다. 받침이 있으면 '은', 없으면 '는'을 사용합니다. 대조의 의미도 있습니다.",
+        "zh": "은（跟在辅音后）/는（跟在元音后）= 话题标记。用于引出句子的主题。也可表示对比（“至于X……”）。",
+        "zh_TW": "은（接在輔音後）／는（接在元音後）= 話題標記。用以引出句子所談論的內容。也可用來表示對比（「至於 X...」）。",
+        "es": "은 (después de una consonante) / 는 (después de una vocal) = marcador de tema. Indica de qué trata la frase. También puede marcar contraste («en cuanto a X...»).",
+        "fr": "은 (après une consonne) / 는 (après une voyelle) = marqueur de sujet. Indique le sujet de la phrase. Peut également marquer un contraste (« quant à X... »).",
+        "de": "은 (nach einem Konsonanten) / 는 (nach einem Vokal) = Thema-Marker. Leitet das Thema des Satzes ein. Kann auch einen Kontrast markieren („Was X betrifft…“).",
+        "ja": "は（子音の後）／は（母音の後）＝話題標識。その文が何を扱っているかを紹介する。対比を表す場合もある（「Xについては…」）。"
+      },
+      "structure": "Noun + 은/는",
+      "example_target": "저는 한국어를 공부합니다.",
+      "example_meaning_en": "As for me, I study Korean.",
+      "example_breakdown": {
+        "저": "I",
+        "는": "topic",
+        "한국어": "Korean",
+        "를": "object",
+        "공부합니다": "study"
+      },
+      "source": "Standard TOPIK I grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ko_found_g003",
+      "point": "이/가 — Subject particle",
+      "exam_level": "foundation",
+      "teaching_order": 3,
+      "topic": "particles",
+      "explanation": {
+        "en": "이 (after consonant) / 가 (after vowel) = subject marker. Marks the subject, especially when introducing new info or answering 'who?' questions.",
+        "ko": "주어를 나타내는 조사입니다. 새로운 정보를 소개하거나 '누가' 질문에 답할 때 사용합니다.",
+        "zh": "이（位于辅音后）/ 가（位于元音后）= 主语标记。用于标示主语，特别是在引入新信息或回答“谁？”这类问题时。",
+        "zh_TW": "이（跟在輔音後）／가（跟在元音後）= 主語標記。用以標示主語，特別是在引出新資訊或回答「誰？」這類問題時。",
+        "es": "이 (después de una consonante) / 가 (después de una vocal) = marcador del sujeto. Indica el sujeto, sobre todo al introducir información nueva o al responder a preguntas que empiezan por «¿quién?».",
+        "fr": "이 (après une consonne) / 가 (après une voyelle) = marqueur du sujet. Indique le sujet, notamment lorsqu'on introduit une nouvelle information ou qu'on répond à des questions du type « qui ? ».",
+        "de": "이 (nach einem Konsonanten) / 가 (nach einem Vokal) = Subjektmarker. Kennzeichnet das Subjekt, insbesondere wenn neue Informationen eingeführt werden oder „Wer?“-Fragen beantwortet werden.",
+        "ja": "이（子音の後）／가（母音の後）＝主語の標識。特に新しい情報を提示したり、「誰が？」という質問に答えたりする際に、主語を示す。"
+      },
+      "structure": "Noun + 이/가",
+      "example_target": "날씨가 좋습니다.",
+      "example_meaning_en": "The weather is good.",
+      "example_breakdown": {
+        "날씨": "weather",
+        "가": "subject",
+        "좋습니다": "is good"
+      },
+      "source": "Standard TOPIK I grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ko_found_g004",
+      "point": "을/를 — Object particle",
+      "exam_level": "foundation",
+      "teaching_order": 4,
+      "topic": "particles",
+      "explanation": {
+        "en": "을 (after consonant) / 를 (after vowel) = object marker. Marks the direct object of a transitive verb.",
+        "ko": "타동사의 직접 목적어를 나타내는 조사입니다. 받침 있으면 '을', 없으면 '를'을 사용합니다.",
+        "zh": "을（跟在辅音后）/를（跟在元音后）= 宾语标记。用于标示及物动词的直接宾语。",
+        "zh_TW": "을（跟在輔音後）／를（跟在元音後）= 賓語標記。用來標示及物動詞的直接賓語。",
+        "es": "을 (después de una consonante) / 를 (después de una vocal) = marcador de objeto. Indica el objeto directo de un verbo transitivo.",
+        "fr": "을 (après une consonne) / 를 (après une voyelle) = marqueur d'objet. Indique l'objet direct d'un verbe transitif.",
+        "de": "을 (nach einem Konsonanten) / 를 (nach einem Vokal) = Objektmarker. Kennzeichnet das direkte Objekt eines transitiven Verbs.",
+        "ja": "을（子音の後）／를（母音の後）＝目的語標識。他動詞の直接目的語を示す。"
+      },
+      "structure": "Noun + 을/를",
+      "example_target": "저는 밥을 먹습니다.",
+      "example_meaning_en": "I eat rice/a meal.",
+      "example_breakdown": {
+        "밥": "rice/meal",
+        "을": "object",
+        "먹습니다": "eat"
+      },
+      "source": "Standard TOPIK I grammar",
+      "source_status": "STANDARD_REFERENCE"
+    },
+    {
+      "id": "ko_found_g005",
+      "point": "에 — Location/Time particle",
+      "exam_level": "foundation",
+      "teaching_order": 5,
+      "topic": "particles",
+      "explanation": {
+        "en": "에 = (1) at/in/on (location of existence), (2) at (time), (3) to (destination). Used with 있다/없다, time words, and directional verbs like 가다/오다.",
+        "ko": "장소, 시간, 방향을 나타내는 조사입니다. 존재(있다/없다), 시각, 도착점에 사용합니다.",
+        "zh": "에 = (1) 在……（存在位置），(2) 于……（时间），(3) 到……（目的地）。常与“있다/없다”、时间词以及“가다/오다”等方向动词搭配使用。",
+        "zh_TW": "에 = (1) 在……（存在位置），(2) 於……（時間），(3) 往……（目的地）。常用於搭配「있다/없다」、時間詞彙，以及「가다/오다」等方向動詞。",
+        "es": "에 = (1) en (lugar), (2) en (momento), (3) hacia (destino). Se utiliza con 있다/없다, palabras que indican tiempo y verbos de dirección como 가다/오다.",
+        "fr": "에 = (1) à/dans/sur (lieu d'existence), (2) à (moment), (3) vers (destination). S'utilise avec 있다/없다, les mots indiquant le temps et les verbes de direction tels que 가다/오다.",
+        "de": "에 = (1) bei/in/auf (Ort des Befindens), (2) um (Zeitpunkt), (3) nach (Zielort). Wird mit 있다/없다, Zeitangaben und Richtungsverben wie 가다/오다 verwendet.",
+        "ja": "에 = (1) at/in/on（存在する場所）、(2) at（時間）、(3) to（目的地）。「있다/없다」や時間表現、および「가다/오다」のような方向を表す動詞と組み合わせて使われる。"
+      },
+      "structure": "Noun + 에",
+      "example_target": "학교에 갑니다.",
+      "example_meaning_en": "I go to school.",
+      "example_breakdown": {
+        "학교": "school",
+        "에": "to",
+        "갑니다": "go"
+      },
+      "source": "Standard TOPIK I grammar",
+      "source_status": "STANDARD_REFERENCE"
+    }
+  ]
+}

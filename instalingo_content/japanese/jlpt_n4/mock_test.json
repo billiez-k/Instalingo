@@ -1,0 +1,640 @@
+{
+  "meta": {
+    "exam": "JLPT N4",
+    "exam_level": "JLPT N4",
+    "language": "japanese",
+    "total_questions": 25,
+    "source": "AI-generated mock test using SOURCE_VERIFIED JLPT N4 vocabulary and STANDARD_REFERENCE grammar patterns",
+    "source_status": "AI_GENERATED",
+    "sections": [
+      {
+        "section_id": "vocab_mc",
+        "title": "語彙 — 多肢選択 (Vocabulary — Multiple Choice)",
+        "count": 10,
+        "type": "multiple_choice"
+      },
+      {
+        "section_id": "grammar_fib",
+        "title": "文法 — 穴埋め (Grammar — Fill in the Blank)",
+        "count": 5,
+        "type": "fill_in_blank"
+      },
+      {
+        "section_id": "reading",
+        "title": "読解 (Reading Comprehension)",
+        "count": 5,
+        "type": "multiple_choice"
+      },
+      {
+        "section_id": "listening",
+        "title": "聴解 (Listening — text-based)",
+        "count": 5,
+        "type": "multiple_choice",
+        "note": "Text-based listening simulation. Audio files pending recording."
+      }
+    ],
+    "schema_normalized": true
+  },
+  "questions": [
+    {
+      "id": "ja_n4_mock_q001",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「しけんが ちかいので、まじめに ＿＿＿。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'Since the exam is near, I will ___ seriously.'?",
+      "explanation": {
+        "en": "勉強する (べんきょうする) means 'to study'. The context is exam preparation. 見学する = to tour/visit for study, 見物する = to sightsee, 旅行する = to travel. Only 勉強する makes sense with 試験 (exam).",
+        "ja": "「勉強する」は「study」の意味です。試験が近いので勉強するという文脈が自然です。",
+        "zh": "“勉強する”意为“学习”。此处的语境是备考。 “見学する”指为学习目的进行参观， “見物する”指观光， “旅行する”指旅行。只有“勉強する”与“試験”（考试）搭配使用才合理。",
+        "zh_TW": "「勉強する」意為「學習」。此處的語境是備考。見学する = 為學習而參觀、見物する = 觀光、旅行する = 旅遊。唯有「勉強する」與「考試」搭配使用才合乎語境。",
+        "ko": "'勉強する(벤쿄스루)'는 '공부하다'라는 뜻입니다. 문맥상 시험 준비를 의미합니다. '見学する'는 견학하다, '見物する'는 구경하다, '旅行する'는 여행하다라는 뜻입니다. '試験(시험)'과 함께 쓰일 때는 오직 '勉強する'만이 의미가 통합니다.",
+        "es": "«Benkyō suru» significa «estudiar». El contexto es la preparación de un examen. «Kenkyō suru» = hacer una visita de estudio; «miwaku suru» = hacer turismo; «ryokō suru» = viajar. Solo «benkyō suru» tiene sentido en relación con «shiken» (examen).",
+        "fr": "« 勉強する » (benkyōsuru) signifie « étudier ». Le contexte est celui de la préparation aux examens. « 見学する » = faire une visite guidée/visiter à des fins d'étude, « 見物する » = faire du tourisme, « 旅行する » = voyager. Seul « 勉強する » a du sens avec « 試験 » (examen).",
+        "de": "„勉強する“ (benkyōsuru) bedeutet „lernen“. Der Kontext ist die Prüfungsvorbereitung. „見学する“ = eine Besichtigungstour machen, „見物する“ = Sehenswürdigkeiten besichtigen, „旅行する“ = reisen. Nur „勉強する“ passt im Zusammenhang mit „試験“ (Prüfung)."
+      },
+      "correct_answer": "べんきょうする",
+      "distractors": [
+        "けんがくする",
+        "けんぶつする",
+        "りょこうする"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q002",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「かいぎで 自分の ＿＿＿を しっかり のべた。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'I clearly stated my ___ at the meeting.'?",
+      "explanation": {
+        "en": "意見 (いけん) means 'opinion'. 意見を述べる (のべる) = to state one's opinion — a common collocation. 趣味 = hobby, 荷物 = luggage, 季節 = season. None fit the context of a meeting.",
+        "ja": "「意見」は「opinion」です。「意見を述べる」は会議での自然な表現です。",
+        "zh": "“意见”（いけん）意为“意见”。“发表意见”（のべる）= 表达自己的观点——这是一个常见的搭配。趣味 = 爱好，行李 = 行李，季节 = 季节。这些词都不符合会议的语境。",
+        "zh_TW": "「意見 (いけん)」意為「意見」。「意見を述べる (のべる)」＝表達意見——這是常見的搭配。「趣味」＝興趣、「荷物」＝行李、「季節」＝季節。這些詞彙都不符合會議的語境。",
+        "ko": "'意見(이켄)'은 '의견'을 의미합니다. '意見を述べる(노베루)' = 자신의 의견을 밝히다 — 흔히 쓰이는 표현입니다. '趣味' = 취미, '荷物' = 짐, '季節' = 계절. 이 중 어느 것도 회의 상황에는 맞지 않습니다.",
+        "es": "Opinión (iken) significa «opinión». Expresar una opinión (noberu) = dar a conocer la propia opinión; una combinación muy habitual. Afición = hobby, equipaje = equipaje, estación = estación del año. Ninguna de estas palabras encaja en el contexto de una reunión.",
+        "fr": "Le mot « 意見 » (iken) signifie « opinion ». « 意見を述べる » (noberu) = « donner son avis » — une expression courante. « 趣味 » = passe-temps, « 荷物 » = bagages, « 季節 » = saison. Aucun de ces termes ne correspond au contexte d'une réunion.",
+        "de": "„意見“ (iken) bedeutet „Meinung“. „意見を述べる“ (noberu) = seine Meinung äußern – eine gängige Wortverbindung. „趣味“ = Hobby, „荷物“ = Gepäck, „季節“ = Jahreszeit. Keines dieser Wörter passt in den Kontext einer Besprechung."
+      },
+      "correct_answer": "いけん",
+      "distractors": [
+        "しゅみ",
+        "にもつ",
+        "きせつ"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q003",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「この くすりは にがいですが、よく ＿＿＿。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'This medicine is bitter but it ___ well.'?",
+      "explanation": {
+        "en": "効く (きく) means 'to be effective'. 薬が効く = the medicine works/is effective. 怒る = to get angry, 壊れる = to break, 無くなる = to disappear/be lost. Only 効く fits with 薬.",
+        "ja": "「効く」は「be effective」の意味です。「薬が効く」は薬の効果を表す自然な表現です。",
+        "zh": "“効く (kiku)”意为“起作用”。“薬が効く”即“药起作用”。“怒る”意为“生气”，“壊れる”意为“坏掉”，“無くなる”意为“消失/丢失”。只有“効く”与“薬”搭配。",
+        "zh_TW": "「効く (kiku)」意為「有效」。藥が効く = 藥有效。怒る = 生氣，壊れる = 壞掉，無くなる = 消失／遺失。只有「効く」能與「薬」搭配使用。",
+        "ko": "'効く(키쿠)'는 '효과가 있다'는 뜻입니다. 薬が効く = 약이 효과가 있다. 怒る = 화를 내다, 壊れる = 부서지다, 無くなる = 사라지다/없어지다. 이 중 '効く'만이 '薬'과 어울립니다.",
+        "es": "「効く (kiku)» significa «ser eficaz». 薬が効く = el medicamento funciona/es eficaz. 怒る = enfadarse, 壊れる = romperse, 無くなる = desaparecer/perderse. Solo «効く» encaja con «薬».",
+        "fr": "« 効く » (kiku) signifie « être efficace ». « 薬が効く » = le médicament agit/est efficace. « 怒る » = se mettre en colère, « 壊れる » = se casser, « 無くなる » = disparaître/se perdre. Seul « 効く » s'accorde avec « 薬 ».",
+        "de": "„効く“ (kiku) bedeutet „wirken“. „薬が効く“ = das Medikament wirkt. „怒る“ = wütend werden, „壊れる“ = kaputtgehen, „無くなる“ = verschwinden/verloren gehen. Nur „効く“ passt zu „薬“."
+      },
+      "correct_answer": "きく",
+      "distractors": [
+        "おこる",
+        "こわれる",
+        "なくなる"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q004",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「この へやの 電気が ＿＿＿から、あかるいです。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'This room's light is ___ so it is bright.'?",
+      "explanation": {
+        "en": "つく means 'to turn on / be on' (for lights, fire, electricity). 電気がつく = the light is on. 消える (きえる) = to go out/turn off, 折れる (おれる) = to break/snap, 別れる (わかれる) = to part/separate. Only つく fits the context of a bright room.",
+        "ja": "「つく」は電気などが「on」の状態になることです。部屋が明るいのは電気がついているからです。",
+        "zh": "“つく”意为“打开/亮起”（指灯光、火、电等）。“電気がつく”= 灯亮了。“消える（きえる）”= 熄灭/关掉，“折れる（おれる）”= 折断/断裂，“別れる（わかれる）”= 分离/分开。只有“つく”符合明亮房间的语境。",
+        "zh_TW": "「つく」意為「打開／亮起」（指燈光、火、電力）。電気がつく = 燈亮了。消える (きえる) = 熄滅／關閉，折れる (おれる) = 折斷／斷裂，別れる (わかれる) = 分離／分開。只有「つく」符合明亮房間的語境。",
+        "ko": "‘つく’는 ‘켜다/켜져 있다’는 뜻입니다(불, 조명, 전기의 경우). 電気がつく = 불이 켜져 있다. 消える(키에루) = 꺼지다, 折れる(오레루) = 부러지다, 別れる(와카레루) = 헤어지다. 밝은 방이라는 맥락에 맞는 것은 ‘つく’뿐입니다.",
+        "es": "«Tsuku» significa «encenderse / estar encendido» (en referencia a luces, fuego, electricidad). 電気がつく = la luz está encendida. 消える (kieru) = apagarse, 折れる (oreru) = romperse, 別れる (wakareru) = separarse. Solo «tsuku» encaja en el contexto de una habitación iluminada.",
+        "fr": "« つく » signifie « allumer / être allumé » (pour les lumières, le feu, l'électricité). 電気がつく = la lumière est allumée. 消える (きえる) = s'éteindre / s'éteindre, 折れる (おれる) = se casser / se briser, 別れる (わかれる) = se séparer / se séparer. Seul « つく » correspond au contexte d'une pièce éclairée.",
+        "de": "„つく“ bedeutet „sich einschalten / an sein“ (für Licht, Feuer, Strom). 電気がつく = das Licht ist an. 消える (きえる) = erlöschen/sich ausschalten, 折れる (おれる) = brechen/knacken, 別れる (わかれる) = sich trennen/sich scheiden. Nur „つく“ passt zum Kontext eines hellen Raums."
+      },
+      "correct_answer": "ついて",
+      "distractors": [
+        "きえて",
+        "おれて",
+        "わかれて"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q005",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「まいあさ しんぶんを 読んで、＿＿＿を あつめている。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'Every morning I read the newspaper and gather ___.'?",
+      "explanation": {
+        "en": "情報 (じょうほう) means 'information'. Reading newspapers to gather information is a natural activity. 成績 = grades/results, 郵便 = mail/postal, 交通 = traffic/transportation. Only 情報 fits.",
+        "ja": "「情報」は「information」です。新聞を読んで情報を集めるのは自然な文脈です。",
+        "zh": "“情報（じょうほう）”意为“信息”。阅读报纸以获取信息是一种自然而然的行为。成绩 = 成绩/结果，邮政 = 邮件/邮政，交通 = 交通/运输。只有“情報”符合语境。",
+        "zh_TW": "「情報 (じょうほう)」意為「資訊」。閱讀報紙以獲取資訊是一項自然而然的活動。成績 = 成績／結果，郵便 = 郵件／郵政，交通 = 交通／運輸。只有「情報」符合此語境。",
+        "ko": "‘情報(じょうほう)’는 ‘정보’를 의미합니다. 정보를 얻기 위해 신문을 읽는 것은 자연스러운 행동입니다. 成績 = 성적, 郵便 = 우편, 交通 = 교통. 오직 ‘情報’만이 해당됩니다.",
+        "es": "«情報» (jōhō) significa «información». Leer periódicos para recabar información es algo natural. 成績 = notas/resultados, 郵便 = correo/servicio postal, 交通 = tráfico/transporte. Solo encaja «情報».",
+        "fr": "情報 (jōhō) signifie « information ». Lire les journaux pour s'informer est une activité tout à fait naturelle. 成績 = notes/résultats, 郵便 = courrier/poste, 交通 = circulation/transports. Seul le mot 情報 convient.",
+        "de": "情報 (じょうほう) bedeutet „Informationen“. Zeitungen zu lesen, um Informationen zu sammeln, ist eine ganz natürliche Tätigkeit. 成績 = Noten/Ergebnisse, 郵便 = Post, 交通 = Verkehr/Transport. Nur 情報 passt hierher."
+      },
+      "correct_answer": "じょうほう",
+      "distractors": [
+        "せいせき",
+        "ゆうびん",
+        "こうつう"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q006",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「かのじょは せが たかくて、＿＿＿が いいです。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'She is tall and has a good ___.'?",
+      "explanation": {
+        "en": "スタイル means 'figure/style'. スタイルがいい = has a good figure. Describing someone's physique with 背が高い (tall) and スタイルがいい (good figure) is a natural pairing. 頭 = head, 顔 = face, 首 = neck — none naturally pair with 背が高い.",
+        "ja": "「スタイル」は体つきや姿のことです。「スタイルがいい」は「背が高い」と並んで外見を表す自然な表現です。",
+        "zh": "“スタイル”意为“身材/风格”。“スタイルがいい”即“身材好”。用“背が高い”（个子高）和“スタイルがいい”（身材好）来形容某人的体态，是十分自然的搭配。而“頭”（头）、“顔”（脸）、“首”（脖子）——这些词与“背が高い”则没有自然的搭配关系。",
+        "zh_TW": "「スタイル」意為「身材／風格」。「スタイルがいい」即指「身材好」。用「背が高い」（高）和「スタイルがいい」（身材好）來形容某人的體態，是相當自然的搭配。而「頭」、「顔」、「首」——這些詞語則自然不會與「背が高い」搭配使用。",
+        "ko": "'스타일'은 '체형/스타일'을 의미합니다. '스타일이 좋다'는 '체형이 좋다'는 뜻입니다. 누군가의 체격을 설명할 때 '키가 크다'와 '스타일이 좋다'는 표현은 자연스럽게 어울리는 조합입니다. '머리', '얼굴', '목'은 '키가 크다'와 자연스럽게 어울리지 않습니다.",
+        "es": "«スタイル» significa «figura/estilo». «スタイルがいい» = tiene buena figura. Describir el físico de alguien con «背が高い» (alto) y «スタイルがいい» (buena figura) es una combinación natural. «頭» = cabeza, «顔» = cara, «首» = cuello: ninguno de ellos se combina de forma natural con «背が高い».",
+        "fr": "スタイル signifie « silhouette ». スタイルがいい = avoir une belle silhouette. Décrire le physique d'une personne en utilisant 背が高い (grand) et スタイルがいい (belle silhouette) est une association naturelle. 頭 = tête, 顔 = visage, 首 = cou — aucun de ces termes ne s'associe naturellement à 背が高い.",
+        "de": "„スタイル“ bedeutet „Figur/Stil“. „スタイルがいい“ = hat eine gute Figur. Die Beschreibung der Statur einer Person mit „背が高い“ (groß) und „スタイルがいい“ (gute Figur) ist eine natürliche Kombination. „頭“ = Kopf, „顔“ = Gesicht, „首“ = Hals – keines dieser Wörter passt von Natur aus zu „背が高い“."
+      },
+      "correct_answer": "スタイル",
+      "distractors": [
+        "あたま",
+        "かお",
+        "くび"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q007",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「にもつが おもいので、だれかに ＿＿＿ もらいました。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'The luggage was heavy, so I had someone ___ it for me.'?",
+      "explanation": {
+        "en": "持つ (もつ) means 'to carry/hold'. 持ってもらう = to have someone carry (for you). 捨てる = throw away, 無くす = lose, 落とす = drop. In the context of heavy luggage, having someone carry it makes sense.",
+        "ja": "「持つ」は「carry」の意味です。「〜てもらう」と組み合わせて「持ってもらう」=「運んでもらう」の意味になります。",
+        "zh": "“持つ (もつ)”意为“携带/拿着”。“持ってもらう”即“请别人帮忙拿”。“捨てる”是“扔掉”，“無くす”是“弄丢”，“落とす”是“掉落”。在谈论沉重行李的语境下，请别人帮忙拿是合情合理的。",
+        "zh_TW": "「持つ (もつ)」意為「攜帶／拿著」。持ってもらう = 請別人幫忙攜帶。捨てる = 丟棄，無くす = 弄丟，落とす = 掉落。在談論沉重行李的語境下，請別人幫忙攜帶是合情合理的。",
+        "ko": "「持つ(모츠)」는 ‘들다/가지고 있다’는 뜻입니다. 「持ってもらう」은 ‘누군가에게 (자신을 위해) 들어달라고 부탁하다’는 의미입니다. 「捨てる」는 ‘버리다’, 「無くす」는 ‘잃어버리다’, 「落とす」는 ‘떨어뜨리다’입니다. 무거운 짐을 다룰 때, 누군가에게 들어달라고 부탁하는 것은 자연스러운 일입니다.",
+        "es": "「持つ (もつ)」significa «llevar/sostener». 「持ってもらう」 = que alguien lo lleve (por ti). 「捨てる」 = tirar, 「無くす」 = perder, 「落とす」 = dejar caer. En el contexto del equipaje pesado, tiene sentido que alguien lo lleve.",
+        "fr": "「持つ (もつ) » signifie « porter ». « 持ってもらう » = se faire porter (par quelqu'un). « 捨てる » = jeter, « 無くす » = perdre, « 落とす » = faire tomber. Dans le cas de bagages lourds, il est logique de se faire porter par quelqu'un.",
+        "de": "„持つ (motsu)“ bedeutet „tragen/halten“. „持ってもらう“ = jemanden bitten, etwas (für einen) zu tragen. „捨てる“ = wegwerfen, „無くす“ = verlieren, „落とす“ = fallen lassen. Im Zusammenhang mit schwerem Gepäck ist es sinnvoll, jemanden bitten, es zu tragen."
+      },
+      "correct_answer": "もって",
+      "distractors": [
+        "すてて",
+        "なくして",
+        "おとして"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q008",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「あのレストランは いつも ＿＿＿で こんでいる。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'That restaurant is always crowded with ___.'?",
+      "explanation": {
+        "en": "客 (きゃく) means 'customers/guests'. 客で込んでいる = crowded with customers — natural for a restaurant. 品物 = goods/products, 店員 = store clerk, 社長 = company president. Only 客 makes sense for restaurant crowds.",
+        "ja": "「客」は「customer」です。レストランが客で混んでいるのは自然な表現です。",
+        "zh": "“客（きゃく）”意为“顾客/客人”。“客で込んでいる”即“挤满了顾客”——这在餐厅里很常见。“品物”指“商品/产品”，“店員”指“店员”，“社長”指“公司总裁”。只有“客”这个词才能准确描述餐厅里的人群。",
+        "zh_TW": "「客 (きゃく)」意為「顧客／客人」。「客で込んでいる」即為「顧客眾多」——這在餐廳裡是再自然不過的景象。「品物」指「商品／產品」，「店員」指「店員」，「社長」指「公司社長」。唯有「客」一詞能準確形容餐廳裡的人潮。",
+        "ko": "'客(きゃく)'는 '손님'을 의미합니다. '客で込んでいる'은 '손님으로 붐비다'라는 뜻으로, 식당에서는 흔히 볼 수 있는 표현입니다. '品物'은 '상품', '店員'은 '점원', '社長'은 '사장'을 뜻합니다. 식당의 붐비는 상황을 설명할 때는 오직 '客'만이 적절한 표현입니다.",
+        "es": "「客 (kyaku)» significa «clientes/invitados». «客で込んでいる» = lleno de clientes — algo habitual en un restaurante. 「品物」 = mercancías/productos, 「店員」 = dependiente, 「社長」 = director de la empresa. Solo «客» tiene sentido para referirse a la afluencia de gente en un restaurante.",
+        "fr": "Le mot 客 (kyaku) signifie « clients/invités ». 客で込んでいる = bondé de clients — ce qui est tout à fait normal pour un restaurant. 品物 = marchandises/produits, 店員 = vendeur, 社長 = président de l'entreprise. Seul le mot 客 a du sens pour désigner la foule dans un restaurant.",
+        "de": "客 (kyaku) bedeutet „Kunden/Gäste“. 客で込んでいる = voller Kunden – was für ein Restaurant ganz normal ist. 品物 = Waren/Produkte, 店員 = Verkäufer, 社長 = Firmenchef. Nur 客 ergibt im Zusammenhang mit einem überfüllten Restaurant Sinn."
+      },
+      "correct_answer": "きゃく",
+      "distractors": [
+        "しなもの",
+        "てんいん",
+        "しゃちょう"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q009",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「しごとに ＿＿＿して、まいにち おそくまで はたらいています。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'I am ___ about my work and work late every day.'?",
+      "explanation": {
+        "en": "熱心 (ねっしん) means 'enthusiastic/zealous'. 仕事に熱心だ = to be enthusiastic about work. 退屈 = boredom, 不安 = anxiety, 残念 = regrettable/unfortunate. Only 熱心 fits a context of working late voluntarily.",
+        "ja": "「熱心」は「enthusiastic」の意味です。仕事に熱心で遅くまで働くのは自然な文脈です。",
+        "zh": "“热心”意为“热情/热忱”。“工作中很热心”=对工作充满热情。“退屈”=无聊，“不安”=焦虑，“遗憾”=遗憾/不幸。只有“热心”符合自愿加班的语境。",
+        "zh_TW": "「熱心 (ねっしん)」意為「熱忱／積極」。例如：「仕事に熱心だ」即表示「對工作充滿熱忱」。「退屈」意為「無聊」，「不安」意為「焦慮」，「残念」意為「遺憾／可惜」。在自願加班的語境下，唯有「熱心」一詞最為貼切。",
+        "ko": "'熱心(네신)'은 '열정적인, 열성적인'이라는 뜻입니다. '仕事に熱心だ'는 '일에 열정적이다'라는 의미입니다. '退屈'은 '지루함', '不安'은 '불안', '残念'은 '유감스럽다, 안타깝다'를 뜻합니다. 자발적으로 야근을 하는 맥락에는 오직 '熱心'만이 어울립니다.",
+        "es": "熱心 (nesshin) significa «entusiasta/diligente». 仕事に熱心だ = ser entusiasta con el trabajo. 退屈 = aburrimiento, 不安 = ansiedad, 残念 = lamentable/desafortunado. Solo 熱心 encaja en un contexto de trabajar hasta tarde por voluntad propia.",
+        "fr": "熱心 (nesshin) signifie « enthousiaste / zélé ». 仕事に熱心だ = être enthousiaste au travail. 退屈 = ennui, 不安 = anxiété, 残念 = regrettable / malheureux. Seul 熱心 correspond au contexte du fait de travailler tard de son plein gré.",
+        "de": "熱心 (nesshin) bedeutet „begeistert/eifrig“. 仕事に熱心だ = sich für die Arbeit begeistern. 退屈 = Langeweile, 不安 = Angst, 残念 = bedauerlich/unglücklich. Nur 熱心 passt in den Kontext, freiwillig länger zu arbeiten."
+      },
+      "correct_answer": "ねっしん",
+      "distractors": [
+        "たいくつ",
+        "ふあん",
+        "ざんねん"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q010",
+      "section": "vocab_mc",
+      "type": "multiple_choice",
+      "question": "「けさ おきたとき、のどが ＿＿＿ いたかった。」にあてはまる ことばは どれですか。",
+      "question_en": "Which word fits: 'When I woke up this morning, my throat hurt ___.'?",
+      "explanation": {
+        "en": "とても means 'very'. のどがとても痛い = my throat hurts very much. わざと = intentionally/on purpose, なかなか = quite/considerably (often with negative), すっかり = completely/entirely. とても is the most natural intensifier for pain.",
+        "ja": "「とても」は「very」の意味で、痛みの程度を表すのに最も自然な副詞です。",
+        "zh": "“とても”意为“非常”。“のどがとても痛い”=“我的喉咙非常痛”。“わざと”=“故意地/特意地”，“なかなか”=“相当/颇为”（常用于否定句中），“すっかり”=“完全地/彻底地”。“とても”是表达疼痛时最自然的强调词。",
+        "zh_TW": "「とても」的意思是「非常」。「のどがとても痛い」＝「我的喉嚨非常痛」。「わざと」＝「故意」、「なかなか」＝「頗為／相當」（常與否定語搭配使用）、「すっかり」＝「完全／徹底地」。「とても」是描述疼痛時最自然的強化詞。",
+        "ko": "'とても'는 '매우'라는 뜻입니다. 'のどがとても痛い' = 목이 매우 아파요. 'わざと' = 일부러, 'なかなか' = 꽤/상당히 (주로 부정문에서 사용), 'すっかり' = 완전히/전적으로. 'とても'는 통증을 표현할 때 가장 자연스럽게 쓰이는 강조어입니다.",
+        "es": "«とても» significa «mucho». «のどがとても痛い» = me duele mucho la garganta. «わざと» = a propósito, «なかなか» = bastante (a menudo con sentido negativo), «すっかり» = completamente. «とても» es el intensificador más natural para expresar dolor.",
+        "fr": "« とても » signifie « très ». « のどがとても痛い » = j'ai très mal à la gorge. « わざと » = intentionnellement/exprès, « なかなか » = assez/beaucoup (souvent avec une nuance négative), « すっかり » = complètement/entièrement. « とても » est le intensificateur le plus naturel pour exprimer la douleur.",
+        "de": "„とても“ bedeutet „sehr“. „のどがとても痛い“ = „Ich habe starke Halsschmerzen“. „わざと“ = „absichtlich/mit Absicht“, „なかなか“ = „ziemlich/erheblich“ (oft in negativen Sätzen), „すっかり“ = „vollständig/ganz“. „とても“ ist die natürlichste Verstärkung für Schmerzen."
+      },
+      "correct_answer": "とても",
+      "distractors": [
+        "わざと",
+        "なかなか",
+        "すっかり"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q011",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "天気予報によると、あしたは 雪が ＿＿＿そうです。 (ふる / ふります)",
+      "question_en": "Fill in the blank: 'According to the forecast, I hear it will ___ tomorrow.' (fall/snow)",
+      "correct_answer": "行けば",
+      "distractors": [
+        "行くなら",
+        "行ったら",
+        "行く"
+      ],
+      "explanation": {
+        "en": "〜そうです (hearsay) requires the plain form before it. ふる is the dictionary (plain) form of 降る. The pattern is: Plain form + そうです = I hear that... . This is the N4 hearsay grammar, distinct from the N5 〜そうです (looks like) which uses the verb stem.",
+        "ja": "伝聞の「〜そうです」の前には動詞の普通形を使います。「ふる」が辞書形で、正解です。",
+        "zh": "〜そうです（传闻句）需要其前接动词的平叙形。ふる是“降る”的词典（平叙）形。其句式为：平叙形 + そうです = 我听说…… 。这是N4级别的传闻句语法，与N5级别的〜そうです（看起来像……）不同，后者使用动词词干。",
+        "zh_TW": "〜そうです（傳聞）必須在動詞原形之前使用。ふる 是 降る 的字典（原形）形式。其句型為：原形 + そうです = 我聽說…… 。這是 N4 級的傳聞語法，有別於 N5 級的 〜そうです（看起來像），後者使用動詞詞幹。",
+        "ko": "〜そうです(전언) 앞에는 동사의 기본형이 와야 합니다. ふる는 降る의 사전형(기본형)입니다. 문법 구조는 다음과 같습니다: 기본형 + そうです = ~라고 들었습니다. 이는 N4 수준의 전언 문법으로, 동사 어간을 사용하는 N5 수준의 〜そうです(~인 것 같습니다)와는 다릅니다.",
+        "es": "〜そうです (de oídas) requiere que vaya precedido de la forma básica. ふる es la forma básica (de diccionario) de 降る. La estructura es: forma básica + そうです = He oído que... . Se trata de la regla gramatical de «de oídas» del N4, que se diferencia del 〜そうです (parece que) del N5, que utiliza la raíz del verbo.",
+        "fr": "〜そうです (par ouï-dire) doit être précédé de la forme simple. ふる est la forme simple (de dictionnaire) de 降る. La structure est la suivante : forme simple + そうです = « On dit que... ». Il s'agit de la grammaire du niveau N4 relative au par ouï-dire, qui se distingue de la construction 〜そうです (on dirait que) du niveau N5, qui utilise le radical du verbe.",
+        "de": "〜そうです (Hörensagen) erfordert die Grundform davor. ふる ist die Grundform von 降る. Das Muster lautet: Grundform + そうです = Ich habe gehört, dass... . Dies ist die Grammatik für Hörensagen der Stufe N4, die sich von der N5-Form 〜そうです (es scheint, dass) unterscheidet, bei der der Verbstamm verwendet wird."
+      }
+    },
+    {
+      "id": "ja_n4_mock_q012",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "この しごとを ＿＿＿ もらいました。 (てつだう / てつだいます)",
+      "question_en": "Fill in the blank: 'I had someone ___ me with this work.' (help)",
+      "correct_answer": "されました",
+      "distractors": [
+        "しました",
+        "した",
+        "する"
+      ],
+      "explanation": {
+        "en": "〜てもらう requires the て-form of the verb. 手伝う → 手伝って (て-form). The pattern: Verb て-form + もらう = have someone do something for you (receiving a favor).",
+        "ja": "「〜てもらう」の前には動詞のテ形が必要です。「手伝う」のテ形は「手伝って」です。",
+        "zh": "〜てもらう 需要动词的“て”形。手伝う → 手伝って（“て”形）。该句型为：动词“て”形 + もらう = 请人帮忙（接受他人帮助）。",
+        "zh_TW": "〜てもらう 需要動詞的「て」形。手伝う → 手伝って（て形）。此句型：動詞 て形 + もらう = 請人幫忙（接受他人協助）。",
+        "ko": "〜てもらう는 동사의 ‘~て’ 형태를 사용합니다. 手伝う → 手伝って (‘~て’ 형태). 문형: 동사 ‘~て’ 형태 + もらう = 누군가에게 부탁하여 무언가를 해달라고 함 (도움을 받음).",
+        "es": "«〜てもらう» requiere la forma «te» del verbo. 手伝う → 手伝って (forma «te»). La fórmula: verbo en forma «te» + もらう = que alguien haga algo por ti (recibir un favor).",
+        "fr": "〜てもらう nécessite la forme « te » du verbe. 手伝う → 手伝って (forme « te »). La structure : verbe + forme « te » + もらう = demander à quelqu'un de faire quelque chose pour soi (recevoir une faveur).",
+        "de": "„〜てもらう“ erfordert die て-Form des Verbs. 手伝う → 手伝って (て-Form). Das Muster: Verb in て-Form + もらう = jemanden bitten, etwas für einen zu tun (eine Gefälligkeit erhalten)."
+      }
+    },
+    {
+      "id": "ja_n4_mock_q013",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "日本語が 上手に ＿＿＿ ように、まいにち れんしゅうしています。 (はなす / はなします)",
+      "question_en": "Fill in the blank: 'I practice every day so that I ___ speak Japanese well.' (speak)",
+      "correct_answer": "書ける",
+      "distractors": [
+        "書く",
+        "書きます",
+        "書いた"
+      ],
+      "explanation": {
+        "en": "〜ように (purpose) with a potential verb expresses 'so that I can...'. 話せる is the potential form of 話す (can speak). The pattern: Potential verb + ように = so that one can do. 話す (dictionary form) would mean 'so that (someone) speaks', which is grammatically different.",
+        "ja": "「〜ように」の前に可能動詞を使うと「〜できるように」という目標を表します。「話す」の可能形は「話せる」です。",
+        "zh": "〜ように（目的状语）与可能动词搭配时，表达“以便……”。“話せる”是“話す”（能说）的可能形。该句式为：可能动词 + ように = 以便……。“話す”（词典形）则表示“以便（某人）说话”，在语法上有所不同。",
+        "zh_TW": "〜ように（目的）搭配可能態動詞，表達「以便能夠……」。話せる是「話す」（能夠說話）的可能態形式。其句型為：可能態動詞 + ように = 以便能夠做某事。若使用「話す」（字典形），則意為「以便（某人）說話」，在語法上有所不同。",
+        "ko": "〜ように(목적)에 가능형 동사를 결합하면 '~할 수 있도록'이라는 의미를 나타냅니다. '話せる'는 '話す'(말하다)의 가능형입니다. 이 문형: 가능형 동사 + ように = ~할 수 있도록. '話す'(기본형)는 '(누군가) 말하도록'이라는 뜻이 되는데, 이는 문법적으로 다릅니다.",
+        "es": "La construcción «〜ように» (propósito) con un verbo en modo potencial expresa «para que pueda...». «話せる» es la forma potencial de «話す» (poder hablar). La fórmula es: verbo en modo potencial + ように = para que uno pueda hacer algo. «話す» (forma de diccionario) significaría «para que (alguien) hable», lo cual es gramaticalmente diferente.",
+        "fr": "〜ように (particule de finalité) associé à un verbe au potentiel exprime « afin de pouvoir... ». 話せる est la forme potentielle de 話す (pouvoir parler). La structure : verbe au potentiel + ように = afin de pouvoir faire. 話す (forme de base) signifierait « afin que (quelqu'un) parle », ce qui est grammaticalement différent.",
+        "de": "〜ように (Zweck) in Verbindung mit einem Potenzialverb drückt aus: „damit ich … kann“. 話せる ist die Potenzialform von 話す (sprechen können). Das Muster lautet: Potenzialverb + ように = damit man etwas tun kann. 話す (Grundform) würde „damit (jemand) spricht“ bedeuten, was grammatikalisch etwas anderes ist."
+      }
+    },
+    {
+      "id": "ja_n4_mock_q014",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "まだ そうじを して いません。今から ＿＿＿ つもりです。 (する / します)",
+      "question_en": "Fill in the blank: 'I haven't cleaned yet. I ___ to do it from now.' (intend to do)",
+      "correct_answer": "休んだ",
+      "distractors": [
+        "休む",
+        "休みます",
+        "休まない"
+      ],
+      "explanation": {
+        "en": "〜つもりです requires the dictionary form before it. する is the dictionary form of します. The pattern: Verb dictionary form + つもりです = intend to do. 〜つもり is an N5 grammar point that frequently appears in N4 tests as well.",
+        "ja": "「〜つもりです」の前には動詞の辞書形を使います。「する」が辞書形で正解です。",
+        "zh": "“〜つもりです” 前面必须是动词的词典形。“する” 是“します”的词典形。该句型为：动词词典形 + つもりです = 打算做。 “〜つもり” 是N5的语法点，在N4考试中也经常出现。",
+        "zh_TW": "〜つもりです 前面必須接動詞的字典形。する 是 します 的字典形。其句型為：動詞字典形 + つもりです = 打算做。〜つもり 是 N5 的文法要點，在 N4 考試中也經常出現。",
+        "ko": "~つもりです 앞에는 동사의 기본형이 와야 합니다. する는 します의 기본형입니다. 이 패턴(동사 기본형 + つもりです)은 ‘~할 생각이다’라는 의미를 냅니다. ~つもり은 N5 문법 항목이지만, N4 시험에서도 자주 출제됩니다.",
+        "es": "«〜つもりです» requiere que vaya precedido de la forma básica del verbo. «する» es la forma básica de «します». La fórmula es: forma básica del verbo + 「〜つもりです» = «tener la intención de hacer». «〜つもり» es un punto gramatical del N5 que también aparece con frecuencia en los exámenes del N4.",
+        "fr": "« 〜つもりです » doit être précédé de la forme de base du verbe. « する » est la forme de base de « します ». La structure : forme de base du verbe + 「〜つもりです」 = « avoir l'intention de faire ». « 〜つもり » est un point de grammaire du niveau N5 qui apparaît également fréquemment dans les examens de niveau N4.",
+        "de": "Vor „〜つもりです“ muss die Grundform des Verbs stehen. „する“ ist die Grundform von „します“. Das Muster lautet: Verb in der Grundform + つもりです = beabsichtigen, etwas zu tun. „〜つもり“ ist ein N5-Grammatikpunkt, der auch in N4-Prüfungen häufig vorkommt."
+      }
+    },
+    {
+      "id": "ja_n4_mock_q015",
+      "section": "grammar_fib",
+      "type": "fill_in_blank",
+      "question": "この かばんは ＿＿＿ やすいです。 (もつ / もちます)",
+      "question_en": "Fill in the blank: 'This bag is easy to ___.' (carry)",
+      "correct_answer": "来られました",
+      "distractors": [
+        "来ました",
+        "来ます",
+        "来る"
+      ],
+      "explanation": {
+        "en": "〜やすい attaches to the verb stem (ます-form without ます). 持ちます → 持ち. So 持ちやすい = easy to carry. This is an N4 compound form: Verb stem + やすい/にくい = easy/hard to do.",
+        "ja": "「〜やすい」は動詞のます形から「ます」を取った語幹につけます。「持ちます」→「持ち」→「持ちやすい」です。",
+        "zh": "〜やすい接在动词词干（去掉“ます”的“ます”形）之后。持ちます → 持ち。因此，持ちやすい = 容易携带。这是N4级别的复合形式：动词词干 + やすい/にくい = 容易/难以做某事。",
+        "zh_TW": "〜やすい 接在動詞詞幹（去掉「ます」的「ます形」）之後。例如：持ちます → 持ち。因此 持ちやすい 即為「容易攜帶」。這是 N4 的複合形式：動詞詞幹 + やすい/にくい = 容易/困難。",
+        "ko": "〜やすい는 동사 어간(‘ます’를 뺀 ‘ます형’)에 붙습니다. 持ちます → 持ち. 따라서 持ちやすい는 ‘들기 쉬운’이라는 뜻입니다. 이는 N4 수준의 복합형으로, 동사 어간 + やすい/にくい = ~하기 쉬운/어려운 형태입니다.",
+        "es": "〜やすい se añade a la raíz del verbo (forma -masu sin el -masu). 持ちます → 持ち. Por lo tanto, 持ちやすい = fácil de llevar. Se trata de una forma compuesta de nivel N4: raíz del verbo + やすい/にくい = fácil/difícil de hacer.",
+        "fr": "〜やすい se rajoute au radical du verbe (forme en -ます sans le ます). 持ちます → 持ち. Ainsi, 持ちやすい = facile à porter. Il s'agit d'une forme composée de niveau N4 : radical du verbe + やすい/にくい = facile/difficile à faire.",
+        "de": "„〜やすい“ wird an den Verbstamm angehängt (Masu-Form ohne „ます“). 持ちます → 持ち. Also 持ちやすい = leicht zu tragen. Dies ist eine zusammengesetzte Form der Stufe N4: Verbstamm + やすい/にくい = leicht/schwer zu tun."
+      }
+    },
+    {
+      "id": "ja_n4_mock_q016",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "先週の土曜日、友達と一緒に山に登りました。朝6時に起きて、電車で山の近くまで行きました。天気はとてもよくて、山の上からは町がよく見えました。昼ごはんにおにぎりを食べて、写真もたくさん撮りました。帰りは少し疲れましたが、とても楽しい一日でした。",
+      "passage_en": "Last Saturday, I climbed a mountain with my friend. I woke up at 6 in the morning and went near the mountain by train. The weather was very good, and I could see the town well from the top of the mountain. I ate rice balls for lunch and took many photos. I was a little tired on the way back, but it was a very fun day.",
+      "question": "山の上から なにが よく 見えましたか。",
+      "question_en": "What could be seen well from the top of the mountain?",
+      "explanation": {
+        "en": "The passage says 山の上からは町がよく見えました (From the top of the mountain, the town was clearly visible). 町 = town. No other location was visible from the mountain top.",
+        "ja": "文中に「山の上からは町がよく見えました」と明記されています。",
+        "zh": "文中写道：“山の上からは町がよく見えました”（从山顶上，小镇清晰可见）。“町”即指小镇。从山顶上无法看到其他地方。",
+        "zh_TW": "文中提到「從山頂上可以清楚地看到鎮子」。鎮子 = town。從山頂上看不到其他地點。",
+        "ko": "이 문장은 “산 위에서는 마을이 잘 보였습니다”라고 되어 있습니다. ‘마을’은 마을을 의미합니다. 산 정상에서는 다른 장소는 보이지 않았습니다.",
+        "es": "El texto dice: «山の上からは町がよく見えました» (Desde la cima de la montaña se veía claramente el pueblo). 町 = pueblo. Desde la cima de la montaña no se veía ningún otro lugar.",
+        "fr": "Le passage dit : « 山の上からは町がよく見えました » (Du sommet de la montagne, on voyait bien la ville). 町 = ville. Aucun autre endroit n'était visible depuis le sommet de la montagne.",
+        "de": "In dem Text heißt es: „山の上からは町がよく見えました“ (Vom Gipfel des Berges aus war die Stadt gut zu sehen). 町 = Stadt. Vom Gipfel des Berges aus war kein anderer Ort zu sehen."
+      },
+      "correct_answer": "まち",
+      "distractors": [
+        "ともだちの いえ",
+        "でんしゃ",
+        "がっこう"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q017",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "田中さんは毎朝ジョギングをしています。雨の日でも、走ることが好きだからだそうです。近所の公園を30分ぐらい走って、それから会社に行きます。田中さんは「走ると、体も気持ちも元気になる」と言っています。",
+      "passage_en": "Mr. Tanaka goes jogging every morning. It's because he likes running, even on rainy days. He runs in a nearby park for about 30 minutes, then goes to work. Mr. Tanaka says, 'When I run, both my body and spirit feel energized.'",
+      "question": "田中さんは どうして 雨の日も 走りますか。",
+      "question_en": "Why does Mr. Tanaka run even on rainy days?",
+      "explanation": {
+        "en": "The passage states 走ることが好きだからだそうです (It's because he likes running). This directly answers the question. The other reasons are not mentioned.",
+        "ja": "文中に「走ることが好きだからだそうです」と理由が明記されています。",
+        "zh": "文中提到“据说是因为他喜欢跑步”。这直接回答了问题。其他原因则未提及。",
+        "zh_TW": "該段落提到「走することが好きだからだそうです」（據說是因為他喜歡跑步）。這直接回答了問題。其他原因則未提及。",
+        "ko": "본문에는 “달리는 것을 좋아하기 때문이라고 합니다”라고 나와 있습니다. 이는 질문에 대한 직접적인 답변입니다. 다른 이유들은 언급되지 않았습니다.",
+        "es": "El texto dice: «Se dice que es porque le gusta correr». Esto responde directamente a la pregunta. No se mencionan otras razones.",
+        "fr": "Le passage indique : « C'est parce qu'il aime courir », semble-t-il. Cela répond directement à la question. Les autres raisons ne sont pas mentionnées.",
+        "de": "In dem Text heißt es: „走ることが好きだからだそうです“ (Weil er gerne läuft). Das beantwortet die Frage direkt. Die anderen Gründe werden nicht erwähnt."
+      },
+      "correct_answer": "走ることが 好きだから",
+      "distractors": [
+        "かいしゃに ちこくしたくないから",
+        "やせたいから",
+        "ともだちと やくそくしたから"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q018",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "昨日、新しい本を買うために本屋に行きました。しかし、お目当ての本はもう売り切れでした。店員に聞いたら、来週入荷するそうです。それで、予約をして帰りました。ついでに、面白そうな雑誌を一冊買いました。",
+      "passage_en": "Yesterday I went to a bookstore to buy a new book. However, the book I wanted was already sold out. When I asked the clerk, I heard it will arrive next week. So I made a reservation and went home. While there, I also bought an interesting-looking magazine.",
+      "question": "お目当ての本は いつ 買えますか。",
+      "question_en": "When can the desired book be bought?",
+      "explanation": {
+        "en": "The passage says 来週入荷するそうです (I hear it will arrive next week). So the book will be available next week. 昨日 = yesterday (when they went), 今日 is not mentioned.",
+        "ja": "店員が「来週入荷するそうです」と伝えたので、来週買えることになります。",
+        "zh": "文中提到“据说下周到货”（I hear it will arrive next week）。所以这本书下周就能买到了。“昨日”指昨天（他们去的时候），文中未提及“今日”。",
+        "zh_TW": "這段文字提到「據說下週到貨」，因此這本書下週就會有貨。昨日 = 昨天（他們去的時候），今日則未提及。",
+        "ko": "본문에는 “다음 주에 입고될 예정이라고 합니다”라고 되어 있습니다. 따라서 그 책은 다음 주부터 구할 수 있을 것입니다. ‘어제’는 그들이 갔던 날을 의미하며, ‘오늘’에 대해서는 언급되어 있지 않습니다.",
+        "es": "El texto dice: «来週入荷するそうです» (He oído que llegará la semana que viene). Así que el libro estará disponible la semana que viene. «昨日» = ayer (cuando fueron); «今日» no se menciona.",
+        "fr": "Le texte indique : « 来週入荷するそうです » (Il paraît qu'il arrivera la semaine prochaine). Le livre sera donc disponible la semaine prochaine. 昨日 = hier (quand ils y sont allés), 今日 n'est pas mentionné.",
+        "de": "In dem Text heißt es: „来週入荷するそうです“ (Ich habe gehört, dass es nächste Woche eintreffen soll). Das Buch wird also nächste Woche erhältlich sein. „昨日“ = gestern (als sie dort waren), „今日“ wird nicht erwähnt."
+      },
+      "correct_answer": "らいしゅう",
+      "distractors": [
+        "きのう",
+        "きょう",
+        "まだ わからない"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q019",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "先月、初めて日本に行きました。空港に着いたとき、日本語がなかなか通じなくて困りました。でも、駅の人がとても親切に教えてくれたので、ホテルに着くことができました。日本は食べ物がおいしくて、町もとてもきれいでした。また行きたいと思います。",
+      "passage_en": "Last month, I went to Japan for the first time. When I arrived at the airport, I had trouble because my Japanese wasn't understood well. But the station staff kindly showed me the way, so I was able to reach the hotel. The food in Japan was delicious and the town was very beautiful. I think I want to go again.",
+      "question": "空港に着いたとき、どうして こまりましたか。",
+      "question_en": "Why was the person troubled when arriving at the airport?",
+      "explanation": {
+        "en": "The passage states 日本語がなかなか通じなくて困りました (I had trouble because my Japanese wasn't understood well). This is a direct statement of the problem.",
+        "ja": "文中に「日本語がなかなか通じなくて困りました」と明記されています。",
+        "zh": "该段落写道：“日本語がなかなか通じなくて困りました”（因为我的日语不太被理解，所以很困扰）。这是对该问题的直接陈述。",
+        "zh_TW": "該段落提到：「日本語がなかなか通じなくて困りました」（因為我的日語不太被理解，所以感到很困擾）。這正是對該問題的直接陳述。",
+        "ko": "이 문장은 “일본어가 잘 통하지 않아 곤란했습니다”라고 적혀 있습니다. 이는 문제를 직접적으로 언급한 것입니다.",
+        "es": "El texto dice: «日本語がなかなか通じなくて困りました» (Tuve problemas porque no se entendía bien mi japonés). Se trata de una descripción directa del problema.",
+        "fr": "Le passage dit : « 日本語がなかなか通じなくて困りました » (J'ai eu du mal parce que mon japonais n'était pas bien compris). Il s'agit là d'une description directe du problème.",
+        "de": "In dem Text heißt es: „日本語がなかなか通じなくて困りました“ (Ich hatte Probleme, weil mein Japanisch nicht gut verstanden wurde). Dies ist eine direkte Beschreibung des Problems."
+      },
+      "correct_answer": "にほんごが つうじなかったから",
+      "distractors": [
+        "にもつを なくしたから",
+        "おかねが たりなかったから",
+        "ホテルが みつからなかったから"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q020",
+      "section": "reading",
+      "type": "multiple_choice",
+      "passage": "私はアルバイトを探しています。なぜなら、来年の旅行のためにお金を貯めたいからです。週に3回ぐらい、夕方から働ける仕事がいいです。友達はコンビニの仕事をすすめましたが、私はカフェで働いてみたいと思います。",
+      "passage_en": "I am looking for a part-time job. This is because I want to save money for a trip next year. I want a job where I can work about 3 times a week, from the evening. My friend recommended a convenience store job, but I think I want to try working at a cafe.",
+      "question": "どうして アルバイトを 探していますか。",
+      "question_en": "Why is the person looking for a part-time job?",
+      "explanation": {
+        "en": "The passage says 来年の旅行のためにお金を貯めたいから (because I want to save money for next year's trip). This is the direct reason. The friend's recommendation was for a specific job, not the reason for job hunting.",
+        "ja": "文中に「来年の旅行のためにお金を貯めたいから」と理由が明記されています。",
+        "zh": "文中提到“因为我想为明年的旅行存钱”。这是直接原因。朋友的推荐针对的是具体的工作，而不是求职的原因。",
+        "zh_TW": "文中提到「因為我想為明年的旅行存錢」，這是直接原因。朋友的推薦是針對某份特定工作，而非求職的理由。",
+        "ko": "본문에는 “내년 여행을 위해 돈을 모으고 싶어서”라고 나와 있습니다. 이것이 직접적인 이유입니다. 친구가 추천한 것은 특정 직종이었지, 구직 활동의 이유가 아니었습니다.",
+        "es": "El texto dice: «来年の旅行のためにお金を貯めたいから» (porque quiero ahorrar dinero para el viaje del año que viene). Esa es la razón directa. La recomendación del amigo se refería a un trabajo concreto, no era el motivo por el que estaba buscando empleo.",
+        "fr": "Le passage dit : « 来年の旅行のためにお金を貯めたいから » (parce que je veux économiser de l'argent pour le voyage de l'année prochaine). C'est là la raison directe. La recommandation de l'ami concernait un emploi précis, et non la raison pour laquelle il cherchait un emploi.",
+        "de": "In dem Text heißt es: „来年の旅行のためにお金を貯めたいから“ (weil ich Geld für die Reise im nächsten Jahr sparen möchte). Das ist der unmittelbare Grund. Die Empfehlung des Freundes bezog sich auf eine bestimmte Stelle, nicht auf den Grund für die Jobsuche."
+      },
+      "correct_answer": "りょこうの おかねを ためたいから",
+      "distractors": [
+        "あたらしい くるまを かいたいから",
+        "がっこうの おかねが ひつようだから",
+        "ともだちに すすめられたから"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q021",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: あのう、すみません。市役所はどこですか。B: 市役所ですか。この道をまっすぐ行って、二つ目の信号を右に曲がってください。A: 二つ目の信号を右ですね。B: そうです。まっすぐ行くと、左側に見えます。",
+      "script_en": "A: Um, excuse me. Where is the city hall? B: The city hall? Go straight along this street, and turn right at the second traffic light. A: Right at the second traffic light, right? B: Yes. If you go straight, you'll see it on the left side.",
+      "question": "市役所に行くには、何番目の信号を曲がりますか。",
+      "question_en": "At which traffic light should you turn to go to the city hall?",
+      "explanation": {
+        "en": "B says 二つ目の信号を右に曲がってください (turn right at the second traffic light). A confirms this, and B agrees. 一つ目 = first, 三つ目 = third.",
+        "ja": "Bさんが「二つ目の信号を右に曲がってください」と言っています。",
+        "zh": "B说：“请在第二个红绿灯处右转。”A表示明白，B表示同意。“第一个”指第一个，“第三个”指第三个。",
+        "zh_TW": "B 說：「請在第二個紅綠燈處右轉。」A 確認了這點，B 也表示同意。第一個 = first，第三個 = third。",
+        "ko": "B가 “두 번째 신호등에서 우회전해 주세요”라고 말합니다. A가 이를 확인하고, B도 동의합니다. 첫 번째 = first, 세 번째 = third.",
+        "es": "B dice: «Gire a la derecha en el segundo semáforo». A lo confirma y B está de acuerdo. El primero = first, el tercero = third.",
+        "fr": "B dit : « Tournez à droite au deuxième feu » (turn right at the second traffic light). A confirme, et B acquiesce. Le premier = first, le troisième = third.",
+        "de": "B sagt: „Bitte biegen Sie an der zweiten Ampel rechts ab.“ A bestätigt dies, und B stimmt zu. Erste = first, dritte = third."
+      },
+      "correct_answer": "二つ目",
+      "distractors": [
+        "一つ目",
+        "三つ目",
+        "曲がらなくていい"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q022",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: 来月の結婚式、出席できる？B: えっと、何日？A: 15日だよ。B: 15日か… その日はちょっと用事があって行けないんだ。ごめんね。A: そうか、残念だな。B: 本当にごめん。お祝いは別の日に渡すね。",
+      "script_en": "A: Can you attend the wedding next month? B: Hmm, what date? A: It's the 15th. B: The 15th... I have something to do that day so I can't go. Sorry. A: I see, that's too bad. B: I'm really sorry. I'll give you the gift on another day.",
+      "question": "Bさんは どうして けっこんしきに 出られませんか。",
+      "question_en": "Why can't B attend the wedding?",
+      "explanation": {
+        "en": "B says その日はちょっと用事があって行けない (I have something to do that day so I can't go). 用事 = errand/business/prior engagement. The other reasons are not mentioned.",
+        "ja": "Bさんが「その日はちょっと用事があって行けない」と言っています。",
+        "zh": "B说：“那天我有点事，去不了。”（I have something to do that day so I can't go）。“用事”指杂事、公务或已有安排。其他原因未提及。",
+        "zh_TW": "B 說：「那天我有事，去不了。」「有事」指代雜務、公務或既有約定。其他原因則未提及。",
+        "ko": "B는 “그날은 할 일이 있어서 갈 수 없다”고 말합니다. ‘용사’는 심부름, 업무, 또는 미리 잡힌 약속을 의미합니다. 그 외의 이유는 언급되지 않았습니다.",
+        "es": "B dice: «Ese día tengo algo que hacer, así que no puedo ir». «用事» significa «recado», «asunto» o «compromiso previo». No se mencionan otras razones.",
+        "fr": "B dit : « J'ai quelque chose à faire ce jour-là, donc je ne peux pas venir. » (用事 = course / affaire / engagement préalable). Les autres raisons ne sont pas mentionnées.",
+        "de": "B sagt: „An diesem Tag habe ich etwas zu erledigen, deshalb kann ich nicht kommen.“ „用事“ bedeutet „Besorgung“, „Geschäft“ oder „vorherige Verpflichtung“. Die anderen Gründe werden nicht erwähnt."
+      },
+      "correct_answer": "ようじが あるから",
+      "distractors": [
+        "びょうきだから",
+        "たびに いくから",
+        "おかねが ないから"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q023",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: もしもし、そちらに傘を忘れたと思うんですが。B: どのような傘ですか。A: 青くて、長い傘です。B: 少々お待ちください… ありました！取りに来られますか。A: はい、明日の午前中に行きます。",
+      "script_en": "A: Hello, I think I left my umbrella there. B: What kind of umbrella is it? A: It's blue and long. B: Please wait a moment... We found it! Can you come pick it up? A: Yes, I'll come tomorrow morning.",
+      "question": "忘れた傘は どんな かさですか。",
+      "question_en": "What kind of umbrella was left behind?",
+      "explanation": {
+        "en": "A describes the umbrella as 青くて、長い傘です (blue and long). The other color/shape combinations don't match the description.",
+        "ja": "Aさんが「青くて、長い傘です」と説明しています。",
+        "zh": "A 描述这把伞是“青色且修长的伞”。其他颜色和形状的组合都不符合这一描述。",
+        "zh_TW": "A 將這把傘描述為「青色且長」的傘。其餘的顏色與形狀組合都不符合這項描述。",
+        "ko": "A는 그 우산을 “파란색이고 긴 우산”이라고 묘사합니다. 다른 색상이나 모양의 조합은 이 묘사와 일치하지 않습니다.",
+        "es": "A describe el paraguas como «un paraguas azul y largo». Las demás combinaciones de colores y formas no se ajustan a la descripción.",
+        "fr": "A décrit le parapluie comme étant « bleu et long ». Les autres combinaisons de couleurs et de formes ne correspondent pas à cette description.",
+        "de": "A beschreibt den Regenschirm als „blau und lang“. Die anderen Farb- und Formkombinationen entsprechen nicht dieser Beschreibung."
+      },
+      "correct_answer": "あおくて ながい",
+      "distractors": [
+        "あかくて みじかい",
+        "しろくて おれている",
+        "くろくて ふとい"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q024",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: 今度の日曜日、映画を見に行かない？B: いいね。何を見る？A: この新しいアニメの映画、すごく評判がいいんだ。B: あ、それ私も見たいと思ってた！A: じゃあ、日曜の午後2時からの回にしようか。B: うん、楽しみ！",
+      "script_en": "A: Would you like to go see a movie this Sunday? B: Sounds good. What will we see? A: This new anime movie — it's getting great reviews. B: Oh, I've been wanting to see that too! A: Then let's go to the 2 PM showing on Sunday. B: Yeah, I'm looking forward to it!",
+      "question": "いつ えいがを 見に 行きますか。",
+      "question_en": "When will they go see the movie?",
+      "explanation": {
+        "en": "A proposes 日曜の午後2時からの回 (the 2 PM showing on Sunday), and B agrees enthusiastically. 土曜日 = Saturday, 午前中 = in the morning — not mentioned.",
+        "ja": "Aさんが「日曜の午後2時からの回にしようか」と提案し、Bさんが同意しています。",
+        "zh": "A提议看周日下午2点的场次，B欣然同意。周六 = Saturday，上午 = in the morning —— 未提及。",
+        "zh_TW": "A 提議觀看「週日下午2點的場次」，B 欣然同意。週六 = Saturday，上午 = in the morning — 未提及。",
+        "ko": "A는 일요일 오후 2시 상영을 제안하고, B는 열정적으로 동의한다. 토요일 = Saturday, 오전 = in the morning — 언급되지 않음.",
+        "es": "A propone la sesión de las 2 de la tarde del domingo, y B acepta con entusiasmo. Sábado = Saturday, por la mañana = in the morning — no se menciona.",
+        "fr": "A propose la séance de dimanche à 14 h, et B accepte avec enthousiasme. Samedi = Saturday, le matin = in the morning — non mentionné.",
+        "de": "A schlägt die Vorstellung am Sonntag um 14 Uhr vor, und B stimmt begeistert zu. Samstag = Saturday, vormittags = in the morning – nicht erwähnt."
+      },
+      "correct_answer": "日曜日の 午後2時",
+      "distractors": [
+        "土曜日の 午後2時",
+        "土曜日の 午前中",
+        "日曜日の 午前中"
+      ]
+    },
+    {
+      "id": "ja_n4_mock_q025",
+      "section": "listening",
+      "type": "multiple_choice",
+      "note": "Text-based listening item. Audio recording pending.",
+      "script": "A: すみません、このパソコンが故障したみたいなんですが。B: どのような症状ですか。A: 電源を入れても、画面が真っ暗なんです。B: 充電はされていますか。A: はい、さっきまで動いていたんですが…。B: では、こちらで一度お預かりして調べます。",
+      "script_en": "A: Excuse me, I think this computer is broken. B: What are the symptoms? A: Even when I turn on the power, the screen stays completely dark. B: Is it charged? A: Yes, it was working until just a moment ago... B: Then we'll take it in and check it for you.",
+      "question": "パソコンは どう なりましたか。",
+      "question_en": "What happened to the computer?",
+      "explanation": {
+        "en": "A says 画面が真っ暗なんです (the screen is completely dark). This is the direct symptom. The power turns on (電源を入れても = even when turning on), so it's not a power issue.",
+        "ja": "Aさんが「画面が真っ暗なんです」と言っています。電源は入るそうです。",
+        "zh": "A 说：“画面完全是黑的”。这是直接表现出的症状。电源可以打开（即使打开电源），所以这不是电源问题。",
+        "zh_TW": "A 說：「畫面完全是黑的」。這是直接的症狀。電源可以開啟（即使開啟電源），因此這不是電源問題。",
+        "ko": "A 씨는 “화면이 완전히 검게 변했어요”라고 말합니다. 이것이 바로 직접적인 증상입니다. 전원은 켜지므로(전원을 켜도 = 전원을 켜도), 전원 문제는 아닙니다.",
+        "es": "A dice: «La pantalla está completamente a oscuras». Este es el síntoma más evidente. El dispositivo se enciende (aunque se encienda = incluso al encenderlo), por lo que no se trata de un problema de alimentación.",
+        "fr": "A dit : « L'écran est complètement noir ». C'est le symptôme direct. L'appareil s'allume (même en le mettant sous tension), ce n'est donc pas un problème d'alimentation.",
+        "de": "A sagt: „Der Bildschirm ist komplett schwarz.“ Das ist das unmittelbare Symptom. Das Gerät lässt sich einschalten (auch wenn man den Strom einschaltet), es handelt sich also nicht um ein Problem mit der Stromversorgung."
+      },
+      "correct_answer": "がめんが まっくら",
+      "distractors": [
+        "おとが でない",
+        "でんげんが はいらない",
+        "こわれていない"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+build/
+.pub-cache/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# macOS
+.DS_Store
+
+# Android
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/local.properties
+android/key.properties
+
+# iOS
+ios/.generated/
+ios/Flutter/Generated.xcconfig
+ios/Runner.xcworkspace/
+ios/Pods/
+ios/Podfile.lock
+
+# Web
+web/.dart_tool/
+
+# Generated
+*.g.dart
+*.freezed.dart
+
+# Test coverage
+coverage/
+
+# Misc
+*.log
+*.tmp
+*.zip
+*.bak
+__pycache__/
+manus_output/
+instalingo/
+ios/Flutter/ephemeral/
+demo_data.dart.bak

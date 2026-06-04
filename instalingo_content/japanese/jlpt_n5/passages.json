@@ -1,0 +1,580 @@
+{
+  "meta": {
+    "language": "japanese",
+    "exam_level": "JLPT N5",
+    "total_passages": 4,
+    "source": "AI-generated reading passages using SOURCE_VERIFIED N5 vocabulary and STANDARD_REFERENCE grammar",
+    "source_status": "AI_GENERATED",
+    "translation_status": "deepl_translated_all_locales"
+  },
+  "passages": [
+    {
+      "id": "ja_n5_passage_001",
+      "title": "私の家族 (My Family)",
+      "topic": "family",
+      "difficulty": "beginner",
+      "text": "私の家族は5人です。父と母と兄と妹と私です。父は会社員で、毎日電車で会社に行きます。母は主婦です。兄は大学生で、妹は中学生です。私は高校生です。週末は家族で一緒に晩ご飯を食べます。",
+      "translation_en": "My family has 5 people. My father, mother, older brother, younger sister and me. My father is a company employee and goes to work by train every day. My mother is a homemaker. My older brother is a university student and my younger sister is a junior high school student. I am a high school student. On weekends, we eat dinner together as a family.",
+      "char_count": 94,
+      "questions": [
+        {
+          "id": "ja_n5_passage_001_q1",
+          "question": "この家族は何人ですか。",
+          "question_en": "How many people are in this family?",
+          "options": [
+            {
+              "id": "A",
+              "text": "3人",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "4人",
+              "is_correct": false
+            },
+            {
+              "id": "C",
+              "text": "5人",
+              "is_correct": true
+            },
+            {
+              "id": "D",
+              "text": "6人",
+              "is_correct": false
+            }
+          ],
+          "explanation": {
+            "en": "The very first sentence states 私の家族は5人です (My family has 5 people).",
+            "ja": "最初の文に「私の家族は5人です」と書かれています。",
+            "zh": "第一句写道：“我的家人有5口人”。",
+            "zh_TW": "第一句寫道：「我的家人有5人。」",
+            "es": "La primera frase dice: «Mi familia está compuesta por cinco personas».",
+            "fr": "La toute première phrase dit : « 私の家族は5人です » (Ma famille compte cinq personnes).",
+            "de": "Der allererste Satz lautet: 私の家族は5人です (Meine Familie besteht aus fünf Personen).",
+            "ko": "첫 문장은 “私の家族は5人です(우리 가족은 5명입니다)”라고 되어 있습니다."
+          },
+          "question_zh": "这个家庭一共有几口人？",
+          "question_zh_TW": "這個家庭一共有幾個人？",
+          "question_es": "¿Cuántos miembros tiene esta familia?",
+          "question_fr": "Combien de personnes compte cette famille ?",
+          "question_de": "Wie viele Personen gehören zu dieser Familie?"
+        },
+        {
+          "id": "ja_n5_passage_001_q2",
+          "question": "お父さんは何で会社に行きますか。",
+          "question_en": "How does the father go to work?",
+          "options": [
+            {
+              "id": "A",
+              "text": "バスで",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "電車で",
+              "is_correct": true
+            },
+            {
+              "id": "C",
+              "text": "車で",
+              "is_correct": false
+            },
+            {
+              "id": "D",
+              "text": "歩いて",
+              "is_correct": false
+            }
+          ],
+          "explanation": {
+            "en": "The passage says 毎日電車で会社に行きます (goes to work by train every day).",
+            "ja": "「毎日電車で会社に行きます」と書かれています。",
+            "zh": "该段落写道：“每天坐电车去公司”。",
+            "zh_TW": "這段文字說的是「每天搭電車去公司」。",
+            "es": "El texto dice: «Todos los días voy al trabajo en tren».",
+            "fr": "Le passage dit : « Je vais au travail en train tous les jours ».",
+            "de": "In dem Text heißt es: „Ich fahre jeden Tag mit dem Zug zur Arbeit.“",
+            "ko": "이 문장은 “매일 전철을 타고 회사에 갑니다”라고 말합니다."
+          },
+          "question_zh": "父亲是怎么去上班的？",
+          "question_zh_TW": "父親是怎麼去上班的？",
+          "question_es": "¿Cómo va el padre al trabajo?",
+          "question_fr": "Comment le père se rend-il au travail ?",
+          "question_de": "Wie fährt der Vater zur Arbeit?"
+        },
+        {
+          "id": "ja_n5_passage_001_q3",
+          "question": "週末に家族で何をしますか。",
+          "question_en": "What does the family do on weekends?",
+          "options": [
+            {
+              "id": "A",
+              "text": "映画を見ます",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "旅行に行きます",
+              "is_correct": false
+            },
+            {
+              "id": "C",
+              "text": "晩ご飯を食べます",
+              "is_correct": true
+            },
+            {
+              "id": "D",
+              "text": "買い物に行きます",
+              "is_correct": false
+            }
+          ],
+          "explanation": {
+            "en": "The passage ends with 週末は家族で一緒に晩ご飯を食べます (On weekends, we eat dinner together as a family).",
+            "ja": "「週末は家族で一緒に晩ご飯を食べます」と書かれています。",
+            "zh": "这段话以“週末是全家一起吃晚饭”结尾。",
+            "zh_TW": "這段文字以「週末是全家一起吃晚餐」作結。",
+            "es": "El fragmento termina con «Los fines de semana cenamos juntos en familia».",
+            "fr": "Le passage se termine par : « Le week-end, nous dînons tous ensemble en famille. »",
+            "de": "Der Absatz endet mit: „Am Wochenende essen wir gemeinsam als Familie zu Abend.“",
+            "ko": "이 문단은 “주말에는 가족과 함께 저녁을 먹습니다”라는 문장으로 끝납니다."
+          },
+          "question_zh": "这个家庭周末通常做什么？",
+          "question_zh_TW": "這個家庭週末通常做些什麼？",
+          "question_es": "¿Qué hace la familia los fines de semana?",
+          "question_fr": "Que fait la famille le week-end ?",
+          "question_de": "Was macht die Familie am Wochenende?"
+        }
+      ],
+      "translation_zh": "我们家有5口人。有爸爸、妈妈、哥哥、妹妹和我。爸爸是公司职员，每天坐火车去上班。妈妈是家庭主妇。哥哥是大学生，妹妹是初中生。我是高中生。周末，我们全家人会一起吃晚饭。",
+      "translation_zh_TW": "我家有五口人。有爸爸、媽媽、哥哥、妹妹和我。爸爸是公司職員，每天搭火車上班。媽媽是家庭主婦。哥哥是大學生，妹妹是國中生。我是高中生。每到週末，我們全家人都會一起吃晚餐。",
+      "translation_es": "Mi familia está compuesta por cinco personas: mi padre, mi madre, mi hermano mayor, mi hermana menor y yo. Mi padre trabaja en una empresa y va al trabajo en tren todos los días. Mi madre es ama de casa. Mi hermano mayor es estudiante universitario y mi hermana menor está en la escuela secundaria. Yo soy estudiante de bachillerato. Los fines de semana cenamos juntos en familia.",
+      "translation_fr": "Ma famille compte cinq personnes : mon père, ma mère, mon grand frère, ma petite sœur et moi. Mon père est employé dans une entreprise et se rend tous les jours au travail en train. Ma mère est femme au foyer. Mon grand frère est étudiant à l'université et ma petite sœur est au collège. Je suis lycéen. Le week-end, nous dînons tous ensemble en famille.",
+      "translation_de": "Meine Familie besteht aus fünf Personen: meinem Vater, meiner Mutter, meinem älteren Bruder, meiner jüngeren Schwester und mir. Mein Vater ist Angestellter und fährt jeden Tag mit dem Zug zur Arbeit. Meine Mutter ist Hausfrau. Mein älterer Bruder ist Student und meine jüngere Schwester besucht die Mittelstufe. Ich bin Schüler an der Oberstufe. An den Wochenenden essen wir gemeinsam als Familie zu Abend."
+    },
+    {
+      "id": "ja_n5_passage_002",
+      "title": "私の一日 (My Daily Routine)",
+      "topic": "daily_routine",
+      "difficulty": "beginner",
+      "text": "毎朝6時に起きます。顔を洗って、朝ご飯を食べます。7時半に家を出ます。学校まで歩いて15分です。学校は8時半に始まります。授業は3時まであります。それから図書館で勉強します。5時に家に帰ります。",
+      "translation_en": "I wake up at 6 every morning. I wash my face and eat breakfast. I leave home at 7:30. It's a 15-minute walk to school. School starts at 8:30. Classes go until 3 o'clock. After that, I study at the library. I go home at 5 o'clock.",
+      "char_count": 98,
+      "questions": [
+        {
+          "id": "ja_n5_passage_002_q1",
+          "question": "毎朝何時に起きますか。",
+          "question_en": "What time does the person wake up every morning?",
+          "options": [
+            {
+              "id": "A",
+              "text": "5時",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "6時",
+              "is_correct": true
+            },
+            {
+              "id": "C",
+              "text": "7時",
+              "is_correct": false
+            },
+            {
+              "id": "D",
+              "text": "8時",
+              "is_correct": false
+            }
+          ],
+          "explanation": {
+            "en": "The first sentence says 毎朝6時に起きます (I wake up at 6 every morning).",
+            "ja": "最初の文に「毎朝6時に起きます」と書かれています。",
+            "zh": "第一句是“毎朝6時に起きます”（我每天早上6点起床）。",
+            "zh_TW": "第一句說的是「毎朝6時に起きます」（我每天早上6點起床）。",
+            "es": "La primera frase dice: «毎朝6時に起きます» (Me levanto a las 6 todas las mañanas).",
+            "fr": "La première phrase dit : « 毎朝6時に起きます » (Je me réveille tous les matins à 6 heures).",
+            "de": "Im ersten Satz heißt es: 毎朝6時に起きます (Ich stehe jeden Morgen um 6 Uhr auf).",
+            "ko": "첫 문장은 “毎朝6時に起きます(매일 아침 6시에 일어납니다)”라고 되어 있습니다."
+          },
+          "question_zh": "那个人每天早上几点起床？",
+          "question_zh_TW": "那個人每天早上幾點起床？",
+          "question_es": "¿A qué hora se levanta esa persona cada mañana?",
+          "question_fr": "À quelle heure cette personne se réveille-t-elle chaque matin ?",
+          "question_de": "Um wie viel Uhr steht die Person jeden Morgen auf?"
+        },
+        {
+          "id": "ja_n5_passage_002_q2",
+          "question": "学校までどうやって行きますか。",
+          "question_en": "How does the person go to school?",
+          "options": [
+            {
+              "id": "A",
+              "text": "電車で",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "バスで",
+              "is_correct": false
+            },
+            {
+              "id": "C",
+              "text": "歩いて",
+              "is_correct": true
+            },
+            {
+              "id": "D",
+              "text": "自転車で",
+              "is_correct": false
+            }
+          ],
+          "explanation": {
+            "en": "The passage says 学校まで歩いて15分です (It's a 15-minute walk to school).",
+            "ja": "「学校まで歩いて15分です」と書かれています。",
+            "zh": "该段落写道：“到学校步行只需15分钟。”",
+            "zh_TW": "該段落寫道：「到學校步行約15分鐘。」",
+            "es": "El texto dice: «Hay 15 minutos a pie hasta el colegio».",
+            "fr": "Le passage dit : « C'est à 15 minutes à pied de l'école ».",
+            "de": "In dem Text heißt es: „Es sind 15 Minuten zu Fuß zur Schule.“",
+            "ko": "이 문장은 “학교까지 걸어서 15분 걸립니다”라고 되어 있습니다."
+          },
+          "question_zh": "那个人是怎么去上学的？",
+          "question_zh_TW": "那個人是怎麼上學的？",
+          "question_es": "¿Cómo va esa persona al colegio?",
+          "question_fr": "Comment cette personne se rend-elle à l'école ?",
+          "question_de": "Wie kommt die Person zur Schule?"
+        },
+        {
+          "id": "ja_n5_passage_002_q3",
+          "question": "放課後どこで勉強しますか。",
+          "question_en": "Where does the person study after school?",
+          "options": [
+            {
+              "id": "A",
+              "text": "教室で",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "家で",
+              "is_correct": false
+            },
+            {
+              "id": "C",
+              "text": "公園で",
+              "is_correct": false
+            },
+            {
+              "id": "D",
+              "text": "図書館で",
+              "is_correct": true
+            }
+          ],
+          "explanation": {
+            "en": "The passage says それから図書館で勉強します (After that, I study at the library).",
+            "ja": "「それから図書館で勉強します」と書かれています。",
+            "zh": "该段落写道：“然后我去图书馆学习。”",
+            "zh_TW": "該段落寫道：「然後我就在圖書館讀書。」",
+            "es": "El texto dice: «Después de eso, estudio en la biblioteca».",
+            "fr": "Le passage dit : « Ensuite, je vais étudier à la bibliothèque ».",
+            "de": "In dem Text heißt es: „Danach lerne ich in der Bibliothek.“",
+            "ko": "이 문장은 “그 후 도서관에서 공부합니다”라고 되어 있습니다."
+          },
+          "question_zh": "那个人放学后在哪里学习？",
+          "question_zh_TW": "那個人放學後去哪裡讀書？",
+          "question_es": "¿Dónde estudia esa persona después del colegio?",
+          "question_fr": "Où cette personne étudie-t-elle après l'école ?",
+          "question_de": "Wo lernt die Person nach der Schule?"
+        }
+      ],
+      "translation_zh": "我每天早上6点起床。洗完脸后吃早餐。7点半出门。步行15分钟就能到学校。8点半上课。课上到下午3点。之后，我会在图书馆学习。5点钟回家。",
+      "translation_zh_TW": "我每天早上六點起床。洗完臉後吃早餐。七點半出門。步行十五分鐘就能到學校。八點半上課，一直上到三點。之後，我會去圖書館自習。五點回家。",
+      "translation_es": "Me levanto a las 6 todas las mañanas. Me lavo la cara y desayuno. Salgo de casa a las 7:30. El colegio está a 15 minutos a pie. Las clases empiezan a las 8:30. Las clases duran hasta las 3. Después, estudio en la biblioteca. Vuelvo a casa a las 5.",
+      "translation_fr": "Je me réveille tous les matins à 6 heures. Je me lave le visage et je prends mon petit-déjeuner. Je pars de chez moi à 7 h 30. Il y a 15 minutes de marche jusqu'à l'école. Les cours commencent à 8 h 30. Les cours durent jusqu'à 15 heures. Après cela, je réviserai à la bibliothèque. Je rentre chez moi à 17 heures.",
+      "translation_de": "Ich stehe jeden Morgen um 6 Uhr auf. Ich wasche mir das Gesicht und frühstücke. Um 7:30 Uhr verlasse ich das Haus. Der Weg zur Schule dauert 15 Minuten. Der Unterricht beginnt um 8:30 Uhr. Der Unterricht dauert bis 15 Uhr. Danach lerne ich in der Bibliothek. Um 17 Uhr gehe ich nach Hause."
+    },
+    {
+      "id": "ja_n5_passage_003",
+      "title": "休みの日 (Day Off)",
+      "topic": "hobbies",
+      "difficulty": "beginner",
+      "text": "先週の日曜日はとてもいい天気でした。友達と一緒に公園に行きました。公園でお弁当を食べました。そして、写真をたくさん撮りました。桜がとてもきれいでした。午後は近くの喫茶店でコーヒーを飲みました。楽しい一日でした。",
+      "translation_en": "Last Sunday the weather was very nice. I went to the park with my friend. We ate a packed lunch at the park. And we took many photos. The cherry blossoms were very beautiful. In the afternoon, we drank coffee at a nearby coffee shop. It was a fun day.",
+      "char_count": 99,
+      "questions": [
+        {
+          "id": "ja_n5_passage_003_q1",
+          "question": "先週の日曜日の天気はどうでしたか。",
+          "question_en": "How was the weather last Sunday?",
+          "options": [
+            {
+              "id": "A",
+              "text": "雨でした",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "曇りでした",
+              "is_correct": false
+            },
+            {
+              "id": "C",
+              "text": "とてもよかった",
+              "is_correct": true
+            },
+            {
+              "id": "D",
+              "text": "寒かった",
+              "is_correct": false
+            }
+          ],
+          "explanation": {
+            "en": "The passage begins with 先週の日曜日はとてもいい天気でした (Last Sunday the weather was very nice).",
+            "ja": "「先週の日曜日はとてもいい天気でした」と書かれています。",
+            "zh": "这段文字开头写道：“上周日天气非常好”。",
+            "zh_TW": "這段文字以「上週日天氣非常好」開頭。",
+            "es": "El pasaje comienza con «El domingo pasado hizo muy buen tiempo».",
+            "fr": "Le passage commence par « Dimanche dernier, il faisait très beau ».",
+            "de": "Der Text beginnt mit „Letzten Sonntag war das Wetter sehr schön“.",
+            "ko": "이 문단은 “지난 일요일은 날씨가 정말 좋았습니다”로 시작합니다."
+          },
+          "question_zh": "上周日的天气怎么样？",
+          "question_zh_TW": "上週日的天氣如何？",
+          "question_es": "¿Qué tal hizo el tiempo el domingo pasado?",
+          "question_fr": "Quel temps faisait-il dimanche dernier ?",
+          "question_de": "Wie war das Wetter letzten Sonntag?"
+        },
+        {
+          "id": "ja_n5_passage_003_q2",
+          "question": "公園で何を食べましたか。",
+          "question_en": "What did they eat at the park?",
+          "options": [
+            {
+              "id": "A",
+              "text": "ケーキ",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "おにぎり",
+              "is_correct": false
+            },
+            {
+              "id": "C",
+              "text": "サンドイッチ",
+              "is_correct": false
+            },
+            {
+              "id": "D",
+              "text": "お弁当",
+              "is_correct": true
+            }
+          ],
+          "explanation": {
+            "en": "The passage says 公園でお弁当を食べました (We ate a packed lunch at the park).",
+            "ja": "「公園でお弁当を食べました」と書かれています。",
+            "zh": "该段落写道：“我们在公园里吃了便当”。",
+            "zh_TW": "這段文字寫道：「我們在公園吃了便當」。",
+            "es": "El texto dice: «Comimos un almuerzo para llevar en el parque».",
+            "fr": "Le passage dit : « Nous avons mangé notre pique-nique au parc ».",
+            "de": "In dem Text heißt es: „Wir haben im Park unser Lunchpaket gegessen.“",
+            "ko": "이 문장은 “공원에서 도시락을 먹었습니다”라고 되어 있습니다."
+          },
+          "question_zh": "他们在公园里吃了什么？",
+          "question_zh_TW": "他們在公園裡吃了什麼？",
+          "question_es": "¿Qué comieron en el parque?",
+          "question_fr": "Qu'ont-ils mangé au parc ?",
+          "question_de": "Was haben sie im Park gegessen?"
+        },
+        {
+          "id": "ja_n5_passage_003_q3",
+          "question": "午後にどこに行きましたか。",
+          "question_en": "Where did they go in the afternoon?",
+          "options": [
+            {
+              "id": "A",
+              "text": "映画館",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "喫茶店",
+              "is_correct": true
+            },
+            {
+              "id": "C",
+              "text": "デパート",
+              "is_correct": false
+            },
+            {
+              "id": "D",
+              "text": "図書館",
+              "is_correct": false
+            }
+          ],
+          "explanation": {
+            "en": "The passage says 午後は近くの喫茶店でコーヒーを飲みました (In the afternoon, we drank coffee at a nearby coffee shop).",
+            "ja": "「午後は近くの喫茶店でコーヒーを飲みました」と書かれています。",
+            "zh": "这段文字写道：“下午，我们在附近的咖啡馆喝了咖啡。”",
+            "zh_TW": "這段文字寫道：「下午，我們在附近的咖啡店喝了咖啡。」",
+            "es": "El texto dice: «Por la tarde tomamos café en una cafetería cercana».",
+            "fr": "Le passage dit : « L'après-midi, nous avons pris un café dans un café du quartier. »",
+            "de": "In dem Text heißt es: „Am Nachmittag haben wir in einem Café in der Nähe Kaffee getrunken.“",
+            "ko": "이 문장은 “오후에는 근처 커피숍에서 커피를 마셨습니다”라고 되어 있습니다."
+          },
+          "question_zh": "他们下午去哪儿了？",
+          "question_zh_TW": "他們下午去哪裡了？",
+          "question_es": "¿Adónde fueron por la tarde?",
+          "question_fr": "Où sont-ils allés cet après-midi ?",
+          "question_de": "Wohin sind sie am Nachmittag gegangen?"
+        }
+      ],
+      "translation_zh": "上周日天气非常好。我和朋友去了公园。我们在公园里吃了自带的午餐，还拍了很多照片。樱花开得非常漂亮。下午，我们在附近的一家咖啡馆喝了咖啡。那真是愉快的一天。",
+      "translation_zh_TW": "上週日天氣非常好。我和朋友去了公園。我們在公園裡吃了自備的午餐，還拍了很多照片。櫻花開得非常漂亮。下午，我們在附近的咖啡館喝了咖啡。那真是愉快的一天。",
+      "translation_es": "El domingo pasado hacía muy buen tiempo. Fui al parque con mi amiga. Comimos lo que nos habíamos llevado en el parque. Y nos hicimos muchas fotos. Los cerezos en flor estaban preciosos. Por la tarde, tomamos un café en una cafetería cercana. Fue un día muy divertido.",
+      "translation_fr": "Dimanche dernier, il faisait très beau. Je suis allée au parc avec mon amie. Nous avons mangé notre pique-nique au parc. Et nous avons pris plein de photos. Les cerisiers en fleurs étaient magnifiques. L'après-midi, nous avons pris un café dans un café du coin. C'était une journée très agréable.",
+      "translation_de": "Letzten Sonntag war das Wetter sehr schön. Ich bin mit meiner Freundin in den Park gegangen. Wir haben im Park unser mitgebrachtes Mittagessen gegessen. Und wir haben viele Fotos gemacht. Die Kirschblüten waren wunderschön. Am Nachmittag haben wir in einem Café in der Nähe Kaffee getrunken. Es war ein schöner Tag."
+    },
+    {
+      "id": "ja_n5_passage_004",
+      "title": "買い物 (Shopping)",
+      "topic": "shopping",
+      "difficulty": "beginner",
+      "text": "昨日、デパートで買い物をしました。新しい靴と白いシャツを買いました。靴は5千円で、シャツは3千円でした。それから、地下の食料品売り場で果物を買いました。りんごとみかんを買いました。家に帰ってから、りんごを食べました。とても甘かったです。",
+      "translation_en": "Yesterday, I went shopping at a department store. I bought new shoes and a white shirt. The shoes were 5,000 yen and the shirt was 3,000 yen. Then, I bought fruit at the grocery section in the basement. I bought apples and mandarins. After returning home, I ate an apple. It was very sweet.",
+      "char_count": 110,
+      "questions": [
+        {
+          "id": "ja_n5_passage_004_q1",
+          "question": "靴はいくらでしたか。",
+          "question_en": "How much were the shoes?",
+          "options": [
+            {
+              "id": "A",
+              "text": "3千円",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "5千円",
+              "is_correct": true
+            },
+            {
+              "id": "C",
+              "text": "8千円",
+              "is_correct": false
+            },
+            {
+              "id": "D",
+              "text": "1万円",
+              "is_correct": false
+            }
+          ],
+          "explanation": {
+            "en": "The passage says 靴は5千円で (The shoes were 5,000 yen).",
+            "ja": "「靴は5千円で」と書かれています。",
+            "zh": "这段文字说“靴子是5000日元”。",
+            "zh_TW": "這段文字寫道：「靴子是5,000日圓。」",
+            "es": "El texto dice: «Los zapatos costaban 5.000 yenes».",
+            "fr": "Le texte indique : « Les chaussures coûtaient 5 000 yens ».",
+            "de": "In dem Text heißt es: „Die Schuhe kosteten 5.000 Yen.“",
+            "ko": "이 문장은 “신발은 5,000엔이었다”라고 되어 있습니다."
+          },
+          "question_zh": "那双鞋多少钱？",
+          "question_zh_TW": "那雙鞋要多少錢？",
+          "question_es": "¿Cuánto costaban los zapatos?",
+          "question_fr": "Combien coûtaient les chaussures ?",
+          "question_de": "Wie viel haben die Schuhe gekostet?"
+        },
+        {
+          "id": "ja_n5_passage_004_q2",
+          "question": "食料品売り場で何を買いましたか。",
+          "question_en": "What did they buy at the grocery section?",
+          "options": [
+            {
+              "id": "A",
+              "text": "野菜",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "パン",
+              "is_correct": false
+            },
+            {
+              "id": "C",
+              "text": "肉",
+              "is_correct": false
+            },
+            {
+              "id": "D",
+              "text": "果物",
+              "is_correct": true
+            }
+          ],
+          "explanation": {
+            "en": "The passage says 地下の食料品売り場で果物を買いました (I bought fruit at the grocery section in the basement).",
+            "ja": "「地下の食料品売り場で果物を買いました」と書かれています。",
+            "zh": "该段落写道：“我在地下食品卖场买了水果。”",
+            "zh_TW": "這段文字寫道：「我在地下室的食品區買了水果。」",
+            "es": "El texto dice: «Compré fruta en la sección de comestibles del sótano».",
+            "fr": "Le passage dit : « 地下の食料品売り場で果物を買いました » (J'ai acheté des fruits au rayon épicerie du sous-sol).",
+            "de": "In dem Text heißt es: „Ich habe im Lebensmittelbereich im Untergeschoss Obst gekauft.“",
+            "ko": "이 문장은 “지하 식료품 매장에서 과일을 샀습니다”라고 되어 있습니다."
+          },
+          "question_zh": "他们在食品区买了什么？",
+          "question_zh_TW": "他們在雜貨區買了什麼？",
+          "question_es": "¿Qué compraron en la sección de alimentación?",
+          "question_fr": "Qu'ont-ils acheté au rayon épicerie ?",
+          "question_de": "Was haben sie in der Lebensmittelabteilung gekauft?"
+        },
+        {
+          "id": "ja_n5_passage_004_q3",
+          "question": "りんごはどんな味でしたか。",
+          "question_en": "What did the apple taste like?",
+          "options": [
+            {
+              "id": "A",
+              "text": "酸っぱかった",
+              "is_correct": false
+            },
+            {
+              "id": "B",
+              "text": "苦かった",
+              "is_correct": false
+            },
+            {
+              "id": "C",
+              "text": "甘かった",
+              "is_correct": true
+            },
+            {
+              "id": "D",
+              "text": "辛かった",
+              "is_correct": false
+            }
+          ],
+          "explanation": {
+            "en": "The passage ends with とても甘かったです (It was very sweet).",
+            "ja": "「とても甘かったです」と書かれています。",
+            "zh": "这段话以“非常甜”结尾。",
+            "zh_TW": "這段文字以「非常甜」作結。",
+            "es": "El pasaje termina con «Estaba muy dulce».",
+            "fr": "Le passage se termine par « C'était très sucré ».",
+            "de": "Der Absatz endet mit „Es war sehr süß“.",
+            "ko": "이 문단은 “정말 달았어요”라는 말로 끝납니다."
+          },
+          "question_zh": "那个苹果尝起来怎么样？",
+          "question_zh_TW": "那顆蘋果的味道如何？",
+          "question_es": "¿A qué sabía la manzana?",
+          "question_fr": "Quel goût avait la pomme ?",
+          "question_de": "Wie hat der Apfel geschmeckt?"
+        }
+      ],
+      "translation_zh": "昨天，我去百货公司购物。我买了一双新鞋和一件白衬衫。鞋子5000日元，衬衫3000日元。之后，我在地下室的生鲜区买了水果。我买了苹果和橘子。回到家后，我吃了一个苹果。它非常甜。",
+      "translation_zh_TW": "昨天，我去百貨公司購物。我買了一雙新鞋和一件白襯衫。鞋子要5,000日圓，襯衫則是3,000日圓。接著，我在地下樓層的生鮮區買了水果。我買了蘋果和橘子。回到家後，我吃了一個蘋果。它非常甜。",
+      "translation_es": "Ayer fui de compras a unos grandes almacenes. Compré unos zapatos nuevos y una camisa blanca. Los zapatos costaban 5.000 yenes y la camisa, 3.000 yenes. Después, compré fruta en la sección de alimentación del sótano. Compré manzanas y mandarinas. Al llegar a casa, me comí una manzana. Estaba muy dulce.",
+      "translation_fr": "Hier, je suis allé faire des courses dans un grand magasin. J'ai acheté de nouvelles chaussures et une chemise blanche. Les chaussures coûtaient 5 000 yens et la chemise 3 000 yens. Ensuite, j'ai acheté des fruits au rayon fruits et légumes au sous-sol. J'ai pris des pommes et des mandarines. Une fois rentré chez moi, j'ai mangé une pomme. Elle était très sucrée.",
+      "translation_de": "Gestern war ich in einem Kaufhaus einkaufen. Ich habe mir neue Schuhe und ein weißes Hemd gekauft. Die Schuhe kosteten 5.000 Yen und das Hemd 3.000 Yen. Anschließend habe ich im Lebensmittelbereich im Untergeschoss Obst gekauft. Ich habe Äpfel und Mandarinen gekauft. Als ich nach Hause kam, habe ich einen Apfel gegessen. Er war sehr süß."
+    }
+  ]
+}

@@ -1,0 +1,748 @@
+{
+  "@@locale": "en",
+  "@appTitle": {
+    "description": "The app name"
+  },
+  "@correctCountOfTotal": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@correctWithExplanation": {
+    "placeholders": {
+      "explanation": {
+        "type": "String"
+      }
+    }
+  },
+  "@dayStreakCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@exercisesProgress": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@notQuiteWithExplanation": {
+    "placeholders": {
+      "explanation": {
+        "type": "String"
+      }
+    }
+  },
+  "@profile_learningStatus": {
+    "placeholders": {
+      "language": {
+        "type": "String"
+      },
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "@profile_lessonsCompleted": {
+    "placeholders": {
+      "completed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_minPerDay": {
+    "placeholders": {
+      "min": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_minutesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_stepXofY": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_streakLabel": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@profile_version": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "@questionXofY": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "@savePercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "@speakersCount": {
+    "placeholders": {
+      "speakers": {
+        "type": "String"
+      }
+    }
+  },
+  "@streakKeepStreak": {
+    "placeholders": {
+      "currentStreak": {
+        "type": "int"
+      }
+    }
+  },
+  "@streakShieldsRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeAgoHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeAgoMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@timeSpentHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@xpToGoal": {
+    "placeholders": {
+      "xp": {
+        "type": "int"
+      }
+    }
+  },
+  "achievementsTitle": "Achievements",
+  "active": "Active",
+  "advancedProgressTracking": "Advanced progress tracking",
+  "aiAssistantName": "Maya",
+  "aiAssistantRole": "Cafe Worker",
+  "aiBadge": "AI",
+  "aiChat": "AI Chat",
+  "aiConversationGreeting": "Hi! I'm Maya. I work at a cafe in Tokyo. What would you like to practice today?",
+  "aiConversationPractice": "AI conversation practice",
+  "aiConversationTitle": "AI Conversation",
+  "aiPractice": "AI Practice",
+  "aiYou": "You",
+  "annual": "Annual",
+  "appTagline": "Learn. Chill. Repeat.",
+  "appTitle": "InstaLingo",
+  "back": "Back",
+  "cancel": "Cancel",
+  "chapter": "Chapter",
+  "chatWithAI": "Chat with an AI character",
+  "check": "Check",
+  "chill": "Chill",
+  "chillCorner": "Chill Corner",
+  "chill_addComment": "Add a comment...",
+  "chill_aiGeneratedImage": "AI Generated Image",
+  "chill_comments": "Comments",
+  "chill_noPosts": "No posts yet",
+  "chill_noPostsMessage": "Complete lessons to unlock vocabulary posts from the community.",
+  "chill_postNotFound": "Post not found",
+  "chill_postNotFoundMessage": "This post may have been deleted or is no longer available.",
+  "chill_share": "Share",
+  "clear": "Clear",
+  "clearAll": "Clear all",
+  "commitment": "Commitment",
+  "continueLearning": "Continue Learning",
+  "continueText": "Continue",
+  "correct": "Correct",
+  "correctCountOfTotal": "{correct} / {total} correct",
+  "correctWithExplanation": "Correct! {explanation}",
+  "courseComplete": "Course Completed!",
+  "courseCompleteTitle": "You did it!",
+  "coursePath": "Course Path",
+  "createProfile": "Create your profile",
+  "createProfileDesc": "This helps us personalize your experience.",
+  "dailyGoal": "Daily Goal",
+  "dailyGoalCardTitle": "Daily Goal",
+  "dailyGoalReached": "Goal reached! Great job!",
+  "darkMode": "Dark Mode",
+  "dayStreak": "Day Streak",
+  "dayStreakCount": "{count} days",
+  "defaultDisplayName": "Learner",
+  "done": "Done",
+  "editProfile": "Edit Profile",
+  "emptyStateMessage": "Come back later for more content.",
+  "emptyStateTitle": "Nothing here yet",
+  "errorGenericMessage": "We could not load this content. Please try again.",
+  "errorGenericTitle": "Something went wrong",
+  "exArrangeWords": "Arrange the words to form a correct sentence",
+  "exComprehension": "Read the passage and answer",
+  "exDialogueComplete": "Complete the dialogue",
+  "exFillInBlank": "Fill in the blank",
+  "exFlashCard": "Tap to flip the card",
+  "exGrammarTip": "Grammar Tip",
+  "exImageIdentify": "Tap the correct image",
+  "exMatchWords": "Match the words with their meanings",
+  "exPhraseBuilder": "Build the phrase",
+  "exSpeaking": "Say this word aloud",
+  "exTranslate": "Translate this sentence",
+  "exTrueFalse": "Is this statement correct?",
+  "exTypeWhatYouHear": "Type what you hear",
+  "exVocabMultipleChoice": "Which word means \"{word}\"?",
+  "exWhichWordMeans": "Which means \"{word}\"?",
+  "exWriting": "Write your answer",
+  "exampleLabel": "Example",
+  "exercisesProgress": "{completed} of {total} exercises",
+  "falseLabel": "False",
+  "featureAICharacters": "AI Characters",
+  "featureAICharactersDesc": "Practice with AI personas that respond like real people in the Chill Corner.",
+  "featureMotivation": "Stay Motivated",
+  "featureMotivationDesc": "Earn XP, maintain streaks, and unlock achievements as you progress.",
+  "featureStructuredCourses": "Structured Courses",
+  "featureStructuredCoursesDesc": "Learn with professionally designed lessons that build on each other.",
+  "findFriends": "Find Friends",
+  "finishLesson": "Finish Lesson",
+  "flashcardEasy": "Easy",
+  "flashcardGood": "Good",
+  "flashcardHard": "Hard",
+  "followingTitle": "Following",
+  "forceUpdateBody": "We've made InstaLingo faster, more stable, and packed with new features. Please update to the latest version to continue.",
+  "forceUpdateBugFixes": "Bug fixes & stability",
+  "forceUpdateMessage": "A new version of InstaLingo is available. Please update to continue learning.",
+  "forceUpdateNewContent": "New lessons & exercises",
+  "forceUpdatePerformance": "Performance improvements",
+  "forceUpdateTitle": "Update Required",
+  "fri": "F",
+  "friendsTitle": "Friends",
+  "gems": "Gems",
+  "getStarted": "Get Started",
+  "getUnlimitedLearning": "Get unlimited learning",
+  "goodbye": "Goodbye",
+  "gotIt": "Got it!",
+  "grammarExampleFallback": "Practice makes perfect!",
+  "grammarRuleFallback": "Pay attention to the grammar in this exercise.",
+  "grammarTip": "Grammar Tip",
+  "greetingAfternoon": "Good afternoon",
+  "greetingEvening": "Good evening",
+  "greetingMorning": "Good morning",
+  "hello": "Hello!",
+  "helpSupport": "Help & Support",
+  "holdToSpeak": "Hold to speak",
+  "howAreYou": "How Are You?",
+  "iAlreadyHaveAccount": "I Already Have an Account",
+  "incorrect": "Incorrect",
+  "knowIt": "Know It",
+  "language": "Language",
+  "leaderboardTitle": "Leaderboard",
+  "learn": "Learn",
+  "learnRuleToImprove": "Learn this rule to improve",
+  "learningLanguage": "Learning Language",
+  "lessonComplete": "Lesson Complete!",
+  "lessonCompleteGood": "Good effort! Review and try again!",
+  "lessonCompleteGreat": "Great job! Keep practicing!",
+  "lessonCompletePerfect": "Perfect! You are on fire!",
+  "lessons": "Lessons",
+  "levelAbbreviation": "LV",
+  "levelAdvanced": "Advanced",
+  "levelBeginner": "Beginner",
+  "levelElementary": "Elementary",
+  "levelIntermediate": "Intermediate",
+  "levelProficiency": "Proficiency",
+  "levelUpperIntermediate": "Upper Intermediate",
+  "loading": "Loading...",
+  "loadingLesson": "Loading lesson...",
+  "logout": "Log Out",
+  "matchPairsInstruction": "Tap a word on the left, then its match on the right",
+  "maybeLater": "Maybe Later",
+  "mon": "M",
+  "monthly": "Monthly",
+  "motivation": "Motivation",
+  "myNameIs": "My Name Is",
+  "nativeLanguage": "Native Language",
+  "next": "Next",
+  "nextQuestion": "Next Question",
+  "niceToMeetYou": "Nice to Meet You",
+  "noAds": "No ads",
+  "noConnectionMessage": "Please check your internet and try again.",
+  "noConnectionTitle": "No Connection",
+  "notNow": "Not now",
+  "notQuiteWithExplanation": "Not quite. {explanation}",
+  "notifications": "Notifications",
+  "onboardingTitle": "Learn languages through structured courses & AI personas",
+  "onboarding_commitmentCasual": "Casual",
+  "onboarding_commitmentIntense": "Intense",
+  "onboarding_commitmentRegular": "Regular",
+  "onboarding_commitmentSerious": "Serious",
+  "onboarding_commitmentSubtitle": "You can always change this later in settings.",
+  "onboarding_commitmentTitle": "How much time\ncan you commit?",
+  "onboarding_displayNameLabel": "Display Name",
+  "onboarding_emailOptionalLabel": "Email (optional)",
+  "onboarding_enterEmailHint": "Enter your email",
+  "onboarding_enterNameHint": "Enter your name",
+  "onboarding_learningLangSubtitle": "Choose the language you want to master.",
+  "onboarding_motivationBrainTraining": "Brain Training",
+  "onboarding_motivationCareer": "Career",
+  "onboarding_motivationCulture": "Culture",
+  "onboarding_motivationFamily": "Family",
+  "onboarding_motivationFun": "Just for Fun",
+  "onboarding_motivationMoviesShows": "Movies & Shows",
+  "onboarding_motivationStudyAbroad": "Study Abroad",
+  "onboarding_motivationSubtitle": "Select all that apply.",
+  "onboarding_motivationTitle": "Why are you learning?",
+  "onboarding_motivationTravel": "Travel",
+  "onboarding_nativeLangSubtitle": "We'll use this to personalize your learning experience.",
+  "onboarding_proficiencyAdvanced": "Advanced",
+  "onboarding_proficiencyAdvancedDesc": "I speak fluently",
+  "onboarding_proficiencyBeginner": "Beginner",
+  "onboarding_proficiencyBeginnerDesc": "I know a few words",
+  "onboarding_proficiencyElementary": "Elementary",
+  "onboarding_proficiencyElementaryDesc": "I can form simple sentences",
+  "onboarding_proficiencyIntermediate": "Intermediate",
+  "onboarding_proficiencyIntermediateDesc": "I can hold a conversation",
+  "onboarding_proficiencyProficient": "Proficient",
+  "onboarding_proficiencyProficientDesc": "I speak like a native",
+  "onboarding_proficiencySubtitle": "We'll start you at the right difficulty.",
+  "onboarding_proficiencyTitle": "What is your\ncurrent level?",
+  "onboarding_proficiencyUpperIntermediate": "Upper-Intermediate",
+  "onboarding_proficiencyUpperIntermediateDesc": "I can discuss various topics",
+  "onboarding_skipForNow": "Skip for now",
+  "paywallSubtitle": "Unlock unlimited learning",
+  "paywallTitle": "InstaLingo Super",
+  "perMonth": "/month",
+  "perYear": "/year",
+  "pickNewCourse": "Pick a New Course",
+  "playing": "Playing...",
+  "practiceWords": "Practice the words you just learned",
+  "privacy": "Privacy",
+  "proficiency": "Proficiency",
+  "profile": "Profile",
+  "profile_academicEnglish": "Academic English",
+  "profile_account": "Account",
+  "profile_achievementsUnlocked": "Achievements Unlocked",
+  "profile_adFreeExperience": "Ad-Free Experience",
+  "profile_adFreeExperienceDesc": "Focus on learning with zero interruptions.",
+  "profile_advanced": "Advanced",
+  "profile_advancedSpeakingDesc": "Get detailed pronunciation and fluency analysis with waveform visualization.",
+  "profile_advancedSpeakingFeedback": "Advanced speaking feedback",
+  "profile_aiConversationPractice": "AI Conversation Practice",
+  "profile_aiConversationPracticeAnswer": "Practice real conversations with AI personas in different scenarios like cafes, airports, and offices.",
+  "profile_allChillCornerContent": "All Chill Corner content",
+  "profile_appearance": "Appearance",
+  "profile_beginner": "Beginner",
+  "profile_bestValue": "Best Value",
+  "profile_browseTopics": "Browse topics below or contact us directly",
+  "profile_businessEnglish": "Business English",
+  "profile_cancelAnytime": "Cancel anytime. No commitment.",
+  "profile_checkForUpdates": "Check for Updates",
+  "profile_completeBeginner": "Complete beginner",
+  "profile_contactSupport": "Contact Support",
+  "profile_createPlan": "Create Plan",
+  "profile_dailyConversation": "Daily conversation",
+  "profile_daytime": "Daytime (9 AM-5 PM)",
+  "profile_displayName": "Display Name",
+  "profile_duration": "Duration",
+  "profile_durationDesc": "How long per session?",
+  "profile_earningXPGems": "Earning XP and Gems",
+  "profile_earningXPGemsAnswer": "Complete lessons, maintain streaks, and review vocabulary to earn rewards and unlock achievements.",
+  "profile_elementary": "Elementary",
+  "profile_email": "Email",
+  "profile_enableNotifications": "Enable notifications",
+  "profile_enableNotificationsAnswer": "Turn on reminders in Settings to get daily prompts and maintain your streak.",
+  "profile_enterYourEmail": "Enter your email",
+  "profile_enterYourName": "Enter your name",
+  "profile_evening": "Evening (5-9 PM)",
+  "profile_everyDay": "Every day",
+  "profile_everythingInMonthly": "Everything in Monthly",
+  "profile_examPreparation": "Exam preparation",
+  "profile_exclusiveStudyPlans": "Exclusive study plans",
+  "profile_fifteenMinutes": "15 minutes",
+  "profile_fiveDaysAWeek": "5 days a week",
+  "profile_fiveMinutes": "5 minutes",
+  "profile_follow": "Follow",
+  "profile_followOthersMessage": "Follow other learners to see them here.",
+  "profile_gettingStarted": "Getting Started",
+  "profile_goal": "Goal",
+  "profile_goalDesc": "What do you want to achieve?",
+  "profile_gotIt": "Got it",
+  "profile_howDoIStart": "How do I start learning?",
+  "profile_howDoIStartAnswer": "Choose your native language, then pick a language to learn. Complete the onboarding and start with the first lesson.",
+  "profile_inProgress": "In Progress",
+  "profile_instalingoSuperFAQ": "InstaLingo Super",
+  "profile_instalingoSuperFAQAnswer": "Upgrade to Super for unlimited lessons, AI practice, advanced tracking, and an ad-free experience.",
+  "profile_intensity": "Intensity",
+  "profile_intensityDesc": "How often per week?",
+  "profile_intermediate": "Intermediate",
+  "profile_learning": "Learning",
+  "profile_learningFeatures": "Learning Features",
+  "profile_learningStatus": "Learning {language} · {level}",
+  "profile_lessonRemindersStreakAlerts": "Lesson reminders, streak alerts",
+  "profile_lessonsCompleted": "{completed} of {total} lessons completed",
+  "profile_level": "Level",
+  "profile_levelDesc": "Where are you starting?",
+  "profile_levelSuffix": "Level",
+  "profile_minPerDay": "{min} min / day",
+  "profile_minutesCount": "{count} minutes",
+  "profile_morning": "Morning (6-9 AM)",
+  "profile_night": "Night (9 PM-12 AM)",
+  "profile_noAchievementsMessage": "Complete lessons and maintain streaks to unlock achievements.",
+  "profile_noAchievementsYet": "No achievements yet",
+  "profile_notSet": "Not set",
+  "profile_offlineMode": "Offline mode",
+  "profile_offlineModeDesc": "Download lessons and learn anywhere without internet.",
+  "profile_perMonthDesc": "per month",
+  "profile_perYearDesc": "per year",
+  "profile_personalizedStudyPlans": "Personalized Study Plans",
+  "profile_personalizedStudyPlansDesc": "AI-generated study plans tailored to your goals and schedule.",
+  "profile_priorityAIResponses": "Priority AI responses",
+  "profile_proBadge": "PRO",
+  "profile_proficiencyLevel": "Proficiency Level",
+  "profile_proficient": "Proficient",
+  "profile_resetProgress": "Reset Progress",
+  "profile_resetProgressFAQ": "Reset Progress",
+  "profile_resetProgressFAQAnswer": "Go to Settings > Reset Progress to start over. This action cannot be undone.",
+  "profile_saveFiftyVsMonthly": "Save 50% vs monthly",
+  "profile_schedule": "Schedule",
+  "profile_scheduleDesc": "When can you study?",
+  "profile_settingDailyGoals": "Setting daily goals",
+  "profile_settingDailyGoalsAnswer": "Go to Profile > Settings > Daily Goal to adjust your learning target. We recommend 15-30 minutes per day.",
+  "profile_someBasics": "Some basics",
+  "profile_soundEffects": "Sound Effects",
+  "profile_stepXofY": "Step {current} of {total}",
+  "profile_streakLabel": "{count} streak",
+  "profile_studyPlanCreated": "Study plan created successfully!",
+  "profile_superBadge": "SUPER",
+  "profile_superSubtitle": "The ultimate language learning experience with AI-powered features.",
+  "profile_superTitle": "Super",
+  "profile_tenMinutes": "10 minutes",
+  "profile_threeDaysAWeek": "3 days a week",
+  "profile_travelBasics": "Travel basics",
+  "profile_twentyPlusMinutes": "20+ minutes",
+  "profile_unlimitedAIConversations": "Unlimited AI conversations",
+  "profile_unlimitedAIDesc": "Practice with AI personas without limits in the Chill Corner.",
+  "profile_unlockFullExperience": "Unlock the full language learning experience.",
+  "profile_unlocked": "Unlocked",
+  "profile_upgradeToSuper": "Upgrade to Super",
+  "profile_upperIntermediate": "Upper-Intermediate",
+  "profile_version": "InstaLingo v{version}",
+  "profile_visitHelpCenter": "Visit Help Center",
+  "profile_weekendsOnly": "Weekends only",
+  "profile_whatIsChillCorner": "What is Chill Corner?",
+  "profile_whatIsChillCornerAnswer": "Chill Corner shows vocabulary you've learned in real-world contexts, shared by AI characters.",
+  "questionXofY": "Question {current} of {total}",
+  "readyToLearn": "Ready to learn today?",
+  "reminderTime": "9:00 AM",
+  "review": "Review",
+  "reviewVocabulary": "Review Vocabulary",
+  "sampleAnswer": "Sample answer:",
+  "sat": "S",
+  "save": "Save",
+  "savePercent": "Save {percent}%",
+  "scenarioCafeTokyo": "Scenario: Ordering at a cafe in Tokyo",
+  "section": "Section",
+  "sections": "Sections",
+  "seeResults": "See Results",
+  "seeWordsInContext": "See your learned words in context",
+  "settingsTitle": "Settings",
+  "skip": "Skip",
+  "speakersCount": "{speakers} speakers",
+  "start": "Start",
+  "startFreeTrial": "Start Free Trial",
+  "startLearning": "Start Learning",
+  "startNextLesson": "Start the next lesson in your course",
+  "statsTitle": "Statistics",
+  "stillLearning": "Still Learning",
+  "streakCalendar": "Streak Calendar",
+  "streakKeepStreak": "Complete a lesson to keep your {currentStreak} day streak!",
+  "streakRepair": "Repair Streak",
+  "streakRepaired": "Repaired",
+  "streakShielded": "Shielded",
+  "streakShieldsRemaining": "{count} streak shields remaining",
+  "studyPlan": "Study Plan",
+  "submit": "Submit",
+  "subscription": "Subscription",
+  "sun": "S",
+  "takePlacementTest": "Take Placement Test",
+  "tapAndHoldMicrophone": "Tap and hold the microphone to speak",
+  "tapToFlip": "Tap to flip",
+  "tapToFlipBack": "Tap to flip back",
+  "tapToPlay": "Tap to play",
+  "tapToReveal": "Tap to reveal",
+  "tapWordsToBuildAnswer": "Tap words to build your answer",
+  "tapWordsToBuildSentence": "Tap words to build the sentence",
+  "thu": "T",
+  "timeAgoHours": "{hours}h",
+  "timeAgoMinutes": "{minutes}m",
+  "timeSpent": "Time Spent",
+  "timeSpentHoursMinutes": "{hours} hours {minutes} minutes",
+  "today": "Today",
+  "totalXP": "Total XP",
+  "trueLabel": "True",
+  "tryAgain": "Try Again",
+  "tue": "T",
+  "typeMessage": "Type your message...",
+  "typeWhatYouHear": "Type what you hear...",
+  "typeYourAnswerHere": "Type your answer here...",
+  "unlimitedLessons": "Unlimited lessons",
+  "unlockSuper": "Unlock Super",
+  "updateNow": "Update Now",
+  "visitChillCorner": "Visit Chill Corner",
+  "vocabularyReview": "Vocabulary Review",
+  "wed": "W",
+  "welcomeSubtitle": "The most effective way to learn a new language.",
+  "welcomeTitle": "Welcome to InstaLingo",
+  "whatNext": "What would you like to do next?",
+  "wordsLearned": "Words Learned",
+  "wordsPracticed": "Words you practiced",
+  "xpShort": "XP",
+  "xpThisWeek": "XP This Week",
+  "xpToGoal": "{xp} more XP to reach your goal",
+  "youLabel": "You",
+  "yourLevel": "Your Level",
+  "profile_chooseYourPlan": "Choose Your Plan",
+  "profile_contactUs": "Contact Us",
+  "profile_continueWithFree": "Continue With Free",
+  "profile_culturalInsights": "Cultural Insights",
+  "profile_culturalInsightsDesc": "Cultural Insights Desc",
+  "profile_currentPlan": "Current Plan",
+  "profile_dailyGoalMet": "Daily Goal Met",
+  "profile_darkMode": "Dark Mode",
+  "profile_downloadForOffline": "Download For Offline",
+  "profile_downloadForOfflineDesc": "Download For Offline Desc",
+  "profile_emailUs": "Email Us",
+  "profile_falseBeginner": "False Beginner",
+  "profile_faq": "Faq",
+  "profile_faqAnswer1": "Faq Answer1",
+  "profile_faqAnswer2": "Faq Answer2",
+  "profile_faqAnswer3": "Faq Answer3",
+  "profile_faqAnswer4": "Faq Answer4",
+  "profile_faqQuestion1": "Faq Question1",
+  "profile_faqQuestion2": "Faq Question2",
+  "profile_faqQuestion3": "Faq Question3",
+  "profile_faqQuestion4": "Faq Question4",
+  "profile_feedback": "Feedback",
+  "profile_findFriends": "Find Friends",
+  "profile_firstSteps": "First Steps",
+  "profile_followingTitle": "Following Title",
+  "profile_freePlan": "Free Plan",
+  "profile_goPremium": "Go Premium",
+  "profile_goalDescription": "Goal Description",
+  "profile_goalFluency": "Goal Fluency",
+  "profile_goalTravel": "Goal Travel",
+  "profile_goalWork": "Goal Work",
+  "profile_inTheMorning": "In The Morning",
+  "profile_keepPracticing": "Keep Practicing",
+  "profile_lateNight": "Late Night",
+  "profile_leaderboardTitle": "Leaderboard Title",
+  "profile_learnBasicPhrases": "Learn Basic Phrases",
+  "profile_levelUp": "Level Up",
+  "profile_monthly": "Monthly",
+  "profile_morningBird": "Morning Bird",
+  "profile_mostPopular": "Most Popular",
+  "profile_motivationCulture": "Motivation Culture",
+  "profile_motivationFamily": "Motivation Family",
+  "profile_motivationFun": "Motivation Fun",
+  "profile_motivationTravel": "Motivation Travel",
+  "profile_motivationWork": "Motivation Work",
+  "profile_myPlan": "My Plan",
+  "profile_nextAchievement": "Next Achievement",
+  "profile_noFollowingYet": "No Following Yet",
+  "profile_noFollowingYetMessage": "No Following Yet Message",
+  "profile_noFriendsYet": "No Friends Yet",
+  "profile_noFriendsYetMessage": "No Friends Yet Message",
+  "profile_noLeaderboardData": "No Leaderboard Data",
+  "profile_noLeaderboardDataMessage": "No Leaderboard Data Message",
+  "profile_notifications": "Notifications",
+  "profile_offlineTitle": "Offline Title",
+  "profile_onboardingComplete": "Onboarding Complete",
+  "profile_onboardingTitle": "Onboarding Title",
+  "profile_perMonth": "Per Month",
+  "profile_plan": "Plan",
+  "profile_premium": "Premium",
+  "profile_proFeatures": "Pro Features",
+  "profile_proFeaturesDesc": "Pro Features Desc",
+  "profile_proPlan": "Pro Plan",
+  "profile_proPlanDesc": "Pro Plan Desc",
+  "profile_profile": "Profile",
+  "profile_progress": "Progress",
+  "profile_progressReset": "Progress Reset",
+  "profile_progressResetMessage": "Progress Reset Message",
+  "profile_questionXofY": "Question {x} of {y}",
+  "profile_reminder": "Reminder",
+  "profile_reminderTime": "Reminder Time",
+  "profile_removeAds": "Remove Ads",
+  "profile_removeAdsDesc": "Remove Ads Desc",
+  "profile_savePercent": "Save {percent}%",
+  "profile_section": "Section",
+  "profile_seeAll": "See All",
+  "profile_sendFeedback": "Send Feedback",
+  "profile_skillLevel": "Skill Level",
+  "profile_speakingPractice": "Speaking Practice",
+  "profile_startFreeTrial": "Start Free Trial",
+  "profile_studyPlanDescription": "Study Plan Description",
+  "profile_studyPlanTitle": "Study Plan Title",
+  "profile_studyReminder": "Study Reminder",
+  "profile_subscribeNow": "Subscribe Now",
+  "profile_subtitle": "Subtitle",
+  "profile_superDescription": "Super Description",
+  "profile_support": "Support",
+  "profile_travelPhrases": "Travel Phrases",
+  "profile_troubleshooting": "Troubleshooting",
+  "profile_tryFreeForDays": "Try free for {days} days, then {price}",
+  "profile_unlimitedAccess": "Unlimited Access",
+  "profile_unlimitedAccessDesc": "Unlimited Access Desc",
+  "profile_unlimitedAiConversations": "Unlimited Ai Conversations",
+  "profile_unlimitedAiConversationsDesc": "Unlimited Ai Conversations Desc",
+  "profile_unlimitedLessons": "Unlimited Lessons",
+  "profile_unlimitedLessonsDesc": "Unlimited Lessons Desc",
+  "profile_unlimitedVocabularyBuilder": "Unlimited Vocabulary Builder",
+  "profile_unlimitedVocabularyBuilderDesc": "Unlimited Vocabulary Builder Desc",
+  "profile_weekdays": "Weekdays",
+  "profile_weekends": "Weekends",
+  "profile_whenToStudy": "When To Study",
+  "profile_workCommunication": "Work Communication",
+  "profile_workVocabulary": "Work Vocabulary",
+  "profile_writingPractice": "Writing Practice",
+  "profile_xpAndGems": "Xp And Gems",
+  "profile_xpAndGemsDesc": "Xp And Gems Desc",
+  "profile_xpEarnedToday": "Xp Earned Today",
+  "profile_youEarned": "You Earned",
+  "profile_yourStreak": "Your Streak",
+  "progressToNextLevel": "Progress To Next Level",
+  "rateApp": "Rate App",
+  "recording": "Recording",
+  "removeAds": "Remove Ads",
+  "saveAndContinue": "Save And Continue",
+  "searchPosts": "Search Posts",
+  "sectionX": "Section {x}",
+  "seeAllAchievements": "See All Achievements",
+  "shareApp": "Share App",
+  "speakNow": "Speak Now",
+  "startSpeaking": "Start Speaking",
+  "streakTitle": "Streak Title",
+  "studyNow": "Study Now",
+  "subscribeNow": "Subscribe Now",
+  "superMarket": "Super Market",
+  "swipeToContinue": "Swipe To Continue",
+  "tapToListen": "Tap To Listen",
+  "tapToSpeak": "Tap To Speak",
+  "technicalIssues": "Technical Issues",
+  "totalLessons": "Total Lessons",
+  "unlimited": "Unlimited",
+  "unlockAllFeatures": "Unlock All Features",
+  "unlockNow": "Unlock Now",
+  "upgradeToPro": "Upgrade To Pro",
+  "upgradeToSuper": "Upgrade To Super",
+  "viewAll": "View All",
+  "viewDetails": "View Details",
+  "viewLeaderboard": "View Leaderboard",
+  "vocabulary": "Vocabulary",
+  "weekly": "Weekly",
+  "weeklyGoal": "Weekly Goal",
+  "welcome": "Welcome",
+  "welcomeBack": "Welcome Back",
+  "wordOfTheDay": "Word Of The Day",
+  "xpEarned": "Xp Earned",
+  "yearly": "Yearly",
+  "yes": "Yes",
+  "youAreOffline": "You Are Offline",
+  "yourAnswer": "Your Answer",
+  "yourProgress": "Your Progress",
+  "onboarding_learningGoalTitle": "What's your goal?",
+  "onboarding_learningGoalSubtitle": "This helps us tailor your learning experience.",
+  "onboarding_examPrep": "Prepare for an exam",
+  "onboarding_examPrepDesc": "Structured lessons, mock tests, timed practice. Track your predicted score.",
+  "onboarding_justForFun": "Just for fun",
+  "onboarding_justForFunDesc": "Learn at your own pace. No tests, no pressure. Just pick up the language naturally.",
+  "onboarding_examTypeTitle": "Which exam?",
+  "onboarding_examTypeSubtitle": "Pick the {lang} exam you're working toward.",
+  "@onboarding_examTypeSubtitle": {
+    "placeholders": {
+      "lang": {
+        "type": "String"
+      }
+    }
+  },
+  "onboarding_japanese": "Japanese",
+  "onboarding_korean": "Korean",
+  "onboarding_examLevelBeginner": "Beginner",
+  "onboarding_examLevelElementary": "Elementary",
+  "onboarding_examLevelBeginnerElementary": "Beginner–Elementary",
+  "onboarding_examWordsCount": "{count} words",
+  "@onboarding_examWordsCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "onboarding_examSectionsJLPT": "Vocab, Grammar, Reading, Listening",
+  "onboarding_examSectionsTOPIK": "Listening, Reading",
+  "keepPracticing": "Keep practicing!",
+  "kanjiReference": "Kanji Reference",
+  "kanaReference": "Kana Charts",
+  "hiraganaChart": "Hiragana",
+  "katakanaChart": "Katakana",
+  "examCompleteTitle": "Mock Test Complete!",
+  "yourScore": "Your score",
+  "predictedLevel": "Predicted level",
+  "profile_tts": "Pronunciation (TTS)",
+  "profile_ttsDesc": "Tap words to hear pronunciation",
+  "studyReminderBody": "Time to practice!",
+  "jlptN5Label": "JLPT N5",
+  "jlptN4Label": "JLPT N4",
+  "onboarding_examLevelIntermediate": "Intermediate",
+  "onboarding_examLevelUpperIntermediate": "Upper Intermediate",
+  "onboarding_examLevelAdvanced": "Advanced"
+}

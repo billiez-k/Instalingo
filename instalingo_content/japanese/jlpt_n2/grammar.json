@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "language": "ja",
+    "exam_level": "JLPT N2",
+    "total_points": 0,
+    "source": "PLACEHOLDER - needs JLPT grammar sourcing",
+    "source_status": "NEEDS_SOURCING",
+    "note": "Grammar points for JLPT N2 need to be sourced from JLPT grammar references. Current file is a placeholder."
+  },
+  "grammar_points": []
+}

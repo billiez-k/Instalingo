@@ -1,0 +1,1274 @@
+{
+  "meta": {
+    "language": "ja",
+    "type": "kana_chart",
+    "hiragana_count": 46,
+    "hiragana_dakuten_count": 25,
+    "hiragana_combo_count": 33,
+    "katakana_count": 46,
+    "katakana_dakuten_count": 25,
+    "katakana_combo_count": 33,
+    "source": "Unicode standard kana (public domain)",
+    "source_status": "STANDARD_REFERENCE"
+  },
+  "hiragana": [
+    {
+      "id": "ja_kana_001",
+      "character": "あ",
+      "romaji": "a",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_002",
+      "character": "い",
+      "romaji": "i",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_003",
+      "character": "う",
+      "romaji": "u",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_004",
+      "character": "え",
+      "romaji": "e",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_005",
+      "character": "お",
+      "romaji": "o",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_006",
+      "character": "か",
+      "romaji": "ka",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_007",
+      "character": "き",
+      "romaji": "ki",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_008",
+      "character": "く",
+      "romaji": "ku",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_009",
+      "character": "け",
+      "romaji": "ke",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_010",
+      "character": "こ",
+      "romaji": "ko",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_011",
+      "character": "さ",
+      "romaji": "sa",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_012",
+      "character": "し",
+      "romaji": "shi",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_013",
+      "character": "す",
+      "romaji": "su",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_014",
+      "character": "せ",
+      "romaji": "se",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_015",
+      "character": "そ",
+      "romaji": "so",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_016",
+      "character": "た",
+      "romaji": "ta",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_017",
+      "character": "ち",
+      "romaji": "chi",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_018",
+      "character": "つ",
+      "romaji": "tsu",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_019",
+      "character": "て",
+      "romaji": "te",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_020",
+      "character": "と",
+      "romaji": "to",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_021",
+      "character": "な",
+      "romaji": "na",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_022",
+      "character": "に",
+      "romaji": "ni",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_023",
+      "character": "ぬ",
+      "romaji": "nu",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_024",
+      "character": "ね",
+      "romaji": "ne",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_025",
+      "character": "の",
+      "romaji": "no",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_026",
+      "character": "は",
+      "romaji": "ha",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_027",
+      "character": "ひ",
+      "romaji": "hi",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_028",
+      "character": "ふ",
+      "romaji": "fu",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_029",
+      "character": "へ",
+      "romaji": "he",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_030",
+      "character": "ほ",
+      "romaji": "ho",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_031",
+      "character": "ま",
+      "romaji": "ma",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_032",
+      "character": "み",
+      "romaji": "mi",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_033",
+      "character": "む",
+      "romaji": "mu",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_034",
+      "character": "め",
+      "romaji": "me",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_035",
+      "character": "も",
+      "romaji": "mo",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_036",
+      "character": "や",
+      "romaji": "ya",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_037",
+      "character": "ゆ",
+      "romaji": "yu",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_038",
+      "character": "よ",
+      "romaji": "yo",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_039",
+      "character": "ら",
+      "romaji": "ra",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_040",
+      "character": "り",
+      "romaji": "ri",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_041",
+      "character": "る",
+      "romaji": "ru",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_042",
+      "character": "れ",
+      "romaji": "re",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_043",
+      "character": "ろ",
+      "romaji": "ro",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_044",
+      "character": "わ",
+      "romaji": "wa",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_045",
+      "character": "を",
+      "romaji": "wo",
+      "type": "hiragana_basic"
+    },
+    {
+      "id": "ja_kana_046",
+      "character": "ん",
+      "romaji": "n",
+      "type": "hiragana_basic"
+    }
+  ],
+  "hiragana_dakuten": [
+    {
+      "id": "ja_kana_001",
+      "character": "が",
+      "romaji": "ga",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_002",
+      "character": "ぎ",
+      "romaji": "gi",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_003",
+      "character": "ぐ",
+      "romaji": "gu",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_004",
+      "character": "げ",
+      "romaji": "ge",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_005",
+      "character": "ご",
+      "romaji": "go",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_006",
+      "character": "ざ",
+      "romaji": "za",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_007",
+      "character": "じ",
+      "romaji": "ji",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_008",
+      "character": "ず",
+      "romaji": "zu",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_009",
+      "character": "ぜ",
+      "romaji": "ze",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_010",
+      "character": "ぞ",
+      "romaji": "zo",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_011",
+      "character": "だ",
+      "romaji": "da",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_012",
+      "character": "ぢ",
+      "romaji": "ji",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_013",
+      "character": "づ",
+      "romaji": "zu",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_014",
+      "character": "で",
+      "romaji": "de",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_015",
+      "character": "ど",
+      "romaji": "do",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_016",
+      "character": "ば",
+      "romaji": "ba",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_017",
+      "character": "び",
+      "romaji": "bi",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_018",
+      "character": "ぶ",
+      "romaji": "bu",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_019",
+      "character": "べ",
+      "romaji": "be",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_020",
+      "character": "ぼ",
+      "romaji": "bo",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_021",
+      "character": "ぱ",
+      "romaji": "pa",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_022",
+      "character": "ぴ",
+      "romaji": "pi",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_023",
+      "character": "ぷ",
+      "romaji": "pu",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_024",
+      "character": "ぺ",
+      "romaji": "pe",
+      "type": "hiragana_dakuten"
+    },
+    {
+      "id": "ja_kana_025",
+      "character": "ぽ",
+      "romaji": "po",
+      "type": "hiragana_dakuten"
+    }
+  ],
+  "hiragana_combos": [
+    {
+      "id": "ja_kana_001",
+      "character": "きゃ",
+      "romaji": "kya",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_002",
+      "character": "きゅ",
+      "romaji": "kyu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_003",
+      "character": "きょ",
+      "romaji": "kyo",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_004",
+      "character": "しゃ",
+      "romaji": "sha",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_005",
+      "character": "しゅ",
+      "romaji": "shu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_006",
+      "character": "しょ",
+      "romaji": "sho",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_007",
+      "character": "ちゃ",
+      "romaji": "cha",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_008",
+      "character": "ちゅ",
+      "romaji": "chu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_009",
+      "character": "ちょ",
+      "romaji": "cho",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_010",
+      "character": "にゃ",
+      "romaji": "nya",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_011",
+      "character": "にゅ",
+      "romaji": "nyu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_012",
+      "character": "にょ",
+      "romaji": "nyo",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_013",
+      "character": "ひゃ",
+      "romaji": "hya",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_014",
+      "character": "ひゅ",
+      "romaji": "hyu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_015",
+      "character": "ひょ",
+      "romaji": "hyo",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_016",
+      "character": "みゃ",
+      "romaji": "mya",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_017",
+      "character": "みゅ",
+      "romaji": "myu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_018",
+      "character": "みょ",
+      "romaji": "myo",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_019",
+      "character": "りゃ",
+      "romaji": "rya",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_020",
+      "character": "りゅ",
+      "romaji": "ryu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_021",
+      "character": "りょ",
+      "romaji": "ryo",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_022",
+      "character": "ぎゃ",
+      "romaji": "gya",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_023",
+      "character": "ぎゅ",
+      "romaji": "gyu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_024",
+      "character": "ぎょ",
+      "romaji": "gyo",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_025",
+      "character": "じゃ",
+      "romaji": "ja",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_026",
+      "character": "じゅ",
+      "romaji": "ju",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_027",
+      "character": "じょ",
+      "romaji": "jo",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_028",
+      "character": "びゃ",
+      "romaji": "bya",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_029",
+      "character": "びゅ",
+      "romaji": "byu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_030",
+      "character": "びょ",
+      "romaji": "byo",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_031",
+      "character": "ぴゃ",
+      "romaji": "pya",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_032",
+      "character": "ぴゅ",
+      "romaji": "pyu",
+      "type": "hiragana_combination"
+    },
+    {
+      "id": "ja_kana_033",
+      "character": "ぴょ",
+      "romaji": "pyo",
+      "type": "hiragana_combination"
+    }
+  ],
+  "katakana": [
+    {
+      "id": "ja_kana_001",
+      "character": "ア",
+      "romaji": "a",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_002",
+      "character": "イ",
+      "romaji": "i",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_003",
+      "character": "ウ",
+      "romaji": "u",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_004",
+      "character": "エ",
+      "romaji": "e",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_005",
+      "character": "オ",
+      "romaji": "o",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_006",
+      "character": "カ",
+      "romaji": "ka",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_007",
+      "character": "キ",
+      "romaji": "ki",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_008",
+      "character": "ク",
+      "romaji": "ku",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_009",
+      "character": "ケ",
+      "romaji": "ke",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_010",
+      "character": "コ",
+      "romaji": "ko",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_011",
+      "character": "サ",
+      "romaji": "sa",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_012",
+      "character": "シ",
+      "romaji": "shi",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_013",
+      "character": "ス",
+      "romaji": "su",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_014",
+      "character": "セ",
+      "romaji": "se",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_015",
+      "character": "ソ",
+      "romaji": "so",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_016",
+      "character": "タ",
+      "romaji": "ta",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_017",
+      "character": "チ",
+      "romaji": "chi",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_018",
+      "character": "ツ",
+      "romaji": "tsu",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_019",
+      "character": "テ",
+      "romaji": "te",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_020",
+      "character": "ト",
+      "romaji": "to",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_021",
+      "character": "ナ",
+      "romaji": "na",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_022",
+      "character": "ニ",
+      "romaji": "ni",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_023",
+      "character": "ヌ",
+      "romaji": "nu",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_024",
+      "character": "ネ",
+      "romaji": "ne",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_025",
+      "character": "ノ",
+      "romaji": "no",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_026",
+      "character": "ハ",
+      "romaji": "ha",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_027",
+      "character": "ヒ",
+      "romaji": "hi",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_028",
+      "character": "フ",
+      "romaji": "fu",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_029",
+      "character": "ヘ",
+      "romaji": "he",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_030",
+      "character": "ホ",
+      "romaji": "ho",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_031",
+      "character": "マ",
+      "romaji": "ma",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_032",
+      "character": "ミ",
+      "romaji": "mi",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_033",
+      "character": "ム",
+      "romaji": "mu",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_034",
+      "character": "メ",
+      "romaji": "me",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_035",
+      "character": "モ",
+      "romaji": "mo",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_036",
+      "character": "ヤ",
+      "romaji": "ya",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_037",
+      "character": "ユ",
+      "romaji": "yu",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_038",
+      "character": "ヨ",
+      "romaji": "yo",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_039",
+      "character": "ラ",
+      "romaji": "ra",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_040",
+      "character": "リ",
+      "romaji": "ri",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_041",
+      "character": "ル",
+      "romaji": "ru",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_042",
+      "character": "レ",
+      "romaji": "re",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_043",
+      "character": "ロ",
+      "romaji": "ro",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_044",
+      "character": "ワ",
+      "romaji": "wa",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_045",
+      "character": "ヲ",
+      "romaji": "wo",
+      "type": "katakana_basic"
+    },
+    {
+      "id": "ja_kana_046",
+      "character": "ン",
+      "romaji": "n",
+      "type": "katakana_basic"
+    }
+  ],
+  "katakana_dakuten": [
+    {
+      "id": "ja_kana_001",
+      "character": "ガ",
+      "romaji": "ga",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_002",
+      "character": "ギ",
+      "romaji": "gi",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_003",
+      "character": "グ",
+      "romaji": "gu",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_004",
+      "character": "ゲ",
+      "romaji": "ge",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_005",
+      "character": "ゴ",
+      "romaji": "go",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_006",
+      "character": "ザ",
+      "romaji": "za",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_007",
+      "character": "ジ",
+      "romaji": "ji",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_008",
+      "character": "ズ",
+      "romaji": "zu",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_009",
+      "character": "ゼ",
+      "romaji": "ze",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_010",
+      "character": "ゾ",
+      "romaji": "zo",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_011",
+      "character": "ダ",
+      "romaji": "da",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_012",
+      "character": "ヂ",
+      "romaji": "ji",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_013",
+      "character": "ヅ",
+      "romaji": "zu",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_014",
+      "character": "デ",
+      "romaji": "de",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_015",
+      "character": "ド",
+      "romaji": "do",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_016",
+      "character": "バ",
+      "romaji": "ba",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_017",
+      "character": "ビ",
+      "romaji": "bi",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_018",
+      "character": "ブ",
+      "romaji": "bu",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_019",
+      "character": "ベ",
+      "romaji": "be",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_020",
+      "character": "ボ",
+      "romaji": "bo",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_021",
+      "character": "パ",
+      "romaji": "pa",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_022",
+      "character": "ピ",
+      "romaji": "pi",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_023",
+      "character": "プ",
+      "romaji": "pu",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_024",
+      "character": "ペ",
+      "romaji": "pe",
+      "type": "katakana_dakuten"
+    },
+    {
+      "id": "ja_kana_025",
+      "character": "ポ",
+      "romaji": "po",
+      "type": "katakana_dakuten"
+    }
+  ],
+  "katakana_combos": [
+    {
+      "id": "ja_kana_001",
+      "character": "キャ",
+      "romaji": "kya",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_002",
+      "character": "キュ",
+      "romaji": "kyu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_003",
+      "character": "キョ",
+      "romaji": "kyo",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_004",
+      "character": "シャ",
+      "romaji": "sha",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_005",
+      "character": "シュ",
+      "romaji": "shu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_006",
+      "character": "ショ",
+      "romaji": "sho",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_007",
+      "character": "チャ",
+      "romaji": "cha",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_008",
+      "character": "チュ",
+      "romaji": "chu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_009",
+      "character": "チョ",
+      "romaji": "cho",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_010",
+      "character": "ニャ",
+      "romaji": "nya",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_011",
+      "character": "ニュ",
+      "romaji": "nyu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_012",
+      "character": "ニョ",
+      "romaji": "nyo",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_013",
+      "character": "ヒャ",
+      "romaji": "hya",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_014",
+      "character": "ヒュ",
+      "romaji": "hyu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_015",
+      "character": "ヒョ",
+      "romaji": "hyo",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_016",
+      "character": "ミャ",
+      "romaji": "mya",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_017",
+      "character": "ミュ",
+      "romaji": "myu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_018",
+      "character": "ミョ",
+      "romaji": "myo",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_019",
+      "character": "リャ",
+      "romaji": "rya",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_020",
+      "character": "リュ",
+      "romaji": "ryu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_021",
+      "character": "リョ",
+      "romaji": "ryo",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_022",
+      "character": "ギャ",
+      "romaji": "gya",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_023",
+      "character": "ギュ",
+      "romaji": "gyu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_024",
+      "character": "ギョ",
+      "romaji": "gyo",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_025",
+      "character": "ジャ",
+      "romaji": "ja",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_026",
+      "character": "ジュ",
+      "romaji": "ju",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_027",
+      "character": "ジョ",
+      "romaji": "jo",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_028",
+      "character": "ビャ",
+      "romaji": "bya",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_029",
+      "character": "ビュ",
+      "romaji": "byu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_030",
+      "character": "ビョ",
+      "romaji": "byo",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_031",
+      "character": "ピャ",
+      "romaji": "pya",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_032",
+      "character": "ピュ",
+      "romaji": "pyu",
+      "type": "katakana_combination"
+    },
+    {
+      "id": "ja_kana_033",
+      "character": "ピョ",
+      "romaji": "pyo",
+      "type": "katakana_combination"
+    }
+  ]
+}
