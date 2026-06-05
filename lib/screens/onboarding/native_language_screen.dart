@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/providers/locale_provider.dart';
+import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -59,6 +60,34 @@ class _NativeLanguageScreenState extends ConsumerState<NativeLanguageScreen> {
                 isSelected: _selectedLanguage == 'zh_TW',
                 onTap: () => setState(() => _selectedLanguage = 'zh_TW'),
               ),
+              SizedBox(height: 8.h),
+              _LanguageTile(
+                name: l10n.langNameZhCn,
+                code: 'zh_CN',
+                isSelected: _selectedLanguage == 'zh_CN',
+                onTap: () => setState(() => _selectedLanguage = 'zh_CN'),
+              ),
+              SizedBox(height: 8.h),
+              _LanguageTile(
+                name: l10n.langNameKo,
+                code: 'ko',
+                isSelected: _selectedLanguage == 'ko',
+                onTap: () => setState(() => _selectedLanguage = 'ko'),
+              ),
+              SizedBox(height: 8.h),
+              _LanguageTile(
+                name: l10n.langNameMs,
+                code: 'ms',
+                isSelected: _selectedLanguage == 'ms',
+                onTap: () => setState(() => _selectedLanguage = 'ms'),
+              ),
+              SizedBox(height: 8.h),
+              _LanguageTile(
+                name: l10n.langNameAr,
+                code: 'ar',
+                isSelected: _selectedLanguage == 'ar',
+                onTap: () => setState(() => _selectedLanguage = 'ar'),
+              ),
               const Spacer(),
               SizedBox(
                 width: double.infinity,
@@ -71,6 +100,7 @@ class _NativeLanguageScreenState extends ConsumerState<NativeLanguageScreen> {
                   ),
                   onPressed: () {
                     ref.read(localeProvider.notifier).setLocale(_selectedLanguage);
+                    ref.read(userProvider.notifier).updateProfile(nativeLanguage: _selectedLanguage);
                     context.push('/onboarding/learning-language');
                   },
                   child: Text(

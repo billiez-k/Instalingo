@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/providers/settings_provider.dart';
+import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -15,7 +16,9 @@ class LearningLanguageScreen extends ConsumerStatefulWidget {
 }
 
 class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen> {
-  String _selectedLanguage = 'ja';
+  String _selectedLevel = 'N5';
+
+  static const _jlptLevels = ['N5', 'N4', 'N3', 'N2', 'N1'];
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +36,7 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
         ),
       ),
       body: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(horizontal: 24.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,33 +44,41 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
               SizedBox(height: 12.h),
               Text(
                 l10n.onboardingSelectLearningLanguage,
-                style: TextStyle(
-                  fontSize: 28.sp,
-                  fontWeight: FontWeight.w800,
-                  color: appTheme.harborNavy,
-                ),
+                style: TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w800, color: appTheme.harborNavy),
               ),
               SizedBox(height: 8.h),
               Container(width: 24.w, height: 3, color: BusanHarborTokens.orange),
               SizedBox(height: 32.h),
-              // Japanese option
+              // Learning language: Japanese (only option)
+              Text(
+                l10n.learningLanguageLabel,
+                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w700, color: appTheme.harborInkOnNavyMuted),
+              ),
+              SizedBox(height: 8.h),
               _LanguageTile(
                 name: l10n.onboardingJapanese,
                 subtitle: l10n.onboardingJlptLevels,
-                isSelected: _selectedLanguage == 'ja',
+                isSelected: true,
                 enabled: true,
-                onTap: () => setState(() => _selectedLanguage = 'ja'),
-              ),
-              SizedBox(height: 8.h),
-              // Korean option (grayed out)
-              _LanguageTile(
-                name: l10n.onboardingKorean,
-                subtitle: l10n.onboardingComingSoon,
-                isSelected: false,
-                enabled: false,
                 onTap: () {},
               ),
-              const Spacer(),
+              SizedBox(height: 24.h),
+              // JLPT level picker
+              Text(
+                l10n.onboardingStartLevel,
+                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w700, color: appTheme.harborInkOnNavyMuted),
+              ),
+              SizedBox(height: 8.h),
+              ..._jlptLevels.map((level) => Padding(
+                    padding: EdgeInsets.only(bottom: 8.h),
+                    child: _LevelTile(
+                      level: level,
+                      isSelected: _selectedLevel == level,
+                      onTap: () => setState(() => _selectedLevel = level),
+                      appTheme: appTheme,
+                    ),
+                  )),
+              SizedBox(height: 24.h),
               SizedBox(
                 width: double.infinity,
                 height: 56.h,
@@ -78,6 +89,10 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
                   ),
                   onPressed: () {
+                    ref.read(userProvider.notifier).updateProfile(
+                          learningLanguage: 'ja',
+                          currentLevel: _selectedLevel,
+                        );
                     ref.read(onboardingCompleteProvider.notifier).complete();
                     context.go('/home');
                   },
@@ -87,9 +102,85 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
                   ),
                 ),
               ),
-              SizedBox(height: 24.h),
+              SizedBox(height: 32.h),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class _LevelTile extends StatelessWidget {
+  final String level;
+  final bool isSelected;
+  final VoidCallback onTap;
+  final AppThemeExtension appTheme;
+
+  const _LevelTile({
+    required this.level,
+    required this.isSelected,
+    required this.onTap,
+    required this.appTheme,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final descriptions = {
+      'N5': '~800 words • Total beginner',
+      'N4': '~1,500 words • Upper beginner',
+      'N3': '~3,700 words • Intermediate',
+      'N2': '~6,000 words • Upper intermediate',
+      'N1': '~10,000 words • Advanced',
+    };
+
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(8.r),
+          border: Border.all(
+            color: isSelected ? BusanHarborTokens.orange : appTheme.borderLight,
+            width: isSelected ? 2 : 1,
+          ),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 24.w,
+              height: 24.w,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: isSelected ? BusanHarborTokens.orange : Colors.transparent,
+                border: Border.all(
+                  color: isSelected ? BusanHarborTokens.orange : appTheme.borderLight,
+                  width: 2,
+                ),
+              ),
+              child: isSelected
+                  ? PhosphorIcon(PhosphorIcons.check(PhosphorIconsStyle.bold), size: 14.sp, color: Colors.white)
+                  : null,
+            ),
+            SizedBox(width: 14.w),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'JLPT $level',
+                    style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, color: appTheme.harborNavy),
+                  ),
+                  SizedBox(height: 2.h),
+                  Text(
+                    descriptions[level] ?? '',
+                    style: TextStyle(fontSize: 12.sp, color: appTheme.onSurfaceVariant),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );

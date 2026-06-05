@@ -175,6 +175,8 @@ abstract class AppLocalizations {
 
   String get learningLanguage;
 
+  String get learningLanguageLabel;
+
   String get lessons;
 
   String get levelAbbreviation;
@@ -226,6 +228,8 @@ abstract class AppLocalizations {
   String get onboardingSelectLearningLanguage;
 
   String get onboardingSelectNativeLanguage;
+
+  String get onboardingStartLevel;
 
   String get onboardingSmartReview;
 

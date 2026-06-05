@@ -250,6 +250,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get learningLanguage => 'Learning Language';
 
   @override
+  String get learningLanguageLabel => 'Learn';
+
+  @override
   String get lessons => 'Lessons';
 
   @override
@@ -335,6 +338,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onboardingSmartReviewDesc => 'FSRS-powered spaced repetition keeps words fresh. Review exactly when you need to.';
+
+  @override
+  String get onboardingStartLevel => 'Starting level';
 
   @override
   String get onboardingSwipeLearn => 'Swipe to learn new words';

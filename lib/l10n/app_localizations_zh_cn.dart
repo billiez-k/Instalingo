@@ -250,6 +250,9 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String get learningLanguage => '学习语言';
 
   @override
+  String get learningLanguageLabel => '学习语言';
+
+  @override
   String get lessons => '课程';
 
   @override
@@ -335,6 +338,9 @@ class AppLocalizationsZhCn extends AppLocalizations {
 
   @override
   String get onboardingSmartReviewDesc => 'FSRS 支持的间隔重复学习法能有效保持单词记忆。只需在需要时进行复习即可。';
+
+  @override
+  String get onboardingStartLevel => '起始等级';
 
   @override
   String get onboardingSwipeLearn => '滑动屏幕学习新词';

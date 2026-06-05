@@ -250,6 +250,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get learningLanguage => '언어 학습';
 
   @override
+  String get learningLanguageLabel => '학습 언어';
+
+  @override
   String get lessons => '수업';
 
   @override
@@ -335,6 +338,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get onboardingSmartReviewDesc => 'FSRS 기반의 간격 반복 학습으로 단어를 꾸준히 기억하세요. 필요할 때 정확하게 복습할 수 있습니다.';
+
+  @override
+  String get onboardingStartLevel => '시작 레벨';
 
   @override
   String get onboardingSwipeLearn => '스와이프하여 새로운 단어를 배워보세요';

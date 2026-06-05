@@ -250,6 +250,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get learningLanguage => 'تعلم اللغة';
 
   @override
+  String get learningLanguageLabel => 'لغة التعلم';
+
+  @override
   String get lessons => 'دروس';
 
   @override
@@ -335,6 +338,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get onboardingSmartReviewDesc => 'التكرار المتباعد المدعوم من FSRS يبقي الكلمات جديدة. قم بالمراجعة بالضبط عندما تحتاج إلى ذلك.';
+
+  @override
+  String get onboardingStartLevel => 'المستوى المبدئي';
 
   @override
   String get onboardingSwipeLearn => 'اسحب لتعلم كلمات جديدة';

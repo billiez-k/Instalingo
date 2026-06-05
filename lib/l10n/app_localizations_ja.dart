@@ -250,6 +250,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get learningLanguage => '言語学習';
 
   @override
+  String get learningLanguageLabel => '学習言語';
+
+  @override
   String get lessons => 'レッスン';
 
   @override
@@ -335,6 +338,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get onboardingSmartReviewDesc => 'FSRS（間隔反復システム）による間隔反復学習で、単語の記憶を定着させます。必要な時に必要なだけ復習できます。';
+
+  @override
+  String get onboardingStartLevel => '開始レベル';
 
   @override
   String get onboardingSwipeLearn => 'スワイプして新しい単語を学びましょう';
