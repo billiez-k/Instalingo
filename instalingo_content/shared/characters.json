@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sakura",
+    "name": "Sakura-chan",
+    "handle": "sakura_study",
+    "bio": "University student, 2 years studying Japanese. Loves literature and poetry.",
+    "avatar_url": null,
+    "level": "N3",
+    "personality": "artistic",
+    "color_hex": "#EE6C2C"
+  },
+  {
+    "id": "kenji",
+    "name": "Kenji-san",
+    "handle": "kenji_office",
+    "bio": "Office worker preparing for JLPT N2. Practical, business-focused learner.",
+    "avatar_url": null,
+    "level": "N2",
+    "personality": "practical",
+    "color_hex": "#3E7CB1"
+  },
+  {
+    "id": "yuki",
+    "name": "Yuki",
+    "handle": "yuki_art",
+    "bio": "Illustrator who memorizes words through drawing. Creative and visual learner.",
+    "avatar_url": null,
+    "level": "N3",
+    "personality": "creative",
+    "color_hex": "#D04B43"
+  },
+  {
+    "id": "yamada",
+    "name": "Yamada-sensei",
+    "handle": "yamada_sensei",
+    "bio": "Japanese teacher with 10+ years experience. Loves sharing learning tips.",
+    "avatar_url": null,
+    "level": "N1",
+    "personality": "teacher",
+    "color_hex": "#CD7F32"
+  },
+  {
+    "id": "hiro",
+    "name": "Hiro-kun",
+    "handle": "hiro_travels",
+    "bio": "Backpacker learning Japanese while traveling across Japan. Adventurous spirit.",
+    "avatar_url": null,
+    "level": "N5",
+    "personality": "adventurous",
+    "color_hex": "#2E8B57"
+  },
+  {
+    "id": "mika",
+    "name": "Mika-chan",
+    "handle": "mika_drama",
+    "bio": "University student learning Japanese through dramas and movies. Lively and fun.",
+    "avatar_url": null,
+    "level": "N4",
+    "personality": "lively",
+    "color_hex": "#9370DB"
+  }
+]

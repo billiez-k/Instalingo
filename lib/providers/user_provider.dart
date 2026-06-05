@@ -1,27 +1,46 @@
+import 'dart:convert';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:instalingo/data/demo_data.dart';
 import 'package:instalingo/models/user.dart';
-import 'package:instalingo/providers/onboarding_provider.dart';
-import 'package:instalingo/services/offline_service.dart';
+import 'package:instalingo/providers/settings_provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 final userProvider = StateNotifierProvider<UserNotifier, UserProfile>((ref) {
-  return UserNotifier();
+  return UserNotifier(ref);
 });
 
 class UserNotifier extends StateNotifier<UserProfile> {
-  UserNotifier() : super(DemoData.user) {
-    _loadOffline();
+  final Ref _ref;
+
+  UserNotifier(this._ref)
+      : super(UserProfile(
+          id: 'user_1',
+          displayName: 'Learner',
+          nativeLanguage: 'zh_TW',
+          learningLanguage: 'ja',
+          currentLevel: 'N5',
+          dailyGoal: 20,
+          joinedAt: DateTime(2026, 6, 1),
+        )) {
+    _load();
   }
 
-  Future<void> _loadOffline() async {
-    final offline = await OfflineService.loadUser(DemoData.user);
-    if (offline != null) {
-      state = offline;
+  SharedPreferences? _prefs;
+
+  Future<void> _load() async {
+    final prefs = await _ref.read(sharedPrefsProvider.future);
+    _prefs = prefs;
+    final json = prefs.getString('user_profile');
+    if (json != null) {
+      try {
+        state = UserProfile.fromJson(jsonDecode(json) as Map<String, dynamic>);
+      } catch (_) {}
     }
   }
 
   Future<void> _save() async {
-    await OfflineService.saveUser(state);
+    if (_prefs == null) return;
+    await _prefs!.setString('user_profile', jsonEncode(state.toJson()));
   }
 
   void updateProfile({
@@ -29,13 +48,10 @@ class UserNotifier extends StateNotifier<UserProfile> {
     String? email,
     String? nativeLanguage,
     String? learningLanguage,
+    String? currentLevel,
     String? proficiencyLevel,
-    LearningGoal? learningGoal,
-    String? examType,
     int? dailyGoal,
-    List<String>? motivations,
     bool? notificationsEnabled,
-    bool? reminderEnabled,
     String? reminderTime,
   }) {
     state = state.copyWith(
@@ -43,13 +59,10 @@ class UserNotifier extends StateNotifier<UserProfile> {
       email: email,
       nativeLanguage: nativeLanguage,
       learningLanguage: learningLanguage,
+      currentLevel: currentLevel,
       proficiencyLevel: proficiencyLevel,
-      learningGoal: learningGoal,
-      examType: examType,
       dailyGoal: dailyGoal,
-      motivations: motivations,
       notificationsEnabled: notificationsEnabled,
-      reminderEnabled: reminderEnabled,
       reminderTime: reminderTime,
     );
     _save();
@@ -70,13 +83,29 @@ class UserNotifier extends StateNotifier<UserProfile> {
     _save();
   }
 
-  void unlockAchievement(String achievementId) {
-    if (!state.achievements.contains(achievementId)) {
-      state = state.copyWith(
-        achievements: [...state.achievements, achievementId],
-      );
-      _save();
-    }
+  void saveWord(String cardId) {
+    if (state.savedWords.contains(cardId)) return;
+    final updated = Set<String>.from(state.savedWords)..add(cardId);
+    state = state.copyWith(savedWords: updated);
+    _save();
+  }
+
+  void markAlreadyKnew(String cardId) {
+    if (state.alreadyKnewWords.contains(cardId)) return;
+    final updated = Set<String>.from(state.alreadyKnewWords)..add(cardId);
+    state = state.copyWith(alreadyKnewWords: updated);
+    _save();
+  }
+
+  void incrementCardsSwiped() {
+    state = state.copyWith(totalCardsSwiped: state.totalCardsSwiped + 1);
+    _save();
+  }
+
+  void unlockAchievement(String id) {
+    if (state.achievements.contains(id)) return;
+    state = state.copyWith(achievements: [...state.achievements, id]);
+    _save();
   }
 
   void upgradeToPro() {
@@ -87,12 +116,11 @@ class UserNotifier extends StateNotifier<UserProfile> {
     _save();
   }
 
-  /// Adds vocabulary words to the user's learned-words set.
-  /// Called by [CourseNotifier] when a lesson is completed.
-  void addLearnedWords(List<String> words) {
-    if (words.isEmpty) return;
-    final updated = Set<String>.from(state.learnedWords)..addAll(words);
-    state = state.copyWith(learnedWords: updated);
-    _save();
+  bool isWordSaved(String cardId) {
+    return state.savedWords.contains(cardId);
+  }
+
+  bool isWordAlreadyKnew(String cardId) {
+    return state.alreadyKnewWords.contains(cardId);
   }
 }

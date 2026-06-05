@@ -51,7 +51,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
       final prefs = ref.read(sharedPrefsProvider);
       final onboardingComplete = prefs.value?.getBool('onboarding_complete') ?? false;
       if (onboardingComplete) {
-        context.go('/learn');
+        context.go('/home');
       } else {
         context.go('/onboarding');
       }

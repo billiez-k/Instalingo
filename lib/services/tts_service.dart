@@ -1,6 +1,6 @@
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:instalingo/providers/settings_provider.dart';
+
 
 /// Device TTS service — uses the phone's built-in voice engine.
 /// Korean and Japanese voices are built into iOS (excellent) and Android (decent).

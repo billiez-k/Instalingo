@@ -1,0 +1,647 @@
+[
+  {
+    "id": "chill_001",
+    "author_name": "Sakura-chan",
+    "author_handle": "sakura_study",
+    "author_avatar_url": null,
+    "content_en": "Finally mastered ああ (ああ) today! It means \"ah!; oh!; alas!\". Been seeing it everywhere in my textbook. Small wins! 🎉",
+    "content_zh": "今天終於掌握了ああ（ああ）！意思是「啊！哦！唉！」。在課本裡到處都看得到這個字。小小的勝利！",
+    "content": "Finally mastered ああ (ああ) today! It means \"ah!; oh!; alas!\". Been seeing it everywhere in my textbook. Small wins! 🎉",
+    "target_word": "ああ",
+    "target_word_id": "ja_n5_0001",
+    "tags": [
+      "N5",
+      "noun",
+      "artistic"
+    ],
+    "likes": 69,
+    "comments": [
+      {
+        "author_name": "Yuki",
+        "content": "Drawing this one helped me memorize it!",
+        "content_zh": "畫這個字幫助我記住了！"
+      }
+    ],
+    "created_at": "2026-06-04T00:00:00Z"
+  },
+  {
+    "id": "chill_002",
+    "author_name": "Kenji-san",
+    "author_handle": "kenji_office",
+    "author_avatar_url": null,
+    "content_en": "Kanji breakdown: 会う → pronounced あう. Meaning: to meet; to encounter; to see. Writing it out 10 times really helped it stick!",
+    "content_zh": "漢字拆解：會う → 讀作あう。意思：相遇；碰面；看見。寫了十遍之後真的記住了！",
+    "content": "Kanji breakdown: 会う → pronounced あう. Meaning: to meet; to encounter; to see. Writing it out 10 times really helped it stick!",
+    "target_word": "会う",
+    "target_word_id": "ja_n5_0002",
+    "tags": [
+      "N5",
+      "noun",
+      "practical"
+    ],
+    "likes": 152,
+    "comments": [
+      {
+        "author_name": "Mika-chan",
+        "content": "I learned this one too! Such a useful word.",
+        "content_zh": "我也學過這個字！真的很實用。"
+      }
+    ],
+    "created_at": "2026-06-02T17:00:00Z"
+  },
+  {
+    "id": "chill_003",
+    "author_name": "Yuki",
+    "author_handle": "yuki_art",
+    "author_avatar_url": null,
+    "content_en": "Just used 青 (あお) in a real conversation! The cashier understood me. This feeling is why I study Japanese.",
+    "content_zh": "剛剛在實際對話中用了青（あお）！店員聽懂了。這就是我學日文的動力。",
+    "content": "Just used 青 (あお) in a real conversation! The cashier understood me. This feeling is why I study Japanese.",
+    "target_word": "青",
+    "target_word_id": "ja_n5_0003",
+    "tags": [
+      "N5",
+      "noun",
+      "creative"
+    ],
+    "likes": 126,
+    "comments": [],
+    "created_at": "2026-06-01T20:00:00Z"
+  },
+  {
+    "id": "chill_004",
+    "author_name": "Yamada-sensei",
+    "author_handle": "yamada_sensei",
+    "author_avatar_url": null,
+    "content_en": "青い (あおい) = blue; azure; green. Added this one to my collection today. Anyone else collecting words by topic?",
+    "content_zh": "青い（あおい）= 藍色；天藍色；綠色。今天把這個字加進收藏了。有人也按照主題收集單字嗎？",
+    "content": "青い (あおい) = blue; azure; green. Added this one to my collection today. Anyone else collecting words by topic?",
+    "target_word": "青い",
+    "target_word_id": "ja_n5_0004",
+    "tags": [
+      "N5",
+      "noun",
+      "teacher"
+    ],
+    "likes": 64,
+    "comments": [
+      {
+        "author_name": "Sakura-chan",
+        "content": "Beautiful word choice! Love the kanji on this one.",
+        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+      }
+    ],
+    "created_at": "2026-05-31T03:00:00Z"
+  },
+  {
+    "id": "chill_005",
+    "author_name": "Hiro-kun",
+    "author_handle": "hiro_travels",
+    "author_avatar_url": null,
+    "content_en": "Teaching tip: 赤 (あか). Instead of just memorizing \"red; crimson; scarlet\", try using it in 3 original sentences. Context is everything!",
+    "content_zh": "教學小技巧：赤（あか）。不要只背「紅色；深紅色；猩紅色」，試著用這個字造三個原創句子。情境最重要！",
+    "content": "Teaching tip: 赤 (あか). Instead of just memorizing \"red; crimson; scarlet\", try using it in 3 original sentences. Context is everything!",
+    "target_word": "赤",
+    "target_word_id": "ja_n5_0005",
+    "tags": [
+      "N5",
+      "noun",
+      "adventurous"
+    ],
+    "likes": 291,
+    "comments": [],
+    "created_at": "2026-05-30T22:00:00Z"
+  },
+  {
+    "id": "chill_006",
+    "author_name": "Mika-chan",
+    "author_handle": "mika_drama",
+    "author_avatar_url": null,
+    "content_en": "Mnemonic for 赤い: it sounds like \"あかい\" and means \"red; crimson; scarlet\". I picture it in my mind and the kanji sticks better.",
+    "content_zh": "赤い的記憶法：讀音像「あかい」，意思是「紅色；深紅色；猩紅色」。我在腦中想像畫面，漢字就更容易記住。",
+    "content": "Mnemonic for 赤い: it sounds like \"あかい\" and means \"red; crimson; scarlet\". I picture it in my mind and the kanji sticks better.",
+    "target_word": "赤い",
+    "target_word_id": "ja_n5_0006",
+    "tags": [
+      "N5",
+      "noun",
+      "lively"
+    ],
+    "likes": 314,
+    "comments": [
+      {
+        "author_name": "Mika-chan",
+        "content": "I learned this one too! Such a useful word.",
+        "content_zh": "我也學過這個字！真的很實用。"
+      }
+    ],
+    "created_at": "2026-05-29T11:00:00Z"
+  },
+  {
+    "id": "chill_007",
+    "author_name": "Takeshi",
+    "author_handle": "takeshi_dev",
+    "author_avatar_url": null,
+    "content_en": "Saw 明るい (あかるい) on a sign today and actually read it without thinking. When your brain just KNOWS — best feeling ever.",
+    "content_zh": "今天在招牌上看到明るい（あかるい），完全不用思考就讀出來了。當大腦自動認得的時候——最棒的感覺。",
+    "content": "Saw 明るい (あかるい) on a sign today and actually read it without thinking. When your brain just KNOWS — best feeling ever.",
+    "target_word": "明るい",
+    "target_word_id": "ja_n5_0007",
+    "tags": [
+      "N5",
+      "noun",
+      "analytical"
+    ],
+    "likes": 28,
+    "comments": [
+      {
+        "author_name": "Sakura-chan",
+        "content": "Beautiful word choice! Love the kanji on this one.",
+        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+      },
+      {
+        "author_name": "Hana",
+        "content": "I remember this from a restaurant menu!",
+        "content_zh": "我在餐廳菜單上記得這個字！"
+      }
+    ],
+    "created_at": "2026-05-29T00:00:00Z"
+  },
+  {
+    "id": "chill_008",
+    "author_name": "Hana",
+    "author_handle": "hana_foodie",
+    "author_avatar_url": null,
+    "content_en": "Morning coffee + 秋 (あき) review session. Starting the day with one new word and one review. Simple but consistent!",
+    "content_zh": "早安咖啡＋秋（あき）複習時間。每天從一個新字加一個複習開始。簡單但持續！",
+    "content": "Morning coffee + 秋 (あき) review session. Starting the day with one new word and one review. Simple but consistent!",
+    "target_word": "秋",
+    "target_word_id": "ja_n5_0008",
+    "tags": [
+      "N5",
+      "noun",
+      "friendly"
+    ],
+    "likes": 59,
+    "comments": [
+      {
+        "author_name": "Kenji-san",
+        "content": "Adding this to my study list right now.",
+        "content_zh": "馬上把這個加到我的學習清單。"
+      },
+      {
+        "author_name": "Yuki",
+        "content": "Drawing this one helped me memorize it!",
+        "content_zh": "畫這個字幫助我記住了！"
+      }
+    ],
+    "created_at": "2026-05-27T18:00:00Z"
+  },
+  {
+    "id": "chill_009",
+    "author_name": "Sakura-chan",
+    "author_handle": "sakura_study",
+    "author_avatar_url": null,
+    "content_en": "JLPT prep update: 開く (あく) is on my N3 list. Meaning: to open; to undo; to unseal. How's everyone else's prep going? We got this!",
+    "content_zh": "JLPT備考更新：開く（あく）在我的N3清單上。意思：打開；解開；打開密封。大家的準備進度如何？我們可以的！",
+    "content": "JLPT prep update: 開く (あく) is on my N3 list. Meaning: to open; to undo; to unseal. How's everyone else's prep going? We got this!",
+    "target_word": "開く",
+    "target_word_id": "ja_n5_0009",
+    "tags": [
+      "N5",
+      "noun",
+      "artistic"
+    ],
+    "likes": 131,
+    "comments": [
+      {
+        "author_name": "Hiro-kun",
+        "content": "Nice! I struggle with this one actually.",
+        "content_zh": "讚！其實我對這個字還不太熟。"
+      },
+      {
+        "author_name": "Sakura-chan",
+        "content": "Beautiful word choice! Love the kanji on this one.",
+        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+      }
+    ],
+    "created_at": "2026-05-26T08:00:00Z"
+  },
+  {
+    "id": "chill_010",
+    "author_name": "Kenji-san",
+    "author_handle": "kenji_office",
+    "author_avatar_url": null,
+    "content_en": "Cracked 開ける (あける) today. For the longest time I kept mixing this up with similar words. Finally sorted! Meaning: to open (a door, etc.); to unwrap (e.g. parcel, package); to unlock.",
+    "content_zh": "今天終於搞懂開ける（あける）了。之前一直跟類似的字搞混。終於分清楚了！意思：打開（門等）；拆開（包裹、包裝）；解鎖。",
+    "content": "Cracked 開ける (あける) today. For the longest time I kept mixing this up with similar words. Finally sorted! Meaning: to open (a door, etc.); to unwrap (e.g. parcel, package); to unlock.",
+    "target_word": "開ける",
+    "target_word_id": "ja_n5_0010",
+    "tags": [
+      "N5",
+      "noun",
+      "practical"
+    ],
+    "likes": 320,
+    "comments": [],
+    "created_at": "2026-05-26T00:00:00Z"
+  },
+  {
+    "id": "chill_011",
+    "author_name": "Yuki",
+    "author_handle": "yuki_art",
+    "author_avatar_url": null,
+    "content_en": "Drew 上げる (あげる) in my sketchbook today. Visual learners unite! The kanji actually looks a bit like its meaning \"to raise; to elevate; to move something (to a higher place)\" if you squint.",
+    "content_zh": "今天在素描本上畫了上げる（あげる）。視覺學習者站出來！仔細看的話，這個漢字真的有點像它的意思「舉起；抬高；將某物移到（更高的地方）」。",
+    "content": "Drew 上げる (あげる) in my sketchbook today. Visual learners unite! The kanji actually looks a bit like its meaning \"to raise; to elevate; to move something (to a higher place)\" if you squint.",
+    "target_word": "上げる",
+    "target_word_id": "ja_n5_0011",
+    "tags": [
+      "N5",
+      "noun",
+      "creative"
+    ],
+    "likes": 299,
+    "comments": [
+      {
+        "author_name": "Hiro-kun",
+        "content": "Nice! I struggle with this one actually.",
+        "content_zh": "讚！其實我對這個字還不太熟。"
+      }
+    ],
+    "created_at": "2026-05-24T18:00:00Z"
+  },
+  {
+    "id": "chill_012",
+    "author_name": "Yamada-sensei",
+    "author_handle": "yamada_sensei",
+    "author_avatar_url": null,
+    "content_en": "Made flashcards for 朝 (あさ) with washi tape and coloured pens. Who says studying can't be aesthetic? ✨ Meaning: morning; breakfast.",
+    "content_zh": "用和紙膠帶和彩色筆做了朝（あさ）的單字卡。誰說學習不能有美感？意思：上午；早餐。",
+    "content": "Made flashcards for 朝 (あさ) with washi tape and coloured pens. Who says studying can't be aesthetic? ✨ Meaning: morning; breakfast.",
+    "target_word": "朝",
+    "target_word_id": "ja_n5_0012",
+    "tags": [
+      "N5",
+      "noun",
+      "teacher"
+    ],
+    "likes": 291,
+    "comments": [
+      {
+        "author_name": "Hana",
+        "content": "I remember this from a restaurant menu!",
+        "content_zh": "我在餐廳菜單上記得這個字！"
+      }
+    ],
+    "created_at": "2026-05-23T11:00:00Z"
+  },
+  {
+    "id": "chill_013",
+    "author_name": "Hiro-kun",
+    "author_handle": "hiro_travels",
+    "author_avatar_url": null,
+    "content_en": "Honest confession: I've looked up 朝御飯 (あさごはん) at least 5 times this month. It just won't stick. But today... today it finally clicked. breakfast.",
+    "content_zh": "老實說：這個月我至少查了朝御飯（あさごはん）五次。就是記不住。但今天…今天終於開竅了。早餐。",
+    "content": "Honest confession: I've looked up 朝御飯 (あさごはん) at least 5 times this month. It just won't stick. But today... today it finally clicked. breakfast.",
+    "target_word": "朝御飯",
+    "target_word_id": "ja_n5_0013",
+    "tags": [
+      "N5",
+      "noun",
+      "adventurous"
+    ],
+    "likes": 124,
+    "comments": [
+      {
+        "author_name": "Sakura-chan",
+        "content": "Beautiful word choice! Love the kanji on this one.",
+        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+      },
+      {
+        "author_name": "Hiro-kun",
+        "content": "Nice! I struggle with this one actually.",
+        "content_zh": "讚！其實我對這個字還不太熟。"
+      }
+    ],
+    "created_at": "2026-05-22T10:00:00Z"
+  },
+  {
+    "id": "chill_014",
+    "author_name": "Mika-chan",
+    "author_handle": "mika_drama",
+    "author_avatar_url": null,
+    "content_en": "明後日 (あさって) — been avoiding this one because the kanji looked scary. Finally faced it today. It's actually not that bad! Meaning: day after tomorrow; wrong (e.g. direction).",
+    "content_zh": "明後日（あさって）——一直因為漢字看起來很可怕而逃避這個字。今天終於面對它了。其實沒那麼難！意思：後天；錯誤（例如方向錯誤）。",
+    "content": "明後日 (あさって) — been avoiding this one because the kanji looked scary. Finally faced it today. It's actually not that bad! Meaning: day after tomorrow; wrong (e.g. direction).",
+    "target_word": "明後日",
+    "target_word_id": "ja_n5_0014",
+    "tags": [
+      "N5",
+      "noun",
+      "lively"
+    ],
+    "likes": 313,
+    "comments": [
+      {
+        "author_name": "Yamada-sensei",
+        "content": "Great work! Keep that momentum going.",
+        "content_zh": "做得好！繼續保持這個動力。"
+      },
+      {
+        "author_name": "Hiro-kun",
+        "content": "Nice! I struggle with this one actually.",
+        "content_zh": "讚！其實我對這個字還不太熟。"
+      }
+    ],
+    "created_at": "2026-05-21T16:00:00Z"
+  },
+  {
+    "id": "chill_015",
+    "author_name": "Takeshi",
+    "author_handle": "takeshi_dev",
+    "author_avatar_url": null,
+    "content_en": "Question: how do YOU remember 足; 脚 (あし)? I'm trying a new method and curious what works for others. For reference, it means \"foot; leg\".",
+    "content_zh": "提問：你都怎麼記住足; 脚（あし）的？我在嘗試新方法，想知道其他人用什麼方式。意思：「腳；腿」。",
+    "content": "Question: how do YOU remember 足; 脚 (あし)? I'm trying a new method and curious what works for others. For reference, it means \"foot; leg\".",
+    "target_word": "足; 脚",
+    "target_word_id": "ja_n5_0015",
+    "tags": [
+      "N5",
+      "noun",
+      "analytical"
+    ],
+    "likes": 15,
+    "comments": [],
+    "created_at": "2026-05-20T19:00:00Z"
+  },
+  {
+    "id": "chill_016",
+    "author_name": "Hana",
+    "author_handle": "hana_foodie",
+    "author_avatar_url": null,
+    "content_en": "Challenge: use 明日 (あした) in a sentence today! Drop yours below — let's learn together. Meaning hint: tomorrow; near future.",
+    "content_zh": "挑戰：今天用明日（あした）造一個句子！在下面留言你的句子——讓我們一起學習。意思提示：明天；不久的將來。",
+    "content": "Challenge: use 明日 (あした) in a sentence today! Drop yours below — let's learn together. Meaning hint: tomorrow; near future.",
+    "target_word": "明日",
+    "target_word_id": "ja_n5_0016",
+    "tags": [
+      "N5",
+      "noun",
+      "friendly"
+    ],
+    "likes": 228,
+    "comments": [
+      {
+        "author_name": "Takeshi",
+        "content": "Solid word. I use Anki for this kind of vocab.",
+        "content_zh": "好字。我用Anki來記這種詞彙。"
+      },
+      {
+        "author_name": "Sakura-chan",
+        "content": "Beautiful word choice! Love the kanji on this one.",
+        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+      }
+    ],
+    "created_at": "2026-05-19T14:00:00Z"
+  },
+  {
+    "id": "chill_017",
+    "author_name": "Sakura-chan",
+    "author_handle": "sakura_study",
+    "author_avatar_url": null,
+    "content_en": "Day 30 of my streak! Today's word: あそこ (あそこ) — there; over there; that place. Consistency over intensity. 30 days ago I couldn't read any of these.",
+    "content_zh": "連續第30天！今天的單字：あそこ（あそこ）——那裡；那邊；那個地方。持之以恆比一時衝刺更重要。30天前我一個字都看不懂。",
+    "content": "Day 30 of my streak! Today's word: あそこ (あそこ) — there; over there; that place. Consistency over intensity. 30 days ago I couldn't read any of these.",
+    "target_word": "あそこ",
+    "target_word_id": "ja_n5_0017",
+    "tags": [
+      "N5",
+      "noun",
+      "artistic"
+    ],
+    "likes": 154,
+    "comments": [],
+    "created_at": "2026-05-18T20:00:00Z"
+  },
+  {
+    "id": "chill_018",
+    "author_name": "Kenji-san",
+    "author_handle": "kenji_office",
+    "author_avatar_url": null,
+    "content_en": "Just hit 100 saved words! My favourite from this batch: 遊ぶ (あそぶ). It means \"to play (games, sports); to enjoy oneself; to have a good time\" and it's just a fun word to say out loud.",
+    "content_zh": "收藏剛破100個字！這一批最喜歡的：遊ぶ（あそぶ）。意思是「玩耍（遊戲、運動）；享受；玩得開心」，唸出來就很好玩的字。",
+    "content": "Just hit 100 saved words! My favourite from this batch: 遊ぶ (あそぶ). It means \"to play (games, sports); to enjoy oneself; to have a good time\" and it's just a fun word to say out loud.",
+    "target_word": "遊ぶ",
+    "target_word_id": "ja_n5_0018",
+    "tags": [
+      "N5",
+      "noun",
+      "practical"
+    ],
+    "likes": 122,
+    "comments": [
+      {
+        "author_name": "Yuki",
+        "content": "Drawing this one helped me memorize it!",
+        "content_zh": "畫這個字幫助我記住了！"
+      }
+    ],
+    "created_at": "2026-05-17T14:00:00Z"
+  },
+  {
+    "id": "chill_019",
+    "author_name": "Yuki",
+    "author_handle": "yuki_art",
+    "author_avatar_url": null,
+    "content_en": "Watching a Japanese drama and they kept saying 暖かい (あたたかい). Now I can't un-hear it. Learning through media really works! Meaning: warm; mild; considerate.",
+    "content_zh": "看日劇時一直聽到暖かい（あたたかい）。現在回不去了，到處都聽得到。透過媒體學習真的有效！意思：溫暖的；溫和的；體貼的。",
+    "content": "Watching a Japanese drama and they kept saying 暖かい (あたたかい). Now I can't un-hear it. Learning through media really works! Meaning: warm; mild; considerate.",
+    "target_word": "暖かい",
+    "target_word_id": "ja_n5_0019",
+    "tags": [
+      "N5",
+      "noun",
+      "creative"
+    ],
+    "likes": 64,
+    "comments": [
+      {
+        "author_name": "Hana",
+        "content": "I remember this from a restaurant menu!",
+        "content_zh": "我在餐廳菜單上記得這個字！"
+      }
+    ],
+    "created_at": "2026-05-16T22:00:00Z"
+  },
+  {
+    "id": "chill_020",
+    "author_name": "Yamada-sensei",
+    "author_handle": "yamada_sensei",
+    "author_avatar_url": null,
+    "content_en": "Went to a Japanese restaurant and recognized 頭 (あたま) on the menu! Ordered it and it was delicious. Best way to learn: eat. Meaning: counter for large animals (e.g. head of cattle); counter for insects in a collec.",
+    "content_zh": "去日本餐廳在菜單上認出了頭（あたま）！點來吃，超好吃。最好的學習方式：吃。意思：大型動物（例如牛頭）計數器；昆蟲收藏計數器；頭盔、面具等計數器。。",
+    "content": "Went to a Japanese restaurant and recognized 頭 (あたま) on the menu! Ordered it and it was delicious. Best way to learn: eat. Meaning: counter for large animals (e.g. head of cattle); counter for insects in a collec.",
+    "target_word": "頭",
+    "target_word_id": "ja_n5_0020",
+    "tags": [
+      "N5",
+      "noun",
+      "teacher"
+    ],
+    "likes": 206,
+    "comments": [
+      {
+        "author_name": "Hana",
+        "content": "I remember this from a restaurant menu!",
+        "content_zh": "我在餐廳菜單上記得這個字！"
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "Adding this to my study list right now.",
+        "content_zh": "馬上把這個加到我的學習清單。"
+      }
+    ],
+    "created_at": "2026-05-15T21:00:00Z"
+  },
+  {
+    "id": "chill_021",
+    "author_name": "Hiro-kun",
+    "author_handle": "hiro_travels",
+    "author_avatar_url": null,
+    "content_en": "Late night study session. 新しい (あたらしい) is tonight's deep dive. Meaning: new; novel; fresh. Something about studying when the world is quiet hits different.",
+    "content_zh": "深夜學習時間。新しい（あたらしい）是今晚的深入研究對象。意思：新的；新穎的；新鮮的。夜深人靜時學習，感覺就是不一樣。",
+    "content": "Late night study session. 新しい (あたらしい) is tonight's deep dive. Meaning: new; novel; fresh. Something about studying when the world is quiet hits different.",
+    "target_word": "新しい",
+    "target_word_id": "ja_n5_0021",
+    "tags": [
+      "N5",
+      "noun",
+      "adventurous"
+    ],
+    "likes": 195,
+    "comments": [
+      {
+        "author_name": "Kenji-san",
+        "content": "Adding this to my study list right now.",
+        "content_zh": "馬上把這個加到我的學習清單。"
+      }
+    ],
+    "created_at": "2026-05-14T13:00:00Z"
+  },
+  {
+    "id": "chill_022",
+    "author_name": "Mika-chan",
+    "author_handle": "mika_drama",
+    "author_avatar_url": null,
+    "content_en": "Can't sleep so I'm reviewing words. あちら (あちら) came up — \"that way; that direction; over there\". At least insomnia is productive tonight.",
+    "content_zh": "睡不著所以在複習單字。あちら（あちら）出現了——「那邊；那個方向；那邊」。至少今晚失眠是有生產力的。",
+    "content": "Can't sleep so I'm reviewing words. あちら (あちら) came up — \"that way; that direction; over there\". At least insomnia is productive tonight.",
+    "target_word": "あちら",
+    "target_word_id": "ja_n5_0022",
+    "tags": [
+      "N5",
+      "noun",
+      "lively"
+    ],
+    "likes": 147,
+    "comments": [
+      {
+        "author_name": "Sakura-chan",
+        "content": "Beautiful word choice! Love the kanji on this one.",
+        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+      }
+    ],
+    "created_at": "2026-05-13T23:00:00Z"
+  },
+  {
+    "id": "chill_023",
+    "author_name": "Takeshi",
+    "author_handle": "takeshi_dev",
+    "author_avatar_url": null,
+    "content_en": "Finally mastered 暑い (あつい) today! It means \"hot; warm; sultry\". Been seeing it everywhere in my textbook. Small wins! 🎉",
+    "content_zh": "今天終於掌握了暑い（あつい）！意思是「炎熱的；溫暖的；悶熱的」。在課本裡到處都看得到這個字。小小的勝利！",
+    "content": "Finally mastered 暑い (あつい) today! It means \"hot; warm; sultry\". Been seeing it everywhere in my textbook. Small wins! 🎉",
+    "target_word": "暑い",
+    "target_word_id": "ja_n5_0023",
+    "tags": [
+      "N5",
+      "noun",
+      "analytical"
+    ],
+    "likes": 247,
+    "comments": [
+      {
+        "author_name": "Takeshi",
+        "content": "Solid word. I use Anki for this kind of vocab.",
+        "content_zh": "好字。我用Anki來記這種詞彙。"
+      },
+      {
+        "author_name": "Yuki",
+        "content": "Drawing this one helped me memorize it!",
+        "content_zh": "畫這個字幫助我記住了！"
+      }
+    ],
+    "created_at": "2026-05-12T07:00:00Z"
+  },
+  {
+    "id": "chill_024",
+    "author_name": "Hana",
+    "author_handle": "hana_foodie",
+    "author_avatar_url": null,
+    "content_en": "Kanji breakdown: 熱い → pronounced あつい. Meaning: hot (to the touch); passionate (feelings, etc.); ardent. Writing it out 10 times really helped it stick!",
+    "content_zh": "漢字拆解：熱い → 讀作あつい。意思：滾燙的；熱烈的；熱情的。寫了十遍之後真的記住了！",
+    "content": "Kanji breakdown: 熱い → pronounced あつい. Meaning: hot (to the touch); passionate (feelings, etc.); ardent. Writing it out 10 times really helped it stick!",
+    "target_word": "熱い",
+    "target_word_id": "ja_n5_0024",
+    "tags": [
+      "N5",
+      "noun",
+      "friendly"
+    ],
+    "likes": 75,
+    "comments": [
+      {
+        "author_name": "Kenji-san",
+        "content": "Adding this to my study list right now.",
+        "content_zh": "馬上把這個加到我的學習清單。"
+      }
+    ],
+    "created_at": "2026-05-11T12:00:00Z"
+  },
+  {
+    "id": "chill_025",
+    "author_name": "Sakura-chan",
+    "author_handle": "sakura_study",
+    "author_avatar_url": null,
+    "content_en": "Just used 厚い (あつい) in a real conversation! The cashier understood me. This feeling is why I study Japanese.",
+    "content_zh": "剛剛在實際對話中用了厚い（あつい）！店員聽懂了。這就是我學日文的動力。",
+    "content": "Just used 厚い (あつい) in a real conversation! The cashier understood me. This feeling is why I study Japanese.",
+    "target_word": "厚い",
+    "target_word_id": "ja_n5_0025",
+    "tags": [
+      "N5",
+      "noun",
+      "artistic"
+    ],
+    "likes": 52,
+    "comments": [
+      {
+        "author_name": "Mika-chan",
+        "content": "I learned this one too! Such a useful word.",
+        "content_zh": "我也學過這個字！真的很實用。"
+      },
+      {
+        "author_name": "Yamada-sensei",
+        "content": "Great work! Keep that momentum going.",
+        "content_zh": "做得好！繼續保持這個動力。"
+      },
+      {
+        "author_name": "Mika-chan",
+        "content": "I learned this one too! Such a useful word.",
+        "content_zh": "我也學過這個字！真的很實用。"
+      }
+    ],
+    "created_at": "2026-05-10T07:00:00Z"
+  }
+]

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:instalingo/providers/onboarding_provider.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
+import 'package:instalingo/providers/settings_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -15,20 +15,23 @@ class LearningLanguageScreen extends ConsumerStatefulWidget {
 }
 
 class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen> {
-  String? _selectedLanguage;
-
-  final List<_LanguageOption> languages = const [
-    _LanguageOption(code: 'ja', name: '日本語', flag: 'JP', subtitle: 'JLPT N5–N1'),
-    _LanguageOption(code: 'ko', name: '한국어', flag: 'KR', subtitle: 'TOPIK I–II'),
-  ];
+  String _selectedLanguage = 'ja';
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    final theme = Theme.of(context);
+    final appTheme = context.appTheme;
 
     return Scaffold(
-      appBar: AppBar(leading: BackButton(onPressed: () => context.pop())),
+      backgroundColor: appTheme.harborCream,
+      appBar: AppBar(
+        backgroundColor: appTheme.harborCream,
+        elevation: 0,
+        leading: IconButton(
+          icon: PhosphorIcon(PhosphorIcons.arrowLeft(PhosphorIconsStyle.bold), color: appTheme.harborNavy),
+          onPressed: () => context.pop(),
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24.w),
@@ -37,53 +40,50 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
             children: [
               SizedBox(height: 12.h),
               Text(
-                l10n.profile_stepXofY(2, ref.watch(onboardingDataProvider).totalSteps),
+                l10n.onboardingSelectLearningLanguage,
                 style: TextStyle(
-                  fontSize: 11.sp,
+                  fontSize: 28.sp,
                   fontWeight: FontWeight.w800,
-                  color: AppColors.primary,
-                  letterSpacing: 2.4,
+                  color: appTheme.harborNavy,
                 ),
               ),
-              SizedBox(height: 6.h),
-              Text(
-                l10n.learningLanguage,
-                style: theme.textTheme.displayMedium?.copyWith(fontSize: 32.sp),
-              ),
-              SizedBox(height: 10.h),
-              Container(width: 24.w, height: 3, color: AppColors.primary),
-              SizedBox(height: 14.h),
-              Text(
-                l10n.onboarding_learningLangSubtitle,
-                style: theme.textTheme.bodyLarge?.copyWith(
-                  color: context.appTheme.onSurfaceVariant,
-                ),
-              ),
+              SizedBox(height: 8.h),
+              Container(width: 24.w, height: 3, color: BusanHarborTokens.orange),
               SizedBox(height: 32.h),
-              Expanded(
-                child: ListView.builder(
-                  itemCount: languages.length,
-                  itemBuilder: (_, index) => _LanguageTile(
-                    language: languages[index],
-                    index: index,
-                    isSelected: _selectedLanguage == languages[index].code,
-                    onTap: () => setState(() => _selectedLanguage = languages[index].code),
-                  ),
-                ),
+              // Japanese option
+              _LanguageTile(
+                name: l10n.onboardingJapanese,
+                subtitle: l10n.onboardingJlptLevels,
+                isSelected: _selectedLanguage == 'ja',
+                enabled: true,
+                onTap: () => setState(() => _selectedLanguage = 'ja'),
               ),
+              SizedBox(height: 8.h),
+              // Korean option (grayed out)
+              _LanguageTile(
+                name: l10n.onboardingKorean,
+                subtitle: l10n.onboardingComingSoon,
+                isSelected: false,
+                enabled: false,
+                onTap: () {},
+              ),
+              const Spacer(),
               SizedBox(
                 width: double.infinity,
                 height: 56.h,
                 child: ElevatedButton(
-                  onPressed: _selectedLanguage != null
-                      ? () {
-                          ref.read(onboardingDataProvider.notifier).setLearningLanguage(_selectedLanguage!);
-                          context.push('/onboarding/learning-goal');
-                        }
-                      : null,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: BusanHarborTokens.orange,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.r)),
+                  ),
+                  onPressed: () {
+                    ref.read(onboardingCompleteProvider.notifier).complete();
+                    context.go('/home');
+                  },
                   child: Text(
-                    l10n.continueText,
-                    style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700),
+                    l10n.onboardingGetStarted,
+                    style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700),
                   ),
                 ),
               ),
@@ -96,116 +96,69 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
   }
 }
 
-class _LanguageOption {
-  final String code;
-  final String name;
-  final String flag;
-  final String subtitle;
-  const _LanguageOption({required this.code, required this.name, required this.flag, required this.subtitle});
-}
-
 class _LanguageTile extends StatelessWidget {
-  final _LanguageOption language;
-  final int index;
+  final String name;
+  final String subtitle;
   final bool isSelected;
+  final bool enabled;
   final VoidCallback onTap;
 
   const _LanguageTile({
-    required this.language,
-    required this.index,
+    required this.name,
+    required this.subtitle,
     required this.isSelected,
+    required this.enabled,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    final theme = Theme.of(context);
     final appTheme = context.appTheme;
-    final ordinal = (index + 1).toString().padLeft(2, '0');
 
     return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        margin: EdgeInsets.only(bottom: 8.h),
-        padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 14.h),
-        decoration: BoxDecoration(
-          color: Colors.transparent,
-          borderRadius: BorderRadius.circular(4.r),
-          border: Border.all(
-            color: isSelected ? appTheme.harborNavy : appTheme.border,
-            width: isSelected ? 1.6 : 1,
-          ),
-        ),
-        child: Row(
-          children: [
-            Text(
-              ordinal,
-              style: TextStyle(
-                fontSize: 11.sp,
-                fontWeight: FontWeight.w800,
-                color: appTheme.onSurfaceVariant,
-                letterSpacing: 1.4,
-              ),
+      onTap: enabled ? onTap : null,
+      child: Opacity(
+        opacity: enabled ? 1.0 : 0.4,
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8.r),
+            border: Border.all(
+              color: isSelected ? BusanHarborTokens.orange : appTheme.borderLight,
+              width: isSelected ? 2 : 1,
             ),
-            SizedBox(width: 12.w),
-            Container(
-              width: 38.w,
-              padding: EdgeInsets.symmetric(vertical: 4.h),
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: Colors.transparent,
-                borderRadius: BorderRadius.circular(2.r),
-                border: Border.all(color: appTheme.border, width: 1),
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 24.w,
+                height: 24.w,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: isSelected ? BusanHarborTokens.orange : Colors.transparent,
+                  border: Border.all(
+                    color: isSelected ? BusanHarborTokens.orange : appTheme.borderLight,
+                    width: 2,
+                  ),
+                ),
+                child: isSelected
+                    ? PhosphorIcon(PhosphorIcons.check(PhosphorIconsStyle.bold), size: 14.sp, color: Colors.white)
+                    : null,
               ),
-              child: Text(
-                language.flag,
-                style: TextStyle(
-                  fontSize: 11.sp,
-                  fontWeight: FontWeight.w800,
-                  color: appTheme.harborIconFill,
+              SizedBox(width: 14.w),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(name, style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, color: appTheme.harborNavy)),
+                    SizedBox(height: 2.h),
+                    Text(subtitle, style: TextStyle(fontSize: 12.sp, color: appTheme.onSurfaceVariant)),
+                  ],
                 ),
               ),
-            ),
-            SizedBox(width: 14.w),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    language.name,
-                    style: theme.textTheme.titleLarge?.copyWith(color: appTheme.harborNavy),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                  SizedBox(height: 2.h),
-                  Text(
-                    language.subtitle,
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: appTheme.onSurfaceVariant,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              width: 24.w,
-              height: 24.w,
-              decoration: BoxDecoration(
-                color: isSelected ? appTheme.harborNavy : Colors.transparent,
-                borderRadius: BorderRadius.circular(2.r),
-                border: Border.all(color: isSelected ? appTheme.harborNavy : appTheme.border, width: 1.2),
-              ),
-              alignment: Alignment.center,
-              child: isSelected
-                  ? PhosphorIcon(
-                      PhosphorIcons.check(PhosphorIconsStyle.bold),
-                      size: 14.sp,
-                      color: Colors.white,
-                    )
-                  : null,
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

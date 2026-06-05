@@ -24,7 +24,7 @@ class NotificationService {
   NotificationService(this._ref, this._context);
 
   bool get _notificationsOn => _ref.read(userProvider).notificationsEnabled;
-  bool get _reminderOn => _ref.read(userProvider).reminderEnabled;
+  bool get _reminderOn => _ref.read(userProvider).reminderTime != null;
   String? get _reminderTime => _ref.read(userProvider).reminderTime;
 
   /// Start the notification scheduler.
@@ -77,7 +77,7 @@ class NotificationService {
 
     ScaffoldMessenger.of(_context).showSnackBar(
       const SnackBar(
-        content: Text('Time to practice! 🎯'),
+        content: Text('Time to practice!'),
         duration: Duration(seconds: 6),
         behavior: SnackBarBehavior.floating,
       ),

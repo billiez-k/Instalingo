@@ -3,82 +3,33 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
-import 'package:instalingo/providers/settings_provider.dart';
-import 'package:instalingo/providers/user_provider.dart';
-import 'package:instalingo/services/notification_service.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
-class MainShell extends ConsumerStatefulWidget {
+/// Bottom navigation shell with 4 tabs.
+///
+/// Home, Review, Collections, Profile -- using Phosphor icons
+/// with outline/fill variants for active state.
+class MainShell extends ConsumerWidget {
   final Widget child;
   const MainShell({super.key, required this.child});
 
   @override
-  ConsumerState<MainShell> createState() => _MainShellState();
-}
-
-class _MainShellState extends ConsumerState<MainShell> {
-  NotificationService? _notificationService;
-
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _initNotifications();
-    });
-  }
-
-  void _initNotifications() {
-    _notificationService = NotificationService(ref, context);
-    _notificationService!.start();
-  }
-
-  @override
-  void dispose() {
-    _notificationService?.dispose();
-    super.dispose();
-  }
-  int _getCurrentIndex(BuildContext context) {
-    final location = GoRouterState.of(context).uri.path;
-    if (location.startsWith('/learn')) return 0;
-    if (location.startsWith('/chill')) return 1;
-    if (location.startsWith('/profile')) return 2;
-    return 0;
-  }
-
-  void _onItemTapped(BuildContext context, int index) {
-    switch (index) {
-      case 0:
-        context.go('/learn');
-      case 1:
-        context.go('/chill');
-      case 2:
-        context.go('/profile');
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    final theme = Theme.of(context);
+  Widget build(BuildContext context, WidgetRef ref) {
     final appTheme = context.appTheme;
+    final l10n = AppLocalizations.of(context)!;
     final currentIndex = _getCurrentIndex(context);
 
-    // React to notification/reminder setting changes
-    ref.listen(userProvider.select((u) => u.notificationsEnabled), (_, __) {
-      _notificationService?.refresh();
-    });
-    ref.listen(userProvider.select((u) => u.reminderEnabled), (_, __) {
-      _notificationService?.refresh();
-    });
-
     return Scaffold(
-      body: widget.child,
+      body: child,
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          color: theme.colorScheme.surface,
+          color: appTheme.harborNavy,
           border: Border(
-            top: BorderSide(color: appTheme.border, width: 1),
+            top: BorderSide(
+              color: BusanHarborTokens.navySoft.withValues(alpha: 0.5),
+              width: 1,
+            ),
           ),
         ),
         child: SafeArea(
@@ -90,25 +41,32 @@ class _MainShellState extends ConsumerState<MainShell> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 _NavItem(
-                  icon: PhosphorIcons.bookOpen(),
-                  activeIcon: PhosphorIcons.bookOpen(PhosphorIconsStyle.fill),
-                  label: l10n.learn,
+                  icon: PhosphorIcons.house(PhosphorIconsStyle.regular),
+                  activeIcon: PhosphorIcons.house(PhosphorIconsStyle.fill),
+                  label: l10n.navHome,
                   isActive: currentIndex == 0,
-                  onTap: () => _onItemTapped(context, 0),
+                  onTap: () => context.go('/home'),
                 ),
                 _NavItem(
-                  icon: PhosphorIcons.waves(),
-                  activeIcon: PhosphorIcons.waves(PhosphorIconsStyle.fill),
-                  label: l10n.chill,
+                  icon: PhosphorIcons.clockCounterClockwise(PhosphorIconsStyle.regular),
+                  activeIcon: PhosphorIcons.clockCounterClockwise(PhosphorIconsStyle.fill),
+                  label: l10n.navReview,
                   isActive: currentIndex == 1,
-                  onTap: () => _onItemTapped(context, 1),
+                  onTap: () => context.go('/review'),
                 ),
                 _NavItem(
-                  icon: PhosphorIcons.user(),
-                  activeIcon: PhosphorIcons.user(PhosphorIconsStyle.fill),
-                  label: l10n.profile,
+                  icon: PhosphorIcons.bookmarks(PhosphorIconsStyle.regular),
+                  activeIcon: PhosphorIcons.bookmarks(PhosphorIconsStyle.fill),
+                  label: l10n.navCollections,
                   isActive: currentIndex == 2,
-                  onTap: () => _onItemTapped(context, 2),
+                  onTap: () => context.go('/collections'),
+                ),
+                _NavItem(
+                  icon: PhosphorIcons.user(PhosphorIconsStyle.regular),
+                  activeIcon: PhosphorIcons.user(PhosphorIconsStyle.fill),
+                  label: l10n.navProfile,
+                  isActive: currentIndex == 3,
+                  onTap: () => context.go('/profile'),
                 ),
               ],
             ),
@@ -116,6 +74,15 @@ class _MainShellState extends ConsumerState<MainShell> {
         ),
       ),
     );
+  }
+
+  int _getCurrentIndex(BuildContext context) {
+    final location = GoRouterState.of(context).uri.path;
+    if (location.startsWith('/home')) return 0;
+    if (location.startsWith('/review')) return 1;
+    if (location.startsWith('/collections')) return 2;
+    if (location.startsWith('/profile')) return 3;
+    return 0;
   }
 }
 
@@ -137,23 +104,22 @@ class _NavItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
-    final activeColor = AppColors.primary;
-    final inactiveColor = appTheme.onSurfaceVariant;
+    final activeColor = BusanHarborTokens.orange;
+    final inactiveColor = appTheme.harborInkOnNavyMuted;
     final color = isActive ? activeColor : inactiveColor;
 
     return GestureDetector(
       onTap: onTap,
       behavior: HitTestBehavior.opaque,
       child: SizedBox(
-        width: 88.w,
+        width: 80.w,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Indicator strip above the active item — harbor sunrise marker
             AnimatedContainer(
               duration: const Duration(milliseconds: 200),
-              width: isActive ? 28.w : 0,
+              width: isActive ? 24.w : 0,
               height: 3,
               decoration: BoxDecoration(
                 color: activeColor,

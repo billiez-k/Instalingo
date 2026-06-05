@@ -1,21 +1,22 @@
-/// Busuu-style points configuration.
+/// Points and rewards configuration for InstaLingo v2.
 ///
-/// In production this would be server-configured (PointsConfigDomainModel).
-/// For the demo, values are centralized here so they can be changed in one place
-/// rather than hardcoded across lesson constructors and completion logic.
+/// Centralized values for XP, gems, streaks, and shields.
+/// In production this would be server-configured.
 class PointsConfig {
   const PointsConfig._();
 
-  // Base lesson rewards
-  static const int unitWorth = 10;          // XP per lesson completed
-  static const int activityWorth = 5;       // Gems per lesson completed
+  // Swipe rewards
+  static const int cardSwipedWorth = 5;     // XP per card swiped
+  static const int cardsSavedWorth = 3;     // XP per card saved/collected
+  static const int dailyGoalWorth = 50;     // XP bonus for hitting daily goal
+  static const int streakDayWorth = 10;     // XP per streak day
+  static const int gemPerDay = 5;           // Gems awarded for daily goal
+
+  // SRS review rewards
   static const int smartReviewWorth = 3;    // XP per vocab review card
-  static const int checkpointWorth = 50;    // XP for checkpoint/placement test
-  static const int correctionWorth = 2;     // Gems for peer correction (future)
 
   // Streak
-  static const int streakFreezeCost = 50;   // Gems to repair streak
-  static const int streakShieldCost = 100; // Gems to buy a freeze shield
+  static const int streakShieldCost = 100;  // Gems to buy a streak shield
 
   // Star thresholds (percentage of correct answers)
   static int starsFor(double correctRatio) {

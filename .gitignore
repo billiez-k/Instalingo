@@ -52,3 +52,4 @@ manus_output/
 instalingo/
 ios/Flutter/ephemeral/
 demo_data.dart.bak
+raw_data/sentences.tar.bz2\nraw_data/jpn_indices.tar.bz2

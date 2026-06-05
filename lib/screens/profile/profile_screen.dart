@@ -51,12 +51,12 @@ class ProfileScreen extends ConsumerWidget {
                       _MenuItem(
                         icon: PhosphorIcons.graduationCap(PhosphorIconsStyle.bold),
                         label: l10n.coursePath,
-                        onTap: () => context.push('/profile/course'),
+                        onTap: () => context.push('/collections'),
                       ),
                       _MenuItem(
                         icon: PhosphorIcons.calendarCheck(PhosphorIconsStyle.bold),
                         label: l10n.studyPlan,
-                        onTap: () => context.push('/profile/study-plan'),
+                        onTap: () => context.push('/profile/stats'),
                       ),
                     ],
                   ),
@@ -70,12 +70,12 @@ class ProfileScreen extends ConsumerWidget {
                         label: l10n.paywallTitle,
                         badge: l10n.profile_proBadge,
                         accent: true,
-                        onTap: () => context.push('/profile/super'),
+                        onTap: () => context.push('/paywall'),
                       ),
                       _MenuItem(
                         icon: PhosphorIcons.creditCard(PhosphorIconsStyle.bold),
                         label: l10n.subscription,
-                        onTap: () => context.push('/profile/subscription'),
+                        onTap: () => context.push('/paywall'),
                       ),
                       _MenuItem(
                         icon: PhosphorIcons.gear(PhosphorIconsStyle.bold),
@@ -142,7 +142,7 @@ class _ProfileHeader extends StatelessWidget {
                       child: Text(
                         l10n.profile_learningStatus(
                           user.learningLanguage.toUpperCase(),
-                          user.proficiencyLevel,
+                          user.totalCardsSwiped,
                         ).toUpperCase(),
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(

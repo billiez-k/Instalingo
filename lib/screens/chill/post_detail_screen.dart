@@ -1,62 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:instalingo/models/post.dart';
-import 'package:instalingo/providers/post_provider.dart';
-import 'package:instalingo/providers/user_provider.dart';
+import 'package:instalingo/data/chill_post_loader.dart';
+import 'package:instalingo/models/chill_post.dart';
 import 'package:instalingo/theme/app_theme.dart';
-import 'package:instalingo/widgets/error_states.dart';
 import 'package:intl/intl.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 
-class PostDetailScreen extends ConsumerWidget {
+/// Detail view for a single ChillPost.
+///
+/// Works with the ChillPost model. No references to old Post/Character models.
+class PostDetailScreen extends ConsumerStatefulWidget {
   final String postId;
   const PostDetailScreen({super.key, required this.postId});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
-    final post = ref.watch(postsProvider.notifier).getPostById(postId);
-    final nativeLang = ref.watch(userProvider).nativeLanguage;
-    final learningLang = ref.watch(userProvider).learningLanguage;
-
-    if (post == null) {
-      return Scaffold(
-        appBar: AppBar(leading: BackButton(onPressed: () => context.pop())),
-        body: ErrorState(
-          title: l10n.chill_postNotFound,
-          message: l10n.chill_postNotFoundMessage,
-          icon: PhosphorIcons.article(),
-          onRetry: () => context.pop(),
-        ),
-      );
-    }
-
-    return Scaffold(
-      appBar: AppBar(
-        leading: BackButton(onPressed: () => context.pop()),
-        title: Text(l10n.chillCorner),
-      ),
-      body: _PostContent(post: post, nativeLang: nativeLang, learningLang: learningLang),
-    );
-  }
+  ConsumerState<PostDetailScreen> createState() => _PostDetailScreenState();
 }
 
-class _PostContent extends ConsumerStatefulWidget {
-  final Post post;
-  final String nativeLang;
-  final String learningLang;
-  const _PostContent({required this.post, required this.nativeLang, required this.learningLang});
-
-  @override
-  ConsumerState<_PostContent> createState() => _PostContentState();
-}
-
-class _PostContentState extends ConsumerState<_PostContent> {
+class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
   final _commentController = TextEditingController();
   final _commentFocusNode = FocusNode();
   final _scrollController = ScrollController();
@@ -85,409 +50,392 @@ class _PostContentState extends ConsumerState<_PostContent> {
     });
   }
 
-  void _showWordActions(Post post, AppLocalizations l10n) {
-    HapticFeedback.selectionClick();
-    final word = post.targetWord;
-    if (word == null || word.isEmpty) return;
+  @override
+  Widget build(BuildContext context) {
+    final appTheme = context.appTheme;
+    final theme = Theme.of(context);
 
-    final shareText = [
-      word,
-      if (post.wordPhonetic != null) post.wordPhonetic!,
-      if (post.wordExample != null) post.wordExample!,
-    ].join('\n');
+    return FutureBuilder<List<ChillPost>>(
+      future: ChillPostLoader.loadPosts(),
+      builder: (context, snapshot) {
+        if (!snapshot.hasData) {
+          return Scaffold(
+            appBar: AppBar(
+              leading: BackButton(onPressed: () => context.pop()),
+              backgroundColor: appTheme.harborNavy,
+            ),
+            body: const Center(child: CircularProgressIndicator()),
+          );
+        }
 
-    showModalBottomSheet(
-      context: context,
-      builder: (_) => SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 14.h),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                word,
-                style: Theme.of(context).textTheme.headlineSmall,
-              ),
-              if (post.wordTranslation != null) ...[
-                SizedBox(height: 6.h),
-                Text(
-                  post.wordTranslation!.resolve(widget.nativeLang),
-                  style: Theme.of(context).textTheme.bodyLarge,
-                ),
-              ],
-              SizedBox(height: 14.h),
-              Row(
+        final post = snapshot.data!
+            .where((p) => p.id == widget.postId)
+            .firstOrNull;
+
+        if (post == null) {
+          return Scaffold(
+            appBar: AppBar(
+              leading: BackButton(onPressed: () => context.pop()),
+              backgroundColor: appTheme.harborNavy,
+            ),
+            body: Center(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  Expanded(
-                    child: OutlinedButton(
-                      onPressed: () {
-                        HapticFeedback.selectionClick();
-                        Clipboard.setData(ClipboardData(text: shareText));
-                        Navigator.of(context).pop();
-                      },
-                      child: PhosphorIcon(PhosphorIcons.copy()),
-                    ),
+                  PhosphorIcon(
+                    PhosphorIcons.article(PhosphorIconsStyle.regular),
+                    size: 48.sp,
+                    color: appTheme.onSurfaceVariant,
                   ),
-                  SizedBox(width: 10.w),
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        HapticFeedback.selectionClick();
-                        Share.share(shareText);
-                      },
-                      child: PhosphorIcon(PhosphorIcons.shareNetwork(PhosphorIconsStyle.fill)),
+                  SizedBox(height: 16.h),
+                  Text(
+                    'Post not found',
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w700,
+                      color: appTheme.harborNavy,
                     ),
                   ),
                 ],
               ),
-            ],
+            ),
+          );
+        }
+
+        return Scaffold(
+          backgroundColor: appTheme.harborCream,
+          appBar: AppBar(
+            backgroundColor: appTheme.harborNavy,
+            leading: BackButton(
+              onPressed: () => context.pop(),
+              color: appTheme.harborInkOnNavy,
+            ),
+            title: Text(
+              'CHILL CORNER',
+              style: TextStyle(
+                fontSize: 12.sp,
+                fontWeight: FontWeight.w800,
+                color: appTheme.harborInkOnNavy,
+                letterSpacing: 2.0,
+              ),
+            ),
           ),
-        ),
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-    final theme = Theme.of(context);
-    final appTheme = context.appTheme;
-    final post = widget.post;
-
-    return Column(
-      children: [
-        Expanded(
-          child: SingleChildScrollView(
-            controller: _scrollController,
-            padding: EdgeInsets.all(16.w),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Editorial author masthead
-                Row(
-                  children: [
-                    Container(width: 18.w, height: 3, color: AppColors.chillPrimary),
-                    SizedBox(width: 8.w),
-                    Expanded(
-                      child: Text(
-                        (post.characterType ?? l10n.chillCorner).toUpperCase(),
-                        style: TextStyle(
-                          fontSize: 11.sp,
-                          fontWeight: FontWeight.w800,
-                          color: appTheme.onSurfaceVariant,
-                          letterSpacing: 2.0,
-                        ),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    Text(
-                      DateFormat('MMM d').format(post.createdAt).toUpperCase(),
-                      style: TextStyle(
-                        fontSize: 11.sp,
-                        fontWeight: FontWeight.w800,
-                        color: appTheme.onSurfaceVariant,
-                        letterSpacing: 1.6,
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 12.h),
-                Row(
-                  children: [
-                    _Avatar(name: post.authorName, avatarUrl: post.authorAvatarUrl),
-                    SizedBox(width: 12.w),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+          body: Column(
+            children: [
+              Expanded(
+                child: SingleChildScrollView(
+                  controller: _scrollController,
+                  padding: EdgeInsets.all(16.w),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // Masthead
+                      Row(
                         children: [
-                          Text(
-                            post.authorName,
-                            style: theme.textTheme.titleLarge?.copyWith(color: appTheme.harborIconFill),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
+                          Container(
+                            width: 18.w,
+                            height: 3,
+                            color: BusanHarborTokens.coral,
                           ),
-                          if (post.authorHandle != null)
-                            Text(
-                              post.authorHandle!,
-                              style: theme.textTheme.bodySmall,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
+                          SizedBox(width: 8.w),
+                          Expanded(
+                            child: Text(
+                              'CHILL CORNER',
+                              style: TextStyle(
+                                fontSize: 11.sp,
+                                fontWeight: FontWeight.w800,
+                                color: appTheme.onSurfaceVariant,
+                                letterSpacing: 2.0,
+                              ),
                             ),
+                          ),
+                          Text(
+                            DateFormat('MMM d, yyyy')
+                                .format(post.createdAt)
+                                .toUpperCase(),
+                            style: TextStyle(
+                              fontSize: 11.sp,
+                              fontWeight: FontWeight.w800,
+                              color: appTheme.onSurfaceVariant,
+                              letterSpacing: 1.6,
+                            ),
+                          ),
                         ],
                       ),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 16.h),
+                      SizedBox(height: 12.h),
 
-                // Image placeholder
-                Container(
-                  width: double.infinity,
-                  height: 240.h,
-                  decoration: BoxDecoration(
-                    color: Colors.transparent,
-                    borderRadius: BorderRadius.circular(4.r),
-                    border: Border.all(color: appTheme.border, width: 1),
-                  ),
-                  child: Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        PhosphorIcon(
-                          PhosphorIcons.image(),
-                          size: 48.sp,
-                          color: appTheme.onSurfaceVariant,
-                        ),
-                        SizedBox(height: 8.h),
-                        Text(
-                          l10n.chill_aiGeneratedImage,
-                          style: theme.textTheme.bodySmall?.copyWith(
-                            color: appTheme.onSurfaceVariant,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                SizedBox(height: 16.h),
-
-                // Word card
-                if (post.targetWord != null) ...[
-                  Container(
-                    padding: EdgeInsets.all(16.w),
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(4.r),
-                      border: Border.all(color: AppColors.chillPrimary, width: 1.4),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 4.h),
-                              decoration: BoxDecoration(
-                                color: AppColors.chillPrimary.withValues(alpha: 0.15),
-                                borderRadius: BorderRadius.circular(2.r),
-                              ),
-                              child: Text(
-                                post.targetWord!.toUpperCase(),
-                                style: TextStyle(
-                                  fontSize: 16.sp,
-                                  fontWeight: FontWeight.w800,
-                                  color: AppColors.chillPrimary,
-                                  letterSpacing: 1,
+                      // Author
+                      Row(
+                        children: [
+                          _AuthorAvatar(name: post.authorName),
+                          SizedBox(width: 12.w),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  post.authorName,
+                                  style: theme.textTheme.titleLarge?.copyWith(
+                                    color: appTheme.harborNavy,
+                                  ),
                                 ),
-                              ),
-                            ),
-                            if (post.wordPhonetic != null) ...[
-                              SizedBox(width: 10.w),
-                              Text(
-                                post.wordPhonetic!,
-                                style: theme.textTheme.bodyMedium?.copyWith(
-                                  color: appTheme.onSurfaceVariant,
+                                Text(
+                                  post.authorHandle,
+                                  style: theme.textTheme.bodySmall,
                                 ),
-                              ),
-                            ],
-                            const Expanded(child: SizedBox.shrink()),
-                            IconButton(
-                              onPressed: () => _showWordActions(post, l10n),
-                              icon: PhosphorIcon(
-                                PhosphorIcons.speakerHigh(),
-                                size: 22.sp,
-                                color: AppColors.chillPrimary,
-                              ),
-                            ),
-                          ],
-                        ),
-                        if (post.wordTranslation != null) ...[
-                          SizedBox(height: 12.h),
-                          Text(
-                            post.wordTranslation!.resolve(widget.nativeLang),
-                            style: theme.textTheme.headlineSmall?.copyWith(
-                              color: AppColors.chillPrimary,
+                              ],
                             ),
                           ),
                         ],
-                        if (post.wordExplanation != null) ...[
-                          SizedBox(height: 8.h),
-                          Text(
-                            post.wordExplanation!.resolve(widget.nativeLang),
-                            style: theme.textTheme.bodyLarge,
-                          ),
-                        ],
-                        if (post.wordExample != null) ...[
-                          SizedBox(height: 12.h),
-                          Container(
-                            padding: EdgeInsets.all(12.w),
+                      ),
+                      SizedBox(height: 16.h),
+
+                      // Content
+                      Text(
+                        post.content,
+                        style: theme.textTheme.bodyLarge?.copyWith(
+                          color: appTheme.harborNavy,
+                          height: 1.6,
+                        ),
+                      ),
+
+                      // Target word
+                      if (post.targetWord != null &&
+                          post.targetWord!.isNotEmpty) ...[
+                        SizedBox(height: 20.h),
+                        GestureDetector(
+                          onTap: () {
+                            HapticFeedback.mediumImpact();
+                            if (post.targetWordId != null) {
+                              context.push('/swipe');
+                            }
+                          },
+                          child: Container(
+                            width: double.infinity,
+                            padding: EdgeInsets.all(16.w),
                             decoration: BoxDecoration(
-                              color: theme.colorScheme.surface,
-                              borderRadius: BorderRadius.circular(4.r),
-                              border: Border.all(color: appTheme.border),
+                              color: BusanHarborTokens.orangeWash,
+                              borderRadius: BorderRadius.circular(8.r),
+                              border: Border.all(
+                                color: BusanHarborTokens.orange
+                                    .withValues(alpha: 0.3),
+                              ),
                             ),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    PhosphorIcon(
-                                      PhosphorIcons.quotes(),
-                                      size: 18.sp,
-                                      color: appTheme.onSurfaceVariant,
-                                    ),
-                                    SizedBox(width: 8.w),
-                                    Expanded(
-                                      child: Text(
-                                        post.wordExample!,
-                                        style: theme.textTheme.bodyMedium?.copyWith(
-                                          fontStyle: FontStyle.italic,
+                                Text(
+                                  'FEATURED WORD',
+                                  style: TextStyle(
+                                    fontSize: 10.sp,
+                                    fontWeight: FontWeight.w800,
+                                    color: BusanHarborTokens.orange,
+                                    letterSpacing: 1.6,
+                                  ),
+                                ),
+                                SizedBox(height: 8.h),
+                                Text(
+                                  post.targetWord!,
+                                  style: TextStyle(
+                                    fontSize: 24.sp,
+                                    fontWeight: FontWeight.w800,
+                                    color: appTheme.harborNavy,
+                                  ),
+                                ),
+                                if (post.targetWordId != null) ...[
+                                  SizedBox(height: 8.h),
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      PhosphorIcon(
+                                        PhosphorIcons.arrowRight(
+                                            PhosphorIconsStyle.bold),
+                                        size: 14.sp,
+                                        color: BusanHarborTokens.orange,
+                                      ),
+                                      SizedBox(width: 4.w),
+                                      Text(
+                                        'Tap to study this word',
+                                        style: TextStyle(
+                                          fontSize: 12.sp,
+                                          color: BusanHarborTokens.orange,
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                                if (post.wordExampleTranslation != null) ...[
-                                  SizedBox(height: 4.h),
-                                  Text(
-                                    post.wordExampleTranslation!.resolve(widget.nativeLang),
-                                    style: theme.textTheme.bodySmall?.copyWith(
-                                      color: appTheme.onSurfaceVariant,
-                                    ),
+                                    ],
                                   ),
                                 ],
                               ],
                             ),
                           ),
-                        ],
+                        ),
                       ],
-                    ),
-                  ),
-                  SizedBox(height: 16.h),
-                ],
 
-                // Content
-                Text(
-                  post.content.resolve(widget.learningLang),
-                  style: theme.textTheme.bodyLarge,
-                ),
-                SizedBox(height: 16.h),
+                      // Tags
+                      if (post.tags.isNotEmpty) ...[
+                        SizedBox(height: 16.h),
+                        Wrap(
+                          spacing: 6.w,
+                          runSpacing: 6.h,
+                          children: post.tags
+                              .map((tag) => Container(
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 10.w, vertical: 4.h),
+                                    decoration: BoxDecoration(
+                                      color: appTheme.surfaceVariant,
+                                      borderRadius: BorderRadius.circular(4.r),
+                                    ),
+                                    child: Text(
+                                      '#$tag',
+                                      style: TextStyle(
+                                        fontSize: 11.sp,
+                                        fontWeight: FontWeight.w600,
+                                        color: appTheme.onSurfaceVariant,
+                                      ),
+                                    ),
+                                  ))
+                              .toList(),
+                        ),
+                      ],
 
-                // Actions
-                Row(
-                  children: [
-                    _ActionButton(
-                      icon: post.isLiked
-                          ? PhosphorIcons.heart(PhosphorIconsStyle.fill)
-                          : PhosphorIcons.heart(),
-                      label: '${post.likes}',
-                      color: post.isLiked ? AppColors.chillPrimary : appTheme.onSurfaceVariant,
-                      onTap: () => ref.read(postsProvider.notifier).toggleLike(post.id),
-                    ),
-                    SizedBox(width: 24.w),
-                    _ActionButton(
-                      icon: PhosphorIcons.chatCircle(),
-                      label: '${post.comments.length}',
-                      color: appTheme.onSurfaceVariant,
-                      onTap: _focusCommentInput,
-                    ),
-                  ],
-                ),
-                SizedBox(height: 24.h),
+                      SizedBox(height: 24.h),
 
-                // Comments section
-                Text(
-                  l10n.chill_comments,
-                  style: theme.textTheme.headlineSmall,
-                ),
-                SizedBox(height: 16.h),
-                ...post.comments.map((comment) => _CommentItem(comment: comment)),
-              ],
-            ),
-          ),
-        ),
-
-        // Comment input
-        Container(
-          padding: EdgeInsets.all(12.w),
-          decoration: BoxDecoration(
-            color: theme.colorScheme.surface,
-            border: Border(top: BorderSide(color: appTheme.border)),
-          ),
-          child: SafeArea(
-            child: Row(
-              children: [
-                Expanded(
-                  child: TextField(
-                    controller: _commentController,
-                    focusNode: _commentFocusNode,
-                    decoration: InputDecoration(
-                      hintText: l10n.chill_addComment,
-                      filled: true,
-                      fillColor: appTheme.surfaceVariant,
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(4.r),
-                        borderSide: BorderSide.none,
+                      // Actions
+                      Row(
+                        children: [
+                          _ActionBtn(
+                            icon: PhosphorIcons.heart(
+                                PhosphorIconsStyle.regular),
+                            label: '${post.likes}',
+                            color: BusanHarborTokens.coral,
+                          ),
+                          SizedBox(width: 24.w),
+                          _ActionBtn(
+                            icon: PhosphorIcons.chatCircle(
+                                PhosphorIconsStyle.regular),
+                            label: '${post.comments.length}',
+                            color: appTheme.onSurfaceVariant,
+                            onTap: _focusCommentInput,
+                          ),
+                          const Spacer(),
+                          _ActionBtn(
+                            icon: PhosphorIcons.shareNetwork(
+                                PhosphorIconsStyle.regular),
+                            label: 'Share',
+                            color: appTheme.onSurfaceVariant,
+                            onTap: () {
+                              final text = [
+                                post.content,
+                                if (post.targetWord != null)
+                                  'Word: ${post.targetWord}',
+                                '',
+                                'via InstaLingo',
+                              ].join('\n');
+                              Share.share(text);
+                            },
+                          ),
+                        ],
                       ),
-                      contentPadding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
-                    ),
+
+                      SizedBox(height: 24.h),
+
+                      // Comments header
+                      Text(
+                        'Comments',
+                        style: theme.textTheme.headlineSmall?.copyWith(
+                          color: appTheme.harborNavy,
+                        ),
+                      ),
+                      SizedBox(height: 16.h),
+
+                      // Comments
+                      ...post.comments.map(
+                        (comment) => _CommentItem(
+                          comment: comment,
+                          appTheme: appTheme,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                SizedBox(width: 8.w),
-                IconButton(
-                  onPressed: () {
-                    if (_commentController.text.trim().isNotEmpty) {
-                      ref.read(postsProvider.notifier).addComment(
-                        post.id,
-                        _commentController.text.trim(),
-                      );
-                      _commentController.clear();
-                    }
-                  },
-                  icon: PhosphorIcon(
-                    PhosphorIcons.paperPlaneRight(PhosphorIconsStyle.fill),
-                    size: 24.sp,
-                    color: AppColors.chillPrimary,
+              ),
+
+              // Comment input
+              Container(
+                padding: EdgeInsets.all(12.w),
+                decoration: BoxDecoration(
+                  color: theme.colorScheme.surface,
+                  border: Border(top: BorderSide(color: appTheme.border)),
+                ),
+                child: SafeArea(
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          controller: _commentController,
+                          focusNode: _commentFocusNode,
+                          decoration: InputDecoration(
+                            hintText: 'Add a comment...',
+                            filled: true,
+                            fillColor: appTheme.surfaceVariant,
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(4.r),
+                              borderSide: BorderSide.none,
+                            ),
+                            contentPadding: EdgeInsets.symmetric(
+                                horizontal: 16.w, vertical: 12.h),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 8.w),
+                      IconButton(
+                        onPressed: () {
+                          if (_commentController.text.trim().isNotEmpty) {
+                            _commentController.clear();
+                            _commentFocusNode.unfocus();
+                          }
+                        },
+                        icon: PhosphorIcon(
+                          PhosphorIcons.paperPlaneRight(
+                              PhosphorIconsStyle.fill),
+                          size: 24.sp,
+                          color: BusanHarborTokens.coral,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ),
-      ],
+        );
+      },
     );
   }
 }
 
-class _Avatar extends StatelessWidget {
+class _AuthorAvatar extends StatelessWidget {
   final String name;
-  final String? avatarUrl;
-
-  const _Avatar({required this.name, this.avatarUrl});
+  const _AuthorAvatar({required this.name});
 
   @override
   Widget build(BuildContext context) {
-    final initials = name.split(' ').map((s) => s[0]).take(2).join('');
+    final initials =
+        name.split(' ').map((s) => s[0]).take(2).join('').toUpperCase();
 
     return Container(
-      width: 40.w,
-      height: 40.w,
+      width: 44.w,
+      height: 44.w,
       decoration: BoxDecoration(
-        color: Colors.transparent,
+        color: BusanHarborTokens.navy,
         borderRadius: BorderRadius.circular(4.r),
-        border: Border.all(color: AppColors.chillPrimary, width: 1.4),
       ),
       child: Center(
         child: Text(
-          initials.toUpperCase(),
+          initials,
           style: TextStyle(
-            fontSize: 14.sp,
+            fontSize: 16.sp,
             fontWeight: FontWeight.w800,
-            color: AppColors.chillPrimary,
-            letterSpacing: 1.0,
+            color: BusanHarborTokens.cream,
           ),
         ),
       ),
@@ -495,13 +443,13 @@ class _Avatar extends StatelessWidget {
   }
 }
 
-class _ActionButton extends StatelessWidget {
+class _ActionBtn extends StatelessWidget {
   final PhosphorIconData icon;
   final String label;
   final Color color;
   final VoidCallback? onTap;
 
-  const _ActionButton({
+  const _ActionBtn({
     required this.icon,
     required this.label,
     required this.color,
@@ -515,7 +463,7 @@ class _ActionButton extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          PhosphorIcon(icon, size: 22.sp, color: color),
+          PhosphorIcon(icon, size: 20.sp, color: color),
           SizedBox(width: 6.w),
           Text(
             label,
@@ -532,90 +480,45 @@ class _ActionButton extends StatelessWidget {
 }
 
 class _CommentItem extends StatelessWidget {
-  final PostComment comment;
-  const _CommentItem({required this.comment});
+  final ChillComment comment;
+  final AppThemeExtension appTheme;
+
+  const _CommentItem({
+    required this.comment,
+    required this.appTheme,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
-    final appTheme = context.appTheme;
 
     return Container(
-      margin: EdgeInsets.only(bottom: 16.h),
-      padding: EdgeInsets.all(16.w),
+      margin: EdgeInsets.only(bottom: 12.h),
+      padding: EdgeInsets.all(14.w),
       decoration: BoxDecoration(
-        color: comment.isAiReply
-            ? AppColors.chillPrimary.withValues(alpha: 0.05)
-            : appTheme.surfaceVariant,
+        color: appTheme.surfaceVariant,
         borderRadius: BorderRadius.circular(4.r),
-        border: comment.isAiReply
-            ? Border.all(color: AppColors.chillPrimary.withValues(alpha: 0.2))
-            : Border.all(color: appTheme.border),
+        border: Border.all(color: appTheme.border),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          _Avatar(name: comment.authorName, avatarUrl: comment.authorAvatarUrl),
+          _AuthorAvatar(name: comment.authorName),
           SizedBox(width: 12.w),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Text(
-                      comment.authorName,
-                      style: theme.textTheme.titleMedium,
-                    ),
-                    if (comment.isAiReply) ...[
-                      SizedBox(width: 6.w),
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 6.w, vertical: 2.h),
-                        decoration: BoxDecoration(
-                          color: AppColors.chillPrimary.withValues(alpha: 0.15),
-                          borderRadius: BorderRadius.circular(4.r),
-                        ),
-                        child: Text(
-                          l10n.aiBadge,
-                          style: TextStyle(
-                            fontSize: 10.sp,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.chillPrimary,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ],
+                Text(
+                  comment.authorName,
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    color: appTheme.harborNavy,
+                  ),
                 ),
-                SizedBox(height: 6.h),
+                SizedBox(height: 4.h),
                 Text(
                   comment.content,
                   style: theme.textTheme.bodyMedium,
-                ),
-                SizedBox(height: 8.h),
-                Row(
-                  children: [
-                    PhosphorIcon(
-                      PhosphorIcons.heart(),
-                      size: 16.sp,
-                      color: appTheme.onSurfaceVariant,
-                    ),
-                    SizedBox(width: 4.w),
-                    Text(
-                      '${comment.likes}',
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: appTheme.onSurfaceVariant,
-                      ),
-                    ),
-                    SizedBox(width: 16.w),
-                    Text(
-                      DateFormat('MMM d, h:mm a').format(comment.createdAt),
-                      style: theme.textTheme.bodySmall?.copyWith(
-                        color: appTheme.onSurfaceVariant,
-                      ),
-                    ),
-                  ],
                 ),
               ],
             ),

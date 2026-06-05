@@ -58,13 +58,7 @@ class InstaLingoApp extends ConsumerWidget {
           locale: locale,
           supportedLocales: const [
             Locale('en'),
-            Locale('zh'),
             Locale('zh', 'TW'),
-            Locale('ja'),
-            Locale('ko'),
-            Locale('es'),
-            Locale('fr'),
-            Locale('de'),
           ],
           localizationsDelegates: const [
             AppLocalizations.delegate,

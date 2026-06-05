@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
-/// Busan Harbor — Onboarding intro.
+/// Busan Harbor -- Onboarding intro.
 ///
-/// A navy hero panel hosts the compass logo and the brand wordmark.
-/// Below, a cream paper sheet offers two clear actions (Get Started /
-/// I have an account) in editorial typography.
+/// A navy hero panel hosts the compass logo and the "Discover Japanese"
+/// headline. Below, a cream paper sheet offers feature bullets and a
+/// "Get Started" CTA.
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -46,9 +47,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
     final appTheme = context.appTheme;
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
@@ -61,49 +62,49 @@ class _OnboardingScreenState extends State<OnboardingScreen>
               // Navy hero
               Container(
                 width: double.infinity,
-                color: appTheme.harborIconFill,
+                color: appTheme.harborNavy,
                 padding: EdgeInsets.fromLTRB(24.w, 80.h, 24.w, 56.h),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    SizedBox(height: 20.h),
+                    // Compass logo
+                    Container(
+                      width: 80.w,
+                      height: 80.w,
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: BusanHarborTokens.orange,
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(16.r),
+                      ),
+                      alignment: Alignment.center,
+                      child: PhosphorIcon(
+                        PhosphorIcons.compass(PhosphorIconsStyle.regular),
+                        size: 40.sp,
+                        color: BusanHarborTokens.orange,
+                      ),
+                    ),
+                    SizedBox(height: 24.h),
                     Text(
-                      l10n.appTitle.toUpperCase(),
+                      'INSTALINGO',
                       style: TextStyle(
-                        fontSize: 11.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w800,
-                        color: AppColors.primary,
+                        color: BusanHarborTokens.orange,
                         letterSpacing: 3.0,
                       ),
                     ),
-                    SizedBox(height: 20.h),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                          width: 60.w,
-                          height: 60.w,
-                          decoration: BoxDecoration(
-                            border: Border.all(color: AppColors.primary, width: 1.6),
-                            borderRadius: BorderRadius.circular(4.r),
-                          ),
-                          alignment: Alignment.center,
-                          child: PhosphorIcon(
-                            PhosphorIcons.compass(PhosphorIconsStyle.regular),
-                            size: 30.sp,
-                            color: AppColors.primary,
-                          ),
-                        ),
-                        SizedBox(width: 16.w),
-                        Expanded(
-                          child: Text(
-                            l10n.onboardingTitle,
-                            style: theme.textTheme.headlineMedium?.copyWith(
-                              color: appTheme.harborInkOnNavy,
-                              height: 1.2,
-                            ),
-                          ),
-                        ),
-                      ],
+                    SizedBox(height: 12.h),
+                    Text(
+                      l10n.onboardingDiscoverJapanese,
+                      style: TextStyle(
+                        fontSize: 28.sp,
+                        fontWeight: FontWeight.w800,
+                        color: appTheme.harborInkOnNavy,
+                        letterSpacing: -0.5,
+                      ),
                     ),
                   ],
                 ),
@@ -115,37 +116,57 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      _OnboardingBullet(
-                        icon: PhosphorIcons.graduationCap(PhosphorIconsStyle.bold),
-                        title: l10n.featureStructuredCourses,
-                        desc: l10n.featureStructuredCoursesDesc,
+                      _FeatureBullet(
+                        icon: PhosphorIcons.cards(PhosphorIconsStyle.bold),
+                        title: l10n.onboardingSwipeLearn,
+                        description:
+                            'Swipe through vocabulary cards like a social feed. Save what matters, skip what you know.',
                       ),
                       SizedBox(height: 12.h),
-                      _OnboardingBullet(
-                        icon: PhosphorIcons.chatCircleText(PhosphorIconsStyle.bold),
-                        title: l10n.featureAICharacters,
-                        desc: l10n.featureAICharactersDesc,
+                      _FeatureBullet(
+                        icon: PhosphorIcons.clockCounterClockwise(
+                            PhosphorIconsStyle.bold),
+                        title: l10n.onboardingSmartReview,
+                        description:
+                            'FSRS-powered spaced repetition keeps words fresh. Review exactly when you need to.',
                       ),
                       SizedBox(height: 12.h),
-                      _OnboardingBullet(
-                        icon: PhosphorIcons.trophy(PhosphorIconsStyle.bold),
-                        title: l10n.featureMotivation,
-                        desc: l10n.featureMotivationDesc,
+                      _FeatureBullet(
+                        icon: PhosphorIcons.chartLineUp(PhosphorIconsStyle.bold),
+                        title: l10n.onboardingTrackProgress,
+                        description:
+                            'Build streaks, earn XP, and watch your vocabulary grow with detailed stats.',
                       ),
-                      SizedBox(height: 32.h),
+                      SizedBox(height: 40.h),
                       SizedBox(
-                        height: 52.h,
+                        height: 56.h,
                         child: ElevatedButton(
-                          onPressed: () => context.push('/onboarding/welcome'),
-                          child: Text(l10n.getStarted.toUpperCase()),
+                          onPressed: () {
+                            HapticFeedback.mediumImpact();
+                            context.push('/onboarding/native-language');
+                          },
+                          child: Text(
+                            l10n.onboardingGetStarted,
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w800,
+                              letterSpacing: 2.0,
+                            ),
+                          ),
                         ),
                       ),
-                      SizedBox(height: 10.h),
+                      SizedBox(height: 12.h),
                       SizedBox(
-                        height: 52.h,
+                        height: 48.h,
                         child: OutlinedButton(
-                          onPressed: () => context.go('/learn'),
-                          child: Text(l10n.iAlreadyHaveAccount),
+                          onPressed: () => context.go('/home'),
+                          child: Text(
+                            l10n.onboardingAlreadyHaveAccount,
+                            style: TextStyle(
+                              fontSize: 13.sp,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
                         ),
                       ),
                     ],
@@ -160,22 +181,24 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   }
 }
 
-class _OnboardingBullet extends StatelessWidget {
+class _FeatureBullet extends StatelessWidget {
   final PhosphorIconData icon;
   final String title;
-  final String desc;
-  const _OnboardingBullet({
+  final String description;
+
+  const _FeatureBullet({
     required this.icon,
     required this.title,
-    required this.desc,
+    required this.description,
   });
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final appTheme = context.appTheme;
+
     return Container(
-      padding: EdgeInsets.all(12.w),
+      padding: EdgeInsets.all(14.w),
       decoration: BoxDecoration(
         color: theme.colorScheme.surface,
         borderRadius: BorderRadius.circular(4.r),
@@ -185,15 +208,21 @@ class _OnboardingBullet extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            width: 32.w,
-            height: 32.w,
+            width: 36.w,
+            height: 36.w,
             decoration: BoxDecoration(
-              color: Colors.transparent,
-              borderRadius: BorderRadius.circular(2.r),
-              border: Border.all(color: appTheme.border, width: 1),
+              color: BusanHarborTokens.orangeWash,
+              borderRadius: BorderRadius.circular(4.r),
+              border: Border.all(
+                color: BusanHarborTokens.orange.withValues(alpha: 0.2),
+              ),
             ),
             alignment: Alignment.center,
-            child: PhosphorIcon(icon, size: 16.sp, color: appTheme.harborIconFill),
+            child: PhosphorIcon(
+              icon,
+              size: 18.sp,
+              color: BusanHarborTokens.orange,
+            ),
           ),
           SizedBox(width: 12.w),
           Expanded(
@@ -202,18 +231,17 @@ class _OnboardingBullet extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: theme.textTheme.titleMedium?.copyWith(color: appTheme.harborNavy),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
+                  style: theme.textTheme.titleMedium?.copyWith(
+                    color: appTheme.harborNavy,
+                  ),
                 ),
-                SizedBox(height: 2.h),
+                SizedBox(height: 4.h),
                 Text(
-                  desc,
+                  description,
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: appTheme.onSurfaceVariant,
+                    height: 1.4,
                   ),
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
                 ),
               ],
             ),
