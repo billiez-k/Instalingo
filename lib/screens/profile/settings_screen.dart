@@ -47,14 +47,14 @@ class SettingsScreen extends ConsumerWidget {
     final localeCode = _localeCode(locale);
 
     final _langNames = {
-      'zh': '中文（简体）',
-      'zh_TW': '中文（繁體）',
-      'en': 'English',
-      'ja': '日本語',
-      'ko': '한국어',
-      'es': 'Español',
-      'fr': 'Français',
-      'de': 'Deutsch',
+      'zh': l10n.langNameZhCn,
+      'zh_TW': l10n.langNameZhTw,
+      'en': l10n.langNameEn,
+      'ja': l10n.langNameJa,
+      'ko': l10n.langNameKo,
+      'es': l10n.langNameEs,
+      'fr': l10n.langNameFr,
+      'de': l10n.langNameDe,
     };
 
     return Scaffold(
@@ -281,23 +281,23 @@ class SettingsScreen extends ConsumerWidget {
   void _showLanguagePicker(BuildContext context, WidgetRef ref, {required bool isNative, required AppLocalizations l10n}) {
     HapticFeedback.selectionClick();
     final languages = isNative
-        ? const [
-            _LangOpt(code: 'zh', name: '中文（简体）'),
-            _LangOpt(code: 'zh_TW', name: '中文（繁體）'),
-            _LangOpt(code: 'en', name: 'English'),
-            _LangOpt(code: 'ja', name: '日本語'),
-            _LangOpt(code: 'ko', name: '한국어'),
-            _LangOpt(code: 'es', name: 'Español'),
-            _LangOpt(code: 'fr', name: 'Français'),
-            _LangOpt(code: 'de', name: 'Deutsch'),
+        ? [
+            _LangOpt(code: 'zh', name: l10n.langNameZhCn),
+            _LangOpt(code: 'zh_TW', name: l10n.langNameZhTw),
+            _LangOpt(code: 'en', name: l10n.langNameEn),
+            _LangOpt(code: 'ja', name: l10n.langNameJa),
+            _LangOpt(code: 'ko', name: l10n.langNameKo),
+            _LangOpt(code: 'es', name: l10n.langNameEs),
+            _LangOpt(code: 'fr', name: l10n.langNameFr),
+            _LangOpt(code: 'de', name: l10n.langNameDe),
           ]
-        : const [
-            _LangOpt(code: 'en', name: 'English'),
-            _LangOpt(code: 'ja', name: '日本語'),
-            _LangOpt(code: 'ko', name: '한국어'),
-            _LangOpt(code: 'es', name: 'Español'),
-            _LangOpt(code: 'fr', name: 'Français'),
-            _LangOpt(code: 'de', name: 'Deutsch'),
+        : [
+            _LangOpt(code: 'en', name: l10n.langNameEn),
+            _LangOpt(code: 'ja', name: l10n.langNameJa),
+            _LangOpt(code: 'ko', name: l10n.langNameKo),
+            _LangOpt(code: 'es', name: l10n.langNameEs),
+            _LangOpt(code: 'fr', name: l10n.langNameFr),
+            _LangOpt(code: 'de', name: l10n.langNameDe),
           ];
     final locale = ref.read(localeProvider);
     final current = isNative
