@@ -217,6 +217,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get keepPracticing => 'Keep practicing!';
 
   @override
+  String get langNameAr => 'Arabic';
+
+  @override
   String get langNameDe => 'Deutsch';
 
   @override
@@ -235,8 +238,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get langNameKo => '한국어';
 
   @override
-  String get langNameAr => '\u202BArabic\u202C';
-
   String get langNameMs => 'Bahasa Melayu';
 
   @override

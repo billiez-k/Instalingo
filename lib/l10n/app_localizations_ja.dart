@@ -217,6 +217,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get keepPracticing => '練習を続けましょう！';
 
   @override
+  String get langNameAr => 'アラビア語';
+
+  @override
   String get langNameDe => 'ドイツ語';
 
   @override
@@ -235,8 +238,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get langNameKo => '한국어';
 
   @override
-  String get langNameAr => '\u202Bアラビア語\u202C';
-
   String get langNameMs => 'マレー語';
 
   @override
@@ -681,7 +682,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get shareAppText => 'InstaLingoで日本語を学ぼう！\n\nスワイプして、学んで、リラックス。\n\nhttps://instalingo.app';
 
   @override
-  String get shareCardSubject => '{単語} - InstaLingoで学習';
+  String get shareCardSubject => '{word} - InstaLingoで学習';
 
   @override
   String get shareCardText => 'InstaLingoで日本語を学ぼう！';
@@ -852,16 +853,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String get yourScore => 'あなたのスコア';
 
   @override
-  String dayStreakCount(int count) => '\$count日連続記録';
+  String dayStreakCount(int count) => '\$count 日連続';
 
   @override
   String lapsesCount(int count) => '失効回数: \$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '\$level / \$words 学習した単語数';
+  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned 単語';
 
   @override
-  String profile_minPerDay(int min) => '分/日';
+  String profile_minPerDay(int min) => '\$minutes 分/日';
 
   @override
   String profile_minutesCount(int minutes) => '\$count min';
@@ -873,7 +874,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String reviewsCount(int count) => 'レビュー数：\$count';
 
   @override
-  String savePercent(int percent) => '\$パーセント節約';
+  String savePercent(int percent) => '\$percent% 節約';
 
   @override
   String sourceLabel(String source) => 'ソース: \$source';
@@ -885,6 +886,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String streakShieldsRemaining(int remaining) => '残りのシールド数：\$count';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${時間}h \${分}m';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
 
 }

@@ -217,6 +217,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get keepPracticing => 'استمر في التدرب!';
 
   @override
+  String get langNameAr => 'العربية';
+
+  @override
   String get langNameDe => 'الألمانية';
 
   @override
@@ -235,8 +238,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get langNameKo => 'شكرا';
 
   @override
-  String get langNameAr => '\u202B\u0627\u0644\u0639\u0631\u0628\u064A\u0629\u202C';
-
   String get langNameMs => 'البهاسا ملايو';
 
   @override
@@ -681,7 +682,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get shareAppText => 'تعلم اللغة اليابانية مع InstaLingo!\nانتقد، وتعلم، والبرد.\nhttps://instalingo.app';
 
   @override
-  String get shareCardSubject => '{كلمة} - تعلم مع InstaLingo';
+  String get shareCardSubject => '{word} - تعلم مع InstaLingo';
 
   @override
   String get shareCardText => 'تعلم اللغة اليابانية مع InstaLingo!';
@@ -855,28 +856,28 @@ class AppLocalizationsAr extends AppLocalizations {
   String dayStreakCount(int count) => '\$count يوم خط';
 
   @override
-  String lapsesCount(int count) => 'الهفوات: عدد \$';
+  String lapsesCount(int count) => 'الهفوات: \$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '\$level / \$words الكلمات المستفادة';
+  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned الكلمات';
 
   @override
-  String profile_minPerDay(int min) => '\$ دقيقة/يوم';
+  String profile_minPerDay(int min) => '\$minutes دقيقة/يوم';
 
   @override
-  String profile_minutesCount(int minutes) => 'الحد الأدنى لعدد الدولارات';
+  String profile_minutesCount(int minutes) => '\$count دقيقة';
 
   @override
-  String profile_version(String version) => 'الإصدار \$ الإصدار';
+  String profile_version(String version) => 'الإصدار \$version';
 
   @override
-  String reviewsCount(int count) => 'التعليقات: عدد الدولارات';
+  String reviewsCount(int count) => 'التعليقات: \$count';
 
   @override
-  String savePercent(int percent) => 'توفير %%%';
+  String savePercent(int percent) => 'حفظ \$percent%';
 
   @override
-  String sourceLabel(String source) => 'المصدر: \$المصدر';
+  String sourceLabel(String source) => 'المصدر: \$source';
 
   @override
   String get streakKeepStreak => 'حافظ على خط \$days-day الخاص بك على قيد الحياة!';
@@ -885,6 +886,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String streakShieldsRemaining(int remaining) => '\$count الدروع المتبقية';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${ساعات} ح \${دقائق} دقيقة';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
 
 }

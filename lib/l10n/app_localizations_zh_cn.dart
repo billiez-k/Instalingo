@@ -217,6 +217,9 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String get keepPracticing => '继续练习！';
 
   @override
+  String get langNameAr => '阿拉伯语';
+
+  @override
   String get langNameDe => '德语';
 
   @override
@@ -235,8 +238,6 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String get langNameKo => '한국어';
 
   @override
-  String get langNameAr => '\u202B阿拉伯语\u202C';
-
   String get langNameMs => '马来语';
 
   @override
@@ -852,7 +853,7 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String get yourScore => '你的得分';
 
   @override
-  String dayStreakCount(int count) => '连续天数';
+  String dayStreakCount(int count) => '\$count 天连胜';
 
   @override
   String lapsesCount(int count) => '失误次数：\$count';
@@ -861,10 +862,10 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned 单词';
 
   @override
-  String profile_minPerDay(int min) => '\$分钟/天';
+  String profile_minPerDay(int min) => '\$minutes 分钟/天';
 
   @override
-  String profile_minutesCount(int minutes) => '最小计数';
+  String profile_minutesCount(int minutes) => '\$count 分钟';
 
   @override
   String profile_version(String version) => '版本 \$version';
@@ -879,10 +880,10 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String sourceLabel(String source) => '来源：\$source';
 
   @override
-  String get streakKeepStreak => '保持你的每日连胜纪录！';
+  String get streakKeepStreak => '保持 \$days 天的连续记录！';
 
   @override
-  String streakShieldsRemaining(int remaining) => '剩余盾牌数量';
+  String streakShieldsRemaining(int remaining) => '剩余 \$count 护盾';
 
   @override
   String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';

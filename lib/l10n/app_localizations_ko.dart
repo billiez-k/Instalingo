@@ -217,6 +217,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get keepPracticing => '계속 연습하세요!';
 
   @override
+  String get langNameAr => '아랍어';
+
+  @override
   String get langNameDe => '독일어';
 
   @override
@@ -235,8 +238,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get langNameKo => '한국어';
 
   @override
-  String get langNameAr => '\u202B아랍어\u202C';
-
   String get langNameMs => '말레이어';
 
   @override
@@ -681,7 +682,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get shareAppText => 'InstaLingo로 일본어를 배우세요!\n스와이프하고, 배우고, 편안하게 즐기세요.\n\nhttps://instalingo.app';
 
   @override
-  String get shareCardSubject => '{단어} - InstaLingo로 배우세요';
+  String get shareCardSubject => '{word} - InstaLingo로 배우세요';
 
   @override
   String get shareCardText => 'InstaLingo로 일본어를 배우세요!';
@@ -858,10 +859,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String lapsesCount(int count) => '연체 횟수: \$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '\$level / \$words학습한 단어 수';
+  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned 단어';
 
   @override
-  String profile_minPerDay(int min) => '\$분/일';
+  String profile_minPerDay(int min) => '\$minutes 분/일';
 
   @override
   String profile_minutesCount(int minutes) => '\$count 최소';
@@ -873,7 +874,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String reviewsCount(int count) => '리뷰: \$count';
 
   @override
-  String savePercent(int percent) => '\$퍼센트를 절약하세요';
+  String savePercent(int percent) => '\$percent% 저장';
 
   @override
   String sourceLabel(String source) => '출처: \$source';
@@ -885,6 +886,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String streakShieldsRemaining(int remaining) => '\$count 방패 잔여 개수';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${시간}시간 \${분}분';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
 
 }

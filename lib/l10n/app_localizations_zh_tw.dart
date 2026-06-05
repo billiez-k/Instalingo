@@ -217,6 +217,9 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get keepPracticing => '繼續練習！';
 
   @override
+  String get langNameAr => '阿拉伯語';
+
+  @override
   String get langNameDe => '德文';
 
   @override
@@ -235,8 +238,6 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get langNameKo => '한국어';
 
   @override
-  String get langNameAr => '\u202B阿拉伯語\u202C';
-
   String get langNameMs => '馬來語';
 
   @override
@@ -858,13 +859,13 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String lapsesCount(int count) => '失誤次數：\$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '學習 \$lang 語言 \$duration';
+  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned 字';
 
   @override
-  String profile_minPerDay(int min) => '最小值/天';
+  String profile_minPerDay(int min) => '\$minutes 分鐘/天';
 
   @override
-  String profile_minutesCount(int minutes) => '分分鐘';
+  String profile_minutesCount(int minutes) => '\$count 分鐘';
 
   @override
   String profile_version(String version) => '版本：\$version';
@@ -873,18 +874,18 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String reviewsCount(int count) => '評論數：\$count';
 
   @override
-  String savePercent(int percent) => '節省了 %';
+  String savePercent(int percent) => '節省 \$percent%';
 
   @override
   String sourceLabel(String source) => '來源：\$source';
 
   @override
-  String get streakKeepStreak => '保持連勝！';
+  String get streakKeepStreak => '保持 \$days 天的連續記錄！';
 
   @override
-  String streakShieldsRemaining(int remaining) => '剩餘護盾數量';
+  String streakShieldsRemaining(int remaining) => '剩餘 \$count 護盾';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\$小時 hr \$分鐘 min';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
 
 }

@@ -217,6 +217,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get keepPracticing => 'Teruskan berlatih!';
 
   @override
+  String get langNameAr => 'Arab';
+
+  @override
   String get langNameDe => 'Jerman';
 
   @override
@@ -235,8 +238,6 @@ class AppLocalizationsMs extends AppLocalizations {
   String get langNameKo => '한국어';
 
   @override
-  String get langNameAr => '\u202BArab\u202C';
-
   String get langNameMs => 'Bahasa Melayu';
 
   @override
@@ -858,25 +859,25 @@ class AppLocalizationsMs extends AppLocalizations {
   String lapsesCount(int count) => 'Kegagalan: \$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsPerkataan yang dipelajari';
+  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned perkataan';
 
   @override
-  String profile_minPerDay(int min) => '\$minit min/hari';
+  String profile_minPerDay(int min) => '\$minutes min/hari';
 
   @override
-  String profile_minutesCount(int minutes) => '\$kiraan min';
+  String profile_minutesCount(int minutes) => '\$count min';
 
   @override
-  String profile_version(String version) => 'Versi \$versi';
+  String profile_version(String version) => 'Versi \$version';
 
   @override
   String reviewsCount(int count) => 'Ulasan: \$count';
 
   @override
-  String savePercent(int percent) => 'Jimat \$peratus%';
+  String savePercent(int percent) => 'Jimat \$percent%';
 
   @override
-  String sourceLabel(String source) => 'Sumber: \$sumber';
+  String sourceLabel(String source) => 'Sumber: \$source';
 
   @override
   String get streakKeepStreak => 'Kekalkan rentetan \$days-day anda!';
@@ -885,6 +886,6 @@ class AppLocalizationsMs extends AppLocalizations {
   String streakShieldsRemaining(int remaining) => '\$count perisai yang tinggal';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${jam}j \${minit}m';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}j \${minutes}m';
 
 }
