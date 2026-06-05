@@ -865,7 +865,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String profile_minPerDay(int min) => '\$minutes 分/日';
 
   @override
-  String profile_minutesCount(int minutes) => '\$count min';
+  String profile_minutesCount(int minutes) => '\$count 分';
 
   @override
   String profile_version(String version) => 'バージョン \$version';
@@ -886,6 +886,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String streakShieldsRemaining(int remaining) => '残りのシールド数：\$count';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours} 時間 \${minutes} 分';
 
 }

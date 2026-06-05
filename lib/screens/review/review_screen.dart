@@ -20,6 +20,7 @@ class ReviewScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final appTheme = context.appTheme;
+    final nativeCode = ref.read(userProvider).nativeLanguage;
     final l10n = AppLocalizations.of(context)!;
     final srsAsync = ref.watch(srsProvider);
     final user = ref.watch(userProvider);
@@ -239,12 +240,14 @@ class _ReviewCardListState extends ConsumerState<_ReviewCardList> {
                   ),
                 );
               }
+              final nativeCode = ref.read(userProvider).nativeLanguage;
               return _ReviewCard(
                 card: card,
                 srsData: srsItem,
                 showBack: _showBack,
                 appTheme: widget.appTheme,
                 onFlip: () => setState(() => _showBack = !_showBack),
+                nativeCode: nativeCode,
               );
             },
           ),
@@ -312,6 +315,7 @@ class _ReviewCard extends StatelessWidget {
   final bool showBack;
   final AppThemeExtension appTheme;
   final VoidCallback onFlip;
+  final String nativeCode;
 
   const _ReviewCard({
     required this.card,
@@ -319,6 +323,7 @@ class _ReviewCard extends StatelessWidget {
     required this.showBack,
     required this.appTheme,
     required this.onFlip,
+    required this.nativeCode,
   });
 
   @override
@@ -385,9 +390,9 @@ class _ReviewCard extends StatelessWidget {
                     ),
                   ),
                 ] else ...[
-                  // Back: meaning
+                  // Back: meaning in user's native language
                   Text(
-                    card.meaning,
+                    card.meaningFor(nativeCode),
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 22.sp,

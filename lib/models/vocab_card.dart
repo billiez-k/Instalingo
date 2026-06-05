@@ -4,8 +4,6 @@ class VocabCard {
   final String id;
   final String word;
   final String reading;
-  final String meaning;
-  final String meaningZh;
   final String pos;
   final String level;
   final String topic;
@@ -13,16 +11,19 @@ class VocabCard {
   final String? audioUrl;
   final String? exampleText;
   final String? exampleReading;
-  final String? exampleTranslation;
   final String? exampleAudioUrl;
   final String source;
+
+  /// Localized meanings keyed by locale code (en, zh_TW, zh_CN, ja, ko, ms, ar).
+  final Map<String, String> meanings;
+
+  /// Localized example translations keyed by locale code.
+  final Map<String, String> exampleTranslations;
 
   const VocabCard({
     required this.id,
     required this.word,
     required this.reading,
-    required this.meaning,
-    required this.meaningZh,
     required this.pos,
     required this.level,
     required this.topic,
@@ -30,18 +31,49 @@ class VocabCard {
     this.audioUrl,
     this.exampleText,
     this.exampleReading,
-    this.exampleTranslation,
     this.exampleAudioUrl,
     required this.source,
+    this.meanings = const {},
+    this.exampleTranslations = const {},
   });
 
+  /// Backward-compatible getters.
+  String get meaning => meanings['en'] ?? '';
+  String get meaningZh => meanings['zh_TW'] ?? '';
+
+  /// Look up meaning for a locale code. Falls back to English.
+  String meaningFor(String localeCode) =>
+      meanings[localeCode] ?? meanings['en'] ?? '';
+
+  /// Look up example translation for a locale code. Falls back to English.
+  String exampleTranslationFor(String localeCode) =>
+      exampleTranslations[localeCode] ?? exampleTranslations['en'] ?? '';
+
   factory VocabCard.fromJson(Map<String, dynamic> json) {
+    // Backward-compatible: old format with meaning/meaning_zh
+    Map<String, String> meanings = {};
+    if (json['meanings'] is Map) {
+      meanings = Map<String, String>.from(
+        (json['meanings'] as Map).map((k, v) => MapEntry(k.toString(), v.toString())),
+      );
+    } else {
+      if (json['meaning'] != null) meanings['en'] = json['meaning'].toString();
+      if (json['meaning_zh'] != null) meanings['zh_TW'] = json['meaning_zh'].toString();
+    }
+
+    Map<String, String> examples = {};
+    if (json['example_translations'] is Map) {
+      examples = Map<String, String>.from(
+        (json['example_translations'] as Map).map((k, v) => MapEntry(k.toString(), v.toString())),
+      );
+    } else if (json['example_translation'] != null) {
+      examples['en'] = json['example_translation'].toString();
+    }
+
     return VocabCard(
       id: json['id'] as String,
       word: json['word'] as String,
       reading: json['reading'] as String,
-      meaning: json['meaning'] as String,
-      meaningZh: json['meaning_zh'] as String? ?? '',
       pos: json['pos'] as String,
       level: json['level'] as String,
       topic: json['topic'] as String? ?? 'general',
@@ -49,9 +81,10 @@ class VocabCard {
       audioUrl: json['audio_url'] as String?,
       exampleText: json['example_text'] as String?,
       exampleReading: json['example_reading'] as String?,
-      exampleTranslation: json['example_translation'] as String?,
       exampleAudioUrl: json['example_audio_url'] as String?,
       source: json['source'] as String,
+      meanings: meanings,
+      exampleTranslations: examples,
     );
   }
 
@@ -59,8 +92,7 @@ class VocabCard {
         'id': id,
         'word': word,
         'reading': reading,
-        'meaning': meaning,
-        'meaning_zh': meaningZh,
+        'meanings': meanings,
         'pos': pos,
         'level': level,
         'topic': topic,
@@ -68,7 +100,7 @@ class VocabCard {
         'audio_url': audioUrl,
         'example_text': exampleText,
         'example_reading': exampleReading,
-        'example_translation': exampleTranslation,
+        'example_translations': exampleTranslations,
         'example_audio_url': exampleAudioUrl,
         'source': source,
       };

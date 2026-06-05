@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/vocab_card.dart';
 import 'package:instalingo/providers/revenuecat_provider.dart';
+import 'package:instalingo/providers/user_provider.dart';
+import 'package:instalingo/providers/locale_provider.dart';
 import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/providers/vocab_deck_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
@@ -34,6 +37,7 @@ class _CollectionsScreenState extends ConsumerState<CollectionsScreen> {
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
+    final nativeCode = ProviderScope.containerOf(context).read(userProvider).nativeLanguage;
     final l10n = AppLocalizations.of(context)!;
     final user = ref.watch(userProvider);
     final isPro = ref.watch(isProProvider);
@@ -53,8 +57,7 @@ class _CollectionsScreenState extends ConsumerState<CollectionsScreen> {
         final q = _searchQuery.toLowerCase();
         return c.word.toLowerCase().contains(q) ||
             c.reading.toLowerCase().contains(q) ||
-            c.meaning.toLowerCase().contains(q) ||
-            c.meaningZh.contains(q);
+            c.meanings.values.any((m) => m.toLowerCase().contains(q));
       }).toList();
     }
     if (_levelFilter != null) {
@@ -269,6 +272,7 @@ class _FilterChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
+    final nativeCode = ProviderScope.containerOf(context).read(userProvider).nativeLanguage;
 
     return GestureDetector(
       onTap: onTap,

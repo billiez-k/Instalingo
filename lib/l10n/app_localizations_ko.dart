@@ -541,7 +541,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get profile_notSet => '설정되지 않음';
 
   @override
-  String get profile_proBadge => '찬성';
+  String get profile_proBadge => '프로';
 
   @override
   String get profile_proficiencyLevel => '숙련도 수준';
@@ -568,7 +568,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get profile_soundEffects => '음향 효과';
 
   @override
-  String get profile_superBadge => '감독자';
+  String get profile_superBadge => '슈퍼';
 
   @override
   String get profile_tts => '발음 (TTS)';
@@ -865,7 +865,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String profile_minPerDay(int min) => '\$minutes 분/일';
 
   @override
-  String profile_minutesCount(int minutes) => '\$count 최소';
+  String profile_minutesCount(int minutes) => '\$count 분';
 
   @override
   String profile_version(String version) => '버전 \$version';
@@ -886,6 +886,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String streakShieldsRemaining(int remaining) => '\$count 방패 잔여 개수';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}시간 \${minutes}분';
 
 }

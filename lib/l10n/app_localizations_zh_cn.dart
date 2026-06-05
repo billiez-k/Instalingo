@@ -886,6 +886,6 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String streakShieldsRemaining(int remaining) => '剩余 \$count 护盾';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours} 小时 \${minutes} 分钟';
 
 }

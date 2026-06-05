@@ -409,7 +409,7 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get predictedLevel => '預測等級';
 
   @override
-  String get pro => 'Pro';
+  String get pro => '專業版';
 
   @override
   String get profile => '個人';
@@ -541,7 +541,7 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get profile_notSet => '未設定';
 
   @override
-  String get profile_proBadge => 'PRO';
+  String get profile_proBadge => '專業';
 
   @override
   String get profile_proficiencyLevel => '熟練程度';
@@ -568,7 +568,7 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get profile_soundEffects => '音效';
 
   @override
-  String get profile_superBadge => 'SUPER';
+  String get profile_superBadge => '超級';
 
   @override
   String get profile_tts => '發音（TTS）';
@@ -886,6 +886,6 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String streakShieldsRemaining(int remaining) => '剩餘 \$count 護盾';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours} 小時 \${minutes} 分鐘';
 
 }

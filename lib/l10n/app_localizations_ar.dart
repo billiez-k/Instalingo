@@ -886,6 +886,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String streakShieldsRemaining(int remaining) => '\$count الدروع المتبقية';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
+  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}س \${minutes}د';
 
 }

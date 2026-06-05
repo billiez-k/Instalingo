@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/vocab_card.dart';
@@ -14,12 +15,14 @@ class WordCard extends StatefulWidget {
   final VocabCard card;
   final bool showBack;
   final VoidCallback? onTap;
+  final String nativeCode;
 
   const WordCard({
     super.key,
     required this.card,
     this.showBack = false,
     this.onTap,
+    required this.nativeCode,
   });
 
   @override
@@ -282,11 +285,8 @@ class _WordCardState extends State<WordCard>
             Container(width: 24.w, height: 2, color: BusanHarborTokens.orange),
             SizedBox(height: 20.h),
 
-            // Meanings
-            _infoRow(l10n.english, card.meaning, appTheme),
-            SizedBox(height: 8.h),
-            if (card.meaningZh.isNotEmpty)
-              _infoRow(l10n.chinese, card.meaningZh, appTheme),
+            // Meaning in user's native language
+            _infoRow(l10n.nativeLanguage, card.meaningFor(widget.nativeCode), appTheme),
             SizedBox(height: 20.h),
 
             // Part of Speech & Level
@@ -302,7 +302,7 @@ class _WordCardState extends State<WordCard>
             // Example sentence
             if (card.exampleText != null && card.exampleText!.isNotEmpty) ...[
               Text(
-                'Example',
+                l10n.exampleSectionLabel,
                 style: TextStyle(
                   fontSize: 11.sp,
                   fontWeight: FontWeight.w800,
@@ -344,11 +344,10 @@ class _WordCardState extends State<WordCard>
                         ),
                       ),
                     ],
-                    if (card.exampleTranslation != null &&
-                        card.exampleTranslation!.isNotEmpty) ...[
+                    if (card.exampleTranslationFor(widget.nativeCode).isNotEmpty) ...[
                       SizedBox(height: 4.h),
                       Text(
-                        card.exampleTranslation!,
+                        card.exampleTranslationFor(widget.nativeCode),
                         style: TextStyle(
                           fontSize: 13.sp,
                           fontStyle: FontStyle.italic,

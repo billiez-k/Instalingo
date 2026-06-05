@@ -568,7 +568,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get profile_soundEffects => 'Kesan Bunyi';
 
   @override
-  String get profile_superBadge => 'SUPER';
+  String get profile_superBadge => 'HEBAT';
 
   @override
   String get profile_tts => 'Sebutan (TTS)';
@@ -865,7 +865,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String profile_minPerDay(int min) => '\$minutes min/hari';
 
   @override
-  String profile_minutesCount(int minutes) => '\$count min';
+  String profile_minutesCount(int minutes) => '\$count minit';
 
   @override
   String profile_version(String version) => 'Versi \$version';

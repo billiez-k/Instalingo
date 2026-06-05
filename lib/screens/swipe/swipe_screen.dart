@@ -12,6 +12,7 @@ import 'package:instalingo/models/user.dart';
 import 'package:instalingo/models/vocab_card.dart';
 import 'package:instalingo/providers/settings_provider.dart';
 import 'package:instalingo/providers/user_provider.dart';
+import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/providers/vocab_deck_provider.dart';
 import 'package:instalingo/screens/swipe/tutorial_overlay.dart';
 import 'package:instalingo/screens/swipe/word_card.dart';
@@ -145,6 +146,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
+    final nativeCode = ref.read(userProvider).nativeLanguage;
     final l10n = AppLocalizations.of(context)!;
     final _ = ref.watch(currentDeckProvider);
     final user = ref.watch(userProvider);
@@ -259,6 +261,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
   }
 
   Widget _buildSwiper(AppThemeExtension appTheme, AppLocalizations l10n, UserProfile user) {
+    final nativeCode = ref.read(userProvider).nativeLanguage;
     final remaining = _cards.length - _currentIndex;
     final progress = _cards.isNotEmpty ? _currentIndex / _cards.length : 0.0;
 
@@ -296,6 +299,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                       card: _cards[index],
                       showBack: index == _currentIndex && _isFlipped,
                       onTap: index == _currentIndex ? _onFlip : null,
+                      nativeCode: nativeCode,
                     );
                   },
                 ),
