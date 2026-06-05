@@ -1,7 +1,7 @@
 import 'app_localizations.dart';
 
 class AppLocalizationsZhTw extends AppLocalizations {
-    AppLocalizationsZhTw();
+  AppLocalizationsZhTw();
 
   @override
   String get achievementsInProgress => '進行中';
@@ -235,6 +235,8 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get langNameKo => '한국어';
 
   @override
+  String get langNameAr => '\u202B阿拉伯語\u202C';
+
   String get langNameMs => '馬來語';
 
   @override
@@ -290,6 +292,9 @@ class AppLocalizationsZhTw extends AppLocalizations {
 
   @override
   String get noAds => '無廣告';
+
+  @override
+  String get notificationPracticeReminder => '是時候練習了！';
 
   @override
   String get notificationReminderBody => '該練習了！';
@@ -680,6 +685,9 @@ class AppLocalizationsZhTw extends AppLocalizations {
 
   @override
   String get shareCardText => '透過 InstaLingo 學習日文！';
+
+  @override
+  String get shareLabel => '分享';
 
   @override
   String get shareWordPrefix => '單字';

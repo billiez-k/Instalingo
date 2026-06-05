@@ -6,6 +6,7 @@ import 'app_localizations_en.dart';
 import 'app_localizations_ja.dart';
 import 'app_localizations_ko.dart';
 import 'app_localizations_ms.dart';
+import 'app_localizations_ar.dart';
 import 'app_localizations_zh_cn.dart';
 import 'app_localizations_zh_tw.dart';
 
@@ -166,6 +167,7 @@ abstract class AppLocalizations {
   String get langNameKo;
 
   String get langNameMs;
+  String get langNameAr;
 
   String get langNameZhCn;
 
@@ -454,6 +456,9 @@ abstract class AppLocalizations {
   String get settingsTitle;
 
   String get settingsVersion;
+
+  String get shareLabel;
+  String get notificationPracticeReminder;
 
   String get shareAppSubject;
 

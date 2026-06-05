@@ -1,7 +1,7 @@
 import 'app_localizations.dart';
 
 class AppLocalizationsMs extends AppLocalizations {
-    AppLocalizationsMs();
+  AppLocalizationsMs();
 
   @override
   String get achievementsInProgress => 'Sedang Dijalankan';
@@ -235,6 +235,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get langNameKo => '한국어';
 
   @override
+  String get langNameAr => '\u202BArab\u202C';
+
   String get langNameMs => 'Bahasa Melayu';
 
   @override
@@ -290,6 +292,9 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get noAds => 'Tiada iklan';
+
+  @override
+  String get notificationPracticeReminder => 'Masa untuk berlatih!';
 
   @override
   String get notificationReminderBody => 'Masa untuk berlatih!';
@@ -680,6 +685,9 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get shareCardText => 'Belajar bahasa Jepun dengan InstaLingo!';
+
+  @override
+  String get shareLabel => 'Kongsi';
 
   @override
   String get shareWordPrefix => 'Perkataan';

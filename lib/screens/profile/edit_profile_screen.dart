@@ -181,6 +181,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
       _LangOpt(code: 'es', name: l10n.langNameEs),
       _LangOpt(code: 'fr', name: l10n.langNameFr),
       _LangOpt(code: 'de', name: l10n.langNameDe),
+          _LangOpt(code: 'ar', name: l10n.langNameAr),
     ];
     showModalBottomSheet(
       context: context,

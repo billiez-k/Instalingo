@@ -1,7 +1,7 @@
 import 'app_localizations.dart';
 
 class AppLocalizationsKo extends AppLocalizations {
-    AppLocalizationsKo();
+  AppLocalizationsKo();
 
   @override
   String get achievementsInProgress => '진행 중';
@@ -235,6 +235,8 @@ class AppLocalizationsKo extends AppLocalizations {
   String get langNameKo => '한국어';
 
   @override
+  String get langNameAr => '\u202B아랍어\u202C';
+
   String get langNameMs => '말레이어';
 
   @override
@@ -290,6 +292,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get noAds => '광고 없음';
+
+  @override
+  String get notificationPracticeReminder => '연습할 시간이에요!';
 
   @override
   String get notificationReminderBody => '연습 시간!';
@@ -680,6 +685,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get shareCardText => 'InstaLingo로 일본어를 배우세요!';
+
+  @override
+  String get shareLabel => '공유하다';
 
   @override
   String get shareWordPrefix => '단어';

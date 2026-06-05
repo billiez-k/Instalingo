@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/providers/user_provider.dart';
 
 /// In-app notification & reminder service.
@@ -76,8 +77,8 @@ class NotificationService {
     if (!_context.mounted) return;
 
     ScaffoldMessenger.of(_context).showSnackBar(
-      const SnackBar(
-        content: Text('Time to practice!'),
+      SnackBar(
+        content: Text(AppLocalizations.of(_context)!.notificationPracticeReminder),
         duration: Duration(seconds: 6),
         behavior: SnackBarBehavior.floating,
       ),

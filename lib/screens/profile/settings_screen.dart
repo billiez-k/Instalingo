@@ -55,6 +55,7 @@ class SettingsScreen extends ConsumerWidget {
       'es': l10n.langNameEs,
       'fr': l10n.langNameFr,
       'de': l10n.langNameDe,
+      'ar': l10n.langNameAr,
     };
 
     return Scaffold(
@@ -290,6 +291,7 @@ class SettingsScreen extends ConsumerWidget {
             _LangOpt(code: 'es', name: l10n.langNameEs),
             _LangOpt(code: 'fr', name: l10n.langNameFr),
             _LangOpt(code: 'de', name: l10n.langNameDe),
+            _LangOpt(code: 'ar', name: l10n.langNameAr),
           ]
         : [
             _LangOpt(code: 'en', name: l10n.langNameEn),
@@ -298,6 +300,7 @@ class SettingsScreen extends ConsumerWidget {
             _LangOpt(code: 'es', name: l10n.langNameEs),
             _LangOpt(code: 'fr', name: l10n.langNameFr),
             _LangOpt(code: 'de', name: l10n.langNameDe),
+            _LangOpt(code: 'ar', name: l10n.langNameAr),
           ];
     final locale = ref.read(localeProvider);
     final current = isNative

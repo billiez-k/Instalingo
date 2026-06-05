@@ -322,7 +322,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                           _ActionBtn(
                             icon: PhosphorIcons.shareNetwork(
                                 PhosphorIconsStyle.regular),
-                            label: 'Share',
+                            label: l10n.shareLabel,
                             color: appTheme.onSurfaceVariant,
                             onTap: () {
                               final text = [
