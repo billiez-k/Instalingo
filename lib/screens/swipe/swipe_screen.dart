@@ -40,6 +40,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
   int _xpEarned = 0;
   int _gemsEarned = 0;
   bool _isLoading = true;
+  String? _loadError;
   bool _showTutorial = false;
   bool _isFlipped = false;
 
@@ -151,16 +152,29 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
     final _ = ref.watch(currentDeckProvider);
     final user = ref.watch(userProvider);
 
-    // Load deck
+    // Load deck — react to level changes and handle errors
     ref.listen(currentDeckProvider, (_, next) {
-      next.whenData((deck) {
-        if (_isLoading && mounted) {
-          setState(() {
-            _cards = _filterCards(deck.cards, user);
-            _isLoading = false;
-          });
-        }
-      });
+      next.when(
+        loading: () {},
+        error: (error, _) {
+          if (mounted) {
+            setState(() {
+              _isLoading = false;
+              _loadError = error.toString();
+            });
+          }
+        },
+        data: (deck) {
+          if (mounted) {
+            setState(() {
+              _cards = _filterCards(deck.cards, user);
+              _currentIndex = 0;
+              _isLoading = false;
+              _loadError = null;
+            });
+          }
+        },
+      );
     });
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
@@ -173,7 +187,9 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
         body: SafeArea(
           child: _isLoading
               ? _buildLoading(appTheme, l10n)
-              : _cards.isEmpty
+              : _loadError != null
+                  ? _buildError(appTheme, l10n)
+                  : _cards.isEmpty
                   ? _buildEmpty(appTheme, l10n)
                   : _buildSwiper(appTheme, l10n, user),
         ),
@@ -212,6 +228,28 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildError(AppThemeExtension appTheme, AppLocalizations l10n) {
+    return Center(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 32.w),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            PhosphorIcon(PhosphorIcons.warningCircle(PhosphorIconsStyle.bold), size: 48.sp, color: BusanHarborTokens.orange),
+            SizedBox(height: 16.h),
+            Text(l10n.errorGenericTitle, style: TextStyle(fontSize: 16.sp, color: Colors.white70), textAlign: TextAlign.center),
+            SizedBox(height: 24.h),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: BusanHarborTokens.orange, foregroundColor: Colors.white),
+              onPressed: () => ref.invalidate(currentDeckProvider),
+              child: Text(l10n.retry, style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w700)),
+            ),
+          ],
+        ),
       ),
     );
   }
