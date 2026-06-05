@@ -175,12 +175,12 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
   void _showLearningLanguagePicker(BuildContext context, WidgetRef ref, String current, AppLocalizations l10n) {
     HapticFeedback.selectionClick();
     final languages = [
-      _LangOpt(code: 'en', name: 'English'),
-      _LangOpt(code: 'ja', name: '日本語'),
-      _LangOpt(code: 'ko', name: '한국어'),
-      _LangOpt(code: 'es', name: 'Español'),
-      _LangOpt(code: 'fr', name: 'Français'),
-      _LangOpt(code: 'de', name: 'Deutsch'),
+      _LangOpt(code: 'en', name: l10n.langNameEn),
+      _LangOpt(code: 'ja', name: l10n.langNameJa),
+      _LangOpt(code: 'ko', name: l10n.langNameKo),
+      _LangOpt(code: 'es', name: l10n.langNameEs),
+      _LangOpt(code: 'fr', name: l10n.langNameFr),
+      _LangOpt(code: 'de', name: l10n.langNameDe),
     ];
     showModalBottomSheet(
       context: context,

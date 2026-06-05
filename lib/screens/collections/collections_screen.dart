@@ -91,7 +91,7 @@ class _CollectionsScreenState extends ConsumerState<CollectionsScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      '${savedCards.length} / ${isPro ? 'unlimited' : '$_freeLimit ${l10n.collectionsWordsCount}'}',
+                      '${savedCards.length} / ${isPro ? l10n.collectionsUnlimited : '$_freeLimit ${l10n.collectionsWordsCount}'}',
                       style: TextStyle(
                         fontSize: 13.sp,
                         fontWeight: FontWeight.w700,

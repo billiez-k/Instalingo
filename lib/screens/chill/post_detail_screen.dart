@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/data/chill_post_loader.dart';
 import 'package:instalingo/models/chill_post.dart';
@@ -58,6 +59,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
     return FutureBuilder<List<ChillPost>>(
       future: ChillPostLoader.loadPosts(),
       builder: (context, snapshot) {
+        final l10n = AppLocalizations.of(context)!;
         if (!snapshot.hasData) {
           return Scaffold(
             appBar: AppBar(
@@ -89,7 +91,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                   ),
                   SizedBox(height: 16.h),
                   Text(
-                    'Post not found',
+                    l10n.postNotFound,
                     style: TextStyle(
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w700,
@@ -111,7 +113,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
               color: appTheme.harborInkOnNavy,
             ),
             title: Text(
-              'CHILL CORNER',
+              l10n.chillCornerEyebrow,
               style: TextStyle(
                 fontSize: 12.sp,
                 fontWeight: FontWeight.w800,
@@ -140,7 +142,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                           SizedBox(width: 8.w),
                           Expanded(
                             child: Text(
-                              'CHILL CORNER',
+                              l10n.chillCornerEyebrow,
                               style: TextStyle(
                                 fontSize: 11.sp,
                                 fontWeight: FontWeight.w800,
@@ -225,7 +227,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'FEATURED WORD',
+                                  l10n.featuredWord,
                                   style: TextStyle(
                                     fontSize: 10.sp,
                                     fontWeight: FontWeight.w800,
@@ -255,7 +257,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                                       ),
                                       SizedBox(width: 4.w),
                                       Text(
-                                        'Tap to study this word',
+                                        l10n.tapToStudyWord,
                                         style: TextStyle(
                                           fontSize: 12.sp,
                                           color: BusanHarborTokens.orange,
@@ -326,9 +328,9 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                               final text = [
                                 post.content,
                                 if (post.targetWord != null)
-                                  'Word: ${post.targetWord}',
+                                  '${l10n.shareWordPrefix}: ${post.targetWord}',
                                 '',
-                                'via InstaLingo',
+                                l10n.viaInstalingo,
                               ].join('\n');
                               Share.share(text);
                             },
@@ -340,7 +342,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
 
                       // Comments header
                       Text(
-                        'Comments',
+                        l10n.commentSectionTitle,
                         style: theme.textTheme.headlineSmall?.copyWith(
                           color: appTheme.harborNavy,
                         ),
@@ -374,7 +376,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                           controller: _commentController,
                           focusNode: _commentFocusNode,
                           decoration: InputDecoration(
-                            hintText: 'Add a comment...',
+                            hintText: l10n.commentHintText,
                             filled: true,
                             fillColor: appTheme.surfaceVariant,
                             border: OutlineInputBorder(

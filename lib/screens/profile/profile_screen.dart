@@ -142,7 +142,7 @@ class _ProfileHeader extends StatelessWidget {
                       child: Text(
                         l10n.profile_learningStatus(
                           user.learningLanguage.toUpperCase(),
-                          user.totalCardsSwiped,
+                          user.totalCardsSwiped.toString(),
                         ).toUpperCase(),
                         overflow: TextOverflow.ellipsis,
                         style: TextStyle(

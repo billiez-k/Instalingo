@@ -88,7 +88,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                     ),
                     SizedBox(height: 24.h),
                     Text(
-                      'INSTALINGO',
+                      l10n.appTitle,
                       style: TextStyle(
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w800,
@@ -120,7 +120,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                         icon: PhosphorIcons.cards(PhosphorIconsStyle.bold),
                         title: l10n.onboardingSwipeLearn,
                         description:
-                            'Swipe through vocabulary cards like a social feed. Save what matters, skip what you know.',
+                            l10n.onboardingSwipeLearnDesc,
                       ),
                       SizedBox(height: 12.h),
                       _FeatureBullet(
@@ -128,14 +128,14 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                             PhosphorIconsStyle.bold),
                         title: l10n.onboardingSmartReview,
                         description:
-                            'FSRS-powered spaced repetition keeps words fresh. Review exactly when you need to.',
+                            l10n.onboardingSmartReviewDesc,
                       ),
                       SizedBox(height: 12.h),
                       _FeatureBullet(
                         icon: PhosphorIcons.chartLineUp(PhosphorIconsStyle.bold),
                         title: l10n.onboardingTrackProgress,
                         description:
-                            'Build streaks, earn XP, and watch your vocabulary grow with detailed stats.',
+                            l10n.onboardingTrackProgressDesc,
                       ),
                       SizedBox(height: 40.h),
                       SizedBox(

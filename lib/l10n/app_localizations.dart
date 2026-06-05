@@ -1,304 +1,625 @@
-import 'dart:async';
+import 'package:flutter/material.dart';
 
-import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:intl/intl.dart' as intl;
+import 'package:flutter/foundation.dart' show SynchronousFuture;
 
 import 'app_localizations_en.dart';
-import 'app_localizations_zh.dart';
-
-// ignore_for_file: type=lint
+import 'app_localizations_ja.dart';
+import 'app_localizations_ko.dart';
+import 'app_localizations_ms.dart';
+import 'app_localizations_zh_cn.dart';
+import 'app_localizations_zh_tw.dart';
 
 abstract class AppLocalizations {
-  AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
-  final String localeName;
+  String get achievementsInProgress;
 
-  static AppLocalizations? of(BuildContext context) {
-    return Localizations.of<AppLocalizations>(context, AppLocalizations);
-  }
+  String get achievementsTitle;
 
-  static const LocalizationsDelegate<AppLocalizations> delegate =
+  String get achievementsUnlocked;
+
+  String get active;
+
+  String get advancedProgressTracking;
+
+  String get aiConversationPractice;
+
+  String get annual;
+
+  String get appTagline;
+
+  String get appTitle;
+
+  String get back;
+
+  String get cancel;
+
+  String get cardNotFound;
+
+  String get check;
+
+  String get chillAddComment;
+
+  String get chillComments;
+
+  String get chillCorner;
+
+  String get chillCornerEyebrow;
+
+  String get chillEmptyMessage;
+
+  String get chillNoPosts;
+
+  String get chillNoPostsMessage;
+
+  String get chinese;
+
+  String get collectionsEmptyHint;
+
+  String get collectionsEmptyMessage;
+
+  String get collectionsEmptyTitle;
+
+  String get collectionsFilterAll;
+
+  String get collectionsNoSavedWords;
+
+  String get collectionsPosTopicFormat;
+
+  String get collectionsSearchHint;
+
+  String get collectionsTitle;
+
+  String get collectionsUnlimited;
+
+  String get collectionsUpgradePrompt;
+
+  String get collectionsWordsCount;
+
+  String get commentHintText;
+
+  String get commentSectionTitle;
+
+  String get confirm;
+
+  String get coursePath;
+
+  String get dailyCompleteCardsLabel;
+
+  String get dailyCompleteCardsSwiped;
+
+  String get dailyCompleteContinue;
+
+  String get dailyCompleteGemsEarned;
+
+  String get dailyCompleteGemsLabel;
+
+  String get dailyCompleteShare;
+
+  String get dailyCompleteStreak;
+
+  String get dailyCompleteTitle;
+
+  String get dailyCompleteXpEarned;
+
+  String get dailyGoal;
+
+  String get darkMode;
+
+  String get dayStreak;
+
+  String get defaultDisplayName;
+
+  String get delete;
+
+  String get editProfile;
+
+  String get emptyStateMessage;
+
+  String get emptyStateTitle;
+
+  String get english;
+
+  String get error;
+
+  String get errorGenericMessage;
+
+  String get errorGenericTitle;
+
+  String get errorLoadingFeed;
+
+  String get errorLoadingReviews;
+
+  String get exampleSectionLabel;
+
+  String get featuredWord;
+
+  String get free;
+
+  String get fri;
+
+  String get gems;
+
+  String get getUnlimitedLearning;
+
+  String get gotIt;
+
+  String get helpSupport;
+
+  String get jlptN3Label;
+
+  String get jlptN4Label;
+
+  String get jlptN5Label;
+
+  String get keepPracticing;
+
+  String get langNameDe;
+
+  String get langNameEn;
+
+  String get langNameEs;
+
+  String get langNameFr;
+
+  String get langNameJa;
+
+  String get langNameKo;
+
+  String get langNameMs;
+
+  String get langNameZhCn;
+
+  String get langNameZhTw;
+
+  String get learningLanguage;
+
+  String get lessons;
+
+  String get levelAbbreviation;
+
+  String get loading;
+
+  String get locked;
+
+  String get logout;
+
+  String get maybeLater;
+
+  String get mon;
+
+  String get monthly;
+
+  String get nativeLanguage;
+
+  String get navCollections;
+
+  String get navHome;
+
+  String get navProfile;
+
+  String get navReview;
+
+  String get no;
+
+  String get noAds;
+
+  String get notificationReminderBody;
+
+  String get notifications;
+
+  String get onboardingAlreadyHaveAccount;
+
+  String get onboardingComingSoon;
+
+  String get onboardingDiscoverJapanese;
+
+  String get onboardingGetStarted;
+
+  String get onboardingJapanese;
+
+  String get onboardingJlptLevels;
+
+  String get onboardingKorean;
+
+  String get onboardingSelectLearningLanguage;
+
+  String get onboardingSelectNativeLanguage;
+
+  String get onboardingSmartReview;
+
+  String get onboardingSmartReviewDesc;
+
+  String get onboardingSwipeLearn;
+
+  String get onboardingSwipeLearnDesc;
+
+  String get onboardingTrackProgress;
+
+  String get onboardingTrackProgressDesc;
+
+  String get onboarding_examLevelAdvanced;
+
+  String get onboarding_examLevelBeginner;
+
+  String get onboarding_examLevelIntermediate;
+
+  String get onboarding_examWordsCount;
+
+  String get paywallAnnual;
+
+  String get paywallBestValue;
+
+  String get paywallContinue;
+
+  String get paywallDetailedStats;
+
+  String get paywallFullSrsAccess;
+
+  String get paywallMaybeLater;
+
+  String get paywallMonthly;
+
+  String get paywallNoAds;
+
+  String get paywallPerMonth;
+
+  String get paywallTitle;
+
+  String get paywallUnlimitedSaves;
+
+  String get paywallUnlockFull;
+
+  String get perMonth;
+
+  String get perYear;
+
+  String get postNotFound;
+
+  String get predictedLevel;
+
+  String get pro;
+
+  String get profile;
+
+  String get profileAchievements;
+
+  String get profileEdit;
+
+  String get profileGems;
+
+  String get profileHelp;
+
+  String get profileLearner;
+
+  String get profilePro;
+
+  String get profileSettings;
+
+  String get profileStats;
+
+  String get profileStreak;
+
+  String get profileWordsSaved;
+
+  String get profileXp;
+
+  String get profile_account;
+
+  String get profile_advanced;
+
+  String get profile_aiConversationPractice;
+
+  String get profile_aiConversationPracticeAnswer;
+
+  String get profile_appearance;
+
+  String get profile_beginner;
+
+  String get profile_browseTopics;
+
+  String get profile_checkForUpdates;
+
+  String get profile_contactSupport;
+
+  String get profile_displayName;
+
+  String get profile_earningXPGems;
+
+  String get profile_earningXPGemsAnswer;
+
+  String get profile_elementary;
+
+  String get profile_email;
+
+  String get profile_enableNotifications;
+
+  String get profile_enableNotificationsAnswer;
+
+  String get profile_enterYourEmail;
+
+  String get profile_enterYourName;
+
+  String get profile_gettingStarted;
+
+  String get profile_gotIt;
+
+  String get profile_howDoIStart;
+
+  String get profile_howDoIStartAnswer;
+
+  String get profile_instalingoSuperFAQ;
+
+  String get profile_instalingoSuperFAQAnswer;
+
+  String get profile_intermediate;
+
+  String get profile_learning;
+
+  String get profile_learningFeatures;
+
+  String get profile_lessonRemindersStreakAlerts;
+
+  String get profile_level;
+
+  String get profile_levelSuffix;
+
+  String get profile_notSet;
+
+  String get profile_proBadge;
+
+  String get profile_proficiencyLevel;
+
+  String get profile_proficient;
+
+  String get profile_resetProgress;
+
+  String get profile_resetProgressFAQ;
+
+  String get profile_resetProgressFAQAnswer;
+
+  String get profile_settingDailyGoals;
+
+  String get profile_settingDailyGoalsAnswer;
+
+  String get profile_soundEffects;
+
+  String get profile_superBadge;
+
+  String get profile_tts;
+
+  String get profile_ttsDesc;
+
+  String get profile_upperIntermediate;
+
+  String get profile_visitHelpCenter;
+
+  String get profile_whatIsChillCorner;
+
+  String get profile_whatIsChillCornerAnswer;
+
+  String get retry;
+
+  String get reviewAgain;
+
+  String get reviewAllCaughtUp;
+
+  String get reviewCardsDue;
+
+  String get reviewCompleteMessage;
+
+  String get reviewCompleteTitle;
+
+  String get reviewEasy;
+
+  String get reviewEmptyMessage;
+
+  String get reviewEmptyTitle;
+
+  String get reviewGood;
+
+  String get reviewHard;
+
+  String get reviewTitle;
+
+  String get sat;
+
+  String get save;
+
+  String get settingsAccount;
+
+  String get settingsAppearance;
+
+  String get settingsCheckUpdates;
+
+  String get settingsDailyGoal;
+
+  String get settingsDarkMode;
+
+  String get settingsLearning;
+
+  String get settingsLearningLanguage;
+
+  String get settingsLogout;
+
+  String get settingsNativeLanguage;
+
+  String get settingsNotifications;
+
+  String get settingsReminderTime;
+
+  String get settingsResetProgress;
+
+  String get settingsSoundEffects;
+
+  String get settingsTitle;
+
+  String get settingsVersion;
+
+  String get shareAppSubject;
+
+  String get shareAppText;
+
+  String get shareCardSubject;
+
+  String get shareCardText;
+
+  String get shareWordPrefix;
+
+  String get startFreeTrial;
+
+  String get statsCardsSwiped;
+
+  String get statsStreak;
+
+  String get statsTitle;
+
+  String get statsTotalXp;
+
+  String get statsWeekXp;
+
+  String get statsWordsSaved;
+
+  String get streakCalendar;
+
+  String get streakRepair;
+
+  String get streakRepaired;
+
+  String get streakShielded;
+
+  String get studyPlan;
+
+  String get studyReminderBody;
+
+  String get subscription;
+
+  String get sun;
+
+  String get swipeAllCaughtUp;
+
+  String get swipeBackToHome;
+
+  String get swipeDayStreak;
+
+  String get swipeLeft;
+
+  String get swipeLeftDescription;
+
+  String get swipeLoadingCards;
+
+  String get swipeRemaining;
+
+  String get swipeRight;
+
+  String get swipeRightDescription;
+
+  String get swipeSaved;
+
+  String get swipeSeenAllCards;
+
+  String get swipeToday;
+
+  String get swipeUp;
+
+  String get swipeUpDescription;
+
+  String get swipeXp;
+
+  String get tapToFlip;
+
+  String get tapToFlipBack;
+
+  String get tapToLearn;
+
+  String get tapToStudyWord;
+
+  String get thu;
+
+  String get timeSpent;
+
+  String get today;
+
+  String get totalXP;
+
+  String get tryAgain;
+
+  String get tue;
+
+  String get unlimitedLessons;
+
+  String get unlockSuper;
+
+  String get upgradePrompt;
+
+  String get version;
+
+  String get viaInstalingo;
+
+  String get wed;
+
+  String get wordsLearned;
+
+  String get xpThisWeek;
+
+  String get yes;
+
+  String get youAreOffline;
+
+  String get yourAnswer;
+
+  String get yourProgress;
+
+  String get yourScore;
+
+  String dayStreakCount(int count);
+
+  String lapsesCount(int count);
+
+  String profile_learningStatus(String lang, String duration);
+
+  String profile_minPerDay(int min);
+
+  String profile_minutesCount(int minutes);
+
+  String profile_version(String version);
+
+  String reviewsCount(int count);
+
+  String savePercent(int percent);
+
+  String sourceLabel(String source);
+
+  String get streakKeepStreak;
+
+  String streakShieldsRemaining(int remaining);
+
+  String timeSpentHoursMinutes(int hours, int minutes);
+
+  static final _localizedDelegate = {
+    const Locale('en'): () => AppLocalizationsEn(),
+    const Locale('ja'): () => AppLocalizationsJa(),
+    const Locale('ko'): () => AppLocalizationsKo(),
+    const Locale('ms'): () => AppLocalizationsMs(),
+    const Locale('zh', 'CN'): () => AppLocalizationsZhCn(),
+    const Locale('zh', 'TW'): () => AppLocalizationsZhTw(),
+  };
+
+  // ignore: avoid-dynamic
+  static final LocalizationsDelegate<AppLocalizations> delegate =
       _AppLocalizationsDelegate();
 
-  static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
-      <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
-
-  static const List<Locale> supportedLocales = <Locale>[
+  static const List<Locale> supportedLocales = [
     Locale('en'),
+    Locale('ja'),
+    Locale('ko'),
+    Locale('ms'),
+    Locale('zh', 'CN'),
     Locale('zh', 'TW'),
   ];
 
-  String get appTitle;
-  String get appTagline;
-  String get onboardingDiscoverJapanese;
-  String get onboardingSwipeLearn;
-  String get onboardingSmartReview;
-  String get onboardingTrackProgress;
-  String get onboardingGetStarted;
-  String get onboardingAlreadyHaveAccount;
-  String get onboardingSelectNativeLanguage;
-  String get onboardingSelectLearningLanguage;
-  String get onboardingJapanese;
-  String get onboardingKorean;
-  String get onboardingComingSoon;
-  String get onboardingJlptLevels;
-  String get navHome;
-  String get navReview;
-  String get navCollections;
-  String get navProfile;
-  String get swipeLoadingCards;
-  String get swipeAllCaughtUp;
-  String get swipeSeenAllCards;
-  String get swipeBackToHome;
-  String get swipeToday;
-  String get swipeRemaining;
-  String get swipeDayStreak;
-  String get swipeSaved;
-  String get swipeXp;
-  String get reviewTitle;
-  String get reviewCardsDue;
-  String get reviewAllCaughtUp;
-  String get reviewAgain;
-  String get reviewHard;
-  String get reviewGood;
-  String get reviewEasy;
-  String get collectionsTitle;
-  String get collectionsWordsCount;
-  String get collectionsSearchHint;
-  String get collectionsFilterAll;
-  String get collectionsUpgradePrompt;
-  String get collectionsNoSavedWords;
-  String get dailyCompleteTitle;
-  String get dailyCompleteCardsSwiped;
-  String get dailyCompleteXpEarned;
-  String get dailyCompleteGemsEarned;
-  String get dailyCompleteStreak;
-  String get dailyCompleteContinue;
-  String get dailyCompleteShare;
-  String get chillCorner;
-  String get chillNoPosts;
-  String get chillNoPostsMessage;
-  String get chillAddComment;
-  String get chillComments;
-  String get cardNotFound;
-  String get chinese;
-  String get chillEmptyMessage;
-  String get collectionsEmptyHint;
-  String get collectionsEmptyMessage;
-  String get collectionsEmptyTitle;
-  String get dailyCompleteCardsLabel;
-  String get dailyCompleteGemsLabel;
-  String get english;
-  String get errorLoadingFeed;
-  String get errorLoadingReviews;
-  String get gotIt;
-  String get reviewCompleteMessage;
-  String get reviewCompleteTitle;
-  String get reviewEmptyMessage;
-  String get reviewEmptyTitle;
-  String get swipeLeft;
-  String get swipeLeftDescription;
-  String get swipeRight;
-  String get swipeRightDescription;
-  String get swipeUp;
-  String get swipeUpDescription;
-  String get tapToFlip;
-  String get tapToFlipBack;
-  String get tapToLearn;
-  String get upgradePrompt;
-  String lapsesCount(int count);
-  String reviewsCount(int count);
-  String sourceLabel(String source);
-  String get profile;
-  String get profileStats;
-  String get profileAchievements;
-  String get profileSettings;
-  String get profileEdit;
-  String get profileHelp;
-  String get profileStreak;
-  String get profileXp;
-  String get profileGems;
-  String get profileWordsSaved;
-  String get profilePro;
-  String get settingsTitle;
-  String get settingsAppearance;
-  String get settingsDarkMode;
-  String get settingsSoundEffects;
-  String get settingsNotifications;
-  String get settingsReminderTime;
-  String get settingsLearning;
-  String get settingsDailyGoal;
-  String get settingsNativeLanguage;
-  String get settingsLearningLanguage;
-  String get settingsAccount;
-  String get settingsCheckUpdates;
-  String get settingsResetProgress;
-  String get settingsLogout;
-  String get settingsVersion;
-  String get achievementsTitle;
-  String get achievementsUnlocked;
-  String get achievementsInProgress;
-  String get paywallUnlockFull;
-  String get paywallUnlimitedSaves;
-  String get paywallFullSrsAccess;
-  String get paywallDetailedStats;
-  String get paywallNoAds;
-  String get paywallAnnual;
-  String get paywallMonthly;
-  String get paywallContinue;
-  String get paywallMaybeLater;
-  String get paywallPerMonth;
-  String get paywallBestValue;
-  String get statsTitle;
-  String get statsWeekXp;
-  String get statsStreak;
-  String get statsTotalXp;
-  String get statsCardsSwiped;
-  String get statsWordsSaved;
-  String get back;
-  String get cancel;
-  String get check;
-  String get save;
-  String get delete;
-  String get confirm;
-  String get loading;
-  String get error;
-  String get retry;
-  String get yes;
-  String get no;
-  String get active;
-  String get locked;
-  String get free;
-  String get pro;
-  String get version;
-  String get studyReminderBody;
-  String get youAreOffline;
-  String get keepPracticing;
-  String get yourProgress;
-  String get yourAnswer;
-  String get yourScore;
-  String get predictedLevel;
-  String get profile_tts;
-  String get profile_ttsDesc;
-  String get jlptN5Label;
-  String get jlptN4Label;
-  String get jlptN3Label;
-  String get onboarding_examLevelBeginner;
-  String get onboarding_examLevelIntermediate;
-  String get onboarding_examLevelAdvanced;
-  String get onboarding_examWordsCount;
-  String get advancedProgressTracking;
-  String get aiConversationPractice;
-  String get annual;
-  String get coursePath;
-  String get dailyGoal;
-  String get darkMode;
-  String get dayStreak;
-  String get defaultDisplayName;
-  String get editProfile;
-  String get emptyStateMessage;
-  String get emptyStateTitle;
-  String get errorGenericMessage;
-  String get errorGenericTitle;
-  String get fri;
-  String get gems;
-  String get getUnlimitedLearning;
-  String get helpSupport;
-  String get learningLanguage;
-  String get lessons;
-  String get levelAbbreviation;
-  String get logout;
-  String get maybeLater;
-  String get mon;
-  String get monthly;
-  String get nativeLanguage;
-  String get noAds;
-  String get notifications;
-  String get paywallTitle;
-  String get perMonth;
-  String get perYear;
-  String get profile_account;
-  String get profile_advanced;
-  String get profile_aiConversationPractice;
-  String get profile_aiConversationPracticeAnswer;
-  String get profile_appearance;
-  String get profile_beginner;
-  String get profile_browseTopics;
-  String get profile_checkForUpdates;
-  String get profile_contactSupport;
-  String get profile_displayName;
-  String get profile_earningXPGems;
-  String get profile_earningXPGemsAnswer;
-  String get profile_elementary;
-  String get profile_email;
-  String get profile_enableNotifications;
-  String get profile_enableNotificationsAnswer;
-  String get profile_enterYourEmail;
-  String get profile_enterYourName;
-  String get profile_gettingStarted;
-  String get profile_gotIt;
-  String get profile_howDoIStart;
-  String get profile_howDoIStartAnswer;
-  String get profile_instalingoSuperFAQ;
-  String get profile_instalingoSuperFAQAnswer;
-  String get profile_intermediate;
-  String get profile_learning;
-  String get profile_learningFeatures;
-  String get profile_lessonRemindersStreakAlerts;
-  String get profile_level;
-  String get profile_levelSuffix;
-  String get profile_notSet;
-  String get profile_proBadge;
-  String get profile_proficiencyLevel;
-  String get profile_proficient;
-  String get profile_resetProgress;
-  String get profile_resetProgressFAQ;
-  String get profile_resetProgressFAQAnswer;
-  String get profile_settingDailyGoals;
-  String get profile_settingDailyGoalsAnswer;
-  String get profile_soundEffects;
-  String get profile_superBadge;
-  String get profile_upperIntermediate;
-  String get profile_visitHelpCenter;
-  String get profile_whatIsChillCorner;
-  String get profile_whatIsChillCornerAnswer;
-  String get sat;
-  String get startFreeTrial;
-  String get streakCalendar;
-  String get streakRepair;
-  String get streakRepaired;
-  String get streakShielded;
-  String get studyPlan;
-  String get subscription;
-  String get sun;
-  String get thu;
-  String get timeSpent;
-  String get today;
-  String get totalXP;
-  String get tryAgain;
-  String get tue;
-  String get unlimitedLessons;
-  String get unlockSuper;
-  String get wed;
-  String get wordsLearned;
-  String get xpThisWeek;
-  String dayStreakCount(int count);
-  String profile_learningStatus(String level, int wordsLearned);
-  String profile_minPerDay(int minutes);
-  String profile_minutesCount(int count);
-  String profile_version(String version);
-  String savePercent(int percent);
-  String streakKeepStreak(int days);
-  String streakShieldsRemaining(int count);
-  String timeSpentHoursMinutes(int hours, int minutes);
+  static AppLocalizations of(BuildContext context) {
+    return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
+  }
 }
 
 class _AppLocalizationsDelegate
@@ -306,21 +627,18 @@ class _AppLocalizationsDelegate
   const _AppLocalizationsDelegate();
 
   @override
-  Future<AppLocalizations> load(Locale locale) {
-    return SynchronousFuture<AppLocalizations>(lookupAppLocalizations(locale));
+  bool isSupported(Locale locale) {
+    return AppLocalizations.supportedLocales.contains(locale);
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en', 'zh'].contains(locale.languageCode);
+  Future<AppLocalizations> load(Locale locale) {
+    final factory = AppLocalizations._localizedDelegate[locale] ??
+        AppLocalizations._localizedDelegate[Locale(locale.languageCode)] ??
+        (() => AppLocalizationsEn());
+    return SynchronousFuture<AppLocalizations>(factory());
+  }
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
-}
-
-AppLocalizations lookupAppLocalizations(Locale locale) {
-  if (locale.languageCode == 'zh') {
-    return AppLocalizationsZh();
-  }
-  return AppLocalizationsEn();
 }

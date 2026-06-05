@@ -83,7 +83,7 @@ class StreakCalendar extends StatelessWidget {
                 SizedBox(width: 8.w),
                 Expanded(
                   child: Text(
-                    l10n.streakKeepStreak(currentStreak),
+                    l10n.streakKeepStreak,
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: AppColors.streak,
                       fontWeight: FontWeight.w600,

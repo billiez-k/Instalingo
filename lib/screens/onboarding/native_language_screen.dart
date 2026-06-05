@@ -47,14 +47,14 @@ class _NativeLanguageScreenState extends ConsumerState<NativeLanguageScreen> {
               Container(width: 24.w, height: 3, color: BusanHarborTokens.orange),
               SizedBox(height: 32.h),
               _LanguageTile(
-                name: 'English',
+                name: l10n.langNameEn,
                 code: 'en',
                 isSelected: _selectedLanguage == 'en',
                 onTap: () => setState(() => _selectedLanguage = 'en'),
               ),
               SizedBox(height: 8.h),
               _LanguageTile(
-                name: '\u4e2d\u6587\uff08\u7e41\u9ad4\uff09',
+                name: l10n.langNameZhTw,
                 code: 'zh_TW',
                 isSelected: _selectedLanguage == 'zh_TW',
                 onTap: () => setState(() => _selectedLanguage = 'zh_TW'),

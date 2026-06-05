@@ -56,11 +56,8 @@ class InstaLingoApp extends ConsumerWidget {
           darkTheme: AppTheme.darkTheme,
           themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
           locale: locale,
-          supportedLocales: const [
-            Locale('en'),
-            Locale('zh', 'TW'),
-          ],
-          localizationsDelegates: const [
+          supportedLocales: AppLocalizations.supportedLocales,
+          localizationsDelegates: [
             AppLocalizations.delegate,
             GlobalMaterialLocalizations.delegate,
             GlobalWidgetsLocalizations.delegate,
