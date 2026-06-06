@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -76,10 +77,76 @@ class ChillFeedScreen extends ConsumerWidget {
         ref.invalidate(chillPostsProvider);
       },
       child: ListView.builder(
-        padding: EdgeInsets.symmetric(vertical: 12.h),
+        padding: EdgeInsets.zero,
+        itemCount: posts.length + 1, // +1 for stories bar
+        itemBuilder: (context, index) {
+          if (index == 0) return _buildStoriesBar(posts, appTheme);
+          final post = posts[index - 1];
+          return _PostCard(post: post, appTheme: appTheme);
+        },
+      ),
+    );
+  }
+
+  Widget _buildStoriesBar(List<ChillPost> posts, AppThemeExtension appTheme) {
+    final grads = [
+      [const Color(0xFFEE6C2C), const Color(0xFFD04B43)],
+      [const Color(0xFF3E7CB1), const Color(0xFF0F3460)],
+      [const Color(0xFF533483), const Color(0xFFD04B43)],
+      [const Color(0xFF0F3460), const Color(0xFFEE6C2C)],
+      [const Color(0xFFD04B43), const Color(0xFF533483)],
+    ];
+
+    return Container(
+      height: 100.h,
+      color: appTheme.harborNavy,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
         itemCount: posts.length,
         itemBuilder: (context, index) {
-          return _PostCard(post: posts[index], appTheme: appTheme);
+          final post = posts[index];
+          final g = grads[index % grads.length];
+          return Padding(
+            padding: EdgeInsets.symmetric(horizontal: 6.w),
+            child: GestureDetector(
+              onTap: () {
+                context.push('/swipe');
+              },
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    width: 64.w,
+                    height: 64.w,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: LinearGradient(colors: g),
+                      border: Border.all(color: BusanHarborTokens.orange.withAlpha(100), width: 2),
+                    ),
+                    child: Center(
+                      child: PhosphorIcon(
+                        PhosphorIcons.fire(PhosphorIconsStyle.fill),
+                        size: 26.sp,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 4.h),
+                  Text(
+                    post.authorName.length > 8
+                        ? '${post.authorName.substring(0, 7)}...'
+                        : post.authorName,
+                    style: TextStyle(
+                      fontSize: 10.sp,
+                      fontWeight: FontWeight.w600,
+                      color: appTheme.harborInkOnNavyMuted,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          );
         },
       ),
     );
@@ -236,6 +303,11 @@ class _PostCard extends StatelessWidget {
             ),
             SizedBox(height: 12.h),
 
+            // Instagram-style gradient image header
+            _PostImage(post: post),
+
+            SizedBox(height: 12.h),
+
             // Content
             Text(
               post.content,
@@ -350,7 +422,80 @@ class _PostCard extends StatelessWidget {
   }
 }
 
-class _AuthorAvatar extends StatelessWidget {
+class _PostImage extends StatelessWidget {
+    final ChillPost post;
+    const _PostImage({required this.post});
+
+    static final _grads = [
+      [const Color(0xFF1a1a2e), const Color(0xFF16213e)],
+      [const Color(0xFF0f3460), const Color(0xFF1a1a2e)],
+      [const Color(0xFF533483), const Color(0xFF16213e)],
+      [const Color(0xFF2d3436), const Color(0xFF0f3460)],
+      [const Color(0xFF16213e), const Color(0xFF1a1a2e)],
+    ];
+
+    @override
+    Widget build(BuildContext context) {
+      final g = _grads[post.authorName.hashCode.abs() % _grads.length];
+      final icon = post.targetWordId != null
+          ? PhosphorIcons.bookOpen(PhosphorIconsStyle.fill)
+          : PhosphorIcons.chatCircleText(PhosphorIconsStyle.fill);
+
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(6.r),
+        child: Container(
+          width: double.infinity,
+          height: 220.h,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: g,
+            ),
+          ),
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              Positioned(
+                right: -20.w, top: -20.h,
+                child: Container(
+                  width: 100.w, height: 100.w,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(color: Colors.white.withAlpha(12), width: 1),
+                  ),
+                ),
+              ),
+              Center(
+                child: Opacity(
+                  opacity: 0.15,
+                  child: PhosphorIcon(icon, size: 80.sp, color: Colors.white),
+                ),
+              ),
+              if (post.targetWord != null && post.targetWord!.isNotEmpty)
+                Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(post.targetWord!,
+                          style: TextStyle(
+                              fontSize: 36.sp, fontWeight: FontWeight.w800,
+                              color: Colors.white, letterSpacing: 1.5,
+                              shadows: [Shadow(color: Colors.black38, blurRadius: 12, offset: const Offset(0, 2))])),
+                      SizedBox(height: 4.h),
+                      Text('tap to learn →',
+                          style: TextStyle(fontSize: 11.sp, color: Colors.white54, letterSpacing: 0.8)),
+                    ],
+                  ),
+                ),
+            ],
+          ),
+        ),
+      );
+    }
+  }
+
+  class _AuthorAvatar extends StatelessWidget {
   final String name;
 
   const _AuthorAvatar({required this.name});

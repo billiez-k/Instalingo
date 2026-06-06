@@ -5,7 +5,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/user.dart';
+import 'package:instalingo/models/vocab_card.dart';
 import 'package:instalingo/providers/user_provider.dart';
+import 'package:instalingo/providers/vocab_deck_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -89,6 +91,9 @@ class ProfileScreen extends ConsumerWidget {
                       ),
                     ],
                   ),
+                  SizedBox(height: 22.h),
+                  // Instagram-style saved words grid
+                  _SavedWordsGrid(user: user),
                   SizedBox(height: 40.h),
                 ],
               ),
@@ -152,6 +157,12 @@ class _ProfileHeader extends StatelessWidget {
                           letterSpacing: 2.4,
                         ),
                       ),
+                    ),
+                    // Instagram gear icon
+                    GestureDetector(
+                      onTap: () => context.push('/profile/settings'),
+                      child: PhosphorIcon(PhosphorIcons.gear(PhosphorIconsStyle.bold),
+                          size: 20.sp, color: appTheme.harborInkOnNavyMuted),
                     ),
                   ],
                 ),
@@ -503,6 +514,101 @@ class _MenuItem extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Instagram-style 3-column grid of user's saved words.
+/// Each cell shows the word with a gradient background and subtle icon.
+class _SavedWordsGrid extends ConsumerWidget {
+  final UserProfile user;
+  const _SavedWordsGrid({required this.user});
+
+  static const _grads = [
+    [Color(0xFF1a1a2e), Color(0xFF16213e)],
+    [Color(0xFF0f3460), Color(0xFF1a1a2e)],
+    [Color(0xFF533483), Color(0xFF16213e)],
+    [Color(0xFF2d3436), Color(0xFF0f3460)],
+    [Color(0xFF16213e), Color(0xFF1a1a2e)],
+  ];
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context)!;
+    final appTheme = context.appTheme;
+
+    if (user.savedWords.isEmpty) return const SizedBox.shrink();
+
+    final deckAsync = ref.watch(currentDeckProvider);
+
+    return deckAsync.when(
+      loading: () => const SizedBox.shrink(),
+      error: (_, __) => const SizedBox.shrink(),
+      data: (deck) {
+        final savedCards = deck.cards
+            .where((c) => user.savedWords.contains(c.id))
+            .take(9) // Instagram first 9 grid
+            .toList();
+
+        if (savedCards.isEmpty) return const SizedBox.shrink();
+
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(bottom: 10.h),
+              child: Row(children: [
+                Container(width: 22.w, height: 3, color: AppColors.primary),
+                SizedBox(width: 10.w),
+                Text(l10n.swipeSaved.toUpperCase(),
+                    style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: appTheme.harborIconFill, letterSpacing: 1.0)),
+              ]),
+            ),
+            GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                mainAxisSpacing: 3.w,
+                crossAxisSpacing: 3.w,
+                childAspectRatio: 1.0,
+              ),
+              itemCount: savedCards.length,
+              itemBuilder: (context, index) {
+                final card = savedCards[index];
+                final g = _grads[card.word.hashCode.abs() % _grads.length];
+                return GestureDetector(
+                  onTap: () => context.push('/swipe'),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(4.r),
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: g,
+                      ),
+                    ),
+                    alignment: Alignment.center,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(card.word,
+                            style: TextStyle(fontSize: 15.sp, fontWeight: FontWeight.w800,
+                                color: Colors.white, letterSpacing: 0.5),
+                            maxLines: 1, overflow: TextOverflow.ellipsis),
+                        SizedBox(height: 2.h),
+                        Text(card.reading,
+                            style: TextStyle(fontSize: 9.sp, color: Colors.white60),
+                            maxLines: 1, overflow: TextOverflow.ellipsis),
+                      ],
+                    ),
+                  ),
+                );
+              },
+            ),
+          ],
+        );
+      },
     );
   }
 }
