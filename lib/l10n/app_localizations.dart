@@ -608,6 +608,7 @@ abstract class AppLocalizations {
   String timeSpentHoursMinutes(int hours, int minutes);
 
   static final _localizedDelegate = {
+    const Locale('ar'): () => AppLocalizationsAr(),
     const Locale('en'): () => AppLocalizationsEn(),
     const Locale('ja'): () => AppLocalizationsJa(),
     const Locale('ko'): () => AppLocalizationsKo(),
@@ -621,6 +622,7 @@ abstract class AppLocalizations {
       _AppLocalizationsDelegate();
 
   static const List<Locale> supportedLocales = [
+    Locale('ar'),
     Locale('en'),
     Locale('ja'),
     Locale('ko'),
