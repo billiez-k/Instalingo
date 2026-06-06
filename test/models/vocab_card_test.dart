@@ -125,6 +125,61 @@ void main() {
       expect(card.exampleAudioUrl, isNull);
       expect(card.meanings, isEmpty);
     });
+
+    test('meaningFor falls back to en when locale missing', () {
+      final card = VocabCard(
+        id: 'test',
+        word: 'test',
+        reading: 'test',
+        pos: 'n',
+        level: 'N5',
+        topic: 'general',
+        source: 'test',
+        meanings: const {'en': 'hello', 'zh_TW': '你好'},
+      );
+
+      expect(card.meaningFor('en'), 'hello');
+      expect(card.meaningFor('zh_TW'), '你好');
+      expect(card.meaningFor('ja'), 'hello'); // fallback
+      expect(card.meaningFor('ko'), 'hello'); // fallback
+      expect(card.meaningFor('ms'), 'hello'); // fallback
+      expect(card.meaningFor('ar'), 'hello'); // fallback
+      expect(card.meaningFor('unknown'), 'hello'); // fallback
+    });
+
+    test('meaningFor returns empty for all locales when no meanings', () {
+      final card = VocabCard(
+        id: 'test', word: 'test', reading: 'test',
+        pos: 'n', level: 'N5', topic: 'general', source: 'test',
+      );
+      expect(card.meaningFor('en'), '');
+      expect(card.meaningFor('ja'), '');
+      expect(card.meaningFor('zh_TW'), '');
+    });
+
+    test('exampleTranslationFor falls back to en', () {
+      final card = VocabCard(
+        id: 'test', word: 'test', reading: 'test',
+        pos: 'n', level: 'N5', topic: 'general', source: 'test',
+        exampleTranslations: const {'en': 'Example text', 'zh_TW': '範例文字'},
+      );
+
+      expect(card.exampleTranslationFor('en'), 'Example text');
+      expect(card.exampleTranslationFor('zh_TW'), '範例文字');
+      expect(card.exampleTranslationFor('ja'), 'Example text');
+      expect(card.exampleTranslationFor('ko'), 'Example text');
+    });
+
+    test('fromJson with mixed meanings map (number values coerced)', () {
+      final json = {
+        'id': 'test', 'word': '一', 'reading': 'いち',
+        'pos': 'num', 'level': 'N5', 'source': 'test',
+        'meanings': {'en': 'one', 'zh_TW': 1},
+      };
+
+      final card = VocabCard.fromJson(json);
+      expect(card.meaningFor('zh_TW'), '1');
+    });
   });
 
   group('CardDeck', () {

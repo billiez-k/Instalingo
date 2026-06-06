@@ -67,13 +67,16 @@ class LocaleNotifier extends StateNotifier<Locale> {
   }
 
   String _localeCode(Locale locale) {
-    final code = '${locale.languageCode}_${locale.countryCode}';
-    if (code == 'zh_TW') return 'zh_TW';
-    if (code == 'zh_CN') return 'zh_CN';
-    if (code == 'ja_') return 'ja';
-    if (code == 'ko_') return 'ko';
-    if (code == 'ms_') return 'ms';
-    if (code == 'ar_') return 'ar';
+    final lang = locale.languageCode;
+    final country = locale.countryCode;
+    if (lang == 'zh') {
+      if (country == 'TW' || country == 'HK' || country == 'MO') return 'zh_TW';
+      return 'zh_CN';
+    }
+    if (lang == 'ja') return 'ja';
+    if (lang == 'ko') return 'ko';
+    if (lang == 'ms') return 'ms';
+    if (lang == 'ar') return 'ar';
     return 'en';
   }
 

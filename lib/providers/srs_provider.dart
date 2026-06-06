@@ -109,10 +109,8 @@ class SRSNotifier extends AsyncNotifier<List<SRSData>> {
 
   /// Get SRS data for a specific card.
   SRSData? getCardData(String cardId) {
-    try {
-      return (state.value ?? []).firstWhere((s) => s.cardId == cardId);
-    } catch (_) {
-      return null;
-    }
+    final cards = state.value ?? [];
+    final i = cards.indexWhere((s) => s.cardId == cardId);
+    return i >= 0 ? cards[i] : null;
   }
 }
