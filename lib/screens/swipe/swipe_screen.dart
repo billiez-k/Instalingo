@@ -9,7 +9,7 @@ import 'package:instalingo/config/points_config.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/user.dart';
 import 'package:instalingo/models/vocab_card.dart';
-import 'package:instalingo/providers/settings_provider.dart';
+import 'package:shimmer/shimmer.dart';
 import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/providers/vocab_deck_provider.dart';
 import 'package:instalingo/screens/swipe/tutorial_overlay.dart';
@@ -203,18 +203,26 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
       ..shuffle(Random(DateTime.now().millisecondsSinceEpoch));
   }
 
-  Widget _buildLoading(AppThemeExtension appTheme, AppLocalizations l10n) => Center(
+  Widget _buildLoading(AppThemeExtension appTheme, AppLocalizations l10n) => Shimmer.fromColors(
+        baseColor: Colors.white10,
+        highlightColor: Colors.white24,
         child: Column(mainAxisSize: MainAxisSize.min, children: [
-          SizedBox(
-            width: 44.w, height: 44.w,
-            child: const CircularProgressIndicator(
-              strokeWidth: 2,
-              valueColor: AlwaysStoppedAnimation(BusanHarborTokens.orange),
+          // Shimmer card placeholder mimicking Reels layout
+          Container(
+            width: 320.w,
+            height: 260.h,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(12.r),
             ),
           ),
-          SizedBox(height: 20.h),
+          SizedBox(height: 24.h),
+          Container(width: 200.w, height: 14.h, color: Colors.white),
+          SizedBox(height: 12.h),
+          Container(width: 140.w, height: 14.h, color: Colors.white),
+          SizedBox(height: 28.h),
           Text(l10n.swipeLoadingCards,
-              style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w600, color: Colors.white54)),
+              style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w600, color: Colors.white38)),
         ]),
       );
 

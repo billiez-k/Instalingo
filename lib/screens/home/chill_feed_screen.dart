@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -116,19 +117,31 @@ class ChillFeedScreen extends ConsumerWidget {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  // Instagram-style gradient ring story avatar
                   Container(
-                    width: 64.w,
-                    height: 64.w,
+                    width: 68.w,
+                    height: 68.w,
+                    padding: EdgeInsets.all(2.5.w),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      gradient: LinearGradient(colors: g),
-                      border: Border.all(color: BusanHarborTokens.orange.withAlpha(100), width: 2),
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: g,
+                      ),
                     ),
-                    child: Center(
-                      child: PhosphorIcon(
-                        PhosphorIcons.fire(PhosphorIconsStyle.fill),
-                        size: 26.sp,
-                        color: Colors.white,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(color: appTheme.harborNavy, width: 2),
+                      ),
+                      child: CircleAvatar(
+                        backgroundColor: g[0].withValues(alpha: 0.15),
+                        child: PhosphorIcon(
+                          PhosphorIcons.fire(PhosphorIconsStyle.fill),
+                          size: 22.sp,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
@@ -231,15 +244,49 @@ class ChillFeedScreen extends ConsumerWidget {
   }
 }
 
-class _PostCard extends StatelessWidget {
+class _PostCard extends StatefulWidget {
   final ChillPost post;
   final AppThemeExtension appTheme;
 
   const _PostCard({required this.post, required this.appTheme});
 
   @override
+  State<_PostCard> createState() => _PostCardState();
+}
+
+class _PostCardState extends State<_PostCard> {
+  bool _isLiked = false;
+  int _likeCount = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    _likeCount = widget.post.likes;
+  }
+
+  void _toggleLike() {
+    HapticFeedback.mediumImpact();
+    setState(() {
+      _isLiked = !_isLiked;
+      _likeCount += _isLiked ? 1 : -1;
+    });
+  }
+
+  void _openComments(BuildContext context) {
+    HapticFeedback.selectionClick();
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      builder: (_) => _CommentsSheet(post: widget.post),
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    final post = widget.post;
+    final appTheme = widget.appTheme;
     final hasLink = post.targetWordId != null && post.targetWordId!.isNotEmpty;
 
     return GestureDetector(
@@ -394,24 +441,54 @@ class _PostCard extends StatelessWidget {
                         .toList(),
                   ),
                 ),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    PhosphorIcon(
-                      PhosphorIcons.heart(PhosphorIconsStyle.regular),
-                      size: 16.sp,
-                      color: BusanHarborTokens.coral,
-                    ),
-                    SizedBox(width: 4.w),
-                    Text(
-                      '${post.likes}',
-                      style: TextStyle(
-                        fontSize: 12.sp,
-                        fontWeight: FontWeight.w600,
+                GestureDetector(
+                  onTap: _toggleLike,
+                  behavior: HitTestBehavior.opaque,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      PhosphorIcon(
+                        _isLiked
+                            ? PhosphorIcons.heart(PhosphorIconsStyle.fill)
+                            : PhosphorIcons.heart(PhosphorIconsStyle.regular),
+                        size: 16.sp,
+                        color: _isLiked ? BusanHarborTokens.coral : appTheme.onSurfaceVariant,
+                      ),
+                      SizedBox(width: 4.w),
+                      Text(
+                        '$_likeCount',
+                        style: TextStyle(
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w600,
+                          color: _isLiked ? BusanHarborTokens.coral : appTheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(width: 16.w),
+                GestureDetector(
+                  onTap: () => _openComments(context),
+                  behavior: HitTestBehavior.opaque,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      PhosphorIcon(
+                        PhosphorIcons.chatCircleText(PhosphorIconsStyle.regular),
+                        size: 16.sp,
                         color: appTheme.onSurfaceVariant,
                       ),
-                    ),
-                  ],
+                      SizedBox(width: 4.w),
+                      Text(
+                        '${post.comments.length}',
+                        style: TextStyle(
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w600,
+                          color: appTheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -520,6 +597,129 @@ class _PostImage extends StatelessWidget {
             fontWeight: FontWeight.w800,
             color: BusanHarborTokens.cream,
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Instagram-style comment bottom sheet.
+class _CommentsSheet extends StatelessWidget {
+  final ChillPost post;
+  const _CommentsSheet({required this.post});
+
+  @override
+  Widget build(BuildContext context) {
+    final appTheme = context.appTheme;
+    final comments = post.comments;
+
+    return DraggableScrollableSheet(
+      initialChildSize: 0.45,
+      minChildSize: 0.25,
+      maxChildSize: 0.85,
+      builder: (_, scrollController) => Container(
+        decoration: BoxDecoration(
+          color: appTheme.surface,
+          borderRadius: BorderRadius.vertical(top: Radius.circular(16.r)),
+        ),
+        child: Column(
+          children: [
+            // Handle bar
+            Center(
+              child: Container(
+                margin: EdgeInsets.only(top: 12.h, bottom: 8.h),
+                width: 36.w,
+                height: 4.h,
+                decoration: BoxDecoration(
+                  color: appTheme.onSurfaceVariant.withValues(alpha: 0.3),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ),
+            // Header
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+              child: Row(
+                children: [
+                  PhosphorIcon(PhosphorIcons.chatCircleText(PhosphorIconsStyle.fill),
+                      size: 18.sp, color: appTheme.harborNavy),
+                  SizedBox(width: 8.w),
+                  Text('Comments',
+                      style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, color: appTheme.harborNavy)),
+                  const Spacer(),
+                  Text('${comments.length}',
+                      style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w600, color: appTheme.onSurfaceVariant)),
+                ],
+              ),
+            ),
+            const Divider(height: 1),
+            // Comments list
+            Expanded(
+              child: comments.isEmpty
+                  ? Center(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          PhosphorIcon(PhosphorIcons.chatCircleText(PhosphorIconsStyle.regular),
+                              size: 40.sp, color: appTheme.onSurfaceVariant.withValues(alpha: 0.3)),
+                          SizedBox(height: 12.h),
+                          Text('No comments yet',
+                              style: TextStyle(fontSize: 14.sp, color: appTheme.onSurfaceVariant)),
+                          SizedBox(height: 4.h),
+                          Text('Be the first to comment!',
+                              style: TextStyle(fontSize: 12.sp, color: appTheme.onSurfaceVariant.withValues(alpha: 0.6))),
+                        ],
+                      ),
+                    )
+                  : ListView.separated(
+                      controller: scrollController,
+                      padding: EdgeInsets.symmetric(vertical: 8.h),
+                      itemCount: comments.length,
+                      separatorBuilder: (_, __) => const Divider(height: 1, indent: 56),
+                      itemBuilder: (_, i) {
+                        final c = comments[i];
+                        return Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 10.h),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Avatar
+                              Container(
+                                width: 36.w,
+                                height: 36.w,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  gradient: LinearGradient(
+                                    colors: [BusanHarborTokens.orange, BusanHarborTokens.orangeDeep],
+                                  ),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    c.authorName.isNotEmpty ? c.authorName[0].toUpperCase() : '?',
+                                    style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w700, color: Colors.white),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 12.w),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(c.authorName,
+                                        style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700, color: appTheme.harborNavy)),
+                                    SizedBox(height: 2.h),
+                                    Text(c.content,
+                                        style: TextStyle(fontSize: 13.sp, color: appTheme.harborNavy, height: 1.4)),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+            ),
+          ],
         ),
       ),
     );
