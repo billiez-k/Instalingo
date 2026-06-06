@@ -278,7 +278,7 @@ class StreakCalendar extends StatelessWidget {
               label: Text(l10n.streakRepair),
               style: OutlinedButton.styleFrom(
                 foregroundColor: AppColors.streak,
-                side: BorderSide(color: AppColors.streak),
+                side: const BorderSide(color: AppColors.streak),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.r),
                 ),

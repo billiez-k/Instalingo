@@ -7,7 +7,7 @@ import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/vocab_card.dart';
 import 'package:instalingo/providers/revenuecat_provider.dart';
 import 'package:instalingo/providers/user_provider.dart';
-import "package:instalingo/providers/vocab_deck_provider.dart";
+import 'package:instalingo/providers/vocab_deck_provider.dart';
 
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -26,8 +26,6 @@ class CollectionsScreen extends ConsumerStatefulWidget {
 class _CollectionsScreenState extends ConsumerState<CollectionsScreen> {
   String _searchQuery = '';
   String? _levelFilter;
-  // ignore: unused_field
-  bool _showBackForCard = false;
   String? _flippedCardId;
 
   static const int _freeLimit = 100;

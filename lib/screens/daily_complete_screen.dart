@@ -91,7 +91,7 @@ class _DailyCompleteScreenState extends ConsumerState<DailyCompleteScreen>
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Spacer(flex: 2),
+                    const Spacer(flex: 2),
 
                     // Success icon
                     Container(
@@ -224,7 +224,7 @@ class _DailyCompleteScreenState extends ConsumerState<DailyCompleteScreen>
                       ),
                     ),
 
-                    Spacer(flex: 2),
+                    const Spacer(flex: 2),
 
                     // Continue button
                     SizedBox(

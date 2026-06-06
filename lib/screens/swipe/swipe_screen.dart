@@ -259,7 +259,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
           OutlinedButton(
             onPressed: () => context.go('/home'),
             style: OutlinedButton.styleFrom(
-              side: BorderSide(color: BusanHarborTokens.orange),
+              side: const BorderSide(color: BusanHarborTokens.orange),
               foregroundColor: Colors.white,
             ),
             child: Text(l10n.swipeBackToHome,
@@ -383,7 +383,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                             style: TextStyle(
                                 fontSize: 56.sp, fontWeight: FontWeight.w800,
                                 color: Colors.white, letterSpacing: 2,
-                                shadows: [Shadow(color: Colors.black38, blurRadius: 16, offset: Offset(0, 3))])),
+                                shadows: const [Shadow(color: Colors.black38, blurRadius: 16, offset: Offset(0, 3))])),
                         SizedBox(height: 6.h),
                         Text(card.reading,
                             style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.w500,

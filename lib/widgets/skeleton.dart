@@ -130,7 +130,7 @@ class ChillSkeleton extends StatelessWidget {
                     padding: EdgeInsets.all(16.w),
                     child: Row(
                       children: [
-                        SkeletonCircle(size: 40),
+                        const SkeletonCircle(size: 40),
                         SizedBox(width: 12.w),
                         Expanded(
                           child: Column(
@@ -157,7 +157,7 @@ class ChillSkeleton extends StatelessWidget {
                       children: [
                         SkeletonLine(width: 0.4.sw, height: 20),
                         SizedBox(height: 8.h),
-                        SkeletonLine(width: double.infinity, height: 14),
+                        const SkeletonLine(width: double.infinity, height: 14),
                         SizedBox(height: 4.h),
                         SkeletonLine(width: 0.8.sw, height: 14),
                       ],
@@ -186,7 +186,7 @@ class LessonSkeleton extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(height: 20.h),
-          SkeletonLine(width: double.infinity, height: 24),
+          const SkeletonLine(width: double.infinity, height: 24),
           SizedBox(height: 8.h),
           SkeletonLine(width: 0.6.sw, height: 16),
           SizedBox(height: 32.h),
@@ -197,7 +197,7 @@ class LessonSkeleton extends StatelessWidget {
               color: appTheme.surfaceVariant,
               borderRadius: BorderRadius.circular(4.r),
             ),
-            child: SkeletonLine(width: double.infinity, height: 20),
+            child: const SkeletonLine(width: double.infinity, height: 20),
           )),
         ],
       ),

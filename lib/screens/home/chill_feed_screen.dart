@@ -470,7 +470,7 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
                               padding: EdgeInsets.symmetric(
                                   horizontal: 8.w, vertical: 2.h),
                               decoration: BoxDecoration(
-                                color: Theme.of(context).colorScheme.surfaceVariant,
+                                color: Theme.of(context).colorScheme.surfaceContainerHighest,
                                 borderRadius: BorderRadius.circular(4.r),
                               ),
                               child: Text(
@@ -602,7 +602,7 @@ class _PostImage extends StatelessWidget {
                           style: TextStyle(
                               fontSize: 36.sp, fontWeight: FontWeight.w800,
                               color: Colors.white, letterSpacing: 1.5,
-                              shadows: [Shadow(color: Colors.black38, blurRadius: 12, offset: const Offset(0, 2))])),
+                              shadows: const [Shadow(color: Colors.black38, blurRadius: 12, offset: Offset(0, 2))])),
                       SizedBox(height: 4.h),
                       Text('tap to learn →',
                           style: TextStyle(fontSize: 11.sp, color: Colors.white54, letterSpacing: 0.8)),
@@ -731,7 +731,7 @@ class _CommentsSheet extends StatelessWidget {
                               Container(
                                 width: 36.w,
                                 height: 36.w,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                   gradient: LinearGradient(
                                     colors: [BusanHarborTokens.orange, BusanHarborTokens.orangeDeep],

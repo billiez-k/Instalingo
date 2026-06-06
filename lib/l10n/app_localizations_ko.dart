@@ -1,4 +1,4 @@
-import 'app_localizations.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 
 class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo();
@@ -113,6 +113,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get dailyCompleteCardsLabel => '카드';
+  @override
   String get dailyCompleteSavedLabel => '저장';
 
   @override
@@ -174,8 +175,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get swipeAlreadyKnew => '이미 앎';
+  @override
   String get swipeFlipLabel => '뒤집기';
+  @override
   String get swipeShareLabel => '공유';
+  @override
   String get swipeSkipped => '건너뜀';
 
   @override

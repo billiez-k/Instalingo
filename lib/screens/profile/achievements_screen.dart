@@ -10,7 +10,7 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 List<Achievement> _getDemoAchievements() {
   return [
-    Achievement(
+    const Achievement(
       id: 'first_swipe',
       title: LocalizedText({'en': 'First Steps', 'zh_TW': '\u7b2c\u4e00\u6b65'}),
       description: LocalizedText({'en': 'Swipe your first card', 'zh_TW': '\u6ed1\u52d5\u7b2c\u4e00\u5f35\u5361\u7247'}),
@@ -20,7 +20,7 @@ List<Achievement> _getDemoAchievements() {
       isUnlocked: true,
       tier: 'bronze',
     ),
-    Achievement(
+    const Achievement(
       id: 'streak_7',
       title: LocalizedText({'en': '7 Day Streak', 'zh_TW': '7\u5929\u9023\u7e8c'}),
       description: LocalizedText({'en': 'Maintain a 7-day learning streak', 'zh_TW': '\u7dad\u63017\u5929\u5b78\u7fd2\u9023\u7e8c'}),
@@ -29,7 +29,7 @@ List<Achievement> _getDemoAchievements() {
       currentValue: 3,
       tier: 'silver',
     ),
-    Achievement(
+    const Achievement(
       id: 'words_50',
       title: LocalizedText({'en': 'Word Collector', 'zh_TW': '\u55ae\u5b57\u6536\u96c6\u5bb6'}),
       description: LocalizedText({'en': 'Save 50 words to your collection', 'zh_TW': '\u6536\u85cf50\u500b\u55ae\u5b57'}),
@@ -38,7 +38,7 @@ List<Achievement> _getDemoAchievements() {
       currentValue: 0,
       tier: 'bronze',
     ),
-    Achievement(
+    const Achievement(
       id: 'cards_100',
       title: LocalizedText({'en': 'Card Master', 'zh_TW': '\u5361\u7247\u5927\u5e2b'}),
       description: LocalizedText({'en': 'Swipe 100 cards', 'zh_TW': '\u6ed1\u52d5100\u5f35\u5361\u7247'}),
@@ -47,7 +47,7 @@ List<Achievement> _getDemoAchievements() {
       currentValue: 0,
       tier: 'silver',
     ),
-    Achievement(
+    const Achievement(
       id: 'streak_30',
       title: LocalizedText({'en': 'Monthly Warrior', 'zh_TW': '\u6bcf\u6708\u52c7\u58eb'}),
       description: LocalizedText({'en': 'Maintain a 30-day streak', 'zh_TW': '\u7dad\u630130\u5929\u9023\u7e8c'}),

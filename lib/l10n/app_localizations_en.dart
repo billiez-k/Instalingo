@@ -1,4 +1,4 @@
-import 'app_localizations.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 
 class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn();
@@ -113,6 +113,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get dailyCompleteCardsLabel => 'Cards';
+  @override
   String get dailyCompleteSavedLabel => 'Saved';
 
   @override
@@ -174,8 +175,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get swipeAlreadyKnew => 'Already Knew';
+  @override
   String get swipeFlipLabel => 'Flip';
+  @override
   String get swipeShareLabel => 'Share';
+  @override
   String get swipeSkipped => 'Skipped';
 
   @override

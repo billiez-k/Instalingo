@@ -14,7 +14,7 @@ class ChillPostLoader {
   /// Load chill posts from assets/shared/posts.json.
   /// Handles both wrapped {"posts": [...]} and plain array [...] formats.
   static Future<List<ChillPost>> loadPosts() async {
-    final path = '$_assetPath/posts.json';
+    const path = '$_assetPath/posts.json';
     try {
       final jsonString = await rootBundle.loadString(path);
       final decoded = jsonDecode(jsonString);
@@ -24,7 +24,7 @@ class ChillPostLoader {
       } else if (decoded is List) {
         list = decoded;
       } else {
-        throw FormatException('Unexpected posts.json format');
+        throw const FormatException('Unexpected posts.json format');
       }
       return list
           .map((p) => ChillPost.fromJson(p as Map<String, dynamic>))
@@ -37,7 +37,7 @@ class ChillPostLoader {
   /// Load chill characters from assets/shared/characters.json.
   /// Handles both wrapped {"characters": [...]} and plain array [...] formats.
   static Future<List<ChillCharacter>> loadCharacters() async {
-    final path = '$_assetPath/characters.json';
+    const path = '$_assetPath/characters.json';
     try {
       final jsonString = await rootBundle.loadString(path);
       final decoded = jsonDecode(jsonString);
@@ -47,7 +47,7 @@ class ChillPostLoader {
       } else if (decoded is List) {
         list = decoded;
       } else {
-        throw FormatException('Unexpected characters.json format');
+        throw const FormatException('Unexpected characters.json format');
       }
       return list
           .map((c) => ChillCharacter.fromJson(c as Map<String, dynamic>))
@@ -71,7 +71,7 @@ class ChillPostLoader {
         tags: ['daily', 'cafe', 'beginner'],
         likes: 42,
         comments: [
-          ChillComment(
+          const ChillComment(
             authorName: 'Hiro',
             content: 'That word is super useful! Keep it up.',
           ),
@@ -100,11 +100,11 @@ class ChillPostLoader {
         tags: ['irl', 'success', 'speaking'],
         likes: 67,
         comments: [
-          ChillComment(
+          const ChillComment(
             authorName: 'Maya',
             content: 'That is amazing! First of many victories.',
           ),
-          ChillComment(
+          const ChillComment(
             authorName: 'Takeshi',
             content: 'Which combini? I need to practice there too.',
           ),
@@ -120,7 +120,7 @@ class ChillPostLoader {
         tags: ['question', 'kanji', 'tips'],
         likes: 15,
         comments: [
-          ChillComment(
+          const ChillComment(
             authorName: 'Kenji',
             content:
                 'I use color-coded flashcards. Blue for onyomi, orange for kunyomi.',
@@ -146,7 +146,7 @@ class ChillPostLoader {
 
   static List<ChillCharacter> _generateDemoCharacters() {
     return [
-      ChillCharacter(
+      const ChillCharacter(
         id: 'char_1',
         name: 'Maya',
         handle: '@cafe_maya',
@@ -155,7 +155,7 @@ class ChillPostLoader {
         personality: 'warm',
         colorHex: '#EE6C2C',
       ),
-      ChillCharacter(
+      const ChillCharacter(
         id: 'char_2',
         name: 'Kenji',
         handle: '@kenji_study',
@@ -164,7 +164,7 @@ class ChillPostLoader {
         personality: 'curious',
         colorHex: '#3E7CB1',
       ),
-      ChillCharacter(
+      const ChillCharacter(
         id: 'char_3',
         name: 'Yuna',
         handle: '@yuna_tokyo',
@@ -173,7 +173,7 @@ class ChillPostLoader {
         personality: 'energetic',
         colorHex: '#D04B43',
       ),
-      ChillCharacter(
+      const ChillCharacter(
         id: 'char_4',
         name: 'Takeshi',
         handle: '@takeshi_learns',
@@ -182,7 +182,7 @@ class ChillPostLoader {
         personality: 'analytical',
         colorHex: '#2D9C5A',
       ),
-      ChillCharacter(
+      const ChillCharacter(
         id: 'char_5',
         name: 'Hana',
         handle: '@hana_osaka',

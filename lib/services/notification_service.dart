@@ -79,7 +79,7 @@ class NotificationService {
     ScaffoldMessenger.of(_context).showSnackBar(
       SnackBar(
         content: Text(AppLocalizations.of(_context).notificationPracticeReminder),
-        duration: Duration(seconds: 6),
+        duration: const Duration(seconds: 6),
         behavior: SnackBarBehavior.floating,
       ),
     );

@@ -189,7 +189,7 @@ class _LessonLoaderState extends State<LessonLoader>
           SizedBox(
             width: 24.w,
             height: 24.w,
-            child: CircularProgressIndicator(
+            child: const CircularProgressIndicator(
               strokeWidth: 2.5,
               color: AppColors.primary,
             ),

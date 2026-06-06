@@ -46,7 +46,7 @@ class SettingsScreen extends ConsumerWidget {
     final locale = ref.watch(localeProvider);
     final localeCode = _localeCode(locale);
 
-    final _langNames = {
+    final langNames = {
       'zh': l10n.langNameZhCn,
       'zh_TW': l10n.langNameZhTw,
       'en': l10n.langNameEn,
@@ -161,7 +161,7 @@ class SettingsScreen extends ConsumerWidget {
               icon: PhosphorIcons.translate(),
               iconColor: AppColors.secondary,
               label: l10n.nativeLanguage,
-              subtitle: _langNames[localeCode] ?? localeCode.toUpperCase(),
+              subtitle: langNames[localeCode] ?? localeCode.toUpperCase(),
               trailing: PhosphorIcon(PhosphorIcons.caretRight(), size: 18.sp, color: appTheme.onSurfaceVariant),
               onTap: () => _showLanguagePicker(context, ref, isNative: true, l10n: l10n),
             ),
@@ -171,7 +171,7 @@ class SettingsScreen extends ConsumerWidget {
               icon: PhosphorIcons.globe(),
               iconColor: AppColors.accent,
               label: l10n.learningLanguage,
-              subtitle: _langNames[user.learningLanguage] ?? user.learningLanguage.toUpperCase(),
+              subtitle: langNames[user.learningLanguage] ?? user.learningLanguage.toUpperCase(),
               trailing: PhosphorIcon(PhosphorIcons.caretRight(), size: 18.sp, color: appTheme.onSurfaceVariant),
               onTap: () => _showLanguagePicker(context, ref, isNative: false, l10n: l10n),
             ),

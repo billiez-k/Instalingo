@@ -1,5 +1,7 @@
 library phosphor_flutter;
 
+// ignore_for_file: non_const_argument_for_const_parameter
+
 import 'package:flutter/widgets.dart';
 
 class PhosphorIconData {

@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/foundation.dart' show SynchronousFuture;
 
-import 'app_localizations_en.dart';
-import 'app_localizations_ja.dart';
-import 'app_localizations_ko.dart';
-import 'app_localizations_ms.dart';
-import 'app_localizations_ar.dart';
-import 'app_localizations_zh_cn.dart';
-import 'app_localizations_zh_tw.dart';
+import 'package:instalingo/l10n/app_localizations_en.dart';
+import 'package:instalingo/l10n/app_localizations_ja.dart';
+import 'package:instalingo/l10n/app_localizations_ko.dart';
+import 'package:instalingo/l10n/app_localizations_ms.dart';
+import 'package:instalingo/l10n/app_localizations_ar.dart';
+import 'package:instalingo/l10n/app_localizations_zh_cn.dart';
+import 'package:instalingo/l10n/app_localizations_zh_tw.dart';
 
 abstract class AppLocalizations {
 
@@ -622,7 +622,7 @@ abstract class AppLocalizations {
   };
 
   // ignore: avoid-dynamic
-  static final LocalizationsDelegate<AppLocalizations> delegate =
+  static const LocalizationsDelegate<AppLocalizations> delegate =
       _AppLocalizationsDelegate();
 
   static const List<Locale> supportedLocales = [

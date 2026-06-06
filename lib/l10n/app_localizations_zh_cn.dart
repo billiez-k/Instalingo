@@ -1,4 +1,4 @@
-import 'app_localizations.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 
 class AppLocalizationsZhCn extends AppLocalizations {
   AppLocalizationsZhCn();
@@ -113,6 +113,7 @@ class AppLocalizationsZhCn extends AppLocalizations {
 
   @override
   String get dailyCompleteCardsLabel => '牌';
+  @override
   String get dailyCompleteSavedLabel => '已保存';
 
   @override
@@ -174,8 +175,11 @@ class AppLocalizationsZhCn extends AppLocalizations {
 
   @override
   String get swipeAlreadyKnew => '已认识';
+  @override
   String get swipeFlipLabel => '翻转';
+  @override
   String get swipeShareLabel => '分享';
+  @override
   String get swipeSkipped => '跳过';
 
   @override

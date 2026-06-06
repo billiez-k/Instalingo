@@ -66,7 +66,7 @@ class _TutorialOverlayState extends ConsumerState<TutorialOverlay>
           color: BusanHarborTokens.navyDeep.withValues(alpha: 0.85),
           child: Column(
             children: [
-              Spacer(flex: 2),
+              const Spacer(flex: 2),
 
               // Right swipe - Save
               _GestureHint(
@@ -99,7 +99,7 @@ class _TutorialOverlayState extends ConsumerState<TutorialOverlay>
                 direction: 'up',
               ),
 
-              Spacer(flex: 2),
+              const Spacer(flex: 2),
 
               // Tap hint
               GestureDetector(

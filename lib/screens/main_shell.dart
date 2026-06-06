@@ -104,7 +104,7 @@ class _NavItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
-    final activeColor = BusanHarborTokens.orange;
+    const activeColor = BusanHarborTokens.orange;
     final inactiveColor = appTheme.harborInkOnNavyMuted;
     final color = isActive ? activeColor : inactiveColor;
 
