@@ -166,6 +166,18 @@ class AppLocalizationsJa extends AppLocalizations {
   String get english => '英語';
 
   @override
+  @override
+  String get swipeSaveLabel => '保存';
+
+  @override
+  @override
+  String get swipeSavedLabel => '保存済';
+
+  @override
+  @override
+  String get swipeAlreadyKnew => '既知';
+
+  @override
   String get error => 'エラー';
 
   @override

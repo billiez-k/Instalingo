@@ -102,7 +102,7 @@ class StatsScreen extends ConsumerWidget {
               Expanded(
                 child: _StatBox(
                   icon: PhosphorIcons.checkCircle(PhosphorIconsStyle.fill),
-                  value: '12',
+                  value: '${user.totalCardsSwiped}',
                   label: l10n.lessons,
                   color: AppColors.success,
                 ),
@@ -111,7 +111,7 @@ class StatsScreen extends ConsumerWidget {
               Expanded(
                 child: _StatBox(
                   icon: PhosphorIcons.bookOpen(PhosphorIconsStyle.fill),
-                  value: '32',
+                  value: '${user.savedWords.length}',
                   label: l10n.wordsLearned,
                   color: AppColors.primary,
                 ),

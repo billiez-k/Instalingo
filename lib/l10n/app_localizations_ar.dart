@@ -166,6 +166,18 @@ class AppLocalizationsAr extends AppLocalizations {
   String get english => 'إنجليزي';
 
   @override
+  @override
+  String get swipeSaveLabel => 'حفظ';
+
+  @override
+  @override
+  String get swipeSavedLabel => 'تم الحفظ';
+
+  @override
+  @override
+  String get swipeAlreadyKnew => 'معروف مسبقاً';
+
+  @override
   String get error => 'خطأ';
 
   @override

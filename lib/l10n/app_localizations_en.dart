@@ -166,6 +166,18 @@ class AppLocalizationsEn extends AppLocalizations {
   String get english => 'English';
 
   @override
+  @override
+  String get swipeSaveLabel => 'Save';
+
+  @override
+  @override
+  String get swipeSavedLabel => 'Saved';
+
+  @override
+  @override
+  String get swipeAlreadyKnew => 'Already Knew';
+
+  @override
   String get error => 'Error';
 
   @override

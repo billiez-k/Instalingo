@@ -166,6 +166,18 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get english => '英文';
 
   @override
+  @override
+  String get swipeSaveLabel => '收藏';
+
+  @override
+  @override
+  String get swipeSavedLabel => '已收藏';
+
+  @override
+  @override
+  String get swipeAlreadyKnew => '已認識';
+
+  @override
   String get error => '錯誤';
 
   @override

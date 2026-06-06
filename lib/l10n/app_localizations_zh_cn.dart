@@ -166,6 +166,18 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String get english => '英语';
 
   @override
+  @override
+  String get swipeSaveLabel => '收藏';
+
+  @override
+  @override
+  String get swipeSavedLabel => '已收藏';
+
+  @override
+  @override
+  String get swipeAlreadyKnew => '已认识';
+
+  @override
   String get error => '错误';
 
   @override

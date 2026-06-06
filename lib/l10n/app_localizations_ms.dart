@@ -166,6 +166,18 @@ class AppLocalizationsMs extends AppLocalizations {
   String get english => 'Bahasa Inggeris';
 
   @override
+  @override
+  String get swipeSaveLabel => 'Simpan';
+
+  @override
+  @override
+  String get swipeSavedLabel => 'Disimpan';
+
+  @override
+  @override
+  String get swipeAlreadyKnew => 'Sudah Tahu';
+
+  @override
   String get error => 'Ralat';
 
   @override

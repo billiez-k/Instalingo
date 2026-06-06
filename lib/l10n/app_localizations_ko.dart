@@ -166,6 +166,18 @@ class AppLocalizationsKo extends AppLocalizations {
   String get english => '영어';
 
   @override
+  @override
+  String get swipeSaveLabel => '저장';
+
+  @override
+  @override
+  String get swipeSavedLabel => '저장됨';
+
+  @override
+  @override
+  String get swipeAlreadyKnew => '이미 앎';
+
+  @override
   String get error => '오류';
 
   @override

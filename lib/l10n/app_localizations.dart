@@ -120,6 +120,9 @@ abstract class AppLocalizations {
 
   String get english;
 
+  String get swipeSaveLabel;
+  String get swipeSavedLabel;
+  String get swipeAlreadyKnew;
   String get error;
 
   String get errorGenericMessage;
