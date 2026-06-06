@@ -18,6 +18,7 @@ import 'package:instalingo/screens/profile/settings_screen.dart';
 import 'package:instalingo/screens/profile/edit_profile_screen.dart';
 import 'package:instalingo/screens/profile/help_support_screen.dart';
 import 'package:instalingo/screens/paywall/paywall_modal.dart';
+import 'package:instalingo/screens/error_screen.dart';
 
 class AppRouter {
   static final _rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -26,6 +27,7 @@ class AppRouter {
   static final GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
     initialLocation: '/splash',
+    errorBuilder: (_, state) => ErrorScreen(message: state.error.toString()),
     routes: [
       GoRoute(
         path: '/splash',
@@ -51,11 +53,13 @@ class AppRouter {
       GoRoute(
         path: '/swipe/complete',
         builder: (_, state) {
-          final extra = state.extra as Map<String, dynamic>?;
+          final extra = (state.extra is Map<String, dynamic>)
+              ? (state.extra as Map<String, dynamic>)
+              : <String, dynamic>{};
           return DailyCompleteScreen(
-            cardsSwiped: extra?['cardsSwiped'] as int? ?? 0,
-            xpEarned: extra?['xpEarned'] as int? ?? 0,
-            gemsEarned: extra?['gemsEarned'] as int? ?? 0,
+            cardsSwiped: extra['cardsSwiped'] as int? ?? 0,
+            xpEarned: extra['xpEarned'] as int? ?? 0,
+            gemsEarned: extra['gemsEarned'] as int? ?? 0,
           );
         },
       ),

@@ -60,6 +60,17 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
       future: ChillPostLoader.loadPosts(),
       builder: (context, snapshot) {
         final l10n = AppLocalizations.of(context);
+        if (snapshot.hasError) {
+          return Scaffold(
+            appBar: AppBar(
+              leading: BackButton(onPressed: () => context.pop()),
+              backgroundColor: appTheme.harborNavy,
+            ),
+            body: Center(
+              child: Text(l10n.error, style: TextStyle(color: appTheme.errorLight)),
+            ),
+          );
+        }
         if (!snapshot.hasData) {
           return Scaffold(
             appBar: AppBar(

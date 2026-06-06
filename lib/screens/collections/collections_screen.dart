@@ -198,6 +198,7 @@ class _CollectionsScreenState extends ConsumerState<CollectionsScreen> {
                       return _CollectionCard(
                         card: card,
                         appTheme: appTheme,
+                        nativeCode: user.nativeLanguage,
                         isFlipped: _flippedCardId == card.id,
                         onTap: () {
                           HapticFeedback.selectionClick();
@@ -307,12 +308,14 @@ class _CollectionCard extends StatelessWidget {
   final AppThemeExtension appTheme;
   final bool isFlipped;
   final VoidCallback onTap;
+  final String nativeCode;
 
   const _CollectionCard({
     required this.card,
     required this.appTheme,
     required this.isFlipped,
     required this.onTap,
+    required this.nativeCode,
   });
 
   @override
@@ -394,10 +397,10 @@ class _CollectionCard extends StatelessWidget {
                 color: appTheme.harborInkOnNavy,
               ),
             ),
-            if (card.meaningZh.isNotEmpty) ...[
+            if (card.meaningFor(nativeCode).isNotEmpty) ...[
               SizedBox(height: 4.h),
               Text(
-                card.meaningZh,
+                card.meaningFor(nativeCode),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 12.sp,

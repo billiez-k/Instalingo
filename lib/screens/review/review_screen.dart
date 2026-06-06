@@ -399,10 +399,10 @@ class _ReviewCard extends StatelessWidget {
                       color: appTheme.harborInkOnNavy,
                     ),
                   ),
-                  if (card.meaningZh.isNotEmpty) ...[
+                  if (card.meaningFor(nativeCode).isNotEmpty) ...[
                     SizedBox(height: 8.h),
                     Text(
-                      card.meaningZh,
+                      card.meaningFor(nativeCode),
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 16.sp,

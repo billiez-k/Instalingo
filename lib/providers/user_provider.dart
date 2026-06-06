@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -67,47 +68,47 @@ class UserNotifier extends StateNotifier<UserProfile> {
       notificationsEnabled: notificationsEnabled,
       reminderTime: reminderTime,
     );
-    _save();
+    unawaited(_save());
   }
 
   void addXp(int amount) {
     state = state.copyWith(xp: state.xp + amount);
-    _save();
+    unawaited(_save());
   }
 
   void addGems(int amount) {
     state = state.copyWith(gems: state.gems + amount);
-    _save();
+    unawaited(_save());
   }
 
   void incrementStreak() {
     state = state.copyWith(streak: state.streak + 1);
-    _save();
+    unawaited(_save());
   }
 
   void saveWord(String cardId) {
     if (state.savedWords.contains(cardId)) return;
     final updated = Set<String>.from(state.savedWords)..add(cardId);
     state = state.copyWith(savedWords: updated);
-    _save();
+    unawaited(_save());
   }
 
   void markAlreadyKnew(String cardId) {
     if (state.alreadyKnewWords.contains(cardId)) return;
     final updated = Set<String>.from(state.alreadyKnewWords)..add(cardId);
     state = state.copyWith(alreadyKnewWords: updated);
-    _save();
+    unawaited(_save());
   }
 
   void incrementCardsSwiped() {
     state = state.copyWith(totalCardsSwiped: state.totalCardsSwiped + 1);
-    _save();
+    unawaited(_save());
   }
 
   void unlockAchievement(String id) {
     if (state.achievements.contains(id)) return;
     state = state.copyWith(achievements: [...state.achievements, id]);
-    _save();
+    unawaited(_save());
   }
 
   void upgradeToPro() {
@@ -115,7 +116,7 @@ class UserNotifier extends StateNotifier<UserProfile> {
       isPro: true,
       proExpiry: DateTime.now().add(const Duration(days: 365)),
     );
-    _save();
+    unawaited(_save());
   }
 
   bool isWordSaved(String cardId) {

@@ -46,7 +46,6 @@ class LocaleNotifier extends StateNotifier<Locale> {
   }
 
   /// Detect the best locale from the platform/browser language.
-  /// v2 only supports en and zh_TW.
   Locale _detectLocale() {
     try {
       final platformLocale = WidgetsBinding.instance.platformDispatcher.locale;
@@ -55,8 +54,12 @@ class LocaleNotifier extends StateNotifier<Locale> {
         return const Locale('zh', 'TW');
       }
       if (full.startsWith('zh')) {
-        return const Locale('zh', 'TW');
+        return const Locale('zh', 'CN');
       }
+      if (full.startsWith('ja')) return const Locale('ja');
+      if (full.startsWith('ko')) return const Locale('ko');
+      if (full.startsWith('ms')) return const Locale('ms');
+      if (full.startsWith('ar')) return const Locale('ar');
     } catch (_) {
       // silently fall back to default locale — platform detection unavailable
     }
@@ -64,7 +67,13 @@ class LocaleNotifier extends StateNotifier<Locale> {
   }
 
   String _localeCode(Locale locale) {
-    if (locale.languageCode == 'zh' && locale.countryCode == 'TW') return 'zh_TW';
+    final code = '${locale.languageCode}_${locale.countryCode}';
+    if (code == 'zh_TW') return 'zh_TW';
+    if (code == 'zh_CN') return 'zh_CN';
+    if (code == 'ja_') return 'ja';
+    if (code == 'ko_') return 'ko';
+    if (code == 'ms_') return 'ms';
+    if (code == 'ar_') return 'ar';
     return 'en';
   }
 
