@@ -34,7 +34,9 @@ class UserNotifier extends StateNotifier<UserProfile> {
     if (json != null) {
       try {
         state = UserProfile.fromJson(jsonDecode(json) as Map<String, dynamic>);
-      } catch (_) {}
+      } catch (_) {
+      // silently fall back to default — expected on first launch
+    }
     }
   }
 

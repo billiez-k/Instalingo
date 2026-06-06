@@ -59,7 +59,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
     return FutureBuilder<List<ChillPost>>(
       future: ChillPostLoader.loadPosts(),
       builder: (context, snapshot) {
-        final l10n = AppLocalizations.of(context)!;
+        final l10n = AppLocalizations.of(context);
         if (!snapshot.hasData) {
           return Scaffold(
             appBar: AppBar(

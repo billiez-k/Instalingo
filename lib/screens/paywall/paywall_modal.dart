@@ -37,7 +37,7 @@ class _PaywallModalState extends State<PaywallModal>
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
 
     return SlideTransition(

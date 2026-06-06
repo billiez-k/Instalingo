@@ -64,7 +64,7 @@ class AchievementsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
     final achievements = _getDemoAchievements();
 

@@ -32,7 +32,9 @@ final cardByIdGlobalProvider = FutureProvider.family<VocabCard?, String>((ref, c
   final deck = await CardDataLoader.loadDeck(user.currentLevel);
   try {
     return deck.cards.firstWhere((c) => c.id == cardId);
-  } catch (_) {}
+  } catch (_) {
+      // silently fall back — card not found in deck
+    }
 
   // Try other levels
   for (final level in ['n5', 'n4', 'n3', 'n2', 'n1']) {
@@ -40,7 +42,9 @@ final cardByIdGlobalProvider = FutureProvider.family<VocabCard?, String>((ref, c
     try {
       final otherDeck = await CardDataLoader.loadDeck(level);
       return otherDeck.cards.firstWhere((c) => c.id == cardId);
-    } catch (_) {}
+    } catch (_) {
+      // silently fall back — card not found in deck
+    }
   }
   return null;
 });

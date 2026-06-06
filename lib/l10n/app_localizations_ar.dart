@@ -113,6 +113,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get dailyCompleteCardsLabel => 'بطاقات';
+  String get dailyCompleteSavedLabel => 'محفوظة';
 
   @override
   String get dailyCompleteCardsSwiped => 'تم تمرير البطاقات';
@@ -166,16 +167,16 @@ class AppLocalizationsAr extends AppLocalizations {
   String get english => 'إنجليزي';
 
   @override
-  @override
   String get swipeSaveLabel => 'حفظ';
 
-  @override
   @override
   String get swipeSavedLabel => 'تم الحفظ';
 
   @override
-  @override
   String get swipeAlreadyKnew => 'معروف مسبقاً';
+  String get swipeFlipLabel => 'اقلب';
+  String get swipeShareLabel => 'مشاركة';
+  String get swipeSkipped => 'تخطى';
 
   @override
   String get error => 'خطأ';
@@ -877,7 +878,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String lapsesCount(int count) => 'الهفوات: \$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned الكلمات';
+  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned الكلمات';
 
   @override
   String profile_minPerDay(int min) => '\$minutes دقيقة/يوم';
@@ -898,7 +899,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String sourceLabel(String source) => 'المصدر: \$source';
 
   @override
-  String get streakKeepStreak => 'حافظ على خط \$days-day الخاص بك على قيد الحياة!';
+  String streakKeepStreak(int days) => 'حافظ على خط \$days-day الخاص بك على قيد الحياة!';
 
   @override
   String streakShieldsRemaining(int remaining) => '\$count الدروع المتبقية';

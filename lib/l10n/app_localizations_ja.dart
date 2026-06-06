@@ -113,6 +113,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get dailyCompleteCardsLabel => 'カード';
+  String get dailyCompleteSavedLabel => '保存';
 
   @override
   String get dailyCompleteCardsSwiped => 'カードがスワイプされました';
@@ -166,16 +167,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String get english => '英語';
 
   @override
-  @override
   String get swipeSaveLabel => '保存';
 
-  @override
   @override
   String get swipeSavedLabel => '保存済';
 
   @override
-  @override
   String get swipeAlreadyKnew => '既知';
+  String get swipeFlipLabel => '裏返す';
+  String get swipeShareLabel => '共有';
+  String get swipeSkipped => 'スキップ';
 
   @override
   String get error => 'エラー';
@@ -877,7 +878,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String lapsesCount(int count) => '失効回数: \$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned 単語';
+  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned 単語';
 
   @override
   String profile_minPerDay(int min) => '\$minutes 分/日';
@@ -898,7 +899,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String sourceLabel(String source) => 'ソース: \$source';
 
   @override
-  String get streakKeepStreak => '\$days-dayの連続記録を維持しよう！';
+  String streakKeepStreak(int days) => '\$days-dayの連続記録を維持しよう！';
 
   @override
   String streakShieldsRemaining(int remaining) => '残りのシールド数：\$count';

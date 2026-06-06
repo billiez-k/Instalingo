@@ -23,7 +23,7 @@ class ChillFeedScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final appTheme = context.appTheme;
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final postsAsync = ref.watch(chillPostsProvider);
 
     return Scaffold(
@@ -254,14 +254,25 @@ class _PostCard extends StatefulWidget {
   State<_PostCard> createState() => _PostCardState();
 }
 
-class _PostCardState extends State<_PostCard> {
+class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
   bool _isLiked = false;
   int _likeCount = 0;
+  late AnimationController _heartAnimController;
 
   @override
   void initState() {
     super.initState();
     _likeCount = widget.post.likes;
+    _heartAnimController = AnimationController(
+      duration: const Duration(milliseconds: 700),
+      vsync: this,
+    );
+  }
+
+  @override
+  void dispose() {
+    _heartAnimController.dispose();
+    super.dispose();
   }
 
   void _toggleLike() {
@@ -270,6 +281,13 @@ class _PostCardState extends State<_PostCard> {
       _isLiked = !_isLiked;
       _likeCount += _isLiked ? 1 : -1;
     });
+  }
+
+  void _doubleTapLike() {
+    if (!_isLiked) {
+      _toggleLike();
+    }
+    _heartAnimController.forward(from: 0);
   }
 
   void _openComments(BuildContext context) {
@@ -284,7 +302,7 @@ class _PostCardState extends State<_PostCard> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final post = widget.post;
     final appTheme = widget.appTheme;
     final hasLink = post.targetWordId != null && post.targetWordId!.isNotEmpty;
@@ -351,7 +369,33 @@ class _PostCardState extends State<_PostCard> {
             SizedBox(height: 12.h),
 
             // Instagram-style gradient image header
-            _PostImage(post: post),
+            AnimatedBuilder(
+              animation: _heartAnimController,
+              builder: (_, child) {
+                return Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    GestureDetector(
+                      onDoubleTap: _doubleTapLike,
+                      child: child,
+                    ),
+                    if (_heartAnimController.value > 0)
+                      Opacity(
+                        opacity: 1 - _heartAnimController.value,
+                        child: Transform.scale(
+                          scale: 0.5 + _heartAnimController.value * 1.5,
+                          child: PhosphorIcon(
+                            PhosphorIcons.heart(PhosphorIconsStyle.fill),
+                            size: 80.sp,
+                            color: BusanHarborTokens.coral,
+                          ),
+                        ),
+                      ),
+                  ],
+                );
+              },
+              child: _PostImage(post: post),
+            ),
 
             SizedBox(height: 12.h),
 
@@ -426,7 +470,7 @@ class _PostCardState extends State<_PostCard> {
                               padding: EdgeInsets.symmetric(
                                   horizontal: 8.w, vertical: 2.h),
                               decoration: BoxDecoration(
-                                color: appTheme.surfaceVariant,
+                                color: Theme.of(context).colorScheme.surfaceVariant,
                                 borderRadius: BorderRadius.circular(4.r),
                               ),
                               child: Text(
@@ -539,7 +583,7 @@ class _PostImage extends StatelessWidget {
                   width: 100.w, height: 100.w,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    border: Border.all(color: Colors.white.withAlpha(12), width: 1),
+                    border: Border.all(color: Colors.white.withValues(alpha: 0.047), width: 1),
                   ),
                 ),
               ),
@@ -619,7 +663,7 @@ class _CommentsSheet extends StatelessWidget {
       maxChildSize: 0.85,
       builder: (_, scrollController) => Container(
         decoration: BoxDecoration(
-          color: appTheme.surface,
+          color: Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.vertical(top: Radius.circular(16.r)),
         ),
         child: Column(

@@ -85,6 +85,7 @@ abstract class AppLocalizations {
   String get coursePath;
 
   String get dailyCompleteCardsLabel;
+  String get dailyCompleteSavedLabel;
 
   String get dailyCompleteCardsSwiped;
 
@@ -123,6 +124,9 @@ abstract class AppLocalizations {
   String get swipeSaveLabel;
   String get swipeSavedLabel;
   String get swipeAlreadyKnew;
+  String get swipeFlipLabel;
+  String get swipeShareLabel;
+  String get swipeSkipped;
   String get error;
 
   String get errorGenericMessage;
@@ -587,7 +591,7 @@ abstract class AppLocalizations {
 
   String lapsesCount(int count);
 
-  String profile_learningStatus(String lang, String duration);
+  String profile_learningStatus(String level, String wordsLearned);
 
   String profile_minPerDay(int min);
 
@@ -601,7 +605,7 @@ abstract class AppLocalizations {
 
   String sourceLabel(String source);
 
-  String get streakKeepStreak;
+  String streakKeepStreak(int days);
 
   String streakShieldsRemaining(int remaining);
 

@@ -113,6 +113,7 @@ class AppLocalizationsZhTw extends AppLocalizations {
 
   @override
   String get dailyCompleteCardsLabel => '卡片';
+  String get dailyCompleteSavedLabel => '已儲存';
 
   @override
   String get dailyCompleteCardsSwiped => '已滑動卡片';
@@ -166,16 +167,16 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get english => '英文';
 
   @override
-  @override
   String get swipeSaveLabel => '收藏';
 
-  @override
   @override
   String get swipeSavedLabel => '已收藏';
 
   @override
-  @override
   String get swipeAlreadyKnew => '已認識';
+  String get swipeFlipLabel => '翻轉';
+  String get swipeShareLabel => '分享';
+  String get swipeSkipped => '跳過';
 
   @override
   String get error => '錯誤';
@@ -877,7 +878,7 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String lapsesCount(int count) => '失誤次數：\$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned 字';
+  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned 字';
 
   @override
   String profile_minPerDay(int min) => '\$minutes 分鐘/天';
@@ -898,7 +899,7 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String sourceLabel(String source) => '來源：\$source';
 
   @override
-  String get streakKeepStreak => '保持 \$days 天的連續記錄！';
+  String streakKeepStreak(int days) => '保持 \$days 天的連續記錄！';
 
   @override
   String streakShieldsRemaining(int remaining) => '剩餘 \$count 護盾';

@@ -57,7 +57,9 @@ class LocaleNotifier extends StateNotifier<Locale> {
       if (full.startsWith('zh')) {
         return const Locale('zh', 'TW');
       }
-    } catch (_) {}
+    } catch (_) {
+      // silently fall back to default locale — platform detection unavailable
+    }
     return const Locale('en');
   }
 

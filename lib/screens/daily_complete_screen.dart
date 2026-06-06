@@ -13,12 +13,14 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 /// Displays stats, confetti, and a share achievement button.
 class DailyCompleteScreen extends ConsumerStatefulWidget {
   final int cardsSwiped;
+  final int cardsSaved;
   final int xpEarned;
   final int gemsEarned;
 
   const DailyCompleteScreen({
     super.key,
     this.cardsSwiped = 0,
+    this.cardsSaved = 0,
     this.xpEarned = 0,
     this.gemsEarned = 0,
   });
@@ -69,7 +71,7 @@ class _DailyCompleteScreenState extends ConsumerState<DailyCompleteScreen>
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final user = ref.watch(userProvider);
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
@@ -134,32 +136,59 @@ class _DailyCompleteScreenState extends ConsumerState<DailyCompleteScreen>
                     ),
                     SizedBox(height: 40.h),
 
-                    // Stats row
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        _StatBox(
-                          icon: PhosphorIcons.cards(PhosphorIconsStyle.fill),
-                          value: '${widget.cardsSwiped}',
-                          label: l10n.dailyCompleteCardsLabel,
-                          color: BusanHarborTokens.orange,
-                          appTheme: appTheme,
-                        ),
-                        _StatBox(
-                          icon: PhosphorIcons.lightning(PhosphorIconsStyle.fill),
-                          value: '+${widget.xpEarned}',
-                          label: l10n.swipeXp,
-                          color: BusanHarborTokens.sea,
-                          appTheme: appTheme,
-                        ),
-                        _StatBox(
-                          icon: PhosphorIcons.coin(PhosphorIconsStyle.fill),
-                          value: '+${widget.gemsEarned}',
-                          label: l10n.dailyCompleteGemsLabel,
-                          color: BusanHarborTokens.brass,
-                          appTheme: appTheme,
-                        ),
-                      ],
+                    // Stats grid
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.w),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: _StatBox(
+                              icon: PhosphorIcons.cards(PhosphorIconsStyle.fill),
+                              value: '${widget.cardsSwiped}',
+                              label: l10n.dailyCompleteCardsLabel,
+                              color: BusanHarborTokens.orange,
+                              appTheme: appTheme,
+                            ),
+                          ),
+                          SizedBox(width: 12.w),
+                          Expanded(
+                            child: _StatBox(
+                              icon: PhosphorIcons.heart(PhosphorIconsStyle.fill),
+                              value: '${widget.cardsSaved}',
+                              label: l10n.dailyCompleteSavedLabel,
+                              color: BusanHarborTokens.coral,
+                              appTheme: appTheme,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 12.h),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16.w),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: _StatBox(
+                              icon: PhosphorIcons.lightning(PhosphorIconsStyle.fill),
+                              value: '+${widget.xpEarned}',
+                              label: l10n.swipeXp,
+                              color: BusanHarborTokens.sea,
+                              appTheme: appTheme,
+                            ),
+                          ),
+                          SizedBox(width: 12.w),
+                          Expanded(
+                            child: _StatBox(
+                              icon: PhosphorIcons.coin(PhosphorIconsStyle.fill),
+                              value: '+${widget.gemsEarned}',
+                              label: l10n.dailyCompleteGemsLabel,
+                              color: BusanHarborTokens.brass,
+                              appTheme: appTheme,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     SizedBox(height: 32.h),
 

@@ -37,7 +37,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
     final user = ref.watch(userProvider);
     final displayName = user.displayName.isEmpty ? l10n.defaultDisplayName : user.displayName;

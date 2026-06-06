@@ -8,7 +8,7 @@ import 'package:instalingo/models/vocab_card.dart';
 import 'package:instalingo/providers/revenuecat_provider.dart';
 import 'package:instalingo/providers/user_provider.dart';
 import "package:instalingo/providers/vocab_deck_provider.dart";
-import 'package:instalingo/providers/locale_provider.dart';
+
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -35,8 +35,7 @@ class _CollectionsScreenState extends ConsumerState<CollectionsScreen> {
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
-    final nativeCode = ProviderScope.containerOf(context).read(userProvider).nativeLanguage;
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final user = ref.watch(userProvider);
     final isPro = ref.watch(isProProvider);
     final deckAsync = ref.watch(currentDeckProvider);
@@ -270,7 +269,6 @@ class _FilterChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
-    final nativeCode = ProviderScope.containerOf(context).read(userProvider).nativeLanguage;
 
     return GestureDetector(
       onTap: onTap,

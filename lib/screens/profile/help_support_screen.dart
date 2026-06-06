@@ -12,7 +12,7 @@ class HelpSupportScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
 
     final sections = [
@@ -283,7 +283,7 @@ class _HelpItemWidget extends StatelessWidget {
   }
 
   void _showExplanation(BuildContext context, _HelpItem item) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,

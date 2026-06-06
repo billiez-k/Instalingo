@@ -67,7 +67,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
 
     return AnnotatedRegion<SystemUiOverlayStyle>(

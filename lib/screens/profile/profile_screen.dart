@@ -5,7 +5,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/user.dart';
-import 'package:instalingo/models/vocab_card.dart';
 import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/providers/vocab_deck_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
@@ -23,7 +22,7 @@ class ProfileScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final user = ref.watch(userProvider);
 
     return Scaffold(
@@ -111,7 +110,7 @@ class _ProfileHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
     final appTheme = context.appTheme;
     final displayName = user.displayName.isEmpty ? l10n.defaultDisplayName : user.displayName;
@@ -534,7 +533,7 @@ class _SavedWordsGrid extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
 
     if (user.savedWords.isEmpty) return const SizedBox.shrink();

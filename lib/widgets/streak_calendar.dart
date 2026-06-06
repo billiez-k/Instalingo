@@ -23,7 +23,7 @@ class StreakCalendar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
     final now = DateTime.now();
     final daysInMonth = DateTime(now.year, now.month + 1, 0).day;
@@ -48,7 +48,7 @@ class StreakCalendar extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.local_fire_department, size: 16.sp, color: AppColors.streak),
+                  PhosphorIcon(PhosphorIcons.flame(PhosphorIconsStyle.fill), size: 16.sp, color: AppColors.streak),
                   SizedBox(width: 4.w),
                   Text(
                     l10n.dayStreakCount(currentStreak),
@@ -83,7 +83,7 @@ class StreakCalendar extends StatelessWidget {
                 SizedBox(width: 8.w),
                 Expanded(
                   child: Text(
-                    l10n.streakKeepStreak,
+                    l10n.streakKeepStreak(currentStreak),
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: AppColors.streak,
                       fontWeight: FontWeight.w600,

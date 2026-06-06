@@ -113,6 +113,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get dailyCompleteCardsLabel => 'Kad';
+  String get dailyCompleteSavedLabel => 'Disimpan';
 
   @override
   String get dailyCompleteCardsSwiped => 'Kad Dileret';
@@ -166,16 +167,16 @@ class AppLocalizationsMs extends AppLocalizations {
   String get english => 'Bahasa Inggeris';
 
   @override
-  @override
   String get swipeSaveLabel => 'Simpan';
 
-  @override
   @override
   String get swipeSavedLabel => 'Disimpan';
 
   @override
-  @override
   String get swipeAlreadyKnew => 'Sudah Tahu';
+  String get swipeFlipLabel => 'Balik';
+  String get swipeShareLabel => 'Kongsi';
+  String get swipeSkipped => 'Langkau';
 
   @override
   String get error => 'Ralat';
@@ -877,7 +878,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String lapsesCount(int count) => 'Kegagalan: \$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned perkataan';
+  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned perkataan';
 
   @override
   String profile_minPerDay(int min) => '\$minutes min/hari';
@@ -898,7 +899,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String sourceLabel(String source) => 'Sumber: \$source';
 
   @override
-  String get streakKeepStreak => 'Kekalkan rentetan \$days-day anda!';
+  String streakKeepStreak(int days) => 'Kekalkan rentetan \$days-day anda!';
 
   @override
   String streakShieldsRemaining(int remaining) => '\$count perisai yang tinggal';

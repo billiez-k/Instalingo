@@ -113,6 +113,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get dailyCompleteCardsLabel => '카드';
+  String get dailyCompleteSavedLabel => '저장';
 
   @override
   String get dailyCompleteCardsSwiped => '카드 결제';
@@ -166,16 +167,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String get english => '영어';
 
   @override
-  @override
   String get swipeSaveLabel => '저장';
 
-  @override
   @override
   String get swipeSavedLabel => '저장됨';
 
   @override
-  @override
   String get swipeAlreadyKnew => '이미 앎';
+  String get swipeFlipLabel => '뒤집기';
+  String get swipeShareLabel => '공유';
+  String get swipeSkipped => '건너뜀';
 
   @override
   String get error => '오류';
@@ -877,7 +878,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String lapsesCount(int count) => '연체 횟수: \$count';
 
   @override
-  String profile_learningStatus(String lang, String duration) => '\$level / \$wordsLearned 단어';
+  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned 단어';
 
   @override
   String profile_minPerDay(int min) => '\$minutes 분/일';
@@ -898,7 +899,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String sourceLabel(String source) => '출처: \$source';
 
   @override
-  String get streakKeepStreak => '\$days-day 연속 기록을 이어가세요!';
+  String streakKeepStreak(int days) => '\$days-day 연속 기록을 이어가세요!';
 
   @override
   String streakShieldsRemaining(int remaining) => '\$count 방패 잔여 개수';

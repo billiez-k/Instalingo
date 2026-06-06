@@ -11,6 +11,7 @@ import 'package:instalingo/models/user.dart';
 import 'package:instalingo/models/vocab_card.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:instalingo/providers/user_provider.dart';
+import 'package:instalingo/providers/settings_provider.dart';
 import 'package:instalingo/providers/vocab_deck_provider.dart';
 import 'package:instalingo/screens/swipe/tutorial_overlay.dart';
 import 'package:instalingo/theme/app_theme.dart';
@@ -141,6 +142,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
     if (mounted) {
       context.pushReplacement('/swipe/complete', extra: {
         'cardsSwiped': _todayCount,
+        'cardsSaved': _savedCount,
         'xpEarned': _xpEarned,
         'gemsEarned': _gemsEarned,
       });
@@ -150,7 +152,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final _ = ref.watch(currentDeckProvider);
     final user = ref.watch(userProvider);
 
@@ -344,6 +346,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
 
     return GestureDetector(
       onTap: _flipCard,
+      onDoubleTap: () => _saveCard(index),
       child: Container(
         color: Colors.black,
         child: SafeArea(
@@ -364,7 +367,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                         width: 160.w, height: 160.w,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          border: Border.all(color: Colors.white.withAlpha(12), width: 1),
+                          border: Border.all(color: Colors.white.withValues(alpha: 0.047), width: 1),
                         ),
                       ),
                     ),
@@ -412,12 +415,12 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                     _act(saved ? PhosphorIcons.heart(PhosphorIconsStyle.fill) : PhosphorIcons.heart(PhosphorIconsStyle.bold),
                         saved ? BusanHarborTokens.coral : Colors.white, () => skipped ? null : _saveCard(index), l10n.swipeSaveLabel),
                     SizedBox(width: 16.w),
-                    _act(PhosphorIcons.chatCircle(PhosphorIconsStyle.bold), Colors.white, _flipCard, 'Flip'),
+                    _act(PhosphorIcons.chatCircle(PhosphorIconsStyle.bold), Colors.white, _flipCard, l10n.swipeFlipLabel),
                     SizedBox(width: 16.w),
-                    _act(PhosphorIcons.share(PhosphorIconsStyle.bold), Colors.white, () {}, ''),
+                    _act(PhosphorIcons.share(PhosphorIconsStyle.bold), Colors.white, () {}, l10n.swipeShareLabel),
                     const Spacer(),
                     _act(saved ? PhosphorIcons.bookmark(PhosphorIconsStyle.fill) : PhosphorIcons.bookmark(PhosphorIconsStyle.bold),
-                        saved ? BusanHarborTokens.orange : Colors.white, () => skipped ? null : _saveCard(index), ''),
+                        saved ? BusanHarborTokens.orange : Colors.white, () => skipped ? null : _saveCard(index), l10n.swipeSaveLabel),
                   ]),
                   SizedBox(height: 8.h),
                   Expanded(
@@ -430,9 +433,9 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                           Container(
                             padding: EdgeInsets.all(12.w),
                             decoration: BoxDecoration(
-                              color: Colors.white.withAlpha(8),
+                              color: Colors.white.withValues(alpha: 0.031),
                               borderRadius: BorderRadius.circular(8.r),
-                              border: Border.all(color: Colors.white.withAlpha(20)),
+                              border: Border.all(color: Colors.white.withValues(alpha: 0.078)),
                             ),
                             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                               Text(card.exampleText ?? '', style: TextStyle(fontSize: 16.sp, color: Colors.white, height: 1.5)),
@@ -456,8 +459,8 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                   SizedBox(height: 8.h),
                   Row(children: [
                     Expanded(
-                      child: _btn(skipped ? 'Skipped' : l10n.swipeAlreadyKnew,
-                          Colors.white.withAlpha(15), skipped ? Colors.white38 : Colors.white70,
+                      child: _btn(skipped ? l10n.swipeSkipped : l10n.swipeAlreadyKnew,
+                          Colors.white.withValues(alpha: 0.059), skipped ? Colors.white38 : Colors.white70,
                           onPressed: skipped ? null : _skipCard),
                     ),
                     SizedBox(width: 12.w),

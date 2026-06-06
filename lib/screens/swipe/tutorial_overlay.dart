@@ -56,7 +56,7 @@ class _TutorialOverlayState extends ConsumerState<TutorialOverlay>
   @override
   Widget build(BuildContext context) {
     final _ = context.appTheme;
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     return FadeTransition(
       opacity: _fadeAnimation,

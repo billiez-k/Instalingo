@@ -22,7 +22,7 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
 
     return Scaffold(

@@ -20,8 +20,7 @@ class ReviewScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final appTheme = context.appTheme;
-    final nativeCode = ref.read(userProvider).nativeLanguage;
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final srsAsync = ref.watch(srsProvider);
     final user = ref.watch(userProvider);
 
@@ -173,7 +172,7 @@ class _ReviewCardListState extends ConsumerState<_ReviewCardList> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     if (_currentIndex >= widget.dueCards.length) {
       return _ReviewComplete(appTheme: widget.appTheme);
@@ -328,7 +327,7 @@ class _ReviewCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     return GestureDetector(
       onTap: onFlip,
@@ -530,7 +529,7 @@ class _ReviewComplete extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     return Center(
       child: Column(
