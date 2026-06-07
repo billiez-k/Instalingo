@@ -3,9 +3,9 @@
   "short_name": "InstaLingo",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#1A2332",
-  "theme_color": "#1A2332",
-  "description": "InstaLingo \u2014 Korean & Japanese exam prep. TOPIK I, JLPT N5-N4.",
+  "background_color": "#0D1B2A",
+  "theme_color": "#0D1B2A",
+  "description": "InstaLingo — Japanese vocabulary app with swipe feed. JLPT N5-N1.",
   "orientation": "portrait-primary",
   "prefer_related_applications": false,
   "icons": [

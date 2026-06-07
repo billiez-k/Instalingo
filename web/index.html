@@ -19,27 +19,41 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="InstaLingo - Language Learning">
+  <meta name="description" content="InstaLingo - Japanese vocabulary learning app">
+
+  <!-- PWA capable -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="InstaLingo">
 
   <!-- Preload CJK fonts to eliminate ☒ tofu character buffer.
-       Google Fonts CDN serves Noto Sans CJK which covers all Chinese,
-       Japanese, and Korean glyphs. The browser downloads these in
-       parallel with the app bundle so characters render instantly. -->
+       Falls back to system fonts when offline (service worker caches after first load). -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;800&family=Noto+Sans+TC:wght@400;700;800&family=Noto+Sans+JP:wght@400;700;800&family=Noto+Sans+KR:wght@400;700;800&display=swap" rel="stylesheet">
 
   <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="instalingo">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>instalingo</title>
+  <title>InstaLingo</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Register PWA service worker for offline support -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('flutter_service_worker.js', {
+          scope: '/'
+        }).catch((err) => {
+          console.warn('Service worker registration failed:', err);
+        });
+      });
+    }
+  </script>
 
   <!-- Force HTML renderer for instant CJK font rendering.
        Must run BEFORE flutter_bootstrap.js loads.
@@ -48,16 +62,47 @@
   <script>
     window.flutterWebRenderer = "html";
   </script>
+
+  <style>
+    /* Offline notification bar — hidden by default, shown when offline */
+    #offline-bar {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99999;
+      background: #1A2332;
+      color: #FF8C42;
+      text-align: center;
+      padding: 8px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    #offline-bar.visible { display: block; }
+  </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
+  <div id="offline-bar">You're offline — app loaded from cache</div>
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
+  <script>
+    (function() {
+      var bar = document.getElementById('offline-bar');
+      function update() {
+        if (navigator.onLine) {
+          bar.classList.remove('visible');
+        } else {
+          bar.classList.add('visible');
+        }
+      }
+      window.addEventListener('online', update);
+      window.addEventListener('offline', update);
+      update();
+    })();
+  </script>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
