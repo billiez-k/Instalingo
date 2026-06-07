@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/providers/locale_provider.dart';
+import 'package:instalingo/providers/onboarding_provider.dart';
 import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -20,7 +21,7 @@ class _NativeLanguageScreenState extends ConsumerState<NativeLanguageScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
     final appTheme = context.appTheme;
 
     return Scaffold(
@@ -41,12 +42,17 @@ class _NativeLanguageScreenState extends ConsumerState<NativeLanguageScreen> {
             children: [
               SizedBox(height: 12.h),
               Text(
+                'STEP 1/6',
+                style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4),
+              ),
+              SizedBox(height: 6.h),
+              Text(
                 l10n.onboardingSelectNativeLanguage,
                 style: TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w800, color: appTheme.harborNavy),
               ),
               SizedBox(height: 8.h),
               Container(width: 24.w, height: 3, color: BusanHarborTokens.orange),
-              SizedBox(height: 32.h),
+              SizedBox(height: 28.h),
               _LanguageTile(
                 name: l10n.langNameEn,
                 code: 'en',
@@ -100,6 +106,7 @@ class _NativeLanguageScreenState extends ConsumerState<NativeLanguageScreen> {
                   ),
                   onPressed: () {
                     ref.read(localeProvider.notifier).setLocale(_selectedLanguage);
+                    ref.read(onboardingDataProvider.notifier).setNativeLanguage(_selectedLanguage);
                     ref.read(userProvider.notifier).updateProfile(nativeLanguage: _selectedLanguage);
                     context.push('/onboarding/learning-language');
                   },

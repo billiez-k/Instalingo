@@ -49,7 +49,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final appTheme = context.appTheme;
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
@@ -59,48 +59,47 @@ class _OnboardingScreenState extends State<OnboardingScreen>
           position: _slideAnimation,
           child: Column(
             children: [
-              // Navy hero
+              // Navy hero — compact
               Container(
                 width: double.infinity,
                 color: appTheme.harborNavy,
-                padding: EdgeInsets.fromLTRB(24.w, 80.h, 24.w, 56.h),
+                padding: EdgeInsets.fromLTRB(24.w, 56.h, 24.w, 32.h),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(height: 20.h),
                     // Compass logo
                     Container(
-                      width: 80.w,
-                      height: 80.w,
+                      width: 64.w,
+                      height: 64.w,
                       decoration: BoxDecoration(
                         border: Border.all(
                           color: BusanHarborTokens.orange,
                           width: 2,
                         ),
-                        borderRadius: BorderRadius.circular(16.r),
+                        borderRadius: BorderRadius.circular(14.r),
                       ),
                       alignment: Alignment.center,
                       child: PhosphorIcon(
                         PhosphorIcons.compass(PhosphorIconsStyle.regular),
-                        size: 40.sp,
+                        size: 32.sp,
                         color: BusanHarborTokens.orange,
                       ),
                     ),
-                    SizedBox(height: 24.h),
+                    SizedBox(height: 16.h),
                     Text(
                       l10n.appTitle,
                       style: TextStyle(
-                        fontSize: 14.sp,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w800,
                         color: BusanHarborTokens.orange,
                         letterSpacing: 3.0,
                       ),
                     ),
-                    SizedBox(height: 12.h),
+                    SizedBox(height: 8.h),
                     Text(
                       l10n.onboardingDiscoverJapanese,
                       style: TextStyle(
-                        fontSize: 28.sp,
+                        fontSize: 24.sp,
                         fontWeight: FontWeight.w800,
                         color: appTheme.harborInkOnNavy,
                         letterSpacing: -0.5,

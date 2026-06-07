@@ -309,11 +309,7 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
 
     return GestureDetector(
       onTap: () {
-        if (hasLink) {
-          context.push('/swipe');
-        } else {
-          context.push('/post/${post.id}');
-        }
+        context.push('/post/${post.id}');
       },
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 16.w, vertical: 6.h),
@@ -544,77 +540,171 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
 }
 
 class _PostImage extends StatelessWidget {
-    final ChillPost post;
-    const _PostImage({required this.post});
+  final ChillPost post;
+  const _PostImage({required this.post});
 
-    static final _grads = [
-      [const Color(0xFF1a1a2e), const Color(0xFF16213e)],
-      [const Color(0xFF0f3460), const Color(0xFF1a1a2e)],
-      [const Color(0xFF533483), const Color(0xFF16213e)],
-      [const Color(0xFF2d3436), const Color(0xFF0f3460)],
-      [const Color(0xFF16213e), const Color(0xFF1a1a2e)],
-    ];
+  // Instagram-style vibrant gradients
+  static final _grads = [
+    [const Color(0xFF405DE6), const Color(0xFF5851DB), const Color(0xFF833AB4)],   // IG purple-blue
+    [const Color(0xFFF77737), const Color(0xFFFD1D1D), const Color(0xFFC13584)],   // IG warm
+    [const Color(0xFF11998E), const Color(0xFF38EF7D)],                             // green
+    [const Color(0xFF4FACFE), const Color(0xFF00F2FE)],                             // cyan
+    [const Color(0xFFF5576C), const Color(0xFFFF6B35)],                             // coral
+    [const Color(0xFF667EEA), const Color(0xFF764BA2)],                             // indigo
+    [const Color(0xFF0F3443), const Color(0xFF34E89E), const Color(0xFF38F9D7)],   // teal
+    [const Color(0xFFFF0844), const Color(0xFFFFB199)],                             // red-pink
+  ];
 
-    @override
-    Widget build(BuildContext context) {
-      final g = _grads[post.authorName.hashCode.abs() % _grads.length];
-      final icon = post.targetWordId != null
-          ? PhosphorIcons.bookOpen(PhosphorIconsStyle.fill)
-          : PhosphorIcons.chatCircleText(PhosphorIconsStyle.fill);
+  @override
+  Widget build(BuildContext context) {
+    final g = _grads[post.authorName.hashCode.abs() % _grads.length];
 
-      return ClipRRect(
-        borderRadius: BorderRadius.circular(6.r),
-        child: Container(
-          width: double.infinity,
-          height: 220.h,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: g,
-            ),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(6.r),
+      child: Container(
+        width: double.infinity,
+        height: 240.h,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: g,
           ),
-          child: Stack(
-            fit: StackFit.expand,
-            children: [
-              Positioned(
-                right: -20.w, top: -20.h,
-                child: Container(
-                  width: 100.w, height: 100.w,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.white.withValues(alpha: 0.047), width: 1),
-                  ),
+        ),
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            // Decorative geometric elements
+            Positioned(
+              right: -30.w, top: -30.h,
+              child: Container(
+                width: 130.w, height: 130.w,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white.withValues(alpha: 0.06), width: 1.5),
                 ),
               ),
+            ),
+            Positioned(
+              left: -20.w, bottom: -20.h,
+              child: Container(
+                width: 100.w, height: 100.w,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white.withValues(alpha: 0.04), width: 1),
+                ),
+              ),
+            ),
+            // Grid pattern overlay
+            Positioned.fill(
+              child: CustomPaint(
+                painter: _GridOverlayPainter(),
+              ),
+            ),
+            // Content
+            if (post.targetWord != null && post.targetWord!.isNotEmpty)
               Center(
-                child: Opacity(
-                  opacity: 0.15,
-                  child: PhosphorIcon(icon, size: 80.sp, color: Colors.white),
-                ),
-              ),
-              if (post.targetWord != null && post.targetWord!.isNotEmpty)
-                Center(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 24.w),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text(post.targetWord!,
+                      // Small reading text above word
+                      if (post.targetWord!.length > 1)
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 4.h),
+                          child: Text(
+                            'JLPT N5',
+                            style: TextStyle(
+                              fontSize: 10.sp,
+                              fontWeight: FontWeight.w700,
+                              color: Colors.white.withValues(alpha: 0.6),
+                              letterSpacing: 2.0,
+                            ),
+                          ),
+                        ),
+                      // Main word — large and bold
+                      Text(
+                        post.targetWord!,
+                        style: TextStyle(
+                          fontSize: 42.sp,
+                          fontWeight: FontWeight.w900,
+                          color: Colors.white,
+                          letterSpacing: 1.5,
+                          height: 1.1,
+                          shadows: const [
+                            Shadow(color: Colors.black26, blurRadius: 16, offset: Offset(0, 3)),
+                          ],
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                      SizedBox(height: 10.h),
+                      // CTA pill
+                      Container(
+                        padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 6.h),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withValues(alpha: 0.18),
+                          borderRadius: BorderRadius.circular(20.r),
+                          border: Border.all(color: Colors.white.withValues(alpha: 0.25), width: 0.8),
+                        ),
+                        child: Text(
+                          'tap to learn →',
                           style: TextStyle(
-                              fontSize: 36.sp, fontWeight: FontWeight.w800,
-                              color: Colors.white, letterSpacing: 1.5,
-                              shadows: const [Shadow(color: Colors.black38, blurRadius: 12, offset: Offset(0, 2))])),
-                      SizedBox(height: 4.h),
-                      Text('tap to learn →',
-                          style: TextStyle(fontSize: 11.sp, color: Colors.white54, letterSpacing: 0.8)),
+                            fontSize: 11.sp,
+                            color: Colors.white.withValues(alpha: 0.9),
+                            letterSpacing: 0.6,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
-            ],
-          ),
+              )
+            else
+              // No word — show icon + placeholder
+              Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Opacity(
+                      opacity: 0.25,
+                      child: PhosphorIcon(PhosphorIcons.chatCircleText(PhosphorIconsStyle.fill), size: 56.sp, color: Colors.white),
+                    ),
+                    SizedBox(height: 8.h),
+                    Text(
+                      'Chill Corner',
+                      style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700, color: Colors.white.withValues(alpha: 0.5), letterSpacing: 1.5),
+                    ),
+                  ],
+                ),
+              ),
+          ],
         ),
-      );
+      ),
+    );
+  }
+}
+
+class _GridOverlayPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = Colors.white.withValues(alpha: 0.03)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 0.5;
+    const spacing = 30.0;
+    for (double x = 0; x < size.width; x += spacing) {
+      canvas.drawLine(Offset(x, 0), Offset(x, size.height), paint);
+    }
+    for (double y = 0; y < size.height; y += spacing) {
+      canvas.drawLine(Offset(0, y), Offset(size.width, y), paint);
     }
   }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
+}
 
   class _AuthorAvatar extends StatelessWidget {
   final String name;

@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
-import 'package:instalingo/providers/settings_provider.dart';
+import 'package:instalingo/providers/onboarding_provider.dart';
 import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -22,7 +22,7 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
     final appTheme = context.appTheme;
 
     return Scaffold(
@@ -43,12 +43,17 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
             children: [
               SizedBox(height: 12.h),
               Text(
+                'STEP 2/6',
+                style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4),
+              ),
+              SizedBox(height: 6.h),
+              Text(
                 l10n.onboardingSelectLearningLanguage,
                 style: TextStyle(fontSize: 28.sp, fontWeight: FontWeight.w800, color: appTheme.harborNavy),
               ),
               SizedBox(height: 8.h),
               Container(width: 24.w, height: 3, color: BusanHarborTokens.orange),
-              SizedBox(height: 32.h),
+              SizedBox(height: 28.h),
               // Learning language: Japanese (only option)
               Text(
                 l10n.learningLanguageLabel,
@@ -93,8 +98,9 @@ class _LearningLanguageScreenState extends ConsumerState<LearningLanguageScreen>
                           learningLanguage: 'ja',
                           currentLevel: _selectedLevel,
                         );
-                    ref.read(onboardingCompleteProvider.notifier).complete();
-                    context.go('/home');
+                    ref.read(onboardingDataProvider.notifier).setLearningLanguage('ja');
+                    ref.read(onboardingDataProvider.notifier).setTargetLevel(_selectedLevel);
+                    context.push('/onboarding/proficiency');
                   },
                   child: Text(
                     l10n.onboardingGetStarted,

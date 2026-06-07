@@ -10,6 +10,9 @@ class PhosphorIconData {
   final int codePoint;
   final String style;
 
+  // NOTE: Returns non-const IconData — phosphor_flutter icons must be
+  // accessed via this getter. When building for web, use:
+  //   flutter build web --no-tree-shake-icons
   IconData get iconData => IconData(
         codePoint,
         fontFamily: 'Phosphor$style',

@@ -4,6 +4,10 @@ import 'package:instalingo/screens/splash_screen.dart';
 import 'package:instalingo/screens/onboarding/onboarding_screen.dart';
 import 'package:instalingo/screens/onboarding/native_language_screen.dart';
 import 'package:instalingo/screens/onboarding/learning_language_screen.dart';
+import 'package:instalingo/screens/onboarding/proficiency_screen.dart';
+import 'package:instalingo/screens/onboarding/learning_goal_screen.dart';
+import 'package:instalingo/screens/onboarding/motivation_screen.dart';
+import 'package:instalingo/screens/onboarding/commitment_screen.dart';
 import 'package:instalingo/screens/main_shell.dart';
 import 'package:instalingo/screens/home/chill_feed_screen.dart';
 import 'package:instalingo/screens/swipe/swipe_screen.dart';
@@ -44,6 +48,22 @@ class AppRouter {
       GoRoute(
         path: '/onboarding/learning-language',
         pageBuilder: (_, __) => _slidePage(const LearningLanguageScreen()),
+      ),
+      GoRoute(
+        path: '/onboarding/proficiency',
+        pageBuilder: (_, __) => _slidePage(const ProficiencyScreen()),
+      ),
+      GoRoute(
+        path: '/onboarding/learning-goal',
+        pageBuilder: (_, __) => _slidePage(const LearningGoalScreen()),
+      ),
+      GoRoute(
+        path: '/onboarding/motivation',
+        pageBuilder: (_, __) => _slidePage(const MotivationScreen()),
+      ),
+      GoRoute(
+        path: '/onboarding/commitment',
+        pageBuilder: (_, __) => _slidePage(const CommitmentScreen()),
       ),
       // Swipe mode (full-screen)
       GoRoute(
