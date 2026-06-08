@@ -62,7 +62,10 @@ class PostImage extends StatelessWidget {
                   fit: BoxFit.cover,
                   loadingBuilder: (_, child, progress) {
                     if (progress == null) return child;
-                    return _GradientOnly(gradientColors: g);
+                    return _GradientOnly(
+                      gradientColors: g,
+                      child: _WordOverlay(post: post),
+                    );
                   },
                   errorBuilder: (_, __, ___) => _GradientOnly(
                     gradientColors: g,
