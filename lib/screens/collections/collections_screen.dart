@@ -323,7 +323,14 @@ class _CollectionCard extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 300),
         decoration: BoxDecoration(
-          color: appTheme.harborNavy,
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              appTheme.harborNavy,
+              BusanHarborTokens.navyMid,
+            ],
+          ),
           borderRadius: BorderRadius.circular(8.r),
           border: Border.all(
             color: BusanHarborTokens.orange.withValues(alpha: 0.2),

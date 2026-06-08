@@ -5,6 +5,7 @@ class ChillPost {
   final String authorName;
   final String authorHandle;
   final String? authorAvatarUrl;
+  final String? imageUrl;
   final String content;
   final String? targetWord;
   final String? targetWordId;
@@ -18,6 +19,7 @@ class ChillPost {
     required this.authorName,
     required this.authorHandle,
     this.authorAvatarUrl,
+    this.imageUrl,
     required this.content,
     this.targetWord,
     this.targetWordId,
@@ -32,6 +34,7 @@ class ChillPost {
         authorName: json['author_name'] as String,
         authorHandle: json['author_handle'] as String,
         authorAvatarUrl: json['author_avatar_url'] as String?,
+        imageUrl: json['image_url'] as String?,
         content: json['content'] as String,
         targetWord: json['target_word'] as String?,
         targetWordId: json['target_word_id'] as String?,
@@ -50,6 +53,7 @@ class ChillPost {
         'author_name': authorName,
         'author_handle': authorHandle,
         'author_avatar_url': authorAvatarUrl,
+        'image_url': imageUrl,
         'content': content,
         'target_word': targetWord,
         'target_word_id': targetWordId,

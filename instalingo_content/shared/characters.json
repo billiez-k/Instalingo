@@ -7,7 +7,9 @@
     "avatar_url": null,
     "level": "N3",
     "personality": "artistic",
-    "color_hex": "#EE6C2C"
+    "color_hex": "#EE6C2C",
+    "image_url": "assets/images/cards/sakura.png",
+    "author_avatar_url": "assets/images/avatars/unknown.png"
   },
   {
     "id": "kenji",
@@ -17,7 +19,9 @@
     "avatar_url": null,
     "level": "N2",
     "personality": "practical",
-    "color_hex": "#3E7CB1"
+    "color_hex": "#3E7CB1",
+    "image_url": "assets/images/cards/kenji.png",
+    "author_avatar_url": "assets/images/avatars/unknown.png"
   },
   {
     "id": "yuki",
@@ -27,7 +31,9 @@
     "avatar_url": null,
     "level": "N3",
     "personality": "creative",
-    "color_hex": "#D04B43"
+    "color_hex": "#D04B43",
+    "image_url": "assets/images/cards/yuki.png",
+    "author_avatar_url": "assets/images/avatars/unknown.png"
   },
   {
     "id": "yamada",
@@ -37,7 +43,9 @@
     "avatar_url": null,
     "level": "N1",
     "personality": "teacher",
-    "color_hex": "#CD7F32"
+    "color_hex": "#CD7F32",
+    "image_url": "assets/images/cards/yamada.png",
+    "author_avatar_url": "assets/images/avatars/unknown.png"
   },
   {
     "id": "hiro",
@@ -47,7 +55,9 @@
     "avatar_url": null,
     "level": "N5",
     "personality": "adventurous",
-    "color_hex": "#2E8B57"
+    "color_hex": "#2E8B57",
+    "image_url": "assets/images/cards/hiro.png",
+    "author_avatar_url": "assets/images/avatars/unknown.png"
   },
   {
     "id": "mika",
@@ -57,6 +67,8 @@
     "avatar_url": null,
     "level": "N4",
     "personality": "lively",
-    "color_hex": "#9370DB"
+    "color_hex": "#9370DB",
+    "image_url": "assets/images/cards/mika.png",
+    "author_avatar_url": "assets/images/avatars/unknown.png"
   }
 ]

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -8,6 +7,7 @@ import 'package:instalingo/data/chill_post_loader.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/chill_post.dart';
 import 'package:instalingo/theme/app_theme.dart';
+import 'package:instalingo/widgets/post_image.dart';
 import 'package:intl/intl.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:shimmer/shimmer.dart';
@@ -251,6 +251,7 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
               children: [
                 _AuthorAvatar(
                   name: post.authorName,
+                  avatarUrl: post.authorAvatarUrl,
                 ),
                 SizedBox(width: 10.w),
                 Expanded(
@@ -314,7 +315,7 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
                   ],
                 );
               },
-              child: _PostImage(post: post),
+              child: PostImage(post: post, showGridOverlay: true),
             ),
 
             SizedBox(height: 12.h),
@@ -463,198 +464,50 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
   }
 }
 
-class _PostImage extends StatelessWidget {
-  final ChillPost post;
-  const _PostImage({required this.post});
-
-  // Instagram-style vibrant gradients
-  static final _grads = [
-    [const Color(0xFF405DE6), const Color(0xFF5851DB), const Color(0xFF833AB4)],   // IG purple-blue
-    [const Color(0xFFF77737), const Color(0xFFFD1D1D), const Color(0xFFC13584)],   // IG warm
-    [const Color(0xFF11998E), const Color(0xFF38EF7D)],                             // green
-    [const Color(0xFF4FACFE), const Color(0xFF00F2FE)],                             // cyan
-    [const Color(0xFFF5576C), const Color(0xFFFF6B35)],                             // coral
-    [const Color(0xFF667EEA), const Color(0xFF764BA2)],                             // indigo
-    [const Color(0xFF0F3443), const Color(0xFF34E89E), const Color(0xFF38F9D7)],   // teal
-    [const Color(0xFFFF0844), const Color(0xFFFFB199)],                             // red-pink
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    final g = _grads[post.authorName.hashCode.abs() % _grads.length];
-
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(6.r),
-      child: Container(
-        width: double.infinity,
-        height: 240.h,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: g,
-          ),
-        ),
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            // Decorative geometric elements
-            Positioned(
-              right: -30.w, top: -30.h,
-              child: Container(
-                width: 130.w, height: 130.w,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(color: Colors.white.withValues(alpha: 0.06), width: 1.5),
-                ),
-              ),
-            ),
-            Positioned(
-              left: -20.w, bottom: -20.h,
-              child: Container(
-                width: 100.w, height: 100.w,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(color: Colors.white.withValues(alpha: 0.04), width: 1),
-                ),
-              ),
-            ),
-            // Grid pattern overlay
-            Positioned.fill(
-              child: CustomPaint(
-                painter: _GridOverlayPainter(),
-              ),
-            ),
-            // Content
-            if (post.targetWord != null && post.targetWord!.isNotEmpty)
-              Center(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 24.w),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      // Small reading text above word
-                      if (post.targetWord!.length > 1)
-                        Padding(
-                          padding: EdgeInsets.only(bottom: 4.h),
-                          child: Text(
-                            'JLPT N5',
-                            style: TextStyle(
-                              fontSize: 10.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.white.withValues(alpha: 0.6),
-                              letterSpacing: 2.0,
-                            ),
-                          ),
-                        ),
-                      // Main word — large and bold
-                      Text(
-                        post.targetWord!,
-                        style: TextStyle(
-                          fontSize: 42.sp,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.white,
-                          letterSpacing: 1.5,
-                          height: 1.1,
-                          shadows: const [
-                            Shadow(color: Colors.black26, blurRadius: 16, offset: Offset(0, 3)),
-                          ],
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                      SizedBox(height: 10.h),
-                      // CTA pill
-                      Container(
-                        padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 6.h),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withValues(alpha: 0.18),
-                          borderRadius: BorderRadius.circular(20.r),
-                          border: Border.all(color: Colors.white.withValues(alpha: 0.25), width: 0.8),
-                        ),
-                        child: Text(
-                          'tap to learn →',
-                          style: TextStyle(
-                            fontSize: 11.sp,
-                            color: Colors.white.withValues(alpha: 0.9),
-                            letterSpacing: 0.6,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              )
-            else
-              // No word — show icon + placeholder
-              Center(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Opacity(
-                      opacity: 0.25,
-                      child: PhosphorIcon(PhosphorIcons.chatCircleText(PhosphorIconsStyle.fill), size: 56.sp, color: Colors.white),
-                    ),
-                    SizedBox(height: 8.h),
-                    Text(
-                      'Chill Corner',
-                      style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700, color: Colors.white.withValues(alpha: 0.5), letterSpacing: 1.5),
-                    ),
-                  ],
-                ),
-              ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _GridOverlayPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = Colors.white.withValues(alpha: 0.03)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 0.5;
-    const spacing = 30.0;
-    for (double x = 0; x < size.width; x += spacing) {
-      canvas.drawLine(Offset(x, 0), Offset(x, size.height), paint);
-    }
-    for (double y = 0; y < size.height; y += spacing) {
-      canvas.drawLine(Offset(0, y), Offset(size.width, y), paint);
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
-}
-
-  class _AuthorAvatar extends StatelessWidget {
+class _AuthorAvatar extends StatelessWidget {
   final String name;
+  final String? avatarUrl;
 
-  const _AuthorAvatar({required this.name});
+  const _AuthorAvatar({required this.name, this.avatarUrl});
 
   @override
   Widget build(BuildContext context) {
     final initials =
         name.split(' ').map((s) => s[0]).take(2).join('').toUpperCase();
+    final hasAvatar = avatarUrl != null && avatarUrl!.isNotEmpty;
 
     return Container(
       width: 40.w,
       height: 40.w,
+      clipBehavior: Clip.antiAlias,
       decoration: BoxDecoration(
         color: BusanHarborTokens.navy,
         borderRadius: BorderRadius.circular(4.r),
       ),
-      child: Center(
-        child: Text(
-          initials,
-          style: TextStyle(
-            fontSize: 14.sp,
-            fontWeight: FontWeight.w800,
-            color: BusanHarborTokens.cream,
-          ),
+      child: hasAvatar
+          ? Image.network(
+              avatarUrl!,
+              fit: BoxFit.cover,
+              errorBuilder: (_, __, ___) => _Initials(initials: initials),
+            )
+          : _Initials(initials: initials),
+    );
+  }
+}
+
+class _Initials extends StatelessWidget {
+  final String initials;
+  const _Initials({required this.initials});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text(
+        initials,
+        style: TextStyle(
+          fontSize: 14.sp,
+          fontWeight: FontWeight.w800,
+          color: BusanHarborTokens.cream,
         ),
       ),
     );
