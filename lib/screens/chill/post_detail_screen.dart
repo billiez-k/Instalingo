@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -458,10 +459,20 @@ class _AuthorAvatar extends StatelessWidget {
         borderRadius: BorderRadius.circular(4.r),
       ),
       child: hasAvatar
-          ? Image.network(
-              avatarUrl!,
+          ? CachedNetworkImage(
+              imageUrl: avatarUrl!,
               fit: BoxFit.cover,
-              errorBuilder: (_, __, ___) => Center(
+              placeholder: (_, __) => Center(
+                child: Text(
+                  initials,
+                  style: TextStyle(
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w800,
+                    color: BusanHarborTokens.cream,
+                  ),
+                ),
+              ),
+              errorWidget: (_, __, ___) => Center(
                 child: Text(
                   initials,
                   style: TextStyle(

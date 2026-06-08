@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:instalingo/models/chill_post.dart';
@@ -57,17 +58,14 @@ class PostImage extends StatelessWidget {
             // Real image overlay (sits on top of gradient)
             if (hasImage)
               Positioned.fill(
-                child: Image.network(
-                  post.imageUrl!,
+                child: CachedNetworkImage(
+                  imageUrl: post.imageUrl!,
                   fit: BoxFit.cover,
-                  loadingBuilder: (_, child, progress) {
-                    if (progress == null) return child;
-                    return _GradientOnly(
-                      gradientColors: g,
-                      child: _WordOverlay(post: post),
-                    );
-                  },
-                  errorBuilder: (_, __, ___) => _GradientOnly(
+                  placeholder: (_, __) => _GradientOnly(
+                    gradientColors: g,
+                    child: _WordOverlay(post: post),
+                  ),
+                  errorWidget: (_, __, ___) => _GradientOnly(
                     gradientColors: g,
                     child: _WordOverlay(post: post),
                   ),
