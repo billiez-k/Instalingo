@@ -104,6 +104,9 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get commentSectionTitle => 'تعليقات';
+  String get commentNoComments => 'لا توجد تعليقات بعد';
+  String get commentBeFirst => 'كن أول من يعلق!';
+  String get commentPosted => 'تم نشر التعليق!';
 
   @override
   String get confirm => 'يتأكد';
@@ -334,6 +337,15 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => 'ابدأ';
+  String get onboardingContinue => 'متابعة';
+  String get onboardingGoalQuestion => 'ما هو هدفك؟';
+  String get onboardingCommitmentQuestion => 'كم من الوقت
+يمكنك الالتزام به؟';
+  String get onboardingMotivationTitle => 'الدافع';
+  String get onboardingMotivationSubtitle => 'اختر كل ما ينطبق.';
+  String get onboardingProficiencyQuestion => 'ما هو مستواك
+الحالي؟';
+  String get onboardingStepCount(int step, int total) => 'الخطوة $step/$total';
 
   @override
   String get onboardingJapanese => 'اليابانية';

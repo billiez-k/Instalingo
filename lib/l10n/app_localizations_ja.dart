@@ -104,6 +104,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get commentSectionTitle => 'コメント';
+  String get commentNoComments => 'コメントはまだありません';
+  String get commentBeFirst => '最初のコメントを投稿しましょう！';
+  String get commentPosted => 'コメントを投稿しました！';
 
   @override
   String get confirm => '確認する';
@@ -334,6 +337,15 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => 'さあ始めましょう';
+  String get onboardingContinue => '続ける';
+  String get onboardingGoalQuestion => '目標は何ですか？';
+  String get onboardingCommitmentQuestion => 'どのくらいの時間
+コミットできますか？';
+  String get onboardingMotivationTitle => 'モチベーション';
+  String get onboardingMotivationSubtitle => '該当するものを全て選択してください。';
+  String get onboardingProficiencyQuestion => '現在のレベルは
+どのくらいですか？';
+  String get onboardingStepCount(int step, int total) => 'ステップ $step/$total';
 
   @override
   String get onboardingJapanese => '日本語';

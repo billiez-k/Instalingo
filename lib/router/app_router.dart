@@ -80,6 +80,7 @@ class AppRouter {
               : <String, dynamic>{};
           return DailyCompleteScreen(
             cardsSwiped: extra['cardsSwiped'] as int? ?? 0,
+            cardsSaved: extra['cardsSaved'] as int? ?? 0,
             xpEarned: extra['xpEarned'] as int? ?? 0,
             gemsEarned: extra['gemsEarned'] as int? ?? 0,
           );

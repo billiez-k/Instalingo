@@ -413,7 +413,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                             _commentFocusNode.unfocus();
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
-                                content: Text('Comment posted: "$text"'),
+                                content: Text(l10n.commentPosted),
                                 duration: const Duration(seconds: 2),
                                 backgroundColor: appTheme.harborNavy,
                               ),

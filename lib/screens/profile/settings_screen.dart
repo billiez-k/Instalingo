@@ -195,7 +195,9 @@ class SettingsScreen extends ConsumerWidget {
               trailing: PhosphorIcon(PhosphorIcons.caretRight(), size: 18.sp, color: appTheme.onSurfaceVariant),
               onTap: () {
                 HapticFeedback.selectionClick();
-                context.push('/force-update');
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text(l10n.profile_checkForUpdates)),
+                );
               },
             ),
           ),

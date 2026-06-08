@@ -42,7 +42,7 @@ class _NativeLanguageScreenState extends ConsumerState<NativeLanguageScreen> {
             children: [
               SizedBox(height: 12.h),
               Text(
-                'STEP 1/6',
+                l10n.onboardingStepCount(1, 6),
                 style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4),
               ),
               SizedBox(height: 6.h),

@@ -104,6 +104,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get commentSectionTitle => '댓글';
+  String get commentNoComments => '아직 댓글이 없습니다';
+  String get commentBeFirst => '첫 댓글을 작성해보세요!';
+  String get commentPosted => '댓글이 게시되었습니다!';
 
   @override
   String get confirm => '확인하다';
@@ -334,6 +337,15 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => '시작하기';
+  String get onboardingContinue => '계속하기';
+  String get onboardingGoalQuestion => '목표가 무엇인가요?';
+  String get onboardingCommitmentQuestion => '얼마나 많은 시간을
+투자할 수 있나요?';
+  String get onboardingMotivationTitle => '동기부여';
+  String get onboardingMotivationSubtitle => '해당되는 항목을 모두 선택하세요.';
+  String get onboardingProficiencyQuestion => '현재 실력은
+어느 정도인가요?';
+  String get onboardingStepCount(int step, int total) => '단계 $step/$total';
 
   @override
   String get onboardingJapanese => '일본어';

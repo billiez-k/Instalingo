@@ -524,6 +524,7 @@ class _CommentsSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
+    final l10n = AppLocalizations.of(context);
     final comments = post.comments;
 
     return DraggableScrollableSheet(
@@ -557,7 +558,7 @@ class _CommentsSheet extends StatelessWidget {
                   PhosphorIcon(PhosphorIcons.chatCircleText(PhosphorIconsStyle.fill),
                       size: 18.sp, color: appTheme.harborNavy),
                   SizedBox(width: 8.w),
-                  Text('Comments',
+                  Text(l10n.commentSectionTitle,
                       style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, color: appTheme.harborNavy)),
                   const Spacer(),
                   Text('${comments.length}',
@@ -576,10 +577,10 @@ class _CommentsSheet extends StatelessWidget {
                           PhosphorIcon(PhosphorIcons.chatCircleText(PhosphorIconsStyle.regular),
                               size: 40.sp, color: appTheme.onSurfaceVariant.withValues(alpha: 0.3)),
                           SizedBox(height: 12.h),
-                          Text('No comments yet',
+                          Text(l10n.commentNoComments,
                               style: TextStyle(fontSize: 14.sp, color: appTheme.onSurfaceVariant)),
                           SizedBox(height: 4.h),
-                          Text('Be the first to comment!',
+                          Text(l10n.commentBeFirst,
                               style: TextStyle(fontSize: 12.sp, color: appTheme.onSurfaceVariant.withValues(alpha: 0.6))),
                         ],
                       ),

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/providers/onboarding_provider.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -19,6 +20,7 @@ class _MotivationScreenState extends ConsumerState<MotivationScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
     final options = [
       _MotivationOption(id: 'work', label: 'Career', icon: PhosphorIcons.briefcase()),
       _MotivationOption(id: 'travel', label: 'Travel', icon: PhosphorIcons.airplaneTilt()),
@@ -39,13 +41,13 @@ class _MotivationScreenState extends ConsumerState<MotivationScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 12.h),
-              Text('STEP 5/6', style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4)),
+              Text(l10n.onboardingStepCount(5, 6), style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4)),
               SizedBox(height: 6.h),
-              Text('Motivation', style: theme.textTheme.displayMedium?.copyWith(fontSize: 32.sp)),
+              Text(l10n.onboardingMotivationTitle, style: theme.textTheme.displayMedium?.copyWith(fontSize: 32.sp)),
               SizedBox(height: 10.h),
               Container(width: 24.w, height: 3, color: AppColors.primary),
               SizedBox(height: 14.h),
-              Text('Select all that apply.', style: theme.textTheme.bodyLarge?.copyWith(color: context.appTheme.onSurfaceVariant)),
+              Text(l10n.onboardingMotivationSubtitle, style: theme.textTheme.bodyLarge?.copyWith(color: context.appTheme.onSurfaceVariant)),
               SizedBox(height: 32.h),
               Expanded(
                 child: GridView.builder(
@@ -73,7 +75,7 @@ class _MotivationScreenState extends ConsumerState<MotivationScreen> {
                           context.push('/onboarding/commitment');
                         }
                       : null,
-                  child: Text('Continue', style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
+                  child: Text(l10n.onboardingContinue, style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
                 ),
               ),
               SizedBox(height: 24.h),
@@ -102,6 +104,7 @@ class _MotivationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
     return GestureDetector(
       onTap: onTap,

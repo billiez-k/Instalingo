@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:instalingo/providers/onboarding_provider.dart';
 import 'package:instalingo/providers/settings_provider.dart';
 import 'package:instalingo/providers/user_provider.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -41,6 +42,7 @@ class _CommitmentScreenState extends ConsumerState<CommitmentScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
     final options = [
       _CommitmentOption(minutes: 5, label: 'Casual', desc: '5 min / day'),
       _CommitmentOption(minutes: 10, label: 'Regular', desc: '10 min / day'),
@@ -57,9 +59,9 @@ class _CommitmentScreenState extends ConsumerState<CommitmentScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 12.h),
-              Text('STEP 6/6', style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4)),
+              Text(l10n.onboardingStepCount(6, 6), style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4)),
               SizedBox(height: 6.h),
-              Text('How much time\ncan you commit?', style: theme.textTheme.displayMedium?.copyWith(fontSize: 32.sp)),
+              Text(l10n.onboardingCommitmentQuestion, style: theme.textTheme.displayMedium?.copyWith(fontSize: 32.sp)),
               SizedBox(height: 10.h),
               Container(width: 24.w, height: 3, color: AppColors.primary),
               SizedBox(height: 14.h),
@@ -81,7 +83,7 @@ class _CommitmentScreenState extends ConsumerState<CommitmentScreen> {
                   onPressed: _selectedMinutes != null && !_completing ? _completeOnboarding : null,
                   child: _completing
                       ? SizedBox(width: 20.w, height: 20.w, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
-                      : Text('Continue', style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
+                      : Text(l10n.onboardingContinue, style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
                 ),
               ),
               SizedBox(height: 24.h),
@@ -110,6 +112,7 @@ class _CommitmentTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
 
     return GestureDetector(

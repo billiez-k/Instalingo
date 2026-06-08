@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/providers/onboarding_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -19,6 +20,7 @@ class _ProficiencyScreenState extends ConsumerState<ProficiencyScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
     final levels = [
       _LevelOption(code: 'N5', name: 'Beginner', desc: 'I know a few words'),
       _LevelOption(code: 'N4', name: 'Elementary', desc: 'I can form simple sentences'),
@@ -37,11 +39,11 @@ class _ProficiencyScreenState extends ConsumerState<ProficiencyScreen> {
             children: [
               SizedBox(height: 12.h),
               Text(
-                'STEP 3/6',
+                l10n.onboardingStepCount(3, 6),
                 style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4),
               ),
               SizedBox(height: 6.h),
-              Text('What is your\ncurrent level?', style: theme.textTheme.displayMedium?.copyWith(fontSize: 32.sp)),
+              Text(l10n.onboardingProficiencyQuestion, style: theme.textTheme.displayMedium?.copyWith(fontSize: 32.sp)),
               SizedBox(height: 10.h),
               Container(width: 24.w, height: 3, color: AppColors.primary),
               SizedBox(height: 14.h),
@@ -67,7 +69,7 @@ class _ProficiencyScreenState extends ConsumerState<ProficiencyScreen> {
                           context.push('/onboarding/learning-goal');
                         }
                       : null,
-                  child: Text('Continue', style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
+                  child: Text(l10n.onboardingContinue, style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
                 ),
               ),
               SizedBox(height: 24.h),

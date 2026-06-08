@@ -104,6 +104,9 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get commentSectionTitle => 'Komen';
+  String get commentNoComments => 'Tiada komen lagi';
+  String get commentBeFirst => 'Jadilah yang pertama memberi komen!';
+  String get commentPosted => 'Komen disiarkan!';
 
   @override
   String get confirm => 'Sahkan';
@@ -334,6 +337,15 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => 'MULAKAN';
+  String get onboardingContinue => 'Teruskan';
+  String get onboardingGoalQuestion => 'Apakah matlamat anda?';
+  String get onboardingCommitmentQuestion => 'Berapa banyak masa
+yang boleh anda luangkan?';
+  String get onboardingMotivationTitle => 'Motivasi';
+  String get onboardingMotivationSubtitle => 'Pilih semua yang berkenaan.';
+  String get onboardingProficiencyQuestion => 'Apakah tahap
+anda sekarang?';
+  String get onboardingStepCount(int step, int total) => 'LANGKAH $step/$total';
 
   @override
   String get onboardingJapanese => 'Bahasa Jepun';

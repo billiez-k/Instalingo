@@ -14,7 +14,7 @@ import 'package:instalingo/providers/user_provider.dart';
 class LanguageService {
   final WidgetRef _ref;
 
-  const LanguageService(this._ref);
+  LanguageService(this._ref);
 
   /// Change the user's native / interface language.
   /// Updates both the app locale (UI text) and the user profile.

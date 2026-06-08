@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/providers/onboarding_provider.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -19,6 +20,7 @@ class _LearningGoalScreenState extends ConsumerState<LearningGoalScreen> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
       appBar: AppBar(leading: BackButton(onPressed: () => context.pop())),
@@ -29,9 +31,9 @@ class _LearningGoalScreenState extends ConsumerState<LearningGoalScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(height: 12.h),
-              Text('STEP 4/6', style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4)),
+              Text(l10n.onboardingStepCount(4, 6), style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w800, color: AppColors.primary, letterSpacing: 2.4)),
               SizedBox(height: 6.h),
-              Text("What's your goal?", style: theme.textTheme.displayMedium?.copyWith(fontSize: 28.sp)),
+              Text(l10n.onboardingGoalQuestion, style: theme.textTheme.displayMedium?.copyWith(fontSize: 28.sp)),
               SizedBox(height: 10.h),
               Container(width: 24.w, height: 3, color: AppColors.primary),
               SizedBox(height: 14.h),
@@ -63,7 +65,7 @@ class _LearningGoalScreenState extends ConsumerState<LearningGoalScreen> {
                           context.push('/onboarding/motivation');
                         }
                       : null,
-                  child: Text('Continue', style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
+                  child: Text(l10n.onboardingContinue, style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w700)),
                 ),
               ),
               SizedBox(height: 24.h),
@@ -87,6 +89,7 @@ class _GoalCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context);
     return GestureDetector(
       onTap: onTap,
       child: Container(

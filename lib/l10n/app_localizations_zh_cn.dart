@@ -104,6 +104,9 @@ class AppLocalizationsZhCn extends AppLocalizations {
 
   @override
   String get commentSectionTitle => '评论';
+  String get commentNoComments => '暂无评论';
+  String get commentBeFirst => '来发表第一条评论吧！';
+  String get commentPosted => '评论已发布！';
 
   @override
   String get confirm => '确认';
@@ -334,6 +337,15 @@ class AppLocalizationsZhCn extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => '开始使用';
+  String get onboardingContinue => '继续';
+  String get onboardingGoalQuestion => '你的目标是什么？';
+  String get onboardingCommitmentQuestion => '你可以投入
+多少时间？';
+  String get onboardingMotivationTitle => '学习动机';
+  String get onboardingMotivationSubtitle => '请选择所有适用的选项。';
+  String get onboardingProficiencyQuestion => '你目前的水平
+如何？';
+  String get onboardingStepCount(int step, int total) => '步骤 $step/$total';
 
   @override
   String get onboardingJapanese => '日本人';

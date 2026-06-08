@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/theme/app_theme.dart';
 
 class ErrorScreen extends StatelessWidget {
-  final String message;
+  final String? message;
 
-  const ErrorScreen({super.key, this.message = 'Page not found'});
+  const ErrorScreen({super.key, this.message});
 
   @override
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
       backgroundColor: appTheme.harborNavyDeep,
       body: Center(
@@ -26,7 +28,7 @@ class ErrorScreen extends StatelessWidget {
               ),
               SizedBox(height: 24.h),
               Text(
-                'Oops!',
+                l10n.errorGenericTitle,
                 style: TextStyle(
                   fontSize: 24.sp,
                   fontWeight: FontWeight.w700,
@@ -35,7 +37,7 @@ class ErrorScreen extends StatelessWidget {
               ),
               SizedBox(height: 8.h),
               Text(
-                message,
+                message ?? l10n.errorGenericMessage,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 14.sp,

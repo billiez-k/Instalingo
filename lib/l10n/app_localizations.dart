@@ -80,6 +80,12 @@ abstract class AppLocalizations {
 
   String get commentSectionTitle;
 
+  String get commentNoComments;
+
+  String get commentBeFirst;
+
+  String get commentPosted;
+
   String get confirm;
 
   String get coursePath;
@@ -222,9 +228,23 @@ abstract class AppLocalizations {
 
   String get onboardingComingSoon;
 
+  String get onboardingContinue;
+
   String get onboardingDiscoverJapanese;
 
   String get onboardingGetStarted;
+
+  String get onboardingGoalQuestion;
+
+  String get onboardingCommitmentQuestion;
+
+  String get onboardingMotivationTitle;
+
+  String get onboardingMotivationSubtitle;
+
+  String get onboardingProficiencyQuestion;
+
+  String get onboardingStepCount(int step, int total);
 
   String get onboardingJapanese;
 
