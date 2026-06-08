@@ -56,8 +56,8 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
     final appTheme = context.appTheme;
     final theme = Theme.of(context);
 
-    return FutureBuilder<List<ChillPost>>(
-      future: ChillPostLoader.loadPosts(),
+    return FutureBuilder<ChillPost?>(
+      future: ChillPostLoader.loadPost(widget.postId),
       builder: (context, snapshot) {
         final l10n = AppLocalizations.of(context);
         if (snapshot.hasError) {
@@ -81,9 +81,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
           );
         }
 
-        final post = snapshot.data!
-            .where((p) => p.id == widget.postId)
-            .firstOrNull;
+        final post = snapshot.data;
 
         if (post == null) {
           return Scaffold(
@@ -220,7 +218,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                           onTap: () {
                             HapticFeedback.mediumImpact();
                             if (post.targetWordId != null) {
-                              context.push('/swipe');
+                              context.push('/swipe?wordId=${post.targetWordId}');
                             }
                           },
                           child: Container(
@@ -403,8 +401,16 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                       IconButton(
                         onPressed: () {
                           if (_commentController.text.trim().isNotEmpty) {
+                            final text = _commentController.text.trim();
                             _commentController.clear();
                             _commentFocusNode.unfocus();
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text('Comment posted: "$text"'),
+                                duration: const Duration(seconds: 2),
+                                backgroundColor: appTheme.harborNavy,
+                              ),
+                            );
                           }
                         },
                         icon: PhosphorIcon(

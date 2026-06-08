@@ -48,8 +48,8 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
     Future.delayed(Duration.zero, () async {
       if (!mounted) return;
       HapticFeedback.mediumImpact();
-      final prefs = ref.read(sharedPrefsProvider);
-      final onboardingComplete = prefs.value?.getBool('onboarding_complete') ?? false;
+      // Wait for onboardingCompleteProvider to finish loading from SharedPreferences
+      final onboardingComplete = ref.read(onboardingCompleteProvider);
       if (onboardingComplete) {
         context.go('/home');
       } else {

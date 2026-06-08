@@ -21,7 +21,7 @@ class _NativeLanguageScreenState extends ConsumerState<NativeLanguageScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
 
     return Scaffold(

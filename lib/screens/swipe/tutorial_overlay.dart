@@ -68,35 +68,30 @@ class _TutorialOverlayState extends ConsumerState<TutorialOverlay>
             children: [
               const Spacer(flex: 2),
 
-              // Right swipe - Save
+              // Heart button - Save
               _GestureHint(
-                icon: PhosphorIcons.arrowRight(PhosphorIconsStyle.bold),
-                accentIcon: PhosphorIcons.heart(PhosphorIconsStyle.fill),
+                icon: PhosphorIcons.heart(PhosphorIconsStyle.fill),
                 label: l10n.swipeRight,
                 description: l10n.swipeRightDescription,
                 color: BusanHarborTokens.coral,
-                direction: 'right',
               ),
               SizedBox(height: 24.h),
 
-              // Left swipe - Already Knew
+              // Skip button - Already Knew
               _GestureHint(
-                icon: PhosphorIcons.arrowLeft(PhosphorIconsStyle.bold),
-                accentIcon: PhosphorIcons.check(PhosphorIconsStyle.bold),
+                icon: PhosphorIcons.check(PhosphorIconsStyle.bold),
                 label: l10n.swipeLeft,
                 description: l10n.swipeLeftDescription,
                 color: BusanHarborTokens.mint,
-                direction: 'left',
               ),
               SizedBox(height: 24.h),
 
-              // Up swipe - Next
+              // Next button
               _GestureHint(
                 icon: PhosphorIcons.arrowUp(PhosphorIconsStyle.bold),
                 label: l10n.swipeUp,
                 description: l10n.swipeUpDescription,
                 color: BusanHarborTokens.sea,
-                direction: 'up',
               ),
 
               const Spacer(flex: 2),
@@ -135,19 +130,15 @@ class _TutorialOverlayState extends ConsumerState<TutorialOverlay>
 
 class _GestureHint extends StatelessWidget {
   final PhosphorIconData icon;
-  final PhosphorIconData? accentIcon;
   final String label;
   final String description;
   final Color color;
-  final String direction;
 
   const _GestureHint({
     required this.icon,
-    this.accentIcon,
     required this.label,
     required this.description,
     required this.color,
-    required this.direction,
   });
 
   @override
@@ -157,7 +148,6 @@ class _GestureHint extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        // Direction arrow
         Container(
           width: 56.w,
           height: 56.w,
@@ -176,34 +166,19 @@ class _GestureHint extends StatelessWidget {
         ),
         SizedBox(width: 16.w),
 
-        // Text column
         SizedBox(
           width: 200.w,
           child: Column(
-            crossAxisAlignment:
-                direction == 'left' ? CrossAxisAlignment.end : CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    label,
-                    style: TextStyle(
-                      fontSize: 16.sp,
-                      fontWeight: FontWeight.w800,
-                      color: appTheme.harborInkOnNavy,
-                      letterSpacing: 0.5,
-                    ),
-                  ),
-                  if (accentIcon != null) ...[
-                    SizedBox(width: 8.w),
-                    PhosphorIcon(
-                      accentIcon!,
-                      size: 18.sp,
-                      color: color,
-                    ),
-                  ],
-                ],
+              Text(
+                label,
+                style: TextStyle(
+                  fontSize: 16.sp,
+                  fontWeight: FontWeight.w800,
+                  color: appTheme.harborInkOnNavy,
+                  letterSpacing: 0.5,
+                ),
               ),
               SizedBox(height: 4.h),
               Text(

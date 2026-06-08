@@ -24,7 +24,8 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 /// meaning + action buttons. Heart to save, Skip to mark as known.
 /// Tap card body to flip for example sentences and tags.
 class SwipeScreen extends ConsumerStatefulWidget {
-  const SwipeScreen({super.key});
+  final String? targetWordId;
+  const SwipeScreen({super.key, this.targetWordId});
   @override
   ConsumerState<SwipeScreen> createState() => _SwipeScreenState();
 }
@@ -166,15 +167,24 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
         },
         data: (deck) {
           if (mounted) {
+            final filtered = _filterCards(deck.cards, user);
+            int startIndex = 0;
+            if (widget.targetWordId != null) {
+              final idx = filtered.indexWhere((c) => c.id == widget.targetWordId);
+              if (idx >= 0) startIndex = idx;
+            }
             setState(() {
-              _cards = _filterCards(deck.cards, user);
-              _currentIndex = 0;
+              _cards = filtered;
+              _currentIndex = startIndex;
               _flippedCards.clear();
               _savedCards.clear();
               _skippedCards.clear();
               _isLoading = false;
               _loadError = null;
             });
+            if (startIndex > 0) {
+              _pageController.jumpToPage(startIndex);
+            }
           }
         },
       );

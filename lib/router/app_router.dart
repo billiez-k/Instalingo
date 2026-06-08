@@ -68,7 +68,9 @@ class AppRouter {
       // Swipe mode (full-screen)
       GoRoute(
         path: '/swipe',
-        pageBuilder: (_, __) => _fadePage(const SwipeScreen()),
+        pageBuilder: (_, state) => _fadePage(
+          SwipeScreen(targetWordId: state.uri.queryParameters['wordId']),
+        ),
       ),
       GoRoute(
         path: '/swipe/complete',

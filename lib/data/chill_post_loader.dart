@@ -34,6 +34,13 @@ class ChillPostLoader {
     }
   }
 
+  /// Load a single chill post by ID. Falls back to demo posts if assets
+  /// aren't available.
+  static Future<ChillPost?> loadPost(String id) async {
+    final posts = await loadPosts();
+    return posts.where((p) => p.id == id).firstOrNull;
+  }
+
   /// Load chill characters from assets/shared/characters.json.
   /// Handles both wrapped {"characters": [...]} and plain array [...] formats.
   static Future<List<ChillCharacter>> loadCharacters() async {

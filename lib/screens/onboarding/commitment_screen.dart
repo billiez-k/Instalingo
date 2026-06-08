@@ -29,8 +29,9 @@ class _CommitmentScreenState extends ConsumerState<CommitmentScreen> {
     final userNotifier = ref.read(userProvider.notifier);
     userNotifier.updateProfile(
       nativeLanguage: data.nativeLanguage,
+      learningLanguage: data.learningLanguage,
       currentLevel: data.targetLevel,
-      dailyGoal: data.dailyGoalMinutes,
+      dailyGoal: _selectedMinutes!,
     );
 
     await ref.read(onboardingCompleteProvider.notifier).complete();

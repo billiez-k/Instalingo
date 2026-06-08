@@ -79,91 +79,15 @@ class ChillFeedScreen extends ConsumerWidget {
       },
       child: ListView.builder(
         padding: EdgeInsets.zero,
-        itemCount: posts.length + 1, // +1 for stories bar
+        itemCount: posts.length,
         itemBuilder: (context, index) {
-          if (index == 0) return _buildStoriesBar(posts, appTheme);
-          final post = posts[index - 1];
+          final post = posts[index];
           return _PostCard(post: post, appTheme: appTheme);
         },
       ),
     );
   }
 
-  Widget _buildStoriesBar(List<ChillPost> posts, AppThemeExtension appTheme) {
-    final grads = [
-      [const Color(0xFFEE6C2C), const Color(0xFFD04B43)],
-      [const Color(0xFF3E7CB1), const Color(0xFF0F3460)],
-      [const Color(0xFF533483), const Color(0xFFD04B43)],
-      [const Color(0xFF0F3460), const Color(0xFFEE6C2C)],
-      [const Color(0xFFD04B43), const Color(0xFF533483)],
-    ];
-
-    return Container(
-      height: 100.h,
-      color: appTheme.harborNavy,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
-        itemCount: posts.length,
-        itemBuilder: (context, index) {
-          final post = posts[index];
-          final g = grads[index % grads.length];
-          return Padding(
-            padding: EdgeInsets.symmetric(horizontal: 6.w),
-            child: GestureDetector(
-              onTap: () {
-                context.push('/swipe');
-              },
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  // Instagram-style gradient ring story avatar
-                  Container(
-                    width: 68.w,
-                    height: 68.w,
-                    padding: EdgeInsets.all(2.5.w),
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: g,
-                      ),
-                    ),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(color: appTheme.harborNavy, width: 2),
-                      ),
-                      child: CircleAvatar(
-                        backgroundColor: g[0].withValues(alpha: 0.15),
-                        child: PhosphorIcon(
-                          PhosphorIcons.fire(PhosphorIconsStyle.fill),
-                          size: 22.sp,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 4.h),
-                  Text(
-                    post.authorName.length > 8
-                        ? '${post.authorName.substring(0, 7)}...'
-                        : post.authorName,
-                    style: TextStyle(
-                      fontSize: 10.sp,
-                      fontWeight: FontWeight.w600,
-                      color: appTheme.harborInkOnNavyMuted,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        },
-      ),
-    );
-  }
 
   Widget _buildShimmerList(AppThemeExtension appTheme) {
     return Shimmer.fromColors(
