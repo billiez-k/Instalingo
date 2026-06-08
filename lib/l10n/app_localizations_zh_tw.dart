@@ -324,7 +324,7 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get notifications => '通知';
 
   @override
-  String get onboardingAlreadyHaveAccount => '我已經有帳號了';
+  String get onboardingSkip => '跳過';
 
   @override
   String get onboardingComingSoon => '即將推出';
@@ -876,39 +876,39 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get yourScore => '你的分數';
 
   @override
-  String dayStreakCount(int count) => '\$count 天';
+  String dayStreakCount(int count) => '$count 天';
 
   @override
-  String lapsesCount(int count) => '失誤次數：\$count';
+  String lapsesCount(int count) => '失誤次數：$count';
 
   @override
-  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned 字';
+  String profile_learningStatus(String level, String wordsLearned) => '$level / $wordsLearned 字';
 
   @override
-  String profile_minPerDay(int min) => '\$minutes 分鐘/天';
+  String profile_minPerDay(int min) => '$min 分鐘/天';
 
   @override
-  String profile_minutesCount(int minutes) => '\$count 分鐘';
+  String profile_minutesCount(int minutes) => '$minutes 分鐘';
 
   @override
-  String profile_version(String version) => '版本：\$version';
+  String profile_version(String version) => '版本：$version';
 
   @override
-  String reviewsCount(int count) => '評論數：\$count';
+  String reviewsCount(int count) => '評論數：$count';
 
   @override
-  String savePercent(int percent) => '節省 \$percent%';
+  String savePercent(int percent) => '節省 $percent%';
 
   @override
-  String sourceLabel(String source) => '來源：\$source';
+  String sourceLabel(String source) => '來源：$source';
 
   @override
-  String streakKeepStreak(int days) => '保持 \$days 天的連續記錄！';
+  String streakKeepStreak(int days) => '保持 $days 天的連續記錄！';
 
   @override
-  String streakShieldsRemaining(int remaining) => '剩餘 \$count 護盾';
+  String streakShieldsRemaining(int remaining) => '剩餘 $remaining 護盾';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours} 小時 \${minutes} 分鐘';
+  String timeSpentHoursMinutes(int hours, int minutes) => '${hours} 小時 ${minutes} 分鐘';
 
 }

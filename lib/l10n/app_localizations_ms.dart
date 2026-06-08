@@ -324,7 +324,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get notifications => 'Pemberitahuan';
 
   @override
-  String get onboardingAlreadyHaveAccount => 'Saya sudah mempunyai akaun';
+  String get onboardingSkip => 'Langkau';
 
   @override
   String get onboardingComingSoon => 'Akan datang tidak lama lagi';
@@ -876,39 +876,39 @@ class AppLocalizationsMs extends AppLocalizations {
   String get yourScore => 'Skor Anda';
 
   @override
-  String dayStreakCount(int count) => 'Rentetan Hari \$count';
+  String dayStreakCount(int count) => 'Rentetan Hari $count';
 
   @override
-  String lapsesCount(int count) => 'Kegagalan: \$count';
+  String lapsesCount(int count) => 'Kegagalan: $count';
 
   @override
-  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned perkataan';
+  String profile_learningStatus(String level, String wordsLearned) => '$level / $wordsLearned perkataan';
 
   @override
-  String profile_minPerDay(int min) => '\$minutes min/hari';
+  String profile_minPerDay(int min) => '$min min/hari';
 
   @override
-  String profile_minutesCount(int minutes) => '\$count minit';
+  String profile_minutesCount(int minutes) => '$minutes minit';
 
   @override
-  String profile_version(String version) => 'Versi \$version';
+  String profile_version(String version) => 'Versi $version';
 
   @override
-  String reviewsCount(int count) => 'Ulasan: \$count';
+  String reviewsCount(int count) => 'Ulasan: $count';
 
   @override
-  String savePercent(int percent) => 'Jimat \$percent%';
+  String savePercent(int percent) => 'Jimat $percent%';
 
   @override
-  String sourceLabel(String source) => 'Sumber: \$source';
+  String sourceLabel(String source) => 'Sumber: $source';
 
   @override
-  String streakKeepStreak(int days) => 'Kekalkan rentetan \$days-day anda!';
+  String streakKeepStreak(int days) => 'Kekalkan rentetan $days-day anda!';
 
   @override
-  String streakShieldsRemaining(int remaining) => '\$count perisai yang tinggal';
+  String streakShieldsRemaining(int remaining) => '$remaining perisai yang tinggal';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}j \${minutes}m';
+  String timeSpentHoursMinutes(int hours, int minutes) => '${hours}j ${minutes}m';
 
 }

@@ -324,7 +324,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get notifications => '알림';
 
   @override
-  String get onboardingAlreadyHaveAccount => '저는 이미 계정이 있습니다.';
+  String get onboardingSkip => '건너뛰기';
 
   @override
   String get onboardingComingSoon => '곧 출시 예정';
@@ -876,39 +876,39 @@ class AppLocalizationsKo extends AppLocalizations {
   String get yourScore => '당신의 점수';
 
   @override
-  String dayStreakCount(int count) => '\$count 일 연속';
+  String dayStreakCount(int count) => '$count 일 연속';
 
   @override
-  String lapsesCount(int count) => '연체 횟수: \$count';
+  String lapsesCount(int count) => '연체 횟수: $count';
 
   @override
-  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned 단어';
+  String profile_learningStatus(String level, String wordsLearned) => '$level / $wordsLearned 단어';
 
   @override
-  String profile_minPerDay(int min) => '\$minutes 분/일';
+  String profile_minPerDay(int min) => '$min 분/일';
 
   @override
-  String profile_minutesCount(int minutes) => '\$count 분';
+  String profile_minutesCount(int minutes) => '$minutes 분';
 
   @override
-  String profile_version(String version) => '버전 \$version';
+  String profile_version(String version) => '버전 $version';
 
   @override
-  String reviewsCount(int count) => '리뷰: \$count';
+  String reviewsCount(int count) => '리뷰: $count';
 
   @override
-  String savePercent(int percent) => '\$percent% 저장';
+  String savePercent(int percent) => '$percent% 저장';
 
   @override
-  String sourceLabel(String source) => '출처: \$source';
+  String sourceLabel(String source) => '출처: $source';
 
   @override
-  String streakKeepStreak(int days) => '\$days-day 연속 기록을 이어가세요!';
+  String streakKeepStreak(int days) => '$days-day 연속 기록을 이어가세요!';
 
   @override
-  String streakShieldsRemaining(int remaining) => '\$count 방패 잔여 개수';
+  String streakShieldsRemaining(int remaining) => '$remaining 방패 잔여 개수';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}시간 \${minutes}분';
+  String timeSpentHoursMinutes(int hours, int minutes) => '${hours}시간 ${minutes}분';
 
 }

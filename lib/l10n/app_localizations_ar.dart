@@ -324,7 +324,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get notifications => 'إشعارات';
 
   @override
-  String get onboardingAlreadyHaveAccount => 'لدي حساب بالفعل';
+  String get onboardingSkip => 'تخطي';
 
   @override
   String get onboardingComingSoon => 'قريباً';
@@ -876,39 +876,39 @@ class AppLocalizationsAr extends AppLocalizations {
   String get yourScore => 'درجاتك';
 
   @override
-  String dayStreakCount(int count) => '\$count يوم خط';
+  String dayStreakCount(int count) => '$count يوم خط';
 
   @override
-  String lapsesCount(int count) => 'الهفوات: \$count';
+  String lapsesCount(int count) => 'الهفوات: $count';
 
   @override
-  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned الكلمات';
+  String profile_learningStatus(String level, String wordsLearned) => '$level / $wordsLearned الكلمات';
 
   @override
-  String profile_minPerDay(int min) => '\$minutes دقيقة/يوم';
+  String profile_minPerDay(int min) => '$min دقيقة/يوم';
 
   @override
-  String profile_minutesCount(int minutes) => '\$count دقيقة';
+  String profile_minutesCount(int minutes) => '$minutes دقيقة';
 
   @override
-  String profile_version(String version) => 'الإصدار \$version';
+  String profile_version(String version) => 'الإصدار $version';
 
   @override
-  String reviewsCount(int count) => 'التعليقات: \$count';
+  String reviewsCount(int count) => 'التعليقات: $count';
 
   @override
-  String savePercent(int percent) => 'حفظ \$percent%';
+  String savePercent(int percent) => 'حفظ $percent%';
 
   @override
-  String sourceLabel(String source) => 'المصدر: \$source';
+  String sourceLabel(String source) => 'المصدر: $source';
 
   @override
-  String streakKeepStreak(int days) => 'حافظ على خط \$days-day الخاص بك على قيد الحياة!';
+  String streakKeepStreak(int days) => 'حافظ على خط $days-day الخاص بك على قيد الحياة!';
 
   @override
-  String streakShieldsRemaining(int remaining) => '\$count الدروع المتبقية';
+  String streakShieldsRemaining(int remaining) => '$remaining الدروع المتبقية';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}س \${minutes}د';
+  String timeSpentHoursMinutes(int hours, int minutes) => '${hours}س ${minutes}د';
 
 }

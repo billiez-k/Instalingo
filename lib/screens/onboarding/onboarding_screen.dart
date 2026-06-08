@@ -160,7 +160,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                         child: OutlinedButton(
                           onPressed: () => context.go('/home'),
                           child: Text(
-                            l10n.onboardingAlreadyHaveAccount,
+                            l10n.onboardingSkip,
                             style: TextStyle(
                               fontSize: 13.sp,
                               fontWeight: FontWeight.w600,

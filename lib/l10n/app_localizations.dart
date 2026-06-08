@@ -218,7 +218,7 @@ abstract class AppLocalizations {
 
   String get notifications;
 
-  String get onboardingAlreadyHaveAccount;
+  String get onboardingSkip;
 
   String get onboardingComingSoon;
 

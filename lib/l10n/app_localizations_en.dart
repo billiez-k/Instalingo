@@ -324,7 +324,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notifications => 'Notifications';
 
   @override
-  String get onboardingAlreadyHaveAccount => 'I already have an account';
+  String get onboardingSkip => 'Skip';
 
   @override
   String get onboardingComingSoon => 'Coming Soon';
@@ -876,39 +876,39 @@ class AppLocalizationsEn extends AppLocalizations {
   String get yourScore => 'Your Score';
 
   @override
-  String dayStreakCount(int count) => '\$count Day Streak';
+  String dayStreakCount(int count) => '$count Day Streak';
 
   @override
-  String lapsesCount(int count) => 'Lapses: \$count';
+  String lapsesCount(int count) => 'Lapses: $count';
 
   @override
-  String profile_learningStatus(String level, String wordsLearned) => '\$level / \$wordsLearned words';
+  String profile_learningStatus(String level, String wordsLearned) => '$level / $wordsLearned words';
 
   @override
-  String profile_minPerDay(int min) => '\$minutes min/day';
+  String profile_minPerDay(int min) => '$min min/day';
 
   @override
-  String profile_minutesCount(int minutes) => '\$count min';
+  String profile_minutesCount(int minutes) => '$minutes min';
 
   @override
-  String profile_version(String version) => 'Version \$version';
+  String profile_version(String version) => 'Version $version';
 
   @override
-  String reviewsCount(int count) => 'Reviews: \$count';
+  String reviewsCount(int count) => 'Reviews: $count';
 
   @override
-  String savePercent(int percent) => 'Save \$percent%';
+  String savePercent(int percent) => 'Save $percent%';
 
   @override
-  String sourceLabel(String source) => 'Source: \$source';
+  String sourceLabel(String source) => 'Source: $source';
 
   @override
-  String streakKeepStreak(int days) => 'Keep your \$days-day streak alive!';
+  String streakKeepStreak(int days) => 'Keep your $days-day streak alive!';
 
   @override
-  String streakShieldsRemaining(int remaining) => '\$count shields remaining';
+  String streakShieldsRemaining(int remaining) => '$remaining shields remaining';
 
   @override
-  String timeSpentHoursMinutes(int hours, int minutes) => '\${hours}h \${minutes}m';
+  String timeSpentHoursMinutes(int hours, int minutes) => '${hours}h ${minutes}m';
 
 }
