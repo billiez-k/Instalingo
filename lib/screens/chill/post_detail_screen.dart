@@ -201,6 +201,11 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                       ),
                       SizedBox(height: 16.h),
 
+                      // Instagram-style gradient image
+                      _PostGradientImage(post: post),
+
+                      SizedBox(height: 16.h),
+
                       // Content
                       Text(
                         post.content,
@@ -543,6 +548,98 @@ class _CommentItem extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _PostGradientImage extends StatelessWidget {
+  final ChillPost post;
+  const _PostGradientImage({required this.post});
+
+  static const _grads = [
+    [Color(0xFF405DE6), Color(0xFF5851DB), Color(0xFF833AB4)],
+    [Color(0xFFF77737), Color(0xFFFD1D1D), Color(0xFFC13584)],
+    [Color(0xFF11998E), Color(0xFF38EF7D)],
+    [Color(0xFF4FACFE), Color(0xFF00F2FE)],
+    [Color(0xFFF5576C), Color(0xFFFF6B35)],
+    [Color(0xFF667EEA), Color(0xFF764BA2)],
+    [Color(0xFF0F3443), Color(0xFF34E89E), Color(0xFF38F9D7)],
+    [Color(0xFFFF0844), Color(0xFFFFB199)],
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    final g = _grads[post.authorName.hashCode.abs() % _grads.length];
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(4.r),
+      child: Container(
+        width: double.infinity,
+        height: 200.h,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: g,
+          ),
+        ),
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            Positioned(
+              right: -30.w, top: -30.h,
+              child: Container(
+                width: 110.w, height: 110.w,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white.withValues(alpha: 0.06), width: 1.5),
+                ),
+              ),
+            ),
+            if (post.targetWord != null && post.targetWord!.isNotEmpty)
+              Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      'JLPT N5',
+                      style: TextStyle(
+                        fontSize: 10.sp,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white.withValues(alpha: 0.6),
+                        letterSpacing: 2.0,
+                      ),
+                    ),
+                    SizedBox(height: 4.h),
+                    Text(
+                      post.targetWord!,
+                      style: TextStyle(
+                        fontSize: 40.sp,
+                        fontWeight: FontWeight.w900,
+                        color: Colors.white,
+                        letterSpacing: 1.5,
+                        shadows: const [
+                          Shadow(color: Colors.black26, blurRadius: 16, offset: Offset(0, 3)),
+                        ],
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
+                ),
+              )
+            else
+              Center(
+                child: Opacity(
+                  opacity: 0.3,
+                  child: PhosphorIcon(
+                    PhosphorIcons.chatCircleText(PhosphorIconsStyle.fill),
+                    size: 48.sp, color: Colors.white,
+                  ),
+                ),
+              ),
+          ],
+        ),
       ),
     );
   }
