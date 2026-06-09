@@ -523,13 +523,7 @@ class _SavedWordsGrid extends ConsumerWidget {
   final UserProfile user;
   const _SavedWordsGrid({required this.user});
 
-  static const _grads = [
-    [Color(0xFF1a1a2e), Color(0xFF16213e)],
-    [Color(0xFF0f3460), Color(0xFF1a1a2e)],
-    [Color(0xFF533483), Color(0xFF16213e)],
-    [Color(0xFF2d3436), Color(0xFF0f3460)],
-    [Color(0xFF16213e), Color(0xFF1a1a2e)],
-  ];
+  static const _grads = PostCardGradients.values;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

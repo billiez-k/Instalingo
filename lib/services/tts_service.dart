@@ -1,6 +1,8 @@
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'package:instalingo/providers/settings_provider.dart';
+
 
 /// Device TTS service — uses the phone's built-in voice engine.
 /// Korean and Japanese voices are built into iOS (excellent) and Android (decent).
@@ -17,7 +19,12 @@ class TtsService {
   Future<void> _ensureLanguage(String lang) async {
     if (_currentLang == lang) return;
     _currentLang = lang;
-    await _tts.setLanguage(lang == 'ja' ? 'ja-JP' : 'ko-KR');
+    try {
+      await _tts.setLanguage(lang == 'ja' ? 'ja-JP' : 'ko-KR');
+    } catch (_) {
+      // Language not available on device — TTS will be silent
+      return;
+    }
     await _tts.setSpeechRate(0.4);
     await _tts.setPitch(1.0);
     await _tts.setVolume(1.0);
@@ -62,9 +69,4 @@ class TtsService {
 /// Provider for the TTS service.
 final ttsServiceProvider = Provider<TtsService>((ref) {
   return TtsService(ref);
-});
-
-/// Whether TTS is enabled (from settings).
-final ttsEnabledProvider = StateProvider<bool>((ref) {
-  return true; // default on
 });

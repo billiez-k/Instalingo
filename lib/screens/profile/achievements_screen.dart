@@ -212,8 +212,8 @@ class _AchievementCard extends StatelessWidget {
 
   Color _tierColor(String tier) {
     switch (tier) {
-      case 'bronze': return const Color(0xFFCD7F32);
-      case 'silver': return const Color(0xFFC0C0C0);
+      case 'bronze': return BusanHarborTokens.bronze;
+      case 'silver': return BusanHarborTokens.silver;
       case 'gold': return BusanHarborTokens.brass;
       default: return BusanHarborTokens.orange;
     }

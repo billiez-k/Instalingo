@@ -637,6 +637,7 @@ abstract class AppLocalizations {
     const Locale('ja'): () => AppLocalizationsJa(),
     const Locale('ko'): () => AppLocalizationsKo(),
     const Locale('ms'): () => AppLocalizationsMs(),
+    const Locale('zh'): () => AppLocalizationsZhCn(),
     const Locale('zh', 'CN'): () => AppLocalizationsZhCn(),
     const Locale('zh', 'TW'): () => AppLocalizationsZhTw(),
   };
@@ -651,6 +652,7 @@ abstract class AppLocalizations {
     Locale('ja'),
     Locale('ko'),
     Locale('ms'),
+    Locale('zh'),
     Locale('zh', 'CN'),
     Locale('zh', 'TW'),
   ];

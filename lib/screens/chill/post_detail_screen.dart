@@ -447,7 +447,7 @@ class _AuthorAvatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final initials =
-        name.split(' ').map((s) => s[0]).take(2).join('').toUpperCase();
+        name.split(' ').where((s) => s.isNotEmpty).map((s) => s[0]).take(2).join('').toUpperCase();
     final hasAvatar = avatarUrl != null && avatarUrl!.isNotEmpty;
 
     return Container(

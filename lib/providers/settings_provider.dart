@@ -80,3 +80,26 @@ final soundServiceProvider = Provider.autoDispose<SoundService>((ref) {
   ref.keepAlive();
   return SoundService(ref);
 });
+
+final ttsEnabledProvider = StateNotifierProvider<TtsNotifier, bool>((ref) {
+  return TtsNotifier(ref);
+});
+
+class TtsNotifier extends StateNotifier<bool> {
+  final Ref _ref;
+
+  TtsNotifier(this._ref) : super(true) {
+    _load();
+  }
+
+  Future<void> _load() async {
+    final prefs = await _ref.read(sharedPrefsProvider.future);
+    state = prefs.getBool('tts_enabled') ?? true;
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await _ref.read(sharedPrefsProvider.future);
+    await prefs.setBool('tts_enabled', state);
+  }
+}

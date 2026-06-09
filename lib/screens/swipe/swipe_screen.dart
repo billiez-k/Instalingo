@@ -40,7 +40,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
   int _xpEarned = 0;
   int _gemsEarned = 0;
   bool _isLoading = true;
-  String? _loadError;
+  bool _hasError = false;
   bool _showTutorial = false;
   final Set<int> _flippedCards = {};
   final Set<int> _savedCards = {};
@@ -162,7 +162,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
         loading: () {},
         error: (error, _) {
           if (mounted) {
-            setState(() { _isLoading = false; _loadError = error.toString(); });
+            setState(() { _isLoading = false; _hasError = true; });
           }
         },
         data: (deck) {
@@ -180,7 +180,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
               _savedCards.clear();
               _skippedCards.clear();
               _isLoading = false;
-              _loadError = null;
+              _hasError = false;
             });
             if (startIndex > 0) {
               _pageController.jumpToPage(startIndex);
@@ -199,7 +199,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
         backgroundColor: Colors.black,
         body: _isLoading
             ? _buildLoading(appTheme, l10n)
-            : _loadError != null
+            : _hasError
                 ? _buildError(appTheme, l10n)
                 : _cards.isEmpty
                     ? _buildEmpty(appTheme, l10n)
@@ -344,20 +344,18 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
     final saved = _savedCards.contains(index);
     final skipped = _skippedCards.contains(index);
 
-    final grads = [
-      [const Color(0xFF1a1a2e), const Color(0xFF16213e)],
-      [const Color(0xFF0f3460), const Color(0xFF1a1a2e)],
-      [const Color(0xFF533483), const Color(0xFF16213e)],
-      [const Color(0xFF2d3436), const Color(0xFF0f3460)],
-      [const Color(0xFF16213e), const Color(0xFF1a1a2e)],
-    ];
+    final grads = PostCardGradients.values;
     final g = grads[index % grads.length];
     final pi = _posIcon(card);
 
     return GestureDetector(
       onTap: _flipCard,
       onDoubleTap: () => _saveCard(index),
-      child: Container(
+      child: Semantics(
+        label: card.word,
+        button: true,
+        hint: 'Tap to flip, double tap to save',
+        child: Container(
         color: Colors.black,
         child: SafeArea(
           child: Column(children: [
@@ -486,6 +484,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
             ),
           ]),
         ),
+      ),
       ),
     );
   }

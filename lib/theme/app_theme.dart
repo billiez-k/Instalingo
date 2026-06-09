@@ -41,6 +41,20 @@ class BusanHarborTokens {
   static const Color brass = Color(0xFFC9A227); // premium / gold
   static const Color mint = Color(0xFF2D9C5A); // success
   static const Color amber = Color(0xFFE89A22); // warning
+  static const Color bronze = Color(0xFFCD7F32); // achievement bronze
+  static const Color silver = Color(0xFFC0C0C0); // achievement silver
+}
+
+/// Gradients rotated across post cards for visual variety.
+abstract final class PostCardGradients {
+  PostCardGradients._();
+  static const List<List<Color>> values = [
+    [Color(0xFF1a1a2e), Color(0xFF16213e)],
+    [Color(0xFF0f3460), Color(0xFF1a1a2e)],
+    [Color(0xFF533483), Color(0xFF16213e)],
+    [Color(0xFF2d3436), Color(0xFF0f3460)],
+    [Color(0xFF16213e), Color(0xFF1a1a2e)],
+  ];
 }
 
 /// Legacy semantic color names — preserved so existing widget code continues

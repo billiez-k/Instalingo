@@ -104,7 +104,7 @@ class SettingsScreen extends ConsumerWidget {
                   value: ref.watch(ttsEnabledProvider),
                   onChanged: (v) {
                     HapticFeedback.lightImpact();
-                    ref.read(ttsEnabledProvider.notifier).state = v;
+                    ref.read(ttsEnabledProvider.notifier).toggle();
                   },
                 ),
               ),

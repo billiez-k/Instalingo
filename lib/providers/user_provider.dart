@@ -36,8 +36,9 @@ class UserNotifier extends StateNotifier<UserProfile> {
       try {
         state = UserProfile.fromJson(jsonDecode(json) as Map<String, dynamic>);
       } catch (_) {
-      // silently fall back to default — expected on first launch
-    }
+        // Corrupted data — clear it to prevent infinite fallback
+        await prefs.remove('user_profile');
+      }
     }
   }
 

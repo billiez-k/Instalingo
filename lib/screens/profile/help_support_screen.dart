@@ -176,7 +176,7 @@ class _HelpSection {
   final String title;
   final List<_HelpItem> items;
 
-  _HelpSection({required this.title, required this.items});
+  const _HelpSection({required this.title, required this.items});
 }
 
 class _HelpItem {
@@ -184,7 +184,7 @@ class _HelpItem {
   final String title;
   final String description;
 
-  _HelpItem({required this.icon, required this.title, required this.description});
+  const _HelpItem({required this.icon, required this.title, required this.description});
 }
 
 class _SectionWidget extends StatelessWidget {

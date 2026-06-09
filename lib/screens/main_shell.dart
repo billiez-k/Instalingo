@@ -111,7 +111,11 @@ class _NavItem extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       behavior: HitTestBehavior.opaque,
-      child: SizedBox(
+      child: Semantics(
+        label: label,
+        button: true,
+        selected: isActive,
+        child: SizedBox(
         width: 80.w,
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -145,6 +149,6 @@ class _NavItem extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
+    ),
+  );
 }
