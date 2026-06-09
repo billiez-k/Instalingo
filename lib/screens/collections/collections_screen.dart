@@ -271,7 +271,11 @@ class _FilterChip extends StatelessWidget {
 
     return GestureDetector(
       onTap: onTap,
-      child: Container(
+      child: Semantics(
+        label: label,
+        button: true,
+        selected: isSelected,
+        child: Container(
         margin: EdgeInsets.only(right: 8.w),
         padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 6.h),
         decoration: BoxDecoration(
@@ -297,6 +301,7 @@ class _FilterChip extends StatelessWidget {
           ),
         ),
       ),
+      ),
     );
   }
 }
@@ -320,7 +325,10 @@ class _CollectionCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: AnimatedContainer(
+      child: Semantics(
+        label: card.word,
+        button: true,
+        child: AnimatedContainer(
         duration: const Duration(milliseconds: 300),
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -337,6 +345,7 @@ class _CollectionCard extends StatelessWidget {
           ),
         ),
         child: isFlipped ? _buildBack() : _buildFront(),
+      ),
       ),
     );
   }
