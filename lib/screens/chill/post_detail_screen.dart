@@ -28,6 +28,13 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
   final _commentController = TextEditingController();
   final _commentFocusNode = FocusNode();
   final _scrollController = ScrollController();
+  late final Future<ChillPost?> _postFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    _postFuture = ChillPostLoader.loadPost(widget.postId);
+  }
 
   @override
   void dispose() {
@@ -59,7 +66,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
     final theme = Theme.of(context);
 
     return FutureBuilder<ChillPost?>(
-      future: ChillPostLoader.loadPost(widget.postId),
+      future: _postFuture,
       builder: (context, snapshot) {
         final l10n = AppLocalizations.of(context);
         if (snapshot.hasError) {

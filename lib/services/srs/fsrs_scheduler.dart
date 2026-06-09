@@ -25,6 +25,7 @@ class FSRSScheduler {
   /// [difficulty] — current difficulty value
   /// [rating] — user rating: 1=Again, 2=Hard, 3=Good, 4=Easy
   /// [lapseCount] — current lapse count
+  /// [reviewCount] — current review count
   static SRSData schedule({
     required String cardId,
     required String state,
@@ -32,10 +33,11 @@ class FSRSScheduler {
     required double difficulty,
     required int rating,
     required int lapseCount,
+    required int reviewCount,
   }) {
     final now = DateTime.now();
     int newLapseCount = lapseCount;
-    int newReviewCount = 1;
+    int newReviewCount = reviewCount + 1;
     String newState = state;
     double newStability = stability;
     double newDifficulty = difficulty;

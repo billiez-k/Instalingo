@@ -22,11 +22,11 @@ class _ProficiencyScreenState extends ConsumerState<ProficiencyScreen> {
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context);
     final levels = [
-      _LevelOption(code: 'N5', name: 'Beginner', desc: 'I know a few words'),
-      _LevelOption(code: 'N4', name: 'Elementary', desc: 'I can form simple sentences'),
-      _LevelOption(code: 'N3', name: 'Intermediate', desc: 'I can hold a conversation'),
-      _LevelOption(code: 'N2', name: 'Upper-Intermediate', desc: 'I can discuss various topics'),
-      _LevelOption(code: 'N1', name: 'Advanced', desc: 'I speak fluently'),
+      _LevelOption(code: 'N5', name: l10n.onboarding_examLevelBeginner, desc: 'I know a few words'),
+      _LevelOption(code: 'N4', name: l10n.profile_elementary, desc: 'I can form simple sentences'),
+      _LevelOption(code: 'N3', name: l10n.onboarding_examLevelIntermediate, desc: 'I can hold a conversation'),
+      _LevelOption(code: 'N2', name: l10n.profile_upperIntermediate, desc: 'I can discuss various topics'),
+      _LevelOption(code: 'N1', name: l10n.onboarding_examLevelAdvanced, desc: 'I speak fluently'),
     ];
 
     return Scaffold(

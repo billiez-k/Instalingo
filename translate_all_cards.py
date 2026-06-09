@@ -82,24 +82,38 @@ def process_level(level, translate_fn):
     path = BASE / level / 'cards.json'
     checkpoint = Path(f'/tmp/xlate_{level}_ckpt.json')
 
-    with open(path) as f:
-        data = json.load(f)
+    if not path.exists():
+        print(f'  ERROR: {path} not found — skipping level {level}')
+        return
+    try:
+        with open(path) as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, FileNotFoundError) as e:
+        print(f'  ERROR: Failed to load {path}: {e}')
+        return
+    if 'cards' not in data:
+        print(f'  ERROR: {path} has no "cards" key — skipping')
+        return
     cards = data['cards']
     print(f'\n{"="*50}\n{level.upper()}: {len(cards)} cards')
 
     # Resume from checkpoint
     done = set()
     if checkpoint.exists():
-        done = set(json.loads(checkpoint.read_text()))
-        print(f'  Resume: {sorted(done)} already done')
+        try:
+            done = set(json.loads(checkpoint.read_text()))
+            print(f'  Resume: {sorted(done)} already done')
+        except (json.JSONDecodeError, FileNotFoundError):
+            print(f'  Warning: checkpoint corrupted, starting fresh')
+            checkpoint.unlink(missing_ok=True)
 
     # Collect unique texts
     meanings = list(dict.fromkeys(
-        c.get('meaning', '') for c in cards if c.get('meaning', '').strip()
+        c.get('meaning', '') or '' for c in cards if (c.get('meaning', '') or '').strip()
     ))
     examples = list(dict.fromkeys(
-        c.get('example_translation', '') for c in cards
-        if c.get('example_translation', '').strip()
+        c.get('example_translation', '') or '' for c in cards
+        if (c.get('example_translation', '') or '').strip()
     ))
     print(f'  Meanings: {len(meanings)}, Examples: {len(examples)}')
 
@@ -118,23 +132,28 @@ def process_level(level, translate_fn):
 
         # Apply to cards
         for card in cards:
-            en_m = card.get('meaning', '')
-            en_ex = card.get('example_translation', '')
+            en_m = card.get('meaning', '') or ''
+            en_ex = card.get('example_translation', '') or ''
             if 'meanings' not in card:
                 card['meanings'] = {
                     'en': en_m,
-                    'zh_TW': card.get('meaning_zh', ''),
+                    'zh_TW': card.get('meaning_zh', '') or '',
                 }
             if 'example_translations' not in card:
-                card['example_translations'] = {'en': en_ex, 'zh_TW': ''}
-            card['meanings'][lang_key] = m_map.get(en_m, en_m)
-            card['example_translations'][lang_key] = e_map.get(en_ex, en_ex)
+                card['example_translations'] = {
+                    'en': en_ex,
+                    'zh_TW': card.get('example_translation_zh', '') or '',
+                }
+            card['meanings'][lang_key] = m_map.get(en_m, en_m) or en_m
+            card['example_translations'][lang_key] = e_map.get(en_ex, en_ex) or en_ex
+
+        # Save data before updating checkpoint, so a crash during save doesn't
+        # cause the checkpoint to claim this language is done.
+        with open(path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
 
         done.add(lang_key)
         checkpoint.write_text(json.dumps(list(done)))
-
-        with open(path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
         print(f'  ✓ Saved (checkpoint: {sorted(done)})')
 
     checkpoint.unlink(missing_ok=True)
@@ -150,6 +169,10 @@ def main():
     args = parser.parse_args()
 
     api_key = os.environ.get('GOOGLE_API_KEY', '')
+
+    if args.level and args.level not in ALL_LEVELS:
+        print(f'Error: Invalid level "{args.level}". Must be one of: {ALL_LEVELS}')
+        sys.exit(1)
     levels = [args.level] if args.level else ALL_LEVELS
 
     if api_key and not args.free:

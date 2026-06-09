@@ -31,7 +31,9 @@ class AppRouter {
   static final GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
     initialLocation: '/splash',
-    errorBuilder: (_, state) => ErrorScreen(message: state.error.toString()),
+    errorBuilder: (_, state) => ErrorScreen(
+      message: state.error?.message ?? 'An unexpected error occurred',
+    ),
     routes: [
       GoRoute(
         path: '/splash',

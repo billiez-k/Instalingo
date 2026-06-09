@@ -27,24 +27,37 @@ class UserNotifier extends StateNotifier<UserProfile> {
   }
 
   SharedPreferences? _prefs;
+  final Completer<void> _loadCompleter = Completer<void>();
 
   Future<void> _load() async {
-    final prefs = await _ref.read(sharedPrefsProvider.future);
-    _prefs = prefs;
-    final json = prefs.getString('user_profile');
-    if (json != null) {
-      try {
-        state = UserProfile.fromJson(jsonDecode(json) as Map<String, dynamic>);
-      } catch (_) {
-        // Corrupted data — clear it to prevent infinite fallback
-        await prefs.remove('user_profile');
+    try {
+      final prefs = await _ref.read(sharedPrefsProvider.future);
+      _prefs = prefs;
+      final json = prefs.getString('user_profile');
+      if (json != null) {
+        try {
+          state = UserProfile.fromJson(jsonDecode(json) as Map<String, dynamic>);
+        } catch (_) {
+          // Corrupted data — clear it to prevent infinite fallback
+          await prefs.remove('user_profile');
+        }
       }
+    } finally {
+      _loadCompleter.complete();
     }
   }
 
   Future<void> _save() async {
+    // Wait for _load() to finish before writing, so _prefs is initialized.
+    // If _load completes before this line, the completer resolves instantly.
+    await _loadCompleter.future;
     if (_prefs == null) return;
-    await _prefs!.setString('user_profile', jsonEncode(state.toJson()));
+    try {
+      await _prefs!.setString('user_profile', jsonEncode(state.toJson()));
+    } catch (_) {
+      // SharedPreferences write failed; state is already updated in memory
+      // and will be retried on next mutation.
+    }
   }
 
   void updateProfile({

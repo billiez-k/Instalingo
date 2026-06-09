@@ -73,6 +73,7 @@ class SRSNotifier extends AsyncNotifier<List<SRSData>> {
       difficulty: current.difficulty,
       rating: rating,
       lapseCount: current.lapseCount,
+      reviewCount: current.reviewCount,
     );
 
     // Upsert

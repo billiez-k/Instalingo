@@ -62,7 +62,6 @@ class ProfileScreen extends ConsumerWidget {
                     ],
                   ),
                   SizedBox(height: 22.h),
-                SizedBox(height: 22.h),
                   _MenuSection(
                     title: l10n.settingsTitle,
                     items: [

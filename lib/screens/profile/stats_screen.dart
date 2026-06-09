@@ -184,9 +184,6 @@ class StatsScreen extends ConsumerWidget {
               dayRecords: {
                 for (final day in user.activeDays)
                   day: StreakRecord.completed,
-                // Add some demo states
-                DateTime.now().subtract(const Duration(days: 3)): StreakRecord.shielded,
-                DateTime.now().subtract(const Duration(days: 6)): StreakRecord.repaired,
               },
             ),
           ),

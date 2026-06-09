@@ -399,10 +399,11 @@ class _ReviewCard extends StatelessWidget {
                       color: appTheme.harborInkOnNavy,
                     ),
                   ),
-                  if (card.meaningFor(nativeCode).isNotEmpty) ...[
+                  // Show English reference if native language is not English
+                  if (nativeCode != 'en' && card.meaning.isNotEmpty) ...[
                     SizedBox(height: 8.h),
                     Text(
-                      card.meaningFor(nativeCode),
+                      card.meaning,
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 16.sp,
