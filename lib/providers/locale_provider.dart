@@ -89,9 +89,9 @@ class LocaleNotifier extends StateNotifier<Locale> {
   }
 
   Locale _parseLocale(String code) {
-    if (code == 'zh') return const Locale('zh', 'CN');
+    if (code == 'zh' || code == 'zh_Hans' || code == 'zh_Hans_CN') return const Locale('zh', 'CN');
     if (code == 'zh_CN') return const Locale('zh', 'CN');
-    if (code == 'zh_TW') return const Locale('zh', 'TW');
+    if (code == 'zh_TW' || code == 'zh_Hant' || code == 'zh_Hant_TW') return const Locale('zh', 'TW');
     return Locale(code);
   }
 
