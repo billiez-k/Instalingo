@@ -514,7 +514,10 @@ class _ActionBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Row(
+      child: Semantics(
+        label: label,
+        button: true,
+        child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           PhosphorIcon(icon, size: 20.sp, color: color),
@@ -528,6 +531,7 @@ class _ActionBtn extends StatelessWidget {
             ),
           ),
         ],
+      ),
       ),
     );
   }

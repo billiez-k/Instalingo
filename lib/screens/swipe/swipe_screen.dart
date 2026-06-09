@@ -491,13 +491,17 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
 
   Widget _act(PhosphorIconData i, Color c, VoidCallback? t, String l) => GestureDetector(
         onTap: t,
-        child: Column(mainAxisSize: MainAxisSize.min, children: [
+        child: Semantics(
+          label: l,
+          button: true,
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
           PhosphorIcon(i, size: 26.sp, color: c),
           if (l.isNotEmpty) ...[
             SizedBox(height: 2.h),
             Text(l, style: TextStyle(fontSize: 10.sp, color: c, fontWeight: FontWeight.w600)),
           ],
         ]),
+        ),
       );
 
   Widget _btn(String l, Color bg, Color fg, {VoidCallback? onPressed, bool isPrimary = false}) => SizedBox(

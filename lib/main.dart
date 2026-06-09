@@ -92,7 +92,7 @@ class _AppLoader extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: const Color(0xFF0F1F2E), // harbor navy
+        backgroundColor: BusanHarborTokens.navy,
         body: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -102,7 +102,7 @@ class _AppLoader extends StatelessWidget {
                 height: 80,
                 child: CircularProgressIndicator(
                   strokeWidth: 2,
-                  color: Color(0xFFEE6C2C), // harbor orange
+                  color: BusanHarborTokens.orange,
                 ),
               ),
               const SizedBox(height: 24),
@@ -111,7 +111,7 @@ class _AppLoader extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w800,
-                  color: const Color(0xFFF2EFE9).withValues(alpha: 0.5),
+                  color: BusanHarborTokens.cream.withValues(alpha: 0.5),
                   letterSpacing: 2,
                 ),
               ),

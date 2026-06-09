@@ -491,7 +491,10 @@ class _RatingButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onPressed,
-      child: Column(
+      child: Semantics(
+        label: label,
+        button: true,
+        child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
@@ -517,6 +520,7 @@ class _RatingButton extends StatelessWidget {
             ),
           ),
         ],
+      ),
       ),
     );
   }
