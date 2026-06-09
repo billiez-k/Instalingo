@@ -668,7 +668,14 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) {
-    return AppLocalizations.supportedLocales.contains(locale);
+    // Match by languageCode + optional countryCode, matching Flutter's own
+    // locale resolution semantics. Exact Locale equality would reject locales
+    // with script subtags (e.g. zh-Hans-CN won't equal Locale('zh','CN')).
+    return AppLocalizations.supportedLocales.any((supported) {
+      if (supported.languageCode != locale.languageCode) return false;
+      if (supported.countryCode == null) return true; // language-only match
+      return supported.countryCode == locale.countryCode;
+    });
   }
 
   @override

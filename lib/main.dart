@@ -37,10 +37,12 @@ class InstaLingoApp extends ConsumerWidget {
     final isDark = ref.watch(darkModeProvider);
     final locale = ref.watch(localeProvider);
 
-    // Wait until locale is loaded from SharedPreferences before showing UI.
-    // This prevents ☒ tofu characters and English flash on first load.
+    // Wait until locale AND theme preference are loaded from SharedPreferences
+    // before showing UI. This prevents ☒ tofu characters, English flash, and
+    // light-theme flash for dark-mode users on first load.
     final localeReady = ref.watch(localeReadyProvider);
-    if (localeReady.isLoading) {
+    final darkModeReady = ref.watch(darkModeReadyProvider);
+    if (localeReady.isLoading || darkModeReady.isLoading) {
       return const _AppLoader();
     }
 

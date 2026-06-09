@@ -48,7 +48,12 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
     Future.delayed(Duration.zero, () async {
       if (!mounted) return;
       HapticFeedback.mediumImpact();
-      // Wait for onboardingCompleteProvider to finish loading from SharedPreferences
+      // Wait for SharedPreferences to load before reading onboarding state.
+      // Without this, onboardingCompleteProvider always returns false (its
+      // initial value) and returning users get routed to /onboarding on every
+      // launch.
+      await ref.read(onboardingReadyProvider.future);
+      if (!mounted) return;
       final onboardingComplete = ref.read(onboardingCompleteProvider);
       if (onboardingComplete) {
         context.go('/home');
@@ -204,24 +209,30 @@ class _HarborWavePainter extends CustomPainter {
 
   _HarborWavePainter({required this.phase, required this.color});
 
+  // Cached to avoid allocating new objects on every animation frame (60 fps).
+  // The paint object is reused across frames; color is reassigned on each
+  // paint() call since phase (and thus shouldRepaint) changes every frame.
+  final Paint _paint = Paint();
+  final Path _path = Path();
+
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()..color = color;
-    final path = Path();
+    _paint.color = color;
+    _path.reset();
     final waveHeight = size.height * 0.06;
     final baseY = size.height * 0.78;
-    path.moveTo(0, size.height);
-    path.lineTo(0, baseY);
+    _path.moveTo(0, size.height);
+    _path.lineTo(0, baseY);
     for (double x = 0; x <= size.width; x += 8) {
       final y = baseY +
           waveHeight *
               0.5 *
               (1 - (1 - 2 * ((x / size.width + phase) % 1 - 0.5).abs()));
-      path.lineTo(x, y);
+      _path.lineTo(x, y);
     }
-    path.lineTo(size.width, size.height);
-    path.close();
-    canvas.drawPath(path, paint);
+    _path.lineTo(size.width, size.height);
+    _path.close();
+    canvas.drawPath(_path, _paint);
   }
 
   @override

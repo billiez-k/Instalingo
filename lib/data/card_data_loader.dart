@@ -6,11 +6,20 @@ class CardDataLoader {
   CardDataLoader._();
   static const _assetBase = 'instalingo_content/japanese';
 
+  /// In-memory cache of parsed decks, keyed by normalized level name.
+  /// Avoids redundant rootBundle I/O and JSON decoding — a single deck can
+  /// be up to ~1000 cards and is requested by multiple providers.
+  static final Map<String, CardDeck> _cache = {};
+
   /// Loads a card deck for the given JLPT level (N5-N1).
   /// Cards are sorted by difficulty (easy→hard) for progressive learning.
+  /// Results are cached in-memory; subsequent calls for the same level
+  /// return the cached deck instantly.
   /// Throws if the asset cannot be loaded — no silent fallback to demo data.
   static Future<CardDeck> loadDeck(String level) async {
     final levelLower = level.toLowerCase();
+    if (_cache.containsKey(levelLower)) return _cache[levelLower]!;
+
     final path = '$_assetBase/$levelLower/cards.json';
     final jsonString = await rootBundle.loadString(path);
     final data = jsonDecode(jsonString) as Map<String, dynamic>;
@@ -20,7 +29,7 @@ class CardDataLoader {
     final sorted = List<VocabCard>.from(deck.cards)
       ..sort((a, b) => _cardDifficulty(a).compareTo(_cardDifficulty(b)));
 
-    return CardDeck(
+    final result = CardDeck(
       id: deck.id,
       level: deck.level,
       language: deck.language,
@@ -29,6 +38,14 @@ class CardDataLoader {
       totalCards: deck.totalCards,
       cards: sorted,
     );
+    _cache[levelLower] = result;
+    return result;
+  }
+
+  /// Clears the in-memory deck cache. Useful for testing or if decks are
+  /// hot-reloaded during development.
+  static void clearCache() {
+    _cache.clear();
   }
 
   /// Computes a difficulty score for progressive card ordering.

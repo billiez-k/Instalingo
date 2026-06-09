@@ -26,23 +26,29 @@ class LocaleNotifier extends StateNotifier<Locale> {
   }
 
   Future<void> _load() async {
-    final prefs = await SharedPreferences.getInstance();
-    // If user already set a preference, use it
-    final savedCode = prefs.getString('app_locale');
-    if (savedCode != null) {
-      state = _parseLocale(savedCode);
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      // If user already set a preference, use it
+      final savedCode = prefs.getString('app_locale');
+      if (savedCode != null) {
+        state = _parseLocale(savedCode);
+        return;
+      }
+      // Auto-detect from device/browser region so onboarding pages show
+      // in the user's native language before they even choose a language.
+      // Taiwan (zh-TW, zh-HK) → Traditional Chinese
+      // China (zh-CN, zh-SG) → Simplified Chinese
+      // Japan (ja) → Japanese, etc.
+      final detected = _detectLocale();
+      state = detected;
+      await prefs.setString('app_locale', _localeCode(detected));
+    } catch (_) {
+      // Keep the default locale (en) if SharedPreferences is unavailable.
+      // The app remains functional; locale preference will be persisted
+      // on the next successful setLocale() call.
+    } finally {
       if (!_readyCompleter.isCompleted) _readyCompleter.complete();
-      return;
     }
-    // Auto-detect from device/browser region so onboarding pages show
-    // in the user's native language before they even choose a language.
-    // Taiwan (zh-TW, zh-HK) → Traditional Chinese
-    // China (zh-CN, zh-SG) → Simplified Chinese
-    // Japan (ja) → Japanese, etc.
-    final detected = _detectLocale();
-    state = detected;
-    await prefs.setString('app_locale', _localeCode(detected));
-    if (!_readyCompleter.isCompleted) _readyCompleter.complete();
   }
 
   /// Detect the best locale from the platform/browser language.
