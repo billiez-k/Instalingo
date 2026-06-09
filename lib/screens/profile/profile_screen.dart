@@ -158,10 +158,14 @@ class _ProfileHeader extends StatelessWidget {
                       ),
                     ),
                     // Instagram gear icon
-                    GestureDetector(
+                    Semantics(
+                      label: l10n.profileSettings,
+                      button: true,
+                      child: GestureDetector(
                       onTap: () => context.push('/profile/settings'),
                       child: PhosphorIcon(PhosphorIcons.gear(PhosphorIconsStyle.bold),
                           size: 20.sp, color: appTheme.harborInkOnNavyMuted),
+                    ),
                     ),
                   ],
                 ),
@@ -291,7 +295,10 @@ class _ActionPill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = accent ?? AppColors.primary;
-    return GestureDetector(
+    return Semantics(
+      label: label,
+      button: true,
+      child: GestureDetector(
       onTap: onTap,
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
@@ -316,6 +323,7 @@ class _ActionPill extends StatelessWidget {
             ),
           ],
         ),
+      ),
       ),
     );
   }
@@ -570,7 +578,10 @@ class _SavedWordsGrid extends ConsumerWidget {
               itemBuilder: (context, index) {
                 final card = savedCards[index];
                 final g = _grads[card.word.hashCode.abs() % _grads.length];
-                return GestureDetector(
+                return Semantics(
+                  label: card.word,
+                  button: true,
+                  child: GestureDetector(
                   onTap: () => context.push('/swipe'),
                   child: Container(
                     decoration: BoxDecoration(
@@ -595,6 +606,7 @@ class _SavedWordsGrid extends ConsumerWidget {
                             maxLines: 1, overflow: TextOverflow.ellipsis),
                       ],
                     ),
+                  ),
                   ),
                 );
               },

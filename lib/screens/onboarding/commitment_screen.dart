@@ -115,7 +115,7 @@ class _CommitmentTile extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
 
-    return GestureDetector(
+    return Semantics(label: option.label, button: true, child: GestureDetector(
       onTap: onTap,
       child: Container(
         margin: EdgeInsets.only(bottom: 8.h),
@@ -161,6 +161,7 @@ class _CommitmentTile extends StatelessWidget {
             ),
           ],
         ),
+      ),
       ),
     );
   }

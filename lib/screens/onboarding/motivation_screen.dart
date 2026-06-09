@@ -106,7 +106,7 @@ class _MotivationCard extends StatelessWidget {
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
-    return GestureDetector(
+    return Semantics(label: option.label, button: true, child: GestureDetector(
       onTap: onTap,
       child: Container(
         padding: EdgeInsets.all(12.w),
@@ -142,6 +142,7 @@ class _MotivationCard extends StatelessWidget {
             Text(option.label, style: theme.textTheme.titleLarge?.copyWith(color: appTheme.harborNavy, fontSize: 14.sp), maxLines: 2, overflow: TextOverflow.ellipsis),
           ],
         ),
+      ),
       ),
     );
   }

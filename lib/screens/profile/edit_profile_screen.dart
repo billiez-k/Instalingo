@@ -340,7 +340,10 @@ class _InfoCard extends StatelessWidget {
     final theme = Theme.of(context);
     final appTheme = context.appTheme;
 
-    return GestureDetector(
+    return Semantics(
+      label: label,
+      button: onTap != null,
+      child: GestureDetector(
       onTap: onTap,
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 12.h),
@@ -389,6 +392,7 @@ class _InfoCard extends StatelessWidget {
             ),
           ],
         ),
+      ),
       ),
     );
   }

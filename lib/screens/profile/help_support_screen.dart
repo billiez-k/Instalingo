@@ -234,7 +234,10 @@ class _HelpItemWidget extends StatelessWidget {
     final theme = Theme.of(context);
     final appTheme = context.appTheme;
 
-    return GestureDetector(
+    return Semantics(
+      label: item.title,
+      button: true,
+      child: GestureDetector(
       onTap: () {
         HapticFeedback.selectionClick();
         _showExplanation(context, item);
@@ -279,6 +282,7 @@ class _HelpItemWidget extends StatelessWidget {
           ],
         ),
       ),
+      ),
     );
   }
 
@@ -309,13 +313,17 @@ class _HelpItemWidget extends StatelessWidget {
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                 ),
-                GestureDetector(
+                Semantics(
+                  label: 'Close',
+                  button: true,
+                  child: GestureDetector(
                   onTap: () => Navigator.of(context).pop(),
                   child: PhosphorIcon(
                     PhosphorIcons.x(),
                     size: 24.sp,
                     color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.4),
                   ),
+                ),
                 ),
               ],
             ),

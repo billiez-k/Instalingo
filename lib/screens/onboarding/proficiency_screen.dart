@@ -100,7 +100,7 @@ class _LevelTile extends StatelessWidget {
     final theme = Theme.of(context);
     final appTheme = context.appTheme;
 
-    return GestureDetector(
+    return Semantics(label: level.name, button: true, child: GestureDetector(
       onTap: onTap,
       child: Container(
         margin: EdgeInsets.only(bottom: 8.h),
@@ -147,6 +147,7 @@ class _LevelTile extends StatelessWidget {
             ),
           ],
         ),
+      ),
       ),
     );
   }

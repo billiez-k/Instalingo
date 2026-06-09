@@ -142,7 +142,7 @@ class _LanguageTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
 
-    return GestureDetector(
+    return Semantics(label: name, button: true, child: GestureDetector(
       onTap: onTap,
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
@@ -178,6 +178,7 @@ class _LanguageTile extends StatelessWidget {
             ),
           ],
         ),
+      ),
       ),
     );
   }

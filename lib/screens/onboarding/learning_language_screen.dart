@@ -140,7 +140,7 @@ class _LevelTile extends StatelessWidget {
       'N1': '~10,000 words • Advanced',
     };
 
-    return GestureDetector(
+    return Semantics(label: level, button: true, child: GestureDetector(
       onTap: onTap,
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
@@ -189,6 +189,7 @@ class _LevelTile extends StatelessWidget {
           ],
         ),
       ),
+      ),
     );
   }
 }
@@ -212,7 +213,7 @@ class _LanguageTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final appTheme = context.appTheme;
 
-    return GestureDetector(
+    return Semantics(label: name, button: true, child: GestureDetector(
       onTap: enabled ? onTap : null,
       child: Opacity(
         opacity: enabled ? 1.0 : 0.4,
@@ -257,6 +258,7 @@ class _LanguageTile extends StatelessWidget {
             ],
           ),
         ),
+      ),
       ),
     );
   }

@@ -90,7 +90,7 @@ class _GoalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context);
-    return GestureDetector(
+    return Semantics(label: title, button: true, child: GestureDetector(
       onTap: onTap,
       child: Container(
         padding: EdgeInsets.all(20.w),
@@ -116,6 +116,7 @@ class _GoalCard extends StatelessWidget {
             if (isSelected) PhosphorIcon(PhosphorIcons.checkCircle(PhosphorIconsStyle.fill), color: AppColors.primary, size: 24.sp),
           ],
         ),
+      ),
       ),
     );
   }

@@ -236,7 +236,10 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
       onTap: () {
         context.push('/post/${post.id}');
       },
-      child: Container(
+      child: Semantics(
+        label: post.authorName,
+        button: true,
+        child: Container(
         margin: EdgeInsets.symmetric(horizontal: 16.w, vertical: 6.h),
         padding: EdgeInsets.all(16.w),
         decoration: BoxDecoration(
@@ -297,9 +300,13 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
                 return Stack(
                   alignment: Alignment.center,
                   children: [
-                    GestureDetector(
-                      onDoubleTap: _doubleTapLike,
-                      child: child,
+                    Semantics(
+                      label: l10n.swipeSaveLabel,
+                      button: true,
+                      child: GestureDetector(
+                        onDoubleTap: _doubleTapLike,
+                        child: child,
+                      ),
                     ),
                     if (_heartAnimController.value > 0)
                       Opacity(
@@ -407,7 +414,10 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
                         .toList(),
                   ),
                 ),
-                GestureDetector(
+                Semantics(
+                  label: l10n.swipeSaveLabel,
+                  button: true,
+                  child: GestureDetector(
                   onTap: _toggleLike,
                   behavior: HitTestBehavior.opaque,
                   child: Row(
@@ -432,8 +442,12 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
                     ],
                   ),
                 ),
+                ),
                 SizedBox(width: 16.w),
-                GestureDetector(
+                Semantics(
+                  label: l10n.chillComments,
+                  button: true,
+                  child: GestureDetector(
                   onTap: () => _openComments(context),
                   behavior: HitTestBehavior.opaque,
                   child: Row(
@@ -456,10 +470,12 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
                     ],
                   ),
                 ),
+                ),
               ],
             ),
           ],
         ),
+      ),
       ),
     );
   }
