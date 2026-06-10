@@ -339,13 +339,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get onboardingGetStarted => 'さあ始めましょう';
   String get onboardingContinue => '続ける';
   String get onboardingGoalQuestion => '目標は何ですか？';
-  String get onboardingCommitmentQuestion => 'どのくらいの時間
-コミットできますか？';
+  String get onboardingCommitmentQuestion => 'どのくらいの時間\nコミットできますか？';
   String get onboardingMotivationTitle => 'モチベーション';
   String get onboardingMotivationSubtitle => '該当するものを全て選択してください。';
-  String get onboardingProficiencyQuestion => '現在のレベルは
-どのくらいですか？';
-  String get onboardingStepCount(int step, int total) => 'ステップ $step/$total';
+  String get onboardingProficiencyQuestion => '現在のレベルは\nどのくらいですか？';
+  String onboardingStepCount(int step, int total) => 'ステップ $step/$total';
 
   @override
   String get onboardingJapanese => '日本語';

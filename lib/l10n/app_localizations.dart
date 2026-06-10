@@ -244,7 +244,7 @@ abstract class AppLocalizations {
 
   String get onboardingProficiencyQuestion;
 
-  String get onboardingStepCount(int step, int total);
+  String onboardingStepCount(int step, int total);
 
   String get onboardingJapanese;
 

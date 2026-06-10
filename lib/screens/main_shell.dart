@@ -116,39 +116,40 @@ class _NavItem extends StatelessWidget {
         button: true,
         selected: isActive,
         child: SizedBox(
-        width: 80.w,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            AnimatedContainer(
-              duration: const Duration(milliseconds: 200),
-              width: isActive ? 24.w : 0,
-              height: 3,
-              decoration: BoxDecoration(
-                color: activeColor,
-                borderRadius: BorderRadius.circular(2),
+          width: 80.w,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 200),
+                width: isActive ? 24.w : 0,
+                height: 3,
+                decoration: BoxDecoration(
+                  color: activeColor,
+                  borderRadius: BorderRadius.circular(2),
+                ),
               ),
-            ),
-            SizedBox(height: 6.h),
-            PhosphorIcon(
-              isActive ? activeIcon : icon,
-              size: 22.sp,
-              color: color,
-            ),
-            SizedBox(height: 4.h),
-            Text(
-              label.toUpperCase(),
-              style: TextStyle(
-                fontSize: 10.sp,
-                fontWeight: FontWeight.w800,
+              SizedBox(height: 6.h),
+              PhosphorIcon(
+                isActive ? activeIcon : icon,
+                size: 22.sp,
                 color: color,
-                letterSpacing: 1.4,
               ),
-            ),
-          ],
+              SizedBox(height: 4.h),
+              Text(
+                label.toUpperCase(),
+                style: TextStyle(
+                  fontSize: 10.sp,
+                  fontWeight: FontWeight.w800,
+                  color: color,
+                  letterSpacing: 1.4,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }

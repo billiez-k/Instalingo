@@ -350,7 +350,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   String get onboardingProficiencyQuestion => 'What is your\ncurrent level?';
 
-  String get onboardingStepCount(int step, int total) => 'STEP $step/$total';
+  String onboardingStepCount(int step, int total) => 'STEP $step/$total';
 
   @override
   String get onboardingJapanese => 'Japanese';

@@ -339,13 +339,11 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get onboardingGetStarted => '開始使用';
   String get onboardingContinue => '繼續';
   String get onboardingGoalQuestion => '你的目標是什麼？';
-  String get onboardingCommitmentQuestion => '你可以投入
-多少時間？';
+  String get onboardingCommitmentQuestion => '你可以投入\n多少時間？';
   String get onboardingMotivationTitle => '學習動機';
   String get onboardingMotivationSubtitle => '請選擇所有適用的選項。';
-  String get onboardingProficiencyQuestion => '你目前的程度
-如何？';
-  String get onboardingStepCount(int step, int total) => '步驟 $step/$total';
+  String get onboardingProficiencyQuestion => '你目前的程度\n如何？';
+  String onboardingStepCount(int step, int total) => '步驟 $step/$total';
 
   @override
   String get onboardingJapanese => '日語';

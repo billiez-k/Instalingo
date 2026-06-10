@@ -339,13 +339,11 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String get onboardingGetStarted => '开始使用';
   String get onboardingContinue => '继续';
   String get onboardingGoalQuestion => '你的目标是什么？';
-  String get onboardingCommitmentQuestion => '你可以投入
-多少时间？';
+  String get onboardingCommitmentQuestion => '你可以投入\n多少时间？';
   String get onboardingMotivationTitle => '学习动机';
   String get onboardingMotivationSubtitle => '请选择所有适用的选项。';
-  String get onboardingProficiencyQuestion => '你目前的水平
-如何？';
-  String get onboardingStepCount(int step, int total) => '步骤 $step/$total';
+  String get onboardingProficiencyQuestion => '你目前的水平\n如何？';
+  String onboardingStepCount(int step, int total) => '步骤 $step/$total';
 
   @override
   String get onboardingJapanese => '日本人';

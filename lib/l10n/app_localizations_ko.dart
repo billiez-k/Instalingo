@@ -339,13 +339,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get onboardingGetStarted => '시작하기';
   String get onboardingContinue => '계속하기';
   String get onboardingGoalQuestion => '목표가 무엇인가요?';
-  String get onboardingCommitmentQuestion => '얼마나 많은 시간을
-투자할 수 있나요?';
+  String get onboardingCommitmentQuestion => '얼마나 많은 시간을\n투자할 수 있나요?';
   String get onboardingMotivationTitle => '동기부여';
   String get onboardingMotivationSubtitle => '해당되는 항목을 모두 선택하세요.';
-  String get onboardingProficiencyQuestion => '현재 실력은
-어느 정도인가요?';
-  String get onboardingStepCount(int step, int total) => '단계 $step/$total';
+  String get onboardingProficiencyQuestion => '현재 실력은\n어느 정도인가요?';
+  String onboardingStepCount(int step, int total) => '단계 $step/$total';
 
   @override
   String get onboardingJapanese => '일본어';
