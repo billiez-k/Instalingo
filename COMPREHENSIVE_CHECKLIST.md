@@ -210,6 +210,8 @@
 
 ## 7. LOCALIZATION (L10N)
 
+### 7.A UI Strings (AppLocalizations)
+
 | # | Item | Status | Notes |
 |---|------|--------|-------|
 | 7.1 | English (en) — 301 strings | ✅ | Complete |
@@ -219,10 +221,44 @@
 | 7.5 | Japanese (ja) — 301 strings | ✅ | |
 | 7.6 | Korean (ko) — 301 strings | ✅ | |
 | 7.7 | Malay (ms) — 301 strings | ✅ | |
-| 7.8 | All `@override` annotations present | ✅ | Fixed 2026-06-09 (49 missing → all added) |
-| 7.9 | Onboarding hardcoded strings | 🔶 | ~20 strings in Dart source (proficiency descriptions, goal options, motivation reasons, commitment durations) — not using AppLocalizations |
-| 7.10 | `onboarding_exam*` identifiers | 🔶 | Use snake_case — should be camelCase per Dart conventions (info-level, not blocking) |
-| 7.11 | `profile_*` identifiers | 🔶 | Use snake_case — should be camelCase (info-level, not blocking) |
+| 7.8 | All `@override` annotations present | ✅ | Fixed 2026-06-09 |
+| 7.9 | Onboarding hardcoded strings | 🔶 | ~20 strings in Dart source — not using AppLocalizations |
+| 7.10 | `onboarding_exam*` identifiers (snake_case) | 🔶 | Info-level only, not blocking |
+| 7.11 | `profile_*` identifiers (snake_case) | 🔶 | Info-level only, not blocking |
+
+### 7.B Card Content Translations (8,054 cards)
+
+| # | Language Pair | Meanings | Example Translations | Notes |
+|---|--------------|:---:|:---:|-------|
+| 7.12 | en → learn Japanese | ✅ 8,054/8,054 | ✅ 8,054/8,054 | Complete |
+| 7.13 | zh_TW → learn Japanese | ✅ 8,054/8,054 | ❌ 0/8,054 | Meanings complete, examples are English fallback |
+| 7.14 | zh_CN → learn Japanese | ❌ English fallback | ❌ English fallback | **No data exists** |
+| 7.15 | ja → learn Japanese | ❌ English fallback | N/A | Should show monolingual Japanese definitions |
+| 7.16 | ko → learn Japanese | ❌ English fallback | ❌ English fallback | **No data exists** |
+| 7.17 | ms → learn Japanese | ❌ English fallback | ❌ English fallback | **No data exists** |
+| 7.18 | ar → learn Japanese | ❌ English fallback | ❌ English fallback | **No data exists** |
+| 7.19 | Card data format | 🔶 | 🔶 | All cards use old flat format (`meaning`/`meaning_zh` strings), not new `meanings`/`exampleTranslations` maps |
+| 7.20 | Card data migration script | ⬜ | ⬜ | See `LOCALIZATION_PRODUCTION_PLAN.md` §3.1 |
+
+### 7.C Chill Corner Content Translations
+
+| # | Item | Status | Notes |
+|---|------|--------|-------|
+| 7.21 | Posts — en content | ✅ | All 25 posts have English |
+| 7.22 | Posts — zh_TW content | ❌ | **Data EXISTS** in JSON (`content_zh` on all 25 posts) but model reads `content` (en) only — BUG |
+| 7.23 | Posts — zh_CN, ko, ms, ar content | ❌ | No data exists |
+| 7.24 | Post model locale support | ❌ | `ChillPost` has no `contentFor(locale)` method |
+| 7.25 | Characters — bios/personalities localized | ❌ | Model + data both English-only |
+| 7.26 | Character model locale support | ❌ | `ChillCharacter` has no locale support |
+| 7.27 | Demo fallback data | ❌ | `_generateDemoPosts()` + `_generateDemoCharacters()` are English-only |
+
+### 7.D Share & Other
+
+| # | Item | Status | Notes |
+|---|------|--------|-------|
+| 7.28 | ShareService uses locale-aware meaning | ❌ | Uses `card.meaning` (English) instead of `card.meaningFor(locale)` |
+
+**Full strategy**: See `LOCALIZATION_PRODUCTION_PLAN.md`
 
 ---
 
