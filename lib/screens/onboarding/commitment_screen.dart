@@ -112,7 +112,6 @@ class _CommitmentTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
 
     return Semantics(label: option.label, button: true, child: GestureDetector(

@@ -337,12 +337,19 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => 'MULAKAN';
+  @override
   String get onboardingContinue => 'Teruskan';
+  @override
   String get onboardingGoalQuestion => 'Apakah matlamat anda?';
+  @override
   String get onboardingCommitmentQuestion => 'Berapa banyak masa\nyang boleh anda luangkan?';
+  @override
   String get onboardingMotivationTitle => 'Motivasi';
+  @override
   String get onboardingMotivationSubtitle => 'Pilih semua yang berkenaan.';
+  @override
   String get onboardingProficiencyQuestion => 'Apakah tahap\nanda sekarang?';
+  @override
   String onboardingStepCount(int step, int total) => 'LANGKAH $step/$total';
 
   @override

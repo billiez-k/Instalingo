@@ -104,7 +104,6 @@ class _MotivationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
     return Semantics(label: option.label, button: true, child: GestureDetector(
       onTap: onTap,

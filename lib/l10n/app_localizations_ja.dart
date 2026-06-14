@@ -337,12 +337,19 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => 'さあ始めましょう';
+  @override
   String get onboardingContinue => '続ける';
+  @override
   String get onboardingGoalQuestion => '目標は何ですか？';
+  @override
   String get onboardingCommitmentQuestion => 'どのくらいの時間\nコミットできますか？';
+  @override
   String get onboardingMotivationTitle => 'モチベーション';
+  @override
   String get onboardingMotivationSubtitle => '該当するものを全て選択してください。';
+  @override
   String get onboardingProficiencyQuestion => '現在のレベルは\nどのくらいですか？';
+  @override
   String onboardingStepCount(int step, int total) => 'ステップ $step/$total';
 
   @override

@@ -337,12 +337,19 @@ class AppLocalizationsZhCn extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => '开始使用';
+  @override
   String get onboardingContinue => '继续';
+  @override
   String get onboardingGoalQuestion => '你的目标是什么？';
+  @override
   String get onboardingCommitmentQuestion => '你可以投入\n多少时间？';
+  @override
   String get onboardingMotivationTitle => '学习动机';
+  @override
   String get onboardingMotivationSubtitle => '请选择所有适用的选项。';
+  @override
   String get onboardingProficiencyQuestion => '你目前的水平\n如何？';
+  @override
   String onboardingStepCount(int step, int total) => '步骤 $step/$total';
 
   @override

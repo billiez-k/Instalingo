@@ -338,18 +338,25 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get onboardingGetStarted => 'GET STARTED';
 
+  @override
   String get onboardingContinue => 'Continue';
 
+  @override
   String get onboardingGoalQuestion => "What's your goal?";
 
+  @override
   String get onboardingCommitmentQuestion => 'How much time\ncan you commit?';
 
+  @override
   String get onboardingMotivationTitle => 'Motivation';
 
+  @override
   String get onboardingMotivationSubtitle => 'Select all that apply.';
 
+  @override
   String get onboardingProficiencyQuestion => 'What is your\ncurrent level?';
 
+  @override
   String onboardingStepCount(int step, int total) => 'STEP $step/$total';
 
   @override

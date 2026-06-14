@@ -337,12 +337,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get onboardingGetStarted => 'ابدأ';
+  @override
   String get onboardingContinue => 'متابعة';
+  @override
   String get onboardingGoalQuestion => 'ما هو هدفك؟';
+  @override
   String get onboardingCommitmentQuestion => 'كم من الوقت\nيمكنك الالتزام به؟';
+  @override
   String get onboardingMotivationTitle => 'الدافع';
+  @override
   String get onboardingMotivationSubtitle => 'اختر كل ما ينطبق.';
+  @override
   String get onboardingProficiencyQuestion => 'ما هو مستواك\nالحالي؟';
+  @override
   String onboardingStepCount(int step, int total) => 'الخطوة $step/$total';
 
   @override

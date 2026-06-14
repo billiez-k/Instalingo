@@ -415,7 +415,6 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                       IconButton(
                         onPressed: () {
                           if (_commentController.text.trim().isNotEmpty) {
-                            final text = _commentController.text.trim();
                             _commentController.clear();
                             _commentFocusNode.unfocus();
                             ScaffoldMessenger.of(context).showSnackBar(
