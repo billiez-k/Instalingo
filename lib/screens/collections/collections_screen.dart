@@ -195,7 +195,7 @@ class _CollectionsScreenState extends ConsumerState<CollectionsScreen> {
                                 PhosphorIcon(PhosphorIcons.warning(PhosphorIconsStyle.fill),
                                     size: 40.sp, color: appTheme.onSurfaceVariant),
                                 SizedBox(height: 12.h),
-                                Text(l10n.collectionsLoadError ?? 'Failed to load collection',
+                                Text(l10n.errorGenericMessage,
                                     style: TextStyle(color: appTheme.onSurfaceVariant)),
                               ],
                             ),

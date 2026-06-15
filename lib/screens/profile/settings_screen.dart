@@ -254,8 +254,7 @@ class SettingsScreen extends ConsumerWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
-            child: Text(
-              l10n.retryCancel ?? 'Cancel',
+            child: Text(l10n.cancel,
               style: TextStyle(color: appTheme.harborInkOnNavyMuted),
             ),
           ),
