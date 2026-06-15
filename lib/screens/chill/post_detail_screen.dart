@@ -422,13 +422,9 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                         onPressed: () {
                           final text = _commentController.text.trim();
                           if (text.isNotEmpty) {
-                            final comment = PostComment(
-                              id: 'user_${DateTime.now().millisecondsSinceEpoch}',
+                            final comment = ChillComment(
                               authorName: 'You',
-                              authorAvatar: null,
-                              body: text,
-                              createdAt: DateTime.now(),
-                              likes: 0,
+                              content: text,
                             );
                             ref.read(commentStoreProvider.notifier).addComment(widget.post.id, comment);
                             _commentController.clear();

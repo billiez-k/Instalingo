@@ -5,11 +5,11 @@ import 'package:instalingo/providers/settings_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Persists user comments per post to SharedPreferences.
-final commentStoreProvider = StateNotifierProvider<CommentStoreNotifier, Map<String, List<PostComment>>>((ref) {
+final commentStoreProvider = StateNotifierProvider<CommentStoreNotifier, Map<String, List<ChillComment>>>((ref) {
   return CommentStoreNotifier(ref);
 });
 
-class CommentStoreNotifier extends StateNotifier<Map<String, List<PostComment>>> {
+class CommentStoreNotifier extends StateNotifier<Map<String, List<ChillComment>>> {
   final Ref _ref;
   CommentStoreNotifier(this._ref) : super({}) { _load(); }
 
@@ -21,7 +21,7 @@ class CommentStoreNotifier extends StateNotifier<Map<String, List<PostComment>>>
         final decoded = jsonDecode(raw) as Map<String, dynamic>;
         state = decoded.map((k, v) => MapEntry(
               k,
-              (v as List).map((c) => PostComment.fromJson(c as Map<String, dynamic>)).toList(),
+              (v as List).map((c) => ChillComment.fromJson(c as Map<String, dynamic>)).toList(),
             ));
       } catch (_) {}
     }
@@ -33,12 +33,12 @@ class CommentStoreNotifier extends StateNotifier<Map<String, List<PostComment>>>
     await prefs.setString('user_comments', jsonEncode(encoded));
   }
 
-  void addComment(String postId, PostComment comment) {
-    final updated = Map<String, List<PostComment>>.from(state);
+  void addComment(String postId, ChillComment comment) {
+    final updated = Map<String, List<ChillComment>>.from(state);
     updated[postId] = [...(updated[postId] ?? []), comment];
     state = updated;
     _save();
   }
 
-  List<PostComment> forPost(String postId) => state[postId] ?? [];
+  List<ChillComment> forPost(String postId) => state[postId] ?? [];
 }
