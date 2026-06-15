@@ -67,7 +67,7 @@ class ChillPostLoader {
   static List<ChillPost> _generateDemoPosts() {
     final now = DateTime.now();
     return [
-      ChillPost(
+      ChillPost.fromEnglishContent(
         id: 'chill_1',
         authorName: 'Maya',
         authorHandle: '@cafe_maya',
@@ -85,7 +85,7 @@ class ChillPostLoader {
         ],
         createdAt: now.subtract(const Duration(hours: 2)),
       ),
-      ChillPost(
+      ChillPost.fromEnglishContent(
         id: 'chill_2',
         authorName: 'Kenji',
         authorHandle: '@kenji_study',
@@ -96,7 +96,7 @@ class ChillPostLoader {
         comments: [],
         createdAt: now.subtract(const Duration(hours: 6)),
       ),
-      ChillPost(
+      ChillPost.fromEnglishContent(
         id: 'chill_3',
         authorName: 'Yuna',
         authorHandle: '@yuna_tokyo',
@@ -118,7 +118,7 @@ class ChillPostLoader {
         ],
         createdAt: now.subtract(const Duration(hours: 10)),
       ),
-      ChillPost(
+      ChillPost.fromEnglishContent(
         id: 'chill_4',
         authorName: 'Takeshi',
         authorHandle: '@takeshi_learns',
@@ -135,7 +135,7 @@ class ChillPostLoader {
         ],
         createdAt: now.subtract(const Duration(days: 1)),
       ),
-      ChillPost(
+      ChillPost.fromEnglishContent(
         id: 'chill_5',
         authorName: 'Hana',
         authorHandle: '@hana_osaka',

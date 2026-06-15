@@ -330,7 +330,7 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
 
             // Content
             Text(
-              post.content,
+              post.contentFor(Localizations.localeOf(context).toString()),
               style: TextStyle(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w400,

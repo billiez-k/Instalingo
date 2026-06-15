@@ -217,7 +217,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
 
                       // Content
                       Text(
-                        post.content,
+                        post.contentFor(Localizations.localeOf(context).toString()),
                         style: theme.textTheme.bodyLarge?.copyWith(
                           color: appTheme.harborNavy,
                           height: 1.6,
@@ -348,8 +348,9 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                             label: l10n.shareLabel,
                             color: appTheme.onSurfaceVariant,
                             onTap: () {
+                              final localeCode = Localizations.localeOf(context).toString();
                               final text = [
-                                post.content,
+                                post.contentFor(localeCode),
                                 if (post.targetWord != null)
                                   '${l10n.shareWordPrefix}: ${post.targetWord}',
                                 '',

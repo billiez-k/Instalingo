@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
@@ -425,7 +426,15 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                     SizedBox(width: 16.w),
                     _act(PhosphorIcons.chatCircle(PhosphorIconsStyle.bold), Colors.white, _flipCard, l10n.swipeFlipLabel),
                     SizedBox(width: 16.w),
-                    _act(PhosphorIcons.share(PhosphorIconsStyle.bold), Colors.white, () {}, l10n.swipeShareLabel),
+                    _act(PhosphorIcons.share(PhosphorIconsStyle.bold), Colors.white,
+                        skipped ? null : () {
+                          final card = cards[index];
+                          final meaning = card.meaningFor(Localizations.localeOf(context).toString());
+                          Share.share(
+                            '${card.word} (${card.reading})\n$meaning\n\n${l10n.viaInstalingo} https://instalingo.app',
+                            subject: '${card.word} - ${l10n.shareAppSubject}',
+                          );
+                        }, l10n.swipeShareLabel),
                     const Spacer(),
                     _act(saved ? PhosphorIcons.bookmark(PhosphorIconsStyle.fill) : PhosphorIcons.bookmark(PhosphorIconsStyle.bold),
                         saved ? BusanHarborTokens.orange : Colors.white, () => skipped ? null : _saveCard(index), l10n.swipeSaveLabel),

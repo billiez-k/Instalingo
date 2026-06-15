@@ -261,7 +261,7 @@ class _DailyCompleteScreenState extends ConsumerState<DailyCompleteScreen>
                           HapticFeedback.mediumImpact();
                           final l10n = AppLocalizations.of(context);
                           Share.share(
-                            '🎯 ${l10n.dailyCompleteTitle}! '
+                            '${l10n.dailyCompleteTitle}! '
                             '${l10n.dailyCompleteCardsSwiped}: ${widget.cardsSwiped} | '
                             '+${widget.xpEarned} XP | '
                             '+${widget.gemsEarned} ${l10n.dailyCompleteGemsLabel}\n\n'

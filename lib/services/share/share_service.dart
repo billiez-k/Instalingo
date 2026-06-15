@@ -7,10 +7,10 @@ class ShareService {
   ShareService();
 
   /// Share a vocabulary card to social media or messaging apps.
-  Future<void> shareCard(VocabCard card, AppLocalizations l10n) async {
+  Future<void> shareCard(VocabCard card, AppLocalizations l10n, String localeCode) async {
     final text = [
       '${card.word} (${card.reading})',
-      card.meaning,
+      card.meaningFor(localeCode),
       '',
       l10n.shareCardText,
       'https://instalingo.app',
