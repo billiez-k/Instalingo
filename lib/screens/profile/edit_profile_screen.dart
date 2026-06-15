@@ -146,7 +146,7 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
           _InfoCard(
             icon: PhosphorIcons.translate(),
             label: user.learningLanguage.toUpperCase(),
-            value: _langName(user.learningLanguage),
+            value: _langName(user.learningLanguage, l10n),
             onTap: () => _showLearningLanguagePicker(context, ref, user.learningLanguage, l10n),
           ),
           SizedBox(height: 20.h),
@@ -276,14 +276,13 @@ class _EditProfileScreenState extends ConsumerState<EditProfileScreen> {
     );
   }
 
-  static String _langName(String code) => switch (code) {
-    'en' => 'English',
-    'ja' => '日本語',
-    'ko' => '한국어',
-    'es' => 'Español',
-    'fr' => 'Français',
-    'de' => 'Deutsch',
-    'zh' => '中文',
+  static String _langName(String code, AppLocalizations l10n) => switch (code) {
+    'en' => l10n.langNameEn,
+    'ja' => l10n.langNameJa,
+    'ko' => l10n.langNameKo,
+    'ms' => l10n.langNameMs,
+    'ar' => l10n.langNameAr,
+    'zh' => l10n.langNameZhTw,
     _ => code.toUpperCase(),
   };
 

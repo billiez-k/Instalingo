@@ -22,11 +22,11 @@ class _ProficiencyScreenState extends ConsumerState<ProficiencyScreen> {
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context);
     final levels = [
-      _LevelOption(code: 'N5', name: l10n.onboarding_examLevelBeginner, desc: 'I know a few words'),
-      _LevelOption(code: 'N4', name: l10n.profile_elementary, desc: 'I can form simple sentences'),
-      _LevelOption(code: 'N3', name: l10n.onboarding_examLevelIntermediate, desc: 'I can hold a conversation'),
-      _LevelOption(code: 'N2', name: l10n.profile_upperIntermediate, desc: 'I can discuss various topics'),
-      _LevelOption(code: 'N1', name: l10n.onboarding_examLevelAdvanced, desc: 'I speak fluently'),
+      _LevelOption(code: 'N5', name: l10n.onboarding_examLevelBeginner, desc: l10n.onboardingProficiencyBeginnerDesc),
+      _LevelOption(code: 'N4', name: l10n.profile_elementary, desc: l10n.onboardingProficiencyElementaryDesc),
+      _LevelOption(code: 'N3', name: l10n.onboarding_examLevelIntermediate, desc: l10n.onboardingProficiencyIntermediateDesc),
+      _LevelOption(code: 'N2', name: l10n.profile_upperIntermediate, desc: l10n.onboardingProficiencyUpperIntermediateDesc),
+      _LevelOption(code: 'N1', name: l10n.onboarding_examLevelAdvanced, desc: l10n.onboardingProficiencyAdvancedDesc),
     ];
 
     return Scaffold(
@@ -47,7 +47,7 @@ class _ProficiencyScreenState extends ConsumerState<ProficiencyScreen> {
               SizedBox(height: 10.h),
               Container(width: 24.w, height: 3, color: AppColors.primary),
               SizedBox(height: 14.h),
-              Text("We'll start you at the right difficulty.", style: theme.textTheme.bodyLarge?.copyWith(color: context.appTheme.onSurfaceVariant)),
+              Text(l10n.onboardingProficiencyStartMessage, style: theme.textTheme.bodyLarge?.copyWith(color: context.appTheme.onSurfaceVariant)),
               SizedBox(height: 32.h),
               Expanded(
                 child: ListView.builder(

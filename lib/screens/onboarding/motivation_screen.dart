@@ -22,14 +22,14 @@ class _MotivationScreenState extends ConsumerState<MotivationScreen> {
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context);
     final options = [
-      _MotivationOption(id: 'work', label: 'Career', icon: PhosphorIcons.briefcase()),
-      _MotivationOption(id: 'travel', label: 'Travel', icon: PhosphorIcons.airplaneTilt()),
-      _MotivationOption(id: 'study', label: 'Study Abroad', icon: PhosphorIcons.student()),
-      _MotivationOption(id: 'culture', label: 'Culture', icon: PhosphorIcons.globe()),
-      _MotivationOption(id: 'family', label: 'Family', icon: PhosphorIcons.users()),
-      _MotivationOption(id: 'fun', label: 'Just for Fun', icon: PhosphorIcons.gameController()),
-      _MotivationOption(id: 'brain', label: 'Brain Training', icon: PhosphorIcons.brain()),
-      _MotivationOption(id: 'media', label: 'Movies & Shows', icon: PhosphorIcons.filmStrip()),
+      _MotivationOption(id: 'work', label: l10n.onboardingMotivationCareer, icon: PhosphorIcons.briefcase()),
+      _MotivationOption(id: 'travel', label: l10n.onboardingMotivationTravel, icon: PhosphorIcons.airplaneTilt()),
+      _MotivationOption(id: 'study', label: l10n.onboardingMotivationStudyAbroad, icon: PhosphorIcons.student()),
+      _MotivationOption(id: 'culture', label: l10n.onboardingMotivationCulture, icon: PhosphorIcons.globe()),
+      _MotivationOption(id: 'family', label: l10n.onboardingMotivationFamily, icon: PhosphorIcons.users()),
+      _MotivationOption(id: 'fun', label: l10n.onboardingMotivationFun, icon: PhosphorIcons.gameController()),
+      _MotivationOption(id: 'brain', label: l10n.onboardingMotivationBrain, icon: PhosphorIcons.brain()),
+      _MotivationOption(id: 'media', label: l10n.onboardingMotivationMedia, icon: PhosphorIcons.filmStrip()),
     ];
 
     return Scaffold(

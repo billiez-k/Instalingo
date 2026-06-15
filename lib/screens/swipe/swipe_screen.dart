@@ -355,7 +355,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
       child: Semantics(
         label: card.word,
         button: true,
-        hint: 'Tap to flip, double tap to save',
+        hint: l10n.swipeFlipHint,
         child: Container(
         color: Colors.black,
         child: SafeArea(

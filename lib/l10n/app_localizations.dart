@@ -64,7 +64,7 @@ abstract class AppLocalizations {
 
   String get collectionsNoSavedWords;
 
-  String get collectionsPosTopicFormat;
+  String collectionsPosTopicFormat(String pos, String topic);
 
   String get collectionsSearchHint;
 
@@ -495,6 +495,42 @@ abstract class AppLocalizations {
 
   String get shareAppText;
 
+  String get onboardingJlptN5Desc;
+  String get onboardingJlptN4Desc;
+  String get onboardingJlptN3Desc;
+  String get onboardingJlptN2Desc;
+  String get onboardingJlptN1Desc;
+  String onboardingJlptLevel(String level);
+  String get onboardingProficiencyBeginnerDesc;
+  String get onboardingProficiencyElementaryDesc;
+  String get onboardingProficiencyIntermediateDesc;
+  String get onboardingProficiencyUpperIntermediateDesc;
+  String get onboardingProficiencyAdvancedDesc;
+  String get onboardingProficiencyStartMessage;
+  String get onboardingGoalHint;
+  String get onboardingGoalExamTitle;
+  String get onboardingGoalExamSubtitle;
+  String get onboardingGoalFunTitle;
+  String get onboardingGoalFunSubtitle;
+  String get onboardingMotivationCareer;
+  String get onboardingMotivationTravel;
+  String get onboardingMotivationStudyAbroad;
+  String get onboardingMotivationCulture;
+  String get onboardingMotivationFamily;
+  String get onboardingMotivationFun;
+  String get onboardingMotivationBrain;
+  String get onboardingMotivationMedia;
+  String get onboardingCommitmentCasual;
+  String get onboardingCommitmentCasualDesc;
+  String get onboardingCommitmentRegular;
+  String get onboardingCommitmentRegularDesc;
+  String get onboardingCommitmentSerious;
+  String get onboardingCommitmentSeriousDesc;
+  String get onboardingCommitmentIntense;
+  String get onboardingCommitmentIntenseDesc;
+  String get onboardingCommitmentHint;
+  String get swipeFlipHint;
+  String get closeLabel;
   String get shareCardSubject;
 
   String get shareCardText;

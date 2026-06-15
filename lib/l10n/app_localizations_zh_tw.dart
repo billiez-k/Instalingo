@@ -82,7 +82,7 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get collectionsNoSavedWords => '尚無已儲存的單字';
 
   @override
-  String get collectionsPosTopicFormat => '{pos} . {topic}';
+  String collectionsPosTopicFormat(String pos, String topic) => '{pos} . {topic}';
 
   @override
   String get collectionsSearchHint => '搜尋已儲存的單字...';
@@ -720,6 +720,43 @@ class AppLocalizationsZhTw extends AppLocalizations {
 
   @override
   String get shareAppText => '使用 InstaLingo 學習日文！\n\n滑動螢幕，輕鬆學習，享受樂趣。\n\nhttps://instalingo.app';
+  // ⚠️ PLACEHOLDER — needs translation (Google Cloud Translate API)
+  String get onboardingJlptN5Desc => '~800 words • Total beginner';
+  String get onboardingJlptN4Desc => '~1,500 words • Upper beginner';
+  String get onboardingJlptN3Desc => '~3,700 words • Intermediate';
+  String get onboardingJlptN2Desc => '~6,000 words • Upper intermediate';
+  String get onboardingJlptN1Desc => '~10,000 words • Advanced';
+  String onboardingJlptLevel(String level) => 'JLPT $level';
+  String get onboardingProficiencyBeginnerDesc => 'I know a few words.';
+  String get onboardingProficiencyElementaryDesc => 'I can form simple sentences.';
+  String get onboardingProficiencyIntermediateDesc => 'I can hold a conversation.';
+  String get onboardingProficiencyUpperIntermediateDesc => 'I can discuss various topics.';
+  String get onboardingProficiencyAdvancedDesc => 'I speak fluently.';
+  String get onboardingProficiencyStartMessage => "We'll start you at the right difficulty.";
+  String get onboardingGoalHint => 'This helps us tailor your learning experience.';
+  String get onboardingGoalExamTitle => 'Prepare for an exam';
+  String get onboardingGoalExamSubtitle => 'Structured lessons, mock tests, timed practice.';
+  String get onboardingGoalFunTitle => 'Just for fun';
+  String get onboardingGoalFunSubtitle => 'Learn at your own pace. No tests, no pressure.';
+  String get onboardingMotivationCareer => 'Career';
+  String get onboardingMotivationTravel => 'Travel';
+  String get onboardingMotivationStudyAbroad => 'Study Abroad';
+  String get onboardingMotivationCulture => 'Culture';
+  String get onboardingMotivationFamily => 'Family';
+  String get onboardingMotivationFun => 'Just for Fun';
+  String get onboardingMotivationBrain => 'Brain Training';
+  String get onboardingMotivationMedia => 'Movies & Shows';
+  String get onboardingCommitmentCasual => 'Casual';
+  String get onboardingCommitmentCasualDesc => '5 min / day';
+  String get onboardingCommitmentRegular => 'Regular';
+  String get onboardingCommitmentRegularDesc => '10 min / day';
+  String get onboardingCommitmentSerious => 'Serious';
+  String get onboardingCommitmentSeriousDesc => '15 min / day';
+  String get onboardingCommitmentIntense => 'Intense';
+  String get onboardingCommitmentIntenseDesc => '20 min / day';
+  String get onboardingCommitmentHint => 'You can always change this later in settings.';
+  String get swipeFlipHint => 'Tap to flip, double tap to save';
+  String get closeLabel => 'Close';
 
   @override
   String get shareCardSubject => '{word} - 透過 InstaLingo 學習';

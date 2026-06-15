@@ -44,10 +44,10 @@ class _CommitmentScreenState extends ConsumerState<CommitmentScreen> {
     final theme = Theme.of(context);
     final l10n = AppLocalizations.of(context);
     final options = [
-      _CommitmentOption(minutes: 5, label: 'Casual', desc: '5 min / day'),
-      _CommitmentOption(minutes: 10, label: 'Regular', desc: '10 min / day'),
-      _CommitmentOption(minutes: 15, label: 'Serious', desc: '15 min / day'),
-      _CommitmentOption(minutes: 20, label: 'Intense', desc: '20 min / day'),
+      _CommitmentOption(minutes: 5, label: l10n.onboardingCommitmentCasual, desc: l10n.onboardingCommitmentCasualDesc),
+      _CommitmentOption(minutes: 10, label: l10n.onboardingCommitmentRegular, desc: l10n.onboardingCommitmentRegularDesc),
+      _CommitmentOption(minutes: 15, label: l10n.onboardingCommitmentSerious, desc: l10n.onboardingCommitmentSeriousDesc),
+      _CommitmentOption(minutes: 20, label: l10n.onboardingCommitmentIntense, desc: l10n.onboardingCommitmentIntenseDesc),
     ];
 
     return Scaffold(
@@ -65,7 +65,7 @@ class _CommitmentScreenState extends ConsumerState<CommitmentScreen> {
               SizedBox(height: 10.h),
               Container(width: 24.w, height: 3, color: AppColors.primary),
               SizedBox(height: 14.h),
-              Text('You can always change this later in settings.', style: theme.textTheme.bodyLarge?.copyWith(color: context.appTheme.onSurfaceVariant)),
+              Text(l10n.onboardingCommitmentHint, style: theme.textTheme.bodyLarge?.copyWith(color: context.appTheme.onSurfaceVariant)),
               SizedBox(height: 32.h),
               Expanded(
                 child: ListView.builder(
