@@ -376,7 +376,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
 
                       // Comments (built-in + user-submitted)
                       ...(() {
-                        final stored = ref.watch(commentStoreProvider)[widget.post.id] ?? [];
+                        final stored = ref.watch(commentStoreProvider)[widget.postId] ?? [];
                         final all = [...post.comments, ...stored];
                         return all.map(
                           (comment) => _CommentItem(
@@ -426,7 +426,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                               authorName: 'You',
                               content: text,
                             );
-                            ref.read(commentStoreProvider.notifier).addComment(widget.post.id, comment);
+                            ref.read(commentStoreProvider.notifier).addComment(widget.postId, comment);
                             _commentController.clear();
                             _commentFocusNode.unfocus();
                             ScaffoldMessenger.of(context).showSnackBar(

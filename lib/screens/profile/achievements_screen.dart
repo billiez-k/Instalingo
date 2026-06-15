@@ -144,7 +144,7 @@ class AchievementsScreen extends ConsumerWidget {
   }
 }
 
-class _AchievementCard extends StatelessWidget {
+class _AchievementCard extends ConsumerWidget {
   final Achievement achievement;
   const _AchievementCard({required this.achievement});
 

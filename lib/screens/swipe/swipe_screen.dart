@@ -428,7 +428,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                     SizedBox(width: 16.w),
                     _act(PhosphorIcons.share(PhosphorIconsStyle.bold), Colors.white,
                         skipped ? null : () {
-                          final card = cards[index];
+                          final card = _cards[index];
                           final meaning = card.meaningFor(Localizations.localeOf(context).toString());
                           Share.share(
                             '${card.word} (${card.reading})\n$meaning\n\n${l10n.viaInstalingo} https://instalingo.app',
