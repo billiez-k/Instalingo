@@ -38,12 +38,16 @@ class _CollectionsScreenState extends ConsumerState<CollectionsScreen> {
     final isPro = ref.watch(isProProvider);
     final deckAsync = ref.watch(currentDeckProvider);
 
-    final savedCards = deckAsync.whenOrNull<List<VocabCard>>(
+    final savedCards = deckAsync.when<List<VocabCard>>(
           data: (deck) => deck.cards
               .where((c) => user.savedWords.contains(c.id))
               .toList(),
-        ) ??
-        [];
+          loading: () => const [],
+          error: (_, __) => const [],
+        );
+
+    final isDeckLoading = deckAsync.isLoading;
+    final hasDeckError = deckAsync.hasError;
 
     // Filter
     var filtered = savedCards;
@@ -181,7 +185,22 @@ class _CollectionsScreenState extends ConsumerState<CollectionsScreen> {
           // Card grid
           Expanded(
             child: filtered.isEmpty
-                ? _buildEmpty(appTheme, l10n, savedCards.isEmpty)
+                ? isDeckLoading
+                    ? const Center(child: CircularProgressIndicator(strokeWidth: 2))
+                    : hasDeckError
+                        ? Center(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                PhosphorIcon(PhosphorIcons.warning(PhosphorIconsStyle.fill),
+                                    size: 40.sp, color: appTheme.onSurfaceVariant),
+                                SizedBox(height: 12.h),
+                                Text(l10n.collectionsLoadError ?? 'Failed to load collection',
+                                    style: TextStyle(color: appTheme.onSurfaceVariant)),
+                              ],
+                            ),
+                          )
+                        : _buildEmpty(appTheme, l10n, savedCards.isEmpty)
                 : GridView.builder(
                     padding: EdgeInsets.all(16.w),
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

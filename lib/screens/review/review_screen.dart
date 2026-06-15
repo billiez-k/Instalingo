@@ -179,7 +179,7 @@ class _ReviewCardListState extends ConsumerState<_ReviewCardList> {
     }
 
     final srsItem = widget.dueCards[_currentIndex];
-    final cardAsync = ref.watch(cardByIdProvider(srsItem.cardId));
+    final cardAsync = ref.watch(cardByIdGlobalProvider(srsItem.cardId));
 
     return Column(
       children: [
@@ -228,8 +228,21 @@ class _ReviewCardListState extends ConsumerState<_ReviewCardList> {
         // Card
         Expanded(
           child: cardAsync.when(
-            loading: () => const SizedBox.shrink(),
-            error: (_, __) => const SizedBox.shrink(),
+            loading: () => const Center(
+              child: CircularProgressIndicator(strokeWidth: 2),
+            ),
+            error: (_, __) => Center(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  PhosphorIcon(PhosphorIcons.warning(PhosphorIconsStyle.fill),
+                      size: 32.sp, color: widget.appTheme.onSurfaceVariant),
+                  SizedBox(height: 12.h),
+                  Text(l10n.cardNotFound,
+                      style: TextStyle(color: widget.appTheme.onSurfaceVariant)),
+                ],
+              ),
+            ),
             data: (card) {
               if (card == null) {
                 return Center(

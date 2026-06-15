@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import 'package:instalingo/data/chill_post_loader.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/chill_post.dart';
+import 'package:instalingo/services/like_store.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:instalingo/widgets/post_image.dart';
 import 'package:intl/intl.dart';
@@ -169,20 +170,21 @@ class ChillFeedScreen extends ConsumerWidget {
   }
 }
 
-class _PostCard extends StatefulWidget {
+class _PostCard extends ConsumerStatefulWidget {
   final ChillPost post;
   final AppThemeExtension appTheme;
 
   const _PostCard({required this.post, required this.appTheme});
 
   @override
-  State<_PostCard> createState() => _PostCardState();
+  ConsumerState<_PostCard> createState() => _PostCardState();
 }
 
-class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
-  bool _isLiked = false;
+class _PostCardState extends ConsumerState<_PostCard> with TickerProviderStateMixin {
   int _likeCount = 0;
   late AnimationController _heartAnimController;
+
+  bool get _isLiked => ref.watch(likeStoreProvider).contains(widget.post.id);
 
   @override
   void initState() {
@@ -202,9 +204,10 @@ class _PostCardState extends State<_PostCard> with TickerProviderStateMixin {
 
   void _toggleLike() {
     HapticFeedback.mediumImpact();
+    final isCurrentlyLiked = _isLiked;
+    ref.read(likeStoreProvider.notifier).toggle(widget.post.id);
     setState(() {
-      _isLiked = !_isLiked;
-      _likeCount += _isLiked ? 1 : -1;
+      _likeCount += isCurrentlyLiked ? -1 : 1;
     });
   }
 
