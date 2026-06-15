@@ -4,9 +4,9 @@
     "author_name": "Sakura-chan",
     "author_handle": "sakura_study",
     "author_avatar_url": "assets/images/avatars/sakura-chan.png",
-    "content_en": "Finally mastered ああ (ああ) today! It means \"ah!; oh!; alas!\". Been seeing it everywhere in my textbook. Small wins! 🎉",
-    "content_zh": "今天終於掌握了ああ（ああ）！意思是「啊！哦！唉！」。在課本裡到處都看得到這個字。小小的勝利！",
-    "content": "Finally mastered ああ (ああ) today! It means \"ah!; oh!; alas!\". Been seeing it everywhere in my textbook. Small wins! 🎉",
+    "content_en": "ああ\nJLPT N5\n\n\n例: 彼 は ああ 強情だ と は 思う\n→ I never thought he was all that stubborn.",
+    "content_zh": "ああ\nJLPT N5\n\n\n例: 彼 は ああ 強情だ と は 思う\n→ I never thought he was all that stubborn.",
+    "content": "ああ\nJLPT N5\n\n\n例: 彼 は ああ 強情だ と は 思う\n→ I never thought he was all that stubborn.",
     "target_word": "ああ",
     "target_word_id": "ja_n5_0001",
     "tags": [
@@ -17,9 +17,12 @@
     "likes": 69,
     "comments": [
       {
-        "author_name": "Yuki",
-        "content": "Drawing this one helped me memorize it!",
-        "content_zh": "畫這個字幫助我記住了！"
+        "author_name": "Yamada-sensei",
+        "content": "Tip: Try using ああ in a full sentence today. Context helps memory."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-06-04T00:00:00Z",
@@ -30,9 +33,9 @@
     "author_name": "Kenji-san",
     "author_handle": "kenji_office",
     "author_avatar_url": "assets/images/avatars/kenji-san.png",
-    "content_en": "Kanji breakdown: 会う → pronounced あう. Meaning: to meet; to encounter; to see. Writing it out 10 times really helped it stick!",
-    "content_zh": "漢字拆解：會う → 讀作あう。意思：相遇；碰面；看見。寫了十遍之後真的記住了！",
-    "content": "Kanji breakdown: 会う → pronounced あう. Meaning: to meet; to encounter; to see. Writing it out 10 times really helped it stick!",
+    "content_en": "会う（あう）\nverb godan | JLPT N5\n\n\n例: 毎夕放課後 に 僕たち は 彼 家 の 裏庭 で 会う インディアン 戦争 ごっこ を 為る\n→ Every evening after school we met in his back garden and arranged Indian battles.",
+    "content_zh": "会う（あう）\nverb godan | JLPT N5\n\n\n例: 毎夕放課後 に 僕たち は 彼 家 の 裏庭 で 会う インディアン 戦争 ごっこ を 為る\n→ Every evening after school we met in his back garden and arranged Indian battles.",
+    "content": "会う（あう）\nverb godan | JLPT N5\n\n\n例: 毎夕放課後 に 僕たち は 彼 家 の 裏庭 で 会う インディアン 戦争 ごっこ を 為る\n→ Every evening after school we met in his back garden and arranged Indian battles.",
     "target_word": "会う",
     "target_word_id": "ja_n5_0002",
     "tags": [
@@ -43,9 +46,12 @@
     "likes": 152,
     "comments": [
       {
-        "author_name": "Mika-chan",
-        "content": "I learned this one too! Such a useful word.",
-        "content_zh": "我也學過這個字！真的很實用。"
+        "author_name": "Yamada-sensei",
+        "content": "Note: 会う is a verb godan. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-06-02T17:00:00Z",
@@ -56,9 +62,9 @@
     "author_name": "Yuki",
     "author_handle": "yuki_art",
     "author_avatar_url": "assets/images/avatars/yuki.png",
-    "content_en": "Just used 青 (あお) in a real conversation! The cashier understood me. This feeling is why I study Japanese.",
-    "content_zh": "剛剛在實際對話中用了青（あお）！店員聽懂了。這就是我學日文的動力。",
-    "content": "Just used 青 (あお) in a real conversation! The cashier understood me. This feeling is why I study Japanese.",
+    "content_en": "青（あお）\nprefix | JLPT N5\n\n\n例: 彼女 は 濃い 青 の スカーフ を 為る\n→ She wore a dark blue scarf.",
+    "content_zh": "青（あお）\nprefix | JLPT N5\n\n\n例: 彼女 は 濃い 青 の スカーフ を 為る\n→ She wore a dark blue scarf.",
+    "content": "青（あお）\nprefix | JLPT N5\n\n\n例: 彼女 は 濃い 青 の スカーフ を 為る\n→ She wore a dark blue scarf.",
     "target_word": "青",
     "target_word_id": "ja_n5_0003",
     "tags": [
@@ -67,7 +73,16 @@
       "creative"
     ],
     "likes": 126,
-    "comments": [],
+    "comments": [
+      {
+        "author_name": "Yamada-sensei",
+        "content": "Note: 青 is a prefix. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
+      }
+    ],
     "created_at": "2026-06-01T20:00:00Z",
     "image_url": "assets/images/cards/ja_n5_0003.png"
   },
@@ -76,9 +91,9 @@
     "author_name": "Yamada-sensei",
     "author_handle": "yamada_sensei",
     "author_avatar_url": "assets/images/avatars/yamada-sensei.png",
-    "content_en": "青い (あおい) = blue; azure; green. Added this one to my collection today. Anyone else collecting words by topic?",
-    "content_zh": "青い（あおい）= 藍色；天藍色；綠色。今天把這個字加進收藏了。有人也按照主題收集單字嗎？",
-    "content": "青い (あおい) = blue; azure; green. Added this one to my collection today. Anyone else collecting words by topic?",
+    "content_en": "青い（あおい）\nadj i | JLPT N5\n\n\n例: 例えば ね ちょうど今 青い 四角 の 紙 を 見る よ の様に だ\n→ Like, 'Hey, I just saw a blue paper square!'",
+    "content_zh": "青い（あおい）\nadj i | JLPT N5\n\n\n例: 例えば ね ちょうど今 青い 四角 の 紙 を 見る よ の様に だ\n→ Like, 'Hey, I just saw a blue paper square!'",
+    "content": "青い（あおい）\nadj i | JLPT N5\n\n\n例: 例えば ね ちょうど今 青い 四角 の 紙 を 見る よ の様に だ\n→ Like, 'Hey, I just saw a blue paper square!'",
     "target_word": "青い",
     "target_word_id": "ja_n5_0004",
     "tags": [
@@ -89,9 +104,12 @@
     "likes": 64,
     "comments": [
       {
-        "author_name": "Sakura-chan",
-        "content": "Beautiful word choice! Love the kanji on this one.",
-        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+        "author_name": "Yamada-sensei",
+        "content": "Note: 青い is a adj i. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-31T03:00:00Z",
@@ -102,9 +120,9 @@
     "author_name": "Hiro-kun",
     "author_handle": "hiro_travels",
     "author_avatar_url": "assets/images/avatars/hiro-kun.png",
-    "content_en": "Teaching tip: 赤 (あか). Instead of just memorizing \"red; crimson; scarlet\", try using it in 3 original sentences. Context is everything!",
-    "content_zh": "教學小技巧：赤（あか）。不要只背「紅色；深紅色；猩紅色」，試著用這個字造三個原創句子。情境最重要！",
-    "content": "Teaching tip: 赤 (あか). Instead of just memorizing \"red; crimson; scarlet\", try using it in 3 original sentences. Context is everything!",
+    "content_en": "赤（あか）\nJLPT N5\n\n\n例: 赤 鉛筆 を 忘れる 子供 には きちんと 借りる に 来る\n→ I made sure that children who'd forgotten their red pencil came to borrow one.",
+    "content_zh": "赤（あか）\nJLPT N5\n\n\n例: 赤 鉛筆 を 忘れる 子供 には きちんと 借りる に 来る\n→ I made sure that children who'd forgotten their red pencil came to borrow one.",
+    "content": "赤（あか）\nJLPT N5\n\n\n例: 赤 鉛筆 を 忘れる 子供 には きちんと 借りる に 来る\n→ I made sure that children who'd forgotten their red pencil came to borrow one.",
     "target_word": "赤",
     "target_word_id": "ja_n5_0005",
     "tags": [
@@ -113,7 +131,16 @@
       "adventurous"
     ],
     "likes": 291,
-    "comments": [],
+    "comments": [
+      {
+        "author_name": "Yamada-sensei",
+        "content": "Tip: Try using 赤 in a full sentence today. Context helps memory."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
+      }
+    ],
     "created_at": "2026-05-30T22:00:00Z",
     "image_url": "assets/images/cards/ja_n5_0005.png"
   },
@@ -122,9 +149,9 @@
     "author_name": "Mika-chan",
     "author_handle": "mika_drama",
     "author_avatar_url": "assets/images/avatars/mika-chan.png",
-    "content_en": "Mnemonic for 赤い: it sounds like \"あかい\" and means \"red; crimson; scarlet\". I picture it in my mind and the kanji sticks better.",
-    "content_zh": "赤い的記憶法：讀音像「あかい」，意思是「紅色；深紅色；猩紅色」。我在腦中想像畫面，漢字就更容易記住。",
-    "content": "Mnemonic for 赤い: it sounds like \"あかい\" and means \"red; crimson; scarlet\". I picture it in my mind and the kanji sticks better.",
+    "content_en": "赤い（あかい）\nadj i | JLPT N5\n\n\n例: 鶏冠 の 赤い 立派 鶏冠は 性別 や 種類 を 見分ける 時 に 役立つ と 考える\n→ The cockerel's splendid red cockscomb is thought to play a part in determining gender and breed.",
+    "content_zh": "赤い（あかい）\nadj i | JLPT N5\n\n\n例: 鶏冠 の 赤い 立派 鶏冠は 性別 や 種類 を 見分ける 時 に 役立つ と 考える\n→ The cockerel's splendid red cockscomb is thought to play a part in determining gender and breed.",
+    "content": "赤い（あかい）\nadj i | JLPT N5\n\n\n例: 鶏冠 の 赤い 立派 鶏冠は 性別 や 種類 を 見分ける 時 に 役立つ と 考える\n→ The cockerel's splendid red cockscomb is thought to play a part in determining gender and breed.",
     "target_word": "赤い",
     "target_word_id": "ja_n5_0006",
     "tags": [
@@ -135,9 +162,12 @@
     "likes": 314,
     "comments": [
       {
-        "author_name": "Mika-chan",
-        "content": "I learned this one too! Such a useful word.",
-        "content_zh": "我也學過這個字！真的很實用。"
+        "author_name": "Yamada-sensei",
+        "content": "Note: 赤い is a adj i. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-29T11:00:00Z",
@@ -148,9 +178,9 @@
     "author_name": "Takeshi",
     "author_handle": "takeshi_dev",
     "author_avatar_url": "assets/images/avatars/takeshi.png",
-    "content_en": "Saw 明るい (あかるい) on a sign today and actually read it without thinking. When your brain just KNOWS — best feeling ever.",
-    "content_zh": "今天在招牌上看到明るい（あかるい），完全不用思考就讀出來了。當大腦自動認得的時候——最棒的感覺。",
-    "content": "Saw 明るい (あかるい) on a sign today and actually read it without thinking. When your brain just KNOWS — best feeling ever.",
+    "content_en": "明るい（あかるい）\nadj i | JLPT N5\n\n\n例: 明るい 笑顔 で 二人 は 光り輝く 未来 を 歩む 始める のだ\n→ Smiling cheerfully, the two began to walk off into their brilliant future.",
+    "content_zh": "明るい（あかるい）\nadj i | JLPT N5\n\n\n例: 明るい 笑顔 で 二人 は 光り輝く 未来 を 歩む 始める のだ\n→ Smiling cheerfully, the two began to walk off into their brilliant future.",
+    "content": "明るい（あかるい）\nadj i | JLPT N5\n\n\n例: 明るい 笑顔 で 二人 は 光り輝く 未来 を 歩む 始める のだ\n→ Smiling cheerfully, the two began to walk off into their brilliant future.",
     "target_word": "明るい",
     "target_word_id": "ja_n5_0007",
     "tags": [
@@ -161,14 +191,12 @@
     "likes": 28,
     "comments": [
       {
-        "author_name": "Sakura-chan",
-        "content": "Beautiful word choice! Love the kanji on this one.",
-        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+        "author_name": "Yamada-sensei",
+        "content": "Note: 明るい is a adj i. Pay attention to the conjugation pattern."
       },
       {
-        "author_name": "Hana",
-        "content": "I remember this from a restaurant menu!",
-        "content_zh": "我在餐廳菜單上記得這個字！"
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-29T00:00:00Z",
@@ -179,9 +207,9 @@
     "author_name": "Hana",
     "author_handle": "hana_foodie",
     "author_avatar_url": "assets/images/avatars/hana.png",
-    "content_en": "Morning coffee + 秋 (あき) review session. Starting the day with one new word and one review. Simple but consistent!",
-    "content_zh": "早安咖啡＋秋（あき）複習時間。每天從一個新字加一個複習開始。簡單但持續！",
-    "content": "Morning coffee + 秋 (あき) review session. Starting the day with one new word and one review. Simple but consistent!",
+    "content_en": "秋（あき）\nJLPT N5\n\n\n例: 此の 秋 は 珍しい ドラマを 沢山 見る\n→ This autumn I am, unusually, watching many drama series.",
+    "content_zh": "秋（あき）\nJLPT N5\n\n\n例: 此の 秋 は 珍しい ドラマを 沢山 見る\n→ This autumn I am, unusually, watching many drama series.",
+    "content": "秋（あき）\nJLPT N5\n\n\n例: 此の 秋 は 珍しい ドラマを 沢山 見る\n→ This autumn I am, unusually, watching many drama series.",
     "target_word": "秋",
     "target_word_id": "ja_n5_0008",
     "tags": [
@@ -192,14 +220,12 @@
     "likes": 59,
     "comments": [
       {
-        "author_name": "Kenji-san",
-        "content": "Adding this to my study list right now.",
-        "content_zh": "馬上把這個加到我的學習清單。"
+        "author_name": "Yamada-sensei",
+        "content": "Tip: Try using 秋 in a full sentence today. Context helps memory."
       },
       {
-        "author_name": "Yuki",
-        "content": "Drawing this one helped me memorize it!",
-        "content_zh": "畫這個字幫助我記住了！"
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-27T18:00:00Z",
@@ -210,9 +236,9 @@
     "author_name": "Sakura-chan",
     "author_handle": "sakura_study",
     "author_avatar_url": "assets/images/avatars/sakura-chan.png",
-    "content_en": "JLPT prep update: 開く (あく) is on my N3 list. Meaning: to open; to undo; to unseal. How's everyone else's prep going? We got this!",
-    "content_zh": "JLPT備考更新：開く（あく）在我的N3清單上。意思：打開；解開；打開密封。大家的準備進度如何？我們可以的！",
-    "content": "JLPT prep update: 開く (あく) is on my N3 list. Meaning: to open; to undo; to unseal. How's everyone else's prep going? We got this!",
+    "content_en": "開く（あく）\nverb godan | JLPT N5\n\n\n例: 俺 は アームチェアーに 戻る 本 を 開く\n→ I sat back in the armchair and opened the book.",
+    "content_zh": "開く（あく）\nverb godan | JLPT N5\n\n\n例: 俺 は アームチェアーに 戻る 本 を 開く\n→ I sat back in the armchair and opened the book.",
+    "content": "開く（あく）\nverb godan | JLPT N5\n\n\n例: 俺 は アームチェアーに 戻る 本 を 開く\n→ I sat back in the armchair and opened the book.",
     "target_word": "開く",
     "target_word_id": "ja_n5_0009",
     "tags": [
@@ -223,14 +249,12 @@
     "likes": 131,
     "comments": [
       {
-        "author_name": "Hiro-kun",
-        "content": "Nice! I struggle with this one actually.",
-        "content_zh": "讚！其實我對這個字還不太熟。"
+        "author_name": "Yamada-sensei",
+        "content": "Note: 開く is a verb godan. Pay attention to the conjugation pattern."
       },
       {
-        "author_name": "Sakura-chan",
-        "content": "Beautiful word choice! Love the kanji on this one.",
-        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-26T08:00:00Z",
@@ -241,9 +265,9 @@
     "author_name": "Kenji-san",
     "author_handle": "kenji_office",
     "author_avatar_url": "assets/images/avatars/kenji-san.png",
-    "content_en": "Cracked 開ける (あける) today. For the longest time I kept mixing this up with similar words. Finally sorted! Meaning: to open (a door, etc.); to unwrap (e.g. parcel, package); to unlock.",
-    "content_zh": "今天終於搞懂開ける（あける）了。之前一直跟類似的字搞混。終於分清楚了！意思：打開（門等）；拆開（包裹、包裝）；解鎖。",
-    "content": "Cracked 開ける (あける) today. For the longest time I kept mixing this up with similar words. Finally sorted! Meaning: to open (a door, etc.); to unwrap (e.g. parcel, package); to unlock.",
+    "content_en": "開ける（あける）\nverb ichidan | JLPT N5\n\n\n例: 漸く 夜 が 開ける 長い 夜 が 終わる\n→ Finally dawn broke; the long night had ended.",
+    "content_zh": "開ける（あける）\nverb ichidan | JLPT N5\n\n\n例: 漸く 夜 が 開ける 長い 夜 が 終わる\n→ Finally dawn broke; the long night had ended.",
+    "content": "開ける（あける）\nverb ichidan | JLPT N5\n\n\n例: 漸く 夜 が 開ける 長い 夜 が 終わる\n→ Finally dawn broke; the long night had ended.",
     "target_word": "開ける",
     "target_word_id": "ja_n5_0010",
     "tags": [
@@ -252,7 +276,16 @@
       "practical"
     ],
     "likes": 320,
-    "comments": [],
+    "comments": [
+      {
+        "author_name": "Yamada-sensei",
+        "content": "Note: 開ける is a verb ichidan. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
+      }
+    ],
     "created_at": "2026-05-26T00:00:00Z",
     "image_url": "assets/images/cards/ja_n5_0010.png"
   },
@@ -261,9 +294,9 @@
     "author_name": "Yuki",
     "author_handle": "yuki_art",
     "author_avatar_url": "assets/images/avatars/yuki.png",
-    "content_en": "Drew 上げる (あげる) in my sketchbook today. Visual learners unite! The kanji actually looks a bit like its meaning \"to raise; to elevate; to move something (to a higher place)\" if you squint.",
-    "content_zh": "今天在素描本上畫了上げる（あげる）。視覺學習者站出來！仔細看的話，這個漢字真的有點像它的意思「舉起；抬高；將某物移到（更高的地方）」。",
-    "content": "Drew 上げる (あげる) in my sketchbook today. Visual learners unite! The kanji actually looks a bit like its meaning \"to raise; to elevate; to move something (to a higher place)\" if you squint.",
+    "content_en": "上げる（あげる）\nverb ichidan | JLPT N5 | #business\n\n\n例: あの方 が 言う 事 を 何でも 為る 上げる 下さい\n→ Do whatever he tells you.",
+    "content_zh": "上げる（あげる）\nverb ichidan | JLPT N5 | #business\n\n\n例: あの方 が 言う 事 を 何でも 為る 上げる 下さい\n→ Do whatever he tells you.",
+    "content": "上げる（あげる）\nverb ichidan | JLPT N5 | #business\n\n\n例: あの方 が 言う 事 を 何でも 為る 上げる 下さい\n→ Do whatever he tells you.",
     "target_word": "上げる",
     "target_word_id": "ja_n5_0011",
     "tags": [
@@ -274,9 +307,12 @@
     "likes": 299,
     "comments": [
       {
-        "author_name": "Hiro-kun",
-        "content": "Nice! I struggle with this one actually.",
-        "content_zh": "讚！其實我對這個字還不太熟。"
+        "author_name": "Yamada-sensei",
+        "content": "Note: 上げる is a verb ichidan. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-24T18:00:00Z",
@@ -287,9 +323,9 @@
     "author_name": "Yamada-sensei",
     "author_handle": "yamada_sensei",
     "author_avatar_url": "assets/images/avatars/yamada-sensei.png",
-    "content_en": "Made flashcards for 朝 (あさ) with washi tape and coloured pens. Who says studying can't be aesthetic? ✨ Meaning: morning; breakfast.",
-    "content_zh": "用和紙膠帶和彩色筆做了朝（あさ）的單字卡。誰說學習不能有美感？意思：上午；早餐。",
-    "content": "Made flashcards for 朝 (あさ) with washi tape and coloured pens. Who says studying can't be aesthetic? ✨ Meaning: morning; breakfast.",
+    "content_en": "朝（あさ）\nJLPT N5\n\n\n例: 私 は 眠る ねばならない 朝 クラス が 有る から\n→ I have to get to sleep! I've got classes tomorrow.",
+    "content_zh": "朝（あさ）\nJLPT N5\n\n\n例: 私 は 眠る ねばならない 朝 クラス が 有る から\n→ I have to get to sleep! I've got classes tomorrow.",
+    "content": "朝（あさ）\nJLPT N5\n\n\n例: 私 は 眠る ねばならない 朝 クラス が 有る から\n→ I have to get to sleep! I've got classes tomorrow.",
     "target_word": "朝",
     "target_word_id": "ja_n5_0012",
     "tags": [
@@ -300,9 +336,12 @@
     "likes": 291,
     "comments": [
       {
-        "author_name": "Hana",
-        "content": "I remember this from a restaurant menu!",
-        "content_zh": "我在餐廳菜單上記得這個字！"
+        "author_name": "Yamada-sensei",
+        "content": "Tip: Try using 朝 in a full sentence today. Context helps memory."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-23T11:00:00Z",
@@ -313,9 +352,9 @@
     "author_name": "Hiro-kun",
     "author_handle": "hiro_travels",
     "author_avatar_url": "assets/images/avatars/hiro-kun.png",
-    "content_en": "Honest confession: I've looked up 朝御飯 (あさごはん) at least 5 times this month. It just won't stick. But today... today it finally clicked. breakfast.",
-    "content_zh": "老實說：這個月我至少查了朝御飯（あさごはん）五次。就是記不住。但今天…今天終於開竅了。早餐。",
-    "content": "Honest confession: I've looked up 朝御飯 (あさごはん) at least 5 times this month. It just won't stick. But today... today it finally clicked. breakfast.",
+    "content_en": "朝御飯（あさごはん）\nJLPT N5\n\n\n例: 朝御飯を食べる前に花に水をやりなさい。\n→ Water the flowers before you eat breakfast.",
+    "content_zh": "朝御飯（あさごはん）\nJLPT N5\n\n\n例: 朝御飯を食べる前に花に水をやりなさい。\n→ Water the flowers before you eat breakfast.",
+    "content": "朝御飯（あさごはん）\nJLPT N5\n\n\n例: 朝御飯を食べる前に花に水をやりなさい。\n→ Water the flowers before you eat breakfast.",
     "target_word": "朝御飯",
     "target_word_id": "ja_n5_0013",
     "tags": [
@@ -326,14 +365,12 @@
     "likes": 124,
     "comments": [
       {
-        "author_name": "Sakura-chan",
-        "content": "Beautiful word choice! Love the kanji on this one.",
-        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+        "author_name": "Yamada-sensei",
+        "content": "Tip: Try using 朝御飯 in a full sentence today. Context helps memory."
       },
       {
-        "author_name": "Hiro-kun",
-        "content": "Nice! I struggle with this one actually.",
-        "content_zh": "讚！其實我對這個字還不太熟。"
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-22T10:00:00Z",
@@ -344,9 +381,9 @@
     "author_name": "Mika-chan",
     "author_handle": "mika_drama",
     "author_avatar_url": "assets/images/avatars/mika-chan.png",
-    "content_en": "明後日 (あさって) — been avoiding this one because the kanji looked scary. Finally faced it today. It's actually not that bad! Meaning: day after tomorrow; wrong (e.g. direction).",
-    "content_zh": "明後日（あさって）——一直因為漢字看起來很可怕而逃避這個字。今天終於面對它了。其實沒那麼難！意思：後天；錯誤（例如方向錯誤）。",
-    "content": "明後日 (あさって) — been avoiding this one because the kanji looked scary. Finally faced it today. It's actually not that bad! Meaning: day after tomorrow; wrong (e.g. direction).",
+    "content_en": "明後日（あさって）\nJLPT N5\n\n\n例: は 明後日 大阪 に 旅立つ\n→ Yumi is leaving for Osaka the day after tomorrow.",
+    "content_zh": "明後日（あさって）\nJLPT N5\n\n\n例: は 明後日 大阪 に 旅立つ\n→ Yumi is leaving for Osaka the day after tomorrow.",
+    "content": "明後日（あさって）\nJLPT N5\n\n\n例: は 明後日 大阪 に 旅立つ\n→ Yumi is leaving for Osaka the day after tomorrow.",
     "target_word": "明後日",
     "target_word_id": "ja_n5_0014",
     "tags": [
@@ -358,13 +395,11 @@
     "comments": [
       {
         "author_name": "Yamada-sensei",
-        "content": "Great work! Keep that momentum going.",
-        "content_zh": "做得好！繼續保持這個動力。"
+        "content": "Tip: Try using 明後日 in a full sentence today. Context helps memory."
       },
       {
-        "author_name": "Hiro-kun",
-        "content": "Nice! I struggle with this one actually.",
-        "content_zh": "讚！其實我對這個字還不太熟。"
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-21T16:00:00Z",
@@ -375,9 +410,9 @@
     "author_name": "Takeshi",
     "author_handle": "takeshi_dev",
     "author_avatar_url": "assets/images/avatars/takeshi.png",
-    "content_en": "Question: how do YOU remember 足; 脚 (あし)? I'm trying a new method and curious what works for others. For reference, it means \"foot; leg\".",
-    "content_zh": "提問：你都怎麼記住足; 脚（あし）的？我在嘗試新方法，想知道其他人用什麼方式。意思：「腳；腿」。",
-    "content": "Question: how do YOU remember 足; 脚 (あし)? I'm trying a new method and curious what works for others. For reference, it means \"foot; leg\".",
+    "content_en": "足; 脚（あし）\nJLPT N5\n\n\n例: 議員 に 就職口の 世話 を 頼む 見る が 鼻であしらう\n→ I asked my local member for a job, but he brushed me off.",
+    "content_zh": "足; 脚（あし）\nJLPT N5\n\n\n例: 議員 に 就職口の 世話 を 頼む 見る が 鼻であしらう\n→ I asked my local member for a job, but he brushed me off.",
+    "content": "足; 脚（あし）\nJLPT N5\n\n\n例: 議員 に 就職口の 世話 を 頼む 見る が 鼻であしらう\n→ I asked my local member for a job, but he brushed me off.",
     "target_word": "足; 脚",
     "target_word_id": "ja_n5_0015",
     "tags": [
@@ -386,7 +421,16 @@
       "analytical"
     ],
     "likes": 15,
-    "comments": [],
+    "comments": [
+      {
+        "author_name": "Yamada-sensei",
+        "content": "Tip: Try using 足; 脚 in a full sentence today. Context helps memory."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
+      }
+    ],
     "created_at": "2026-05-20T19:00:00Z",
     "image_url": "assets/images/cards/ja_n5_0015.png"
   },
@@ -395,9 +439,9 @@
     "author_name": "Hana",
     "author_handle": "hana_foodie",
     "author_avatar_url": "assets/images/avatars/hana.png",
-    "content_en": "Challenge: use 明日 (あした) in a sentence today! Drop yours below — let's learn together. Meaning hint: tomorrow; near future.",
-    "content_zh": "挑戰：今天用明日（あした）造一個句子！在下面留言你的句子——讓我們一起學習。意思提示：明天；不久的將來。",
-    "content": "Challenge: use 明日 (あした) in a sentence today! Drop yours below — let's learn together. Meaning hint: tomorrow; near future.",
+    "content_en": "明日（あした）\nJLPT N5\n\n\n例: ちゃん は 明日 以降 火木金の シフトで 出勤 為る 呉れる いい から\n→ It's OK if Yukiko can do the Tuesday, Thursday and Friday shifts from tomorrow.",
+    "content_zh": "明日（あした）\nJLPT N5\n\n\n例: ちゃん は 明日 以降 火木金の シフトで 出勤 為る 呉れる いい から\n→ It's OK if Yukiko can do the Tuesday, Thursday and Friday shifts from tomorrow.",
+    "content": "明日（あした）\nJLPT N5\n\n\n例: ちゃん は 明日 以降 火木金の シフトで 出勤 為る 呉れる いい から\n→ It's OK if Yukiko can do the Tuesday, Thursday and Friday shifts from tomorrow.",
     "target_word": "明日",
     "target_word_id": "ja_n5_0016",
     "tags": [
@@ -408,14 +452,12 @@
     "likes": 228,
     "comments": [
       {
-        "author_name": "Takeshi",
-        "content": "Solid word. I use Anki for this kind of vocab.",
-        "content_zh": "好字。我用Anki來記這種詞彙。"
+        "author_name": "Yamada-sensei",
+        "content": "Tip: Try using 明日 in a full sentence today. Context helps memory."
       },
       {
-        "author_name": "Sakura-chan",
-        "content": "Beautiful word choice! Love the kanji on this one.",
-        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-19T14:00:00Z",
@@ -426,9 +468,9 @@
     "author_name": "Sakura-chan",
     "author_handle": "sakura_study",
     "author_avatar_url": "assets/images/avatars/sakura-chan.png",
-    "content_en": "Day 30 of my streak! Today's word: あそこ (あそこ) — there; over there; that place. Consistency over intensity. 30 days ago I couldn't read any of these.",
-    "content_zh": "連續第30天！今天的單字：あそこ（あそこ）——那裡；那邊；那個地方。持之以恆比一時衝刺更重要。30天前我一個字都看不懂。",
-    "content": "Day 30 of my streak! Today's word: あそこ (あそこ) — there; over there; that place. Consistency over intensity. 30 days ago I couldn't read any of these.",
+    "content_en": "あそこ\npro | JLPT N5\n\n\n例: ふふ・・・いわくがあるのさ、あそこには。\n→ He-heh... there's a tale behind that, for that place.",
+    "content_zh": "あそこ\npro | JLPT N5\n\n\n例: ふふ・・・いわくがあるのさ、あそこには。\n→ He-heh... there's a tale behind that, for that place.",
+    "content": "あそこ\npro | JLPT N5\n\n\n例: ふふ・・・いわくがあるのさ、あそこには。\n→ He-heh... there's a tale behind that, for that place.",
     "target_word": "あそこ",
     "target_word_id": "ja_n5_0017",
     "tags": [
@@ -437,7 +479,16 @@
       "artistic"
     ],
     "likes": 154,
-    "comments": [],
+    "comments": [
+      {
+        "author_name": "Yamada-sensei",
+        "content": "Note: あそこ is a pronoun. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
+      }
+    ],
     "created_at": "2026-05-18T20:00:00Z",
     "image_url": "assets/images/cards/ja_n5_0017.png"
   },
@@ -446,9 +497,9 @@
     "author_name": "Kenji-san",
     "author_handle": "kenji_office",
     "author_avatar_url": "assets/images/avatars/kenji-san.png",
-    "content_en": "Just hit 100 saved words! My favourite from this batch: 遊ぶ (あそぶ). It means \"to play (games, sports); to enjoy oneself; to have a good time\" and it's just a fun word to say out loud.",
-    "content_zh": "收藏剛破100個字！這一批最喜歡的：遊ぶ（あそぶ）。意思是「玩耍（遊戲、運動）；享受；玩得開心」，唸出來就很好玩的字。",
-    "content": "Just hit 100 saved words! My favourite from this batch: 遊ぶ (あそぶ). It means \"to play (games, sports); to enjoy oneself; to have a good time\" and it's just a fun word to say out loud.",
+    "content_en": "遊ぶ（あそぶ）\nverb godan | JLPT N5\n\n\n例: 子供 に お金 を 残す なんて 考える に パーッと派手 遊ぶ 使い切る 下さい ね\n→ Don't think about leaving money for your kids, use it all up and enjoy yourself with flair.",
+    "content_zh": "遊ぶ（あそぶ）\nverb godan | JLPT N5\n\n\n例: 子供 に お金 を 残す なんて 考える に パーッと派手 遊ぶ 使い切る 下さい ね\n→ Don't think about leaving money for your kids, use it all up and enjoy yourself with flair.",
+    "content": "遊ぶ（あそぶ）\nverb godan | JLPT N5\n\n\n例: 子供 に お金 を 残す なんて 考える に パーッと派手 遊ぶ 使い切る 下さい ね\n→ Don't think about leaving money for your kids, use it all up and enjoy yourself with flair.",
     "target_word": "遊ぶ",
     "target_word_id": "ja_n5_0018",
     "tags": [
@@ -459,9 +510,12 @@
     "likes": 122,
     "comments": [
       {
-        "author_name": "Yuki",
-        "content": "Drawing this one helped me memorize it!",
-        "content_zh": "畫這個字幫助我記住了！"
+        "author_name": "Yamada-sensei",
+        "content": "Note: 遊ぶ is a verb godan. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-17T14:00:00Z",
@@ -472,9 +526,9 @@
     "author_name": "Yuki",
     "author_handle": "yuki_art",
     "author_avatar_url": "assets/images/avatars/yuki.png",
-    "content_en": "Watching a Japanese drama and they kept saying 暖かい (あたたかい). Now I can't un-hear it. Learning through media really works! Meaning: warm; mild; considerate.",
-    "content_zh": "看日劇時一直聽到暖かい（あたたかい）。現在回不去了，到處都聽得到。透過媒體學習真的有效！意思：溫暖的；溫和的；體貼的。",
-    "content": "Watching a Japanese drama and they kept saying 暖かい (あたたかい). Now I can't un-hear it. Learning through media really works! Meaning: warm; mild; considerate.",
+    "content_en": "暖かい（あたたかい）\nadj i | JLPT N5\n\n\n例: 暖かい 軽い 空気 は 山越え 為る と 上空 に 上昇 為る 地上 には 降りる 来る 事 等 風 は 地形 に因って 変わる\n→ When warm, light, air crosses mountains it rises into the upper atmosphere and does not fall back to the ground. In this, and other, ways wind changes with the terrain.",
+    "content_zh": "暖かい（あたたかい）\nadj i | JLPT N5\n\n\n例: 暖かい 軽い 空気 は 山越え 為る と 上空 に 上昇 為る 地上 には 降りる 来る 事 等 風 は 地形 に因って 変わる\n→ When warm, light, air crosses mountains it rises into the upper atmosphere and does not fall back to the ground. In this, and other, ways wind changes with the terrain.",
+    "content": "暖かい（あたたかい）\nadj i | JLPT N5\n\n\n例: 暖かい 軽い 空気 は 山越え 為る と 上空 に 上昇 為る 地上 には 降りる 来る 事 等 風 は 地形 に因って 変わる\n→ When warm, light, air crosses mountains it rises into the upper atmosphere and does not fall back to the ground. In this, and other, ways wind changes with the terrain.",
     "target_word": "暖かい",
     "target_word_id": "ja_n5_0019",
     "tags": [
@@ -485,9 +539,12 @@
     "likes": 64,
     "comments": [
       {
-        "author_name": "Hana",
-        "content": "I remember this from a restaurant menu!",
-        "content_zh": "我在餐廳菜單上記得這個字！"
+        "author_name": "Yamada-sensei",
+        "content": "Note: 暖かい is a adj i. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-16T22:00:00Z",
@@ -498,9 +555,9 @@
     "author_name": "Yamada-sensei",
     "author_handle": "yamada_sensei",
     "author_avatar_url": "assets/images/avatars/yamada-sensei.png",
-    "content_en": "Went to a Japanese restaurant and recognized 頭 (あたま) on the menu! Ordered it and it was delicious. Best way to learn: eat. Meaning: counter for large animals (e.g. head of cattle); counter for insects in a collec.",
-    "content_zh": "去日本餐廳在菜單上認出了頭（あたま）！點來吃，超好吃。最好的學習方式：吃。意思：大型動物（例如牛頭）計數器；昆蟲收藏計數器；頭盔、面具等計數器。。",
-    "content": "Went to a Japanese restaurant and recognized 頭 (あたま) on the menu! Ordered it and it was delicious. Best way to learn: eat. Meaning: counter for large animals (e.g. head of cattle); counter for insects in a collec.",
+    "content_en": "頭（あたま）\nJLPT N5\n\n\n例: その間 ずっと 爺さん の 言う 事 が メロン の 回り を 飛び回る 蝿 の 羽音の様に 頭 の 中 で ぶんぶん 鳴る\n→ All that time the things granddad had said, like the sound of flies flying round a melon, buzzed in my head.",
+    "content_zh": "頭（あたま）\nJLPT N5\n\n\n例: その間 ずっと 爺さん の 言う 事 が メロン の 回り を 飛び回る 蝿 の 羽音の様に 頭 の 中 で ぶんぶん 鳴る\n→ All that time the things granddad had said, like the sound of flies flying round a melon, buzzed in my head.",
+    "content": "頭（あたま）\nJLPT N5\n\n\n例: その間 ずっと 爺さん の 言う 事 が メロン の 回り を 飛び回る 蝿 の 羽音の様に 頭 の 中 で ぶんぶん 鳴る\n→ All that time the things granddad had said, like the sound of flies flying round a melon, buzzed in my head.",
     "target_word": "頭",
     "target_word_id": "ja_n5_0020",
     "tags": [
@@ -511,14 +568,12 @@
     "likes": 206,
     "comments": [
       {
-        "author_name": "Hana",
-        "content": "I remember this from a restaurant menu!",
-        "content_zh": "我在餐廳菜單上記得這個字！"
+        "author_name": "Yamada-sensei",
+        "content": "Tip: Try using 頭 in a full sentence today. Context helps memory."
       },
       {
         "author_name": "Kenji-san",
-        "content": "Adding this to my study list right now.",
-        "content_zh": "馬上把這個加到我的學習清單。"
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-15T21:00:00Z",
@@ -529,9 +584,9 @@
     "author_name": "Hiro-kun",
     "author_handle": "hiro_travels",
     "author_avatar_url": "assets/images/avatars/hiro-kun.png",
-    "content_en": "Late night study session. 新しい (あたらしい) is tonight's deep dive. Meaning: new; novel; fresh. Something about studying when the world is quiet hits different.",
-    "content_zh": "深夜學習時間。新しい（あたらしい）是今晚的深入研究對象。意思：新的；新穎的；新鮮的。夜深人靜時學習，感覺就是不一樣。",
-    "content": "Late night study session. 新しい (あたらしい) is tonight's deep dive. Meaning: new; novel; fresh. Something about studying when the world is quiet hits different.",
+    "content_en": "新しい（あたらしい）\nadj i | JLPT N5\n\n\n例: は 古い 物 と 新しい 物 が 入り交じる面白い 街 です\n→ Machida is an interesting city that's a mix of the old and the new.",
+    "content_zh": "新しい（あたらしい）\nadj i | JLPT N5\n\n\n例: は 古い 物 と 新しい 物 が 入り交じる面白い 街 です\n→ Machida is an interesting city that's a mix of the old and the new.",
+    "content": "新しい（あたらしい）\nadj i | JLPT N5\n\n\n例: は 古い 物 と 新しい 物 が 入り交じる面白い 街 です\n→ Machida is an interesting city that's a mix of the old and the new.",
     "target_word": "新しい",
     "target_word_id": "ja_n5_0021",
     "tags": [
@@ -542,9 +597,12 @@
     "likes": 195,
     "comments": [
       {
+        "author_name": "Yamada-sensei",
+        "content": "Note: 新しい is a adj i. Pay attention to the conjugation pattern."
+      },
+      {
         "author_name": "Kenji-san",
-        "content": "Adding this to my study list right now.",
-        "content_zh": "馬上把這個加到我的學習清單。"
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-14T13:00:00Z",
@@ -555,9 +613,9 @@
     "author_name": "Mika-chan",
     "author_handle": "mika_drama",
     "author_avatar_url": "assets/images/avatars/mika-chan.png",
-    "content_en": "Can't sleep so I'm reviewing words. あちら (あちら) came up — \"that way; that direction; over there\". At least insomnia is productive tonight.",
-    "content_zh": "睡不著所以在複習單字。あちら（あちら）出現了——「那邊；那個方向；那邊」。至少今晚失眠是有生產力的。",
-    "content": "Can't sleep so I'm reviewing words. あちら (あちら) came up — \"that way; that direction; over there\". At least insomnia is productive tonight.",
+    "content_en": "あちら\npro | JLPT N5\n\n\n例: 彼は身ぶりであちらへ行けと合図した。\n→ He motioned us away.",
+    "content_zh": "あちら\npro | JLPT N5\n\n\n例: 彼は身ぶりであちらへ行けと合図した。\n→ He motioned us away.",
+    "content": "あちら\npro | JLPT N5\n\n\n例: 彼は身ぶりであちらへ行けと合図した。\n→ He motioned us away.",
     "target_word": "あちら",
     "target_word_id": "ja_n5_0022",
     "tags": [
@@ -568,9 +626,12 @@
     "likes": 147,
     "comments": [
       {
-        "author_name": "Sakura-chan",
-        "content": "Beautiful word choice! Love the kanji on this one.",
-        "content_zh": "選字選得好！很喜歡這個字的漢字。"
+        "author_name": "Yamada-sensei",
+        "content": "Note: あちら is a pronoun. Pay attention to the conjugation pattern."
+      },
+      {
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-13T23:00:00Z",
@@ -581,9 +642,9 @@
     "author_name": "Takeshi",
     "author_handle": "takeshi_dev",
     "author_avatar_url": "assets/images/avatars/takeshi.png",
-    "content_en": "Finally mastered 暑い (あつい) today! It means \"hot; warm; sultry\". Been seeing it everywhere in my textbook. Small wins! 🎉",
-    "content_zh": "今天終於掌握了暑い（あつい）！意思是「炎熱的；溫暖的；悶熱的」。在課本裡到處都看得到這個字。小小的勝利！",
-    "content": "Finally mastered 暑い (あつい) today! It means \"hot; warm; sultry\". Been seeing it everywhere in my textbook. Small wins! 🎉",
+    "content_en": "暑い（あつい）\nadj i | JLPT N5\n\n\n例: 今日 は 迚も 暑い\n→ It is very hot today.",
+    "content_zh": "暑い（あつい）\nadj i | JLPT N5\n\n\n例: 今日 は 迚も 暑い\n→ It is very hot today.",
+    "content": "暑い（あつい）\nadj i | JLPT N5\n\n\n例: 今日 は 迚も 暑い\n→ It is very hot today.",
     "target_word": "暑い",
     "target_word_id": "ja_n5_0023",
     "tags": [
@@ -594,14 +655,12 @@
     "likes": 247,
     "comments": [
       {
-        "author_name": "Takeshi",
-        "content": "Solid word. I use Anki for this kind of vocab.",
-        "content_zh": "好字。我用Anki來記這種詞彙。"
+        "author_name": "Yamada-sensei",
+        "content": "Note: 暑い is a adj i. Pay attention to the conjugation pattern."
       },
       {
-        "author_name": "Yuki",
-        "content": "Drawing this one helped me memorize it!",
-        "content_zh": "畫這個字幫助我記住了！"
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-12T07:00:00Z",
@@ -612,9 +671,9 @@
     "author_name": "Hana",
     "author_handle": "hana_foodie",
     "author_avatar_url": "assets/images/avatars/hana.png",
-    "content_en": "Kanji breakdown: 熱い → pronounced あつい. Meaning: hot (to the touch); passionate (feelings, etc.); ardent. Writing it out 10 times really helped it stick!",
-    "content_zh": "漢字拆解：熱い → 讀作あつい。意思：滾燙的；熱烈的；熱情的。寫了十遍之後真的記住了！",
-    "content": "Kanji breakdown: 熱い → pronounced あつい. Meaning: hot (to the touch); passionate (feelings, etc.); ardent. Writing it out 10 times really helped it stick!",
+    "content_en": "熱い（あつい）\nadj i | JLPT N5\n\n\n例: 今 欲しい の は 熱い 一杯 の 珈琲 です\n→ What I want now is a hot cup of coffee.",
+    "content_zh": "熱い（あつい）\nadj i | JLPT N5\n\n\n例: 今 欲しい の は 熱い 一杯 の 珈琲 です\n→ What I want now is a hot cup of coffee.",
+    "content": "熱い（あつい）\nadj i | JLPT N5\n\n\n例: 今 欲しい の は 熱い 一杯 の 珈琲 です\n→ What I want now is a hot cup of coffee.",
     "target_word": "熱い",
     "target_word_id": "ja_n5_0024",
     "tags": [
@@ -625,9 +684,12 @@
     "likes": 75,
     "comments": [
       {
+        "author_name": "Yamada-sensei",
+        "content": "Note: 熱い is a adj i. Pay attention to the conjugation pattern."
+      },
+      {
         "author_name": "Kenji-san",
-        "content": "Adding this to my study list right now.",
-        "content_zh": "馬上把這個加到我的學習清單。"
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-11T12:00:00Z",
@@ -638,9 +700,9 @@
     "author_name": "Sakura-chan",
     "author_handle": "sakura_study",
     "author_avatar_url": "assets/images/avatars/sakura-chan.png",
-    "content_en": "Just used 厚い (あつい) in a real conversation! The cashier understood me. This feeling is why I study Japanese.",
-    "content_zh": "剛剛在實際對話中用了厚い（あつい）！店員聽懂了。這就是我學日文的動力。",
-    "content": "Just used 厚い (あつい) in a real conversation! The cashier understood me. This feeling is why I study Japanese.",
+    "content_en": "厚い（あつい）\nadj i | JLPT N5\n\n\n例: 矢 が 厚い 板を 貫通為る\n→ The arrow pierced the thick board.",
+    "content_zh": "厚い（あつい）\nadj i | JLPT N5\n\n\n例: 矢 が 厚い 板を 貫通為る\n→ The arrow pierced the thick board.",
+    "content": "厚い（あつい）\nadj i | JLPT N5\n\n\n例: 矢 が 厚い 板を 貫通為る\n→ The arrow pierced the thick board.",
     "target_word": "厚い",
     "target_word_id": "ja_n5_0025",
     "tags": [
@@ -651,19 +713,12 @@
     "likes": 52,
     "comments": [
       {
-        "author_name": "Mika-chan",
-        "content": "I learned this one too! Such a useful word.",
-        "content_zh": "我也學過這個字！真的很實用。"
-      },
-      {
         "author_name": "Yamada-sensei",
-        "content": "Great work! Keep that momentum going.",
-        "content_zh": "做得好！繼續保持這個動力。"
+        "content": "Note: 厚い is a adj i. Pay attention to the conjugation pattern."
       },
       {
-        "author_name": "Mika-chan",
-        "content": "I learned this one too! Such a useful word.",
-        "content_zh": "我也學過這個字！真的很實用。"
+        "author_name": "Kenji-san",
+        "content": "This is N5 level. You'll see this frequently in N5 reading passages."
       }
     ],
     "created_at": "2026-05-10T07:00:00Z",

@@ -347,43 +347,51 @@ class _PostCardState extends ConsumerState<_PostCard> with TickerProviderStateMi
             // Target word highlight
             if (post.targetWord != null && post.targetWord!.isNotEmpty) ...[
               SizedBox(height: 12.h),
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 6.h),
-                decoration: BoxDecoration(
-                  color: BusanHarborTokens.orangeWash,
-                  borderRadius: BorderRadius.circular(4.r),
-                  border: Border.all(
-                    color: BusanHarborTokens.orange.withValues(alpha: 0.3),
-                  ),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    PhosphorIcon(
-                      PhosphorIcons.bookOpen(PhosphorIconsStyle.fill),
-                      size: 14.sp,
-                      color: BusanHarborTokens.orange,
+              GestureDetector(
+                onTap: hasLink
+                    ? () {
+                        HapticFeedback.mediumImpact();
+                        context.push('/swipe?wordId=${post.targetWordId}');
+                      }
+                    : null,
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 6.h),
+                  decoration: BoxDecoration(
+                    color: BusanHarborTokens.orangeWash,
+                    borderRadius: BorderRadius.circular(4.r),
+                    border: Border.all(
+                      color: BusanHarborTokens.orange.withValues(alpha: 0.3),
                     ),
-                    SizedBox(width: 6.w),
-                    Text(
-                      post.targetWord!,
-                      style: TextStyle(
-                        fontSize: 14.sp,
-                        fontWeight: FontWeight.w700,
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      PhosphorIcon(
+                        PhosphorIcons.bookOpen(PhosphorIconsStyle.fill),
+                        size: 14.sp,
                         color: BusanHarborTokens.orange,
                       ),
-                    ),
-                    if (hasLink) ...[
-                      SizedBox(width: 4.w),
+                      SizedBox(width: 6.w),
                       Text(
-                        l10n.tapToLearn,
+                        post.targetWord!,
                         style: TextStyle(
-                          fontSize: 11.sp,
-                          color: BusanHarborTokens.orange.withValues(alpha: 0.7),
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.w700,
+                          color: BusanHarborTokens.orange,
                         ),
                       ),
+                      if (hasLink) ...[
+                        SizedBox(width: 4.w),
+                        Text(
+                          l10n.tapToLearn,
+                          style: TextStyle(
+                            fontSize: 11.sp,
+                            color: BusanHarborTokens.orange.withValues(alpha: 0.7),
+                          ),
+                        ),
+                      ],
                     ],
-                  ],
+                  ),
                 ),
               ),
             ],
