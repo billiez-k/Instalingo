@@ -34138,11 +34138,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "すべて人は、生命、自由及び身体の安全に対する権利を有する。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Everyone has the right to life, liberty and the security of person.",
+      "example_source": "tatoeba:691627"
     },
     {
       "id": "ja_n3_2009",

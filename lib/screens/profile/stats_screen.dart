@@ -12,6 +12,24 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 class StatsScreen extends ConsumerWidget {
   const StatsScreen({super.key});
 
+  static List<Widget> _buildChartBars(
+      UserProfile user, AppLocalizations l10n, AppThemeExtension appTheme) {
+    final now = DateTime.now();
+    final monday = now.subtract(Duration(days: now.weekday - 1));
+    final dayLabels = [l10n.mon, l10n.tue, l10n.wed, l10n.thu, l10n.fri, l10n.sat, l10n.sun];
+    final maxXp = user.weeklyXp.values.fold(0, (a, b) => a > b ? a : b);
+    if (maxXp == 0) maxXp;
+
+    return List.generate(7, (i) {
+      final day = monday.add(Duration(days: i));
+      final key = '${day.year}-${day.month.toString().padLeft(2, '0')}-${day.day.toString().padLeft(2, '0')}';
+      final xp = user.weeklyXp[key] ?? 0;
+      final isToday = day.year == now.year && day.month == now.month && day.day == now.day;
+      final value = maxXp > 0 ? xp / maxXp : 0.0;
+      return _Bar(label: dayLabels[i], value: value.clamp(0.05, 1.0), xp: xp, isToday: isToday);
+    });
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
@@ -59,15 +77,7 @@ class StatsScreen extends ConsumerWidget {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      _Bar(label: l10n.mon, value: 0.3, xp: 30),
-                      _Bar(label: l10n.tue, value: 0.6, xp: 60),
-                      _Bar(label: l10n.wed, value: 0.9, xp: 90),
-                      _Bar(label: l10n.thu, value: 0.5, xp: 50),
-                      _Bar(label: l10n.fri, value: 0.7, xp: 70),
-                      _Bar(label: l10n.sat, value: 1.0, xp: 100, isToday: true),
-                      _Bar(label: l10n.sun, value: 0.2, xp: 20),
-                    ],
+                    children: _buildChartBars(user, l10n, appTheme),
                   ),
                 ),
               ],
@@ -154,7 +164,7 @@ class StatsScreen extends ConsumerWidget {
                       ),
                       SizedBox(height: 4.h),
                       Text(
-                        l10n.timeSpentHoursMinutes(4, 32),
+                        l10n.timeSpentHoursMinutes(user.totalCardsSwiped * 2 ~/ 60, (user.totalCardsSwiped * 2) % 60),
                         style: theme.textTheme.bodyMedium?.copyWith(
                           color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                         ),

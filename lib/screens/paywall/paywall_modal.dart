@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
+import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:instalingo/widgets/animations.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
-class PaywallModal extends StatefulWidget {
+class PaywallModal extends ConsumerStatefulWidget {
   const PaywallModal({super.key});
 
   @override
-  State<PaywallModal> createState() => _PaywallModalState();
+  ConsumerState<PaywallModal> createState() => _PaywallModalState();
 }
 
-class _PaywallModalState extends State<PaywallModal>
+class _PaywallModalState extends ConsumerState<PaywallModal>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   bool _isAnnual = true;
@@ -247,6 +249,7 @@ class _PaywallModalState extends State<PaywallModal>
                 child: ElevatedButton(
                   onPressed: () {
                     HapticFeedback.mediumImpact();
+                    ref.read(userProvider.notifier).upgradeToPro();
                     context.pop();
                   },
                   child: Text(

@@ -87,11 +87,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "１、２日待ってくれ。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Give me a day or two.",
+      "example_source": "tatoeba:8681071"
     },
     {
       "id": "ja_n2_0006",
@@ -257,11 +259,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "悪い、俺行かなきゃ。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "I'm sorry I have to go.",
+      "example_source": "tatoeba:10125576"
     },
     {
       "id": "ja_n2_0016",
@@ -427,11 +431,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "きみ、初めてでしょ。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "It's the first time for you right?",
+      "example_source": "tatoeba:11022933"
     },
     {
       "id": "ja_n2_0026",
@@ -461,11 +467,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "その町を色にたとえていうと、ワインレッドかな、こう、なんか気品があって、落ち着くのよね。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "If that city were a color, it would be a color with a quiet sort of dignity ... wine red, say.",
+      "example_source": "tatoeba:207779"
     },
     {
       "id": "ja_n2_0028",
@@ -869,11 +877,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "手、洗ってくるね。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "I am going to wash my hands.",
+      "example_source": "tatoeba:9838932"
     },
     {
       "id": "ja_n2_0052",
@@ -886,11 +896,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "酒、女、歌を愛さない者は、一生ばかな人生を送る。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "He who loves not wine, woman and songs, remains a fool his whole life long.",
+      "example_source": "tatoeba:148461"
     },
     {
       "id": "ja_n2_0053",
@@ -937,11 +949,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "自分は男？女？知るもんか。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Am I a boy or a girl? Who cares?",
+      "example_source": "tatoeba:10117929"
     },
     {
       "id": "ja_n2_0056",
@@ -1056,11 +1070,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "アレックスは「色」と答えるのである。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Alex will answer, \"Color!\"",
+      "example_source": "tatoeba:229752"
     },
     {
       "id": "ja_n2_0063",
@@ -1209,11 +1225,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "足、どうかしたの？",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Has something happened to your leg?",
+      "example_source": "tatoeba:10181558"
     },
     {
       "id": "ja_n2_0072",
@@ -1549,11 +1567,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "そんな「通り」はないよ。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "There is no such street.",
+      "example_source": "tatoeba:11821374"
     },
     {
       "id": "ja_n2_0092",
@@ -1872,11 +1892,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "お前はまだ「青い」な。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "You're still green.",
+      "example_source": "tatoeba:226939"
     },
     {
       "id": "ja_n2_0111",
@@ -1940,11 +1962,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "初恋に有頂天のみるめだったが、実はユリは結婚していることが分かり 、 愕然と す る。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Mirume is over the moon with his first love, however, he is left thunderstruck when he finds out that Yuri is already married.",
+      "example_source": "tatoeba:13056164"
     },
     {
       "id": "ja_n2_0115",
@@ -1991,11 +2015,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "力、英知、忍耐と革新。あなたはこれら全てを持っているのだろうか？その王冠を手にしようとする汝はその重みに耐えることとなる。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Power, wisdom, patience and innovation. Do you possess all these? Thou who wishes to wear the crown shall bear its burden.",
+      "example_source": "tatoeba:6575687"
     },
     {
       "id": "ja_n2_0118",
@@ -2603,11 +2629,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "編み物、下手なのよ。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "I'm no good at knitting.",
+      "example_source": "tatoeba:11571375"
     },
     {
       "id": "ja_n2_0154",
@@ -3334,11 +3362,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "学校、行ってきます。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "I will go to school.",
+      "example_source": "tatoeba:11804162"
     },
     {
       "id": "ja_n2_0197",
@@ -5085,11 +5115,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "お邪魔します。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Excuse me for interrupting.",
+      "example_source": "tatoeba:13117622"
     },
     {
       "id": "ja_n2_0300",
@@ -11273,11 +11305,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "ごちそうさま。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "I'm full.",
+      "example_source": "tatoeba:10908793"
     },
     {
       "id": "ja_n2_0664",
@@ -11477,11 +11511,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "ごめんください。どなたかいらっしゃいませんか？",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Excuse me. Is anyone home?",
+      "example_source": "tatoeba:11469188"
     },
     {
       "id": "ja_n2_0676",
@@ -11732,11 +11768,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "こんばんは。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Good evening.",
+      "example_source": "tatoeba:426900"
     },
     {
       "id": "ja_n2_0691",
@@ -16118,11 +16156,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "ずっと、リスを飼ってみたかったんだ。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "I’ve always wanted to have a pet squirrel.",
+      "example_source": "tatoeba:10129737"
     },
     {
       "id": "ja_n2_0949",
@@ -17223,11 +17263,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "是非とも、コンサートが成功することを願っている。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "I want the concert to be a success at any cost.",
+      "example_source": "tatoeba:143327"
     },
     {
       "id": "ja_n2_1014",
@@ -20283,11 +20325,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "「あれが生徒会長？」「かっこよくない？」「つーか、美形？」",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "\"That's the new head of the student council?\" \"Cool, isn't he?\" \"Rather, pretty boy?\"",
+      "example_source": "tatoeba:77051"
     },
     {
       "id": "ja_n2_1194",
@@ -22663,11 +22707,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "指は、親指から「親指」「人差し指」「中指」「薬指」「小指」と言います。",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "Starting from the thumb, your fingers are called the \"thumb\", \"index finger\", \"middle finger\", \"ring finger\", and \"pinky\".",
+      "example_source": "tatoeba:10153666"
     },
     {
       "id": "ja_n2_1334",
@@ -22867,11 +22913,13 @@
       "topic": "general",
       "image_url": null,
       "audio_url": null,
-      "example_text": "",
+      "example_text": "「ただいま、持ち帰り買ってきた」「なになに？」「とんこつラーメンよ」「うわー、僕のことよくわかってるね！いただきまーす」",
       "example_reading": "",
       "example_translation": "",
       "example_audio_url": null,
-      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: "
+      "source": "Word list: open-anki-jlpt-decks (MIT). Definitions: JMdict/EDRDG (CC-BY-SA 4.0). Examples: ",
+      "example_meaning": "\"I'm back! I brought some takeout.\" \"What'd you get?\" \"Some tonkotsu ramen.\" \"Whoa, you know me so well! Well, let's eat already!\"",
+      "example_source": "tatoeba:10701601"
     },
     {
       "id": "ja_n2_1346",

@@ -7,6 +7,7 @@ import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/data/chill_post_loader.dart';
 import 'package:instalingo/models/chill_post.dart';
+import 'package:instalingo/services/comment_store.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:instalingo/widgets/post_image.dart';
 import 'package:intl/intl.dart';
@@ -373,13 +374,17 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                       ),
                       SizedBox(height: 16.h),
 
-                      // Comments
-                      ...post.comments.map(
-                        (comment) => _CommentItem(
-                          comment: comment,
-                          appTheme: appTheme,
-                        ),
-                      ),
+                      // Comments (built-in + user-submitted)
+                      ...(() {
+                        final stored = ref.watch(commentStoreProvider)[widget.post.id] ?? [];
+                        final all = [...post.comments, ...stored];
+                        return all.map(
+                          (comment) => _CommentItem(
+                            comment: comment,
+                            appTheme: appTheme,
+                          ),
+                        );
+                      })(),
                     ],
                   ),
                 ),
@@ -415,7 +420,17 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                       SizedBox(width: 8.w),
                       IconButton(
                         onPressed: () {
-                          if (_commentController.text.trim().isNotEmpty) {
+                          final text = _commentController.text.trim();
+                          if (text.isNotEmpty) {
+                            final comment = PostComment(
+                              id: 'user_${DateTime.now().millisecondsSinceEpoch}',
+                              authorName: 'You',
+                              authorAvatar: null,
+                              body: text,
+                              createdAt: DateTime.now(),
+                              likes: 0,
+                            );
+                            ref.read(commentStoreProvider.notifier).addComment(widget.post.id, comment);
                             _commentController.clear();
                             _commentFocusNode.unfocus();
                             ScaffoldMessenger.of(context).showSnackBar(

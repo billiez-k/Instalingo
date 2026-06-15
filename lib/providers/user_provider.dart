@@ -86,8 +86,21 @@ class UserNotifier extends StateNotifier<UserProfile> {
   }
 
   void addXp(int amount) {
-    state = state.copyWith(xp: state.xp + amount);
+    final now = DateTime.now();
+    final weekKey = _weekKey(now);
+    final updatedXp = Map<String, int>.from(state.weeklyXp);
+    updatedXp[weekKey] = (updatedXp[weekKey] ?? 0) + amount;
+    state = state.copyWith(
+      xp: state.xp + amount,
+      weeklyXp: updatedXp,
+      lastActiveDate: now,
+    );
     unawaited(_save());
+  }
+
+  String _weekKey(DateTime d) {
+    final monday = d.subtract(Duration(days: d.weekday - 1));
+    return '${monday.year}-${monday.month.toString().padLeft(2, '0')}-${monday.day.toString().padLeft(2, '0')}';
   }
 
   void addGems(int amount) {
@@ -96,7 +109,21 @@ class UserNotifier extends StateNotifier<UserProfile> {
   }
 
   void incrementStreak() {
-    state = state.copyWith(streak: state.streak + 1);
+    final now = DateTime.now();
+    final last = state.lastActiveDate;
+    if (last == null) {
+      state = state.copyWith(streak: 1, lastActiveDate: now);
+    } else {
+      final lastDay = DateTime(last.year, last.month, last.day);
+      final today = DateTime(now.year, now.month, now.day);
+      final diff = today.difference(lastDay).inDays;
+      if (diff == 0) return; // Already active today
+      if (diff == 1) {
+        state = state.copyWith(streak: state.streak + 1, lastActiveDate: now);
+      } else {
+        state = state.copyWith(streak: 1, lastActiveDate: now); // Streak broken
+      }
+    }
     unawaited(_save());
   }
 
@@ -129,6 +156,23 @@ class UserNotifier extends StateNotifier<UserProfile> {
     state = state.copyWith(
       isPro: true,
       proExpiry: DateTime.now().add(const Duration(days: 365)),
+    );
+    unawaited(_save());
+  }
+
+  void resetProgress() {
+    state = UserProfile(
+      id: state.id,
+      displayName: state.displayName,
+      email: state.email,
+      nativeLanguage: state.nativeLanguage,
+      learningLanguage: state.learningLanguage,
+      currentLevel: state.currentLevel,
+      proficiencyLevel: state.proficiencyLevel,
+      dailyGoal: state.dailyGoal,
+      notificationsEnabled: state.notificationsEnabled,
+      reminderTime: state.reminderTime,
+      joinedAt: state.joinedAt,
     );
     unawaited(_save());
   }

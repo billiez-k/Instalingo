@@ -25,6 +25,8 @@ class UserProfile {
   final Set<String> savedWords;
   final Set<String> alreadyKnewWords;
   final List<DateTime> activeDays;
+  final Map<String, int> weeklyXp;
+  final DateTime? lastActiveDate;
   final int streakShields;
   final bool notificationsEnabled;
   final String? reminderTime;
@@ -49,6 +51,8 @@ class UserProfile {
     this.savedWords = const {},
     this.alreadyKnewWords = const {},
     this.activeDays = const [],
+    this.weeklyXp = const {},
+    this.lastActiveDate,
     this.streakShields = 0,
     this.notificationsEnabled = true,
     this.reminderTime = '20:00',
@@ -73,6 +77,8 @@ class UserProfile {
     Set<String>? savedWords,
     Set<String>? alreadyKnewWords,
     List<DateTime>? activeDays,
+    Map<String, int>? weeklyXp,
+    DateTime? lastActiveDate,
     int? streakShields,
     bool? notificationsEnabled,
     String? reminderTime,
@@ -96,6 +102,8 @@ class UserProfile {
         savedWords: savedWords ?? this.savedWords,
         alreadyKnewWords: alreadyKnewWords ?? this.alreadyKnewWords,
         activeDays: activeDays ?? this.activeDays,
+        weeklyXp: weeklyXp ?? this.weeklyXp,
+        lastActiveDate: lastActiveDate ?? this.lastActiveDate,
         streakShields: streakShields ?? this.streakShields,
         notificationsEnabled: notificationsEnabled ?? this.notificationsEnabled,
         reminderTime: reminderTime ?? this.reminderTime,
@@ -121,6 +129,8 @@ class UserProfile {
         'saved_words': savedWords.toList(),
         'already_knew_words': alreadyKnewWords.toList(),
         'active_days': activeDays.map((d) => d.toIso8601String()).toList(),
+        'weekly_xp': weeklyXp,
+        'last_active_date': lastActiveDate?.toIso8601String(),
         'streak_shields': streakShields,
         'notifications_enabled': notificationsEnabled,
         'reminder_time': reminderTime,
@@ -154,6 +164,12 @@ class UserProfile {
                 ?.map((d) => DateTime.parse(d as String))
                 .toList() ??
             [],
+        weeklyXp: (json['weekly_xp'] as Map<String, dynamic>?)
+                ?.map((k, v) => MapEntry(k, (v as num).toInt())) ??
+            {},
+        lastActiveDate: json['last_active_date'] != null
+            ? DateTime.parse(json['last_active_date'] as String)
+            : null,
         streakShields: json['streak_shields'] as int? ?? 0,
         notificationsEnabled: json['notifications_enabled'] as bool? ?? true,
         reminderTime: json['reminder_time'] as String? ?? '20:00',

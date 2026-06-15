@@ -206,7 +206,7 @@ class SettingsScreen extends ConsumerWidget {
               iconColor: AppColors.error,
               label: l10n.profile_resetProgress,
               labelColor: AppColors.error,
-              onTap: () => HapticFeedback.heavyImpact(),
+              onTap: () => _showResetDialog(context, ref, appTheme),
             ),
           ),
           FadeSlide(
@@ -221,15 +221,6 @@ class SettingsScreen extends ConsumerWidget {
               },
             ),
           ),
-          FadeSlide(
-            child: _SettingsTile(
-              icon: PhosphorIcons.signOut(),
-              iconColor: AppColors.error,
-              label: l10n.logout,
-              labelColor: AppColors.error,
-              onTap: () => HapticFeedback.heavyImpact(),
-            ),
-          ),
           SizedBox(height: 24.h),
           Center(
             child: Text(
@@ -240,6 +231,50 @@ class SettingsScreen extends ConsumerWidget {
             ),
           ),
           SizedBox(height: 40.h),
+        ],
+      ),
+    );
+  }
+
+  void _showResetDialog(BuildContext context, WidgetRef ref, AppThemeExtension appTheme) {
+    HapticFeedback.heavyImpact();
+    final l10n = AppLocalizations.of(context);
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: appTheme.harborNavy,
+        title: Text(
+          l10n.profile_resetProgress,
+          style: TextStyle(color: AppColors.error, fontWeight: FontWeight.w700),
+        ),
+        content: Text(
+          'This will clear all your progress including saved words, XP, and streak. This cannot be undone.',
+          style: TextStyle(color: appTheme.harborInkOnNavy),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: Text(
+              l10n.retryCancel ?? 'Cancel',
+              style: TextStyle(color: appTheme.harborInkOnNavyMuted),
+            ),
+          ),
+          TextButton(
+            onPressed: () {
+              ref.read(userProvider.notifier).resetProgress();
+              Navigator.of(ctx).pop();
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Progress has been reset.'),
+                  backgroundColor: appTheme.harborNavy,
+                ),
+              );
+            },
+            child: Text(
+              l10n.profile_resetProgress,
+              style: TextStyle(color: AppColors.error, fontWeight: FontWeight.w700),
+            ),
+          ),
         ],
       ),
     );

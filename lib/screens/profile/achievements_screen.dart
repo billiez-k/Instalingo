@@ -1,72 +1,79 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/achievement.dart';
 import 'package:instalingo/models/localized_text.dart';
+import 'package:instalingo/models/user.dart';
+import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
-List<Achievement> _getDemoAchievements() {
+List<Achievement> _buildAchievements(UserProfile user) {
   return [
-    const Achievement(
+    Achievement(
       id: 'first_swipe',
-      title: LocalizedText({'en': 'First Steps', 'zh_TW': '\u7b2c\u4e00\u6b65'}),
-      description: LocalizedText({'en': 'Swipe your first card', 'zh_TW': '\u6ed1\u52d5\u7b2c\u4e00\u5f35\u5361\u7247'}),
+      title: const LocalizedText({'en': 'First Steps', 'zh_TW': '\u7b2c\u4e00\u6b65'}),
+      description: const LocalizedText({'en': 'Swipe your first card', 'zh_TW': '\u6ed1\u52d5\u7b2c\u4e00\u5f35\u5361\u7247'}),
       iconName: 'footprints',
       targetValue: 1,
-      currentValue: 1,
-      isUnlocked: true,
+      currentValue: user.totalCardsSwiped.clamp(0, 1),
+      isUnlocked: user.totalCardsSwiped >= 1,
       tier: 'bronze',
     ),
-    const Achievement(
+    Achievement(
       id: 'streak_7',
-      title: LocalizedText({'en': '7 Day Streak', 'zh_TW': '7\u5929\u9023\u7e8c'}),
-      description: LocalizedText({'en': 'Maintain a 7-day learning streak', 'zh_TW': '\u7dad\u63017\u5929\u5b78\u7fd2\u9023\u7e8c'}),
+      title: const LocalizedText({'en': '7 Day Streak', 'zh_TW': '7\u5929\u9023\u7e8c'}),
+      description: const LocalizedText({'en': 'Maintain a 7-day learning streak', 'zh_TW': '\u7dad\u63017\u5929\u5b78\u7fd2\u9023\u7e8c'}),
       iconName: 'fire',
       targetValue: 7,
-      currentValue: 3,
+      currentValue: user.streak.clamp(0, 7),
+      isUnlocked: user.streak >= 7,
       tier: 'silver',
     ),
-    const Achievement(
+    Achievement(
       id: 'words_50',
-      title: LocalizedText({'en': 'Word Collector', 'zh_TW': '\u55ae\u5b57\u6536\u96c6\u5bb6'}),
-      description: LocalizedText({'en': 'Save 50 words to your collection', 'zh_TW': '\u6536\u85cf50\u500b\u55ae\u5b57'}),
+      title: const LocalizedText({'en': 'Word Collector', 'zh_TW': '\u55ae\u5b57\u6536\u96c6\u5bb6'}),
+      description: const LocalizedText({'en': 'Save 50 words to your collection', 'zh_TW': '\u6536\u85cf50\u500b\u55ae\u5b57'}),
       iconName: 'book-open',
       targetValue: 50,
-      currentValue: 0,
+      currentValue: user.savedWords.length.clamp(0, 50),
+      isUnlocked: user.savedWords.length >= 50,
       tier: 'bronze',
     ),
-    const Achievement(
+    Achievement(
       id: 'cards_100',
-      title: LocalizedText({'en': 'Card Master', 'zh_TW': '\u5361\u7247\u5927\u5e2b'}),
-      description: LocalizedText({'en': 'Swipe 100 cards', 'zh_TW': '\u6ed1\u52d5100\u5f35\u5361\u7247'}),
+      title: const LocalizedText({'en': 'Card Master', 'zh_TW': '\u5361\u7247\u5927\u5e2b'}),
+      description: const LocalizedText({'en': 'Swipe 100 cards', 'zh_TW': '\u6ed1\u52d5100\u5f35\u5361\u7247'}),
       iconName: 'flame',
       targetValue: 100,
-      currentValue: 0,
+      currentValue: user.totalCardsSwiped.clamp(0, 100),
+      isUnlocked: user.totalCardsSwiped >= 100,
       tier: 'silver',
     ),
-    const Achievement(
+    Achievement(
       id: 'streak_30',
-      title: LocalizedText({'en': 'Monthly Warrior', 'zh_TW': '\u6bcf\u6708\u52c7\u58eb'}),
-      description: LocalizedText({'en': 'Maintain a 30-day streak', 'zh_TW': '\u7dad\u630130\u5929\u9023\u7e8c'}),
+      title: const LocalizedText({'en': 'Monthly Warrior', 'zh_TW': '\u6bcf\u6708\u52c7\u58eb'}),
+      description: const LocalizedText({'en': 'Maintain a 30-day streak', 'zh_TW': '\u7dad\u630130\u5929\u9023\u7e8c'}),
       iconName: 'trophy',
       targetValue: 30,
-      currentValue: 0,
+      currentValue: user.streak.clamp(0, 30),
+      isUnlocked: user.streak >= 30,
       tier: 'gold',
     ),
   ];
 }
 
-class AchievementsScreen extends StatelessWidget {
+class AchievementsScreen extends ConsumerWidget {
   const AchievementsScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
     final appTheme = context.appTheme;
-    final achievements = _getDemoAchievements();
+    final achievements = _buildAchievements(ref.watch(userProvider));
 
     final unlocked = achievements.where((a) => a.isUnlocked).toList();
     final locked = achievements.where((a) => !a.isUnlocked).toList();
@@ -142,7 +149,7 @@ class _AchievementCard extends StatelessWidget {
   const _AchievementCard({required this.achievement});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final appTheme = context.appTheme;
     final tierColor = _tierColor(achievement.tier);
 
