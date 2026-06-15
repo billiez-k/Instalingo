@@ -582,6 +582,14 @@ abstract class AppLocalizations {
   String get swipeRemaining;
 
   String get swipeRight;
+  String get tutorialTapToFlip;
+  String get tutorialTapToFlipDesc;
+  String get tutorialSave;
+  String get tutorialSaveDesc;
+  String get tutorialSkip;
+  String get tutorialSkipDesc;
+  String get tutorialNextCard;
+  String get tutorialNextCardDesc;
 
   String get swipeRightDescription;
 

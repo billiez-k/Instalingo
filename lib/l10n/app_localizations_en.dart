@@ -844,6 +844,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get swipeRight => 'Swipe Right';
+  String get tutorialTapToFlip => 'Tap to Flip';
+  String get tutorialTapToFlipDesc => 'Tap the card to see the meaning and examples.';
+  String get tutorialSave => 'Save Word';
+  String get tutorialSaveDesc => 'Tap heart or bookmark to save words for review.';
+  String get tutorialSkip => 'Already Knew';
+  String get tutorialSkipDesc => 'Tap to skip words you already know.';
+  String get tutorialNextCard => 'Next Card';
+  String get tutorialNextCardDesc => 'Swipe up to move to the next word.';
 
   @override
   String get swipeRightDescription => 'Save this word to your collection';

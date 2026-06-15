@@ -42,7 +42,7 @@ class ProfileScreen extends ConsumerWidget {
                       _MenuItem(
                         icon: PhosphorIcons.chartBar(PhosphorIconsStyle.bold),
                         label: l10n.statsTitle,
-                        onTap: () => context.push('/profile/stats'),
+                        onTap: () => context.go('/collections'),
                       ),
                       _MenuItem(
                         icon: PhosphorIcons.trophy(PhosphorIconsStyle.bold),
@@ -52,12 +52,12 @@ class ProfileScreen extends ConsumerWidget {
                       _MenuItem(
                         icon: PhosphorIcons.graduationCap(PhosphorIconsStyle.bold),
                         label: l10n.coursePath,
-                        onTap: () => context.push('/collections'),
+                        onTap: () => context.go('/swipe'),
                       ),
                       _MenuItem(
                         icon: PhosphorIcons.calendarCheck(PhosphorIconsStyle.bold),
                         label: l10n.studyPlan,
-                        onTap: () => context.push('/profile/stats'),
+                        onTap: () => context.go('/collections'),
                       ),
                     ],
                   ),

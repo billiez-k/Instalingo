@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/theme/app_theme.dart';
@@ -43,6 +44,37 @@ class ErrorScreen extends StatelessWidget {
                   fontSize: 14.sp,
                   color: appTheme.harborInkOnNavyMuted,
                 ),
+              ),
+              SizedBox(height: 32.h),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  TextButton(
+                    onPressed: () => context.go('/home'),
+                    child: Text(
+                      l10n.swipeBackToHome,
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.w700,
+                        color: BusanHarborTokens.orange,
+                        letterSpacing: 0.8,
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 24.w),
+                  TextButton(
+                    onPressed: () => context.go('/swipe'),
+                    child: Text(
+                      l10n.retry,
+                      style: TextStyle(
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.w700,
+                        color: BusanHarborTokens.coral,
+                        letterSpacing: 0.8,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

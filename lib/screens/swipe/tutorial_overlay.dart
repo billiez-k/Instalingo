@@ -68,30 +68,39 @@ class _TutorialOverlayState extends ConsumerState<TutorialOverlay>
             children: [
               const Spacer(flex: 2),
 
-              // Heart button - Save
+              // Tap to flip
+              _GestureHint(
+                icon: PhosphorIcons.handTap(PhosphorIconsStyle.bold),
+                label: l10n.tutorialTapToFlip,
+                description: l10n.tutorialTapToFlipDesc,
+                color: BusanHarborTokens.sea,
+              ),
+              SizedBox(height: 24.h),
+
+              // Save button
               _GestureHint(
                 icon: PhosphorIcons.heart(PhosphorIconsStyle.fill),
-                label: l10n.swipeRight,
-                description: l10n.swipeRightDescription,
+                label: l10n.tutorialSave,
+                description: l10n.tutorialSaveDesc,
                 color: BusanHarborTokens.coral,
               ),
               SizedBox(height: 24.h),
 
-              // Skip button - Already Knew
+              // Already Knew button
               _GestureHint(
                 icon: PhosphorIcons.check(PhosphorIconsStyle.bold),
-                label: l10n.swipeLeft,
-                description: l10n.swipeLeftDescription,
+                label: l10n.tutorialSkip,
+                description: l10n.tutorialSkipDesc,
                 color: BusanHarborTokens.mint,
               ),
               SizedBox(height: 24.h),
 
-              // Next button
+              // Next card
               _GestureHint(
                 icon: PhosphorIcons.arrowUp(PhosphorIconsStyle.bold),
-                label: l10n.swipeUp,
-                description: l10n.swipeUpDescription,
-                color: BusanHarborTokens.sea,
+                label: l10n.tutorialNextCard,
+                description: l10n.tutorialNextCardDesc,
+                color: Colors.white,
               ),
 
               const Spacer(flex: 2),
