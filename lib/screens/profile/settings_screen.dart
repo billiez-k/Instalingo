@@ -248,7 +248,7 @@ class SettingsScreen extends ConsumerWidget {
           style: TextStyle(color: AppColors.error, fontWeight: FontWeight.w700),
         ),
         content: Text(
-          'This will clear all your progress including saved words, XP, and streak. This cannot be undone.',
+          l10n.settingsResetConfirm,
           style: TextStyle(color: appTheme.harborInkOnNavy),
         ),
         actions: [
@@ -264,7 +264,7 @@ class SettingsScreen extends ConsumerWidget {
               Navigator.of(ctx).pop();
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Progress has been reset.'),
+                  content: Text(l10n.settingsResetDone),
                   backgroundColor: appTheme.harborNavy,
                 ),
               );
@@ -371,13 +371,21 @@ class SettingsScreen extends ConsumerWidget {
                         : null,
                     onTap: () async {
                       HapticFeedback.mediumImpact();
+                      try {
                       final service = LanguageService(ref);
                       if (isNative) {
                         await service.setNativeLanguage(lang.code);
                       } else {
-                        service.setLearningLanguage(lang.code);
+                        await service.setLearningLanguage(lang.code);
                       }
-                      if (context.mounted) Navigator.pop(context);
+                    } catch (e) {
+                      if (context.mounted) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text('$e'), backgroundColor: Colors.red),
+                        );
+                      }
+                    }
+                    if (context.mounted) Navigator.pop(context);
                     },
                   )).toList(),
                 ),

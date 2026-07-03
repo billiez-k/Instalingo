@@ -312,8 +312,12 @@ class _ReviewCardListState extends ConsumerState<_ReviewCardList> {
 
   void _rateAndNext(String cardId, int rating) {
     HapticFeedback.selectionClick();
-    ref.read(srsProvider.notifier).scheduleReview(cardId, rating);
-    ref.read(userProvider.notifier).addXp(PointsConfig.smartReviewWorth);
+    try {
+      ref.read(srsProvider.notifier).scheduleReview(cardId, rating);
+      ref.read(userProvider.notifier).addXp(PointsConfig.smartReviewWorth);
+    } catch (_) {
+      // Review operation failed — card advances anyway
+    }
     setState(() {
       _showBack = false;
       _currentIndex++;

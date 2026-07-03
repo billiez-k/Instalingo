@@ -41,17 +41,21 @@ class SRSNotifier extends AsyncNotifier<List<SRSData>> {
 
   Future<List<SRSData>> _loadAll() async {
     if (_db == null) return [];
-    final rows = await _db!.query('srs_data');
-    return rows.map((row) => SRSData(
-      cardId: row['card_id'] as String,
-      state: row['state'] as String,
-      stability: (row['stability'] as num).toDouble(),
-      difficulty: (row['difficulty'] as num).toDouble(),
-      due: DateTime.parse(row['due'] as String),
-      lastReview: DateTime.parse(row['last_review'] as String),
-      reviewCount: row['review_count'] as int,
-      lapseCount: row['lapse_count'] as int,
-    )).toList();
+    try {
+      final rows = await _db!.query('srs_data');
+      return rows.map((row) => SRSData(
+        cardId: row['card_id'] as String,
+        state: row['state'] as String,
+        stability: (row['stability'] as num).toDouble(),
+        difficulty: (row['difficulty'] as num).toDouble(),
+        due: DateTime.parse(row['due'] as String),
+        lastReview: DateTime.parse(row['last_review'] as String),
+        reviewCount: row['review_count'] as int,
+        lapseCount: row['lapse_count'] as int,
+      )).toList();
+    } catch (_) {
+      return [];
+    }
   }
 
   /// Schedule a review for the given card with the given rating (1-4).

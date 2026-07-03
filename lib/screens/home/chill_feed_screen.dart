@@ -181,15 +181,14 @@ class _PostCard extends ConsumerStatefulWidget {
 }
 
 class _PostCardState extends ConsumerState<_PostCard> with TickerProviderStateMixin {
-  int _likeCount = 0;
   late AnimationController _heartAnimController;
 
   bool get _isLiked => ref.watch(likeStoreProvider).contains(widget.post.id);
+  int get _likeCount => widget.post.likes + (_isLiked ? 1 : 0);
 
   @override
   void initState() {
     super.initState();
-    _likeCount = widget.post.likes;
     _heartAnimController = AnimationController(
       duration: const Duration(milliseconds: 700),
       vsync: this,
@@ -204,11 +203,11 @@ class _PostCardState extends ConsumerState<_PostCard> with TickerProviderStateMi
 
   void _toggleLike() {
     HapticFeedback.mediumImpact();
-    final isCurrentlyLiked = _isLiked;
-    ref.read(likeStoreProvider.notifier).toggle(widget.post.id);
-    setState(() {
-      _likeCount += isCurrentlyLiked ? -1 : 1;
-    });
+    try {
+      ref.read(likeStoreProvider.notifier).toggle(widget.post.id);
+    } catch (_) {
+      // Like operation failed silently — state remains consistent
+    }
   }
 
   void _doubleTapLike() {
@@ -284,7 +283,7 @@ class _PostCardState extends ConsumerState<_PostCard> with TickerProviderStateMi
                   ),
                 ),
                 Text(
-                  DateFormat('MMM d').format(post.createdAt),
+                  DateFormat('MMM d', Localizations.localeOf(context).toString()).format(post.createdAt),
                   style: TextStyle(
                     fontSize: 11.sp,
                     fontWeight: FontWeight.w600,

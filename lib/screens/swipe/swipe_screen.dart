@@ -430,10 +430,14 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                         skipped ? null : () {
                           final card = _cards[index];
                           final meaning = card.meaningFor(Localizations.localeOf(context).toString());
-                          Share.share(
-                            '${card.word} (${card.reading})\n$meaning\n\n${l10n.viaInstalingo} https://instalingo.app',
-                            subject: '${card.word} - ${l10n.shareAppSubject}',
-                          );
+                          try {
+                            Share.share(
+                              '${card.word} (${card.reading})\n$meaning\n\n${l10n.viaInstalingo} https://instalingo.app',
+                              subject: '${card.word} - ${l10n.shareAppSubject}',
+                            );
+                          } catch (_) {
+                            // Share failed — silently handled
+                          }
                         }, l10n.swipeShareLabel),
                     const Spacer(),
                     _act(saved ? PhosphorIcons.bookmark(PhosphorIconsStyle.fill) : PhosphorIcons.bookmark(PhosphorIconsStyle.bold),

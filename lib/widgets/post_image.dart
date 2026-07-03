@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/chill_post.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -124,6 +125,7 @@ class _WordOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
     if (post.targetWord == null || post.targetWord!.isEmpty) {
       return Center(
         child: Opacity(
@@ -144,7 +146,7 @@ class _WordOverlay extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'JLPT N5',
+              'N5',
               style: TextStyle(
                 fontSize: 10.sp,
                 fontWeight: FontWeight.w700,
@@ -182,7 +184,7 @@ class _WordOverlay extends StatelessWidget {
                 ),
               ),
               child: Text(
-                'tap to learn →',
+                l10n.tapToLearn,
                 style: TextStyle(
                   fontSize: 11.sp,
                   color: Colors.white.withValues(alpha: 0.9),

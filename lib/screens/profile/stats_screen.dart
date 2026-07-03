@@ -17,8 +17,7 @@ class StatsScreen extends ConsumerWidget {
     final now = DateTime.now();
     final monday = now.subtract(Duration(days: now.weekday - 1));
     final dayLabels = [l10n.mon, l10n.tue, l10n.wed, l10n.thu, l10n.fri, l10n.sat, l10n.sun];
-    final maxXp = user.weeklyXp.values.fold(0, (a, b) => a > b ? a : b);
-    if (maxXp == 0) maxXp;
+    final maxXp = user.weeklyXp.values.fold<int>(0, (a, b) => a > b ? a : b);
 
     return List.generate(7, (i) {
       final day = monday.add(Duration(days: i));

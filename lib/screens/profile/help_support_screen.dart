@@ -158,16 +158,24 @@ class HelpSupportScreen extends StatelessWidget {
   }
 
   Future<void> _launchEmail() async {
-    final uri = Uri.parse('mailto:support@instalingo.app');
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri);
+    try {
+      final uri = Uri.parse('mailto:support@instalingo.app');
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri);
+      }
+    } catch (_) {
+      // Silently handle — email client may not be available
     }
   }
 
   Future<void> _launchUrl(String url) async {
-    final uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    try {
+      final uri = Uri.parse(url);
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(uri, mode: LaunchMode.externalApplication);
+      }
+    } catch (_) {
+      // Silently handle — browser may not be available
     }
   }
 }
@@ -314,7 +322,7 @@ class _HelpItemWidget extends StatelessWidget {
                   ),
                 ),
                 Semantics(
-                  label: 'Close',
+                  label: l10n.closeLabel,
                   button: true,
                   child: GestureDetector(
                   onTap: () => Navigator.of(context).pop(),

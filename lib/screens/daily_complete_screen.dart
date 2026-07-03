@@ -260,13 +260,17 @@ class _DailyCompleteScreenState extends ConsumerState<DailyCompleteScreen>
                         onPressed: () {
                           HapticFeedback.mediumImpact();
                           final l10n = AppLocalizations.of(context);
-                          Share.share(
-                            '${l10n.dailyCompleteTitle}! '
-                            '${l10n.dailyCompleteCardsSwiped}: ${widget.cardsSwiped} | '
-                            '+${widget.xpEarned} XP | '
-                            '+${widget.gemsEarned} ${l10n.dailyCompleteGemsLabel}\n\n'
-                            '${l10n.viaInstalingo}',
-                          );
+                          try {
+                            Share.share(
+                              '${l10n.dailyCompleteTitle}! '
+                              '${l10n.dailyCompleteCardsSwiped}: ${widget.cardsSwiped} | '
+                              '+${widget.xpEarned} XP | '
+                              '+${widget.gemsEarned} ${l10n.dailyCompleteGemsLabel}\n\n'
+                              '${l10n.viaInstalingo}',
+                            );
+                          } catch (_) {
+                            // Share failed — silently handled
+                          }
                         },
                         style: OutlinedButton.styleFrom(
                           foregroundColor: appTheme.harborInkOnNavy,

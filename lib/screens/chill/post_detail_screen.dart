@@ -171,7 +171,7 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                             ),
                           ),
                           Text(
-                            DateFormat('MMM d, yyyy')
+                            DateFormat('MMM d, yyyy', Localizations.localeOf(context).toString())
                                 .format(post.createdAt)
                                 .toUpperCase(),
                             style: TextStyle(
@@ -357,7 +357,11 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                                 '',
                                 l10n.viaInstalingo,
                               ].join('\n');
-                              Share.share(text);
+                              try {
+                                Share.share(text);
+                              } catch (_) {
+                                // Share failed — silently handled
+                              }
                             },
                           ),
                         ],
@@ -422,20 +426,33 @@ class _PostDetailScreenState extends ConsumerState<PostDetailScreen> {
                         onPressed: () {
                           final text = _commentController.text.trim();
                           if (text.isNotEmpty) {
-                            final comment = ChillComment(
-                              authorName: 'You',
-                              content: text,
-                            );
-                            ref.read(commentStoreProvider.notifier).addComment(widget.postId, comment);
-                            _commentController.clear();
-                            _commentFocusNode.unfocus();
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text(l10n.commentPosted),
-                                duration: const Duration(seconds: 2),
-                                backgroundColor: appTheme.harborNavy,
-                              ),
-                            );
+                            try {
+                              final comment = ChillComment(
+                                authorName: l10n.commentYou,
+                                content: text,
+                              );
+                              ref.read(commentStoreProvider.notifier).addComment(widget.postId, comment);
+                              _commentController.clear();
+                              _commentFocusNode.unfocus();
+                              if (context.mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(
+                                    content: Text(l10n.commentPosted),
+                                    duration: const Duration(seconds: 2),
+                                    backgroundColor: appTheme.harborNavy,
+                                  ),
+                                );
+                              }
+                            } catch (_) {
+                              if (context.mounted) {
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(
+                                    content: Text(l10n.error),
+                                    backgroundColor: AppColors.error,
+                                  ),
+                                );
+                              }
+                            }
                           }
                         },
                         icon: PhosphorIcon(

@@ -974,4 +974,6 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String timeSpentHoursMinutes(int hours, int minutes) => '${hours}시간 ${minutes}분';
 
+  @override\n  String get commentYou => '나';\n\n  @override\n  String get settingsResetConfirm => '저장된 단어, XP, 연속 학습 일수를 포함한 모든 진행 상황이 초기화됩니다. 이 작업은 취소할 수 없습니다.';\n\n  @override\n  String get settingsResetDone => '진행 상황이 초기화되었습니다.';\n\n  @override\n  String get tapToLearn => '탭하여 학습 →';
+
 }

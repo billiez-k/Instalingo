@@ -249,8 +249,12 @@ class _PaywallModalState extends ConsumerState<PaywallModal>
                 child: ElevatedButton(
                   onPressed: () {
                     HapticFeedback.mediumImpact();
-                    ref.read(userProvider.notifier).upgradeToPro();
-                    context.pop();
+                    try {
+                      ref.read(userProvider.notifier).upgradeToPro();
+                    } catch (_) {
+                      // Upgrade failed — user still returned
+                    }
+                    if (context.mounted) context.pop();
                   },
                   child: Text(
                     l10n.startFreeTrial.toUpperCase(),

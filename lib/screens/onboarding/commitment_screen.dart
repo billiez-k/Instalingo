@@ -22,21 +22,31 @@ class _CommitmentScreenState extends ConsumerState<CommitmentScreen> {
 
   Future<void> _completeOnboarding() async {
     if (_selectedMinutes == null) return;
+    if (!mounted) return;
     setState(() => _completing = true);
 
-    final data = ref.read(onboardingDataProvider);
-    ref.read(onboardingDataProvider.notifier).setDailyGoalMinutes(_selectedMinutes!);
+    try {
+      final data = ref.read(onboardingDataProvider);
+      ref.read(onboardingDataProvider.notifier).setDailyGoalMinutes(_selectedMinutes!);
 
-    final userNotifier = ref.read(userProvider.notifier);
-    userNotifier.updateProfile(
-      nativeLanguage: data.nativeLanguage,
-      learningLanguage: data.learningLanguage,
-      currentLevel: data.targetLevel,
-      dailyGoal: _selectedMinutes!,
-    );
+      final userNotifier = ref.read(userProvider.notifier);
+      userNotifier.updateProfile(
+        nativeLanguage: data.nativeLanguage,
+        learningLanguage: data.learningLanguage,
+        currentLevel: data.targetLevel,
+        dailyGoal: _selectedMinutes!,
+      );
 
-    await ref.read(onboardingCompleteProvider.notifier).complete();
-    if (mounted) context.go('/home');
+      await ref.read(onboardingCompleteProvider.notifier).complete();
+      if (mounted) context.go('/home');
+    } catch (e) {
+      if (mounted) {
+        setState(() => _completing = false);
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('$e'), backgroundColor: AppColors.error),
+        );
+      }
+    }
   }
 
   @override

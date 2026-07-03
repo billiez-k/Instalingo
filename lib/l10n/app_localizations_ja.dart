@@ -974,4 +974,6 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String timeSpentHoursMinutes(int hours, int minutes) => '${hours} 時間 ${minutes} 分';
 
+  @override\n  String get commentYou => 'あなた';\n\n  @override\n  String get settingsResetConfirm => '保存された単語、経験値、連続学習日を含むすべての進捗を消去します。この操作は元に戻せません。';\n\n  @override\n  String get settingsResetDone => '進捗がリセットされました。';\n\n  @override\n  String get tapToLearn => 'タップして学習 →';
+
 }

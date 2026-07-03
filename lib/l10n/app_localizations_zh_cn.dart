@@ -974,4 +974,6 @@ class AppLocalizationsZhCn extends AppLocalizations {
   @override
   String timeSpentHoursMinutes(int hours, int minutes) => '${hours} 小时 ${minutes} 分钟';
 
+  @override\n  String get commentYou => '你';\n\n  @override\n  String get settingsResetConfirm => '此操作将清除你的所有进度，包括已保存的单词、经验值和连续学习天数。此操作不可撤销。';\n\n  @override\n  String get settingsResetDone => '进度已重置。';\n\n  @override\n  String get tapToLearn => '点击学习 →';
+
 }

@@ -675,6 +675,12 @@ abstract class AppLocalizations {
 
   String timeSpentHoursMinutes(int hours, int minutes);
 
+  String get commentYou;
+
+  String get settingsResetConfirm;
+
+  String get settingsResetDone;
+
   static final _localizedDelegate = {
     const Locale('ar'): () => AppLocalizationsAr(),
     const Locale('en'): () => AppLocalizationsEn(),

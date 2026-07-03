@@ -979,4 +979,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String timeSpentHoursMinutes(int hours, int minutes) => '${hours}h ${minutes}m';
 
+  @override\n  String get commentYou => 'You';\n\n  @override\n  String get settingsResetConfirm => 'This will clear all your progress including saved words, XP, and streak. This cannot be undone.';\n\n  @override\n  String get settingsResetDone => 'Progress has been reset.';\n\n  @override\n  String get tapToLearn => 'Tap to learn →';
+
 }

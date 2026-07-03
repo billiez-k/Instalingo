@@ -974,4 +974,6 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String timeSpentHoursMinutes(int hours, int minutes) => '${hours}س ${minutes}د';
 
+  @override\n  String get commentYou => 'أنت';\n\n  @override\n  String get settingsResetConfirm => 'سيؤدي هذا إلى مسح جميع تقدمك بما في ذلك الكلمات المحفوظة ونقاط الخبرة وسلسلة التعلم المستمر. لا يمكن التراجع عن هذا الإجراء.';\n\n  @override\n  String get settingsResetDone => 'تم إعادة تعيين التقدم.';\n\n  @override\n  String get tapToLearn => 'اضغط للتعلم ←';
+
 }

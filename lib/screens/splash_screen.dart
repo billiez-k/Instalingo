@@ -46,19 +46,25 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
     _entranceController.forward();
 
     Future.delayed(Duration.zero, () async {
-      if (!mounted) return;
-      HapticFeedback.mediumImpact();
-      // Wait for SharedPreferences to load before reading onboarding state.
-      // Without this, onboardingCompleteProvider always returns false (its
-      // initial value) and returning users get routed to /onboarding on every
-      // launch.
-      await ref.read(onboardingReadyProvider.future);
-      if (!mounted) return;
-      final onboardingComplete = ref.read(onboardingCompleteProvider);
-      if (onboardingComplete) {
-        context.go('/home');
-      } else {
-        context.go('/onboarding');
+      try {
+        if (!mounted) return;
+        HapticFeedback.mediumImpact();
+        // Wait for SharedPreferences to load before reading onboarding state.
+        // Without this, onboardingCompleteProvider always returns false (its
+        // initial value) and returning users get routed to /onboarding on every
+        // launch.
+        await ref.read(onboardingReadyProvider.future);
+        if (!mounted) return;
+        final onboardingComplete = ref.read(onboardingCompleteProvider);
+        if (onboardingComplete) {
+          context.go('/home');
+        } else {
+          context.go('/onboarding');
+        }
+      } catch (_) {
+        if (mounted) {
+          context.go('/onboarding');
+        }
       }
     });
   }

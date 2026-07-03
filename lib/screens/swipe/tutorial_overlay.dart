@@ -48,9 +48,14 @@ class _TutorialOverlayState extends ConsumerState<TutorialOverlay>
   Future<void> _dismiss() async {
     HapticFeedback.mediumImpact();
     await _controller.reverse();
-    final prefs = await ref.read(sharedPrefsProvider.future);
-    await prefs.setBool('swipe_tutorial_shown', true);
-    widget.onDismiss();
+    if (!mounted) return;
+    try {
+      final prefs = await ref.read(sharedPrefsProvider.future);
+      await prefs.setBool('swipe_tutorial_shown', true);
+    } catch (_) {
+      // Tutorial dismissed regardless of persistence
+    }
+    if (mounted) widget.onDismiss();
   }
 
   @override
