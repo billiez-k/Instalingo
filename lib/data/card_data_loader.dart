@@ -11,14 +11,22 @@ class CardDataLoader {
   /// be up to ~1000 cards and is requested by multiple providers.
   static final Map<String, CardDeck> _cache = {};
 
-  /// Loads a card deck for the given JLPT level (N5-N1).
+  /// Valid register tier filter values.
+  static const validRegisters = ['all', 'textbook', 'real_life', 'slang', 'vulgar'];
+
+  /// Loads a card deck for the given JLPT level (N5-N1) or special deck (Slang, Vulgar).
   /// Cards are sorted by difficulty (easy→hard) for progressive learning.
   /// Results are cached in-memory; subsequent calls for the same level
   /// return the cached deck instantly.
+  /// Pass [registerFilter] to filter cards by register tier (e.g., 'slang', 'vulgar').
+  /// Pass 'all' or null for no filtering.
   /// Throws if the asset cannot be loaded — no silent fallback to demo data.
-  static Future<CardDeck> loadDeck(String level) async {
+  static Future<CardDeck> loadDeck(String level, {String? registerFilter}) async {
     final levelLower = level.toLowerCase();
-    if (_cache.containsKey(levelLower)) return _cache[levelLower]!;
+    final cacheKey = registerFilter != null && registerFilter != 'all'
+        ? '$levelLower:$registerFilter'
+        : levelLower;
+    if (_cache.containsKey(cacheKey)) return _cache[cacheKey]!;
 
     final path = '$_assetBase/$levelLower/cards.json';
     final jsonString = await rootBundle.loadString(path);
@@ -26,8 +34,13 @@ class CardDataLoader {
     final deck = CardDeck.fromJson(data);
 
     // Sort cards by computed difficulty for progressive learning
-    final sorted = List<VocabCard>.from(deck.cards)
+    final allCards = List<VocabCard>.from(deck.cards)
       ..sort((a, b) => _cardDifficulty(a).compareTo(_cardDifficulty(b)));
+
+    // Apply register filter if specified
+    final filteredCards = (registerFilter != null && registerFilter != 'all')
+        ? allCards.where((c) => c.register == registerFilter).toList()
+        : allCards;
 
     final result = CardDeck(
       id: deck.id,
@@ -35,10 +48,10 @@ class CardDataLoader {
       language: deck.language,
       displayName: deck.displayName,
       displayNameZh: deck.displayNameZh,
-      totalCards: deck.totalCards,
-      cards: sorted,
+      totalCards: filteredCards.length,
+      cards: filteredCards,
     );
-    _cache[levelLower] = result;
+    _cache[cacheKey] = result;
     return result;
   }
 

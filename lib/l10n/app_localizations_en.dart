@@ -9,11 +9,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get achievementsTitle => 'Achievements';
 
+
   @override
   String get achievementsUnlocked => 'Unlocked';
 
   @override
   String get active => 'Active';
+
 
   @override
   String get advancedProgressTracking => 'Advanced progress tracking';
@@ -21,11 +23,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get aiConversationPractice => 'AI conversation practice';
 
+
   @override
   String get annual => 'Annual';
 
   @override
   String get appTagline => 'Discover Japanese. Swipe to learn.';
+
 
   @override
   String get appTitle => 'InstaLingo';
@@ -33,11 +37,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get back => 'Back';
 
+
   @override
   String get cancel => 'Cancel';
 
   @override
   String get cardNotFound => 'Card not found';
+
 
   @override
   String get check => 'Check';
@@ -45,11 +51,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get chillAddComment => 'Add a comment...';
 
+
   @override
   String get chillComments => 'Comments';
 
   @override
   String get chillCorner => 'Chill Corner';
+
 
   @override
   String get chillCornerEyebrow => 'CHILL CORNER';
@@ -57,11 +65,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get chillEmptyMessage => 'Community posts will appear here.';
 
+
   @override
   String get chillNoPosts => 'No posts yet';
 
   @override
   String get chillNoPostsMessage => 'Swipe more cards to unlock posts from the community.';
+
 
   @override
   String get chinese => 'Chinese';
@@ -69,11 +79,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get collectionsEmptyHint => 'Try a different search or filter.';
 
+
   @override
   String get collectionsEmptyMessage => 'Swipe right on cards to save them here.';
 
   @override
   String get collectionsEmptyTitle => 'No matching words';
+
 
   @override
   String get collectionsFilterAll => 'All';
@@ -81,11 +93,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get collectionsNoSavedWords => 'No saved words yet';
 
+
   @override
   String collectionsPosTopicFormat(String pos, String topic) => '{pos}  .  {topic}';
 
   @override
   String get collectionsSearchHint => 'Search saved words...';
+
 
   @override
   String get collectionsTitle => 'Collections';
@@ -93,34 +107,41 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get collectionsUnlimited => 'unlimited';
 
+
   @override
   String get collectionsUpgradePrompt => 'Upgrade to Pro for unlimited saves';
 
   @override
   String get collectionsWordsCount => 'words';
 
+
   @override
   String get commentHintText => 'Add a comment...';
 
   @override
   String get commentSectionTitle => 'Comments';
+
   String get commentNoComments => 'No comments yet';
   String get commentBeFirst => 'Be the first to comment!';
+
   String get commentPosted => 'Comment posted!';
 
   @override
   String get confirm => 'Confirm';
+
 
   @override
   String get coursePath => 'Course Path';
 
   @override
   String get dailyCompleteCardsLabel => 'Cards';
+
   @override
   String get dailyCompleteSavedLabel => 'Saved';
 
   @override
   String get dailyCompleteCardsSwiped => 'Cards Swiped';
+
 
   @override
   String get dailyCompleteContinue => 'CONTINUE';
@@ -128,11 +149,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get dailyCompleteGemsEarned => 'Gems Earned';
 
+
   @override
   String get dailyCompleteGemsLabel => 'Gems';
 
   @override
   String get dailyCompleteShare => 'SHARE';
+
 
   @override
   String get dailyCompleteStreak => 'Day Streak';
@@ -140,11 +163,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get dailyCompleteTitle => 'Daily Goal Complete!';
 
+
   @override
   String get dailyCompleteXpEarned => 'XP Earned';
 
   @override
   String get dailyGoal => 'Daily Goal';
+
 
   @override
   String get darkMode => 'Dark Mode';
@@ -152,11 +177,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get dayStreak => 'Day Streak';
 
+
   @override
   String get defaultDisplayName => 'Learner';
 
   @override
   String get delete => 'Delete';
+
 
   @override
   String get editProfile => 'Edit Profile';
@@ -164,11 +191,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get emptyStateMessage => 'Nothing to show here yet.';
 
+
   @override
   String get emptyStateTitle => 'Nothing Here';
 
   @override
   String get english => 'English';
+
 
   @override
   String get swipeSaveLabel => 'Save';
@@ -176,14 +205,17 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get swipeSavedLabel => 'Saved';
 
+
   @override
   String get swipeAlreadyKnew => 'Already Knew';
   @override
   String get swipeFlipLabel => 'Flip';
+
   @override
   String get swipeShareLabel => 'Share';
   @override
   String get swipeSkipped => 'Skipped';
+
 
   @override
   String get error => 'Error';
@@ -191,11 +223,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get errorGenericMessage => 'Something went wrong. Please try again.';
 
+
   @override
   String get errorGenericTitle => 'Oops!';
 
   @override
   String get errorLoadingFeed => 'Could not load feed';
+
 
   @override
   String get errorLoadingReviews => 'Could not load reviews';
@@ -203,11 +237,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get exampleSectionLabel => 'Example';
 
+
   @override
   String get featuredWord => 'FEATURED WORD';
 
   @override
   String get free => 'Free';
+
 
   @override
   String get fri => 'Fri';
@@ -215,11 +251,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get gems => 'Gems';
 
+
   @override
   String get getUnlimitedLearning => 'Get unlimited learning';
 
   @override
   String get gotIt => 'GOT IT';
+
 
   @override
   String get helpSupport => 'Help & Support';
@@ -227,11 +265,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get jlptN3Label => 'JLPT N3';
 
+
   @override
   String get jlptN4Label => 'JLPT N4';
 
   @override
   String get jlptN5Label => 'JLPT N5';
+
 
   @override
   String get keepPracticing => 'Keep practicing!';
@@ -239,11 +279,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get langNameAr => 'Arabic';
 
+
   @override
   String get langNameDe => 'Deutsch';
 
   @override
   String get langNameEn => 'English';
+
 
   @override
   String get langNameEs => 'Español';
@@ -251,11 +293,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get langNameFr => 'Français';
 
+
   @override
   String get langNameJa => '日本語';
 
   @override
   String get langNameKo => '한국어';
+
 
   @override
   String get langNameMs => 'Bahasa Melayu';
@@ -263,11 +307,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get langNameZhCn => '中文（简体）';
 
+
   @override
   String get langNameZhTw => '中文（繁體）';
 
   @override
   String get learningLanguage => 'Learning Language';
+
 
   @override
   String get learningLanguageLabel => 'Learn';
@@ -275,11 +321,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get lessons => 'Lessons';
 
+
   @override
   String get levelAbbreviation => 'Lv.';
 
   @override
   String get loading => 'Loading...';
+
 
   @override
   String get locked => 'Locked';
@@ -287,11 +335,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get logout => 'Log Out';
 
+
   @override
   String get maybeLater => 'Maybe Later';
 
   @override
   String get mon => 'Mon';
+
 
   @override
   String get monthly => 'Monthly';
@@ -299,11 +349,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get nativeLanguage => 'Native Language';
 
+
   @override
   String get navCollections => 'Collections';
 
   @override
-  String get navHome => 'Home';
+  String get navSwipe => 'Swipe';
+
 
   @override
   String get navProfile => 'Profile';
@@ -311,11 +363,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get navReview => 'Review';
 
+
   @override
   String get no => 'No';
 
   @override
   String get noAds => 'No ads';
+
 
   @override
   String get notificationPracticeReminder => 'Time to practice!';
@@ -323,11 +377,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get notificationReminderBody => 'Time to practice!';
 
+
   @override
   String get notifications => 'Notifications';
 
   @override
   String get onboardingSkip => 'Skip';
+
 
   @override
   String get onboardingComingSoon => 'Coming Soon';
@@ -335,11 +391,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get onboardingDiscoverJapanese => 'Discover Japanese';
 
+
   @override
   String get onboardingGetStarted => 'GET STARTED';
 
   @override
   String get onboardingContinue => 'Continue';
+
 
   @override
   String get onboardingGoalQuestion => "What's your goal?";
@@ -350,11 +408,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get onboardingMotivationTitle => 'Motivation';
 
+
   @override
   String get onboardingMotivationSubtitle => 'Select all that apply.';
 
   @override
   String get onboardingProficiencyQuestion => 'What is your\ncurrent level?';
+
 
   @override
   String onboardingStepCount(int step, int total) => 'STEP $step/$total';
@@ -362,11 +422,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get onboardingJapanese => 'Japanese';
 
+
   @override
   String get onboardingJlptLevels => 'JLPT N5 - N1';
 
   @override
   String get onboardingKorean => 'Korean';
+
 
   @override
   String get onboardingSelectLearningLanguage => 'Select language to learn';
@@ -374,11 +436,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get onboardingSelectNativeLanguage => 'Select your native language';
 
+
   @override
   String get onboardingSmartReview => 'Smart review system remembers what you forget';
 
   @override
   String get onboardingSmartReviewDesc => 'FSRS-powered spaced repetition keeps words fresh. Review exactly when you need to.';
+
 
   @override
   String get onboardingStartLevel => 'Starting level';
@@ -386,11 +450,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get onboardingSwipeLearn => 'Swipe to learn new words';
 
+
   @override
   String get onboardingSwipeLearnDesc => 'Swipe through vocabulary cards like a social feed. Save what matters, skip what you know.';
 
   @override
   String get onboardingTrackProgress => 'Track your streak and progress';
+
 
   @override
   String get onboardingTrackProgressDesc => 'Build streaks, earn XP, and watch your vocabulary grow with detailed stats.';
@@ -398,11 +464,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get onboarding_examLevelAdvanced => 'Advanced';
 
+
   @override
   String get onboarding_examLevelBeginner => 'Beginner';
 
   @override
   String get onboarding_examLevelIntermediate => 'Intermediate';
+
 
   @override
   String get onboarding_examWordsCount => 'words';
@@ -410,11 +478,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get paywallAnnual => 'Annual';
 
+
   @override
   String get paywallBestValue => 'BEST VALUE';
 
   @override
   String get paywallContinue => 'CONTINUE';
+
 
   @override
   String get paywallDetailedStats => 'Detailed learning statistics';
@@ -422,11 +492,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get paywallFullSrsAccess => 'Full SRS review access';
 
+
   @override
   String get paywallMaybeLater => 'Maybe Later';
 
   @override
   String get paywallMonthly => 'Monthly';
+
 
   @override
   String get paywallNoAds => 'Zero ads';
@@ -434,11 +506,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get paywallPerMonth => '/mo';
 
+
   @override
   String get paywallTitle => 'Unlock Full Access';
 
   @override
   String get paywallUnlimitedSaves => 'Unlimited word saves';
+
 
   @override
   String get paywallUnlockFull => 'Unlock Full Access';
@@ -446,11 +520,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get perMonth => '/mo';
 
+
   @override
   String get perYear => '/yr';
 
   @override
   String get postNotFound => 'Post not found';
+
 
   @override
   String get predictedLevel => 'Predicted Level';
@@ -458,11 +534,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get pro => 'Pro';
 
+
   @override
   String get profile => 'Profile';
 
   @override
   String get profileAchievements => 'Achievements';
+
 
   @override
   String get profileEdit => 'Edit Profile';
@@ -470,11 +548,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profileGems => 'Gems';
 
+
   @override
   String get profileHelp => 'Help & Support';
 
   @override
   String get profileLearner => 'Learner';
+
 
   @override
   String get profilePro => 'PRO';
@@ -482,11 +562,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profileSettings => 'Settings';
 
+
   @override
   String get profileStats => 'Stats';
 
   @override
   String get profileStreak => 'Streak';
+
 
   @override
   String get profileWordsSaved => 'Words Saved';
@@ -494,11 +576,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profileXp => 'XP';
 
+
   @override
   String get profile_account => 'Account';
 
   @override
   String get profile_advanced => 'Advanced';
+
 
   @override
   String get profile_aiConversationPractice => 'How does AI Conversation Practice work?';
@@ -506,11 +590,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_aiConversationPracticeAnswer => 'Chat with AI characters in real time to practice your target language naturally.';
 
+
   @override
   String get profile_appearance => 'Appearance';
 
   @override
   String get profile_beginner => 'Beginner';
+
 
   @override
   String get profile_browseTopics => 'BROWSE TOPICS BELOW';
@@ -518,11 +604,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_checkForUpdates => 'Check for Updates';
 
+
   @override
   String get profile_contactSupport => 'Contact Support';
 
   @override
   String get profile_displayName => 'Display Name';
+
 
   @override
   String get profile_earningXPGems => 'How do I earn XP and Gems?';
@@ -530,11 +618,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_earningXPGemsAnswer => 'Complete lessons and maintain your streak to earn XP and gems.';
 
+
   @override
   String get profile_elementary => 'Elementary';
 
   @override
   String get profile_email => 'Email';
+
 
   @override
   String get profile_enableNotifications => 'How do I enable notifications?';
@@ -542,11 +632,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_enableNotificationsAnswer => 'Go to Settings > Notifications to enable study reminders.';
 
+
   @override
   String get profile_enterYourEmail => 'Enter your email';
 
   @override
   String get profile_enterYourName => 'Enter your name';
+
 
   @override
   String get profile_gettingStarted => 'Getting Started';
@@ -554,11 +646,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_gotIt => 'Got It';
 
+
   @override
   String get profile_howDoIStart => 'How do I start learning?';
 
   @override
   String get profile_howDoIStartAnswer => 'Complete onboarding to select your language, then start with the first lesson!';
+
 
   @override
   String get profile_instalingoSuperFAQ => 'What is InstaLingo Super?';
@@ -566,11 +660,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_instalingoSuperFAQAnswer => 'InstaLingo Super is our premium subscription with unlimited lessons, AI practice, and more.';
 
+
   @override
   String get profile_intermediate => 'Intermediate';
 
   @override
   String get profile_learning => 'Learning';
+
 
   @override
   String get profile_learningFeatures => 'Learning Features';
@@ -578,11 +674,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_lessonRemindersStreakAlerts => 'Lesson reminders and streak alerts';
 
+
   @override
   String get profile_level => 'Level';
 
   @override
   String get profile_levelSuffix => 'Level';
+
 
   @override
   String get profile_notSet => 'Not set';
@@ -590,11 +688,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_proBadge => 'PRO';
 
+
   @override
   String get profile_proficiencyLevel => 'Proficiency Level';
 
   @override
   String get profile_proficient => 'Proficient';
+
 
   @override
   String get profile_resetProgress => 'Reset Progress';
@@ -602,11 +702,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_resetProgressFAQ => 'How do I reset my progress?';
 
+
   @override
   String get profile_resetProgressFAQAnswer => 'Go to Settings > Reset Progress. This cannot be undone.';
 
   @override
   String get profile_settingDailyGoals => 'How do I set daily goals?';
+
 
   @override
   String get profile_settingDailyGoalsAnswer => 'Go to Settings > Learning > Daily Goal to set your target.';
@@ -614,11 +716,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_soundEffects => 'Sound Effects';
 
+
   @override
   String get profile_superBadge => 'SUPER';
 
   @override
   String get profile_tts => 'Pronunciation (TTS)';
+
 
   @override
   String get profile_ttsDesc => 'Tap words to hear pronunciation';
@@ -626,11 +730,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get profile_upperIntermediate => 'Upper Intermediate';
 
+
   @override
   String get profile_visitHelpCenter => 'Visit Help Center';
 
   @override
   String get profile_whatIsChillCorner => 'What is Chill Corner?';
+
 
   @override
   String get profile_whatIsChillCornerAnswer => 'Chill Corner is a social feed where AI characters share vocabulary posts.';
@@ -638,11 +744,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get retry => 'Retry';
 
+
   @override
   String get reviewAgain => 'Again';
 
   @override
   String get reviewAllCaughtUp => 'All caught up!';
+
 
   @override
   String get reviewCardsDue => 'cards due today';
@@ -650,11 +758,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get reviewCompleteMessage => 'Great work. Come back later for more.';
 
+
   @override
   String get reviewCompleteTitle => 'Review complete!';
 
   @override
   String get reviewEasy => 'Easy';
+
 
   @override
   String get reviewEmptyMessage => 'Save more words to build your review queue.';
@@ -662,11 +772,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get reviewEmptyTitle => 'No cards due for review right now.';
 
+
   @override
   String get reviewGood => 'Good';
 
   @override
   String get reviewHard => 'Hard';
+
 
   @override
   String get reviewTitle => 'Review';
@@ -674,11 +786,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get sat => 'Sat';
 
+
   @override
   String get save => 'Save';
 
   @override
   String get settingsAccount => 'Account';
+
 
   @override
   String get settingsAppearance => 'Appearance';
@@ -686,11 +800,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get settingsCheckUpdates => 'Check for Updates';
 
+
   @override
   String get settingsDailyGoal => 'Daily Goal';
 
   @override
   String get settingsDarkMode => 'Dark Mode';
+
 
   @override
   String get settingsLearning => 'Learning';
@@ -698,11 +814,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get settingsLearningLanguage => 'Learning Language';
 
+
   @override
   String get settingsLogout => 'Log Out';
 
   @override
   String get settingsNativeLanguage => 'Native Language';
+
 
   @override
   String get settingsNotifications => 'Notifications';
@@ -710,11 +828,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get settingsReminderTime => 'Reminder Time';
 
+
   @override
   String get settingsResetProgress => 'Reset Progress';
 
   @override
   String get settingsSoundEffects => 'Sound Effects';
+
 
   @override
   String get settingsTitle => 'Settings';
@@ -722,50 +842,70 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get settingsVersion => 'Version';
 
+
   @override
   String get shareAppSubject => 'InstaLingo - Discover Japanese';
 
   @override
   String get shareAppText => 'Learn Japanese with InstaLingo!\nSwipe, learn, and chill.\nhttps://instalingo.app';
 
+
   String get onboardingJlptN5Desc => '~800 words • Total beginner';
   String get onboardingJlptN4Desc => '~1,500 words • Upper beginner';
+
   String get onboardingJlptN3Desc => '~3,700 words • Intermediate';
   String get onboardingJlptN2Desc => '~6,000 words • Upper intermediate';
+
   String get onboardingJlptN1Desc => '~10,000 words • Advanced';
   String onboardingJlptLevel(String level) => 'JLPT $level';
+
   String get onboardingProficiencyBeginnerDesc => 'I know a few words.';
   String get onboardingProficiencyElementaryDesc => 'I can form simple sentences.';
+
   String get onboardingProficiencyIntermediateDesc => 'I can hold a conversation.';
   String get onboardingProficiencyUpperIntermediateDesc => 'I can discuss various topics.';
+
   String get onboardingProficiencyAdvancedDesc => 'I speak fluently.';
   String get onboardingProficiencyStartMessage => "We'll start you at the right difficulty.";
   String get onboardingGoalHint => 'This helps us tailor your learning experience.';
+
   String get onboardingGoalExamTitle => 'Prepare for an exam';
   String get onboardingGoalExamSubtitle => 'Structured lessons, mock tests, timed practice.';
+
   String get onboardingGoalFunTitle => 'Just for fun';
   String get onboardingGoalFunSubtitle => 'Learn at your own pace. No tests, no pressure.';
+
   String get onboardingMotivationCareer => 'Career';
   String get onboardingMotivationTravel => 'Travel';
+
   String get onboardingMotivationStudyAbroad => 'Study Abroad';
   String get onboardingMotivationCulture => 'Culture';
+
   String get onboardingMotivationFamily => 'Family';
   String get onboardingMotivationFun => 'Just for Fun';
+
   String get onboardingMotivationBrain => 'Brain Training';
   String get onboardingMotivationMedia => 'Movies & Shows';
+
   String get onboardingCommitmentCasual => 'Casual';
   String get onboardingCommitmentCasualDesc => '5 min / day';
+
   String get onboardingCommitmentRegular => 'Regular';
   String get onboardingCommitmentRegularDesc => '10 min / day';
+
   String get onboardingCommitmentSerious => 'Serious';
   String get onboardingCommitmentSeriousDesc => '15 min / day';
+
   String get onboardingCommitmentIntense => 'Intense';
   String get onboardingCommitmentIntenseDesc => '20 min / day';
+
   String get onboardingCommitmentHint => 'You can always change this later in settings.';
   String get swipeFlipHint => 'Tap to flip, double tap to save';
+
   String get closeLabel => 'Close';
   @override
   String get shareCardSubject => '{word} - Learn with InstaLingo';
+
 
   @override
   String get shareCardText => 'Learn Japanese with InstaLingo!';
@@ -773,11 +913,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get shareLabel => 'Share';
 
+
   @override
   String get shareWordPrefix => 'Word';
 
   @override
   String get startFreeTrial => 'START FREE TRIAL';
+
 
   @override
   String get statsCardsSwiped => 'Cards Swiped';
@@ -785,11 +927,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get statsStreak => 'Streak';
 
+
   @override
   String get statsTitle => 'Statistics';
 
   @override
   String get statsTotalXp => 'Total XP';
+
 
   @override
   String get statsWeekXp => 'Weekly XP';
@@ -797,11 +941,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get statsWordsSaved => 'Words Saved';
 
+
   @override
   String get streakCalendar => 'Streak Calendar';
 
   @override
   String get streakRepair => 'Repair';
+
 
   @override
   String get streakRepaired => 'Repaired';
@@ -809,11 +955,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get streakShielded => 'Shielded';
 
+
   @override
   String get studyPlan => 'Study Plan';
 
   @override
   String get studyReminderBody => 'Time to practice Japanese!';
+
 
   @override
   String get subscription => 'Subscription';
@@ -821,11 +969,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get sun => 'Sun';
 
+
   @override
   String get swipeAllCaughtUp => 'All caught up!';
 
   @override
   String get swipeBackToHome => 'BACK TO HOME';
+
 
   @override
   String get swipeDayStreak => '-day streak';
@@ -833,25 +983,32 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get swipeLeft => 'Swipe Left';
 
+
   @override
   String get swipeLeftDescription => 'Mark as already known';
 
   @override
   String get swipeLoadingCards => 'Loading cards...';
 
+
   @override
   String get swipeRemaining => 'remaining';
 
   @override
   String get swipeRight => 'Swipe Right';
+
   String get tutorialTapToFlip => 'Tap to Flip';
   String get tutorialTapToFlipDesc => 'Tap the card to see the meaning and examples.';
+
   String get tutorialSave => 'Save Word';
   String get tutorialSaveDesc => 'Tap heart or bookmark to save words for review.';
+
   String get tutorialSkip => 'Already Knew';
   String get tutorialSkipDesc => 'Tap to skip words you already know.';
+
   String get tutorialNextCard => 'Next Card';
   String get tutorialNextCardDesc => 'Swipe up to move to the next word.';
+
 
   @override
   String get swipeRightDescription => 'Save this word to your collection';
@@ -859,11 +1016,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get swipeSaved => 'saved';
 
+
   @override
   String get swipeSeenAllCards => 'You have seen all available cards.';
 
   @override
   String get swipeToday => 'Today';
+
 
   @override
   String get swipeUp => 'Swipe Up';
@@ -871,17 +1030,16 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get swipeUpDescription => 'Next card';
 
+
   @override
   String get swipeXp => 'XP';
 
   @override
   String get tapToFlip => 'Tap to flip';
 
-  @override
-  String get tapToFlipBack => 'Tap to flip back';
 
   @override
-  String get tapToLearn => '-- tap to learn';
+  String get tapToFlipBack => 'Tap to flip back';
 
   @override
   String get tapToStudyWord => 'Tap to study this word';
@@ -889,11 +1047,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get thu => 'Thu';
 
+
   @override
   String get timeSpent => 'Time Spent';
 
   @override
   String get today => 'Today';
+
 
   @override
   String get totalXP => 'Total XP';
@@ -901,11 +1061,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get tryAgain => 'Try Again';
 
+
   @override
   String get tue => 'Tue';
 
   @override
   String get unlimitedLessons => 'Unlimited lessons';
+
 
   @override
   String get unlockSuper => 'Unlock Super';
@@ -913,11 +1075,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get upgradePrompt => 'UPGRADE';
 
+
   @override
   String get version => 'Version';
 
   @override
   String get viaInstalingo => 'via InstaLingo';
+
 
   @override
   String get wed => 'Wed';
@@ -925,11 +1089,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get wordsLearned => 'Words Learned';
 
+
   @override
   String get xpThisWeek => 'XP This Week';
 
   @override
   String get yes => 'Yes';
+
 
   @override
   String get youAreOffline => 'You Are Offline';
@@ -937,11 +1103,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get yourAnswer => 'Your Answer';
 
+
   @override
   String get yourProgress => 'Your Progress';
 
   @override
   String get yourScore => 'Your Score';
+
 
   @override
   String dayStreakCount(int count) => '$count Day Streak';
@@ -949,11 +1117,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String lapsesCount(int count) => 'Lapses: $count';
 
+
   @override
   String profile_learningStatus(String level, String wordsLearned) => '$level / $wordsLearned words';
 
   @override
   String profile_minPerDay(int min) => '$min min/day';
+
 
   @override
   String profile_minutesCount(int minutes) => '$minutes min';
@@ -961,11 +1131,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String profile_version(String version) => 'Version $version';
 
+
   @override
   String reviewsCount(int count) => 'Reviews: $count';
 
   @override
   String savePercent(int percent) => 'Save $percent%';
+
 
   @override
   String sourceLabel(String source) => 'Source: $source';
@@ -973,12 +1145,92 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String streakKeepStreak(int days) => 'Keep your $days-day streak alive!';
 
+
   @override
   String streakShieldsRemaining(int remaining) => '$remaining shields remaining';
 
   @override
   String timeSpentHoursMinutes(int hours, int minutes) => '${hours}h ${minutes}m';
 
-  @override\n  String get commentYou => 'You';\n\n  @override\n  String get settingsResetConfirm => 'This will clear all your progress including saved words, XP, and streak. This cannot be undone.';\n\n  @override\n  String get settingsResetDone => 'Progress has been reset.';\n\n  @override\n  String get tapToLearn => 'Tap to learn →';
 
+  @override
+  String get commentYou => 'You';
+
+  @override
+  String get settingsResetConfirm => 'This will clear all your progress including saved words, XP, and streak. This cannot be undone.';
+
+  @override
+  String get settingsResetDone => 'Progress has been reset.';
+
+  @override
+  String get tapToLearn => 'Tap to learn →';
+
+
+  @override
+  String get allJlptLevels => 'All JLPT N5-N1 levels';
+  @override
+  String get realJapaneseDeck => 'Real Japanese conversation deck';
+  @override
+  String get spicySlangDeck => 'Spicy slang deck unlocked';
+  @override
+  String get unlimitedSavedWords => 'Unlimited saved words + folders';
+  @override
+  String get exportAnkiCsv => 'Export to Anki/CSV';
+  @override
+  String get everythingInPro => 'Everything in Pro';
+  @override
+  String get wildDeckAdults => 'Wild deck (adults only)';
+  @override
+  String get aiWordExplanations => 'AI-powered word explanations';
+  @override
+  String get enhancedAudioPron => 'Enhanced pronunciation audio';
+  @override
+  String get earlyAccessFeatures => 'Early access to new features';
+  @override
+  String get oneTimePurchases => 'One-Time Purchases';
+  @override
+  String get streakShieldPurchase => 'Streak Shield';
+  @override
+  String get spicyPackPurchase => 'Spicy Pack';
+  @override
+  String get customThemePurchase => 'Custom Theme';
+  @override
+  String get mostPopular => 'Most Popular';
+
+  @override
+  String get contentPreferences => 'Content Preferences';
+  @override
+  String get spicyContent => '🔥 Spicy Content (Slang)';
+  @override
+  String get spicyContentDesc => 'Show casual slang and informal Japanese words';
+  @override
+  String get wildContent => '💀 Wild Content (Adult)';
+  @override
+  String get wildContentDesc => 'Show explicit, vulgar, or adult language (18+)';
+
+  @override
+  String get lifetimeOption => 'Lifetime';
+  @override
+  String get onceOnly => 'once';
+  @override
+  String get lifetimeProAccess => 'Lifetime Pro access — pay once';
+  @override
+  String get allFutureFeatures => 'All future features included';
+  @override
+  String get bestValueLongTerm => 'Best value for serious learners';
+
+  @override
+  String get attributionsTitle => 'Attributions';
+  @override
+  String get attributionsJmdict => 'JMdict/EDRDG — Japanese Dictionary';
+  @override
+  String get attributionsJmdictDesc => 'Vocabulary data from JMdict (Electronic Dictionary Research and Development Group). Licensed under CC-BY-SA 4.0. https://www.edrdg.org/jmdict/j_jmdict.html';
+  @override
+  String get attributionsTatoeba => 'Tatoeba — Example Sentences';
+  @override
+  String get attributionsTatoebaDesc => 'Example sentences from the Tatoeba Project. Licensed under CC-BY 2.0 FR. https://tatoeba.org';
+  @override
+  String get attributionsTanos => 'Tanos.co.uk — JLPT Vocabulary Lists';
+  @override
+  String get attributionsTanosDesc => 'JLPT vocabulary level classifications from Jonathan Waller (Tanos.co.uk). Licensed under CC-BY. http://www.tanos.co.uk/jlpt/';
 }

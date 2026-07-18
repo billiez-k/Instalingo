@@ -42,7 +42,7 @@ class ProfileScreen extends ConsumerWidget {
                       _MenuItem(
                         icon: PhosphorIcons.chartBar(PhosphorIconsStyle.bold),
                         label: l10n.statsTitle,
-                        onTap: () => context.go('/collections'),
+                        onTap: () => context.push('/profile/stats'),
                       ),
                       _MenuItem(
                         icon: PhosphorIcons.trophy(PhosphorIconsStyle.bold),
@@ -56,7 +56,7 @@ class ProfileScreen extends ConsumerWidget {
                       ),
                       _MenuItem(
                         icon: PhosphorIcons.calendarCheck(PhosphorIconsStyle.bold),
-                        label: l10n.studyPlan,
+                        label: l10n.collectionsTitle,
                         onTap: () => context.go('/collections'),
                       ),
                     ],

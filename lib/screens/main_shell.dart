@@ -6,10 +6,9 @@ import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
-/// Bottom navigation shell with 4 tabs.
+/// Bottom navigation shell with 3 tabs.
 ///
-/// Home, Review, Collections, Profile -- using Phosphor icons
-/// with outline/fill variants for active state.
+/// Swipe (main), Review, Profile — TikTok-style vocabulary discovery first.
 class MainShell extends ConsumerWidget {
   final Widget child;
   const MainShell({super.key, required this.child});
@@ -41,11 +40,11 @@ class MainShell extends ConsumerWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 _NavItem(
-                  icon: PhosphorIcons.house(PhosphorIconsStyle.regular),
-                  activeIcon: PhosphorIcons.house(PhosphorIconsStyle.fill),
-                  label: l10n.navHome,
+                  icon: PhosphorIcons.lightning(PhosphorIconsStyle.regular),
+                  activeIcon: PhosphorIcons.lightning(PhosphorIconsStyle.fill),
+                  label: l10n.navSwipe,
                   isActive: currentIndex == 0,
-                  onTap: () => context.go('/home'),
+                  onTap: () => context.go('/swipe'),
                 ),
                 _NavItem(
                   icon: PhosphorIcons.clockCounterClockwise(PhosphorIconsStyle.regular),
@@ -55,17 +54,10 @@ class MainShell extends ConsumerWidget {
                   onTap: () => context.go('/review'),
                 ),
                 _NavItem(
-                  icon: PhosphorIcons.bookmarks(PhosphorIconsStyle.regular),
-                  activeIcon: PhosphorIcons.bookmarks(PhosphorIconsStyle.fill),
-                  label: l10n.navCollections,
-                  isActive: currentIndex == 2,
-                  onTap: () => context.go('/collections'),
-                ),
-                _NavItem(
                   icon: PhosphorIcons.user(PhosphorIconsStyle.regular),
                   activeIcon: PhosphorIcons.user(PhosphorIconsStyle.fill),
                   label: l10n.navProfile,
-                  isActive: currentIndex == 3,
+                  isActive: currentIndex == 2,
                   onTap: () => context.go('/profile'),
                 ),
               ],
@@ -78,10 +70,9 @@ class MainShell extends ConsumerWidget {
 
   int _getCurrentIndex(BuildContext context) {
     final location = GoRouterState.of(context).uri.path;
-    if (location.startsWith('/home')) return 0;
+    if (location.startsWith('/swipe')) return 0;
     if (location.startsWith('/review')) return 1;
-    if (location.startsWith('/collections')) return 2;
-    if (location.startsWith('/profile')) return 3;
+    if (location.startsWith('/profile')) return 2;
     return 0;
   }
 }

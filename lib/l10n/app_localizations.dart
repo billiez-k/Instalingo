@@ -25,6 +25,13 @@ abstract class AppLocalizations {
   String get aiConversationPractice;
 
   String get annual;
+  String get attributionsTitle => 'Attributions';
+  String get attributionsJmdict => 'JMdict/EDRDG — Japanese Dictionary';
+  String get attributionsJmdictDesc => 'Vocabulary data from JMdict (Electronic Dictionary Research and Development Group). Licensed under CC-BY-SA 4.0. https://www.edrdg.org/jmdict/j_jmdict.html';
+  String get attributionsTatoeba => 'Tatoeba — Example Sentences';
+  String get attributionsTatoebaDesc => 'Example sentences from the Tatoeba Project. Licensed under CC-BY 2.0 FR. https://tatoeba.org';
+  String get attributionsTanos => 'Tanos.co.uk — JLPT Vocabulary Lists';
+  String get attributionsTanosDesc => 'JLPT vocabulary level classifications from Jonathan Waller (Tanos.co.uk). Licensed under CC-BY. http://www.tanos.co.uk/jlpt/';
 
   String get appTagline;
 
@@ -210,7 +217,7 @@ abstract class AppLocalizations {
 
   String get navCollections;
 
-  String get navHome;
+  String get navSwipe;
 
   String get navProfile;
 
@@ -710,6 +717,36 @@ abstract class AppLocalizations {
   static AppLocalizations of(BuildContext context) {
     return Localizations.of<AppLocalizations>(context, AppLocalizations)!;
   }
+  String get allJlptLevels => 'All JLPT N5-N1 levels';
+  String get realJapaneseDeck => 'Real Japanese conversation deck';
+  String get spicySlangDeck => 'Spicy slang deck unlocked';
+  String get unlimitedSavedWords => 'Unlimited saved words + folders';
+  String get exportAnkiCsv => 'Export to Anki/CSV';
+  String get everythingInPro => 'Everything in Pro';
+  String get wildDeckAdults => 'Wild deck (adults only)';
+  String get aiWordExplanations => 'AI-powered word explanations';
+  String get enhancedAudioPron => 'Enhanced pronunciation audio';
+  String get earlyAccessFeatures => 'Early access to new features';
+  String get oneTimePurchases => 'One-Time Purchases';
+  String get streakShieldPurchase => 'Streak Shield';
+  String get spicyPackPurchase => 'Spicy Pack';
+  String get customThemePurchase => 'Custom Theme';
+  String get mostPopular => 'Most Popular';
+  String get lifetimeOption => 'Lifetime';
+  String get onceOnly => 'once';
+  String get lifetimeProAccess => 'Lifetime Pro access — pay once';
+  String get allFutureFeatures => 'All future features included';
+  String get bestValueLongTerm => 'Best value for serious learners';
+
+  String get contentPreferences => 'Content Preferences';
+
+  String get spicyContent => '🔥 Spicy Content (Slang)';
+
+  String get spicyContentDesc => 'Show casual slang and informal Japanese words';
+
+  String get wildContent => '💀 Wild Content (Adult)';
+
+  String get wildContentDesc => 'Show explicit, vulgar, or adult language (18+)';
 }
 
 class _AppLocalizationsDelegate
@@ -738,4 +775,5 @@ class _AppLocalizationsDelegate
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
+
 }

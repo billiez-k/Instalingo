@@ -14,6 +14,10 @@ class VocabCard {
   final String? exampleAudioUrl;
   final String source;
 
+  /// Register tier: textbook, real_life, slang, vulgar.
+  /// Used for content filtering and tier-based gating.
+  final String register;
+
   /// Localized meanings keyed by locale code (en, zh_TW, zh_CN, ja, ko, ms, ar).
   final Map<String, String> meanings;
 
@@ -33,6 +37,7 @@ class VocabCard {
     this.exampleReading,
     this.exampleAudioUrl,
     required this.source,
+    this.register = 'textbook',
     this.meanings = const {},
     this.exampleTranslations = const {},
   });
@@ -83,6 +88,7 @@ class VocabCard {
       exampleReading: json['example_reading'] as String?,
       exampleAudioUrl: json['example_audio_url'] as String?,
       source: json['source'] as String,
+      register: json['register'] as String? ?? 'textbook',
       meanings: meanings,
       exampleTranslations: examples,
     );
@@ -103,6 +109,7 @@ class VocabCard {
         'example_translations': exampleTranslations,
         'example_audio_url': exampleAudioUrl,
         'source': source,
+        'register': register,
       };
 }
 
@@ -165,6 +172,23 @@ class SRSData {
     this.lapseCount = 0,
   })  : due = due ?? DateTime.now(),
         lastReview = lastReview ?? DateTime.now();
+
+  /// Computed mastery level for UI display.
+  /// 0 = new (grey), 1 = learning (amber), 2 = mastered (mint)
+  int get masteryLevel {
+    switch (state) {
+      case 'new':
+        return 0;
+      case 'learning':
+        return 0;
+      case 'relearning':
+        return 1;
+      case 'review':
+        return stability >= 5.0 ? 2 : 1;
+      default:
+        return 0;
+    }
+  }
 
   factory SRSData.fromJson(Map<String, dynamic> json) => SRSData(
         cardId: json['card_id'] as String,

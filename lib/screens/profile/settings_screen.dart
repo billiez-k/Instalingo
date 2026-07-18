@@ -109,6 +109,39 @@ class SettingsScreen extends ConsumerWidget {
               ),
             ]),
           ),
+          // Content Preferences
+          SizedBox(height: 24.h),
+          FadeSlide(child: _SectionTitle(l10n.contentPreferences)),
+          FadeSlide(
+            child: _SettingsTile(
+              icon: PhosphorIcons.fire(PhosphorIconsStyle.regular),
+              iconColor: BusanHarborTokens.amber,
+              label: l10n.spicyContent,
+              subtitle: l10n.spicyContentDesc,
+              trailing: Switch(
+                value: ref.watch(spicyEnabledProvider),
+                onChanged: (v) {
+                  HapticFeedback.lightImpact();
+                  ref.read(spicyEnabledProvider.notifier).toggle();
+                },
+              ),
+            ),
+          ),
+          FadeSlide(
+            child: _SettingsTile(
+              icon: PhosphorIcons.warning(PhosphorIconsStyle.regular),
+              iconColor: BusanHarborTokens.coral,
+              label: l10n.wildContent,
+              subtitle: l10n.wildContentDesc,
+              trailing: Switch(
+                value: ref.watch(wildEnabledProvider),
+                onChanged: (v) {
+                  HapticFeedback.lightImpact();
+                  ref.read(wildEnabledProvider.notifier).toggle();
+                },
+              ),
+            ),
+          ),
           SizedBox(height: 24.h),
           FadeSlide(child: _SectionTitle(l10n.notifications)),
           FadeSlide(
@@ -129,7 +162,7 @@ class SettingsScreen extends ConsumerWidget {
           FadeSlide(
             child: _SettingsTile(
               icon: PhosphorIcons.clock(),
-              iconColor: AppColors.chillPrimary,
+              iconColor: BusanHarborTokens.coral,
               label: l10n.profile_lessonRemindersStreakAlerts,
               subtitle: _formatTime(context, _parseTimeOrDefault(user.reminderTime)),
               trailing: PhosphorIcon(PhosphorIcons.caretRight(), size: 18.sp, color: appTheme.onSurfaceVariant),
@@ -376,7 +409,7 @@ class SettingsScreen extends ConsumerWidget {
                       if (isNative) {
                         await service.setNativeLanguage(lang.code);
                       } else {
-                        await service.setLearningLanguage(lang.code);
+                        service.setLearningLanguage(lang.code);
                       }
                     } catch (e) {
                       if (context.mounted) {

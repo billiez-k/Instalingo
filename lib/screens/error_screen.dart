@@ -50,7 +50,7 @@ class ErrorScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextButton(
-                    onPressed: () => context.go('/home'),
+                    onPressed: () => context.go('/swipe'),
                     child: Text(
                       l10n.swipeBackToHome,
                       style: TextStyle(

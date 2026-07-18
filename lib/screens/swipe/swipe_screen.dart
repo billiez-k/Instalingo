@@ -2,19 +2,31 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'dart:io';
+import 'dart:typed_data';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:instalingo/config/points_config.dart';
+import 'package:instalingo/data/card_data_loader.dart';
+import 'package:instalingo/data/grammar_loader.dart';
 import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/models/user.dart';
+import 'package:instalingo/models/feed_card.dart';
+import 'package:instalingo/models/grammar_card.dart';
 import 'package:instalingo/models/vocab_card.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:instalingo/providers/user_provider.dart';
 import 'package:instalingo/providers/settings_provider.dart';
 import 'package:instalingo/providers/vocab_deck_provider.dart';
 import 'package:instalingo/screens/swipe/tutorial_overlay.dart';
+import 'package:instalingo/screens/swipe/type_mode.dart';
+import 'package:instalingo/services/tts_service.dart';
+import 'package:instalingo/services/share/card_image_generator.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
@@ -34,7 +46,7 @@ class SwipeScreen extends ConsumerStatefulWidget {
 class _SwipeScreenState extends ConsumerState<SwipeScreen>
     with TickerProviderStateMixin {
   final PageController _pageController = PageController();
-  late List<VocabCard> _cards;
+  late List<FeedCard> _cards;
   int _currentIndex = 0;
   int _todayCount = 0;
   int _savedCount = 0;
@@ -46,6 +58,8 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
   final Set<int> _flippedCards = {};
   final Set<int> _savedCards = {};
   final Set<int> _skippedCards = {};
+  final Set<int> _xpAwardedCards = {};  // Prevent XP farming from reverse-swiping
+  bool _isTypeMode = false;  // Toggle between swipe recognition and type production
   late AnimationController _heartController;
 
   @override
@@ -70,8 +84,12 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
       _todayCount++;
       final un = ref.read(userProvider.notifier);
       un.incrementCardsSwiped();
-      un.addXp(PointsConfig.cardSwipedWorth);
-      _xpEarned += PointsConfig.cardSwipedWorth;
+      // Only award XP once per card to prevent farming via reverse-swiping
+      if (!_xpAwardedCards.contains(_currentIndex)) {
+        _xpAwardedCards.add(_currentIndex);
+        un.addXp(PointsConfig.cardSwipedWorth);
+        _xpEarned += PointsConfig.cardSwipedWorth;
+      }
       if (_currentIndex >= _cards.length) _onComplete();
     }
   }
@@ -91,8 +109,8 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
   }
 
   void _saveCard(int index) {
-    if (_savedCards.contains(index)) return;
     final card = _cards[index];
+    if (!card.isVocab || _savedCards.contains(index)) return;
     final un = ref.read(userProvider.notifier);
     un.saveWord(card.id);
     un.addXp(PointsConfig.cardsSavedWorth);
@@ -104,8 +122,8 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
   }
 
   void _skipCard() {
-    if (_skippedCards.contains(_currentIndex)) return;
     final card = _cards[_currentIndex];
+    if (!card.isVocab || _skippedCards.contains(_currentIndex)) return;
     final un = ref.read(userProvider.notifier);
     un.markAlreadyKnew(card.id);
     setState(() => _skippedCards.add(_currentIndex));
@@ -114,6 +132,8 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
   }
 
   void _flipCard() {
+    final card = _cards[_currentIndex];
+    if (!card.isVocab) return; // Grammar cards don't flip
     HapticFeedback.selectionClick();
     setState(() {
       _flippedCards.contains(_currentIndex)
@@ -139,6 +159,8 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
     un.addXp(PointsConfig.dailyGoalWorth);
     un.addGems(PointsConfig.gemPerDay);
     un.incrementStreak();
+    // Mark first session as complete — future sessions use normal card ordering
+    ref.read(firstSessionProvider.notifier).markComplete();
     _xpEarned += PointsConfig.dailyGoalWorth;
     _gemsEarned += PointsConfig.gemPerDay;
     if (mounted) {
@@ -166,20 +188,53 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
             setState(() { _isLoading = false; _hasError = true; });
           }
         },
-        data: (deck) {
+        data: (deck) async {
           if (mounted) {
-            final filtered = _filterCards(deck.cards, user);
+            // Merge slang/vulgar cards if content toggles enabled
+            var allCards = List<VocabCard>.from(deck.cards);
+            try {
+              if (ref.read(spicyEnabledProvider)) {
+                final slangDeck = await CardDataLoader.loadDeck('slang');
+                allCards.addAll(slangDeck.cards);
+              }
+            } catch (_) { /* Slang deck not available */ }
+            try {
+              if (ref.read(wildEnabledProvider)) {
+                final vulgarDeck = await CardDataLoader.loadDeck('vulgar');
+                allCards.addAll(vulgarDeck.cards);
+              }
+            } catch (_) { /* Vulgar deck not available */ }
+
+            final filteredVocab = _filterCards(allCards, user);
+
+            // Load grammar cards and interleave (1 grammar per 10 vocab)
+            List<GrammarCard> grammarCards = [];
+            try {
+              grammarCards = await GrammarLoader.loadByLevel(user.currentLevel);
+            } catch (_) { /* Grammar cards not available */ }
+
+            // Build FeedCard list with interleaved grammar
+            final List<FeedCard> feedCards = [];
+            for (int i = 0; i < filteredVocab.length; i++) {
+              feedCards.add(FeedCard.vocab(filteredVocab[i]));
+              // Insert grammar card every 10 vocab cards
+              if ((i + 1) % 10 == 0 && grammarCards.isNotEmpty) {
+                final gIdx = (i ~/ 10) % grammarCards.length;
+                feedCards.add(FeedCard.grammar(grammarCards[gIdx]));
+              }
+            }
             int startIndex = 0;
             if (widget.targetWordId != null) {
-              final idx = filtered.indexWhere((c) => c.id == widget.targetWordId);
+              final idx = feedCards.indexWhere((c) => c.id == widget.targetWordId);
               if (idx >= 0) startIndex = idx;
             }
             setState(() {
-              _cards = filtered;
+              _cards = feedCards;
               _currentIndex = startIndex;
               _flippedCards.clear();
               _savedCards.clear();
               _skippedCards.clear();
+              _xpAwardedCards.clear();
               _isLoading = false;
               _hasError = false;
             });
@@ -204,16 +259,73 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                 ? _buildError(appTheme, l10n)
                 : _cards.isEmpty
                     ? _buildEmpty(appTheme, l10n)
-                    : _buildFeed(appTheme, l10n, user),
+                    : _isTypeMode
+                        ? TypeModeScreen(
+                            cards: _cards
+                                .where((c) => c.isVocab)
+                                .map((c) => c.vocab!)
+                                .toList(),
+                            startIndex: _currentIndex,
+                            onComplete: () => setState(() => _isTypeMode = false),
+                          )
+                        : _buildFeed(appTheme, l10n, user),
       ),
     );
   }
 
   List<VocabCard> _filterCards(List<VocabCard> cards, UserProfile user) {
-    return cards
+    final spicyEnabled = ref.read(spicyEnabledProvider);
+    final wildEnabled = ref.read(wildEnabledProvider);
+
+    // Content gating: free users get limited spicy/real-life words per day
+    // Pro users get unlimited access to all tiers
+    final isPro = user.isPro;
+    const freeSpicyPerDay = 3;
+    const freeRealLifePerDay = 5;
+
+    var filtered = cards
         .where((c) => !user.alreadyKnewWords.contains(c.id))
-        .toList()
-      ..shuffle(Random(DateTime.now().millisecondsSinceEpoch));
+        .where((c) {
+          switch (c.register) {
+            case 'vulgar':
+              return wildEnabled && isPro; // Wild = Pro+ only
+            case 'slang':
+              return spicyEnabled; // Spicy available but limited for free
+            default:
+              return true;
+          }
+        })
+        .toList();
+
+    // For free users: limit spicy/real-life cards per session
+    if (!isPro) {
+      final spicyCards = filtered.where((c) => c.register == 'slang').toList();
+      final realLifeCards = filtered.where((c) => c.register == 'real_life').toList();
+      final textbookCards = filtered.where((c) => c.register == 'textbook').toList();
+
+      filtered = [
+        ...textbookCards,
+        ...realLifeCards.take(freeRealLifePerDay),
+        ...spicyCards.take(freeSpicyPerDay),
+      ];
+    }
+
+    // First session: put spicy/real-life cards FIRST for the "whoa" moment
+    // Users who came from a TikTok want to see interesting words immediately
+    final isFirstSession = ref.read(firstSessionProvider);
+    if (isFirstSession) {
+      final spicy = filtered.where((c) => c.register == 'slang').toList()..shuffle();
+      final realLife = filtered.where((c) => c.register == 'real_life').toList()..shuffle();
+      final textbook = filtered.where((c) => c.register == 'textbook').toList()..shuffle();
+
+      // Order: 5 spicy first, then 5 real-life, then textbook
+      filtered = [...spicy.take(5), ...realLife.take(5), ...textbook];
+    } else {
+      // Normal mode: shuffle everything
+      filtered.shuffle(Random(DateTime.now().millisecondsSinceEpoch));
+    }
+
+    return filtered;
   }
 
   Widget _buildLoading(AppThemeExtension appTheme, AppLocalizations l10n) => Shimmer.fromColors(
@@ -268,7 +380,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
               style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w700, color: Colors.white)),
           SizedBox(height: 24.h),
           OutlinedButton(
-            onPressed: () => context.go('/home'),
+            onPressed: () => context.go('/swipe'),
             style: OutlinedButton.styleFrom(
               side: const BorderSide(color: BusanHarborTokens.orange),
               foregroundColor: Colors.white,
@@ -292,7 +404,7 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
             child: Column(children: [
               Row(children: [
                 GestureDetector(
-                  onTap: () => context.go('/home'),
+                  onTap: () => context.go('/swipe'),
                   child: Container(
                     padding: EdgeInsets.all(8.w),
                     decoration: BoxDecoration(color: Colors.black26, borderRadius: BorderRadius.circular(20.r)),
@@ -303,7 +415,46 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                 Text('${_currentIndex + 1} / ${_cards.length}',
                     style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700, color: Colors.white70)),
                 const Spacer(),
-                SizedBox(width: 36.w),
+                // Mode toggle: Swipe ↔ Type
+                GestureDetector(
+                  onTap: () => setState(() => _isTypeMode = !_isTypeMode),
+                  child: Container(
+                    padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 6.h),
+                    decoration: BoxDecoration(
+                      color: _isTypeMode
+                          ? BusanHarborTokens.orange.withValues(alpha: 0.3)
+                          : Colors.black26,
+                      borderRadius: BorderRadius.circular(20.r),
+                      border: Border.all(
+                        color: _isTypeMode
+                            ? BusanHarborTokens.orange.withValues(alpha: 0.5)
+                            : Colors.white24,
+                      ),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        PhosphorIcon(
+                          _isTypeMode
+                              ? PhosphorIcons.keyboard(PhosphorIconsStyle.fill)
+                              : PhosphorIcons.arrowsDownUp(PhosphorIconsStyle.bold),
+                          size: 14.sp,
+                          color: _isTypeMode ? BusanHarborTokens.orange : Colors.white70,
+                        ),
+                        SizedBox(width: 4.w),
+                        Text(
+                          _isTypeMode ? 'TYPE' : 'SWIPE',
+                          style: TextStyle(
+                            fontSize: 10.sp,
+                            fontWeight: FontWeight.w800,
+                            color: _isTypeMode ? BusanHarborTokens.orange : Colors.white70,
+                            letterSpacing: 1,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ]),
               SizedBox(height: 6.h),
               ClipRRect(
@@ -339,7 +490,14 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
       ]);
 
   Widget _postCard(AppThemeExtension appTheme, AppLocalizations l10n, UserProfile user, int index) {
-    final card = _cards[index];
+    final feedCard = _cards[index];
+
+    // Grammar card — render differently from vocab cards
+    if (feedCard.type == FeedCardType.grammar && feedCard.grammar != null) {
+      return _GrammarSwipeCard(grammar: feedCard.grammar!, appTheme: appTheme);
+    }
+
+    final card = feedCard.vocab!;
     final nCode = user.nativeLanguage;
     final flipped = _flippedCards.contains(index);
     final saved = _savedCards.contains(index);
@@ -399,15 +557,29 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                                 color: Colors.white60, letterSpacing: 1)),
                       ]),
                     ),
+                    // Top badges: JLPT level + register tier
                     Positioned(
                       right: 10, top: 10,
-                      child: Container(
-                        padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 3.h),
-                        decoration: BoxDecoration(color: Colors.black26, borderRadius: BorderRadius.circular(4.r)),
-                        child: Text(card.level.toUpperCase(),
-                            style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w800,
-                                color: BusanHarborTokens.orange, letterSpacing: 1)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 3.h),
+                            decoration: BoxDecoration(
+                              color: Colors.black26, borderRadius: BorderRadius.circular(4.r)),
+                            child: Text(card.level.toUpperCase(),
+                                style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w800,
+                                    color: BusanHarborTokens.orange, letterSpacing: 1)),
+                          ),
+                          SizedBox(height: 4.h),
+                          _RegisterBadge(register: card.register),
+                        ],
                       ),
+                    ),
+                    // Audio pronunciation button
+                    Positioned(
+                      left: 10, top: 10,
+                      child: _AudioButton(card: card),
                     ),
                   ],
                 ),
@@ -429,19 +601,9 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                     _act(PhosphorIcons.share(PhosphorIconsStyle.bold), Colors.white,
                         skipped ? null : () {
                           final card = _cards[index];
-                          final meaning = card.meaningFor(Localizations.localeOf(context).toString());
-                          try {
-                            Share.share(
-                              '${card.word} (${card.reading})\n$meaning\n\n${l10n.viaInstalingo} https://instalingo.app',
-                              subject: '${card.word} - ${l10n.shareAppSubject}',
-                            );
-                          } catch (_) {
-                            // Share failed — silently handled
-                          }
+                          _shareCard(card, l10n);
                         }, l10n.swipeShareLabel),
                     const Spacer(),
-                    _act(saved ? PhosphorIcons.bookmark(PhosphorIconsStyle.fill) : PhosphorIcons.bookmark(PhosphorIconsStyle.bold),
-                        saved ? BusanHarborTokens.orange : Colors.white, () => skipped ? null : _saveCard(index), l10n.swipeSaveLabel),
                   ]),
                   SizedBox(height: 8.h),
                   Expanded(
@@ -544,6 +706,40 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
         child: Text(l, style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w700, color: c, letterSpacing: 0.5)),
       );
 
+  Future<void> _shareCard(FeedCard feedCard, AppLocalizations l10n) async {
+    if (!feedCard.isVocab || feedCard.vocab == null) return;
+    final card = feedCard.vocab!;
+    final locale = Localizations.localeOf(context).toString();
+    final meaning = card.meaningFor(locale);
+    final shareText = '${card.word} (${card.reading})\n$meaning\n\n'
+        '${l10n.viaInstalingo} https://instalingo.app?ref=share_card';
+
+    try {
+      // Generate share image
+      final generator = CardImageGenerator();
+      final imageBytes = await generator.generateCardImage(card);
+
+      // Write to temp file for XFile sharing
+      final dir = await getTemporaryDirectory();
+      final file = File('${dir.path}/instalingo_${card.id}.png');
+      await file.writeAsBytes(imageBytes);
+
+      // Share image + text
+      await Share.shareXFiles(
+        [XFile(file.path)],
+        text: shareText,
+        subject: '${card.word} - ${l10n.shareAppSubject}',
+      );
+    } catch (_) {
+      // Image share failed — fall back to text-only
+      try {
+        await Share.share(shareText, subject: card.word);
+      } catch (_) {
+        // Share completely failed
+      }
+    }
+  }
+
   PhosphorIconData _posIcon(VocabCard c) {
     final p = c.pos.toLowerCase();
     if (p.contains('verb') || p.contains('\u52d5')) return PhosphorIcons.arrowRight(PhosphorIconsStyle.bold);
@@ -551,5 +747,247 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
     if (p.contains('adj')) return PhosphorIcons.paintBrush(PhosphorIconsStyle.bold);
     if (p.contains('adv')) return PhosphorIcons.lightning(PhosphorIconsStyle.bold);
     return PhosphorIcons.circle(PhosphorIconsStyle.bold);
+  }
+}
+
+/// Register tier badge displayed on swipe cards.
+/// Maps register to emoji + human-readable label with tier-appropriate color.
+/// Grammar pattern card displayed in the swipe feed.
+/// Shows pattern, title, explanation, and example sentences.
+class _GrammarSwipeCard extends StatelessWidget {
+  final GrammarCard grammar;
+  final AppThemeExtension appTheme;
+
+  const _GrammarSwipeCard({required this.grammar, required this.appTheme});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.black,
+      child: SafeArea(
+        child: Container(
+          width: double.infinity,
+          margin: EdgeInsets.all(16.w),
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF1B3349), Color(0xFF0F1F2E)],
+            ),
+            borderRadius: BorderRadius.circular(16.r),
+            border: Border.all(
+              color: BusanHarborTokens.orange.withValues(alpha: 0.3),
+              width: 1.2,
+            ),
+          ),
+          padding: EdgeInsets.all(24.w),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Grammar badge
+                Row(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 4.h),
+                      decoration: BoxDecoration(
+                        color: BusanHarborTokens.orange.withValues(alpha: 0.2),
+                        borderRadius: BorderRadius.circular(4.r),
+                      ),
+                      child: Text(
+                        '📖 GRAMMAR',
+                        style: TextStyle(
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.w800,
+                          color: BusanHarborTokens.orange,
+                          letterSpacing: 1.4,
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 8.w),
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.05),
+                        borderRadius: BorderRadius.circular(4.r),
+                      ),
+                      child: Text(
+                        grammar.level.toUpperCase(),
+                        style: TextStyle(
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white.withValues(alpha: 0.6),
+                          letterSpacing: 1,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 24.h),
+
+                // Pattern (large, prominent)
+                Text(
+                  grammar.pattern,
+                  style: TextStyle(
+                    fontSize: 36.sp,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                    letterSpacing: 1,
+                  ),
+                ),
+                SizedBox(height: 8.h),
+
+                // Title / meaning
+                Text(
+                  grammar.title,
+                  style: TextStyle(
+                    fontSize: 18.sp,
+                    fontWeight: FontWeight.w600,
+                    color: BusanHarborTokens.orange,
+                  ),
+                ),
+                SizedBox(height: 16.h),
+
+                // Explanation
+                Text(
+                  grammar.explanation,
+                  style: TextStyle(
+                    fontSize: 14.sp,
+                    color: Colors.white.withValues(alpha: 0.8),
+                    height: 1.5,
+                  ),
+                ),
+                SizedBox(height: 20.h),
+
+                // Example sentences
+                ...grammar.examples.asMap().entries.map((e) {
+                  final i = e.key;
+                  final ex = e.value;
+                  final reading = i < grammar.exampleReadings.length
+                      ? grammar.exampleReadings[i] : '';
+                  final translation = i < grammar.exampleTranslations.length
+                      ? grammar.exampleTranslations[i] : '';
+
+                  return Padding(
+                    padding: EdgeInsets.only(bottom: 12.h),
+                    child: Container(
+                      padding: EdgeInsets.all(14.w),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.04),
+                        borderRadius: BorderRadius.circular(8.r),
+                        border: Border.all(
+                          color: Colors.white.withValues(alpha: 0.06),
+                        ),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            ex,
+                            style: TextStyle(
+                              fontSize: 16.sp,
+                              color: Colors.white.withValues(alpha: 0.9),
+                              height: 1.4,
+                            ),
+                          ),
+                          if (reading.isNotEmpty) ...[
+                            SizedBox(height: 4.h),
+                            Text(
+                              reading,
+                              style: TextStyle(
+                                fontSize: 13.sp,
+                                color: Colors.white.withValues(alpha: 0.4),
+                              ),
+                            ),
+                          ],
+                          if (translation.isNotEmpty) ...[
+                            SizedBox(height: 4.h),
+                            Text(
+                              translation,
+                              style: TextStyle(
+                                fontSize: 13.sp,
+                                color: Colors.white.withValues(alpha: 0.5),
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                  );
+                }),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _RegisterBadge extends StatelessWidget {
+  final String register;
+  const _RegisterBadge({required this.register});
+
+  @override
+  Widget build(BuildContext context) {
+    final (emoji, label, color) = switch (register) {
+      'vulgar' => ('\u{1F480}', 'Wild', const Color(0xFFD04B43)),  // 💀 skull + coral red
+      'slang' => ('\u{1F525}', 'Spicy', const Color(0xFFE89A22)),  // 🔥 fire + amber
+      'real_life' => ('\u{1F5E3}\u{FE0F}', 'Real Life', const Color(0xFF3E7CB1)),  // 🗣️ + sea blue
+      _ => ('\u{1F4DA}', 'Textbook', const Color(0xFF2D9C5A)),  // 📚 + mint green
+    };
+
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 7.w, vertical: 2.h),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.2),
+        borderRadius: BorderRadius.circular(4.r),
+        border: Border.all(color: color.withValues(alpha: 0.4), width: 0.5),
+      ),
+      child: Text(
+        '$emoji $label',
+        style: TextStyle(fontSize: 9.sp, fontWeight: FontWeight.w700, color: color, letterSpacing: 0.5),
+      ),
+    );
+  }
+}
+
+/// Audio pronunciation button for swipe cards.
+/// Uses device TTS to speak the card's word.
+class _AudioButton extends ConsumerWidget {
+  final VocabCard card;
+  const _AudioButton({required this.card});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ttsEnabled = ref.watch(ttsEnabledProvider);
+    final tts = ref.watch(ttsServiceProvider);
+
+    return GestureDetector(
+      onTap: ttsEnabled
+          ? () {
+              HapticFeedback.selectionClick();
+              tts.speakJapanese(card.word);
+            }
+          : null,
+      child: Container(
+        width: 32.w,
+        height: 32.w,
+        decoration: BoxDecoration(
+          color: Colors.black26,
+          borderRadius: BorderRadius.circular(20.r),
+          border: Border.all(
+            color: ttsEnabled ? Colors.white24 : Colors.white10,
+            width: 0.5,
+          ),
+        ),
+        child: Icon(
+          Icons.volume_up_rounded,
+          size: 16.sp,
+          color: ttsEnabled ? Colors.white70 : Colors.white24,
+        ),
+      ),
+    );
   }
 }

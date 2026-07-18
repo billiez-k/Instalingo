@@ -41,8 +41,9 @@ class ReviewScreen extends ConsumerWidget {
       ),
       body: srsAsync.when(
         loading: () => _buildLoading(appTheme),
-        error: (error, _) => _buildError(appTheme, l10n, error.toString()),
+        error: (error, _) => _buildError(appTheme, l10n, error.toString(), () => ref.invalidate(srsProvider)),
         data: (srsData) {
+          if (srsData.isEmpty) return _buildEmpty(appTheme, l10n);
           final dueCards = srsData
               .where((s) =>
                   user.savedWords.contains(s.cardId) &&
@@ -76,7 +77,7 @@ class ReviewScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildError(AppThemeExtension appTheme, AppLocalizations l10n, String error) {
+  Widget _buildError(AppThemeExtension appTheme, AppLocalizations l10n, String error, VoidCallback onRetry) {
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -93,6 +94,13 @@ class ReviewScreen extends ConsumerWidget {
               fontSize: 14.sp,
               color: appTheme.onSurfaceVariant,
             ),
+          ),
+          SizedBox(height: 16.h),
+          TextButton(
+            onPressed: onRetry,
+            child: Text(l10n.retry.toUpperCase(),
+                style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700,
+                    color: BusanHarborTokens.orange)),
           ),
         ],
       ),
@@ -215,7 +223,7 @@ class _ReviewCardListState extends ConsumerState<_ReviewCardList> {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(2.r),
             child: LinearProgressIndicator(
-              value: (_currentIndex) / widget.dueCards.length,
+              value: (_currentIndex + 1) / widget.dueCards.length,
               minHeight: 3,
               backgroundColor: widget.appTheme.border,
               valueColor:

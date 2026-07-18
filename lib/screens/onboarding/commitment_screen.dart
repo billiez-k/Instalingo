@@ -38,7 +38,7 @@ class _CommitmentScreenState extends ConsumerState<CommitmentScreen> {
       );
 
       await ref.read(onboardingCompleteProvider.notifier).complete();
-      if (mounted) context.go('/home');
+      if (mounted) context.go('/swipe');
     } catch (e) {
       if (mounted) {
         setState(() => _completing = false);

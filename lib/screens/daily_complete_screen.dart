@@ -232,7 +232,7 @@ class _DailyCompleteScreenState extends ConsumerState<DailyCompleteScreen>
                       width: double.infinity,
                       height: 52.h,
                       child: ElevatedButton(
-                        onPressed: () => context.go('/home'),
+                        onPressed: () => context.go('/swipe'),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: BusanHarborTokens.orange,
                           foregroundColor: Colors.white,

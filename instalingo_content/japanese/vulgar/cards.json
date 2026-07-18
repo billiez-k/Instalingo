@@ -1,0 +1,3810 @@
+{
+  "deck": {
+    "id": "ja_vulgar",
+    "language": "ja",
+    "level": "Vulgar",
+    "display_name": "Vulgar - Real Japanese",
+    "display_name_zh": "Vulgar - 真實日語",
+    "total_cards": 211
+  },
+  "cards": [
+    {
+      "id": "register_100001",
+      "word": "あげちん",
+      "reading": "あげちん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "man purported to bring good luck to the woman he is near or has sex with"
+      },
+      "example_text": "あげちんという言葉を聞いたことがありますか？",
+      "example_reading": "あげちん",
+      "example_translations": {
+        "en": "Have you heard the word \"man purported to bring good luck to the woman he is near or has sex with\"?"
+      }
+    },
+    {
+      "id": "register_100025",
+      "word": "おかまを掘る",
+      "reading": "おかまをほる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to perform anal sex (between men)"
+      },
+      "example_text": "日本人はよく「おかまを掘る」と言います。",
+      "example_reading": "おかまをほる",
+      "example_translations": {
+        "en": "Japanese people often say \"to perform anal sex (between men).\""
+      }
+    },
+    {
+      "id": "register_100030",
+      "word": "おしゃぶり",
+      "reading": "おしゃぶり",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "blowjob"
+      },
+      "example_text": "日本人はよく「おしゃぶり」と言います。",
+      "example_reading": "おしゃぶり",
+      "example_translations": {
+        "en": "Japanese people often say \"blowjob.\""
+      }
+    },
+    {
+      "id": "register_100036",
+      "word": "おっぱいパブ",
+      "reading": "おっぱいパブ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "hostess bar where patrons are allowed to touch the hostesses' breasts"
+      },
+      "example_text": "「おっぱいパブ」と彼は言った。",
+      "example_reading": "おっぱいパブ",
+      "example_translations": {
+        "en": "\"hostess bar where patrons are allowed to touch the hostesses' breasts,\" he said."
+      }
+    },
+    {
+      "id": "register_100038",
+      "word": "おっぱぶ",
+      "reading": "おっぱぶ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "hostess bar where patrons are allowed to touch the hostesses' breasts"
+      },
+      "example_text": "「おっぱぶ」と彼は言った。",
+      "example_reading": "おっぱぶ",
+      "example_translations": {
+        "en": "\"hostess bar where patrons are allowed to touch the hostesses' breasts,\" he said."
+      }
+    },
+    {
+      "id": "register_100043",
+      "word": "おまんこ",
+      "reading": "おまんこ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sex"
+      },
+      "example_text": "おまんこという言葉を聞いたことがありますか？",
+      "example_reading": "おまんこ",
+      "example_translations": {
+        "en": "Have you heard the word \"sex\"?"
+      }
+    },
+    {
+      "id": "register_100044",
+      "word": "おめこ",
+      "reading": "おめこ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sex"
+      },
+      "example_text": "おめこという言葉を聞いたことがありますか？",
+      "example_reading": "おめこ",
+      "example_translations": {
+        "en": "Have you heard the word \"sex\"?"
+      }
+    },
+    {
+      "id": "register_100052",
+      "word": "お毛毛",
+      "reading": "おけけ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pubic hair"
+      },
+      "example_text": "お毛毛という言葉を聞いたことがありますか？",
+      "example_reading": "おけけ",
+      "example_translations": {
+        "en": "Have you heard the word \"pubic hair\"?"
+      }
+    },
+    {
+      "id": "register_100058",
+      "word": "お菜",
+      "reading": "おかず",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "jack-off material"
+      },
+      "example_text": "日本人はよく「お菜」と言います。",
+      "example_reading": "おかず",
+      "example_translations": {
+        "en": "Japanese people often say \"jack-off material.\""
+      }
+    },
+    {
+      "id": "register_100064",
+      "word": "かまを掘る",
+      "reading": "かまをほる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to perform anal sex (between men)"
+      },
+      "example_text": "かまを掘るという言葉を聞いたことがありますか？",
+      "example_reading": "かまをほる",
+      "example_translations": {
+        "en": "Have you heard the word \"to perform anal sex (between men)\"?"
+      }
+    },
+    {
+      "id": "register_100080",
+      "word": "くたばっちまえ",
+      "reading": "くたばっちまえ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "drop dead, you bastard!"
+      },
+      "example_text": "くたばっちまえという言葉を聞いたことがありますか？",
+      "example_reading": "くたばっちまえ",
+      "example_translations": {
+        "en": "Have you heard the word \"drop dead, you bastard!\"?"
+      }
+    },
+    {
+      "id": "register_100081",
+      "word": "くたばり損ない",
+      "reading": "くたばりぞこない",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "worthless (of a person)"
+      },
+      "example_text": "くたばり損ないという言葉を聞いたことがありますか？",
+      "example_reading": "くたばりぞこない",
+      "example_translations": {
+        "en": "Have you heard the word \"worthless (of a person)\"?"
+      }
+    },
+    {
+      "id": "register_100083",
+      "word": "くたばれ",
+      "reading": "くたばれ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "drop dead!"
+      },
+      "example_text": "くたばれという言葉を聞いたことがありますか？",
+      "example_reading": "くたばれ",
+      "example_translations": {
+        "en": "Have you heard the word \"drop dead!\"?"
+      }
+    },
+    {
+      "id": "register_100084",
+      "word": "くぱくぱ",
+      "reading": "くぱくぱ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "opening and closing (esp. of vulva or anus)"
+      },
+      "example_text": "日本人はよく「くぱくぱ」と言います。",
+      "example_reading": "くぱくぱ",
+      "example_translations": {
+        "en": "Japanese people often say \"opening and closing (esp. of vulva or anus).\""
+      }
+    },
+    {
+      "id": "register_100086",
+      "word": "けったくそ悪い",
+      "reading": "けったくそわるい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "extremely vexing"
+      },
+      "example_text": "日本人はよく「けったくそ悪い」と言います。",
+      "example_reading": "けったくそわるい",
+      "example_translations": {
+        "en": "Japanese people often say \"extremely vexing.\""
+      }
+    },
+    {
+      "id": "register_100092",
+      "word": "こます",
+      "reading": "こます",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to seduce"
+      },
+      "example_text": "こますという言葉を聞いたことがありますか？",
+      "example_reading": "こます",
+      "example_translations": {
+        "en": "Have you heard the word \"to seduce\"?"
+      }
+    },
+    {
+      "id": "register_100094",
+      "word": "こん畜生",
+      "reading": "コンチキショー",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "blast it!"
+      },
+      "example_text": "「こん畜生」と彼は言った。",
+      "example_reading": "コンチキショー",
+      "example_translations": {
+        "en": "\"blast it!,\" he said."
+      }
+    },
+    {
+      "id": "register_100099",
+      "word": "ざけんなよ",
+      "reading": "ざけんなよ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fuck you!"
+      },
+      "example_text": "「ざけんなよ」と彼は言った。",
+      "example_reading": "ざけんなよ",
+      "example_translations": {
+        "en": "\"fuck you!,\" he said."
+      }
+    },
+    {
+      "id": "register_100132",
+      "word": "ちんこ",
+      "reading": "ちんこ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "penis"
+      },
+      "example_text": "ちんこという言葉を聞いたことがありますか？",
+      "example_reading": "ちんこ",
+      "example_translations": {
+        "en": "Have you heard the word \"penis\"?"
+      }
+    },
+    {
+      "id": "register_100136",
+      "word": "つるぺた",
+      "reading": "つるぺた",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "smooth and flat (e.g. of a prepubescent girl)"
+      },
+      "example_text": "日本人はよく「つるぺた」と言います。",
+      "example_reading": "つるぺた",
+      "example_translations": {
+        "en": "Japanese people often say \"smooth and flat (e.g. of a prepubescent girl).\""
+      }
+    },
+    {
+      "id": "register_100138",
+      "word": "てやんでえ",
+      "reading": "てやんでえ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "what the hell are you saying!?"
+      },
+      "example_text": "てやんでえという言葉を聞いたことがありますか？",
+      "example_reading": "てやんでえ",
+      "example_translations": {
+        "en": "Have you heard the word \"what the hell are you saying!?\"?"
+      }
+    },
+    {
+      "id": "register_100160",
+      "word": "ひり出す",
+      "reading": "ひりだす",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to forcefully excrete"
+      },
+      "example_text": "日本人はよく「ひり出す」と言います。",
+      "example_reading": "ひりだす",
+      "example_translations": {
+        "en": "Japanese people often say \"to forcefully excrete.\""
+      }
+    },
+    {
+      "id": "register_100164",
+      "word": "ぶっ掛け",
+      "reading": "ぶっかけ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "bukkake (ejaculation onto someone's face)"
+      },
+      "example_text": "日本人はよく「ぶっ掛け」と言います。",
+      "example_reading": "ぶっかけ",
+      "example_translations": {
+        "en": "Japanese people often say \"bukkake (ejaculation onto someone's face).\""
+      }
+    },
+    {
+      "id": "register_100180",
+      "word": "まな板",
+      "reading": "まないた",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "flat chest"
+      },
+      "example_text": "まな板という言葉を聞いたことがありますか？",
+      "example_reading": "まないた",
+      "example_translations": {
+        "en": "Have you heard the word \"flat chest\"?"
+      }
+    },
+    {
+      "id": "register_100181",
+      "word": "まんさん",
+      "reading": "まんさん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "woman"
+      },
+      "example_text": "日本人はよく「まんさん」と言います。",
+      "example_reading": "まんさん",
+      "example_translations": {
+        "en": "Japanese people often say \"woman.\""
+      }
+    },
+    {
+      "id": "register_100199",
+      "word": "やり逃げ",
+      "reading": "やりにげ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "breaking off contact with someone after having sex with them"
+      },
+      "example_text": "「やり逃げ」と彼は言った。",
+      "example_reading": "やりにげ",
+      "example_translations": {
+        "en": "\"breaking off contact with someone after having sex with them,\" he said."
+      }
+    },
+    {
+      "id": "register_100206",
+      "word": "わかめ酒",
+      "reading": "わかめざけ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "drinking alcohol from a woman's crotch"
+      },
+      "example_text": "日本人はよく「わかめ酒」と言います。",
+      "example_reading": "わかめざけ",
+      "example_translations": {
+        "en": "Japanese people often say \"drinking alcohol from a woman's crotch.\""
+      }
+    },
+    {
+      "id": "register_100221",
+      "word": "アナルファック",
+      "reading": "アナルファック",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "anal sex"
+      },
+      "example_text": "日本人はよく「アナルファック」と言います。",
+      "example_reading": "アナルファック",
+      "example_translations": {
+        "en": "Japanese people often say \"anal sex.\""
+      }
+    },
+    {
+      "id": "register_100225",
+      "word": "アヘアヘ",
+      "reading": "アヘアヘ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "dazed and limp with pleasure (esp. sexual)"
+      },
+      "example_text": "アヘアヘという言葉を聞いたことがありますか？",
+      "example_reading": "アヘアヘ",
+      "example_translations": {
+        "en": "Have you heard the word \"dazed and limp with pleasure (esp. sexual)\"?"
+      }
+    },
+    {
+      "id": "register_100238",
+      "word": "イキ",
+      "reading": "イキ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "orgasm"
+      },
+      "example_text": "「イキ」と彼は言った。",
+      "example_reading": "イキ",
+      "example_translations": {
+        "en": "\"orgasm,\" he said."
+      }
+    },
+    {
+      "id": "register_100239",
+      "word": "イキ顔",
+      "reading": "イキがお",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "orgasm face"
+      },
+      "example_text": "「イキ顔」と彼は言った。",
+      "example_reading": "イキがお",
+      "example_translations": {
+        "en": "\"orgasm face,\" he said."
+      }
+    },
+    {
+      "id": "register_100251",
+      "word": "イラマ",
+      "reading": "イラマ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "irrumatio (fellatio wherein the majority of movement is performed by the fellatee)"
+      },
+      "example_text": "「イラマ」と彼は言った。",
+      "example_reading": "イラマ",
+      "example_translations": {
+        "en": "\"irrumatio (fellatio wherein the majority of movement is performed by the fellatee),\" he said."
+      }
+    },
+    {
+      "id": "register_100252",
+      "word": "イラマチオ",
+      "reading": "イラマチオ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "irrumatio (fellatio wherein the majority of movement is performed by the fellatee)"
+      },
+      "example_text": "イラマチオという言葉を聞いたことがありますか？",
+      "example_reading": "イラマチオ",
+      "example_translations": {
+        "en": "Have you heard the word \"irrumatio (fellatio wherein the majority of movement is performed by the fellatee)\"?"
+      }
+    },
+    {
+      "id": "register_100262",
+      "word": "ウンコ座り",
+      "reading": "うんこずわり",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "squatting (usu. with elbows on knees)"
+      },
+      "example_text": "「ウンコ座り」と彼は言った。",
+      "example_reading": "うんこずわり",
+      "example_translations": {
+        "en": "\"squatting (usu. with elbows on knees),\" he said."
+      }
+    },
+    {
+      "id": "register_100264",
+      "word": "ウン汁",
+      "reading": "うんじる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "intestinal fluids"
+      },
+      "example_text": "ウン汁という言葉を聞いたことがありますか？",
+      "example_reading": "うんじる",
+      "example_translations": {
+        "en": "Have you heard the word \"intestinal fluids\"?"
+      }
+    },
+    {
+      "id": "register_100286",
+      "word": "オナネタ",
+      "reading": "オナネタ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "jack-off material"
+      },
+      "example_text": "「オナネタ」と彼は言った。",
+      "example_reading": "オナネタ",
+      "example_translations": {
+        "en": "\"jack-off material,\" he said."
+      }
+    },
+    {
+      "id": "register_100287",
+      "word": "オナペ",
+      "reading": "オナペ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "person one fantasizes about during masturbation"
+      },
+      "example_text": "オナペという言葉を聞いたことがありますか？",
+      "example_reading": "オナペ",
+      "example_translations": {
+        "en": "Have you heard the word \"person one fantasizes about during masturbation\"?"
+      }
+    },
+    {
+      "id": "register_100288",
+      "word": "オナペット",
+      "reading": "オナペット",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "person one fantasizes about during masturbation"
+      },
+      "example_text": "オナペットという言葉を聞いたことがありますか？",
+      "example_reading": "オナペット",
+      "example_translations": {
+        "en": "Have you heard the word \"person one fantasizes about during masturbation\"?"
+      }
+    },
+    {
+      "id": "register_100328",
+      "word": "ガバマン",
+      "reading": "ガバマン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "loose vagina"
+      },
+      "example_text": "ガバマンという言葉を聞いたことがありますか？",
+      "example_reading": "ガバマン",
+      "example_translations": {
+        "en": "Have you heard the word \"loose vagina\"?"
+      }
+    },
+    {
+      "id": "register_100362",
+      "word": "クソ上司",
+      "reading": "クソじょうし",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "asshole boss"
+      },
+      "example_text": "クソ上司という言葉を聞いたことがありますか？",
+      "example_reading": "クソじょうし",
+      "example_translations": {
+        "en": "Have you heard the word \"asshole boss\"?"
+      }
+    },
+    {
+      "id": "register_100368",
+      "word": "クリ",
+      "reading": "クリ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "clitoris"
+      },
+      "example_text": "日本人はよく「クリ」と言います。",
+      "example_reading": "クリ",
+      "example_translations": {
+        "en": "Japanese people often say \"clitoris.\""
+      }
+    },
+    {
+      "id": "register_100370",
+      "word": "クリイキ",
+      "reading": "クリイキ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "clitoral orgasm"
+      },
+      "example_text": "クリイキという言葉を聞いたことがありますか？",
+      "example_reading": "クリイキ",
+      "example_translations": {
+        "en": "Have you heard the word \"clitoral orgasm\"?"
+      }
+    },
+    {
+      "id": "register_100378",
+      "word": "ケツの穴",
+      "reading": "けつのあな",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "anus"
+      },
+      "example_text": "日本人はよく「ケツの穴」と言います。",
+      "example_reading": "けつのあな",
+      "example_translations": {
+        "en": "Japanese people often say \"anus.\""
+      }
+    },
+    {
+      "id": "register_100379",
+      "word": "ケツの穴が小さい",
+      "reading": "けつのあながちいさい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "small-minded"
+      },
+      "example_text": "ケツの穴が小さいという言葉を聞いたことがありますか？",
+      "example_reading": "けつのあながちいさい",
+      "example_translations": {
+        "en": "Have you heard the word \"small-minded\"?"
+      }
+    },
+    {
+      "id": "register_100381",
+      "word": "ケツ毛",
+      "reading": "けつげ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "butt hair"
+      },
+      "example_text": "「ケツ毛」と彼は言った。",
+      "example_reading": "けつげ",
+      "example_translations": {
+        "en": "\"butt hair,\" he said."
+      }
+    },
+    {
+      "id": "register_100382",
+      "word": "ケツ穴",
+      "reading": "けつあな",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "anus"
+      },
+      "example_text": "日本人はよく「ケツ穴」と言います。",
+      "example_reading": "けつあな",
+      "example_translations": {
+        "en": "Japanese people often say \"anus.\""
+      }
+    },
+    {
+      "id": "register_100396",
+      "word": "コキ",
+      "reading": "コキ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "-job"
+      },
+      "example_text": "コキという言葉を聞いたことがありますか？",
+      "example_reading": "コキ",
+      "example_translations": {
+        "en": "Have you heard the word \"-job\"?"
+      }
+    },
+    {
+      "id": "register_100416",
+      "word": "サンドイッチファック",
+      "reading": "サンドイッチファック",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sandwich (sexual position)"
+      },
+      "example_text": "日本人はよく「サンドイッチファック」と言います。",
+      "example_reading": "サンドイッチファック",
+      "example_translations": {
+        "en": "Japanese people often say \"sandwich (sexual position).\""
+      }
+    },
+    {
+      "id": "register_100422",
+      "word": "ザー汁",
+      "reading": "ザーじる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "semen"
+      },
+      "example_text": "「ザー汁」と彼は言った。",
+      "example_reading": "ザーじる",
+      "example_translations": {
+        "en": "\"semen,\" he said."
+      }
+    },
+    {
+      "id": "register_100426",
+      "word": "シコい",
+      "reading": "シコい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sexy"
+      },
+      "example_text": "シコいという言葉を聞いたことがありますか？",
+      "example_reading": "シコい",
+      "example_translations": {
+        "en": "Have you heard the word \"sexy\"?"
+      }
+    },
+    {
+      "id": "register_100428",
+      "word": "シコ猿",
+      "reading": "シコざる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "masturbation addict"
+      },
+      "example_text": "「シコ猿」と彼は言った。",
+      "example_reading": "シコざる",
+      "example_translations": {
+        "en": "\"masturbation addict,\" he said."
+      }
+    },
+    {
+      "id": "register_100432",
+      "word": "シックスティーナイン",
+      "reading": "シックスティーナイン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sixty-nine (sexual position)"
+      },
+      "example_text": "「シックスティーナイン」と彼は言った。",
+      "example_reading": "シックスティーナイン",
+      "example_translations": {
+        "en": "\"sixty-nine (sexual position),\" he said."
+      }
+    },
+    {
+      "id": "register_100433",
+      "word": "シックスナイン",
+      "reading": "シックスナイン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sixty-nine (sexual position)"
+      },
+      "example_text": "シックスナインという言葉を聞いたことがありますか？",
+      "example_reading": "シックスナイン",
+      "example_translations": {
+        "en": "Have you heard the word \"sixty-nine (sexual position)\"?"
+      }
+    },
+    {
+      "id": "register_100434",
+      "word": "シット",
+      "reading": "シット",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "shit"
+      },
+      "example_text": "「シット」と彼は言った。",
+      "example_reading": "シット",
+      "example_translations": {
+        "en": "\"shit,\" he said."
+      }
+    },
+    {
+      "id": "register_100489",
+      "word": "タダマン",
+      "reading": "タダマン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "free pussy"
+      },
+      "example_text": "「タダマン」と彼は言った。",
+      "example_reading": "タダマン",
+      "example_translations": {
+        "en": "\"free pussy,\" he said."
+      }
+    },
+    {
+      "id": "register_100525",
+      "word": "チョンカス",
+      "reading": "チョンカス",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "gook"
+      },
+      "example_text": "日本人はよく「チョンカス」と言います。",
+      "example_reading": "チョンカス",
+      "example_translations": {
+        "en": "Japanese people often say \"gook.\""
+      }
+    },
+    {
+      "id": "register_100534",
+      "word": "チンカス",
+      "reading": "チンカス",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "penile smegma"
+      },
+      "example_text": "日本人はよく「チンカス」と言います。",
+      "example_reading": "チンカス",
+      "example_translations": {
+        "en": "Japanese people often say \"penile smegma.\""
+      }
+    },
+    {
+      "id": "register_100537",
+      "word": "チン毛",
+      "reading": "ちんげ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "(male) pubic hair"
+      },
+      "example_text": "日本人はよく「チン毛」と言います。",
+      "example_reading": "ちんげ",
+      "example_translations": {
+        "en": "Japanese people often say \"(male) pubic hair.\""
+      }
+    },
+    {
+      "id": "register_100551",
+      "word": "ディープスロート",
+      "reading": "ディープスロート",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "deep throat (i.e. deeply penetrative fellatio)"
+      },
+      "example_text": "日本人はよく「ディープスロート」と言います。",
+      "example_reading": "ディープスロート",
+      "example_translations": {
+        "en": "Japanese people often say \"deep throat (i.e. deeply penetrative fellatio).\""
+      }
+    },
+    {
+      "id": "register_100554",
+      "word": "デカチン",
+      "reading": "デカチン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "large penis"
+      },
+      "example_text": "デカチンという言葉を聞いたことがありますか？",
+      "example_reading": "デカチン",
+      "example_translations": {
+        "en": "Have you heard the word \"large penis\"?"
+      }
+    },
+    {
+      "id": "register_100555",
+      "word": "デカパイ",
+      "reading": "デカパイ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "huge breasts"
+      },
+      "example_text": "デカパイという言葉を聞いたことがありますか？",
+      "example_reading": "デカパイ",
+      "example_translations": {
+        "en": "Have you heard the word \"huge breasts\"?"
+      }
+    },
+    {
+      "id": "register_100556",
+      "word": "デカマラ",
+      "reading": "デカマラ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "big dick"
+      },
+      "example_text": "「デカマラ」と彼は言った。",
+      "example_reading": "デカマラ",
+      "example_translations": {
+        "en": "\"big dick,\" he said."
+      }
+    },
+    {
+      "id": "register_100572",
+      "word": "トロ顔",
+      "reading": "トロがお",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "face lost in pleasure"
+      },
+      "example_text": "「トロ顔」と彼は言った。",
+      "example_reading": "トロがお",
+      "example_translations": {
+        "en": "\"face lost in pleasure,\" he said."
+      }
+    },
+    {
+      "id": "register_100582",
+      "word": "ドピュ",
+      "reading": "ドピュ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "with a splurt (of a liquid, esp. semen)"
+      },
+      "example_text": "日本人はよく「ドピュ」と言います。",
+      "example_reading": "ドピュ",
+      "example_translations": {
+        "en": "Japanese people often say \"with a splurt (of a liquid, esp. semen).\""
+      }
+    },
+    {
+      "id": "register_100611",
+      "word": "ノーズロ",
+      "reading": "ノーズロ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "panty-less"
+      },
+      "example_text": "「ノーズロ」と彼は言った。",
+      "example_reading": "ノーズロ",
+      "example_translations": {
+        "en": "\"panty-less,\" he said."
+      }
+    },
+    {
+      "id": "register_100622",
+      "word": "ハメ",
+      "reading": "ハメ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fucking"
+      },
+      "example_text": "日本人はよく「ハメ」と言います。",
+      "example_reading": "ハメ",
+      "example_translations": {
+        "en": "Japanese people often say \"fucking.\""
+      }
+    },
+    {
+      "id": "register_100623",
+      "word": "ハメハメ",
+      "reading": "ハメハメ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fucking"
+      },
+      "example_text": "「ハメハメ」と彼は言った。",
+      "example_reading": "ハメハメ",
+      "example_translations": {
+        "en": "\"fucking,\" he said."
+      }
+    },
+    {
+      "id": "register_100624",
+      "word": "ハメ撮り",
+      "reading": "はめどり",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "point-of-view pornography"
+      },
+      "example_text": "ハメ撮りという言葉を聞いたことがありますか？",
+      "example_reading": "はめどり",
+      "example_translations": {
+        "en": "Have you heard the word \"point-of-view pornography\"?"
+      }
+    },
+    {
+      "id": "register_100637",
+      "word": "バター犬",
+      "reading": "バターけん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "dog who licks butter off a person's body (for sexual arousal)"
+      },
+      "example_text": "「バター犬」と彼は言った。",
+      "example_reading": "バターけん",
+      "example_translations": {
+        "en": "\"dog who licks butter off a person's body (for sexual arousal),\" he said."
+      }
+    },
+    {
+      "id": "register_100659",
+      "word": "パイ擦り",
+      "reading": "パイズリ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "titfuck"
+      },
+      "example_text": "パイ擦りという言葉を聞いたことがありますか？",
+      "example_reading": "パイズリ",
+      "example_translations": {
+        "en": "Have you heard the word \"titfuck\"?"
+      }
+    },
+    {
+      "id": "register_100664",
+      "word": "パコる",
+      "reading": "パコる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to bang"
+      },
+      "example_text": "日本人はよく「パコる」と言います。",
+      "example_reading": "パコる",
+      "example_translations": {
+        "en": "Japanese people often say \"to bang.\""
+      }
+    },
+    {
+      "id": "register_100681",
+      "word": "パンコ",
+      "reading": "パンコ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "slut"
+      },
+      "example_text": "「パンコ」と彼は言った。",
+      "example_reading": "パンコ",
+      "example_translations": {
+        "en": "\"slut,\" he said."
+      }
+    },
+    {
+      "id": "register_100693",
+      "word": "ビッグ便",
+      "reading": "ビッグベン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "poop"
+      },
+      "example_text": "「ビッグ便」と彼は言った。",
+      "example_reading": "ビッグベン",
+      "example_translations": {
+        "en": "\"poop,\" he said."
+      }
+    },
+    {
+      "id": "register_100699",
+      "word": "ピンコ立ち",
+      "reading": "ピンコだち",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vigorous erection"
+      },
+      "example_text": "「ピンコ立ち」と彼は言った。",
+      "example_reading": "ピンコだち",
+      "example_translations": {
+        "en": "\"vigorous erection,\" he said."
+      }
+    },
+    {
+      "id": "register_100701",
+      "word": "ファッキュー",
+      "reading": "ファッキュー",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fuck you"
+      },
+      "example_text": "「ファッキュー」と彼は言った。",
+      "example_reading": "ファッキュー",
+      "example_translations": {
+        "en": "\"fuck you,\" he said."
+      }
+    },
+    {
+      "id": "register_100702",
+      "word": "ファッキン",
+      "reading": "ファッキン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fucking"
+      },
+      "example_text": "ファッキンという言葉を聞いたことがありますか？",
+      "example_reading": "ファッキン",
+      "example_translations": {
+        "en": "Have you heard the word \"fucking\"?"
+      }
+    },
+    {
+      "id": "register_100703",
+      "word": "ファック",
+      "reading": "ファック",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fuck"
+      },
+      "example_text": "日本人はよく「ファック」と言います。",
+      "example_reading": "ファック",
+      "example_translations": {
+        "en": "Japanese people often say \"fuck.\""
+      }
+    },
+    {
+      "id": "register_100707",
+      "word": "フィストファック",
+      "reading": "フィストファック",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fist-fucking"
+      },
+      "example_text": "「フィストファック」と彼は言った。",
+      "example_reading": "フィストファック",
+      "example_translations": {
+        "en": "\"fist-fucking,\" he said."
+      }
+    },
+    {
+      "id": "register_100709",
+      "word": "フェラコキ",
+      "reading": "フェラコキ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "simultaneous fellatio and masturbation"
+      },
+      "example_text": "「フェラコキ」と彼は言った。",
+      "example_reading": "フェラコキ",
+      "example_translations": {
+        "en": "\"simultaneous fellatio and masturbation,\" he said."
+      }
+    },
+    {
+      "id": "register_100715",
+      "word": "フニャチン",
+      "reading": "フニャチン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "limp dick"
+      },
+      "example_text": "「フニャチン」と彼は言った。",
+      "example_reading": "フニャチン",
+      "example_translations": {
+        "en": "\"limp dick,\" he said."
+      }
+    },
+    {
+      "id": "register_100740",
+      "word": "プッシー",
+      "reading": "プッシー",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pussy"
+      },
+      "example_text": "日本人はよく「プッシー」と言います。",
+      "example_reading": "プッシー",
+      "example_translations": {
+        "en": "Japanese people often say \"pussy.\""
+      }
+    },
+    {
+      "id": "register_100786",
+      "word": "マグロ女",
+      "reading": "まぐろおんな",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "dead fish (woman who is unresponsive during sex)"
+      },
+      "example_text": "「マグロ女」と彼は言った。",
+      "example_reading": "まぐろおんな",
+      "example_translations": {
+        "en": "\"dead fish (woman who is unresponsive during sex),\" he said."
+      }
+    },
+    {
+      "id": "register_100801",
+      "word": "マンカス",
+      "reading": "マンカス",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vaginal smegma"
+      },
+      "example_text": "「マンカス」と彼は言った。",
+      "example_reading": "マンカス",
+      "example_translations": {
+        "en": "\"vaginal smegma,\" he said."
+      }
+    },
+    {
+      "id": "register_100802",
+      "word": "マングリ返し",
+      "reading": "まんぐりがえし",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "piledriver (sexual position)"
+      },
+      "example_text": "マングリ返しという言葉を聞いたことがありますか？",
+      "example_reading": "まんぐりがえし",
+      "example_translations": {
+        "en": "Have you heard the word \"piledriver (sexual position)\"?"
+      }
+    },
+    {
+      "id": "register_100803",
+      "word": "マンコ",
+      "reading": "マンコ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fucking"
+      },
+      "example_text": "日本人はよく「マンコ」と言います。",
+      "example_reading": "マンコ",
+      "example_translations": {
+        "en": "Japanese people often say \"fucking.\""
+      }
+    },
+    {
+      "id": "register_100805",
+      "word": "マン屁",
+      "reading": "マンぺ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pussy fart"
+      },
+      "example_text": "日本人はよく「マン屁」と言います。",
+      "example_reading": "マンぺ",
+      "example_translations": {
+        "en": "Japanese people often say \"pussy fart.\""
+      }
+    },
+    {
+      "id": "register_100806",
+      "word": "マン毛",
+      "reading": "マンげ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pubic hair (on a woman)"
+      },
+      "example_text": "マン毛という言葉を聞いたことがありますか？",
+      "example_reading": "マンげ",
+      "example_translations": {
+        "en": "Have you heard the word \"pubic hair (on a woman)\"?"
+      }
+    },
+    {
+      "id": "register_100807",
+      "word": "マン汁",
+      "reading": "マンじる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pussy juice"
+      },
+      "example_text": "「マン汁」と彼は言った。",
+      "example_reading": "マンじる",
+      "example_translations": {
+        "en": "\"pussy juice,\" he said."
+      }
+    },
+    {
+      "id": "register_100808",
+      "word": "マン肉",
+      "reading": "マンにく",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pussy meat"
+      },
+      "example_text": "マン肉という言葉を聞いたことがありますか？",
+      "example_reading": "マンにく",
+      "example_translations": {
+        "en": "Have you heard the word \"pussy meat\"?"
+      }
+    },
+    {
+      "id": "register_100810",
+      "word": "ミミズ千匹",
+      "reading": "ミミズせんびき",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "thousand earthworms (as a description for a vagina that has many folds and provides extraordinary pleasure during interc"
+      },
+      "example_text": "日本人はよく「ミミズ千匹」と言います。",
+      "example_reading": "ミミズせんびき",
+      "example_translations": {
+        "en": "Japanese people often say \"thousand earthworms (as a description for a vagina that has many folds and provides extraordinary pleasure during interc.\""
+      }
+    },
+    {
+      "id": "register_100818",
+      "word": "メスイキ",
+      "reading": "メスイキ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "dry orgasm (of a male)"
+      },
+      "example_text": "日本人はよく「メスイキ」と言います。",
+      "example_reading": "メスイキ",
+      "example_translations": {
+        "en": "Japanese people often say \"dry orgasm (of a male).\""
+      }
+    },
+    {
+      "id": "register_100819",
+      "word": "メスガキ",
+      "reading": "メスガキ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "cheeky, vulgar brat"
+      },
+      "example_text": "メスガキという言葉を聞いたことがありますか？",
+      "example_reading": "メスガキ",
+      "example_translations": {
+        "en": "Have you heard the word \"cheeky, vulgar brat\"?"
+      }
+    },
+    {
+      "id": "register_100820",
+      "word": "メス臭",
+      "reading": "めすしゅう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "musky female scent"
+      },
+      "example_text": "メス臭という言葉を聞いたことがありますか？",
+      "example_reading": "めすしゅう",
+      "example_translations": {
+        "en": "Have you heard the word \"musky female scent\"?"
+      }
+    },
+    {
+      "id": "register_100821",
+      "word": "メス豚",
+      "reading": "めすぶた",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fat woman"
+      },
+      "example_text": "日本人はよく「メス豚」と言います。",
+      "example_reading": "めすぶた",
+      "example_translations": {
+        "en": "Japanese people often say \"fat woman.\""
+      }
+    },
+    {
+      "id": "register_100851",
+      "word": "ヤリチン",
+      "reading": "ヤリチン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "man who has sex with many women"
+      },
+      "example_text": "ヤリチンという言葉を聞いたことがありますか？",
+      "example_reading": "ヤリチン",
+      "example_translations": {
+        "en": "Have you heard the word \"man who has sex with many women\"?"
+      }
+    },
+    {
+      "id": "register_100852",
+      "word": "ヤリマン",
+      "reading": "ヤリマン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "slut"
+      },
+      "example_text": "日本人はよく「ヤリマン」と言います。",
+      "example_reading": "ヤリマン",
+      "example_translations": {
+        "en": "Japanese people often say \"slut.\""
+      }
+    },
+    {
+      "id": "register_100853",
+      "word": "ヤリ友",
+      "reading": "ヤリとも",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fuck buddy"
+      },
+      "example_text": "「ヤリ友」と彼は言った。",
+      "example_reading": "ヤリとも",
+      "example_translations": {
+        "en": "\"fuck buddy,\" he said."
+      }
+    },
+    {
+      "id": "register_100854",
+      "word": "ヤリ捨て",
+      "reading": "やりすて",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "breaking off contact with someone after having sex"
+      },
+      "example_text": "日本人はよく「ヤリ捨て」と言います。",
+      "example_reading": "やりすて",
+      "example_translations": {
+        "en": "Japanese people often say \"breaking off contact with someone after having sex.\""
+      }
+    },
+    {
+      "id": "register_100898",
+      "word": "ワレメちゃん",
+      "reading": "ワレメちゃん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vulva"
+      },
+      "example_text": "日本人はよく「ワレメちゃん」と言います。",
+      "example_reading": "ワレメちゃん",
+      "example_translations": {
+        "en": "Japanese people often say \"vulva.\""
+      }
+    },
+    {
+      "id": "register_100900",
+      "word": "ワンワンスタイル",
+      "reading": "ワンワンスタイル",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "doggy style"
+      },
+      "example_text": "日本人はよく「ワンワンスタイル」と言います。",
+      "example_reading": "ワンワンスタイル",
+      "example_translations": {
+        "en": "Japanese people often say \"doggy style.\""
+      }
+    },
+    {
+      "id": "register_100904",
+      "word": "一発やる",
+      "reading": "いっぱつやる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to have sex"
+      },
+      "example_text": "一発やるという言葉を聞いたことがありますか？",
+      "example_reading": "いっぱつやる",
+      "example_translations": {
+        "en": "Have you heard the word \"to have sex\"?"
+      }
+    },
+    {
+      "id": "register_100921",
+      "word": "下げちん",
+      "reading": "さげちん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "man purported to bring bad luck to the woman he is near or has sex with"
+      },
+      "example_text": "日本人はよく「下げちん」と言います。",
+      "example_reading": "さげちん",
+      "example_translations": {
+        "en": "Japanese people often say \"man purported to bring bad luck to the woman he is near or has sex with.\""
+      }
+    },
+    {
+      "id": "register_100922",
+      "word": "下パイ",
+      "reading": "したパイ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "underboob"
+      },
+      "example_text": "「下パイ」と彼は言った。",
+      "example_reading": "したパイ",
+      "example_translations": {
+        "en": "\"underboob,\" he said."
+      }
+    },
+    {
+      "id": "register_100931",
+      "word": "中イキ",
+      "reading": "なかイキ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vaginal orgasm"
+      },
+      "example_text": "日本人はよく「中イキ」と言います。",
+      "example_reading": "なかイキ",
+      "example_translations": {
+        "en": "Japanese people often say \"vaginal orgasm.\""
+      }
+    },
+    {
+      "id": "register_100933",
+      "word": "中出し",
+      "reading": "なかだし",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "intravaginal (anal, etc.) ejaculation"
+      },
+      "example_text": "「中出し」と彼は言った。",
+      "example_reading": "なかだし",
+      "example_translations": {
+        "en": "\"intravaginal (anal, etc.) ejaculation,\" he said."
+      }
+    },
+    {
+      "id": "register_100943",
+      "word": "乱パ",
+      "reading": "らんパ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sexual orgy"
+      },
+      "example_text": "日本人はよく「乱パ」と言います。",
+      "example_reading": "らんパ",
+      "example_translations": {
+        "en": "Japanese people often say \"sexual orgy.\""
+      }
+    },
+    {
+      "id": "register_100944",
+      "word": "乱交パーティー",
+      "reading": "らんこうパーティー",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "(sexual) orgy"
+      },
+      "example_text": "乱交パーティーという言葉を聞いたことがありますか？",
+      "example_reading": "らんこうパーティー",
+      "example_translations": {
+        "en": "Have you heard the word \"(sexual) orgy\"?"
+      }
+    },
+    {
+      "id": "register_100946",
+      "word": "乳肉",
+      "reading": "にゅうにく",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "big boobs"
+      },
+      "example_text": "「乳肉」と彼は言った。",
+      "example_reading": "にゅうにく",
+      "example_translations": {
+        "en": "\"big boobs,\" he said."
+      }
+    },
+    {
+      "id": "register_100947",
+      "word": "乳袋",
+      "reading": "ちちぶくろ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "clothing drawn as if were clinging to the breasts of a character"
+      },
+      "example_text": "「乳袋」と彼は言った。",
+      "example_reading": "ちちぶくろ",
+      "example_translations": {
+        "en": "\"clothing drawn as if were clinging to the breasts of a character,\" he said."
+      }
+    },
+    {
+      "id": "register_100955",
+      "word": "二穴同時挿入",
+      "reading": "にけつどうじそうにゅう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "double penetration"
+      },
+      "example_text": "日本人はよく「二穴同時挿入」と言います。",
+      "example_reading": "にけつどうじそうにゅう",
+      "example_translations": {
+        "en": "Japanese people often say \"double penetration.\""
+      }
+    },
+    {
+      "id": "register_100965",
+      "word": "便女",
+      "reading": "べんじょ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "woman used as a sexual object"
+      },
+      "example_text": "便女という言葉を聞いたことがありますか？",
+      "example_reading": "べんじょ",
+      "example_translations": {
+        "en": "Have you heard the word \"woman used as a sexual object\"?"
+      }
+    },
+    {
+      "id": "register_100983",
+      "word": "公衆便所",
+      "reading": "こうしゅうべんじょ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "slut"
+      },
+      "example_text": "「公衆便所」と彼は言った。",
+      "example_reading": "こうしゅうべんじょ",
+      "example_translations": {
+        "en": "\"slut,\" he said."
+      }
+    },
+    {
+      "id": "register_100989",
+      "word": "出る",
+      "reading": "でる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to ejaculate"
+      },
+      "example_text": "「出る」と彼は言った。",
+      "example_reading": "でる",
+      "example_translations": {
+        "en": "\"to ejaculate,\" he said."
+      }
+    },
+    {
+      "id": "register_101003",
+      "word": "割れ目",
+      "reading": "われめ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "opening of the vagina"
+      },
+      "example_text": "「割れ目」と彼は言った。",
+      "example_reading": "われめ",
+      "example_translations": {
+        "en": "\"opening of the vagina,\" he said."
+      }
+    },
+    {
+      "id": "register_101012",
+      "word": "即ハボ",
+      "reading": "そくハボ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "woman one wants to have sex with at first sight"
+      },
+      "example_text": "日本人はよく「即ハボ」と言います。",
+      "example_reading": "そくハボ",
+      "example_translations": {
+        "en": "Japanese people often say \"woman one wants to have sex with at first sight.\""
+      }
+    },
+    {
+      "id": "register_101013",
+      "word": "即ハメ",
+      "reading": "そくハメ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "instant fuck"
+      },
+      "example_text": "日本人はよく「即ハメ」と言います。",
+      "example_reading": "そくハメ",
+      "example_translations": {
+        "en": "Japanese people often say \"instant fuck.\""
+      }
+    },
+    {
+      "id": "register_101016",
+      "word": "即尺",
+      "reading": "そくしゃく",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "immediate fellatio (no shower first)"
+      },
+      "example_text": "即尺という言葉を聞いたことがありますか？",
+      "example_reading": "そくしゃく",
+      "example_translations": {
+        "en": "Have you heard the word \"immediate fellatio (no shower first)\"?"
+      }
+    },
+    {
+      "id": "register_101020",
+      "word": "原作レイプ",
+      "reading": "げんさくレイプ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "unfaithful adaptation"
+      },
+      "example_text": "日本人はよく「原作レイプ」と言います。",
+      "example_reading": "げんさくレイプ",
+      "example_translations": {
+        "en": "Japanese people often say \"unfaithful adaptation.\""
+      }
+    },
+    {
+      "id": "register_101027",
+      "word": "口でやる",
+      "reading": "くちでやる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to carry out fellatio"
+      },
+      "example_text": "「口でやる」と彼は言った。",
+      "example_reading": "くちでやる",
+      "example_translations": {
+        "en": "\"to carry out fellatio,\" he said."
+      }
+    },
+    {
+      "id": "register_101029",
+      "word": "口枷",
+      "reading": "くちかせ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "(mouth) gag"
+      },
+      "example_text": "日本人はよく「口枷」と言います。",
+      "example_reading": "くちかせ",
+      "example_translations": {
+        "en": "Japanese people often say \"(mouth) gag.\""
+      }
+    },
+    {
+      "id": "register_101033",
+      "word": "名器",
+      "reading": "めいき",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "excellent vagina"
+      },
+      "example_text": "「名器」と彼は言った。",
+      "example_reading": "めいき",
+      "example_translations": {
+        "en": "\"excellent vagina,\" he said."
+      }
+    },
+    {
+      "id": "register_101041",
+      "word": "喉射",
+      "reading": "のどしゃ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "ejaculating in the mouth"
+      },
+      "example_text": "日本人はよく「喉射」と言います。",
+      "example_reading": "のどしゃ",
+      "example_translations": {
+        "en": "Japanese people often say \"ejaculating in the mouth.\""
+      }
+    },
+    {
+      "id": "register_101067",
+      "word": "外イキ",
+      "reading": "そとイキ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "clitoral orgasm"
+      },
+      "example_text": "日本人はよく「外イキ」と言います。",
+      "example_reading": "そとイキ",
+      "example_translations": {
+        "en": "Japanese people often say \"clitoral orgasm.\""
+      }
+    },
+    {
+      "id": "register_101096",
+      "word": "好き者",
+      "reading": "すきもの",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "lecher"
+      },
+      "example_text": "「好き者」と彼は言った。",
+      "example_reading": "すきもの",
+      "example_translations": {
+        "en": "\"lecher,\" he said."
+      }
+    },
+    {
+      "id": "register_101100",
+      "word": "姉妹丼",
+      "reading": "しまいどん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "threesome including two women who are sisters"
+      },
+      "example_text": "日本人はよく「姉妹丼」と言います。",
+      "example_reading": "しまいどん",
+      "example_translations": {
+        "en": "Japanese people often say \"threesome including two women who are sisters.\""
+      }
+    },
+    {
+      "id": "register_101106",
+      "word": "媚肉",
+      "reading": "びにく",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "enticing flesh (e.g. breasts, buttocks, genitalia)"
+      },
+      "example_text": "媚肉という言葉を聞いたことがありますか？",
+      "example_reading": "びにく",
+      "example_translations": {
+        "en": "Have you heard the word \"enticing flesh (e.g. breasts, buttocks, genitalia)\"?"
+      }
+    },
+    {
+      "id": "register_101112",
+      "word": "子宮姦",
+      "reading": "しきゅうかん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "intrauterine penetration"
+      },
+      "example_text": "日本人はよく「子宮姦」と言います。",
+      "example_reading": "しきゅうかん",
+      "example_translations": {
+        "en": "Japanese people often say \"intrauterine penetration.\""
+      }
+    },
+    {
+      "id": "register_101127",
+      "word": "射精る",
+      "reading": "でる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to ejaculate"
+      },
+      "example_text": "射精るという言葉を聞いたことがありますか？",
+      "example_reading": "でる",
+      "example_translations": {
+        "en": "Have you heard the word \"to ejaculate\"?"
+      }
+    },
+    {
+      "id": "register_101136",
+      "word": "尺八",
+      "reading": "しゃくはち",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "blow job"
+      },
+      "example_text": "「尺八」と彼は言った。",
+      "example_reading": "しゃくはち",
+      "example_translations": {
+        "en": "\"blow job,\" he said."
+      }
+    },
+    {
+      "id": "register_101147",
+      "word": "嵌める",
+      "reading": "はめる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to have sex"
+      },
+      "example_text": "嵌めるという言葉を聞いたことがありますか？",
+      "example_reading": "はめる",
+      "example_translations": {
+        "en": "Have you heard the word \"to have sex\"?"
+      }
+    },
+    {
+      "id": "register_101149",
+      "word": "巨チン",
+      "reading": "きょチン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "huge dick"
+      },
+      "example_text": "日本人はよく「巨チン」と言います。",
+      "example_reading": "きょチン",
+      "example_translations": {
+        "en": "Japanese people often say \"huge dick.\""
+      }
+    },
+    {
+      "id": "register_101169",
+      "word": "心太",
+      "reading": "ところてん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "prostate orgasm"
+      },
+      "example_text": "「心太」と彼は言った。",
+      "example_reading": "ところてん",
+      "example_translations": {
+        "en": "\"prostate orgasm,\" he said."
+      }
+    },
+    {
+      "id": "register_101187",
+      "word": "手コキ",
+      "reading": "てこき",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "hand job"
+      },
+      "example_text": "「手コキ」と彼は言った。",
+      "example_reading": "てこき",
+      "example_translations": {
+        "en": "\"hand job,\" he said."
+      }
+    },
+    {
+      "id": "register_101188",
+      "word": "手マン",
+      "reading": "てマン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "finger-banging (manual stimulation of female genital organs)"
+      },
+      "example_text": "手マンという言葉を聞いたことがありますか？",
+      "example_reading": "てマン",
+      "example_translations": {
+        "en": "Have you heard the word \"finger-banging (manual stimulation of female genital organs)\"?"
+      }
+    },
+    {
+      "id": "register_101193",
+      "word": "抜かす",
+      "reading": "ぬかす",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to say"
+      },
+      "example_text": "日本人はよく「抜かす」と言います。",
+      "example_reading": "ぬかす",
+      "example_translations": {
+        "en": "Japanese people often say \"to say.\""
+      }
+    },
+    {
+      "id": "register_101201",
+      "word": "持ってけ",
+      "reading": "もってけ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "Take it!"
+      },
+      "example_text": "持ってけという言葉を聞いたことがありますか？",
+      "example_reading": "もってけ",
+      "example_translations": {
+        "en": "Have you heard the word \"Take it!\"?"
+      }
+    },
+    {
+      "id": "register_101203",
+      "word": "指マン",
+      "reading": "ゆびマン",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "finger-banging (manual stimulation of female genital organs)"
+      },
+      "example_text": "「指マン」と彼は言った。",
+      "example_reading": "ゆびマン",
+      "example_translations": {
+        "en": "\"finger-banging (manual stimulation of female genital organs),\" he said."
+      }
+    },
+    {
+      "id": "register_101204",
+      "word": "指入れ",
+      "reading": "ゆびいれ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "fingering (sexual practice)"
+      },
+      "example_text": "日本人はよく「指入れ」と言います。",
+      "example_reading": "ゆびいれ",
+      "example_translations": {
+        "en": "Japanese people often say \"fingering (sexual practice).\""
+      }
+    },
+    {
+      "id": "register_101206",
+      "word": "挟射",
+      "reading": "きょうしゃ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "ejaculation during mammary intercourse"
+      },
+      "example_text": "日本人はよく「挟射」と言います。",
+      "example_reading": "きょうしゃ",
+      "example_translations": {
+        "en": "Japanese people often say \"ejaculation during mammary intercourse.\""
+      }
+    },
+    {
+      "id": "register_101208",
+      "word": "挿送",
+      "reading": "そうそう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "penetration"
+      },
+      "example_text": "「挿送」と彼は言った。",
+      "example_reading": "そうそう",
+      "example_translations": {
+        "en": "\"penetration,\" he said."
+      }
+    },
+    {
+      "id": "register_101210",
+      "word": "掘る",
+      "reading": "ほる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to top"
+      },
+      "example_text": "掘るという言葉を聞いたことがありますか？",
+      "example_reading": "ほる",
+      "example_translations": {
+        "en": "Have you heard the word \"to top\"?"
+      }
+    },
+    {
+      "id": "register_101219",
+      "word": "搾精",
+      "reading": "さくせい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "milking semen"
+      },
+      "example_text": "搾精という言葉を聞いたことがありますか？",
+      "example_reading": "さくせい",
+      "example_translations": {
+        "en": "Have you heard the word \"milking semen\"?"
+      }
+    },
+    {
+      "id": "register_101220",
+      "word": "撞木反り",
+      "reading": "しゅもくぞり",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sex position with the woman lying backwards on top"
+      },
+      "example_text": "「撞木反り」と彼は言った。",
+      "example_reading": "しゅもくぞり",
+      "example_translations": {
+        "en": "\"sex position with the woman lying backwards on top,\" he said."
+      }
+    },
+    {
+      "id": "register_101225",
+      "word": "放く",
+      "reading": "こく",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to utter (a lie, nonsense, etc.)"
+      },
+      "example_text": "日本人はよく「放く」と言います。",
+      "example_reading": "こく",
+      "example_translations": {
+        "en": "Japanese people often say \"to utter (a lie, nonsense, etc.).\""
+      }
+    },
+    {
+      "id": "register_101250",
+      "word": "朝マラ",
+      "reading": "あさマラ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "morning wood"
+      },
+      "example_text": "日本人はよく「朝マラ」と言います。",
+      "example_reading": "あさマラ",
+      "example_translations": {
+        "en": "Japanese people often say \"morning wood.\""
+      }
+    },
+    {
+      "id": "register_101258",
+      "word": "本番",
+      "reading": "ほんばん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "penetrative vaginal sex (with a prostitute)"
+      },
+      "example_text": "「本番」と彼は言った。",
+      "example_reading": "ほんばん",
+      "example_translations": {
+        "en": "\"penetrative vaginal sex (with a prostitute),\" he said."
+      }
+    },
+    {
+      "id": "register_101263",
+      "word": "棒姉妹",
+      "reading": "ぼうしまい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pogo sisters"
+      },
+      "example_text": "日本人はよく「棒姉妹」と言います。",
+      "example_reading": "ぼうしまい",
+      "example_translations": {
+        "en": "Japanese people often say \"pogo sisters.\""
+      }
+    },
+    {
+      "id": "register_101274",
+      "word": "死ね",
+      "reading": "しね",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "drop dead"
+      },
+      "example_text": "日本人はよく「死ね」と言います。",
+      "example_reading": "しね",
+      "example_translations": {
+        "en": "Japanese people often say \"drop dead.\""
+      }
+    },
+    {
+      "id": "register_101287",
+      "word": "汝",
+      "reading": "うぬ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "blockhead!"
+      },
+      "example_text": "「汝」と彼は言った。",
+      "example_reading": "うぬ",
+      "example_translations": {
+        "en": "\"blockhead!,\" he said."
+      }
+    },
+    {
+      "id": "register_101303",
+      "word": "淫口",
+      "reading": "いんこう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "lewd mouth"
+      },
+      "example_text": "日本人はよく「淫口」と言います。",
+      "example_reading": "いんこう",
+      "example_translations": {
+        "en": "Japanese people often say \"lewd mouth.\""
+      }
+    },
+    {
+      "id": "register_101304",
+      "word": "淫唇",
+      "reading": "いんしん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "labia"
+      },
+      "example_text": "淫唇という言葉を聞いたことがありますか？",
+      "example_reading": "いんしん",
+      "example_translations": {
+        "en": "Have you heard the word \"labia\"?"
+      }
+    },
+    {
+      "id": "register_101305",
+      "word": "淫水",
+      "reading": "いんすい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "arousal fluid"
+      },
+      "example_text": "淫水という言葉を聞いたことがありますか？",
+      "example_reading": "いんすい",
+      "example_translations": {
+        "en": "Have you heard the word \"arousal fluid\"?"
+      }
+    },
+    {
+      "id": "register_101306",
+      "word": "淫液",
+      "reading": "いんえき",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "arousal fluid"
+      },
+      "example_text": "日本人はよく「淫液」と言います。",
+      "example_reading": "いんえき",
+      "example_translations": {
+        "en": "Japanese people often say \"arousal fluid.\""
+      }
+    },
+    {
+      "id": "register_101307",
+      "word": "淫筒",
+      "reading": "いんとう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vaginal passage"
+      },
+      "example_text": "淫筒という言葉を聞いたことがありますか？",
+      "example_reading": "いんとう",
+      "example_translations": {
+        "en": "Have you heard the word \"vaginal passage\"?"
+      }
+    },
+    {
+      "id": "register_101308",
+      "word": "淫裂",
+      "reading": "いんれつ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vulva"
+      },
+      "example_text": "「淫裂」と彼は言った。",
+      "example_reading": "いんれつ",
+      "example_translations": {
+        "en": "\"vulva,\" he said."
+      }
+    },
+    {
+      "id": "register_101318",
+      "word": "潮を吹く",
+      "reading": "しおをふく",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to squirt (female ejaculation)"
+      },
+      "example_text": "「潮を吹く」と彼は言った。",
+      "example_reading": "しおをふく",
+      "example_translations": {
+        "en": "\"to squirt (female ejaculation),\" he said."
+      }
+    },
+    {
+      "id": "register_101319",
+      "word": "潮吹き",
+      "reading": "しおふき",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "female ejaculation"
+      },
+      "example_text": "「潮吹き」と彼は言った。",
+      "example_reading": "しおふき",
+      "example_translations": {
+        "en": "\"female ejaculation,\" he said."
+      }
+    },
+    {
+      "id": "register_101353",
+      "word": "犯る",
+      "reading": "やる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to rape"
+      },
+      "example_text": "犯るという言葉を聞いたことがありますか？",
+      "example_reading": "やる",
+      "example_translations": {
+        "en": "Have you heard the word \"to rape\"?"
+      }
+    },
+    {
+      "id": "register_101366",
+      "word": "甘勃ち",
+      "reading": "あまだち",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "partial erection"
+      },
+      "example_text": "日本人はよく「甘勃ち」と言います。",
+      "example_reading": "あまだち",
+      "example_translations": {
+        "en": "Japanese people often say \"partial erection.\""
+      }
+    },
+    {
+      "id": "register_101369",
+      "word": "生ハメ",
+      "reading": "なまハメ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "bareback sex"
+      },
+      "example_text": "生ハメという言葉を聞いたことがありますか？",
+      "example_reading": "なまハメ",
+      "example_translations": {
+        "en": "Have you heard the word \"bareback sex\"?"
+      }
+    },
+    {
+      "id": "register_101379",
+      "word": "番太",
+      "reading": "ばんた",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "watchman (implies low rank or burakumin status)"
+      },
+      "example_text": "日本人はよく「番太」と言います。",
+      "example_reading": "ばんた",
+      "example_translations": {
+        "en": "Japanese people often say \"watchman (implies low rank or burakumin status).\""
+      }
+    },
+    {
+      "id": "register_101388",
+      "word": "発",
+      "reading": "はつ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "counter for ejaculations or sexual intercourse"
+      },
+      "example_text": "日本人はよく「発」と言います。",
+      "example_reading": "はつ",
+      "example_translations": {
+        "en": "Japanese people often say \"counter for ejaculations or sexual intercourse.\""
+      }
+    },
+    {
+      "id": "register_101406",
+      "word": "睡姦",
+      "reading": "すいかん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "having sex with a sleeping person"
+      },
+      "example_text": "睡姦という言葉を聞いたことがありますか？",
+      "example_reading": "すいかん",
+      "example_translations": {
+        "en": "Have you heard the word \"having sex with a sleeping person\"?"
+      }
+    },
+    {
+      "id": "register_101421",
+      "word": "秘口",
+      "reading": "ひこう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vagina"
+      },
+      "example_text": "日本人はよく「秘口」と言います。",
+      "example_reading": "ひこう",
+      "example_translations": {
+        "en": "Japanese people often say \"vagina.\""
+      }
+    },
+    {
+      "id": "register_101422",
+      "word": "秘唇",
+      "reading": "ひしん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "labia"
+      },
+      "example_text": "日本人はよく「秘唇」と言います。",
+      "example_reading": "ひしん",
+      "example_translations": {
+        "en": "Japanese people often say \"labia.\""
+      }
+    },
+    {
+      "id": "register_101423",
+      "word": "秘肉",
+      "reading": "ひにく",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pussy"
+      },
+      "example_text": "「秘肉」と彼は言った。",
+      "example_reading": "ひにく",
+      "example_translations": {
+        "en": "\"pussy,\" he said."
+      }
+    },
+    {
+      "id": "register_101424",
+      "word": "秘裂",
+      "reading": "ひれつ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "female genitalia"
+      },
+      "example_text": "秘裂という言葉を聞いたことがありますか？",
+      "example_reading": "ひれつ",
+      "example_translations": {
+        "en": "Have you heard the word \"female genitalia\"?"
+      }
+    },
+    {
+      "id": "register_101425",
+      "word": "秘部",
+      "reading": "ひぶ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "genitals"
+      },
+      "example_text": "「秘部」と彼は言った。",
+      "example_reading": "ひぶ",
+      "example_translations": {
+        "en": "\"genitals,\" he said."
+      }
+    },
+    {
+      "id": "register_101427",
+      "word": "穴マンコ",
+      "reading": "けつマンコ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "anus"
+      },
+      "example_text": "穴マンコという言葉を聞いたことがありますか？",
+      "example_reading": "けつマンコ",
+      "example_translations": {
+        "en": "Have you heard the word \"anus\"?"
+      }
+    },
+    {
+      "id": "register_101428",
+      "word": "穴兄弟",
+      "reading": "あなきょうだい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "men who have had sex with the same woman"
+      },
+      "example_text": "日本人はよく「穴兄弟」と言います。",
+      "example_reading": "あなきょうだい",
+      "example_translations": {
+        "en": "Japanese people often say \"men who have had sex with the same woman.\""
+      }
+    },
+    {
+      "id": "register_101434",
+      "word": "竿姉妹",
+      "reading": "さおしまい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "women who have had sex with the same man"
+      },
+      "example_text": "日本人はよく「竿姉妹」と言います。",
+      "example_reading": "さおしまい",
+      "example_translations": {
+        "en": "Japanese people often say \"women who have had sex with the same man.\""
+      }
+    },
+    {
+      "id": "register_101445",
+      "word": "精飲",
+      "reading": "せいいん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "drinking semen"
+      },
+      "example_text": "精飲という言葉を聞いたことがありますか？",
+      "example_reading": "せいいん",
+      "example_translations": {
+        "en": "Have you heard the word \"drinking semen\"?"
+      }
+    },
+    {
+      "id": "register_101452",
+      "word": "糞を食らえ",
+      "reading": "くそをくらえ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "eat shit!"
+      },
+      "example_text": "糞を食らえという言葉を聞いたことがありますか？",
+      "example_reading": "くそをくらえ",
+      "example_translations": {
+        "en": "Have you heard the word \"eat shit!\"?"
+      }
+    },
+    {
+      "id": "register_101461",
+      "word": "糸目",
+      "reading": "いとめ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "slit-eyed"
+      },
+      "example_text": "糸目という言葉を聞いたことがありますか？",
+      "example_reading": "いとめ",
+      "example_translations": {
+        "en": "Have you heard the word \"slit-eyed\"?"
+      }
+    },
+    {
+      "id": "register_101487",
+      "word": "聖水",
+      "reading": "せいすい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "urine (esp. as related to urolagnia)"
+      },
+      "example_text": "日本人はよく「聖水」と言います。",
+      "example_reading": "せいすい",
+      "example_translations": {
+        "en": "Japanese people often say \"urine (esp. as related to urolagnia).\""
+      }
+    },
+    {
+      "id": "register_101489",
+      "word": "肉ビラ",
+      "reading": "にくビラ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pussy lips"
+      },
+      "example_text": "肉ビラという言葉を聞いたことがありますか？",
+      "example_reading": "にくビラ",
+      "example_translations": {
+        "en": "Have you heard the word \"pussy lips\"?"
+      }
+    },
+    {
+      "id": "register_101490",
+      "word": "肉人形",
+      "reading": "にくにんぎょう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sex slave"
+      },
+      "example_text": "日本人はよく「肉人形」と言います。",
+      "example_reading": "にくにんぎょう",
+      "example_translations": {
+        "en": "Japanese people often say \"sex slave.\""
+      }
+    },
+    {
+      "id": "register_101491",
+      "word": "肉便器",
+      "reading": "にくべんき",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "promiscuous woman"
+      },
+      "example_text": "「肉便器」と彼は言った。",
+      "example_reading": "にくべんき",
+      "example_translations": {
+        "en": "\"promiscuous woman,\" he said."
+      }
+    },
+    {
+      "id": "register_101492",
+      "word": "肉壷",
+      "reading": "にくつぼ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pussy"
+      },
+      "example_text": "「肉壷」と彼は言った。",
+      "example_reading": "にくつぼ",
+      "example_translations": {
+        "en": "\"pussy,\" he said."
+      }
+    },
+    {
+      "id": "register_101493",
+      "word": "肉奴隷",
+      "reading": "にくどれい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sex slave"
+      },
+      "example_text": "日本人はよく「肉奴隷」と言います。",
+      "example_reading": "にくどれい",
+      "example_translations": {
+        "en": "Japanese people often say \"sex slave.\""
+      }
+    },
+    {
+      "id": "register_101494",
+      "word": "肉幹",
+      "reading": "にくかん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "penis"
+      },
+      "example_text": "肉幹という言葉を聞いたことがありますか？",
+      "example_reading": "にくかん",
+      "example_translations": {
+        "en": "Have you heard the word \"penis\"?"
+      }
+    },
+    {
+      "id": "register_101495",
+      "word": "肉杭",
+      "reading": "にくくい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "penis"
+      },
+      "example_text": "日本人はよく「肉杭」と言います。",
+      "example_reading": "にくくい",
+      "example_translations": {
+        "en": "Japanese people often say \"penis.\""
+      }
+    },
+    {
+      "id": "register_101496",
+      "word": "肉棒",
+      "reading": "にくぼう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "dick"
+      },
+      "example_text": "「肉棒」と彼は言った。",
+      "example_reading": "にくぼう",
+      "example_translations": {
+        "en": "\"dick,\" he said."
+      }
+    },
+    {
+      "id": "register_101497",
+      "word": "肉穴",
+      "reading": "にくあな",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "anus"
+      },
+      "example_text": "肉穴という言葉を聞いたことがありますか？",
+      "example_reading": "にくあな",
+      "example_translations": {
+        "en": "Have you heard the word \"anus\"?"
+      }
+    },
+    {
+      "id": "register_101498",
+      "word": "肉竿",
+      "reading": "にくざお",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "penis"
+      },
+      "example_text": "「肉竿」と彼は言った。",
+      "example_reading": "にくざお",
+      "example_translations": {
+        "en": "\"penis,\" he said."
+      }
+    },
+    {
+      "id": "register_101499",
+      "word": "肉芽",
+      "reading": "にくが",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vagina"
+      },
+      "example_text": "肉芽という言葉を聞いたことがありますか？",
+      "example_reading": "にくが",
+      "example_translations": {
+        "en": "Have you heard the word \"vagina\"?"
+      }
+    },
+    {
+      "id": "register_101500",
+      "word": "肉茎",
+      "reading": "にっけい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "dick"
+      },
+      "example_text": "肉茎という言葉を聞いたことがありますか？",
+      "example_reading": "にっけい",
+      "example_translations": {
+        "en": "Have you heard the word \"dick\"?"
+      }
+    },
+    {
+      "id": "register_101501",
+      "word": "肉襞",
+      "reading": "にくひだ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pussy"
+      },
+      "example_text": "肉襞という言葉を聞いたことがありますか？",
+      "example_reading": "にくひだ",
+      "example_translations": {
+        "en": "Have you heard the word \"pussy\"?"
+      }
+    },
+    {
+      "id": "register_101504",
+      "word": "胸射",
+      "reading": "むねしゃ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "ejaculating on the breasts"
+      },
+      "example_text": "「胸射」と彼は言った。",
+      "example_reading": "むねしゃ",
+      "example_translations": {
+        "en": "\"ejaculating on the breasts,\" he said."
+      }
+    },
+    {
+      "id": "register_101506",
+      "word": "脇コキ",
+      "reading": "わきコキ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "armpit job"
+      },
+      "example_text": "脇コキという言葉を聞いたことがありますか？",
+      "example_reading": "わきコキ",
+      "example_translations": {
+        "en": "Have you heard the word \"armpit job\"?"
+      }
+    },
+    {
+      "id": "register_101518",
+      "word": "膣洞",
+      "reading": "ちつどう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vaginal cavity"
+      },
+      "example_text": "膣洞という言葉を聞いたことがありますか？",
+      "example_reading": "ちつどう",
+      "example_translations": {
+        "en": "Have you heard the word \"vaginal cavity\"?"
+      }
+    },
+    {
+      "id": "register_101519",
+      "word": "膣穴",
+      "reading": "ちつあな",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vagina"
+      },
+      "example_text": "「膣穴」と彼は言った。",
+      "example_reading": "ちつあな",
+      "example_translations": {
+        "en": "\"vagina,\" he said."
+      }
+    },
+    {
+      "id": "register_101520",
+      "word": "膣肉",
+      "reading": "ちつにく",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "vulva"
+      },
+      "example_text": "日本人はよく「膣肉」と言います。",
+      "example_reading": "ちつにく",
+      "example_translations": {
+        "en": "Japanese people often say \"vulva.\""
+      }
+    },
+    {
+      "id": "register_101521",
+      "word": "膣襞",
+      "reading": "ちつひだ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "pussy lips"
+      },
+      "example_text": "日本人はよく「膣襞」と言います。",
+      "example_reading": "ちつひだ",
+      "example_translations": {
+        "en": "Japanese people often say \"pussy lips.\""
+      }
+    },
+    {
+      "id": "register_101560",
+      "word": "蜜液",
+      "reading": "みつえき",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "love fluids"
+      },
+      "example_text": "日本人はよく「蜜液」と言います。",
+      "example_reading": "みつえき",
+      "example_translations": {
+        "en": "Japanese people often say \"love fluids.\""
+      }
+    },
+    {
+      "id": "register_101561",
+      "word": "蜜肉",
+      "reading": "みつにく",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "female genitalia"
+      },
+      "example_text": "日本人はよく「蜜肉」と言います。",
+      "example_reading": "みつにく",
+      "example_translations": {
+        "en": "Japanese people often say \"female genitalia.\""
+      }
+    },
+    {
+      "id": "register_101573",
+      "word": "親子丼",
+      "reading": "おやこどん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "threesome including a parent and child"
+      },
+      "example_text": "日本人はよく「親子丼」と言います。",
+      "example_reading": "おやこどん",
+      "example_translations": {
+        "en": "Japanese people often say \"threesome including a parent and child.\""
+      }
+    },
+    {
+      "id": "register_101575",
+      "word": "触手責め",
+      "reading": "しょくしゅぜめ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "tentacle rape"
+      },
+      "example_text": "「触手責め」と彼は言った。",
+      "example_reading": "しょくしゅぜめ",
+      "example_translations": {
+        "en": "\"tentacle rape,\" he said."
+      }
+    },
+    {
+      "id": "register_101593",
+      "word": "貝合わせ",
+      "reading": "かいあわせ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "tribadism"
+      },
+      "example_text": "「貝合わせ」と彼は言った。",
+      "example_reading": "かいあわせ",
+      "example_translations": {
+        "en": "\"tribadism,\" he said."
+      }
+    },
+    {
+      "id": "register_101606",
+      "word": "足コキ",
+      "reading": "あしこき",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "footjob"
+      },
+      "example_text": "日本人はよく「足コキ」と言います。",
+      "example_reading": "あしこき",
+      "example_translations": {
+        "en": "Japanese people often say \"footjob.\""
+      }
+    },
+    {
+      "id": "register_101615",
+      "word": "連れしょん",
+      "reading": "つれしょん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "going to the bathroom in a group"
+      },
+      "example_text": "日本人はよく「連れしょん」と言います。",
+      "example_reading": "つれしょん",
+      "example_translations": {
+        "en": "Japanese people often say \"going to the bathroom in a group.\""
+      }
+    },
+    {
+      "id": "register_101627",
+      "word": "遣る",
+      "reading": "やる",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to have sex"
+      },
+      "example_text": "遣るという言葉を聞いたことがありますか？",
+      "example_reading": "やる",
+      "example_translations": {
+        "en": "Have you heard the word \"to have sex\"?"
+      }
+    },
+    {
+      "id": "register_101652",
+      "word": "雄臭",
+      "reading": "おすしゅう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "musky male scent"
+      },
+      "example_text": "雄臭という言葉を聞いたことがありますか？",
+      "example_reading": "おすしゅう",
+      "example_translations": {
+        "en": "Have you heard the word \"musky male scent\"?"
+      }
+    },
+    {
+      "id": "register_101669",
+      "word": "顔射",
+      "reading": "がんしゃ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "facial"
+      },
+      "example_text": "日本人はよく「顔射」と言います。",
+      "example_reading": "がんしゃ",
+      "example_translations": {
+        "en": "Japanese people often say \"facial.\""
+      }
+    },
+    {
+      "id": "register_101675",
+      "word": "食い込む",
+      "reading": "くいこむ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to be wedged (i.e. underwear pulled from the back, driving it between the buttocks)"
+      },
+      "example_text": "日本人はよく「食い込む」と言います。",
+      "example_reading": "くいこむ",
+      "example_translations": {
+        "en": "Japanese people often say \"to be wedged (i.e. underwear pulled from the back, driving it between the buttocks).\""
+      }
+    },
+    {
+      "id": "register_101676",
+      "word": "食う",
+      "reading": "くう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to have sexual relations with a woman, esp. for the first time"
+      },
+      "example_text": "日本人はよく「食う」と言います。",
+      "example_reading": "くう",
+      "example_translations": {
+        "en": "Japanese people often say \"to have sexual relations with a woman, esp. for the first time.\""
+      }
+    },
+    {
+      "id": "register_101677",
+      "word": "食らう",
+      "reading": "くらう",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "to eat"
+      },
+      "example_text": "日本人はよく「食らう」と言います。",
+      "example_reading": "くらう",
+      "example_translations": {
+        "en": "Japanese people often say \"to eat.\""
+      }
+    },
+    {
+      "id": "register_101681",
+      "word": "飲精",
+      "reading": "いんせい",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "drinking semen"
+      },
+      "example_text": "飲精という言葉を聞いたことがありますか？",
+      "example_reading": "いんせい",
+      "example_translations": {
+        "en": "Have you heard the word \"drinking semen\"?"
+      }
+    },
+    {
+      "id": "register_101688",
+      "word": "駅弁",
+      "reading": "えきべん",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "sexual position in which one person stands supporting the other"
+      },
+      "example_text": "駅弁という言葉を聞いたことがありますか？",
+      "example_reading": "えきべん",
+      "example_translations": {
+        "en": "Have you heard the word \"sexual position in which one person stands supporting the other\"?"
+      }
+    },
+    {
+      "id": "register_101718",
+      "word": "ＡＦ",
+      "reading": "エー・エフ",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "anal sex"
+      },
+      "example_text": "ＡＦという言葉を聞いたことがありますか？",
+      "example_reading": "エー・エフ",
+      "example_translations": {
+        "en": "Have you heard the word \"anal sex\"?"
+      }
+    },
+    {
+      "id": "register_101752",
+      "word": "ｇｇｒｋｓ",
+      "reading": "ググれかす",
+      "pos": "expression",
+      "level": "adult",
+      "topic": "vulgar",
+      "source": "JMdict/EDRDG via register_vocabulary.json",
+      "register": "vulgar",
+      "meanings": {
+        "en": "just fucking google it"
+      },
+      "example_text": "「ｇｇｒｋｓ」と彼は言った。",
+      "example_reading": "ググれかす",
+      "example_translations": {
+        "en": "\"just fucking google it,\" he said."
+      }
+    }
+  ]
+}

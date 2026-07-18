@@ -158,7 +158,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                       SizedBox(
                         height: 48.h,
                         child: OutlinedButton(
-                          onPressed: () => context.go('/home'),
+                          onPressed: () => context.go('/swipe'),
                           child: Text(
                             l10n.onboardingSkip,
                             style: TextStyle(

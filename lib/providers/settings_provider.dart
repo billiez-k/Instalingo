@@ -135,3 +135,79 @@ class TtsNotifier extends StateNotifier<bool> {
     await prefs.setBool('tts_enabled', state);
   }
 }
+
+/// Controls whether 🔥 Spicy (slang) content appears in swipe/collections.
+/// On by default for adult audiences.
+final spicyEnabledProvider = StateNotifierProvider<SpicyNotifier, bool>((ref) {
+  return SpicyNotifier(ref);
+});
+
+class SpicyNotifier extends StateNotifier<bool> {
+  final Ref _ref;
+
+  SpicyNotifier(this._ref) : super(true) {
+    _load();
+  }
+
+  Future<void> _load() async {
+    final prefs = await _ref.read(sharedPrefsProvider.future);
+    state = prefs.getBool('spicy_enabled') ?? true;
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await _ref.read(sharedPrefsProvider.future);
+    await prefs.setBool('spicy_enabled', state);
+  }
+}
+
+/// Controls whether 💀 Wild (vulgar/adult) content appears.
+/// OFF by default — requires explicit user opt-in.
+final wildEnabledProvider = StateNotifierProvider<WildNotifier, bool>((ref) {
+  return WildNotifier(ref);
+});
+
+class WildNotifier extends StateNotifier<bool> {
+  final Ref _ref;
+
+  WildNotifier(this._ref) : super(false) {
+    _load();
+  }
+
+  Future<void> _load() async {
+    final prefs = await _ref.read(sharedPrefsProvider.future);
+    state = prefs.getBool('wild_enabled') ?? false;
+  }
+
+  Future<void> toggle() async {
+    state = !state;
+    final prefs = await _ref.read(sharedPrefsProvider.future);
+    await prefs.setBool('wild_enabled', state);
+  }
+}
+
+/// Tracks whether the user has completed their first swipe session.
+/// Used to show spicy/interesting cards first on initial open
+/// (the "aha" moment that prevents 60-second deletion).
+final firstSessionProvider = StateNotifierProvider<FirstSessionNotifier, bool>((ref) {
+  return FirstSessionNotifier(ref);
+});
+
+class FirstSessionNotifier extends StateNotifier<bool> {
+  final Ref _ref;
+
+  FirstSessionNotifier(this._ref) : super(true) {
+    _load();
+  }
+
+  Future<void> _load() async {
+    final prefs = await _ref.read(sharedPrefsProvider.future);
+    state = prefs.getBool('first_session') ?? true;
+  }
+
+  Future<void> markComplete() async {
+    state = false;
+    final prefs = await _ref.read(sharedPrefsProvider.future);
+    await prefs.setBool('first_session', false);
+  }
+}

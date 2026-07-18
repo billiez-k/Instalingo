@@ -1,0 +1,49 @@
+name: Build InstaLingo
+
+on:
+  push:
+    branches: [main, v3-tiktok-only]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-web:
+    name: Build Web
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.27.4'
+          channel: 'stable'
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+      - run: flutter build web --no-tree-shake-icons --release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: instalingo-web
+          path: build/web/
+
+  build-android:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.27.4'
+          channel: 'stable'
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
+      - run: flutter build apk --release --no-tree-shake-icons
+      - uses: actions/upload-artifact@v4
+        with:
+          name: instalingo-apk
+          path: build/app/outputs/flutter-apk/app-release.apk

@@ -9,18 +9,16 @@ import 'package:instalingo/screens/onboarding/learning_goal_screen.dart';
 import 'package:instalingo/screens/onboarding/motivation_screen.dart';
 import 'package:instalingo/screens/onboarding/commitment_screen.dart';
 import 'package:instalingo/screens/main_shell.dart';
-import 'package:instalingo/screens/home/chill_feed_screen.dart';
 import 'package:instalingo/screens/swipe/swipe_screen.dart';
 import 'package:instalingo/screens/review/review_screen.dart';
-import 'package:instalingo/screens/collections/collections_screen.dart';
 import 'package:instalingo/screens/daily_complete_screen.dart';
-import 'package:instalingo/screens/chill/post_detail_screen.dart';
 import 'package:instalingo/screens/profile/profile_screen.dart';
 import 'package:instalingo/screens/profile/stats_screen.dart';
 import 'package:instalingo/screens/profile/achievements_screen.dart';
 import 'package:instalingo/screens/profile/settings_screen.dart';
 import 'package:instalingo/screens/profile/edit_profile_screen.dart';
 import 'package:instalingo/screens/profile/help_support_screen.dart';
+import 'package:instalingo/screens/collections/collections_screen.dart';
 import 'package:instalingo/screens/paywall/paywall_modal.dart';
 import 'package:instalingo/screens/error_screen.dart';
 
@@ -67,13 +65,7 @@ class AppRouter {
         path: '/onboarding/commitment',
         pageBuilder: (_, __) => _slidePage(const CommitmentScreen()),
       ),
-      // Swipe mode (full-screen)
-      GoRoute(
-        path: '/swipe',
-        pageBuilder: (_, state) => _fadePage(
-          SwipeScreen(targetWordId: state.uri.queryParameters['wordId']),
-        ),
-      ),
+      // Daily complete — shown after finishing a swipe session
       GoRoute(
         path: '/swipe/complete',
         builder: (_, state) {
@@ -87,13 +79,6 @@ class AppRouter {
             gemsEarned: extra['gemsEarned'] as int? ?? 0,
           );
         },
-      ),
-      // Chill post detail
-      GoRoute(
-        path: '/post/:id',
-        builder: (_, state) => PostDetailScreen(
-          postId: state.pathParameters['id']!,
-        ),
       ),
       // Paywall
       GoRoute(
@@ -135,22 +120,24 @@ class AppRouter {
         path: '/profile/help',
         builder: (_, __) => const HelpSupportScreen(),
       ),
-      // Main shell with tabs
+      GoRoute(
+        path: '/collections',
+        builder: (_, __) => const CollectionsScreen(),
+      ),
+      // Main shell with 3 tabs: Swipe, Review, Profile
       ShellRoute(
         navigatorKey: _shellNavigatorKey,
         builder: (_, __, child) => MainShell(child: child),
         routes: [
           GoRoute(
-            path: '/home',
-            builder: (_, __) => const ChillFeedScreen(),
+            path: '/swipe',
+            pageBuilder: (_, state) => _fadePage(
+              SwipeScreen(targetWordId: state.uri.queryParameters['wordId']),
+            ),
           ),
           GoRoute(
             path: '/review',
             builder: (_, __) => const ReviewScreen(),
-          ),
-          GoRoute(
-            path: '/collections',
-            builder: (_, __) => const CollectionsScreen(),
           ),
           GoRoute(
             path: '/profile',

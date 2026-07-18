@@ -40,9 +40,9 @@ class HelpSupportScreen extends StatelessWidget {
         title: l10n.profile_learningFeatures,
         items: [
           _HelpItem(
-            icon: PhosphorIcons.chatCircleText(),
-            title: l10n.profile_whatIsChillCorner,
-            description: l10n.profile_whatIsChillCornerAnswer,
+            icon: PhosphorIcons.arrowsDownUp(),
+            title: l10n.profile_howDoIStart,
+            description: l10n.profile_howDoIStartAnswer,
           ),
           _HelpItem(
             icon: PhosphorIcons.brain(),
@@ -53,6 +53,26 @@ class HelpSupportScreen extends StatelessWidget {
             icon: PhosphorIcons.trophy(),
             title: l10n.profile_earningXPGems,
             description: l10n.profile_earningXPGemsAnswer,
+          ),
+        ],
+      ),
+      _HelpSection(
+        title: l10n.attributionsTitle,
+        items: [
+          _HelpItem(
+            icon: PhosphorIcons.bookOpen(),
+            title: l10n.attributionsJmdict,
+            description: l10n.attributionsJmdictDesc,
+          ),
+          _HelpItem(
+            icon: PhosphorIcons.users(),
+            title: l10n.attributionsTatoeba,
+            description: l10n.attributionsTatoebaDesc,
+          ),
+          _HelpItem(
+            icon: PhosphorIcons.chartBar(),
+            title: l10n.attributionsTanos,
+            description: l10n.attributionsTanosDesc,
           ),
         ],
       ),

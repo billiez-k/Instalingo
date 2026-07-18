@@ -57,7 +57,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
         if (!mounted) return;
         final onboardingComplete = ref.read(onboardingCompleteProvider);
         if (onboardingComplete) {
-          context.go('/home');
+          context.go('/swipe');
         } else {
           context.go('/onboarding');
         }

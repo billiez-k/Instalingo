@@ -27,9 +27,6 @@ dependencies:
   shimmer: ^3.0.0
   confetti: ^0.7.0
 
-  # Images
-  cached_network_image: ^3.3.1
-
   # Audio
   flutter_tts: ^4.2.2
 
@@ -48,6 +45,7 @@ dependencies:
   shared_preferences: ^2.2.3
   sqflite: ^2.3.2
   path: ^1.9.0
+  path_provider: ^2.1.5
 
   # Notifications
   flutter_local_notifications: ^17.2.0
@@ -58,12 +56,7 @@ dependencies:
   # UI Utils
   flutter_screenutil: ^5.9.3
   url_launcher: ^6.2.6
-  intl: ^0.20.2
-  connectivity_plus: ^6.0.3
-  http: ^1.2.1
-
-  # Swipe Cards
-  flutter_card_swiper: ^7.2.0
+  intl: ^0.19.0
 
   flutter_localizations:
     sdk: flutter
@@ -92,4 +85,6 @@ flutter:
     - instalingo_content/japanese/n3/
     - instalingo_content/japanese/n2/
     - instalingo_content/japanese/n1/
-    - instalingo_content/shared/
+    - instalingo_content/japanese/slang/
+    - instalingo_content/japanese/vulgar/
+    - instalingo_content/japanese/grammar/
