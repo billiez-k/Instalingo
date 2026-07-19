@@ -112,7 +112,6 @@ class _SplashScreenState extends ConsumerState<SplashScreen>
                   phase: _waveController.value,
                   color: AppColors.primary.withValues(alpha: 0.10),
                 ),
-                size: Size.infinite,
               ),
             ),
             // Centre wordmark + compass
@@ -223,6 +222,8 @@ class _HarborWavePainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
+    // Guard against NaN/Infinity — crashes ARM Mali GPUs under Impeller
+    if (!size.width.isFinite || !size.height.isFinite) return;
     _paint.color = color;
     _path.reset();
     final waveHeight = size.height * 0.06;
