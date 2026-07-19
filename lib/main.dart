@@ -1,3 +1,5 @@
+import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -11,22 +13,38 @@ import 'package:instalingo/theme/app_theme.dart';
 import 'package:instalingo/utils/responsive.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]);
-  SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.dark,
-    ),
-  );
-  runApp(
-    const ProviderScope(
-      child: InstaLingoApp(),
-    ),
-  );
+  // Catch ALL errors and render them on screen instead of crashing
+  FlutterError.onError = (details) {
+    FlutterError.presentError(details);
+    // Write to a visible area so we can debug
+    debugPrint('FLUTTER ERROR: ${details.exception}\n${details.stack}');
+  };
+
+  PlatformDispatcher.instance.onError = (error, stack) {
+    debugPrint('PLATFORM ERROR: $error\n$stack');
+    return true;
+  };
+
+  runZonedGuarded(() {
+    WidgetsFlutterBinding.ensureInitialized();
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.dark,
+      ),
+    );
+    runApp(
+      const ProviderScope(
+        child: InstaLingoApp(),
+      ),
+    );
+  }, (error, stack) {
+    debugPrint('ZONED ERROR: $error\n$stack');
+  });
 }
 
 class InstaLingoApp extends ConsumerWidget {
