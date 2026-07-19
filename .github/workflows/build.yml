@@ -36,8 +36,9 @@ jobs:
           flutter-version: '3.27.4'
           channel: 'stable'
       - run: flutter pub get
-      - run: flutter build apk --release --no-tree-shake-icons --verbose 2>&1 | tail -200
+      - run: flutter build apk --release --no-tree-shake-icons
+      - run: find build/ -name "*.apk" -type f
       - uses: actions/upload-artifact@v4
         with:
           name: instalingo-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/*.apk
