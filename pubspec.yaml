@@ -30,25 +30,14 @@ dependencies:
   # Audio
   flutter_tts: 4.2.0
 
-  # Ads (free tier monetization)
-  google_mobile_ads: ^5.1.0
-
   # Subscriptions (premium monetization)
   purchases_flutter: ^8.1.0
-
-  # Analytics
-  firebase_core: ^2.27.0
-  firebase_analytics: ^10.8.0
-  firebase_crashlytics: ^3.4.0
 
   # Local Storage
   shared_preferences: ^2.2.3
   sqflite: ^2.3.2
   path: ^1.9.0
   path_provider: ^2.1.5
-
-  # Notifications
-  flutter_local_notifications: ^17.2.0
 
   # Social Sharing
   share_plus: ^9.0.0
