@@ -26,22 +26,19 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
     try {
       await ref.read(onboardingReadyProvider.future).timeout(
         const Duration(seconds: 5),
-        onTimeout: () {},
       );
     } catch (_) {
-      // Preferences failed — proceed to onboarding anyway
+      // Preferences failed or timed out — proceed anyway
     }
     if (!mounted) return;
     try {
       final onboarded = ref.read(onboardingCompleteProvider);
       if (onboarded) {
         context.go('/swipe');
-      } else {
-        context.go('/onboarding');
+        return;
       }
-    } catch (_) {
-      context.go('/onboarding');
-    }
+    } catch (_) {}
+    if (mounted) context.go('/onboarding');
   }
 
   @override
