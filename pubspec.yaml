@@ -31,7 +31,7 @@ dependencies:
   # Add back when ready: flutter_tts: 4.2.0
 
   # Local Storage
-  shared_preferences: ^2.2.3
+  shared_preferences: ^2.3.4
   sqflite: ^2.3.2
   path: ^1.9.0
   path_provider: ^2.1.5

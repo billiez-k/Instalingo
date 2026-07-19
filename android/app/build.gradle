@@ -31,8 +31,32 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    packagingOptions {
+        jniLibs {
+            pickFirsts += ['**/libflutter.so']
+        }
+        exclude 'lib/arm64-v8a/libdatastore_shared_counter.so'
+        exclude 'lib/armeabi-v7a/libdatastore_shared_counter.so'
+        exclude 'lib/x86/libdatastore_shared_counter.so'
+        exclude 'lib/x86_64/libdatastore_shared_counter.so'
+    }
 }
 
 flutter {
     source = "../.."
+}
+
+// Strip datastore .so from merged native libs before packaging
+afterEvaluate {
+    tasks.matching { it.name.startsWith('merge') && it.name.contains('NativeLibs') }.configureEach {
+        doLast {
+            delete fileTree(dir: outputDir, include: '**/libdatastore_shared_counter.so')
+        }
+    }
+    tasks.matching { it.name == 'packageRelease' }.configureEach {
+        doFirst {
+            delete fileTree(dir: "${buildDir}/intermediates/merged_native_libs/release/out/lib", include: '**/libdatastore_shared_counter.so')
+        }
+    }
 }
