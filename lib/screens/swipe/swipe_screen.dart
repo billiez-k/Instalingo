@@ -25,7 +25,7 @@ import 'package:instalingo/providers/settings_provider.dart';
 import 'package:instalingo/providers/vocab_deck_provider.dart';
 import 'package:instalingo/screens/swipe/tutorial_overlay.dart';
 import 'package:instalingo/screens/swipe/type_mode.dart';
-import 'package:instalingo/services/tts_service.dart';
+
 import 'package:instalingo/services/share/card_image_generator.dart';
 import 'package:instalingo/theme/app_theme.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -955,37 +955,26 @@ class _RegisterBadge extends StatelessWidget {
 
 /// Audio pronunciation button for swipe cards.
 /// Uses device TTS to speak the card's word.
-class _AudioButton extends ConsumerWidget {
+class _AudioButton extends StatelessWidget {
   final VocabCard card;
   const _AudioButton({required this.card});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final ttsEnabled = ref.watch(ttsEnabledProvider);
-    final tts = ref.watch(ttsServiceProvider);
-
+  Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ttsEnabled
-          ? () {
-              HapticFeedback.selectionClick();
-              tts.speakJapanese(card.word);
-            }
-          : null,
+      onTap: null, // TTS unavailable — requires flutter_tts dependency
       child: Container(
         width: 32.w,
         height: 32.w,
         decoration: BoxDecoration(
           color: Colors.black26,
           borderRadius: BorderRadius.circular(20.r),
-          border: Border.all(
-            color: ttsEnabled ? Colors.white24 : Colors.white10,
-            width: 0.5,
-          ),
+          border: Border.all(color: Colors.white10, width: 0.5),
         ),
-        child: Icon(
-          Icons.volume_up_rounded,
-          size: 16.sp,
-          color: ttsEnabled ? Colors.white70 : Colors.white24,
+        child: const Icon(
+          Icons.volume_off_rounded,
+          size: 14,
+          color: Colors.white24,
         ),
       ),
     );
