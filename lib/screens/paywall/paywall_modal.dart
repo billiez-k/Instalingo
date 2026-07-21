@@ -192,7 +192,6 @@ class _PaywallModalState extends ConsumerState<PaywallModal>
             ),
           ),
         ),
-      ),
     );
   }
 
