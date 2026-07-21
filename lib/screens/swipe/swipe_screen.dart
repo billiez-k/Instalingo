@@ -400,70 +400,43 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
         ),
         SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-            child: Column(children: [
-              Row(children: [
-                GestureDetector(
-                  onTap: () => context.go('/swipe'),
-                  child: Container(
-                    padding: EdgeInsets.all(8.w),
-                    decoration: BoxDecoration(color: Colors.black26, borderRadius: BorderRadius.circular(20.r)),
-                    child: PhosphorIcon(PhosphorIcons.x(PhosphorIconsStyle.bold), size: 18.sp, color: Colors.white),
+            padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
+            child: Row(children: [
+              // Card counter (left)
+              SizedBox(
+                width: 56.w,
+                child: Text(
+                  '${_currentIndex + 1}/${_cards.length}',
+                  style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w600, color: Colors.white54),
+                ),
+              ),
+              // Progress bar (center)
+              Expanded(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(1.r),
+                  child: LinearProgressIndicator(
+                    value: _cards.isNotEmpty ? (_currentIndex + 1) / _cards.length : 0,
+                    minHeight: 2,
+                    backgroundColor: Colors.white12,
+                    valueColor: const AlwaysStoppedAnimation(BusanHarborTokens.orange),
                   ),
                 ),
-                const Spacer(),
-                Text('${_currentIndex + 1} / ${_cards.length}',
-                    style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700, color: Colors.white70)),
-                const Spacer(),
-                // Mode toggle: Swipe ↔ Type
-                GestureDetector(
-                  onTap: () => setState(() => _isTypeMode = !_isTypeMode),
-                  child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 6.h),
-                    decoration: BoxDecoration(
-                      color: _isTypeMode
-                          ? BusanHarborTokens.orange.withValues(alpha: 0.3)
-                          : Colors.black26,
-                      borderRadius: BorderRadius.circular(20.r),
-                      border: Border.all(
-                        color: _isTypeMode
-                            ? BusanHarborTokens.orange.withValues(alpha: 0.5)
-                            : Colors.white24,
-                      ),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        PhosphorIcon(
-                          _isTypeMode
-                              ? PhosphorIcons.keyboard(PhosphorIconsStyle.fill)
-                              : PhosphorIcons.arrowsDownUp(PhosphorIconsStyle.bold),
-                          size: 14.sp,
-                          color: _isTypeMode ? BusanHarborTokens.orange : Colors.white70,
-                        ),
-                        SizedBox(width: 4.w),
-                        Text(
-                          _isTypeMode ? 'TYPE' : 'SWIPE',
-                          style: TextStyle(
-                            fontSize: 10.sp,
-                            fontWeight: FontWeight.w800,
-                            color: _isTypeMode ? BusanHarborTokens.orange : Colors.white70,
-                            letterSpacing: 1,
-                          ),
-                        ),
-                      ],
-                    ),
+              ),
+              SizedBox(width: 8.w),
+              // Mode toggle: small icon-only
+              GestureDetector(
+                onTap: () => setState(() => _isTypeMode = !_isTypeMode),
+                child: Container(
+                  width: 32.w, height: 32.w,
+                  decoration: BoxDecoration(
+                    color: _isTypeMode ? BusanHarborTokens.orange.withValues(alpha: 0.2) : Colors.black26,
+                    borderRadius: BorderRadius.circular(16.r),
                   ),
-                ),
-              ]),
-              SizedBox(height: 6.h),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(1.r),
-                child: LinearProgressIndicator(
-                  value: _cards.isNotEmpty ? (_currentIndex + 1) / _cards.length : 0,
-                  minHeight: 2,
-                  backgroundColor: Colors.white24,
-                  valueColor: const AlwaysStoppedAnimation(BusanHarborTokens.orange),
+                  child: PhosphorIcon(
+                    _isTypeMode ? PhosphorIcons.keyboard(PhosphorIconsStyle.fill) : PhosphorIcons.arrowsDownUp(PhosphorIconsStyle.bold),
+                    size: 16.sp,
+                    color: _isTypeMode ? BusanHarborTokens.orange : Colors.white54,
+                  ),
                 ),
               ),
             ]),
@@ -661,38 +634,53 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
                       ),
                     ],
                     const Spacer(),
-                    // Swipe hints (TikTok-style, subtle)
-                    if (showHints || saved || skipped)
-                      Center(
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                    // Swipe hints (BIG, clear, TikTok-style)
+                    Center(
+                        child: Column(
                           children: [
-                            Icon(Icons.arrow_back_ios, size: 12.sp, color: skipped ? Colors.white38 : Colors.white10),
-                            SizedBox(width: 4.w),
-                            Text(
-                              skipped ? l10n.swipeSkipped : l10n.swipeAlreadyKnew,
-                              style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w500,
-                                  color: skipped ? Colors.white38 : Colors.white10),
-                            ),
-                            SizedBox(width: 24.w),
-                            Icon(Icons.arrow_forward_ios, size: 12.sp, color: saved ? BusanHarborTokens.coral : Colors.white10),
-                            SizedBox(width: 4.w),
-                            Text(
-                              saved ? l10n.swipeSavedLabel : l10n.swipeSaveLabel,
-                              style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w500,
-                                  color: saved ? BusanHarborTokens.coral : Colors.white10),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                // Left = Skip
+                                Column(
+                                  children: [
+                                    Icon(Icons.arrow_back, size: 28.sp, color: skipped ? Colors.white38 : Colors.white30),
+                                    SizedBox(height: 2.h),
+                                    Text(
+                                      skipped ? l10n.swipeSkipped : l10n.swipeAlreadyKnew,
+                                      style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700,
+                                          color: skipped ? Colors.white38 : Colors.white30),
+                                    ),
+                                  ],
+                                ),
+                                // Center = Flip
+                                Column(
+                                  children: [
+                                    Icon(Icons.touch_app, size: 24.sp, color: Colors.white24),
+                                    SizedBox(height: 2.h),
+                                    Text(
+                                      l10n.swipeFlipHint,
+                                      style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w500, color: Colors.white24),
+                                    ),
+                                  ],
+                                ),
+                                // Right = Save
+                                Column(
+                                  children: [
+                                    Icon(Icons.arrow_forward, size: 28.sp, color: saved ? BusanHarborTokens.coral : Colors.white30),
+                                    SizedBox(height: 2.h),
+                                    Text(
+                                      saved ? l10n.swipeSavedLabel : l10n.swipeSaveLabel,
+                                      style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700,
+                                          color: saved ? BusanHarborTokens.coral : Colors.white30),
+                                    ),
+                                  ],
+                                ),
+                              ],
                             ),
                           ],
                         ),
                       ),
-                    SizedBox(height: 4.h),
-                    // Flip hint
-                    Center(
-                      child: Text(
-                        l10n.swipeFlipHint,
-                        style: TextStyle(fontSize: 10.sp, color: Colors.white24, letterSpacing: 1),
-                      ),
-                    ),
                   ],
                 ),
               ),
