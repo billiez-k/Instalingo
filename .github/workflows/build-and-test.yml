@@ -1,4 +1,4 @@
-name: Build & Firebase Test Lab
+name: Build APK
 
 on:
   push:
@@ -28,32 +28,3 @@ jobs:
           name: app-release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
           retention-days: 7
-
-  test-lab:
-    name: Test on Real Devices
-    runs-on: ubuntu-latest
-    needs: build
-    timeout-minutes: 25
-    steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: app-release-apk
-      - uses: google-github-actions/auth@v2
-        with:
-          credentials_json: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
-      - uses: google-github-actions/setup-gcloud@v2
-        with:
-          project_id: instalingo-test
-      - run: |
-          gcloud services enable toolresults.googleapis.com --project=instalingo-test 2>/dev/null || true
-          gcloud services enable testing.googleapis.com --project=instalingo-test 2>/dev/null || true
-      - run: |
-          gcloud firebase test android run \
-            --type robo \
-            --app app-release.apk \
-            --device model=oriole,version=33 \
-            --timeout 10m \
-            --results-dir=ci-${{ github.run_id }} \
-            --project instalingo-test
-      - run: |
-          echo "Results: https://console.firebase.google.com/project/instalingo-test/testlab"
