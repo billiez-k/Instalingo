@@ -529,163 +529,160 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
         button: true,
         hint: l10n.swipeFlipHint,
         child: Container(
-        color: Colors.black,
-        child: SafeArea(
-          child: Column(children: [
-            Expanded(
-              flex: 58,
+        width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: g),
+        ),
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            // Decorative background circles
+            Positioned(
+              right: -30, top: -20,
               child: Container(
-                width: double.infinity,
+                width: 160.w, height: 160.w,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: g),
-                ),
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: [
-                    Positioned(
-                      right: -30, top: -20,
-                      child: Container(
-                        width: 160.w, height: 160.w,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(color: Colors.white.withValues(alpha: 0.047), width: 1),
-                        ),
-                      ),
-                    ),
-                    Center(
-                      child: Opacity(
-                        opacity: 0.12,
-                        child: PhosphorIcon(pi, size: 110.sp, color: Colors.white),
-                      ),
-                    ),
-                    Center(
-                      child: Column(mainAxisSize: MainAxisSize.min, children: [
-                        Text(card.word,
-                            style: TextStyle(
-                                fontSize: 56.sp, fontWeight: FontWeight.w800,
-                                color: Colors.white, letterSpacing: 2,
-                                shadows: const [Shadow(color: Colors.black38, blurRadius: 16, offset: Offset(0, 3))])),
-                        SizedBox(height: 6.h),
-                        Text(card.reading,
-                            style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.w500,
-                                color: Colors.white60, letterSpacing: 1)),
-                      ]),
-                    ),
-                    // Top badges: JLPT level + register tier
-                    Positioned(
-                      right: 10, top: 10,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Container(
-                            padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 3.h),
-                            decoration: BoxDecoration(
-                              color: Colors.black26, borderRadius: BorderRadius.circular(4.r)),
-                            child: Text(card.level.toUpperCase(),
-                                style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w800,
-                                    color: BusanHarborTokens.orange, letterSpacing: 1)),
-                          ),
-                          SizedBox(height: 4.h),
-                          _RegisterBadge(register: card.register),
-                        ],
-                      ),
-                    ),
-                    // Audio pronunciation button
-                    Positioned(
-                      left: 10, top: 10,
-                      child: _AudioButton(card: card),
-                    ),
-                  ],
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white.withValues(alpha: 0.05), width: 1),
                 ),
               ),
             ),
-            Expanded(
-              flex: 42,
+            Positioned(
+              left: -40, bottom: -30,
               child: Container(
-                width: double.infinity,
-                color: const Color(0xFF0A0A0A),
-                padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
+                width: 120.w, height: 120.w,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: Colors.white.withValues(alpha: 0.04), width: 1),
+                ),
+              ),
+            ),
+            // POS decorative icon (very faint, centered behind text)
+            Center(
+              child: Opacity(
+                opacity: 0.06,
+                child: PhosphorIcon(pi, size: 160.sp, color: Colors.white),
+              ),
+            ),
+            // Main content area
+            SafeArea(
+              child: Padding(
+                padding: EdgeInsets.only(left: 16.w, right: 80.w, top: 20.h, bottom: 16.h),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Meaning (always visible)
-                    Text(
-                      flipped ? card.meaning : card.meaningFor(nCode),
-                      style: TextStyle(
-                        fontSize: 22.sp,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.white,
-                        height: 1.3,
-                      ),
-                    ),
-                    if (flipped && (card.exampleText ?? '').isNotEmpty) ...[
-                      SizedBox(height: 10.h),
-                      Container(
-                        padding: EdgeInsets.all(12.w),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withValues(alpha: 0.031),
-                          borderRadius: BorderRadius.circular(8.r),
-                          border: Border.all(color: Colors.white.withValues(alpha: 0.078)),
-                        ),
-                        child: Text(
-                          '${card.exampleText}\n${card.exampleTranslationFor(nCode)}',
-                          style: TextStyle(fontSize: 14.sp, color: Colors.white70, height: 1.4),
-                        ),
-                      ),
-                    ],
                     const Spacer(),
-                    // Swipe hints (BIG, clear, TikTok-style)
-                    Center(
-                        child: Column(
-                          children: [
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                // Left = Skip
-                                Column(
-                                  children: [
-                                    Icon(Icons.arrow_back, size: 28.sp, color: skipped ? Colors.white38 : Colors.white30),
-                                    SizedBox(height: 2.h),
-                                    Text(
-                                      skipped ? l10n.swipeSkipped : l10n.swipeAlreadyKnew,
-                                      style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700,
-                                          color: skipped ? Colors.white38 : Colors.white30),
-                                    ),
-                                  ],
-                                ),
-                                // Center = Flip
-                                Column(
-                                  children: [
-                                    Icon(Icons.touch_app, size: 24.sp, color: Colors.white24),
-                                    SizedBox(height: 2.h),
-                                    Text(
-                                      l10n.swipeFlipHint,
-                                      style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w500, color: Colors.white24),
-                                    ),
-                                  ],
-                                ),
-                                // Right = Save
-                                Column(
-                                  children: [
-                                    Icon(Icons.arrow_forward, size: 28.sp, color: saved ? BusanHarborTokens.coral : Colors.white30),
-                                    SizedBox(height: 2.h),
-                                    Text(
-                                      saved ? l10n.swipeSavedLabel : l10n.swipeSaveLabel,
-                                      style: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700,
-                                          color: saved ? BusanHarborTokens.coral : Colors.white30),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ],
+                    // Register badge + JLPT level (bottom-left area, small)
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        _RegisterBadge(register: card.register),
+                        SizedBox(width: 8.w),
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 2.h),
+                          decoration: BoxDecoration(
+                            color: Colors.white.withValues(alpha: 0.1),
+                            borderRadius: BorderRadius.circular(4.r),
+                          ),
+                          child: Text(card.level.toUpperCase(),
+                              style: TextStyle(fontSize: 9.sp, fontWeight: FontWeight.w700,
+                                  color: Colors.white.withValues(alpha: 0.7), letterSpacing: 1)),
                         ),
+                      ],
+                    ),
+                    SizedBox(height: 16.h),
+                    // Meaning (or word+reading when not flipped)
+                    if (flipped)
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(card.meaningFor(nCode),
+                              style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w700,
+                                  color: Colors.white.withValues(alpha: 0.9), height: 1.3)),
+                          if (nCode != 'en' && card.meaning.isNotEmpty)
+                            Text(card.meaning,
+                                style: TextStyle(fontSize: 14.sp, color: Colors.white.withValues(alpha: 0.5))),
+                          if (card.exampleText != null && card.exampleText!.isNotEmpty) ...[
+                            SizedBox(height: 8.h),
+                            Text('${card.exampleText}',
+                                style: TextStyle(fontSize: 14.sp, fontStyle: FontStyle.italic,
+                                    color: Colors.white.withValues(alpha: 0.5))),
+                          ],
+                        ],
+                      )
+                    else
+                      // Show word + reading as hero (centered)
+                      Center(
+                        child: Column(mainAxisSize: MainAxisSize.min, children: [
+                          Text(card.word,
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 52.sp, fontWeight: FontWeight.w800,
+                                  color: Colors.white, letterSpacing: 2,
+                                  shadows: const [Shadow(color: Colors.black26, blurRadius: 16, offset: Offset(0, 4))])),
+                          SizedBox(height: 8.h),
+                          Text(card.reading,
+                              style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w400,
+                                  color: Colors.white.withValues(alpha: 0.7), letterSpacing: 1)),
+                        ]),
                       ),
+                    SizedBox(height: 20.h),
                   ],
                 ),
               ),
             ),
-          ]),
+            // Right side action bar (TikTok-style)
+            Positioned(
+              right: 8.w, bottom: 80.h,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _TikTokAction(
+                    icon: saved ? PhosphorIcons.heart(PhosphorIconsStyle.fill) : PhosphorIcons.heart(PhosphorIconsStyle.bold),
+                    color: saved ? BusanHarborTokens.coral : Colors.white,
+                    label: saved ? l10n.swipeSavedLabel : l10n.swipeSaveLabel,
+                    onTap: skipped ? null : () { HapticFeedback.mediumImpact(); _saveCard(index); },
+                  ),
+                  SizedBox(height: 16.h),
+                  _TikTokAction(
+                    icon: PhosphorIcons.arrowsClockwise(PhosphorIconsStyle.bold),
+                    color: Colors.white,
+                    label: l10n.swipeFlipLabel,
+                    onTap: _flipCard,
+                  ),
+                  SizedBox(height: 16.h),
+                  _TikTokAction(
+                    icon: PhosphorIcons.shareNetwork(PhosphorIconsStyle.bold),
+                    color: Colors.white,
+                    label: l10n.swipeShareLabel,
+                    onTap: skipped ? null : () { _shareCard(feedCard, l10n); },
+                  ),
+                  SizedBox(height: 16.h),
+                  _TikTokAction(
+                    icon: PhosphorIcons.x(PhosphorIconsStyle.bold),
+                    color: Colors.white,
+                    label: l10n.swipeAlreadyKnew,
+                    onTap: skipped ? null : () { HapticFeedback.lightImpact(); _skipCard(); },
+                  ),
+                ],
+              ),
+            ),
+            // Bottom gradient overlay (makes text readable over card)
+            Positioned(
+              left: 0, right: 0, bottom: 0,
+              child: Container(
+                height: 120.h,
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [Colors.transparent, Colors.black54],
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
       ),
@@ -948,6 +945,43 @@ class _GrammarSwipeCard extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// TikTok-style right rail action button (icon + tiny label)
+class _TikTokAction extends StatelessWidget {
+  final PhosphorIconData icon;
+  final Color color;
+  final String label;
+  final VoidCallback? onTap;
+
+  const _TikTokAction({
+    required this.icon, required this.color,
+    required this.label, this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: 44.w, height: 44.w,
+            decoration: BoxDecoration(
+              color: Colors.black.withValues(alpha: 0.35),
+              borderRadius: BorderRadius.circular(22.r),
+            ),
+            child: Center(
+              child: PhosphorIcon(icon, size: 24.sp, color: color),
+            ),
+          ),
+          SizedBox(height: 4.h),
+          Text(label, style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w600, color: Colors.white)),
+        ],
       ),
     );
   }
