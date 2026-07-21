@@ -2,7 +2,7 @@ name: Build InstaLingo
 
 on:
   push:
-    branches: [main, v3-tiktok-only]
+    branches: [main, v4]
   workflow_dispatch:
 
 jobs:
