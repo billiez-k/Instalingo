@@ -198,7 +198,7 @@ class _TypeModeScreenState extends ConsumerState<TypeModeScreen> {
             padding: EdgeInsets.only(right: 16.w),
             child: Center(
               child: Text(
-                '✅$_correctCount/$_totalAttempted',
+                '$_correctCount/$_totalAttempted',
                 style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w700,
                     color: BusanHarborTokens.mint),
               ),

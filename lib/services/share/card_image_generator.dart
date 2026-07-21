@@ -135,10 +135,10 @@ class CardImageGenerator {
 
   (String, ui.Color) _registerBadge(String register) {
     return switch (register) {
-      'vulgar' => ('💀 Wild', const ui.Color(0xFFD04B43)),
-      'slang' => ('🔥 Spicy', const ui.Color(0xFFE89A22)),
-      'real_life' => ('🗣️ Real Life', const ui.Color(0xFF3E7CB1)),
-      _ => ('📚 Textbook', const ui.Color(0xFF2D9C5A)),
+      'vulgar' => ('WILD', const ui.Color(0xFFD04B43)),
+      'slang' => ('SPICY', const ui.Color(0xFFE89A22)),
+      'real_life' => ('REAL LIFE', const ui.Color(0xFF3E7CB1)),
+      _ => ('TEXTBOOK', const ui.Color(0xFF2D9C5A)),
     };
   }
 }

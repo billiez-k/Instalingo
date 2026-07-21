@@ -1200,11 +1200,11 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get contentPreferences => 'Content Preferences';
   @override
-  String get spicyContent => '🔥 Spicy Content (Slang)';
+  String get spicyContent => 'Spicy Content (Slang)';
   @override
   String get spicyContentDesc => 'Show casual slang and informal Japanese words';
   @override
-  String get wildContent => '💀 Wild Content (Adult)';
+  String get wildContent => 'Wild Content (Adult)';
   @override
   String get wildContentDesc => 'Show explicit, vulgar, or adult language (18+)';
 

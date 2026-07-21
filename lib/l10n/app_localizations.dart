@@ -740,11 +740,11 @@ abstract class AppLocalizations {
 
   String get contentPreferences => 'Content Preferences';
 
-  String get spicyContent => '🔥 Spicy Content (Slang)';
+  String get spicyContent => 'Spicy Content (Slang)';
 
   String get spicyContentDesc => 'Show casual slang and informal Japanese words';
 
-  String get wildContent => '💀 Wild Content (Adult)';
+  String get wildContent => 'Wild Content (Adult)';
 
   String get wildContentDesc => 'Show explicit, vulgar, or adult language (18+)';
 }

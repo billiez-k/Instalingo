@@ -111,7 +111,7 @@ class NotificationService {
 
     ScaffoldMessenger.of(_context).showSnackBar(
       SnackBar(
-        content: Text('🗾 ${AppLocalizations.of(_context).notificationPracticeReminder}\n$word'),
+        content: Text('${AppLocalizations.of(_context).notificationPracticeReminder}\n$word'),
         duration: const Duration(seconds: 8),
         behavior: SnackBarBehavior.floating,
         action: SnackBarAction(
