@@ -41,15 +41,7 @@ class _PaywallModalState extends ConsumerState<PaywallModal>
     final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
 
-    return SlideTransition(
-      position: Tween<Offset>(
-        begin: const Offset(0, 1),
-        end: Offset.zero,
-      ).animate(CurvedAnimation(
-        parent: _controller,
-        curve: Curves.easeOutCubic,
-      )),
-      child: Container(
+    return Container(
         padding: EdgeInsets.all(24.w),
         decoration: BoxDecoration(
           color: theme.colorScheme.surface,

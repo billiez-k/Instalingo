@@ -489,6 +489,11 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
           TutorialOverlay(onDismiss: () => setState(() => _showTutorial = false)),
       ]);
 
+  // Horizontal drag state for TikTok-style swipe-to-act
+  Offset _dragStart = Offset.zero;
+  Offset _dragCurrent = Offset.zero;
+  bool _isDraggingHorizontal = false;
+
   Widget _postCard(AppThemeExtension appTheme, AppLocalizations l10n, UserProfile user, int index) {
     final feedCard = _cards[index];
 
@@ -507,9 +512,45 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
     final g = grads[index % grads.length];
     final pi = _posIcon(card);
 
+    // Show swipe hints for first 5 cards only
+    final showHints = index < 5;
+
     return GestureDetector(
       onTap: _flipCard,
-      onDoubleTap: () => _saveCard(index),
+      onLongPress: () {
+        HapticFeedback.mediumImpact();
+        _shareCard(feedCard, l10n);
+      },
+      // Horizontal drag for save/skip (TikTok-style)
+      onHorizontalDragStart: (details) {
+        _dragStart = details.localPosition;
+        _isDraggingHorizontal = false;
+      },
+      onHorizontalDragUpdate: (details) {
+        _dragCurrent = details.localPosition;
+        final delta = _dragCurrent.dx - _dragStart.dx;
+        if (delta.abs() > 5) _isDraggingHorizontal = true;
+        // Prevent vertical scroll while dragging horizontally
+        if (delta.abs() > 10) {
+          _pageController.jumpTo(_pageController.position.pixels);
+        }
+      },
+      onHorizontalDragEnd: (details) {
+        if (!_isDraggingHorizontal) return;
+        final delta = _dragCurrent.dx - _dragStart.dx;
+        if (delta > 60) {
+          // Swipe right → Save
+          HapticFeedback.mediumImpact();
+          _saveCard(index);
+        } else if (delta < -60) {
+          // Swipe left → Already Knew
+          HapticFeedback.lightImpact();
+          _skipCard();
+        }
+        _dragStart = Offset.zero;
+        _dragCurrent = Offset.zero;
+        _isDraggingHorizontal = false;
+      },
       child: Semantics(
         label: card.word,
         button: true,
@@ -590,71 +631,70 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
               child: Container(
                 width: double.infinity,
                 color: const Color(0xFF0A0A0A),
-                padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Row(children: [
-                    _act(saved ? PhosphorIcons.heart(PhosphorIconsStyle.fill) : PhosphorIcons.heart(PhosphorIconsStyle.bold),
-                        saved ? BusanHarborTokens.coral : Colors.white, () => skipped ? null : _saveCard(index), l10n.swipeSaveLabel),
-                    SizedBox(width: 16.w),
-                    _act(PhosphorIcons.chatCircle(PhosphorIconsStyle.bold), Colors.white, _flipCard, l10n.swipeFlipLabel),
-                    SizedBox(width: 16.w),
-                    _act(PhosphorIcons.share(PhosphorIconsStyle.bold), Colors.white,
-                        skipped ? null : () {
-                          final card = _cards[index];
-                          _shareCard(card, l10n);
-                        }, l10n.swipeShareLabel),
+                padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    // Meaning (always visible)
+                    Text(
+                      flipped ? card.meaning : card.meaningFor(nCode),
+                      style: TextStyle(
+                        fontSize: 22.sp,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white,
+                        height: 1.3,
+                      ),
+                    ),
+                    if (flipped && (card.exampleText ?? '').isNotEmpty) ...[
+                      SizedBox(height: 10.h),
+                      Container(
+                        padding: EdgeInsets.all(12.w),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withValues(alpha: 0.031),
+                          borderRadius: BorderRadius.circular(8.r),
+                          border: Border.all(color: Colors.white.withValues(alpha: 0.078)),
+                        ),
+                        child: Text(
+                          '${card.exampleText}\n${card.exampleTranslationFor(nCode)}',
+                          style: TextStyle(fontSize: 14.sp, color: Colors.white70, height: 1.4),
+                        ),
+                      ),
+                    ],
                     const Spacer(),
-                  ]),
-                  SizedBox(height: 8.h),
-                  Expanded(
-                    child: SingleChildScrollView(
-                      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                        Text(flipped ? card.meaning : card.meaningFor(nCode),
-                            style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.w800, color: Colors.white, height: 1.3)),
-                        if (flipped && (card.exampleText ?? '').isNotEmpty) ...[
-                          SizedBox(height: 10.h),
-                          Container(
-                            padding: EdgeInsets.all(12.w),
-                            decoration: BoxDecoration(
-                              color: Colors.white.withValues(alpha: 0.031),
-                              borderRadius: BorderRadius.circular(8.r),
-                              border: Border.all(color: Colors.white.withValues(alpha: 0.078)),
+                    // Swipe hints (TikTok-style, subtle)
+                    if (showHints || saved || skipped)
+                      Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.arrow_back_ios, size: 12.sp, color: skipped ? Colors.white38 : Colors.white10),
+                            SizedBox(width: 4.w),
+                            Text(
+                              skipped ? l10n.swipeSkipped : l10n.swipeAlreadyKnew,
+                              style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w500,
+                                  color: skipped ? Colors.white38 : Colors.white10),
                             ),
-                            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                              Text(card.exampleText ?? '', style: TextStyle(fontSize: 16.sp, color: Colors.white, height: 1.5)),
-                              SizedBox(height: 4.h),
-                              Text(card.exampleTranslationFor(nCode),
-                                  style: TextStyle(fontSize: 13.sp, color: Colors.white54)),
-                            ]),
-                          ),
-                        ],
-                        if (flipped) ...[
-                          SizedBox(height: 8.h),
-                          Wrap(spacing: 6.w, runSpacing: 4.h, children: [
-                            _chip(card.level.toUpperCase(), BusanHarborTokens.orange),
-                            _chip(card.pos, BusanHarborTokens.sea),
-                            if (card.topic.isNotEmpty) _chip(card.topic, BusanHarborTokens.coral),
-                          ]),
-                        ],
-                      ]),
+                            SizedBox(width: 24.w),
+                            Icon(Icons.arrow_forward_ios, size: 12.sp, color: saved ? BusanHarborTokens.coral : Colors.white10),
+                            SizedBox(width: 4.w),
+                            Text(
+                              saved ? l10n.swipeSavedLabel : l10n.swipeSaveLabel,
+                              style: TextStyle(fontSize: 11.sp, fontWeight: FontWeight.w500,
+                                  color: saved ? BusanHarborTokens.coral : Colors.white10),
+                            ),
+                          ],
+                        ),
+                      ),
+                    SizedBox(height: 4.h),
+                    // Flip hint
+                    Center(
+                      child: Text(
+                        l10n.swipeFlipHint,
+                        style: TextStyle(fontSize: 10.sp, color: Colors.white24, letterSpacing: 1),
+                      ),
                     ),
-                  ),
-                  SizedBox(height: 8.h),
-                  Row(children: [
-                    Expanded(
-                      child: _btn(skipped ? l10n.swipeSkipped : l10n.swipeAlreadyKnew,
-                          Colors.white.withValues(alpha: 0.059), skipped ? Colors.white38 : Colors.white70,
-                          onPressed: skipped ? null : _skipCard),
-                    ),
-                    SizedBox(width: 12.w),
-                    Expanded(
-                      flex: 2,
-                      child: _btn(saved ? l10n.swipeSavedLabel : l10n.swipeSaveLabel,
-                          saved ? BusanHarborTokens.orange : BusanHarborTokens.coral, Colors.white,
-                          onPressed: skipped ? null : () => _saveCard(index), isPrimary: true),
-                    ),
-                  ]),
-                ]),
+                  ],
+                ),
               ),
             ),
           ]),
