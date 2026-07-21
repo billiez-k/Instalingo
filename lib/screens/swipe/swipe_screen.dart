@@ -512,11 +512,11 @@ class _SwipeScreenState extends ConsumerState<SwipeScreen>
         if (!_isDraggingHorizontal) return;
         final delta = _dragCurrent.dx - _dragStart.dx;
         if (delta > 60) {
-          // Swipe right → Save
+          // Swipe right = Save
           HapticFeedback.mediumImpact();
           _saveCard(index);
         } else if (delta < -60) {
-          // Swipe left → Already Knew
+          // Swipe left = Already Knew
           HapticFeedback.lightImpact();
           _skipCard();
         }
@@ -820,7 +820,7 @@ class _GrammarSwipeCard extends StatelessWidget {
                         borderRadius: BorderRadius.circular(4.r),
                       ),
                       child: Text(
-                        '📖 GRAMMAR',
+                        'GRAMMAR',
                         style: TextStyle(
                           fontSize: 10.sp,
                           fontWeight: FontWeight.w800,
@@ -993,11 +993,11 @@ class _RegisterBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final (emoji, label, color) = switch (register) {
-      'vulgar' => ('\u{1F480}', 'Wild', const Color(0xFFD04B43)),  // 💀 skull + coral red
-      'slang' => ('\u{1F525}', 'Spicy', const Color(0xFFE89A22)),  // 🔥 fire + amber
-      'real_life' => ('\u{1F5E3}\u{FE0F}', 'Real Life', const Color(0xFF3E7CB1)),  // 🗣️ + sea blue
-      _ => ('\u{1F4DA}', 'Textbook', const Color(0xFF2D9C5A)),  // 📚 + mint green
+    final (label, color) = switch (register) {
+      vulgar' => ('Wild', const Color(0xFFD04B43)),  // 💀 skull + coral red
+      'slang' => ('Spicy', const Color(0xFFE89A22)),
+      'real_life' => ('Real Life', const Color(0xFF3E7CB1)),
+      _ => ('Textbook', const Color(0xFF2D9C5A)),
     };
 
     return Container(
