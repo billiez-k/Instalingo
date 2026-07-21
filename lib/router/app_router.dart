@@ -24,7 +24,38 @@ import 'package:instalingo/screens/error_screen.dart';
 
 class AppRouter {
   static final _rootNavigatorKey = GlobalKey<NavigatorState>();
-  static final _shellNavigatorKey = GlobalKey<NavigatorState>();
+
+  static final StatefulShellBranch _swipeBranch = StatefulShellBranch(
+    navigatorKey: GlobalKey<NavigatorState>(),
+    routes: [
+      GoRoute(
+        path: '/swipe',
+        pageBuilder: (_, state) => _fadePage(
+          SwipeScreen(targetWordId: state.uri.queryParameters['wordId']),
+        ),
+      ),
+    ],
+  );
+
+  static final StatefulShellBranch _reviewBranch = StatefulShellBranch(
+    navigatorKey: GlobalKey<NavigatorState>(),
+    routes: [
+      GoRoute(
+        path: '/review',
+        builder: (_, __) => const ReviewScreen(),
+      ),
+    ],
+  );
+
+  static final StatefulShellBranch _profileBranch = StatefulShellBranch(
+    navigatorKey: GlobalKey<NavigatorState>(),
+    routes: [
+      GoRoute(
+        path: '/profile',
+        builder: (_, __) => const ProfileScreen(),
+      ),
+    ],
+  );
 
   static final GoRouter router = GoRouter(
     navigatorKey: _rootNavigatorKey,
@@ -65,7 +96,6 @@ class AppRouter {
         path: '/onboarding/commitment',
         pageBuilder: (_, __) => _slidePage(const CommitmentScreen()),
       ),
-      // Daily complete — shown after finishing a swipe session
       GoRoute(
         path: '/swipe/complete',
         builder: (_, state) {
@@ -80,7 +110,6 @@ class AppRouter {
           );
         },
       ),
-      // Paywall
       GoRoute(
         path: '/paywall',
         pageBuilder: (_, state) => CustomTransitionPage(
@@ -99,7 +128,6 @@ class AppRouter {
           },
         ),
       ),
-      // Profile sub-screens
       GoRoute(
         path: '/profile/stats',
         builder: (_, __) => const StatsScreen(),
@@ -124,26 +152,12 @@ class AppRouter {
         path: '/collections',
         builder: (_, __) => const CollectionsScreen(),
       ),
-      // Main shell with 3 tabs: Swipe, Review, Profile
-      ShellRoute(
-        navigatorKey: _shellNavigatorKey,
-        builder: (_, __, child) => MainShell(child: child),
-        routes: [
-          GoRoute(
-            path: '/swipe',
-            pageBuilder: (_, state) => _fadePage(
-              SwipeScreen(targetWordId: state.uri.queryParameters['wordId']),
-            ),
-          ),
-          GoRoute(
-            path: '/review',
-            builder: (_, __) => const ReviewScreen(),
-          ),
-          GoRoute(
-            path: '/profile',
-            builder: (_, __) => const ProfileScreen(),
-          ),
-        ],
+      // StatefulShellRoute keeps tabs alive on switch (fixes B4)
+      StatefulShellRoute.indexedStack(
+        builder: (_, __, navigationShell) => MainShell(
+          navigationShell: navigationShell,
+        ),
+        branches: [_swipeBranch, _reviewBranch, _profileBranch],
       ),
     ],
   );
