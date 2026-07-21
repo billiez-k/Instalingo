@@ -994,7 +994,7 @@ class _RegisterBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (label, color) = switch (register) {
-      vulgar' => ('Wild', const Color(0xFFD04B43)),  // 💀 skull + coral red
+      'vulgar' => ('Wild', const Color(0xFFD04B43)),
       'slang' => ('Spicy', const Color(0xFFE89A22)),
       'real_life' => ('Real Life', const Color(0xFF3E7CB1)),
       _ => ('Textbook', const Color(0xFF2D9C5A)),
@@ -1008,7 +1008,7 @@ class _RegisterBadge extends StatelessWidget {
         border: Border.all(color: color.withValues(alpha: 0.4), width: 0.5),
       ),
       child: Text(
-        '$emoji $label',
+        label.toUpperCase(),
         style: TextStyle(fontSize: 9.sp, fontWeight: FontWeight.w700, color: color, letterSpacing: 0.5),
       ),
     );
