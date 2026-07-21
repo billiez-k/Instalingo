@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "523460459214",
+    "project_id": "instalingo-test",
+    "storage_bucket": "instalingo-test.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523460459214:android:eedec526b4ac85c63f6e9f",
+        "android_client_info": {
+          "package_name": "com.instalingo.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3ra7EFUPRPDLl-XTISiaDyWG48rnkYic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
