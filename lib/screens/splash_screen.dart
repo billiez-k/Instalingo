@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:instalingo/l10n/app_localizations.dart';
 import 'package:instalingo/providers/settings_provider.dart';
 import 'package:instalingo/theme/app_theme.dart';
 
@@ -43,7 +44,8 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    final l10n = AppLocalizations.of(context);
+    return Scaffold(
       backgroundColor: Color(0xFF0F1F2E),
       body: Center(
         child: Column(
@@ -52,7 +54,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
             Icon(Icons.translate, size: 64, color: Color(0xFFEE6C2C)),
             SizedBox(height: 16),
             Text(
-              'InstaLingo',
+              l10n.appTitle,
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.w800,
@@ -62,7 +64,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
             ),
             SizedBox(height: 8),
             Text(
-              'Discover Japanese',
+              l10n.appTagline,
               style: TextStyle(
                 fontSize: 14,
                 color: Color(0xFFA3ABB4),
