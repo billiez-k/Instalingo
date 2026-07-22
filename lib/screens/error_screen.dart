@@ -63,7 +63,7 @@ class ErrorScreen extends StatelessWidget {
                   ),
                   SizedBox(width: 24.w),
                   TextButton(
-                    onPressed: () => context.go('/swipe'),
+                    onPressed: () => Navigator.of(context).pop(),
                     child: Text(
                       l10n.retry,
                       style: TextStyle(
