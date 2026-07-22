@@ -1165,15 +1165,15 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get attributionsTitle => 'Atribusi';
   @override
-  String get attributionsJmdict => 'JMdict/EDDRG — Kamus Jepun';
+  String get attributionsJmdict => 'Kamus Jepun JMdict/EDDRG';
   @override
   String get attributionsJmdictDesc => 'Data kosa kata daripada JMdict. Dilesenkan di bawah CC-BY-SA 4.0.';
   @override
-  String get attributionsTatoeba => 'Tatoeba — Contoh Ayat';
+  String get attributionsTatoeba => 'Ayat Contoh Tatoeba';
   @override
   String get attributionsTatoebaDesc => 'Contoh ayat daripada Projek Tatoeba. Dilesenkan di bawah CC-BY 2.0 FR.';
   @override
-  String get attributionsTanos => 'Tanos.co.uk — Senarai Perbendaharaan Kata JLPT';
+  String get attributionsTanos => 'Tanos.co.uk Senarai Perbendaharaan Kata JLPT';
   @override
   String get attributionsTanosDesc => 'Klasifikasi perbendaharaan kata JLPT dari Tanos.co.uk. Dilesenkan di bawah CC-BY.';
   @override
@@ -1183,13 +1183,13 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get spicySlangDeck => 'Dek slanga pedas tidak berkunci';
   @override
-  String get unlimitedSavedWords => 'Perkataan disimpan tanpa had + folder tersuai';
+  String get unlimitedSavedWords => 'Perkataan disimpan tanpa had dan folder tersuai';
   @override
-  String get exportAnkiCsv => 'Eksport ke Anki/CSV';
+  String get exportAnkiCsv => 'Eksport ke Anki atau CSV';
   @override
   String get everythingInPro => 'Semuanya dalam Pro';
   @override
-  String get wildDeckAdults => 'Dek liar (dewasa sahaja, 18+)';
+  String get wildDeckAdults => 'Dek liar untuk dewasa sahaja 18+';
   @override
   String get aiWordExplanations => 'Penjelasan perkataan berkuasa AI';
   @override
@@ -1211,7 +1211,7 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get onceOnly => 'sekali';
   @override
-  String get lifetimeProAccess => 'Akses Pro Sepanjang Hayat — bayar sekali';
+  String get lifetimeProAccess => 'Akses Pro Sepanjang Hayat - bayar sekali';
   @override
   String get allFutureFeatures => 'Semua ciri masa depan disertakan';
   @override
@@ -1219,7 +1219,7 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get contentPreferences => 'Keutamaan Kandungan';
   @override
-  String get spicyContent => 'Kandungan Slang & Kasual';
+  String get spicyContent => 'Kandungan Slang dan Kasual';
   @override
   String get spicyContentDesc => 'Tunjukkan slanga kasual dan perkataan Jepun tidak formal';
   @override

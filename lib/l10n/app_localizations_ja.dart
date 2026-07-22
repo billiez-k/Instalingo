@@ -1165,80 +1165,15 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get attributionsTitle => '帰属';
   @override
-  String get attributionsJmdict => 'JMdict/EDRDG — 日本語辞書';
-  @override
-  String get attributionsJmdictDesc => 'JMdict (電子辞書研究開発グループ) の語彙データ。 CC-BY-SA 4.0 に基づいてライセンスされています。';
-  @override
-  String get attributionsTatoeba => 'タトエバ — 例文';
-  @override
-  String get attributionsTatoebaDesc => 'タトエバプロジェクトの例文。 CC-BY 2.0 FR に基づいてライセンスされています。';
-  @override
-  String get attributionsTanos => 'Tanos.co.uk — JLPT 語彙リスト';
-  @override
-  String get attributionsTanosDesc => 'Jonathan Waller (Tanos.co.uk) による JLPT 語彙レベル分類。 CC-BY に基づいてライセンスされています。';
-  @override
-  String get allJlptLevels => 'JLPT N5～N1 のすべてのレベル';
-  @override
-  String get realJapaneseDeck => '本物の日本語会話デッキ';
-  @override
-  String get spicySlangDeck => 'スパイシーなスラングデッキがロック解除されました';
-  @override
-  String get unlimitedSavedWords => '無制限に保存された単語とフォルダー';
-  @override
-  String get exportAnkiCsv => 'Anki/CSV にエクスポート';
-  @override
-  String get everythingInPro => 'プロのすべて';
-  @override
-  String get wildDeckAdults => 'ワイルドデッキ（大人専用）';
-  @override
-  String get aiWordExplanations => 'AIを活用した単語の説明';
-  @override
-  String get enhancedAudioPron => '強化された発音音声';
-  @override
-  String get earlyAccessFeatures => '新機能への早期アクセス';
-  @override
-  String get oneTimePurchases => '1回限りの購入';
-  @override
-  String get streakShieldPurchase => 'ストリークシールド';
-  @override
-  String get spicyPackPurchase => 'スパイシーパック';
-  @override
-  String get customThemePurchase => 'カスタムテーマ';
-  @override
-  String get mostPopular => '最も人気のある';
-  @override
-  String get lifetimeOption => '一生';
-  @override
-  String get onceOnly => '一度';
-  @override
-  String get lifetimeProAccess => '生涯 Pro アクセス - 1 回限りの支払い';
-  @override
-  String get allFutureFeatures => '将来のすべての機能が含まれています';
-  @override
-  String get bestValueLongTerm => '本格的な学習者にとって最高の価値';
-  @override
-  String get contentPreferences => 'コンテンツの設定';
-  @override
-  String get spicyContent => 'スパイシーなコンテンツ (スラング)';
-  @override
-  String get spicyContentDesc => 'カジュアルなスラングやくだけた日本語の単語を表示する';
-  @override
-  String get wildContent => 'ワイルド コンテンツ (アダルト)';
-  @override
-  String get wildContentDesc => '露骨な、下品な、または成人向けの言葉を表示する (18 歳以上)';
-
-  @override
-  String get attributionsTitle => '帰属';
-  @override
-  String get attributionsJmdict => 'JMdict/EDRDG — 日本語辞書';
+  String get attributionsJmdict => 'JMdict/EDRDG 日本語辞書';
   @override
   String get attributionsJmdictDesc => 'JMdict の語彙データ。 CC-BY-SA 4.0 に基づいてライセンスされています。';
   @override
-  String get attributionsTatoeba => 'タトエバ — 例文';
+  String get attributionsTatoeba => 'タトエバの例文';
   @override
   String get attributionsTatoebaDesc => 'タトエバプロジェクトの例文。 CC-BY 2.0 FR に基づいてライセンスされています。';
   @override
-  String get attributionsTanos => 'Tanos.co.uk — JLPT 語彙リスト';
+  String get attributionsTanos => 'Tanos.co.uk JLPT 語彙リスト';
   @override
   String get attributionsTanosDesc => 'Tanos.co.uk による JLPT 語彙分類。 CC-BY に基づいてライセンスされています。';
   @override
@@ -1248,13 +1183,13 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get spicySlangDeck => 'スパイシーなスラングデッキがロック解除されました';
   @override
-  String get unlimitedSavedWords => '無制限に保存された単語 + カスタムフォルダー';
+  String get unlimitedSavedWords => '無制限に保存された単語とカスタムフォルダー';
   @override
-  String get exportAnkiCsv => 'Anki/CSV にエクスポート';
+  String get exportAnkiCsv => 'Anki または CSV にエクスポート';
   @override
   String get everythingInPro => 'プロのすべて';
   @override
-  String get wildDeckAdults => 'ワイルドデッキ（大人のみ、18歳以上）';
+  String get wildDeckAdults => '18 歳以上の大人限定のワイルドデッキ';
   @override
   String get aiWordExplanations => 'AIを活用した単語の説明';
   @override
@@ -1276,7 +1211,7 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get onceOnly => '一度';
   @override
-  String get lifetimeProAccess => '生涯 Pro アクセス - 1 回限りの支払い';
+  String get lifetimeProAccess => '生涯プロ アクセス - 1 回限りの支払い';
   @override
   String get allFutureFeatures => '将来のすべての機能が含まれています';
   @override

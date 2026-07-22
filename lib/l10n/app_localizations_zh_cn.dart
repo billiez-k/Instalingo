@@ -1163,35 +1163,35 @@ class AppLocalizationsZhCn extends AppLocalizations {
 
 
   @override
-  String get attributionsTitle => '内容来源';
+  String get attributionsTitle => '归因';
   @override
-  String get attributionsJmdict => 'JMdict/EDRDG — 日语词典';
+  String get attributionsJmdict => 'JMdict/EDRDG 日语词典';
   @override
-  String get attributionsJmdictDesc => '词汇数据来自JMdict（电子词典研究开发组）。采用CC-BY-SA 4.0许可。https://www.edrdg.org/jmdict/j_jmdict.html';
+  String get attributionsJmdictDesc => '来自 JMdict 的词汇数据。根据 CC-BY-SA 4.0 许可。';
   @override
-  String get attributionsTatoeba => 'Tatoeba — 例句库';
+  String get attributionsTatoeba => '塔托巴 例句';
   @override
-  String get attributionsTatoebaDesc => '例句来自Tatoeba项目。采用CC-BY 2.0 FR许可。https://tatoeba.org';
+  String get attributionsTatoebaDesc => 'Tatoeba 项目的例句。根据 CC-BY 2.0 FR 许可。';
   @override
-  String get attributionsTanos => 'Tanos.co.uk — JLPT词汇表';
+  String get attributionsTanos => 'Tanos.co.uk JLPT 词汇表';
   @override
-  String get attributionsTanosDesc => 'JLPT词汇级别分类来自Jonathan Waller（Tanos.co.uk）。采用CC-BY许可。http://www.tanos.co.uk/jlpt/';
+  String get attributionsTanosDesc => '来自 Tanos.co.uk 的 JLPT 词汇分类。已获得 CC-BY 许可。';
   @override
-  String get allJlptLevels => '全部JLPT N5-N1级别';
+  String get allJlptLevels => '所有 JLPT N5-N1 级别';
   @override
-  String get realJapaneseDeck => '真实日语会话词库';
+  String get realJapaneseDeck => '真正的日语会话甲板';
   @override
-  String get spicySlangDeck => '俚语词库已解锁';
+  String get spicySlangDeck => '辛辣俚语甲板已解锁';
   @override
-  String get unlimitedSavedWords => '无限保存 + 自定义文件夹';
+  String get unlimitedSavedWords => '无限保存的单词和自定义文件夹';
   @override
-  String get exportAnkiCsv => '导出至Anki/CSV';
+  String get exportAnkiCsv => '导出到 Anki 或 CSV';
   @override
-  String get everythingInPro => 'Pro版全部功能';
+  String get everythingInPro => '专业版中的一切';
   @override
-  String get wildDeckAdults => '成人词库（仅限18+）';
+  String get wildDeckAdults => '狂野甲板仅限 18 岁以上成人';
   @override
-  String get aiWordExplanations => 'AI驱动的单词解释';
+  String get aiWordExplanations => 'AI 驱动的单词解释';
   @override
   String get enhancedAudioPron => '增强发音音频';
   @override
@@ -1199,31 +1199,31 @@ class AppLocalizationsZhCn extends AppLocalizations {
   @override
   String get oneTimePurchases => '一次性购买';
   @override
-  String get streakShieldPurchase => '连续签到保护';
+  String get streakShieldPurchase => '条纹护盾';
   @override
-  String get spicyPackPurchase => '俚语包';
+  String get spicyPackPurchase => '麻辣包';
   @override
   String get customThemePurchase => '自定义主题';
   @override
   String get mostPopular => '最受欢迎';
   @override
-  String get lifetimeOption => '永久';
+  String get lifetimeOption => '寿命';
   @override
   String get onceOnly => '一次';
   @override
-  String get lifetimeProAccess => '永久Pro权限——一次付费';
+  String get lifetimeProAccess => '终身专业版访问权限 - 支付一次';
   @override
-  String get allFutureFeatures => '包含所有未来功能';
+  String get allFutureFeatures => '包括所有未来的功能';
   @override
-  String get bestValueLongTerm => '长期学习最佳选择';
+  String get bestValueLongTerm => '为认真学习者提供最佳价值';
   @override
   String get contentPreferences => '内容偏好';
   @override
-  String get spicyContent => '俚语内容';
+  String get spicyContent => '俚语和休闲内容';
   @override
-  String get spicyContentDesc => '显示日常俚语和非正式日语单词';
+  String get spicyContentDesc => '显示休闲俚语和非正式日语单词';
   @override
-  String get wildContent => '成人内容';
+  String get wildContent => '成人内容（18 岁以上）';
   @override
-  String get wildContentDesc => '显示不雅、粗俗或成人语言（18+）';
+  String get wildContentDesc => '显示露骨或成人语言';
 }

@@ -1165,80 +1165,15 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get attributionsTitle => 'الإسناد';
   @override
-  String get attributionsJmdict => 'JMdict/EDRDG - القاموس الياباني';
-  @override
-  String get attributionsJmdictDesc => 'بيانات المفردات من JMdict (مجموعة أبحاث وتطوير القاموس الإلكتروني). مرخص بموجب CC-BY-SA 4.0.';
-  @override
-  String get attributionsTatoeba => 'تتويبا – الجمل سبيل المثال';
-  @override
-  String get attributionsTatoebaDesc => 'جمل نموذجية من مشروع تتويبا. مرخص بموجب CC-BY 2.0 FR.';
-  @override
-  String get attributionsTanos => 'Tanos.co.uk - قوائم المفردات JLPT';
-  @override
-  String get attributionsTanosDesc => 'تصنيفات مستوى المفردات JLPT من جوناثان والر (Tanos.co.uk). مرخص بموجب CC-BY.';
-  @override
-  String get allJlptLevels => 'جميع مستويات JLPT N5-N1';
-  @override
-  String get realJapaneseDeck => 'منصة المحادثة اليابانية الحقيقية';
-  @override
-  String get spicySlangDeck => 'تم فتح مجموعة اللغات العامية الحارة';
-  @override
-  String get unlimitedSavedWords => 'عدد غير محدود من الكلمات المحفوظة + المجلدات';
-  @override
-  String get exportAnkiCsv => 'تصدير إلى أنكي/CSV';
-  @override
-  String get everythingInPro => 'كل شيء في برو';
-  @override
-  String get wildDeckAdults => 'سطح البرية (للبالغين فقط)';
-  @override
-  String get aiWordExplanations => 'تفسيرات الكلمات المدعومة بالذكاء الاصطناعي';
-  @override
-  String get enhancedAudioPron => 'تحسين صوت النطق';
-  @override
-  String get earlyAccessFeatures => 'الوصول المبكر إلى الميزات الجديدة';
-  @override
-  String get oneTimePurchases => 'مشتريات لمرة واحدة';
-  @override
-  String get streakShieldPurchase => 'درع الخط';
-  @override
-  String get spicyPackPurchase => 'حزمة سبايسي';
-  @override
-  String get customThemePurchase => 'موضوع مخصص';
-  @override
-  String get mostPopular => 'الأكثر شعبية';
-  @override
-  String get lifetimeOption => 'حياة';
-  @override
-  String get onceOnly => 'مرة واحدة';
-  @override
-  String get lifetimeProAccess => 'وصول مدى الحياة للمحترفين - ادفع مرة واحدة';
-  @override
-  String get allFutureFeatures => 'تم تضمين جميع الميزات المستقبلية';
-  @override
-  String get bestValueLongTerm => 'أفضل قيمة للمتعلمين الجادين';
-  @override
-  String get contentPreferences => 'تفضيلات المحتوى';
-  @override
-  String get spicyContent => 'محتوى حار (عامية)';
-  @override
-  String get spicyContentDesc => 'عرض الكلمات العامية غير الرسمية والكلمات اليابانية غير الرسمية';
-  @override
-  String get wildContent => 'المحتوى البري (للبالغين)';
-  @override
-  String get wildContentDesc => 'إظهار لغة صريحة أو بذيئة أو لغة للبالغين (18+)';
-
-  @override
-  String get attributionsTitle => 'الإسناد';
-  @override
-  String get attributionsJmdict => 'JMdict/EDRDG - القاموس الياباني';
+  String get attributionsJmdict => 'قاموس JMdict/EDRDG الياباني';
   @override
   String get attributionsJmdictDesc => 'بيانات المفردات من JMdict. مرخص بموجب CC-BY-SA 4.0.';
   @override
-  String get attributionsTatoeba => 'تتويبا – الجمل سبيل المثال';
+  String get attributionsTatoeba => 'تتويبا الجمل سبيل المثال';
   @override
   String get attributionsTatoebaDesc => 'جمل نموذجية من مشروع تتويبا. مرخص بموجب CC-BY 2.0 FR.';
   @override
-  String get attributionsTanos => 'Tanos.co.uk - قوائم المفردات JLPT';
+  String get attributionsTanos => 'Tanos.co.uk قوائم المفردات JLPT';
   @override
   String get attributionsTanosDesc => 'تصنيفات مفردات JLPT من Tanos.co.uk. مرخص بموجب CC-BY.';
   @override
@@ -1248,13 +1183,13 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get spicySlangDeck => 'تم فتح مجموعة اللغات العامية الحارة';
   @override
-  String get unlimitedSavedWords => 'كلمات محفوظة غير محدودة + مجلدات مخصصة';
+  String get unlimitedSavedWords => 'عدد غير محدود من الكلمات المحفوظة والمجلدات المخصصة';
   @override
-  String get exportAnkiCsv => 'تصدير إلى أنكي/CSV';
+  String get exportAnkiCsv => 'تصدير إلى Anki أو CSV';
   @override
   String get everythingInPro => 'كل شيء في برو';
   @override
-  String get wildDeckAdults => 'Wild Deck (للبالغين فقط، 18+)';
+  String get wildDeckAdults => 'سطح البرية للبالغين فقط 18+';
   @override
   String get aiWordExplanations => 'تفسيرات الكلمات المدعومة بالذكاء الاصطناعي';
   @override
