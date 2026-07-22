@@ -129,7 +129,7 @@ class _DailyCompleteScreenState extends ConsumerState<DailyCompleteScreen>
                     ),
                     SizedBox(height: 8.h),
                     Text(
-                      l10n.dailyCompleteTitle,
+                      l10n.dailyCompleteCardsSwiped,
                       style: TextStyle(
                         fontSize: 15.sp,
                         color: appTheme.harborInkOnNavyMuted,
