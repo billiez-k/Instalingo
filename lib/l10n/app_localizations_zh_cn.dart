@@ -1161,4 +1161,69 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String get tapToLearn => '点击学习';
 
 
+
+  @override
+  String get attributionsTitle => '内容来源';
+  @override
+  String get attributionsJmdict => 'JMdict/EDRDG — 日语词典';
+  @override
+  String get attributionsJmdictDesc => '词汇数据来自JMdict（电子词典研究开发组）。采用CC-BY-SA 4.0许可。https://www.edrdg.org/jmdict/j_jmdict.html';
+  @override
+  String get attributionsTatoeba => 'Tatoeba — 例句库';
+  @override
+  String get attributionsTatoebaDesc => '例句来自Tatoeba项目。采用CC-BY 2.0 FR许可。https://tatoeba.org';
+  @override
+  String get attributionsTanos => 'Tanos.co.uk — JLPT词汇表';
+  @override
+  String get attributionsTanosDesc => 'JLPT词汇级别分类来自Jonathan Waller（Tanos.co.uk）。采用CC-BY许可。http://www.tanos.co.uk/jlpt/';
+  @override
+  String get allJlptLevels => '全部JLPT N5-N1级别';
+  @override
+  String get realJapaneseDeck => '真实日语会话词库';
+  @override
+  String get spicySlangDeck => '俚语词库已解锁';
+  @override
+  String get unlimitedSavedWords => '无限保存 + 自定义文件夹';
+  @override
+  String get exportAnkiCsv => '导出至Anki/CSV';
+  @override
+  String get everythingInPro => 'Pro版全部功能';
+  @override
+  String get wildDeckAdults => '成人词库（仅限18+）';
+  @override
+  String get aiWordExplanations => 'AI驱动的单词解释';
+  @override
+  String get enhancedAudioPron => '增强发音音频';
+  @override
+  String get earlyAccessFeatures => '抢先体验新功能';
+  @override
+  String get oneTimePurchases => '一次性购买';
+  @override
+  String get streakShieldPurchase => '连续签到保护';
+  @override
+  String get spicyPackPurchase => '俚语包';
+  @override
+  String get customThemePurchase => '自定义主题';
+  @override
+  String get mostPopular => '最受欢迎';
+  @override
+  String get lifetimeOption => '永久';
+  @override
+  String get onceOnly => '一次';
+  @override
+  String get lifetimeProAccess => '永久Pro权限——一次付费';
+  @override
+  String get allFutureFeatures => '包含所有未来功能';
+  @override
+  String get bestValueLongTerm => '长期学习最佳选择';
+  @override
+  String get contentPreferences => '内容偏好';
+  @override
+  String get spicyContent => '俚语内容';
+  @override
+  String get spicyContentDesc => '显示日常俚语和非正式日语单词';
+  @override
+  String get wildContent => '成人内容';
+  @override
+  String get wildContentDesc => '显示不雅、粗俗或成人语言（18+）';
 }
