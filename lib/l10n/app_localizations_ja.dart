@@ -354,7 +354,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get navCollections => 'コレクション';
 
   @override
-  String get navSwipe => '家';
+  String get navSwipe => 'スワイプ';
 
 
   @override
