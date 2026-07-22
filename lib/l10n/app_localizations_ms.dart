@@ -1161,4 +1161,69 @@ class AppLocalizationsMs extends AppLocalizations {
   String get tapToLearn => 'ketik untuk belajar';
 
 
+
+  @override
+  String get attributionsTitle => 'Atribusi';
+  @override
+  String get attributionsJmdict => 'JMdict/EDDRG — Kamus Jepun';
+  @override
+  String get attributionsJmdictDesc => 'Data kosa kata daripada JMdict. Dilesenkan di bawah CC-BY-SA 4.0.';
+  @override
+  String get attributionsTatoeba => 'Tatoeba — Contoh Ayat';
+  @override
+  String get attributionsTatoebaDesc => 'Contoh ayat daripada Projek Tatoeba. Dilesenkan di bawah CC-BY 2.0 FR.';
+  @override
+  String get attributionsTanos => 'Tanos.co.uk — Senarai Perbendaharaan Kata JLPT';
+  @override
+  String get attributionsTanosDesc => 'Klasifikasi perbendaharaan kata JLPT dari Tanos.co.uk. Dilesenkan di bawah CC-BY.';
+  @override
+  String get allJlptLevels => 'Semua tahap JLPT N5-N1';
+  @override
+  String get realJapaneseDeck => 'Dek perbualan Jepun sebenar';
+  @override
+  String get spicySlangDeck => 'Dek slanga pedas tidak berkunci';
+  @override
+  String get unlimitedSavedWords => 'Perkataan disimpan tanpa had + folder tersuai';
+  @override
+  String get exportAnkiCsv => 'Eksport ke Anki/CSV';
+  @override
+  String get everythingInPro => 'Semuanya dalam Pro';
+  @override
+  String get wildDeckAdults => 'Dek liar (dewasa sahaja, 18+)';
+  @override
+  String get aiWordExplanations => 'Penjelasan perkataan berkuasa AI';
+  @override
+  String get enhancedAudioPron => 'Audio sebutan yang dipertingkatkan';
+  @override
+  String get earlyAccessFeatures => 'Akses awal kepada ciri baharu';
+  @override
+  String get oneTimePurchases => 'Pembelian Sekali';
+  @override
+  String get streakShieldPurchase => 'Streak Shield';
+  @override
+  String get spicyPackPurchase => 'Pek Pedas';
+  @override
+  String get customThemePurchase => 'Tema Tersuai';
+  @override
+  String get mostPopular => 'Paling Popular';
+  @override
+  String get lifetimeOption => 'seumur hidup';
+  @override
+  String get onceOnly => 'sekali';
+  @override
+  String get lifetimeProAccess => 'Akses Pro Sepanjang Hayat — bayar sekali';
+  @override
+  String get allFutureFeatures => 'Semua ciri masa depan disertakan';
+  @override
+  String get bestValueLongTerm => 'Nilai terbaik untuk pelajar yang serius';
+  @override
+  String get contentPreferences => 'Keutamaan Kandungan';
+  @override
+  String get spicyContent => 'Kandungan Slang & Kasual';
+  @override
+  String get spicyContentDesc => 'Tunjukkan slanga kasual dan perkataan Jepun tidak formal';
+  @override
+  String get wildContent => 'Kandungan Dewasa (18+)';
+  @override
+  String get wildContentDesc => 'Tunjukkan bahasa yang eksplisit atau dewasa';
 }

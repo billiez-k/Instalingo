@@ -1161,4 +1161,199 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get tapToLearn => '點擊學習';
 
 
+
+  @override
+  String get attributionsTitle => 'Attributions';
+  @override
+  String get attributionsJmdict => 'JMdict/EDRDG — Japanese Dictionary';
+  @override
+  String get attributionsJmdictDesc => 'Vocabulary data from JMdict (Electronic Dictionary Research and Development Group). Licensed under CC-BY-SA 4.0.';
+  @override
+  String get attributionsTatoeba => 'Tatoeba — Example Sentences';
+  @override
+  String get attributionsTatoebaDesc => 'Example sentences from the Tatoeba Project. Licensed under CC-BY 2.0 FR.';
+  @override
+  String get attributionsTanos => 'Tanos.co.uk — JLPT Vocabulary Lists';
+  @override
+  String get attributionsTanosDesc => 'JLPT vocabulary level classifications from Jonathan Waller (Tanos.co.uk). Licensed under CC-BY.';
+  @override
+  String get allJlptLevels => 'All JLPT N5-N1 levels';
+  @override
+  String get realJapaneseDeck => 'Real Japanese conversation deck';
+  @override
+  String get spicySlangDeck => 'Spicy slang deck unlocked';
+  @override
+  String get unlimitedSavedWords => 'Unlimited saved words + folders';
+  @override
+  String get exportAnkiCsv => 'Export to Anki/CSV';
+  @override
+  String get everythingInPro => 'Everything in Pro';
+  @override
+  String get wildDeckAdults => 'Wild deck (adults only)';
+  @override
+  String get aiWordExplanations => 'AI-powered word explanations';
+  @override
+  String get enhancedAudioPron => 'Enhanced pronunciation audio';
+  @override
+  String get earlyAccessFeatures => 'Early access to new features';
+  @override
+  String get oneTimePurchases => 'One-Time Purchases';
+  @override
+  String get streakShieldPurchase => 'Streak Shield';
+  @override
+  String get spicyPackPurchase => 'Spicy Pack';
+  @override
+  String get customThemePurchase => 'Custom Theme';
+  @override
+  String get mostPopular => 'Most Popular';
+  @override
+  String get lifetimeOption => 'Lifetime';
+  @override
+  String get onceOnly => 'once';
+  @override
+  String get lifetimeProAccess => 'Lifetime Pro access — pay once';
+  @override
+  String get allFutureFeatures => 'All future features included';
+  @override
+  String get bestValueLongTerm => 'Best value for serious learners';
+  @override
+  String get contentPreferences => 'Content Preferences';
+  @override
+  String get spicyContent => 'Spicy Content (Slang)';
+  @override
+  String get spicyContentDesc => 'Show casual slang and informal Japanese words';
+  @override
+  String get wildContent => 'Wild Content (Adult)';
+  @override
+  String get wildContentDesc => 'Show explicit, vulgar, or adult language (18+)';
+
+  @override
+  String get attributionsTitle => 'Attributions';
+  @override
+  String get attributionsJmdict => 'JMdict/EDRDG — Japanese Dictionary';
+  @override
+  String get attributionsJmdictDesc => 'Vocabulary data from JMdict. Licensed under CC-BY-SA 4.0.';
+  @override
+  String get attributionsTatoeba => 'Tatoeba — Example Sentences';
+  @override
+  String get attributionsTatoebaDesc => 'Example sentences from the Tatoeba Project. Licensed under CC-BY 2.0 FR.';
+  @override
+  String get attributionsTanos => 'Tanos.co.uk — JLPT Vocabulary Lists';
+  @override
+  String get attributionsTanosDesc => 'JLPT vocabulary classifications from Tanos.co.uk. Licensed under CC-BY.';
+  @override
+  String get allJlptLevels => 'All JLPT N5-N1 levels';
+  @override
+  String get realJapaneseDeck => 'Real Japanese conversation deck';
+  @override
+  String get spicySlangDeck => 'Spicy slang deck unlocked';
+  @override
+  String get unlimitedSavedWords => 'Unlimited saved words + custom folders';
+  @override
+  String get exportAnkiCsv => 'Export to Anki/CSV';
+  @override
+  String get everythingInPro => 'Everything in Pro';
+  @override
+  String get wildDeckAdults => 'Wild deck (adults only, 18+)';
+  @override
+  String get aiWordExplanations => 'AI-powered word explanations';
+  @override
+  String get enhancedAudioPron => 'Enhanced pronunciation audio';
+  @override
+  String get earlyAccessFeatures => 'Early access to new features';
+  @override
+  String get oneTimePurchases => 'One-Time Purchases';
+  @override
+  String get streakShieldPurchase => 'Streak Shield';
+  @override
+  String get spicyPackPurchase => 'Spicy Pack';
+  @override
+  String get customThemePurchase => 'Custom Theme';
+  @override
+  String get mostPopular => 'Most Popular';
+  @override
+  String get lifetimeOption => 'Lifetime';
+  @override
+  String get onceOnly => 'Once';
+  @override
+  String get lifetimeProAccess => 'Lifetime Pro access — pay once';
+  @override
+  String get allFutureFeatures => 'All future features included';
+  @override
+  String get bestValueLongTerm => 'Best value for serious learners';
+  @override
+  String get contentPreferences => 'Content Preferences';
+  @override
+  String get spicyContent => 'Slang & Casual Content';
+  @override
+  String get spicyContentDesc => 'Show casual slang and informal Japanese words';
+  @override
+  String get wildContent => 'Adult Content (18+)';
+  @override
+  String get wildContentDesc => 'Show explicit or adult language';
+
+  @override
+  String get attributionsTitle => '歸因';
+  @override
+  String get attributionsJmdict => 'JMdict/EDRDG — 日文字典';
+  @override
+  String get attributionsJmdictDesc => '來自 JMdict 的詞彙資料。根據 CC-BY-SA 4.0 授權。';
+  @override
+  String get attributionsTatoeba => 'Tatoeba — 例句';
+  @override
+  String get attributionsTatoebaDesc => 'Tatoeba 計畫的例句。根據 CC-BY 2.0 FR 許可。';
+  @override
+  String get attributionsTanos => 'Tanos.co.uk — JLPT 詞彙表';
+  @override
+  String get attributionsTanosDesc => '來自 Tanos.co.uk 的 JLPT 詞彙分類。已取得 CC-BY 授權。';
+  @override
+  String get allJlptLevels => '所有 JLPT N5-N1 級別';
+  @override
+  String get realJapaneseDeck => '真正的日語會話甲板';
+  @override
+  String get spicySlangDeck => '辛辣俚語甲板已解鎖';
+  @override
+  String get unlimitedSavedWords => '無限保存單字+自訂資料夾';
+  @override
+  String get exportAnkiCsv => '匯出到 Anki/CSV';
+  @override
+  String get everythingInPro => '專業版中的一切';
+  @override
+  String get wildDeckAdults => '狂野牌組（僅限成人，18 歲以上）';
+  @override
+  String get aiWordExplanations => 'AI 驅動的單字解釋';
+  @override
+  String get enhancedAudioPron => '增強發音音頻';
+  @override
+  String get earlyAccessFeatures => '搶先體驗新功能';
+  @override
+  String get oneTimePurchases => '一次性購買';
+  @override
+  String get streakShieldPurchase => '條紋護盾';
+  @override
+  String get spicyPackPurchase => '麻辣包';
+  @override
+  String get customThemePurchase => '自訂主題';
+  @override
+  String get mostPopular => '最受歡迎';
+  @override
+  String get lifetimeOption => '壽命';
+  @override
+  String get onceOnly => '一次';
+  @override
+  String get lifetimeProAccess => '終身 Pro 存取權限 — 支付一次';
+  @override
+  String get allFutureFeatures => '包括所有未來的功能';
+  @override
+  String get bestValueLongTerm => '為認真學習者提供最佳價值';
+  @override
+  String get contentPreferences => '內容偏好';
+  @override
+  String get spicyContent => '俚語與休閒內容';
+  @override
+  String get spicyContentDesc => '顯示休閒俚語和非正式日語單字';
+  @override
+  String get wildContent => '成人內容（18 歲以上）';
+  @override
+  String get wildContentDesc => '顯示露骨或成人語言';
 }
