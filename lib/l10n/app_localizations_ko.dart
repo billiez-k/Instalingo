@@ -1158,7 +1158,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get settingsResetDone => '진행 상황이 초기화되었습니다.';
 
   @override
-  String get tapToLearn => '탭하여 학습 →';
+  String get tapToLearn => '탭하여 학습';
 
 
 }

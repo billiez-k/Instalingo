@@ -1158,7 +1158,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get settingsResetDone => 'تم إعادة تعيين التقدم.';
 
   @override
-  String get tapToLearn => 'اضغط للتعلم ←';
+  String get tapToLearn => 'اضغط للتعلم';
 
 
 }

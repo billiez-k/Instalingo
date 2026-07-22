@@ -1158,7 +1158,7 @@ class AppLocalizationsZhTw extends AppLocalizations {
   String get settingsResetDone => '進度已重置。';
 
   @override
-  String get tapToLearn => '點擊學習 →';
+  String get tapToLearn => '點擊學習';
 
 
 }

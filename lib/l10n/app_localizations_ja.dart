@@ -1158,7 +1158,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get settingsResetDone => '進捗がリセットされました。';
 
   @override
-  String get tapToLearn => 'タップして学習 →';
+  String get tapToLearn => 'タップして学習';
 
 
 }

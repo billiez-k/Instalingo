@@ -1158,7 +1158,7 @@ class AppLocalizationsZhCn extends AppLocalizations {
   String get settingsResetDone => '进度已重置。';
 
   @override
-  String get tapToLearn => '点击学习 →';
+  String get tapToLearn => '点击学习';
 
 
 }

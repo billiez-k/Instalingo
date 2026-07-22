@@ -1158,7 +1158,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get settingsResetDone => 'Kemajuan telah ditetapkan semula.';
 
   @override
-  String get tapToLearn => 'ketik untuk belajar →';
+  String get tapToLearn => 'ketik untuk belajar';
 
 
 }
