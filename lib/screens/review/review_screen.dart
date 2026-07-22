@@ -273,8 +273,9 @@ class _ReviewCardListState extends ConsumerState<_ReviewCardList> {
           ),
         ),
 
-        // Rating buttons
-        _buildRatingButtons(srsItem, l10n),
+        // Rating buttons (only visible after flipping to see answer)
+        if (_showBack)
+          _buildRatingButtons(srsItem, l10n),
       ],
     );
   }
